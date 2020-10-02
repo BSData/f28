@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -983,6 +983,18 @@ Chamber Tactics: Spend one (1) Faction Point:
       </costs>
     </selectionEntry>
     <selectionEntry id="eb53-9605-057c-618e" name="Scout Squad" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set-primary" field="category" value="8882-253b-967f-1dba">
+          <conditions>
+            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="81b0-0d12-1afc-d3a1" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="remove" field="category" value="3c56-72a8-f435-00f6">
+          <conditions>
+            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="81b0-0d12-1afc-d3a1" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <categoryLinks>
         <categoryLink id="2202-65f3-8246-b09f" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
@@ -1180,7 +1192,7 @@ Chamber Tactics: Spend one (1) Faction Point:
         </selectionEntryGroup>
         <selectionEntryGroup id="f914-0742-cee2-d040" name="Upgrade Options" hidden="false" collective="false" import="true">
           <entryLinks>
-            <entryLink id="81b0-0d12-1afc-d3a1" name="Infiltrate" hidden="false" collective="false" import="true" targetId="9d23-8183-4b9e-de44" type="selectionEntry">
+            <entryLink id="81b0-0d12-1afc-d3a1" name="Infiltrate" hidden="false" collective="false" import="true" targetId="d153-e2c5-7ae1-8075" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="95b5-c653-a5e7-8869" value="2.0">
                   <repeats>
@@ -3755,6 +3767,9 @@ Chamber Tactics: Spend one (1) Faction Point:
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18c7-7367-6e6a-ea45" type="max"/>
           </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
