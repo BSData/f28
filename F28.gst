@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files status: 
 
 Factions completed:
+The Army of the Republic(s)
 The Chambers
 The Scandinavian Commonwealth
 The Seelie Court
 
 Factions in development:
-The Army of the Republic(s)
 Chamber of Faith
 The Enclaves
 The Mutant Menace
@@ -120,9 +120,14 @@ The Nanite Resurrection</readme>
               </repeats>
             </modifier>
             <modifier type="increment" field="a042-cad5-00bd-e4ff" value="1.0">
-              <conditions>
-                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0411-247b-89d4-5bba" type="equalTo"/>
-              </conditions>
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="db06-f791-7cd9-cd22" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="increment" field="a042-cad5-00bd-e4ff" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="0411-247b-89d4-5bba" repeats="1" roundUp="false"/>
+              </repeats>
             </modifier>
           </modifiers>
           <constraints>
@@ -199,6 +204,7 @@ The Nanite Resurrection</readme>
       <infoLinks>
         <infoLink id="584c-e1a4-3785-b0e5" name="Plasma Cannon" hidden="false" targetId="69fa-8ae0-b9ad-acf7" type="profile"/>
         <infoLink id="b503-8c36-04f7-aba4" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="de5f-dda1-63d6-5348" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -366,7 +372,7 @@ The Nanite Resurrection</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a063-f5c0-4ef1-7b79" name="Auto Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="a063-f5c0-4ef1-7b79" name="Autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7e9a-b74c-04c3-445f" name="Autocannon" hidden="false" targetId="d0e0-6450-0ef0-59ca" type="profile"/>
         <infoLink id="9a5e-3b4e-ea1a-f7d8" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
@@ -376,7 +382,7 @@ The Nanite Resurrection</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="05c2-25b0-4f4d-f449" name="ATGM Launcher" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="05c2-25b0-4f4d-f449" name="ATGM" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="feb7-870c-35db-eb6f" name="ATGM" hidden="false" targetId="f530-c4f4-3c00-6f18" type="profile"/>
       </infoLinks>
@@ -1775,6 +1781,9 @@ The Nanite Resurrection</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="0411-247b-89d4-5bba" name="+1 Faction Point" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a900-cf83-33ca-6ad7" name="+1 Faction Point" hidden="false" targetId="1e59-8c45-4d6b-09f5" type="rule"/>
+      </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -1848,6 +1857,335 @@ The Nanite Resurrection</readme>
       <infoLinks>
         <infoLink id="ae1e-4305-ee28-8196" name="Paired Energy Swords" hidden="false" targetId="84b9-9184-d12e-e25d" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07d9-891b-1d9d-f105" name="Autorifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="77d6-6288-2f31-89d2" name="Autorifle" hidden="false" targetId="00e8-59d8-7556-0b1e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f3a1-03ed-cf5a-645a" name="Gatling Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7c23-e531-fb19-2b63" name="Gatling Gun" hidden="false" targetId="de27-3a7e-6c2d-f7bb" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a7f-6712-9fc3-f656" name="Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9f39-e1f4-e598-b553" name="Volley Gun" hidden="false" targetId="13b6-a367-6feb-e7c0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b8c-17aa-75ea-1a14" name="Dual Volley Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0a4d-cd55-2e5c-8eea" name="Volley Gun" hidden="false" targetId="13b6-a367-6feb-e7c0" type="profile"/>
+        <infoLink id="d2f1-a978-b7d7-345e" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c56-1ae8-e1d7-ceb8" name="Rapid Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bffb-7c9d-7e3f-d397" name="Rapid Laser" hidden="false" targetId="5815-4e94-8a6c-796a" type="profile"/>
+        <infoLink id="0b13-5bc9-7eaa-578c" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4af5-7655-5d50-0327" name="Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d22-cfe8-1a04-a80a" name="Rocket Pod" hidden="false" targetId="b73c-654e-d2f8-6ea8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1430-bdcd-e4e5-1e21" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="28fb-8f4a-ebd1-4196" name="Grenade Launcher" hidden="false" targetId="79e2-9423-cb45-7d9c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd7a-b6d1-2219-02a2" name="Mortar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="df15-1ac0-b312-822e" name="Mortar" hidden="false" targetId="458c-1e64-726a-8718" type="profile"/>
+        <infoLink id="8eb8-70e4-4abe-ff26" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
+        <infoLink id="f0b3-e1fe-219c-8695" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7763-d3e9-d836-5f2c" name="Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="86f0-ed9e-50e6-052b" name="Pistol" hidden="false" targetId="730e-f2a9-b6f6-114b" type="profile"/>
+        <infoLink id="6020-84cd-92e0-14ce" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6eba-02b7-711e-0570" name="Shotgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5785-d5a7-b301-d527" name="Shotgun" hidden="false" targetId="6d7a-9004-5bfb-b5d2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="500d-897e-0da6-6f2f" name="Telepath Mystic(2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3003-3d3e-c51d-c05e" name="School Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b63b-1561-73fd-5daa" name="Missile Launcher with AA" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c46-8016-a337-fca6" name="Missile Launcher with AA" hidden="false" targetId="6239-ddec-d24c-fefe" type="profile"/>
+        <infoLink id="0317-0dd7-e5cd-e2d8" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="50f8-f5e1-7449-5893" name="Dual Missile Launcher with AA" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3bc0-32f8-a9f0-6193" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+        <infoLink id="28a4-adf8-e6a1-d71e" name="Missile Launcher with AA" hidden="false" targetId="6239-ddec-d24c-fefe" type="profile"/>
+        <infoLink id="641c-b7ba-1521-d23f" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2be9-d1f9-084f-f056" name="Fire Mission" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9c93-c6d6-ab9f-c5c2" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
+        <infoLink id="15fd-0136-9a87-16af" name="Potshots" hidden="false" targetId="68bd-2ead-946c-e730" type="rule"/>
+        <infoLink id="bcd9-5d32-6559-a2ed" name="Fire Mission" hidden="false" targetId="3f5e-6459-de62-20f5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="91f4-9562-7fbc-e151" name="Telepath Mystic(1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="632a-a805-6d74-3394" name="School Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="db06-f791-7cd9-cd22" name="+1 Faction Point" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d96d-c896-c4d4-1656" name="+1 Faction Point" hidden="false" targetId="1e59-8c45-4d6b-09f5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bac3-4ea7-f873-d8d6" name="Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="76b6-0ae3-6730-8f68" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="6d9e-8cec-235f-c113" name="Gatling Cannon" hidden="false" targetId="35a7-9759-e85d-ca37" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfec-6dc1-cdcd-56f0" name="Tank Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37de-6b42-146e-c476" name="Tank Gun" hidden="false" targetId="17fb-ed75-4230-4d4d" type="profile"/>
+        <infoLink id="a462-110e-2b7e-3810" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="400f-5e19-93a4-945c" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9708-ec88-ac02-230d" name="Long-barrelled Tank Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="95c4-a19d-f6cb-e37d" name="Long-barrelled Tank Gun" page="" hidden="false" targetId="4e4f-7121-b144-57ce" type="profile"/>
+        <infoLink id="1a61-36f3-0536-306c" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="cc35-6990-e481-62e6" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
+        <infoLink id="3ff7-6e69-71a8-062f" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8c5-8587-5681-8d9b" name="Short-barrelled Tank Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c78-9122-ecb6-62bc" name="Short-barrelled Tank Gun" hidden="false" targetId="00d5-fe25-0e11-8f31" type="profile"/>
+        <infoLink id="df3a-cae7-c4fa-776d" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="2556-71d8-e2e5-7b6f" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="82c7-3f51-b9b5-d516" name="Plasma Tank Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a9f1-090e-6c97-6f62" name="Plasma Tank Gun" hidden="false" targetId="adf2-5813-4b52-afff" type="profile"/>
+        <infoLink id="6788-1aae-f45e-a455" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="5b7f-edf4-b29f-e1f5" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d8a6-a705-3fa6-0bee" name="Inferno Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2f06-8c27-6039-9327" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="dfad-670b-4e30-24f9" name="Inferno cannon" hidden="false" targetId="02a5-db37-7969-acbf" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2a5d-9205-0a70-7914" name="Dual Mortar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="712a-ac63-08f7-bbe3" name="Mortar" hidden="false" targetId="458c-1e64-726a-8718" type="profile"/>
+        <infoLink id="5ea3-1c37-b4dc-d3af" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
+        <infoLink id="d248-23cb-5eab-fae2" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="3a5c-9cd5-c7e1-6425" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cd3-25e5-1adf-3b37" name="Heavy Mortar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e3c1-37e6-9478-dfc8" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
+        <infoLink id="4674-270f-d26a-4cb8" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="2f76-03ad-c022-61b4" name="Heavy Mortar" hidden="false" targetId="065e-6a85-c5f0-8298" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7560-b139-568b-d9fd" name="Ogre Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2852-bb46-b4b0-f13b" name="Ogre Gun" hidden="false" targetId="4ab2-1a76-6dc1-267e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7cb8-afa6-3a8c-7c8d" name="Energy Maul" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6ec1-dbfd-3b11-7860" name="Energy Maul" hidden="false" targetId="8129-43dd-c2d0-480d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41e6-5fa2-6230-979a" name="Grenade Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bd84-2fbe-c6db-a09c" name="Grenade Gauntlet" hidden="false" targetId="b797-7890-f6a6-5773" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5e65-46df-d9cd-1a77" name="Flak Jackets" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2ea9-263d-d7b6-24bd" name="Flak jackets" hidden="false" targetId="d4c6-4778-1339-8384" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="addb-0f82-e911-af3e" name="Robust(1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="067c-2222-467c-b89a" name="Robust(modifier)" hidden="false" targetId="b7ca-d51b-0b27-8aa2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e4d-3721-d5af-09af" name="Massive Hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eee2-ae31-f029-3570" name="Massive Hammer" hidden="false" targetId="126e-b2d7-7b9e-40d2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d565-173c-b8cb-d79c" name="Bestow Fanatic" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d028-6818-dd8e-b35e" name="Bestow" hidden="false" targetId="b4bb-8878-b38a-a000" type="rule"/>
+        <infoLink id="f294-c7fa-7215-1bca" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07b1-eb19-fc7b-2c61" name="Armour Skirts" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2521-5f59-9269-c4b1" name="Armour Skirts" hidden="false" targetId="0876-0b9c-0b14-f0d0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="33a8-1e8d-fd1e-bb8e" name="Dozer Blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0a89-dde9-c0a0-f711" name="Dozer Blade" hidden="false" targetId="0ca3-0f5f-53e7-1c6c" type="rule"/>
+        <infoLink id="1e1a-5fd2-fb34-2e8a" name="Robust(modifier)" hidden="false" targetId="b7ca-d51b-0b27-8aa2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -2005,10 +2343,10 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
     <rule id="ca51-037a-f7e2-4764" name="Vehicle(tracked)" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
       <description>(no modifiers)</description>
     </rule>
-    <rule id="0a23-ef4c-b74f-b5f9" name="Open" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
+    <rule id="0a23-ef4c-b74f-b5f9" name="Vehicle(open)" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
       <description>+1 on damage table, all passengers may fire out of, may use vehicle move for CC attack.</description>
     </rule>
-    <rule id="a431-90d3-3f53-8231" name="Light" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
+    <rule id="a431-90d3-3f53-8231" name="Vehicle(light)" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
       <description>Kill instead of rolling on damage table.</description>
     </rule>
     <rule id="194c-2932-f83a-e1c6" name="Antiair" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -2021,7 +2359,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
       <description>Weapon may attack without line of sight, when it does, apply modifier.</description>
     </rule>
     <rule id="2693-921a-149b-88fd" name="Concealment" publicationId="aae0-5552-35a8-74d6" page="12" hidden="false">
-      <description>If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Con- cealment does not stack.</description>
+      <description>If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Concealment does not stack.</description>
     </rule>
     <rule id="b157-8274-1084-2353" name="Defence(X)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
       <description>Model has Defence X
@@ -2123,6 +2461,51 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
     <rule id="625b-bc80-a6e2-9ea2" name="Ignore Suppression" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
       <description>Unit does not receive action markers from suppression.</description>
     </rule>
+    <rule id="7f37-c2e8-c359-55bd" name="Firing Ports(number)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>Number of passengers may attack while inside</description>
+    </rule>
+    <rule id="a6cb-3375-ee7a-c762" name="Priority(vital Strike, hit(re-roll))" publicationId="aae0-5552-35a8-74d6" page="119" hidden="false">
+      <description>When attacking with priority gain effect. On hit rolls of ‘6’, wound(+3). May re-roll any hit dice.</description>
+    </rule>
+    <rule id="289e-c205-57bf-84ce" name="Leader(2)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
+      <description>Remove level extra action markers within 12” from leader in endphase.</description>
+    </rule>
+    <rule id="e7bc-d0a3-516c-7f9d" name="Communications" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>Leader ability in unit has unlimited range.</description>
+    </rule>
+    <rule id="33b5-bd13-98ef-54cb" name="Interdiction" publicationId="aae0-5552-35a8-74d6" page="118" hidden="false">
+      <description>One (1) enemy unit may not leave staging this turn, one use.</description>
+    </rule>
+    <rule id="88bb-4027-9f80-37f8" name="Insignificant" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>May not be allocated wounds and does not count toward unit size. If all models in a unit has Insignificant, remove unit.</description>
+    </rule>
+    <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115," hidden="false">
+      <description>All models in attached unit gains Tough(1). If a range is specified, all models in units within range gains ability. </description>
+    </rule>
+    <rule id="1e59-8c45-4d6b-09f5" name="+1 Faction Point" publicationId="aae0-5552-35a8-74d6" page="" hidden="false">
+      <description>Player get +1 Faction Point.</description>
+    </rule>
+    <rule id="4046-b62e-4476-3cac" name="Selective Enforced Fanaticism" publicationId="aae0-5552-35a8-74d6" page="118" hidden="false">
+      <description>Units within 12” may use Fanatic: For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
+    </rule>
+    <rule id="e7bd-54e6-3826-9164" name="Fanatic" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
+    </rule>
+    <rule id="1a9a-bed0-299e-301b" name="Priority(hit(re-roll))" hidden="false">
+      <description>When attacking with priority gain effect. May re-roll any hit dice.</description>
+    </rule>
+    <rule id="d4c6-4778-1339-8384" name="Flak Jackets" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false">
+      <description>Models in unit has Defence(5) vs attacks with the blast trait.</description>
+    </rule>
+    <rule id="b7ca-d51b-0b27-8aa2" name="Robust(modifier)" publicationId="aae0-5552-35a8-74d6" page="120" hidden="false">
+      <description>+/- modifier on damage table.</description>
+    </rule>
+    <rule id="0876-0b9c-0b14-f0d0" name="Armour Skirts" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false">
+      <description>Model has one (1) extra Defence(7) wound.</description>
+    </rule>
+    <rule id="0ca3-0f5f-53e7-1c6c" name="Dozer Blade" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false">
+      <description>Model has Robust(1) until it moves for the first time.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="de65-91da-25ce-abf1" name="Slugger" publicationId="aae0-5552-35a8-74d6" page="81" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
@@ -2130,7 +2513,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (2) 24&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2139,7 +2522,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (3) 24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2147,7 +2530,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">8&quot; (D6)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(auto)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
@@ -2157,7 +2540,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (2) 24&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
@@ -2166,7 +2549,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (1, platebreaker) / 12&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+5)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2181,10 +2564,10 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
     </profile>
     <profile id="2f2e-939f-9995-3765" name="Heavy Flamer" publicationId="aae0-5552-35a8-74d6" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1">12&quot; (D6)</characteristic>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d"/>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(auto)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2193,7 +2576,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2, platebreaker) / 24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+5)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
@@ -2202,7 +2585,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast (D3)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, heavy</characteristic>
       </characteristics>
     </profile>
@@ -2211,7 +2594,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (3) 36” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">Heavy</characteristic>
       </characteristics>
     </profile>
@@ -2220,7 +2603,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48&quot; (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
@@ -2229,7 +2612,7 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
@@ -2237,17 +2620,13 @@ Suppression(+X) – weapon causes +X suppression hits with attack, Suppression(n
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">HE: 36” (1)
-AT: 36” (1)
-*AA: 36” (1)</characteristic>
+AT: 36” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">HE: blast(D3)
-AT:
-*AA:</characteristic>
+AT:</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">HE:
-AT: (+5)
-*AA: (+3)</characteristic>
+AT: +5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">HE: heavy
-AT: heavy
-*AA: antiair, heavy (+5p)</characteristic>
+AT: heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="185b-f667-c92f-cd00" name="Smoke Grenades" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
@@ -2273,7 +2652,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48” (4)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
@@ -2281,8 +2660,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(re-roll)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
     </profile>
@@ -2291,7 +2670,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
@@ -2299,8 +2678,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1 vs unarmed)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2308,8 +2687,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2317,8 +2696,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (D6)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
@@ -2336,7 +2715,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2345,7 +2724,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2354,7 +2733,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (4) 36” (3)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2374,8 +2753,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, pistol</characteristic>
       </characteristics>
     </profile>
@@ -2383,8 +2762,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1 vs unarmed)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2392,8 +2771,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC(2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2402,7 +2781,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+4)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2410,8 +2789,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC(2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">mystic</characteristic>
       </characteristics>
     </profile>
@@ -2420,7 +2799,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast (D6)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+8)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+8</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)</characteristic>
       </characteristics>
     </profile>
@@ -2429,7 +2808,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
@@ -2438,7 +2817,7 @@ AT: heavy
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1 vs unarmed)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
       </characteristics>
     </profile>
@@ -2446,8 +2825,8 @@ AT: heavy
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1 vs unarmed)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
@@ -2459,7 +2838,7 @@ AT: 24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">HE: blast(D3)
 AT:</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">HE:
-AT: (+5)</characteristic>
+AT: +5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2467,8 +2846,8 @@ AT: (+5)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(+1 vs unarmed)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
@@ -2476,8 +2855,8 @@ AT: (+5)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12”(6) 24”(3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(re-roll)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2485,8 +2864,8 @@ AT: (+5)</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">8” (D6)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">(auto)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -2497,8 +2876,8 @@ AT: (+5)</characteristic>
 Heavy: 72” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">Light: blast(D6)
 Heavy: blast (D3)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">Light: (+1)
-Heavy: (+2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">Light: +1
+Heavy: +2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">Light: indirect(wound(max 6))
 Heavy: indirect(wound(max 5))</characteristic>
       </characteristics>
@@ -2507,8 +2886,8 @@ Heavy: indirect(wound(max 5))</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">hit(re-roll)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)</characteristic>
       </characteristics>
     </profile>
@@ -2517,7 +2896,7 @@ Heavy: indirect(wound(max 5))</characteristic>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">(CC (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">(+5)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker, heavy, vs vehicles only</characteristic>
       </characteristics>
     </profile>
@@ -2647,7 +3026,7 @@ Heavy: indirect(wound(max 5))</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="617c-cc73-3dfd-8373" name="Heavy Magna‐rifle" publicationId="aae0-5552-35a8-74d6" page="109" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="617c-cc73-3dfd-8373" name="Heavy Magna‐Rifle" publicationId="aae0-5552-35a8-74d6" page="109" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60&quot; (2)</characteristic>
@@ -2674,7 +3053,7 @@ Heavy: indirect(wound(max 5))</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="b70a-b4dd-b720-691b" name="Magna-cannon" publicationId="aae0-5552-35a8-74d6" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="b70a-b4dd-b720-691b" name="Magna-Cannon" publicationId="aae0-5552-35a8-74d6" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">AT: 72” (1)
@@ -2901,8 +3280,7 @@ Lance: heavy</characteristic>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)
 12” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">CC: +1
-12&quot;:</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">CC +1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">CC: +2
 12&quot;: +3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">mystic weapon</characteristic>
@@ -2951,6 +3329,223 @@ Lance: heavy</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="00e8-59d8-7556-0b1e" name="Autorifle" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (2) 24&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="de27-3a7e-6c2d-f7bb" name="Gatling Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="13b6-a367-6feb-e7c0" name="Volley Gun" publicationId="aae0-5552-35a8-74d6" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(+2 attack dice)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5815-4e94-8a6c-796a" name="Rapid Laser" publicationId="aae0-5552-35a8-74d6" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b73c-654e-d2f8-6ea8" name="Rocket Pod" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="79e2-9423-cb45-7d9c" name="Grenade Launcher" publicationId="aae0-5552-35a8-74d6" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">AT: 24” (1)
+HE: 24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">AT:
+HE: blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">AT: +3
+HE: </characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="458c-1e64-726a-8718" name="Mortar" publicationId="aae0-5552-35a8-74d6" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12-48” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(wound(max 6)), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="730e-f2a9-b6f6-114b" name="Pistol" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6d7a-9004-5bfb-b5d2" name="Shotgun" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="6239-ddec-d24c-fefe" name="Missile Launcher with AA" publicationId="aae0-5552-35a8-74d6" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">HE: 36” (1)
+AT: 36” (1)
+AA: 36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">HE: blast(D3)
+AT:
+AA:</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">HE:
+AT: +5
+AA: +3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">HE: heavy
+AT: heavy
+AA: antiair, heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3f5e-6459-de62-20f5" name="Fire Mission" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Unlimited range (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-2, blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(hit(-2)), priority(only), one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="35a7-9759-e85d-ca37" name="Gatling Cannon" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (20)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="17fb-ed75-4230-4d4d" name="Tank Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">AT: 72” (1)
+HE: 72” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">AT:
+HE: blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">AT: +7
+HE: +3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">AT: heavy
+HE: priority(hit(re-roll)), heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e4f-7121-b144-57ce" name="Long-barrelled Tank Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">AT: 120” (1)
+HE: 120” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">AT:
+HE: blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">AT: +5
+HE: +3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">AT: platebreaker, heavy
+HE: priority(hit(re-roll)), heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="00d5-fe25-0e11-8f31" name="Short-barrelled Tank Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1, hit(re-roll)) 36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="adf2-5813-4b52-afff" name="Plasma Tank Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">hit(auto)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(hit(re-roll)), heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="02a5-db37-7969-acbf" name="Inferno Cannon" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="065e-6a85-c5f0-8298" name="Heavy Mortar" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12-48” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(wound(max 6)), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4ab2-1a76-6dc1-267e" name="Ogre Gun" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="b797-7890-f6a6-5773" name="Grenade Gauntlet" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot;(1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="8129-43dd-c2d0-480d" name="Energy Maul" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="126e-b2d7-7b9e-40d2" name="Massive Hammer" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">uses 2h</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
