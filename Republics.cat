@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -40,6 +40,19 @@ Republic War Machine: Spend one (1) Faction Point:
     <entryLink id="4870-aa5a-b5d6-7d7c" name="Flame Tank Platoon" hidden="false" collective="false" import="true" targetId="a1e6-fe8b-2de8-0a30" type="selectionEntry"/>
     <entryLink id="c11d-ee5e-95eb-28a9" name="Artillery Battery" hidden="false" collective="false" import="true" targetId="3ff2-8792-48af-92d9" type="selectionEntry"/>
     <entryLink id="6b06-a1fd-cd8f-53bc" name="Ogre Squad" hidden="false" collective="false" import="true" targetId="a570-ade6-9aba-3a26" type="selectionEntry"/>
+    <entryLink id="9295-ccd9-6302-68ee" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" targetId="7234-3b58-8ad6-0a79" type="selectionEntry"/>
+    <entryLink id="01d1-b38d-ee28-0141" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" targetId="4483-5353-063a-dd72" type="selectionEntry"/>
+    <entryLink id="94a4-6fe8-4133-cf95" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" targetId="3b84-f71b-7c59-c723" type="selectionEntry"/>
+    <entryLink id="9c07-102c-ac93-1f0b" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" targetId="5b9c-c85d-f6e5-0f71" type="selectionEntry"/>
+    <entryLink id="55d2-b223-862d-08c6" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" targetId="e453-b7a7-524d-23d1" type="selectionEntry"/>
+    <entryLink id="e692-011f-9412-8b0b" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" targetId="a1d4-a68a-3141-f218" type="selectionEntry"/>
+    <entryLink id="080b-de88-9fc6-0a7b" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1002-9fa5-c9f3-4340" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="7efd-12d4-5cde-153d" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" targetId="2c0a-5903-01a8-f690" type="selectionEntry"/>
+    <entryLink id="1b25-6677-9454-db9d" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" targetId="8a79-f927-4673-9df9" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2442-a4d0-a5eb-f52e" name="Autorifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -470,7 +483,7 @@ Republic War Machine: Spend one (1) Faction Point:
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="5b28-a585-5128-6a6b" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="3688-c7a8-b307-f8d1" name="Upgrade any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="3688-c7a8-b307-f8d1" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
@@ -1456,7 +1469,7 @@ Republic War Machine: Spend one (1) Faction Point:
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="4546-7165-8d9b-cf8d" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="f5bb-8a1b-424b-3955" name="Upgrade any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="f5bb-8a1b-424b-3955" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
@@ -2988,6 +3001,813 @@ Republic War Machine: Spend one (1) Faction Point:
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7234-3b58-8ad6-0a79" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="2d45-7093-39df-d3e7" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bdb2-bee9-24d4-7733" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" defaultSelectionEntryId="404d-5f54-7d02-7ba0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9d8-3136-0140-2d98" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="404d-5f54-7d02-7ba0" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb71-958a-a588-3cf5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188d-548b-5d49-1262" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="047a-a3ba-83c5-e2fe" name="Republic Off-Road Buggy" hidden="false" targetId="d5a8-14dc-a747-66e2" type="profile"/>
+                <infoLink id="616d-7d54-2ff4-1b18" name="Vehicle(wheeled)" hidden="false" targetId="8b2a-2837-aca0-3c56" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="fec1-e0ad-5424-62f7" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e46-9e85-432e-ba04" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7952-de08-ce4a-1544" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6e9a-73ca-e23c-c96b" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a586-e04d-2827-7265" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="c999-7013-17ad-610d" name="Dual Rapid Laser" hidden="false" collective="false" import="true" targetId="1cdb-258d-22e5-65db" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce09-d864-f721-64bf" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="91a3-b954-b871-5520" name="Rugged" hidden="false" collective="false" import="true" targetId="9b50-2354-ba8a-833f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24ab-0f0a-a94f-b01b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c040-b75f-6453-70e6" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="e4c1-9a4a-06e9-dbef" name="Vanguard" hidden="false" collective="false" import="true" targetId="38c2-0127-8543-995a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="940d-6e4a-e2ff-350e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93d9-897e-53bd-42ad" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4483-5353-063a-dd72" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="fe9b-76e2-8a45-998d" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="52d1-3573-8d19-56e5" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" defaultSelectionEntryId="ee1a-9798-786c-b57d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b146-0ede-25fe-496c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ee1a-9798-786c-b57d" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a8d-3f48-6102-31b5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3b7-8259-771e-614a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dd83-1376-8394-2f62" name="Republic Air Superiority Fighter" hidden="false" targetId="0119-6cda-bb5f-1144" type="profile"/>
+                <infoLink id="27db-5495-92c4-679c" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e1d0-55d5-2c53-7aec" name="Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a93-e3bd-2c87-920d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad74-ec2c-de48-46ac" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="fba6-1b84-7c0a-47ec" name="Autocannon, Agile and Interceptor" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f46-9d4f-8ec0-0dff" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="aeca-d730-9dda-985a" name="Autocannon" hidden="false" targetId="d0e0-6450-0ef0-59ca" type="profile"/>
+                        <infoLink id="3889-a231-13b0-ef76" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                        <infoLink id="d249-bd88-cb49-ce7b" name="Vehicle(agile)" hidden="false" targetId="713a-09b2-0ea1-2ebd" type="rule"/>
+                        <infoLink id="64b3-39f0-9083-8a21" name="Interceptor" hidden="false" targetId="e629-b7d0-036a-fb48" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="b4ca-578a-ffdb-400d" name="2x Missle Launcher" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caf3-db23-e7fd-7024" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="234a-a7fd-98b5-a6f1" name="Missile Launcher" hidden="false" targetId="a1cd-08e5-56d3-5000" type="profile"/>
+                        <infoLink id="1b1e-7202-71a3-d86f" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="e474-d0c4-1086-9b7e" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e32-c628-14d1-2518" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="178d-7070-58ed-c314" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ddfc-a7b8-ac45-3720" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+                <entryLink id="9e29-8539-1ea0-c19d" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="1c69-f01a-0d92-021b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3b84-f71b-7c59-c723" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ac99-e74e-4da5-d470" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a4d1-0ecb-6b9d-8357" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" defaultSelectionEntryId="4315-c99b-979c-6824">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8435-e61c-3192-c883" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4315-c99b-979c-6824" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="967e-76f1-d2b3-6cfd" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b48a-44d5-19fb-f99a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ab70-ca32-0f20-855c" name="Republic Heavy Fighter" hidden="false" targetId="e1c1-1000-ecfe-720c" type="profile"/>
+                <infoLink id="363f-5647-5f6f-eeeb" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="138e-0da6-183c-693d" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80fe-e769-b7fd-1beb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d4d-5552-6ea2-c1be" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0889-bd99-84ea-db81" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d88-7f47-d4cf-b7da" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef0-54b4-c9f6-3b4e" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="098d-50dc-9c68-47e8" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+                <entryLink id="f6ed-130c-aaeb-da9d" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="2b79-b6c3-34a6-fa6f" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="140.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b9c-c85d-f6e5-0f71" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="08bb-ae18-abf0-a464" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ed92-83d7-33c0-d608" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eafa-bf71-7291-1851" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4460-fb55-ac52-4572" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c25-1241-aadc-6f2a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="387a-1906-b8db-95cb" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="65d5-583a-7900-de16" name="Republic VTOL Transport (Alternative)" hidden="false" targetId="538e-2939-ed31-0af8" type="profile"/>
+                <infoLink id="6234-19b8-8bb4-be59" name="Vehicle(vtol)" hidden="false" targetId="428c-e0ea-ff6d-9f18" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="f4f9-43c7-dcfc-7d3c" name="Weapon Options Optional" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bd4-f0f2-0156-670b" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9140-9a97-082a-623b" name="HMG" hidden="false" collective="false" import="true" targetId="5400-40bd-bd89-83aa" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e5b-718d-4670-203d" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="c8f9-34f7-bed6-6633" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+                <entryLink id="f5ec-2d13-f413-19e2" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="1e30-081b-1ee9-a6ed" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a32-d88f-0b3b-a691" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f4a-5835-e15d-9252" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e453-b7a7-524d-23d1" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="28a9-ae7a-3603-191c" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="da66-f7ab-5114-b538" name="Republic VTOL Gunship" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bce8-3a76-74d6-1bef" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c38a-861f-4f6c-418d" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f2-0ed1-3be7-df9c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f9e-ec97-1f4e-700e" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="57fa-6cee-0e18-ab43" name="Republic VTOL Gunship" hidden="false" targetId="be37-5576-663b-a534" type="profile"/>
+                <infoLink id="40de-ed67-69e6-bec2" name="Vehicle(vtol)" hidden="false" targetId="428c-e0ea-ff6d-9f18" type="rule"/>
+              </infoLinks>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="0077-f656-a4c1-1a78" name="Weapon Options" hidden="true" collective="false" import="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4ae-c836-3339-d44d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="8b55-7e86-21fd-e289" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4ae-c836-3339-d44d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="7f41-fd10-e998-0081" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a4ae-c836-3339-d44d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f41-fd10-e998-0081" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b55-7e86-21fd-e289" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="588d-b8b2-1feb-9dd6" name="Dual Gatling Cannon" hidden="false" collective="false" import="true" targetId="b0f9-057e-972c-309c" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5346-14fb-9c98-d998" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="3457-1506-9c99-f458" name="Weapon Options" hidden="true" collective="false" import="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="2d1a-854c-8a4a-ad3f" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="1150-d69f-27aa-4e32" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1150-d69f-27aa-4e32" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1a-854c-8a4a-ad3f" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9e83-37c6-76d3-60e8" name="Bomb Cluster" page="" hidden="false" collective="false" import="true" targetId="6503-2dc4-c489-9cef" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5959-af24-b432-26a3" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="8201-b333-a25e-ac4b" name="LAM" hidden="false" collective="false" import="true" targetId="00a2-5a49-7d13-2c84" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf9b-3e36-c37f-d597" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3cb9-1de4-bd56-f3f2" name="Rocket Pod" hidden="false" collective="false" import="true" targetId="4af5-7655-5d50-0327" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4600-1ab0-f57d-3844" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="3ade-ed79-0c09-1482" name="2x AL-ATM" hidden="false" collective="false" import="true" targetId="1cbb-75c3-b3a3-a60b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3a3-70fc-4c88-3f63" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="8ade-804a-5e46-7fd0" name="Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85f7-0df4-6ead-0492" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13dd-8299-2760-a1f2" type="min"/>
+                  </constraints>
+                  <selectionEntries>
+                    <selectionEntry id="a4ae-c836-3339-d44d" name="Anti-Personell" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b08-eb68-b8d2-864f" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="5027-5f20-4345-8d02" name="Anti-Tank" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcfa-13ca-f1af-8719" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                      </costs>
+                    </selectionEntry>
+                  </selectionEntries>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="3273-1123-ed2a-f857" name="Weapon Options" hidden="true" collective="false" import="true">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="d9cd-7e31-ba38-50cc" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="aef0-f592-0c40-ea57" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="e453-b7a7-524d-23d1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5027-5f20-4345-8d02" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9cd-7e31-ba38-50cc" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aef0-f592-0c40-ea57" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="d206-bc19-75a8-cbf5" name="Dual Rapid Laser" hidden="false" collective="false" import="true" targetId="1cdb-258d-22e5-65db" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5af-7b13-5791-47ba" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="0947-5353-95c2-7fbf" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e998-6a52-73d2-8c0b" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="eeb5-8511-7f0e-8c51" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd63-3df7-c538-f335" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="3cfc-8a90-7069-afe1" name="2x Rocket Pod" hidden="false" collective="false" import="true" targetId="8226-0211-2385-e6c3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="336a-de5d-2b41-ac7b" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="-15.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="339e-f40d-7522-d999" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+                <entryLink id="0ba5-75bf-cf3e-a3b7" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="6735-b6e7-4eb4-d072" name="HMG" hidden="false" collective="false" import="true" targetId="5400-40bd-bd89-83aa" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1e8-c40a-7627-f599" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f2-c4fd-cc2f-cb0b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1cbb-75c3-b3a3-a60b" name="2x AL-ATM" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="827d-8994-ef29-e972" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="bb9b-c8aa-b06f-2b12" name="AL-ATM" hidden="false" targetId="6a96-41b4-ad50-7e3e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1d4-a68a-3141-f218" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="489e-bd77-4e97-c7cb" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1f21-95ff-8aa1-f6e4" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff98-099e-fabb-4285" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4548-dd32-c9e3-0fe7" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8911-b44b-d6b1-de97" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-4367-80b4-51cb" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c3ae-82c1-e492-20d0" name="Republic Retribution Ground Attack Fighter" hidden="false" targetId="649e-8e1c-fd75-39dc" type="profile"/>
+                <infoLink id="e626-f7ca-482e-70e3" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="2c02-7852-7824-48ce" name="Rotary Autocannon with Tight Spread" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f298-0caa-860a-b663" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6213-4c3e-4ded-4303" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bf52-cc1d-3525-43e4" name="Rotary Autocannon" hidden="false" targetId="8e16-e649-b52a-29bd" type="profile"/>
+                    <infoLink id="b44d-2041-df95-13af" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                    <infoLink id="f322-268a-298b-529f" name="Tight Spread" hidden="false" targetId="d60c-55a0-0459-185e" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="2a70-6def-3b84-0b27" name="Weapon Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c004-5946-c448-6dc2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfb6-4128-e6aa-218d" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="96a5-fbb9-5258-7e1a" name="2x LAT-Cannon" page="" hidden="false" collective="false" import="true" targetId="ff1b-1a3b-7846-ccb3" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3347-ec27-a788-1c95" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="4bb8-f49b-001f-5d00" name="2x Rapid Laser" hidden="false" collective="false" import="true" targetId="bac6-1ecd-dab7-b7f7" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e13-6686-471e-87e9" type="max"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="6d39-37d0-b555-bae2" name="Weapon Options" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="effc-62f2-fc61-94b5" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d17-b8d0-fbf2-0269" type="min"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="8d61-a1cb-d3a9-2a1f" name="2x LAM" hidden="false" collective="false" import="true" targetId="4ed1-5961-88a1-ed27" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a8-eb39-4258-005b" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="9a1b-c7e0-00c6-20ae" name="2x Bomb Cluster" hidden="false" collective="false" import="true" targetId="74fb-d942-9a59-6e29" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b136-40f0-b7e8-7601" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                    <entryLink id="501b-3578-7eea-d26c" name="2x AL-ATM" hidden="false" collective="false" import="true" targetId="1cbb-75c3-b3a3-a60b" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f08d-e08e-95f3-3794" type="max"/>
+                      </constraints>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                      </costs>
+                    </entryLink>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="e3d7-1ad1-e8ab-d31e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+                <entryLink id="0c65-8732-10af-754c" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
+                <entryLink id="0bdb-27df-9cdf-5c5b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="170.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bac6-1ecd-dab7-b7f7" name="2x Rapid Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6149-01e9-3590-fe9a" name="Rapid Laser" hidden="false" targetId="5815-4e94-8a6c-796a" type="profile"/>
+        <infoLink id="8757-af5d-7c73-ab3e" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff1b-1a3b-7846-ccb3" name="2x LAT-Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ebcf-6fd5-59a6-f5ef" name="LATcannon" hidden="false" targetId="9ef3-152c-1dbb-c057" type="profile"/>
+        <infoLink id="3457-d6c3-ba26-14f1" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4ed1-5961-88a1-ed27" name="2x LAM" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6dd7-0d90-cc42-225b" name="LAM" hidden="false" targetId="fcc5-ece7-091a-1536" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="74fb-d942-9a59-6e29" name="2x Bomb Cluster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8cc0-5db6-11d7-5042" name="Bomb Cluster" hidden="false" targetId="2417-1f74-01fd-b5ef" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c0a-5903-01a8-f690" name="Republic Supremacy Tank" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="c815-61ee-8813-157a" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a79-f927-4673-9df9" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c815-61ee-8813-157a" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="239f-fc09-523c-ca3b" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f853-6c27-8dc6-6e3d" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" defaultSelectionEntryId="bcc0-e437-e0a1-5d23">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ba-4cd0-6551-1754" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bcc0-e437-e0a1-5d23" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f406-dc53-1d15-dc96" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efd-a78a-cca6-d9ee" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ec5d-4540-1800-dba0" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="965e-69fd-5271-fb4e" name="Republic Supremacy Tank" hidden="false" targetId="1f7b-fe5c-4436-170d" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="95e4-cc0d-2906-1fa3" name="4x LAT-Cannon and Dual HMG" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ec-a8d3-8065-db8f" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbbf-287f-9ed9-3acd" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="bf89-9331-e9de-8e2e" name="LATcannon" hidden="false" targetId="9ef3-152c-1dbb-c057" type="profile"/>
+                    <infoLink id="fbf6-6298-8e5d-7f2b" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
+                    <infoLink id="8ef9-cbc8-fbd4-1999" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+                    <infoLink id="659b-0be9-7d14-8525" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="6ed7-0163-64e0-39ec" name="Superior" hidden="false" collective="false" import="true" targetId="2163-3d43-af1b-a37a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34da-3b7b-7b3f-cc25" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2861-4179-87fe-1203" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="78b9-61ed-f163-f86d" name="Heavy Tank Gun" hidden="false" collective="false" import="true" targetId="7ca8-45ee-1a18-47c8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e5-b2c6-829b-dbeb" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb4-51c8-68b8-df32" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7b5b-b497-6b12-0ae7" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a0d-cfb6-7db4-83d1" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9569-9e60-41fe-9004" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="bd44-4ae9-fba8-d7b5" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a84-f047-b2ad-c9d2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffb6-1f5c-574b-9e4b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="500.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a79-f927-4673-9df9" name="Republic Supremacy Ground Attack Craft" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="ad0e-2cf6-f6cd-0f5f" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c0a-5903-01a8-f690" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad0e-2cf6-f6cd-0f5f" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="97e6-a144-1f06-4ccd" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ba44-44ef-0224-f83a" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fda-21a2-2761-da49" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3080-a0dc-7efa-89d4" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a18-fcc3-d764-d2bc" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6635-312b-ea0a-ff38" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f60a-e6d5-cc83-72e8" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+                <infoLink id="ab5e-2c15-f376-7037" name="Republic Supremacy Ground Attack Craft" hidden="false" targetId="1e0f-8b2e-2f88-6d02" type="profile"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="752e-e3fc-0bcc-4ce1" name="Defence Turret(Dual HMG)" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af3f-d0e7-5940-5301" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b37-0a2a-774e-5b83" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2948-c40a-ec9b-59ae" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
+                    <infoLink id="1816-d991-9898-d822" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+                    <infoLink id="7c44-f9f1-d923-3ebd" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="7f91-4b8b-e8a8-2314" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="392d-80d3-a4ef-d89a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47b-86e0-1984-c4d2" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f1f-21eb-f2ef-4905" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1326-48f5-c91e-08f0" name="Dual Rotary Cannon" hidden="false" collective="false" import="true" targetId="320b-39f4-e339-1c01" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81fc-1eec-ff0f-ee24" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f890-ede5-3f80-a806" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0bb5-1b5f-3795-5445" name="Bomb Cluster" hidden="false" collective="false" import="true" targetId="6503-2dc4-c489-9cef" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ce-555f-d97f-3751" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="363f-5205-cbdb-0acd" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="1362-0460-5403-99cd" name="3x Dual Autocannon" hidden="false" collective="false" import="true" targetId="4415-e125-1c16-52ae" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045f-8c66-ea3a-3436" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc3c-adee-6ee8-7f8b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="400.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4415-e125-1c16-52ae" name="3x Dual Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fae0-46b7-4675-4f2b" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+        <infoLink id="cede-f90a-8961-749c" name="Autocannon" hidden="false" targetId="d0e0-6450-0ef0-59ca" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4cc2-8d73-cebf-62b4" name="Specalist Weapons" hidden="false" collective="false" import="true">
@@ -3186,6 +4006,34 @@ Republic War Machine: Spend one (1) Faction Point:
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="dd0a-8e6d-4e5d-34c3" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0330-89d0-5a43-deff" name="Composed Pilot" hidden="false" collective="false" import="true" targetId="5f07-aad3-1013-a381" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59a5-1e4c-c5b8-eba7" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9604-773b-4c12-09ef" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1525-b7bd-a4a8-98a4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9e8b-b49f-283c-d368" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f035-bef9-a3a9-024d" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="1439-16f5-5910-5ee5" name="Platoon Leadership" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false">
@@ -3215,36 +4063,40 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f9a-2f79-5065-b651" name="Universal Carrier" publicationId="aae0-5552-35a8-74d6" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="7f9a-2f79-5065-b651" name="Universal Carrier" publicationId="aae0-5552-35a8-74d6" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(tracked, open)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">8/7</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">12</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">6</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="02b1-d2bc-9f88-a8e7" name="Republic Armoured Car" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="02b1-d2bc-9f88-a8e7" name="Republic Armoured Car" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(wheeled)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">8/7</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">12</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">10</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="4b1a-766b-8a25-2486" name="Republic IFV" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="4b1a-766b-8a25-2486" name="Republic IFV" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(tracked)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">9/7</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">12</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">12</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="8d78-44b3-ffe3-bc27" name="Republic VTOL Transport" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="8d78-44b3-ffe3-bc27" name="Republic VTOL Transport" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(VTOL)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">8</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">72</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">12</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
       </characteristics>
     </profile>
     <profile id="01f4-e398-7244-b88c" name="Soldier" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -3320,15 +4172,19 @@ Republic War Machine: Spend one (1) Faction Point:
     <profile id="1fd6-0577-0230-7c25" name="Scout Sentinel" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">7</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="34e5-37cb-b79e-7e69" name="Armoured Sentinel" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">8</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="6bc6-db1b-bb64-11a1" name="Telepath" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -3414,29 +4270,37 @@ Republic War Machine: Spend one (1) Faction Point:
     <profile id="02d9-8497-9813-22af" name="Assault Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">11/9</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/9</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="f12e-5d5d-d1cf-d65f" name="Battle Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">11/8</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="c30f-437d-583f-d36b" name="Flame Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">9/8</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="e82b-3fea-7ec2-c3e2" name="Artillery Vehicle" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">9/7</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="317e-4a99-0f73-cd78" name="Ogre" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -3467,6 +4331,78 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
         <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d5a8-14dc-a747-66e2" name="Republic Off-Road Buggy" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0119-6cda-bb5f-1144" name="Republic Air Superiority Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e1c1-1000-ecfe-720c" name="Republic Heavy Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="538e-2939-ed31-0af8" name="Republic VTOL Transport (Alternative)" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="be37-5576-663b-a534" name="Republic VTOL Gunship" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="649e-8e1c-fd75-39dc" name="Republic Retribution Ground Attack Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1f7b-fe5c-4436-170d" name="Republic Supremacy Tank" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">5</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/9</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e0f-8b2e-2f88-6d02" name="Republic Supremacy Ground Attack Craft" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">3</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
