@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -39,6 +39,13 @@ Grace in Exile: Spend one (1) Faction Point:
     <entryLink id="ed8d-1e32-1579-5bc3" name="Seelie Construct" hidden="false" collective="false" import="true" targetId="8c7e-92d8-3499-7592" type="selectionEntry"/>
     <entryLink id="0ca2-de40-2f73-fb9a" name="Fated" hidden="false" collective="false" import="true" targetId="3638-5733-4397-5803" type="selectionEntry"/>
     <entryLink id="2037-cbf3-f10e-2d06" name="Guided" hidden="false" collective="false" import="true" targetId="8365-ebe6-fbb4-0e5a" type="selectionEntry"/>
+    <entryLink id="2be4-7a4f-b483-1b64" name="Newsletter #1 Playtest point values" hidden="false" collective="false" import="true" targetId="ad72-1222-6940-8750" type="selectionEntry"/>
+    <entryLink id="7df0-3688-3b32-b159" name="Seelie Living God" hidden="false" collective="false" import="true" targetId="0d1c-a884-820e-c577" type="selectionEntry"/>
+    <entryLink id="6713-41da-a471-97c5" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a41-cb48-9561-0c79" type="max"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="d552-4fa1-0dee-6cbc" name="Seelie Avengers" hidden="false" collective="false" import="true" type="unit">
@@ -53,6 +60,13 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <selectionEntries>
             <selectionEntry id="41e7-a890-4590-cc83" name="Avenger" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3f2-0a3c-8516-e766" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f768-6266-5124-1dc9" type="min"/>
@@ -100,6 +114,11 @@ Grace in Exile: Spend one (1) Faction Point:
                 <modifier type="increment" field="823c-2f82-99f8-74dd" value="1.0">
                   <conditions>
                     <condition field="selections" scope="d552-4fa1-0dee-6cbc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5636-3a99-0e88-fa56" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="6.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -174,7 +193,7 @@ Grace in Exile: Spend one (1) Faction Point:
     </selectionEntry>
     <selectionEntry id="57ec-a6d9-0477-3f82" name="Move and Fire" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="8d6f-8852-b7d8-c34f" name="Move and Fire" hidden="false" targetId="4464-6c03-f1cd-ce5c" type="rule"/>
+        <infoLink id="8d6f-8852-b7d8-c34f" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -502,6 +521,13 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <selectionEntries>
             <selectionEntry id="2572-2abf-27ad-70ed" name="Defender" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad8-ab5f-90d9-8d84" type="max"/>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b0a-b143-9bf7-0c73" type="min"/>
@@ -539,6 +565,11 @@ Grace in Exile: Spend one (1) Faction Point:
                 <modifier type="increment" field="4467-a5d5-d9af-68d7" value="1.0">
                   <conditions>
                     <condition field="selections" scope="b537-9f9b-c6c6-0295" value="20.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0281-a02b-89c4-6954" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -589,6 +620,11 @@ Grace in Exile: Spend one (1) Faction Point:
                 <modifier type="increment" field="0a20-043a-662a-bd74" value="1.0">
                   <conditions>
                     <condition field="selections" scope="b537-9f9b-c6c6-0295" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5636-3a99-0e88-fa56" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="4.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -678,6 +714,13 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <selectionEntries>
             <selectionEntry id="e369-fc6d-64cf-a27c" name="Ranger" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0905-dc6e-3d6f-2ef7" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6d7-debb-14e2-e14c" type="min"/>
@@ -749,6 +792,11 @@ Grace in Exile: Spend one (1) Faction Point:
                 <modifier type="increment" field="f708-5980-7bc1-88ea" value="1.0">
                   <conditions>
                     <condition field="selections" scope="e2ca-9330-c081-3082" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5636-3a99-0e88-fa56" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -902,6 +950,13 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <selectionEntries>
             <selectionEntry id="6ea8-97aa-3c9d-2293" name="Jetbike with Dual Disc Catapult" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0555-d3df-b3f3-9a41" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98b2-c7ad-b673-5f2f" type="min"/>
@@ -941,6 +996,13 @@ Grace in Exile: Spend one (1) Faction Point:
               </costs>
             </selectionEntry>
             <selectionEntry id="c26b-cd1b-27ba-0321" name="Jetbike with Disc Cannon" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4f0-4c05-c092-a0c1" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfce-d167-a9ec-c9c2" type="min"/>
@@ -983,6 +1045,13 @@ Grace in Exile: Spend one (1) Faction Point:
               </costs>
             </selectionEntry>
             <selectionEntry id="ced8-a147-7d2f-6041" name="Jetbike with Heavy Rapid Laser" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed72-d2dd-2f0f-f9d6" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97df-9864-d872-2e66" type="min"/>
@@ -1039,6 +1108,11 @@ Grace in Exile: Spend one (1) Faction Point:
                 <modifier type="increment" field="7cf4-e40d-e58b-bfd7" value="1.0">
                   <conditions>
                     <condition field="selections" scope="3a6a-7377-b80a-7090" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5636-3a99-0e88-fa56" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1402,6 +1476,13 @@ Grace in Exile: Spend one (1) Faction Point:
               </costs>
             </selectionEntry>
             <selectionEntry id="b2c3-92d6-96b8-fd32" name="Eagle" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8db3-0650-af68-6976" type="max"/>
               </constraints>
@@ -1416,6 +1497,18 @@ Grace in Exile: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="5867-08e3-dacb-2cf0" name="Exfiltrate" hidden="false" collective="false" import="true" targetId="9e50-1436-b93c-7f40" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="24b5-d936-c8da-f634" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="5a6e-577d-2945-f175" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24b5-d936-c8da-f634" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a6e-577d-2945-f175" type="min"/>
@@ -1481,6 +1574,11 @@ Grace in Exile: Spend one (1) Faction Point:
                     <condition field="selections" scope="3637-18f4-c184-a7b7" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2c3-92d6-96b8-fd32" type="lessThan"/>
                   </conditions>
                 </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="3.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8962-c1ba-1335-3a6d" type="max"/>
@@ -1497,6 +1595,18 @@ Grace in Exile: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="87f0-33b1-1ba4-afac" name="Exfiltrate" hidden="false" collective="false" import="true" targetId="9e50-1436-b93c-7f40" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="915c-d770-07a0-e8eb" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="15d3-8128-aa95-5ba7" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="915c-d770-07a0-e8eb" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="15d3-8128-aa95-5ba7" type="min"/>
@@ -1654,6 +1764,11 @@ Grace in Exile: Spend one (1) Faction Point:
                     </conditionGroup>
                   </conditionGroups>
                 </modifier>
+                <modifier type="decrement" field="95b5-c653-a5e7-8869" value="6.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d90-adea-20e1-0e24" type="max"/>
@@ -1683,6 +1798,18 @@ Grace in Exile: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="eb24-181c-5526-fca4" name="Exfiltrate" hidden="false" collective="false" import="true" targetId="9e50-1436-b93c-7f40" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="ff18-05a4-f377-66d9" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="decrement" field="25c5-0210-93ba-2922" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25c5-0210-93ba-2922" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff18-05a4-f377-66d9" type="min"/>
@@ -2322,7 +2449,7 @@ Grace in Exile: Spend one (1) Faction Point:
               </constraints>
               <infoLinks>
                 <infoLink id="f3b7-a531-4121-1d57" name="Battlewalker" hidden="false" targetId="66f5-e3ac-21c7-81e4" type="profile"/>
-                <infoLink id="160d-d3d7-807d-2f19" name="Light" hidden="false" targetId="a431-90d3-3f53-8231" type="rule"/>
+                <infoLink id="160d-d3d7-807d-2f19" name="Vehicle(light)" hidden="false" targetId="a431-90d3-3f53-8231" type="rule"/>
                 <infoLink id="6306-f641-5b41-56f5" name="Vehicle(walker)" hidden="false" targetId="57dd-f324-dd55-8fce" type="rule"/>
               </infoLinks>
               <entryLinks>
@@ -2339,6 +2466,29 @@ Grace in Exile: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="f7d3-56c4-a662-dd45" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="1030-de19-7717-7101" type="selectionEntryGroup"/>
+                <entryLink id="e359-0d46-499d-a829" name="Assault Shield" hidden="true" collective="false" import="true" targetId="79e5-1354-4f31-c896" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="3dca-eb0f-1e14-d110" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="c90c-e3f4-8fa0-765e" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ad72-1222-6940-8750" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dca-eb0f-1e14-d110" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c90c-e3f4-8fa0-765e" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
@@ -3667,6 +3817,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <entryLink id="e02b-d87f-1d1d-8f5e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="92c1-aa99-95d3-0ef0" type="selectionEntryGroup"/>
         <entryLink id="744a-7d8b-e88b-1b08" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="e77b-d4b1-ed51-4322" type="selectionEntryGroup"/>
         <entryLink id="1686-23fe-5b48-f242" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="1030-de19-7717-7101" type="selectionEntryGroup"/>
+        <entryLink id="7332-76a5-6f89-25c7" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="429f-c6b3-e760-9515" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
@@ -4194,6 +4345,108 @@ Grace in Exile: Spend one (1) Faction Point:
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="ad72-1222-6940-8750" name="Newsletter #1 Playtest point values" publicationId="2863-26cb-0a2c-33a2" page="4" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="039f-d6b3-61fa-4b0c" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="537d-e83e-78f1-5803" name="New CategoryLink" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0d1c-a884-820e-c577" name="Seelie Living God" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a8e-5f56-4deb-7c06" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4927-0030-7f5c-3ca2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="268f-5bf2-0956-4868" name="Seelie Living God" hidden="false" collective="false" import="true" defaultSelectionEntryId="e945-e37c-fbad-7e6d">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bd9f-0ab9-2107-745c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="e945-e37c-fbad-7e6d" name="Seelie Living God" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="765d-3b4f-3a44-4742" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e3a-71e0-4b42-5e13" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c07e-1c79-ab28-5e2d" name="Seelie Living God" hidden="false" targetId="0165-0307-b616-83cb" type="profile"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="7b0a-e1fb-9959-252d" name="Superior" hidden="false" collective="false" import="true" targetId="2163-3d43-af1b-a37a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fa-0de2-67cf-372a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc7-5b46-02df-6d2d" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3fb1-5964-53f7-7ecc" name="Immune to suppression" hidden="false" collective="false" import="true" targetId="7407-a86d-63bc-3019" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0594-7b14-2af1-8174" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee15-9eef-3d68-d410" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="401d-9932-7d60-05dd" name="Bestow Loathing(18&quot;)" hidden="false" collective="false" import="true" targetId="43a6-8550-6f55-3be4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9498-9c6f-9255-482e" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e96-7f18-15f9-ecfd" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="ac68-9230-9130-9d84" name="Bestow Tough(+2) (12&quot;)" hidden="false" collective="false" import="true" targetId="42a6-a8c9-adaf-44bb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c37-412e-724e-90ff" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a857-5ef8-83f6-de79" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3b87-6343-a7a5-fdf2" name="Inflict Tough(0) (12&quot;)" hidden="false" collective="false" import="true" targetId="66ed-3039-1b42-fe58" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc1-d945-11a2-f6d7" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="345b-96e3-e00e-de71" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="b6e4-920c-232d-a026" name="Doomspear" hidden="false" collective="false" import="true" targetId="64d2-3bf2-a39c-811a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b478-6259-225f-b109" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7522-2f29-aa4a-e3c7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="400.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="64d2-3bf2-a39c-811a" name="Doomspear" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a1cc-3725-e405-e1bb" name="Doomspear" hidden="false" targetId="4913-232f-7633-4b48" type="profile"/>
+        <infoLink id="1622-af60-31a6-09c1" name="Assassin" hidden="false" targetId="6137-700d-31f3-d5f2" type="rule"/>
+        <infoLink id="6052-c68a-8bae-459e" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="e055-fa59-3a87-cd90" name="Support Weapons" hidden="false" collective="false" import="true">
@@ -4442,6 +4695,34 @@ Grace in Exile: Spend one (1) Faction Point:
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="429f-c6b3-e760-9515" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="02f7-db21-5cce-2f31" name="Composed Pilot" hidden="false" collective="false" import="true" targetId="5f07-aad3-1013-a381" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3fd-eda9-e5b4-e30c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d97b-ffc7-4ca0-2cd4" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f580-f9b0-4026-9614" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="e219-9e6a-3688-460c" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdf2-011f-f101-0d47" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="18eb-7045-7c38-41bc" name="Howler Mask" publicationId="aae0-5552-35a8-74d6" page="102" hidden="false">
@@ -4476,20 +4757,22 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f42-742f-7afc-f841" name="Seelie Shielded Transport" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="1f42-742f-7afc-f841" name="Seelie Shielded Transport" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(hover)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">9/8</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">12</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">12</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="f9a1-74b8-779a-19c3" name="Seelie Transport Tank" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="f9a1-74b8-779a-19c3" name="Seelie Transport Tank" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(hover)</characteristic>
-        <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">9/8</characteristic>
-        <characteristic name="Move" typeId="6516-438b-0a47-d4ab">12</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">6</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
     <profile id="08ed-4eb0-4ff7-3952" name="Seelie Defender" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -4595,8 +4878,10 @@ Grace in Exile: Spend one (1) Faction Point:
     <profile id="66f5-e3ac-21c7-81e4" name="Battlewalker" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">7 min 4</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">9</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7 min 4</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="271f-ec58-5756-0a08" name="Seelie Lancer" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -4652,15 +4937,19 @@ Grace in Exile: Spend one (1) Faction Point:
     <profile id="2deb-49d8-0791-5a6f" name="Seelie Hovertank" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">9/8</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">12</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
     <profile id="54c8-3450-f1fd-40f9" name="Seelie Aircraft" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">7</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">∞</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
     <profile id="caea-4c4c-6f7f-136c" name="Seelie Large Construct" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -4676,8 +4965,10 @@ Grace in Exile: Spend one (1) Faction Point:
     <profile id="dead-b4e7-bf4e-9513" name="Light Attack Vehicle" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(fleet, hover, light)</characteristic>
-        <characteristic name="Defence" typeId="0856-73ac-860b-c2f3">7</characteristic>
-        <characteristic name="Move" typeId="a61d-9a4d-ee19-f432">12</characteristic>
+        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
     <profile id="78a3-6399-4fe8-f3c2" name="Seelie Construct" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -4688,6 +4979,29 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
         <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0165-0307-b616-83cb" name="Seelie Living God" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">8</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4913-232f-7633-4b48" name="Doomspear" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (16)
+18&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">.
+hit(x3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2
++6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">.
+assasin, anti-air</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
