@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files in development
@@ -10,13 +10,13 @@ The Chambers
 The Mutant Menace
 The Scandinavian Commonwealth
 The Seelie Court
+The Unseelie Court
 
 Battle Factions in development:
 Chamber of Faith
 The Enclaves
 The Tide
 The Tide Cult
-The Unseelie Court
 The Nanite Resurrection
 
 Skirmishes added for evaluation</readme>
@@ -3542,6 +3542,405 @@ Skirmishes added for evaluation</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="f278-9413-53ee-98f0" name="Shatter Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="782c-c554-e214-d890" name="Shatter Cannon" hidden="false" targetId="bc0a-7844-5539-1e3e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f387-79dd-2101-232c" name="Pain Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0d94-0010-e78d-4203" name="Pain Rifle" hidden="false" targetId="64c1-7f9f-aec2-a8e1" type="profile"/>
+        <infoLink id="97e8-6650-587e-3af4" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7cc1-e036-503d-e0df" name="Dual Pain Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c029-8efa-69ad-fcbc" name="Pain Rifle" hidden="false" targetId="64c1-7f9f-aec2-a8e1" type="profile"/>
+        <infoLink id="afd2-eb07-e151-d6e4" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+        <infoLink id="0e2d-ad13-52b1-d1dc" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e668-7837-00a1-5137" name="Pain Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dcf9-05be-92e2-f5a3" name="Pain Cannon" hidden="false" targetId="4c69-1208-6770-967a" type="profile"/>
+        <infoLink id="524c-7d37-54a3-f0ad" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7d94-7b9c-91ca-71ee" name="Dual Pain Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7942-175b-7c13-ffa2" name="Pain Cannon" hidden="false" targetId="4c69-1208-6770-967a" type="profile"/>
+        <infoLink id="282f-18f5-d29b-a740" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+        <infoLink id="5774-2ef3-940d-1478" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0a9e-27fe-4b4f-133b" name="Pain Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d95a-47af-f4f6-4dac" name="Pain Pistol" hidden="false" targetId="bfc1-8400-c4c8-b3ae" type="profile"/>
+        <infoLink id="7413-f1cd-0c09-07bf" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="7f1a-6794-38a5-862d" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f24c-816e-9ae4-85a7" name="Alchemy Mystic(2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="254d-e35b-2513-859b" name="School Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3530-f785-806d-af5a" name="Light Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c789-36e2-b7ca-1557" name="Light Lance" hidden="false" targetId="af0d-34aa-76aa-5821" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d610-16f4-479d-7a09" name="Monofilament Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1243-8edc-813d-308c" name="Monofilament Gun" hidden="false" targetId="b624-4ed3-bd27-4fc8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9606-d970-5651-dcae" name="Vicious Basic CC" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="67a2-b1e8-f754-8acd" name="Vicious Basic CC" hidden="false" targetId="1513-7eea-b7e7-c4c4" type="profile"/>
+        <infoLink id="2d5f-9e9d-97ca-230d" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e02-73d4-3f5a-462c" name="Cult Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2d67-2bb7-598e-81aa" name="Cult Weapon" hidden="false" targetId="7e0c-bfca-9628-32f3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ab0-73a7-edf3-4dbc" name="Charge(3)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2a41-ecfe-6014-0860" name="Charge(distance)" hidden="false" targetId="0803-37eb-c60f-6786" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e337-a51c-e4fa-139f" name="Glaive" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4126-362f-b131-618d" name="Glaive" hidden="false" targetId="2de7-e213-c7a6-37a3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9be7-3070-bbed-2563" name="Mono Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37ad-27b4-b665-2217" name="Mono Sword" hidden="false" targetId="2673-ce10-d8b6-aa68" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1df-00a5-2c6d-c423" name="Ghostblast" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3707-21e4-168c-d7fe" name="Ghostblast" hidden="false" targetId="a2ce-424f-91a6-d969" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c59-a0e6-becd-7805" name="Dual Vicious Basic CC" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f287-1f7c-35c6-3e0e" name="Vicious Basic CC" hidden="false" targetId="1513-7eea-b7e7-c4c4" type="profile"/>
+        <infoLink id="76ff-2361-ce49-aec2" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="aeae-543e-94f5-327e" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e35d-2b80-6804-edda" name="Bonemaker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0179-b027-f055-88d9" name="Bonemaker" hidden="false" targetId="ad03-5234-b3ae-8199" type="profile"/>
+        <infoLink id="656a-f8ab-c1a8-9620" name="Calcification" hidden="false" targetId="6acb-386e-0ed4-e480" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="477a-6e47-85ab-777e" name="Cleave" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0318-57e8-7a15-fdbf" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e27-4f69-65f5-3b24" name="Superior Ambush" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e2fc-bc38-c070-dd12" name="Superior Ambush" hidden="false" targetId="39da-5e02-4dbb-7d09" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1a5c-6c42-d6f6-b4fd" name="Pain Pods" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="840c-ecb7-fcb0-e16c" name="Pain Pods" hidden="false" targetId="299c-d45d-2d80-fbaa" type="profile"/>
+        <infoLink id="dbe7-e3e7-f3a1-12db" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="da2e-4c9f-f848-6532" name="Improved Pain Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dcb2-bd36-fd8f-9bce" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="2e10-0d00-a550-cdb4" name="Improved Pain Carbine" hidden="false" targetId="10b3-2a31-c6ee-3734" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="336e-0ff9-6e88-dcd1" name="Stone Gaze" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e9d8-01d6-4b51-dec1" name="Stone Gaze" hidden="false" targetId="dbff-a75f-7a6f-62c4" type="profile"/>
+        <infoLink id="afb1-cf61-d27d-5d05" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2c3d-dfd4-704c-796f" name="Hard Target(modifier)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="68d4-87d3-5b38-29aa" name="Hard Target(modifier)" hidden="false" targetId="ddab-4ad2-1eec-3e93" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="adde-e40b-2628-65db" name="Hard Target(1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="df1d-56e6-52e5-d167" name="Hard Target(modifier)" hidden="false" targetId="ddab-4ad2-1eec-3e93" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a440-4511-b1e3-1554" name="Tentacles" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ef5d-cb42-6eb5-f1b9" name="Tentacles" hidden="false" targetId="825e-3d8c-cc18-f6b1" type="profile"/>
+        <infoLink id="f294-a029-0a77-9b5d" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec69-a792-7271-785d" name="Dual Light Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ceb5-6986-0d87-540c" name="Light Lance" hidden="false" targetId="af0d-34aa-76aa-5821" type="profile"/>
+        <infoLink id="9279-bfdb-b41d-8b02" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1703-876e-aebb-cf32" name="Thorn pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4302-6a5d-c440-27a4" name="Thorn pod" hidden="false" targetId="30b1-c4ef-b29f-265b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f0ea-86ea-8d0a-c0fb" name="Dual Thorn pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1b77-1a34-c25f-6417" name="Thorn pod" hidden="false" targetId="30b1-c4ef-b29f-265b" type="profile"/>
+        <infoLink id="cdd0-b316-db2c-1390" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="950e-859e-e5f4-cd7c" name="Disruption(18)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a78d-f7dd-c6d5-767b" name="Disruption(distance)" hidden="false" targetId="b8f3-772a-763e-0fae" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="57d6-2108-c11f-ccee" name="Terror(distance)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9939-3159-f7c2-42a4" name="Terror(distance)" hidden="false" targetId="69b0-111d-4397-1e05" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d06c-3d21-3de8-a4d4" name="Terror(12)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a914-87aa-2358-1497" name="Terror(distance)" hidden="false" targetId="69b0-111d-4397-1e05" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6557-0e56-9c4d-d205" name="ALM" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8457-d120-28dc-36f8" name="ALM" hidden="false" targetId="40ec-2add-3661-fffb" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a8e-c1b2-5584-ece5" name="HE-missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5320-ca22-27f7-3960" name="HE-missile" hidden="false" targetId="9c1e-4517-37f7-4caa" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8d55-6081-817b-ecef" name="Null Lance" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e2ac-54b6-347e-7564" name="Null Lance" hidden="false" targetId="071a-0b7a-2fcb-4679" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="779f-175c-22e2-26e3" name="Black Scythe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="83b6-81af-6e09-94f3" name="Black Scythe" hidden="false" targetId="23b1-fb28-87ea-3f02" type="profile"/>
+        <infoLink id="61b7-44ee-c24b-0638" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5533-1bd5-3662-9515" name="Null Mine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ea09-6fae-03a1-1e58" name="Null Mine" hidden="false" targetId="ac53-4b29-2a6c-60cf" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="23be-bc95-e2a1-94fc" name="Lance Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f68f-c3da-ec2e-1082" name="Lance Pistol" hidden="false" targetId="3d49-6f7f-2ab4-054e" type="profile"/>
+        <infoLink id="a1c5-ea7e-ec84-4afc" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d14b-0a72-9286-547b" name="Clone Field" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6baa-6bb9-29c0-1448" name="Clone Field" hidden="false" targetId="18ed-af94-5e84-a332" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="03b1-7781-5650-453d" name="Shadow Field" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b345-aa94-2e6e-fe50" name="Shadow Field" hidden="false" targetId="0a8b-cb55-4182-24a3" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b9f3-b65a-21e9-fb0c" name="Anguisher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6810-85d7-963b-1c57" name="Anguisher" hidden="false" targetId="de8f-9223-c7a4-a08b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="771c-87bd-02ae-3d47" name="Leader(2)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="058a-dd36-d519-8b6d" name="Leader (level)" hidden="false" targetId="12e4-34b1-36c8-e2f4" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ee5f-7b1a-c79b-3897" name="Bestow Charge(3&quot;)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="527a-789b-614b-f03a" name="Charge(distance)" hidden="false" targetId="0803-37eb-c60f-6786" type="rule"/>
+        <infoLink id="6a9b-9ee7-fb64-8a96" name="Bestow" hidden="false" targetId="b4bb-8878-b38a-a000" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -3970,6 +4369,56 @@ Unit removes level extra (own) action markers in endphase, as long as all models
     <rule id="6d4f-c49b-cca5-4385" name="Composed Pilot" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false">
       <description>Ignore rolls of ‘1’ on the vehicle damage table.</description>
     </rule>
+    <rule id="6acb-386e-0ed4-e480" name="Calcification" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
+      <description>Unit that has suffered a wound from this weapon takes regular hits equal to the Defence of the model that was allocated the wound.</description>
+    </rule>
+    <rule id="39da-5e02-4dbb-7d09" name="Superior Ambush" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated may deploy from staging, anywhere on the board (without action markers). Unit may not contribute towards holding scenario objectives.</description>
+    </rule>
+    <rule id="73d5-04b1-9b46-374c" name="Extra Strike(1)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
+      <description>Model has number extra attack dice with CC attacks.</description>
+    </rule>
+    <rule id="9860-ce1f-bfab-1fa1" name="Extra Strike(2)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
+      <description>Model has number extra attack dice with CC attacks.</description>
+    </rule>
+    <rule id="3691-00b1-12e3-4c0c" name="Charge(2)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>CC attacks have +distance range.</description>
+    </rule>
+    <rule id="7c92-fa16-ee47-4ebc" name="Charge(3)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>CC attacks have +distance range.</description>
+    </rule>
+    <rule id="544b-ec82-fc89-543c" name="Bestow Fanatic" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>All models in attached unit gains ability. If a range is specified, all models in units within range gains ability. 
+
+For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
+    </rule>
+    <rule id="ddab-4ad2-1eec-3e93" name="Hard Target(modifier)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>Incoming attacks vs this model receive modifier to hit.</description>
+    </rule>
+    <rule id="8aea-d244-06de-e187" name="Hard Target(1)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>Incoming attacks vs this model receive modifier to hit.</description>
+    </rule>
+    <rule id="aa0b-d00b-5aed-09e7" name="Oversized(1)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
+      <description>Wound(+number) and reach(+number) for CC attacks.</description>
+    </rule>
+    <rule id="6721-d6bf-3c74-4af1" name="Disruption(18)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>Enemies within distance may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    </rule>
+    <rule id="08a5-e6ab-7e0e-ac8f" name="Terror(12)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    </rule>
+    <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3)" hidden="false">
+      <description>All models in attached unit gains ability. CC attacks have +distance range.</description>
+    </rule>
+    <rule id="18ed-af94-5e84-a332" name="Clone Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
+      <description>Defence(min 6).</description>
+    </rule>
+    <rule id="0a8b-cb55-4182-24a3" name="Shadow Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
+      <description>Defence(min 6x2), lose field after first wound.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="de65-91da-25ce-abf1" name="Slugger" publicationId="aae0-5552-35a8-74d6" page="81" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
@@ -4121,6 +4570,7 @@ AT: heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="f530-c4f4-3c00-6f18" name="ATGM" publicationId="aae0-5552-35a8-74d6" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <comment>Anti Tank Guided Missile</comment>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
@@ -5679,6 +6129,7 @@ ignore cover(1), heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="6a96-41b4-ad50-7e3e" name="AL-ATM" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <comment>Air-launched Anti-Tank Missile</comment>
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
@@ -5739,6 +6190,226 @@ ignore cover(1), heavy</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(+1)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc0a-7844-5539-1e3e" name="Shatter Cannon" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (4) 36” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="64c1-7f9f-aec2-a8e1" name="Pain Rifle" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2) 24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c69-1208-6770-967a" name="Pain Cannon" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (4) 36” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bfc1-8400-c4c8-b3ae" name="Pain Pistol" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious, pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af0d-34aa-76aa-5821" name="Light Lance" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5, min 4+</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="b624-4ed3-bd27-4fc8" name="Monofilament Gun" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="1513-7eea-b7e7-c4c4" name="Vicious Basic CC" publicationId="81dd-fe5f-c233-17c5" page="99" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7e0c-bfca-9628-32f3" name="Cult Weapon" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2), vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="2de7-e213-c7a6-37a3" name="Glaive" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Jabs: CC (3)
+Mighty Swing: CC (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed
+.</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2
++4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="2673-ce10-d8b6-aa68" name="Mono Sword" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="a2ce-424f-91a6-d969" name="Ghostblast" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad03-5234-b3ae-8199" name="Bonemaker" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">min 2+ vs non vehicles</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">calcification</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="299c-d45d-2d80-fbaa" name="Pain Pods" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="10b3-2a31-c6ee-3734" name="Improved Pain Carbine" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dbff-a75f-7a6f-62c4" name="Stone Gaze" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">8&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">auto vs non-vehicles, non-massive</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="825e-3d8c-cc18-f6b1" name="Tentacles" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">first strike</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="30b1-c4ef-b29f-265b" name="Thorn pod" publicationId="81dd-fe5f-c233-17c5" page="99" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="40ec-2add-3661-fffb" name="ALM" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <comment>Air Launched Missile</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c1e-4517-37f7-4caa" name="HE-missile" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="071a-0b7a-2fcb-4679" name="Null Lance" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6, min 3+</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="23b1-fb28-87ea-3f02" name="Black Scythe" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">4” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5, min 4+</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ac53-4b29-2a6c-60cf" name="Null Mine" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">3” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6, min 3+</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3d49-6f7f-2ab4-054e" name="Lance Pistol" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5, min 4+</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="de8f-9223-c7a4-a08b" name="Anguisher" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
