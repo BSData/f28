@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -2218,8 +2218,6 @@ Mutant Momentum: Spend one (1) Faction Point:
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="582e-f9ef-76da-d077" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
-        <entryLink id="7fa8-bbe6-d4b8-0fe4" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
-        <entryLink id="b40f-54c9-d7bd-e92a" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="3b1e-71eb-97f5-5f9a" type="selectionEntryGroup"/>
         <entryLink id="b9ed-c6fb-f4a4-a687" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="2fbc-338d-3364-2369" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -3174,7 +3172,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3b1e-71eb-97f5-5f9a" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3b1e-71eb-97f5-5f9a" name="Upgrade Any Non-Aircraft Vehicle" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="6c84-e849-c16b-5128" name="Rugged" hidden="false" collective="false" import="true" targetId="9b50-2354-ba8a-833f" type="selectionEntry">
           <constraints>
@@ -3235,6 +3233,7 @@ Mutant Momentum: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="27eb-fd5d-19c7-8f4c" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
@@ -3243,6 +3242,7 @@ Mutant Momentum: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="9498-0665-95dc-200f" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
@@ -3251,6 +3251,7 @@ Mutant Momentum: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
