@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -3812,11 +3812,22 @@ Grace in Exile: Spend one (1) Faction Point:
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
+        <selectionEntryGroup id="86ca-8fc3-d67f-7593" name="Upgrade Unit" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="5486-9247-b429-30f3" name="Essence Stones" hidden="false" collective="false" import="true" targetId="c09c-703c-ccdc-409c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="450a-9606-f0c7-d37c" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="e02b-d87f-1d1d-8f5e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="92c1-aa99-95d3-0ef0" type="selectionEntryGroup"/>
-        <entryLink id="744a-7d8b-e88b-1b08" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="e77b-d4b1-ed51-4322" type="selectionEntryGroup"/>
-        <entryLink id="1686-23fe-5b48-f242" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="1030-de19-7717-7101" type="selectionEntryGroup"/>
         <entryLink id="7332-76a5-6f89-25c7" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="429f-c6b3-e760-9515" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
@@ -4657,7 +4668,7 @@ Grace in Exile: Spend one (1) Faction Point:
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="1030-de19-7717-7101" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="1030-de19-7717-7101" name="Upgrade Any Non-Aircraft Vehicle" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="0c9e-dc4c-8d60-7aad" name="Hologram-Protection" hidden="false" collective="false" import="true" targetId="b7e0-e179-d913-51fc" type="selectionEntry">
           <constraints>
@@ -4703,6 +4714,7 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="d97b-ffc7-4ca0-2cd4" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
@@ -4711,6 +4723,7 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="e219-9e6a-3688-460c" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
@@ -4719,6 +4732,7 @@ Grace in Exile: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
