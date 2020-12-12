@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -3135,7 +3135,6 @@ Republic War Machine: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="ddfc-a7b8-ac45-3720" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="9e29-8539-1ea0-c19d" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
                 <entryLink id="1c69-f01a-0d92-021b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
@@ -3184,7 +3183,6 @@ Republic War Machine: Spend one (1) Faction Point:
                   </constraints>
                 </entryLink>
                 <entryLink id="098d-50dc-9c68-47e8" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="f6ed-130c-aaeb-da9d" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
                 <entryLink id="2b79-b6c3-34a6-fa6f" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
@@ -3563,7 +3561,6 @@ Republic War Machine: Spend one (1) Faction Point:
               </selectionEntryGroups>
               <entryLinks>
                 <entryLink id="e3d7-1ad1-e8ab-d31e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="0c65-8732-10af-754c" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
                 <entryLink id="0bdb-27df-9cdf-5c5b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
               </entryLinks>
               <costs>
@@ -3967,7 +3964,7 @@ Republic War Machine: Spend one (1) Faction Point:
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="466b-1d85-dd37-e89d" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="466b-1d85-dd37-e89d" name="Upgrade Any Non-Aircraft Vehicle" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="501a-645e-6d37-c854" name="Armour Skirts" hidden="false" collective="false" import="true" targetId="07b1-eb19-fc7b-2c61" type="selectionEntry">
           <constraints>
@@ -4014,6 +4011,7 @@ Republic War Machine: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="9604-773b-4c12-09ef" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
@@ -4022,6 +4020,7 @@ Republic War Machine: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="9e8b-b49f-283c-d368" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
@@ -4030,6 +4029,7 @@ Republic War Machine: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
