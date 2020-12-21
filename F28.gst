@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files in development
@@ -7,6 +7,7 @@ Game system files in development
 Battle Factions completed:
 The Army of the Republic(s)
 The Chambers
+The Enclaves
 The Mutant Menace
 The Scandinavian Commonwealth
 The Seelie Court
@@ -14,7 +15,6 @@ The Unseelie Court
 
 Battle Factions in development:
 Chamber of Faith
-The Enclaves
 The Tide
 The Tide Cult
 The Nanite Resurrection
@@ -556,7 +556,7 @@ Skirmishes added for evaluation</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3e6b-b8cc-4735-9bf9" name="Special Entry" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3e6b-b8cc-4735-9bf9" name="+1 Special Entry" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e9f6-2021-fe1f-69b6" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
         <infoLink id="ba27-13a5-ea83-de9f" name="Special Entry" hidden="false" targetId="d168-b785-fb36-5a9d" type="profile"/>
@@ -569,7 +569,7 @@ Skirmishes added for evaluation</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3602-7848-97fd-f38a" name="Command Entry" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3602-7848-97fd-f38a" name="+1 Command Entry" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b44e-5313-a789-9654" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
         <infoLink id="7b1c-4fe6-e042-9091" name="Command Entry" hidden="false" targetId="acba-1acd-1b9c-a9e7" type="profile"/>
@@ -582,7 +582,7 @@ Skirmishes added for evaluation</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9c41-c9a2-5e03-009a" name="2 Additional Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9c41-c9a2-5e03-009a" name="+2 Upgrades" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="decrement" field="2744-00fe-78fa-f968" value="2.0"/>
       </modifiers>
@@ -755,10 +755,8 @@ Skirmishes added for evaluation</readme>
     <selectionEntry id="cf4c-062a-6a7c-525d" name="Lightning Hammer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a0f4-40f0-08a1-5a17" name="Lightning Hammer" hidden="false" targetId="7179-cab6-866e-56d6" type="profile"/>
+        <infoLink id="5de5-9ec9-9d65-68a7" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="86f5-9257-ff75-c8eb" name="Suppression(x2)" hidden="false" collective="false" import="true" targetId="2493-8559-610e-1874" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -2228,6 +2226,7 @@ Skirmishes added for evaluation</readme>
     <selectionEntry id="7511-33d9-caec-fd98" name="Man-Tank" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7bfd-f187-786a-11a6" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
+        <infoLink id="0d51-7ca0-f44f-8045" name="Defence(7)" hidden="false" targetId="1db8-e1bd-1a41-f01e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3941,6 +3940,220 @@ Skirmishes added for evaluation</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="adc5-7ea3-82eb-524d" name="Dark Arts Mystic(3)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25f3-2b88-4669-5dcf" name="school Mystic (level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b0ad-73d0-fd6b-b1e9" name="Weaken Defences" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c779-8e23-a587-dd76" name="Weaken Defences" hidden="false" targetId="6cc4-4016-fc17-f55d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8eeb-aa70-fe10-b1e6" name="Flexible Loadout" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bef7-9e59-603e-eae8" name="Flexible Loadout" hidden="false" targetId="5c45-758a-757f-10fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1434-9b5b-cad3-48fd" name="Multiple Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9bfb-a97f-8711-47d9" name="Multiple Rocket Pod" hidden="false" targetId="7d84-3a64-461f-be72" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb89-d8b1-3ee9-697a" name="SR Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="17d2-a119-c219-5d66" name="SR Plasma Cannon" hidden="false" targetId="45bf-679a-d441-58cf" type="profile"/>
+        <infoLink id="83e2-149e-5b0e-5830" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6a9e-9a35-4ce2-a47b" name="Gehenna Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e37d-431b-7d5b-d08b" name="Gehenna Autocannon" hidden="false" targetId="fdfd-766e-d9d8-9479" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="667c-363a-a40f-adaf" name="Hellflamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6042-d9ae-473a-0f7b" name="Hellflamer" hidden="false" targetId="8034-84b3-6f4e-ecba" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="73e7-80e9-b9f1-29b9" name="Self-Repair" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="042d-ab4d-2afd-6441" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="43ed-c083-9716-c5e1" name="Light Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7403-a056-9775-8ce0" name="Light Autocannon" hidden="false" targetId="ede4-d153-d70b-ac1d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cd10-6a4a-690e-8818" name="Dual Light Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7ac8-f5b9-20a6-29a6" name="Light Autocannon" hidden="false" targetId="ede4-d153-d70b-ac1d" type="profile"/>
+        <infoLink id="7cc5-fe64-1b66-8315" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b05e-14b1-00d1-66c2" name="Gehenna Bomb" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2a2e-2396-0fed-8d4d" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="59ff-88b9-0723-b1c5" name="Gehenna Bomb" hidden="false" targetId="4508-8dc1-ef72-5aea" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2676-b448-7fc8-3153" name="Death Amp" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cce6-fb33-4f61-f99a" name="Death Amp" hidden="false" targetId="aeae-60c2-13ef-ec73" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bd2d-e6cd-5a25-b82e" name="Death Bass" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37d4-d222-df40-c4f0" name="Death Bass" hidden="false" targetId="e53a-f5bf-ea75-2b6b" type="profile"/>
+        <infoLink id="3a91-f4bb-a68d-8728" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="e79e-4354-76d7-9767" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7fd-5d80-b462-a6d3" name="Death Guitar" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c331-b9a3-2ad3-2f7f" name="Death Guitar" hidden="false" targetId="589a-e24e-8904-48ff" type="profile"/>
+        <infoLink id="03d1-1332-7fdc-86f3" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="70ec-4ce2-75c1-753f" name="Sick Knife" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="283e-252a-bcaa-62a7" name="Sick Knife" hidden="false" targetId="4e20-5aca-1d47-9f25" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a99-d2d6-d6ee-9352" name="Pincer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9423-d42a-09d1-2ae1" name="Pincer" hidden="false" targetId="b696-4400-5ca0-04ab" type="profile"/>
+        <infoLink id="5436-6ab8-0b33-e975" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e985-ff5a-6011-4647" name="Sick Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a371-d66d-0e32-6762" name="Sick Sword" hidden="false" targetId="72e6-f4a5-870d-3b01" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0501-4890-0556-ea6b" name="Exposed" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="efda-2873-abd3-b2d3" name="Exposed" hidden="false" targetId="9fa7-1d71-daa0-d692" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6724-9e69-70c9-9d08" name="Cover(no)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="be48-f76c-fcdc-fd0a" name="Cover(no)" hidden="false" targetId="c53a-c2f1-5725-ed94" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9782-1d27-f622-11c4" name="Non-scoring" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="27ae-da8c-d6f7-4e85" name="Non-scoring" hidden="false" targetId="524d-a8fe-dcac-7b31" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3592-628b-b325-12cd" name="Sickmaw" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bf79-fb79-1349-cdb1" name="Sickmaw" hidden="false" targetId="33a5-19f0-8a49-355b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4fd-42b5-d39d-f762" name="Sickspew" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="30c3-130f-6a7f-73cb" name="Sickspew" hidden="false" targetId="8bba-49f1-dec2-bea5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d782-8ba2-4363-c7d7" name="Wings" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bad8-6ba4-64d1-1950" name="Move(jump)" hidden="false" targetId="e6da-4b9a-f775-4a57" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -3960,7 +4173,7 @@ Skirmishes added for evaluation</readme>
       <description>Inaccurate: if an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
     </rule>
     <rule id="e6da-4b9a-f775-4a57" name="Move(jump)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
-      <description>One move each turn gets distance 12” and ignores terrain.</description>
+      <description>One move each turn gets distance(12) and ignores terrain.</description>
     </rule>
     <rule id="3d1c-969c-f5f6-3fd1" name="Move(teleport)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
       <description>Ignore terrain when moving, enemies may only trace line of sight to where the unit starts or ends up during a turn.</description>
@@ -4030,6 +4243,7 @@ Unit removes level extra (own) action markers in endphase, as long as all models
       <description>Add Mystic level attack dice to the weapon’s attack, but gain Hazardous.</description>
     </rule>
     <rule id="8930-5d44-2b1d-39bd" name="School Mystic(level)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <comment>1</comment>
       <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
@@ -4073,7 +4287,7 @@ Example: Suppression(+X) – weapon causes +X suppression hits with attack, Supp
       <description>Counts as Open for CC purposes (May use vehicle move for CC attack).</description>
     </rule>
     <rule id="2f1b-db84-f609-dd5c" name="Wounds(+1)" publicationId="aae0-5552-35a8-74d6" page="118" hidden="false">
-      <description>Add (number ) to Wounds.</description>
+      <description>Add (number) to Wounds.</description>
     </rule>
     <rule id="c6e7-b546-f906-104b" name="Oversized(number)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
       <description>Wound(+number) and reach(+number) for CC attacks.</description>
@@ -4230,7 +4444,7 @@ Example: Suppression(+X) – weapon causes +X suppression hits with attack, Supp
       <description>May not be allocated wounds and does not count toward unit size. If all models in a unit has Insignificant, remove unit.</description>
     </rule>
     <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115," hidden="false">
-      <description>All models in attached unit gains Tough(1). If a range is specified, all models in units within range gains ability. </description>
+      <description>All models in units within range gains ability: Tough(1)</description>
     </rule>
     <rule id="1e59-8c45-4d6b-09f5" name="+1 Faction Point" publicationId="aae0-5552-35a8-74d6" page="" hidden="false">
       <description>Player get +1 Faction Point.</description>
@@ -4311,7 +4525,7 @@ Example: Suppression(+X) – weapon causes +X suppression hits with attack, Supp
     <rule id="6c58-2bc7-fde8-3325" name="Supremacy Assets" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false">
       <description>Supremacy Assets are best used in larger battles (1500+ points), as their presence might unbalance smaller games. If used, players may take a single Supremacy Asset from the list below belonging to the same faction as the rest of their force; counting as a special choice. They may not receive upgrades.</description>
     </rule>
-    <rule id="81b7-00c4-6dea-18b7" name="Superior*(scale)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+    <rule id="81b7-00c4-6dea-18b7" name="Superior" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>Unit is Massive (If not a vehicle).
 Unless the source has Superior at the same or greater scale (1 is default):
 ● Model may not be allocated action markers from sources other than attacks.
@@ -4398,7 +4612,7 @@ For every action marker you would allocate from suppression to this unit, it ins
     <rule id="8aea-d244-06de-e187" name="Hard Target(1)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>Incoming attacks vs this model receive modifier to hit.</description>
     </rule>
-    <rule id="aa0b-d00b-5aed-09e7" name="Oversized(1)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
+    <rule id="aa0b-d00b-5aed-09e7" name="Oversized(+1)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
       <description>Wound(+number) and reach(+number) for CC attacks.</description>
     </rule>
     <rule id="6721-d6bf-3c74-4af1" name="Disruption(18)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
@@ -4407,7 +4621,8 @@ For every action marker you would allocate from suppression to this unit, it ins
     <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
     </rule>
-    <rule id="08a5-e6ab-7e0e-ac8f" name="Terror(12)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+    <rule id="08a5-e6ab-7e0e-ac8f" name="Terror(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>w</comment>
       <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
     </rule>
     <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3)" hidden="false">
@@ -4418,6 +4633,144 @@ For every action marker you would allocate from suppression to this unit, it ins
     </rule>
     <rule id="0a8b-cb55-4182-24a3" name="Shadow Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
       <description>Defence(min 6x2), lose field after first wound.</description>
+    </rule>
+    <rule id="151b-ba7a-3c09-ef1a" name="Move(6)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(6&quot;) with each move.</description>
+    </rule>
+    <rule id="bb63-ae4b-ba4e-0fb7" name="Move(9)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(9&quot;) with each move.</description>
+    </rule>
+    <rule id="b8c7-794d-e013-bd45" name="Move(12)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(12&quot;) with each move.</description>
+    </rule>
+    <rule id="6cc4-4016-fc17-f55d" name="Weaken Defences" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>Enemy vehicles within 18” has Defence(-1).</description>
+    </rule>
+    <rule id="339a-9ac1-78f1-5e13" name="Dark Arts Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="f569-4d0d-0266-91a9" name="Dark Arts Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="fec4-8ea5-da41-9adf" name="Dark Arts Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="d7e2-f1d7-de0a-e02c" name="Smite Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="c58c-cde1-6fe5-fdf3" name="Smite Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="4bcc-8176-1a2c-550b" name="Smite Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="5c45-758a-757f-10fe" name="Flexible Loadout" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>May change options when activating.</description>
+    </rule>
+    <rule id="bf5a-e06b-380c-7824" name="Oversized(+2)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
+      <description>Wound(+number) and reach(+number) for CC attacks.</description>
+    </rule>
+    <rule id="9a48-86d4-c6ec-d969" name="Bestow Ignore Concealment(12&quot;)" publicationId="e42d-4466-8267-ac1b" page="115" hidden="false">
+      <description>All models in units within range gains ability: Unit does not suffer minus to hit from Concealment.</description>
+    </rule>
+    <rule id="cd2a-3652-c7c0-5459" name="Disruption(8)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>Enemies within distance may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="1bfa-80b0-674d-6cba" name="Self-Repair" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>Remove any damaged condition on model in endphase.</description>
+    </rule>
+    <rule id="190c-2504-f2b5-8e32" name="Regeneration(number)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Restore number of wounds to model in endphase.</description>
+    </rule>
+    <rule id="bf6a-987e-2ddb-ac2e" name="Regeneration(1, on 4+)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Restore number of wounds to model in endphase.</description>
+    </rule>
+    <rule id="873c-8ed6-de96-b859" name="Ambush(first activation)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>When activated may deploy from staging (without action markers), anywhere on the board, beyond 12” or in cover/out of LOS of enemy units. Unit may not contribute towards holding scenario objectives.</description>
+    </rule>
+    <rule id="c845-b3d5-d2a2-15c5" name="Wound(modifier)" publicationId="81dd-fe5f-c233-17c5" hidden="false">
+      <description>Attacks with this weapon receives modifier to wound.</description>
+    </rule>
+    <rule id="3072-004a-7874-4d08" name="Wound(+1)" publicationId="81dd-fe5f-c233-17c5" hidden="false">
+      <description>Attacks with this weapon receives +1 to wound.</description>
+    </rule>
+    <rule id="25f6-e792-afac-8a5a" name="Move(4)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(4&quot;) with each move.</description>
+    </rule>
+    <rule id="386a-74c7-a57a-f324" name="Defence(6 min 4)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model has Defence 6 min 4.</description>
+    </rule>
+    <rule id="a3cc-65ff-5819-fd55" name="Defence(7 min 5)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model has Defence 7 min 5.</description>
+    </rule>
+    <rule id="ce04-8c7d-6eac-f5e4" name="Defence(6 min 5)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model has Defence 6 min 5.</description>
+    </rule>
+    <rule id="aee4-8bcc-4161-ab77" name="Insertion(only)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>When activated may deploy from staging, anywhere on the board, beyond 2” of enemy units, with two (2) action markers.</description>
+    </rule>
+    <rule id="d83d-0b9a-4792-7e26" name="Hazardous Target(CC only)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Enemy weapons gain Hazardous when attacking this unit.</description>
+    </rule>
+    <rule id="c53a-c2f1-5725-ed94" name="Cover(no)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <description>Model does not benefit from cover.</description>
+    </rule>
+    <rule id="524d-a8fe-dcac-7b31" name="Non-scoring" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+      <description>This model doesn’t count its presence towards scoring objectives.</description>
+    </rule>
+    <rule id="9fa7-1d71-daa0-d692" name="Exposed" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
+      <description>If a target is Exposed, +1 to hit. Multiple sources of Exposed does not stack.</description>
+    </rule>
+    <rule id="e343-a722-51ef-9ab8" name="Defence(8 min 4)" hidden="false">
+      <description>Model has Defence 8 min 4.</description>
+    </rule>
+    <rule id="8c52-0946-f089-0c11" name="Fateweawing Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="dc57-13d6-d445-a242" name="Maelstrom Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="d18a-db54-94e4-7fac" name="Maelstrom Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="51e6-0db4-bfb6-0a7a" name="Maelstrom Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="70bb-33bf-4130-7bca" name="Fateweawing Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="48a3-ee80-7007-9749" name="Fateweawing Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="bac4-f369-253a-c8ff" name="Terror(9&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    </rule>
+    <rule id="7a9a-12f3-f41a-b238" name="Inflict Inaccurate(6&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <description>Enemy units within range suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -4457,13 +4810,13 @@ For every action marker you would allocate from suppression to this unit, it ins
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="c84c-c6ec-4f7d-c469" name="Heatgun" publicationId="aae0-5552-35a8-74d6" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="c84c-c6ec-4f7d-c469" name="Heatgun" publicationId="81dd-fe5f-c233-17c5" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (1, platebreaker) / 12&quot; (1)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(6&quot;)</characteristic>
       </characteristics>
     </profile>
     <profile id="5417-ed6b-b5cd-fe1f" name="LMG" publicationId="aae0-5552-35a8-74d6" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
@@ -4484,13 +4837,13 @@ For every action marker you would allocate from suppression to this unit, it ins
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="4639-cf60-56a9-1faf" name="Heat Cannon" publicationId="aae0-5552-35a8-74d6" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="4639-cf60-56a9-1faf" name="Heat Cannon" publicationId="81dd-fe5f-c233-17c5" page="75" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2, platebreaker) / 24” (2)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(12&quot;), heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="69fa-8ae0-b9ad-acf7" name="Plasma Cannon" publicationId="aae0-5552-35a8-74d6" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
@@ -4660,9 +5013,9 @@ AT: heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="acba-1acd-1b9c-a9e7" name="Command Entry" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
-    <profile id="d168-b785-fb36-5a9d" name="Special Entry" publicationId="aae0-5552-35a8-74d6" page="72" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
-    <profile id="6c13-8095-1473-20c8" name="2 Additional Upgrades" publicationId="aae0-5552-35a8-74d6" page="72" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
+    <profile id="acba-1acd-1b9c-a9e7" name="+1 Command Entry" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
+    <profile id="d168-b785-fb36-5a9d" name="+1 Special Entry" publicationId="aae0-5552-35a8-74d6" page="72" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
+    <profile id="6c13-8095-1473-20c8" name="+2 Upgrades" publicationId="aae0-5552-35a8-74d6" page="72" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Point"/>
     <profile id="06c6-c329-39be-374d" name="Plasma Pistol" publicationId="aae0-5552-35a8-74d6" page="81" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
       <characteristics>
         <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
@@ -6410,6 +6763,132 @@ Mighty Swing: CC (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7d84-3a64-461f-be72" name="Multiple Rocket Pod" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="45bf-679a-d441-58cf" name="SR Plasma Cannon" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fdfd-766e-d9d8-9479" name="Gehenna Autocannon" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="8034-84b3-6f4e-ecba" name="Hellflamer" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="ede4-d153-d70b-ac1d" name="Light Autocannon" publicationId="e42d-4466-8267-ac1b" page="43" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="4508-8dc1-ef72-5aea" name="Gehenna Bomb" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker, one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="aeae-60c2-13ef-ec73" name="Death Amp" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="e53a-f5bf-ea75-2b6b" name="Death Bass" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="589a-e24e-8904-48ff" name="Death Guitar" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4e20-5aca-1d47-9f25" name="Sick Knife" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="b696-4400-5ca0-04ab" name="Pincer" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="72e6-f4a5-870d-3b01" name="Sick Sword" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="33a5-19f0-8a49-355b" name="Sickmaw" publicationId="e42d-4466-8267-ac1b" page="43" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="8bba-49f1-dec2-bea5" name="Sickspew" publicationId="e42d-4466-8267-ac1b" page="43" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (D3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
   </sharedProfiles>
