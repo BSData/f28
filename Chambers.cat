@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="7" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
@@ -39,11 +39,19 @@ Chamber Tactics: Spend one (1) Faction Point:
     <entryLink id="4382-23df-1f1c-05ea" name="Insertion Capsule" hidden="false" collective="false" import="true" targetId="bc2d-f923-bf2f-1e3e" type="selectionEntry"/>
     <entryLink id="c352-d8af-6646-6d52" name="Light Hovercraft Transport" hidden="false" collective="false" import="true" targetId="e95c-458a-a89f-6cdb" type="selectionEntry"/>
     <entryLink id="8dfa-d97e-f068-a968" name="Commander" hidden="false" collective="false" import="true" targetId="8bb4-061c-4ffe-18ab" type="selectionEntry"/>
-    <entryLink id="fc87-0dc5-7d7a-cb95" name="Signed by JonnyHj" hidden="false" collective="false" import="true" targetId="de25-06ce-23fd-706e" type="selectionEntry"/>
+    <entryLink id="fc87-0dc5-7d7a-cb95" name="Greyport Armoury " hidden="false" collective="false" import="true" targetId="de25-06ce-23fd-706e" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d14d-a85b-54c9-db6e" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="99d3-c1a6-7cae-a7e7" name="Chamber Assault Transport - Lord at War" hidden="false" collective="false" import="true" targetId="e5b2-a2be-c253-5187" type="selectionEntry"/>
     <entryLink id="c45c-196b-0f1c-e5e7" name="Chamber Master" hidden="false" collective="false" import="true" targetId="afe4-a435-5d7a-78e5" type="selectionEntry"/>
     <entryLink id="fe69-3946-22e5-d4ea" name="Chamber Progenitor" hidden="false" collective="false" import="true" targetId="aa92-3392-c07a-25a0" type="selectionEntry"/>
-    <entryLink id="531e-d7c4-3da2-84d0" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry"/>
+    <entryLink id="531e-d7c4-3da2-84d0" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b32b-ee48-dcad-f950" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="9269-3f90-6c10-5d92" name="Chamber Ancient Interceptor" hidden="false" collective="false" import="true" targetId="58e5-1fef-18e7-56bd" type="selectionEntry"/>
     <entryLink id="4ea6-ce1a-36fa-8468" name="Chamber Interceptor" hidden="false" collective="false" import="true" targetId="ac1b-e729-db4e-045b" type="selectionEntry"/>
     <entryLink id="6a4f-4e0c-0d45-51eb" name="Chamber Angel Hunter" hidden="false" collective="false" import="true" targetId="0726-d35e-f232-6cf4" type="selectionEntry"/>
@@ -181,36 +189,30 @@ Chamber Tactics: Spend one (1) Faction Point:
               <infoLinks>
                 <infoLink id="2c98-3718-2718-8d16" name="APC" hidden="false" targetId="f615-80c8-817b-7cba" type="profile"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="c836-a8c7-e075-0c6f" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2346-6ed5-e025-4870" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="14f3-ca52-b9a0-896f" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="7a4a-c760-a912-a619" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="638e-9dd7-86f9-c8fd" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c735-eb8a-2265-4aff" type="min"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="e6bd-1475-469b-786b" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41d8-34e0-c7ca-37c2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e28-3805-9690-71dd" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="5aaa-e68d-54be-fe29" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="3145-12e9-b4bd-3dfc" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d53-a578-a6d5-1b64" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7390-e571-a0cc-2ce5" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="dcdf-73cc-2092-3567" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cda3-3e91-41ff-597f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19c3-d0aa-f8a9-9a73" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -242,45 +244,45 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="0a18-5d69-ffeb-faf7" name="Chamber IFV" hidden="false" targetId="1ab5-e287-4ec8-5eef" type="profile"/>
                 <infoLink id="631d-eef7-2120-9d7c" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="e4fc-b3d0-9860-7c1f" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6049-2a8a-c61e-6eff" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b12-8b48-3d3d-aea4" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="c9cf-6b79-8b14-c392" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="833b-93ed-6513-98f7" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="6fab-7768-555f-3712" name="Dual LATCannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2aa2-e269-26aa-bafe" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="5ffa-c387-54c0-c52f" name="Dual Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fbcb-ce07-d6d5-1ef9" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="79f6-ba60-792b-4114" name="Dual Heat Cannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="6fff-fbca-39a3-73b8" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56d1-e041-662e-10d9" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3609-2aa8-78e7-3d2e" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e53b-2f86-5826-22a6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a5-dae8-6de5-e57c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="c0d1-e4a8-49dc-8f5d" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785e-7fe5-8666-3522" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="5876-58c6-1727-7183" name="Dual LATCannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa0-fa6e-bb01-ec34" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0f18-853d-726c-b86d" name="Dual Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7346-6ed0-93f5-1e42" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="b318-d7de-a755-4b02" name="Dual Heat Cannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="6fff-fbca-39a3-73b8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f63e-fb8a-1772-63ce" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -310,47 +312,42 @@ Chamber Tactics: Spend one (1) Faction Point:
               </constraints>
               <infoLinks>
                 <infoLink id="1ae1-2aba-2628-a36a" name="Insertion Capsule" hidden="false" targetId="0f90-52c6-86ef-28a3" type="profile"/>
+                <infoLink id="5a1d-fc98-2de0-b03d" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="3317-b534-3e25-a661" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b2c-0ff6-9fc2-99ef" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe0f-e437-4ac1-8720" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="67f8-e0f5-f88a-9f42" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef1-99e8-5c70-f267" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="b4e7-3f51-79a1-44f1" name="Support Launcher" hidden="false" collective="false" import="true" targetId="07a3-370b-68ff-c413" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45f9-c565-9b6e-5b27" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="1591-f7f0-3dc4-348e" name="Insertion" hidden="false" collective="false" import="true" targetId="2407-b27f-2342-2046" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3db8-4eef-5937-eaa3" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b91-b490-1165-2ff5" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="dcc5-46cd-9dc9-a4c3" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b872-37b2-0a7a-65af" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28c3-94fb-0d33-9b4b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="23c0-6f38-71c8-933c" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df7a-a46b-d98a-452b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79aa-1f71-7bac-cb9a" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="b0a9-9037-c1ad-e202" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ddf-d674-3189-cb38" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="cc91-923f-f3da-45fb" name="Support Launcher" hidden="false" collective="false" import="true" targetId="07a3-370b-68ff-c413" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf93-457a-dc40-0ed1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="916f-e2d8-d34f-50bf" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5e0-499f-f1b8-7c90" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="288d-4886-d504-a3b4" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -525,7 +522,6 @@ Chamber Tactics: Spend one (1) Faction Point:
       <selectionEntryGroups>
         <selectionEntryGroup id="3770-8305-bfb5-dd5d" name="Chamber Tank" hidden="false" collective="false" import="true" defaultSelectionEntryId="0843-1b30-d717-4c4d">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d3c-7da4-715e-7adc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e21-eef5-c091-47be" type="min"/>
           </constraints>
           <selectionEntries>
@@ -538,56 +534,56 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="0e83-161b-8404-0f3f" name="Chamber Tank" hidden="false" targetId="27dc-c4e4-f61d-d892" type="profile"/>
                 <infoLink id="4052-2fe4-65ef-31f0" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="b3e4-51d0-8bf4-4bd0" name="Sponsons Weapons Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac6-fa61-fdc9-ba07" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d68a-8686-c694-1580" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="da95-cdaa-0c0f-12bd" name="2x HMG" hidden="false" collective="false" import="true" targetId="df56-6d7b-d18b-a6ad" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5135-834e-8605-80f7" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="878f-31a3-317d-0c09" name="2x LATcannon" hidden="false" collective="false" import="true" targetId="3fc4-2b9e-85d7-9f6c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad7a-fa2e-b4b9-4b33" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="4df9-3d9c-728e-08bc" name="Turret Weapon Options" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2ab-c5fd-4431-cfad" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5131-fe7d-d301-3112" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="c836-23b7-a5d0-fca8" name="Hicap Autocannon" hidden="false" collective="false" import="true" targetId="34b8-b1c9-c85e-f67b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3235-8633-c78e-02bd" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="d0cc-f7b9-ed77-49f2" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e492-3204-ba50-e411" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a17a-4d7e-d565-91b4" name="Turret Weapon Options" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1f8-cd77-b416-84f5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c22-62a0-5e07-ec9c" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="cad3-3315-7333-9718" name="Hicap Autocannon" hidden="false" collective="false" import="true" targetId="34b8-b1c9-c85e-f67b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d1-5d4e-ddac-6fc8" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0d54-4c80-8632-e3c6" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef9e-2a5a-2674-87c1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="56f1-7be3-cc4a-025a" name="Sponsons Weapons Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3fef-6e23-d1f3-b8ba" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a951-14d4-1260-3cd5" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="47f6-18db-fce1-2fe2" name="2x HMG" hidden="false" collective="false" import="true" targetId="df56-6d7b-d18b-a6ad" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75f7-790d-0a8d-accc" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="e7cd-ece4-888f-6f57" name="2x LATcannon" hidden="false" collective="false" import="true" targetId="3fc4-2b9e-85d7-9f6c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11e9-c1bf-de9b-b241" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1089,6 +1085,9 @@ Chamber Tactics: Spend one (1) Faction Point:
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
+              <entryLinks>
+                <entryLink id="6487-c2a9-0c77-7486" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="d18a-1941-f3b6-592c" type="selectionEntryGroup"/>
+              </entryLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -1099,7 +1098,6 @@ Chamber Tactics: Spend one (1) Faction Point:
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="ba34-2210-2194-8efd" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d458-f84e-ce85-3eac" type="selectionEntryGroup"/>
-        <entryLink id="da8e-486e-1480-8fe3" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="d18a-1941-f3b6-592c" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1708,7 +1706,6 @@ Chamber Tactics: Spend one (1) Faction Point:
       <selectionEntryGroups>
         <selectionEntryGroup id="4925-8332-a049-7f4a" name="Chamber Siege Tank" hidden="false" collective="false" import="true" defaultSelectionEntryId="ef1d-47fa-ac31-4198">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6bd1-4871-c0ef-10a2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0507-d845-93ea-f52e" type="min"/>
           </constraints>
           <selectionEntries>
@@ -1721,26 +1718,28 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="3d99-2766-2dee-e12a" name="Chamber Siege Tank" hidden="false" targetId="ddef-e9e7-574e-535a" type="profile"/>
                 <infoLink id="372b-2d12-8808-9be6" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="74a9-3331-ce01-bfc0" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c61-b90d-8b50-5fdf" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eac3-9ede-e2ec-8fdb" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="2014-d0cb-0d9d-8bfe" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8140-5501-c2aa-1446" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d1d-5d85-77b0-01a3" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f9e5-1ff5-db69-cf33" name="Weapon Options" hidden="false" collective="false" import="true">
+          <entryLinks>
+            <entryLink id="3933-be82-5fb4-a504" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cd3-aaa0-4462-01d7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c79a-361b-dff9-1828" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="599c-917c-73cc-fb94" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39c0-cde2-b45c-bef6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7430-e38d-c1df-c172" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2091,7 +2090,6 @@ Chamber Tactics: Spend one (1) Faction Point:
       <selectionEntryGroups>
         <selectionEntryGroup id="a137-ba0e-4c45-d7f0" name="Chamber Assault Transport" hidden="false" collective="false" import="true" defaultSelectionEntryId="c2ac-9bbf-0262-a7e2">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21b5-ff49-794c-dc1b" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1527-8896-c8e8-deab" type="min"/>
           </constraints>
           <selectionEntries>
@@ -2107,37 +2105,37 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="88b3-18c6-a611-fea7" name="Run and Gun" hidden="false" targetId="3a00-bfe1-1964-63ba" type="rule"/>
                 <infoLink id="f41c-e9e1-a4e2-d85a" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="74b9-3f6a-515e-7c4c" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f2d-0dfe-5f1e-04f2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="490a-a34f-4db5-f36a" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="d3d9-e31a-e7e6-c70a" name="Dual HMG, 2x Dual LATcannon" hidden="false" collective="false" import="true" targetId="a9d4-5c38-72d2-c03b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11d0-a7b5-fbfd-1524" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="467a-2370-ee02-8a63" name="Dual Rotary Cannon, 2x Slugger Rack" hidden="false" collective="false" import="true" targetId="169b-862f-7ec3-c12d" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49d4-381b-2802-c782" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="909d-55bc-16d5-8d48" name="Dual Rotary Cannon, 2x Enhanced Flamer" hidden="false" collective="false" import="true" targetId="e707-ae1f-16fb-cc97" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd37-351f-d80c-a552" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2efa-370d-8715-22a9" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="231b-27db-109b-95e7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f32-67b5-5582-4aeb" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="71be-8101-deee-1d86" name="Dual HMG, 2x Dual LATcannon" hidden="false" collective="false" import="true" targetId="a9d4-5c38-72d2-c03b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb95-5321-4d92-fac9" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="f7b1-7203-eb70-367c" name="Dual Rotary Cannon, 2x Slugger Rack" hidden="false" collective="false" import="true" targetId="169b-862f-7ec3-c12d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81e8-9e95-e6a0-cc26" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="40b9-6b1e-77a0-9f98" name="Dual Rotary Cannon, 2x Enhanced Flamer" hidden="false" collective="false" import="true" targetId="e707-ae1f-16fb-cc97" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="675a-46e8-93e9-1229" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2188,7 +2186,7 @@ Chamber Tactics: Spend one (1) Faction Point:
                   <modifiers>
                     <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
                       <conditions>
-                        <condition field="selections" scope="cb49-9f3b-b074-0836" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="72f9-8efc-aeb0-1706" type="equalTo"/>
+                        <condition field="selections" scope="cb49-9f3b-b074-0836" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e224-8d1d-00b9-dea8" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
@@ -2198,177 +2196,61 @@ Chamber Tactics: Spend one (1) Faction Point:
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink id="c877-3b64-229a-f51f" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
+                <infoLink id="26fc-4ed3-ac6c-bc85" name="Oversized(1)" hidden="false" targetId="aa0b-d00b-5aed-09e7" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="d20b-ffd1-ebf4-0a72" name="Left Weapon Option" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f49-b8b2-c025-9917" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7ca-f819-9c67-0d82" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="6485-7832-425d-f1b7" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="6485-7832-425d-f1b7" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56b9-9047-bd55-04e2" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="528f-f305-be4a-28b8" name="Rotary Cannon" hidden="false" collective="false" import="true" targetId="b45b-8f24-95fb-98d2" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="528f-f305-be4a-28b8" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9ab-490d-120b-6989" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="c63d-0ce5-bd04-e23e" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="00ba-a1ea-80a1-0deb" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="c63d-0ce5-bd04-e23e" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d286-1fb8-619a-9e5b" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="b132-3cb1-e748-d567" name="Heat Cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="b132-3cb1-e748-d567" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bc4-150d-cf97-7129" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="d42d-37d5-c32c-4b53" name="Dual Heavy Flamer" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="d42d-37d5-c32c-4b53" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bd-57b8-fa75-bb77" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="d62e-4db6-a3ac-3c23" name="Dual Missile Launcher" hidden="false" collective="false" import="true" targetId="ba73-f6bc-5814-1d97" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="d62e-4db6-a3ac-3c23" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="99aa-cad4-0855-317a" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="5b03-d3f8-48ba-4d7f" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="5b03-d3f8-48ba-4d7f" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df8b-537d-309d-09f9" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="b2ff-9a84-2796-1676" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="b2ff-9a84-2796-1676" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf57-1287-1dc7-0e0e" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="6cf2-7ca6-b4a0-f4c4" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="6cf2-7ca6-b4a0-f4c4" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6128-71bf-b820-cbec" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="f0be-eed6-6066-9041" name="Dual Missile Launcher with AA" hidden="false" collective="false" import="true" targetId="50f8-f5e1-7449-5893" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="f0be-eed6-6066-9041" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a1f-b055-9573-5a05" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="6a99-cabf-50e3-6fdd" name="Right Weapon Option" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab3a-b65d-8772-1c2c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1725-7645-af0f-9e40" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="4003-9c79-ded8-e543" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="4003-9c79-ded8-e543" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0691-a021-9ca5-41f0" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="f9b3-59ba-7330-0d1a" name="Rotary Cannon" hidden="false" collective="false" import="true" targetId="b45b-8f24-95fb-98d2" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="f9b3-59ba-7330-0d1a" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="93e0-67a0-1d7b-591c" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="dfd7-4791-d1e8-d500" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="00ba-a1ea-80a1-0deb" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="dfd7-4791-d1e8-d500" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b7c-9e82-b0f1-b050" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="ff06-5fa8-6b20-705d" name="Heat Cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="ff06-5fa8-6b20-705d" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e58-54e4-6970-9bbc" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="5dba-a766-8756-82de" name="Dual Heavy Flamer" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="5dba-a766-8756-82de" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2181-0607-3806-5d5e" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="b4c7-a1af-8e23-570b" name="Dual Missile Launcher" hidden="false" collective="false" import="true" targetId="ba73-f6bc-5814-1d97" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="b4c7-a1af-8e23-570b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d44-8d3c-6f46-e634" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="351d-e039-78b1-0a7c" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="351d-e039-78b1-0a7c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="461f-f06e-09be-90ad" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="6fb0-d81d-27f2-a117" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="6fb0-d81d-27f2-a117" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d917-7c14-b19c-2b02" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="67c3-2f87-9bd0-ed11" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="67c3-2f87-9bd0-ed11" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c29-a285-e05f-283d" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="d9b7-4638-50c7-87e0" name="Dual Missile Launcher with AA" hidden="false" collective="false" import="true" targetId="50f8-f5e1-7449-5893" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="d9b7-4638-50c7-87e0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d435-5789-a696-0023" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="f2f3-d4a5-b5c4-7da4" name="Walker Options" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="72f9-8efc-aeb0-1706" name="Wound  (+1)" hidden="false" collective="false" import="true" targetId="e224-8d1d-00b9-dea8" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdab-503a-46a5-52a1" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="2ef2-62c0-15b5-8d7e" name="Massive" hidden="false" collective="false" import="true" targetId="d909-4baf-70ff-c15a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35fc-f06d-a48b-e761" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f16e-a138-7485-91c8" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="71ea-9ac7-eb22-43b6" name="Oversized(+1)" hidden="false" collective="false" import="true" targetId="8dc3-6ccb-5122-46d4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdb0-65f7-2587-270c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61ac-4e75-55c3-25df" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b029-430c-7123-7cb6" name="Options" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="1275-78bb-eb6a-36b7" name="Wounds (+1)" hidden="false" collective="false" import="true" targetId="e224-8d1d-00b9-dea8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9da7-54ba-2efb-afa1" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="633a-7672-aee0-0b18" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b8f-d97c-6f5c-a6c6" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4485-2f9c-84ad-5336" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="a848-470f-7273-8f4a" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry"/>
+                <entryLink id="23bb-a955-2d6a-bb5f" name="Rotary Cannon" hidden="false" collective="false" import="true" targetId="b45b-8f24-95fb-98d2" type="selectionEntry"/>
+                <entryLink id="f778-c1bd-d831-e135" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="00ba-a1ea-80a1-0deb" type="selectionEntry"/>
+                <entryLink id="dad6-0e09-33d4-bd51" name="Heat Cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry"/>
+                <entryLink id="e009-120d-1941-01a4" name="Dual Heavy Flamer" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry"/>
+                <entryLink id="6a4a-524e-25ce-772f" name="Dual Missile Launcher" hidden="false" collective="false" import="true" targetId="ba73-f6bc-5814-1d97" type="selectionEntry"/>
+                <entryLink id="c88e-879e-07ed-7c10" name="Dual LATCannon" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="f362-b61b-03c7-943c" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry"/>
+                <entryLink id="57e2-fc30-c4bf-9743" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="2cef-207f-7612-21ea" name="Dual Missile Launcher with AA" hidden="false" collective="false" import="true" targetId="50f8-f5e1-7449-5893" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="e928-f3f3-ff17-7321" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="bd23-79d4-e1a2-fb93" type="selectionEntryGroup"/>
+            <entryLink id="8b1a-1fcf-6a0f-5673" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="bd23-79d4-e1a2-fb93" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -2378,7 +2260,7 @@ Chamber Tactics: Spend one (1) Faction Point:
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10bb-04dc-a85d-1277" name="Chamber VTOL Attack Craft" hidden="false" collective="false" import="true" type="unit">
@@ -2470,7 +2352,6 @@ Chamber Tactics: Spend one (1) Faction Point:
       <selectionEntryGroups>
         <selectionEntryGroup id="73bf-b9a0-355a-9523" name="Chamber Artillery Vehicle" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="919e-f109-06db-75d3" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9291-b962-eacf-03a7" type="min"/>
           </constraints>
           <selectionEntries>
@@ -2483,37 +2364,37 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="3df1-fa07-1e7e-355f" name="Chamber Artillery Vehicle" hidden="false" targetId="28b3-5300-3d00-7bfc" type="profile"/>
                 <infoLink id="d2f5-bcca-0e7b-faf5" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="dfb6-c214-5b28-cee7" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa33-00fe-197d-27b4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f34-233d-fa4c-7bbf" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="dfbb-b5f8-b46a-d2d1" name="Rocket Artillery system" hidden="false" collective="false" import="true" targetId="6a85-89e6-2b57-4378" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d83-b5da-f87a-1814" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="127f-faef-4088-4093" name="Guided missile launcher and Antiair" hidden="false" collective="false" import="true" targetId="8699-2c46-69fd-098c" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87b5-b91d-1e8a-0b23" type="max"/>
-                      </constraints>
-                    </entryLink>
-                    <entryLink id="fbdd-2cf5-7742-b51b" name="Dual Autocannon and Antiair" hidden="false" collective="false" import="true" targetId="78a3-c24b-2769-0125" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ec9-1813-b4e3-30c6" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="2e47-1d58-21e6-a8bd" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56ee-3cb5-ac51-8bcf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9e2-dbac-b255-b418" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3b9d-c960-2e31-045f" name="Rocket Artillery system" hidden="false" collective="false" import="true" targetId="6a85-89e6-2b57-4378" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e184-45ed-2f9e-21d6" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="34b0-cf81-3ffd-e04e" name="Guided missile launcher and Antiair" hidden="false" collective="false" import="true" targetId="8699-2c46-69fd-098c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4182-ae8d-26fd-b499" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="af0b-007b-e4a5-0e85" name="Dual Autocannon and Antiair" hidden="false" collective="false" import="true" targetId="78a3-c24b-2769-0125" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffc8-e7ad-cc50-4a23" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2743,11 +2624,7 @@ Chamber Tactics: Spend one (1) Faction Point:
         <infoLink id="7894-7c1d-d661-3858" name="APC" hidden="false" targetId="f615-80c8-817b-7cba" type="profile"/>
       </infoLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cf1a-5958-0f21-ac5a" name="Weapon Options" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f629-de49-0d9d-e867" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc93-164e-33b6-c655" type="min"/>
-          </constraints>
+        <selectionEntryGroup id="cf1a-5958-0f21-ac5a" name="Weapons" hidden="false" collective="false" import="true">
           <entryLinks>
             <entryLink id="e1d1-aeb4-d994-eef1" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
               <constraints>
@@ -2755,16 +2632,16 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="746c-9909-c9be-8198" type="min"/>
               </constraints>
             </entryLink>
+            <entryLink id="1cf6-f826-2295-de7a" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c1-e489-b043-d9a2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5f-5134-ff06-c65b" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="1385-e955-a8ce-d31c" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b78-f031-d98e-d314" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa70-3908-0223-6232" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="fa3d-a499-7032-d701" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="d18a-1941-f3b6-592c" type="selectionEntryGroup"/>
         <entryLink id="9cca-4255-9b4f-87ea" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d458-f84e-ce85-3eac" type="selectionEntryGroup"/>
       </entryLinks>
@@ -2825,6 +2702,7 @@ Chamber Tactics: Spend one (1) Faction Point:
       <comment>Transport (no category, no unit, no cost)</comment>
       <infoLinks>
         <infoLink id="8ae9-8e95-586b-5d36" name="Insertion Capsule" hidden="false" targetId="0f90-52c6-86ef-28a3" type="profile"/>
+        <infoLink id="a1f5-1f9d-b0a1-345c" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
       </infoLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="d88a-eb3e-05a4-5c59" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -2847,12 +2725,6 @@ Chamber Tactics: Spend one (1) Faction Point:
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9794-692f-f70d-f62c" name="Insertion" hidden="false" collective="false" import="true" targetId="2407-b27f-2342-2046" type="selectionEntry">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="861e-21c1-d6f5-4d60" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc47-9cbf-3f42-765e" type="min"/>
-          </constraints>
-        </entryLink>
         <entryLink id="af29-3d39-b6ec-43b4" name="Smoke Grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="afe4-71b2-d7f0-5844" type="max"/>
@@ -3283,6 +3155,7 @@ Chamber Tactics: Spend one (1) Faction Point:
       </costs>
     </selectionEntry>
     <selectionEntry id="e5b2-a2be-c253-5187" name="Chamber Assault Transport - Lord-at-War" hidden="true" collective="false" import="true" type="unit">
+      <comment>Base cost 125p, 4x Dual HMG 60p, Scanner 15p, Bestow Ignore Concelment 7p, Storm Slugger 3p.</comment>
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -3311,39 +3184,33 @@ Chamber Tactics: Spend one (1) Faction Point:
                 <infoLink id="8211-f2f0-6afc-2bec" name="Vehicle(assault)" hidden="false" targetId="6925-f42f-49a0-9042" type="rule"/>
                 <infoLink id="eb8d-6cbe-3e2f-5d14" name="Run and Gun" hidden="false" targetId="3a00-bfe1-1964-63ba" type="rule"/>
                 <infoLink id="9405-2627-49cd-0ea4" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="08be-f346-4874-58c2" name="Scanner" hidden="false" targetId="5b6a-3b36-9e52-2fa5" type="rule"/>
+                <infoLink id="b6ee-42c2-7c9f-3ea0" name="Bestow Ignore Concealment(12&quot;)" hidden="false" targetId="9a48-86d4-c6ec-d969" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="d15b-21c1-ab3a-e420" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06aa-8ffc-15a7-dc97" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9972-ee6b-7955-9aa2" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="c1f9-ce4a-e6f1-ffba" name="Scanner" hidden="false" collective="false" import="true" targetId="647c-b65e-f6c3-3ed3" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c859-5865-5563-5de4" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a0-7444-385d-5dbc" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="17bb-df66-f3cc-e247" name="4x Dual HMG" hidden="false" collective="false" import="true" targetId="7b2f-e040-63e8-3b96" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2c8-9fea-b2dc-e40b" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c62-4e28-cc69-5e8c" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="d5e1-f478-4530-d40f" name="Bestow Ignore Concealment(12&quot;)" hidden="false" collective="false" import="true" targetId="7b19-6223-ef4a-6bb4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd15-53dc-73e8-6f76" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1a3-6432-7bfe-8d53" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="210.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b242-d056-791b-3707" name="Weapon Options" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="1487-8724-59bd-f8f9" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ccb-480f-365f-4963" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac97-3c65-e07a-40ec" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="fe9f-d5fc-21e2-be8b" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da2f-8675-8ead-01ce" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe1a-e306-8c43-fae2" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -4154,6 +4021,7 @@ Chamber Tactics: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="bfc2-67c3-ec9b-01c3" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
@@ -4162,6 +4030,7 @@ Chamber Tactics: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="ef83-83ae-59af-664d" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
@@ -4170,6 +4039,7 @@ Chamber Tactics: Spend one (1) Faction Point:
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
