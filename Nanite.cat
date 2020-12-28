@@ -1,0 +1,2212 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<catalogue id="ab42-0171-ff50-7669" name="The Nanite Resurrection" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+  <readme>Force generation
+
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once)
+
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
+
+Faction Traits
+
+● No Rush: Units in this faction may not take the triple move action.
+
+● Unbending: Units in this faction receives a maximum of +1 cover bonus.
+
+● The Futility of Resistance: Spend one (1) Faction Point:
+
+- Assuming direct control: remove all remaining action markers from one (1) unit in endphase
+
+- The Rebel Metal: one (1) enemy vehicle immediately rolls on the damage table with -3
+
+- Back to Dust: return any one (1) friendly unit to staging</readme>
+  <entryLinks>
+    <entryLink id="841c-21f7-b142-ff1f" name="Nanite Trooper" hidden="false" collective="false" import="true" targetId="563d-f48b-b791-7772" type="selectionEntry"/>
+    <entryLink id="88e4-26b7-7628-1982" name="Nanite Eternal" hidden="false" collective="false" import="true" targetId="ae21-c918-4f96-c1e5" type="selectionEntry"/>
+    <entryLink id="cb77-0d5b-002d-1431" name="Hover-Trooper Squad" hidden="false" collective="false" import="true" targetId="26e0-8eb8-d67f-4abd" type="selectionEntry"/>
+    <entryLink id="974c-b9af-90a1-e758" name="Disassembler Swarm" hidden="false" collective="false" import="true" targetId="7462-929c-b9f8-6884" type="selectionEntry"/>
+    <entryLink id="ad9c-d2db-d1dd-4955" name="Nanite Mystic" hidden="false" collective="false" import="true" targetId="a43a-bb58-c266-1ea8" type="selectionEntry"/>
+    <entryLink id="c16b-3406-9ef5-153b" name="Nanite Close Combat Trooper" hidden="false" collective="false" import="true" targetId="cb53-d2b7-8d3e-9aca" type="selectionEntry"/>
+    <entryLink id="195c-5d31-c374-2834" name="Elite Jump Trooper" hidden="false" collective="false" import="true" targetId="d86d-ed82-7691-8516" type="selectionEntry"/>
+    <entryLink id="96f0-e1b2-e8f5-43c8" name="Nanite COIN-Specialist" hidden="false" collective="false" import="true" targetId="9a32-c0ba-6a8c-0d40" type="selectionEntry"/>
+    <entryLink id="f7b0-0398-8cc0-0ab0" name="Nanite Phase Beast" hidden="false" collective="false" import="true" targetId="0ddd-0fab-40e2-5014" type="selectionEntry"/>
+    <entryLink id="399f-f98c-a379-e812" name="Nanite Terror Trooper" hidden="false" collective="false" import="true" targetId="d442-dcfc-a378-91a9" type="selectionEntry"/>
+    <entryLink id="7a62-5071-72d1-26a5" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" targetId="8e88-5c8e-3b51-f97c" type="selectionEntry"/>
+    <entryLink id="372d-4d9f-8c43-437c" name="Nanite Jetbike" hidden="false" collective="false" import="true" targetId="c111-8704-4aeb-35c2" type="selectionEntry"/>
+    <entryLink id="a6d9-eb9a-db65-87ef" name="Nanite Attack Raft" hidden="false" collective="false" import="true" targetId="4890-0298-fdf6-16d8" type="selectionEntry"/>
+    <entryLink id="0553-3178-47df-29d6" name="Nanite Large Raft" hidden="false" collective="false" import="true" targetId="8b49-ccf3-bde6-f002" type="selectionEntry"/>
+    <entryLink id="e9ff-f814-f6d9-4a3d" name="Nanite Portal Pyramid" hidden="false" collective="false" import="true" targetId="f828-c4ef-8c08-8b25" type="selectionEntry"/>
+    <entryLink id="6b8d-ac19-9033-7289" name="Nanite Walker" hidden="false" collective="false" import="true" targetId="77a2-601d-c58a-8a4b" type="selectionEntry"/>
+    <entryLink id="d222-778c-2aae-cef2" name="Nanite Aircraft" hidden="false" collective="false" import="true" targetId="fdd5-318e-2c99-b236" type="selectionEntry"/>
+    <entryLink id="d6d3-b511-4748-1687" name="Contained Singularity" hidden="false" collective="false" import="true" targetId="958c-4609-2553-9e1b" type="selectionEntry"/>
+    <entryLink id="bf7f-610b-fba6-5fc6" name="Nanite Fabrication Unit" hidden="false" collective="false" import="true" targetId="17d7-c261-514e-41f4" type="selectionEntry"/>
+    <entryLink id="76df-906b-1587-14fa" name="Nanite Leader" hidden="false" collective="false" import="true" targetId="0521-20af-336b-3c2d" type="selectionEntry"/>
+    <entryLink id="ccec-14d7-dad2-04b1" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe1-6eb7-1af0-5a9b" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="cad8-e87d-fac2-434a" name="Nanite Singularity Mainframe Interdiction Mode" hidden="false" collective="false" import="true" targetId="7a25-d29f-2e5a-746e" type="selectionEntry"/>
+    <entryLink id="a4a0-03c0-ec58-5bdc" name="Nanite Singularity Mainframe Unleashed Mode" hidden="false" collective="false" import="true" targetId="419c-e4e9-9dc9-47a8" type="selectionEntry"/>
+  </entryLinks>
+  <sharedSelectionEntries>
+    <selectionEntry id="563d-f48b-b791-7772" name="Nanite Trooper" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="ad78-cf83-413c-e4f5" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="70c1-7e05-ac80-62b3" name="Nanite Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd8c-20f8-3d17-1604">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f58-d752-64c7-8317" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="dd8c-20f8-3d17-1604" name="Nanite Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eaa-e797-a9e9-9906" type="max"/>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f826-d595-24c4-73b7" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1c67-c0ac-12fb-6678" name="Trooper" hidden="false" targetId="e5e0-7aa6-3550-ec49" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="4, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="563d-f48b-b791-7772" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b6e6-260d-3088-77cf" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="dc7a-7cbf-2e92-ea17" name="Corrosion Rifle" hidden="false" collective="false" import="true" targetId="2753-327a-5ed0-e669" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="681c-2ae4-0374-62bf" type="max"/>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4a-66d1-0832-b84c" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6530-20b6-085b-ba0f" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="6dc8-8051-ca18-2ce9" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="da62-9cec-01ea-1aa2" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ae21-c918-4f96-c1e5" name="Nanite Eternal" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1f95-1f81-dcd3-6761" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="bfc3-714e-49da-0a64" name="Nanite Eternal" hidden="false" collective="false" import="true" defaultSelectionEntryId="71e4-f2ed-a065-fef8">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a21-fb7d-d507-adeb" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="71e4-f2ed-a065-fef8" name="Nanite Eternal" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6de1-6b59-ed01-e292" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b78-cc26-fa51-fcdf" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3114-ea84-af35-eaa4" name="Eternal" hidden="false" targetId="7e20-3894-e057-c7e4" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="ae21-c918-4f96-c1e5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="648c-6081-b866-7ddf" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="917d-71d4-ef21-1cf3" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="ae21-c918-4f96-c1e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71e4-f2ed-a065-fef8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="a665-1afe-7523-7609" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="ae21-c918-4f96-c1e5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="71e4-f2ed-a065-fef8" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="917d-71d4-ef21-1cf3" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a665-1afe-7523-7609" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e429-0e75-38e4-883a" name="Corrosion Blaster" hidden="false" collective="false" import="true" targetId="7077-9083-c826-3dd6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5fd-da5c-90a5-be9f" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5987-8620-697c-af85" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="9d81-010e-b152-c259" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="277e-a856-4b56-1ca9" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="26e0-8eb8-d67f-4abd" name="Hover-Trooper Squad" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="d67c-c1af-c7f4-c64b" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cf5a-f750-a4df-89b3" name="Hover-Trooper Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc0f-5d9a-2396-a3e2">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="120a-b938-1f9b-0dd6" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bc0f-5d9a-2396-a3e2" name="Hover-Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9a9-dee4-c9a0-51f8" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd85-80a4-7aac-e15a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b85c-aa35-784a-0e7b" name="Hover-Trooper" hidden="false" targetId="bfc7-941f-e64b-e54c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="26e0-8eb8-d67f-4abd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="3044-6d25-875f-cd01" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d4d2-9def-efb0-253f" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="6477-a8fd-33cc-2ee8" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="26e0-8eb8-d67f-4abd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc0f-5d9a-2396-a3e2" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="0055-5d86-3d8a-e23f" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="26e0-8eb8-d67f-4abd" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc0f-5d9a-2396-a3e2" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0055-5d86-3d8a-e23f" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6477-a8fd-33cc-2ee8" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2558-50c8-421d-8640" name="Corrosion Cannon" hidden="false" collective="false" import="true" targetId="b649-ceb2-5ae1-5b18" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e5ba-3c07-f328-64d7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="63c5-d028-b700-69ed" name="Heavy Corrosion Cannon" hidden="false" collective="false" import="true" targetId="d299-f952-957f-2351" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="9dfd-c273-1b81-564a" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="26e0-8eb8-d67f-4abd" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="bc0f-5d9a-2396-a3e2" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dfd-c273-1b81-564a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8ac6-7655-b262-612e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="38a4-3cfa-a8b4-8b68" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="92ca-fbd6-53f3-c74e" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7462-929c-b9f8-6884" name="Disassembler Swarm" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="4ee4-5323-c6d7-07a4" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="d808-ca74-6c4f-8e27" name="Disassembler Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="65e1-a293-61b4-2ae4">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa2-f9d8-af4e-1a6c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="65e1-a293-61b4-2ae4" name="Disassembler Swarm" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="717b-e3ee-8061-0db1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2414-0e2d-ddf3-39ab" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d288-1dbb-5212-8bc2" name="Disassembler Swarm" hidden="false" targetId="31ef-8a80-1a49-ae6c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="2, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="7462-929c-b9f8-6884" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="3eaf-1aa8-bbe2-8600" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
+                <infoLink id="4b64-d52a-85b4-a636" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="359a-b105-d2ae-c995" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="0b26-a936-21c2-68f4" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="7462-929c-b9f8-6884" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e1-a293-61b4-2ae4" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="11ff-9c6c-0a14-ae83" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="7462-929c-b9f8-6884" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="65e1-a293-61b4-2ae4" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11ff-9c6c-0a14-ae83" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b26-a936-21c2-68f4" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5445-b188-380f-9235" name="Simple Corrosive CC" hidden="false" collective="false" import="true" targetId="fc32-6455-4726-0248" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c7b-50f6-6ffe-9d5e" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="2ebb-4185-cc0c-2589" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="8d3f-2afe-3354-5dbc" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="9ecb-97f3-5336-44c5" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a43a-bb58-c266-1ea8" name="Nanite Mystic" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="16e4-864f-9f79-cac9" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
+        <categoryLink id="2f75-765b-90b7-984e" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c123-7233-ecf9-35ee" name="Nanite Mystic" hidden="false" collective="false" import="true" defaultSelectionEntryId="f03f-d194-7705-08bf">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ba6-6c19-9eab-3ae3" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f03f-d194-7705-08bf" name="Nanite Mystic" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ac5-6e2c-702c-f9da" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bab-34e5-9b11-4c59" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a7de-6fda-41c5-5277" name="Nanite Mystic" hidden="false" targetId="af33-5230-ac3e-d3ab" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="a43a-bb58-c266-1ea8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="8770-8c96-d455-8800" name="Light Arts Mystic(2)" hidden="false" targetId="f0db-a2f0-3e64-31ad" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="45.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="9fff-5c3f-91ed-da42" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="dddc-aea4-ac92-c3c8" name="Lumen Staff" hidden="false" collective="false" import="true" targetId="6e1b-8693-2d25-6b06" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b3-6f0c-fa0b-34c2" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b07-db22-5fb7-3140" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8cbb-0957-1007-a08c" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="a4d7-f38f-f2c8-9839" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="910c-59fb-d888-a04c" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cb53-d2b7-8d3e-9aca" name="Nanite Close Combat Trooper" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="257a-2e16-1e4f-a3eb" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f391-ad5a-1e87-73ae" name="Nanite Close Combat Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="ccbf-21b7-156d-3171">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cbb-b7e3-c1df-512e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ccbf-21b7-156d-3171" name="CC Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e1c-e052-6d53-29d3" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79a7-8912-1470-f1a8" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4fda-6bb3-023e-bf8e" name="CC Trooper" hidden="false" targetId="61d4-102e-e582-101e" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="cb53-d2b7-8d3e-9aca" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="daa7-2829-cd07-5c58" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="7842-44bc-ebc3-d96d" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="cb53-d2b7-8d3e-9aca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ccbf-21b7-156d-3171" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="a742-e426-c5f4-bdc3" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="cb53-d2b7-8d3e-9aca" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="ccbf-21b7-156d-3171" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7842-44bc-ebc3-d96d" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a742-e426-c5f4-bdc3" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="55b0-d4fc-fbab-9057" name="Battlescythe" hidden="false" collective="false" import="true" targetId="d5c6-488a-e4db-e048" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="127d-6d63-1c4e-784d" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="d1cd-79b0-78fe-9a73" name="Energy Sword and Combat Shield" hidden="false" collective="false" import="true" targetId="f6ab-be13-7c6c-c17d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3af0-faed-4c2d-e24e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6884-4c95-f40b-4f97" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="ce25-c4be-ff05-b2c9" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="0026-c882-3ee1-879a" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f6ab-be13-7c6c-c17d" name="Energy Sword and Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bae8-466a-80b4-1fbc" name="Energy Sword" hidden="false" targetId="5908-bb28-058c-7727" type="profile"/>
+        <infoLink id="0fcb-c3bc-a8d0-fd2c" name="Combat Shield" hidden="false" targetId="33b3-ed42-3ea2-d606" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d86d-ed82-7691-8516" name="Elite Jump Trooper" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="c950-e137-40f8-a272" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="11cf-0286-f70c-57bd" name="Elite Jump Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1002-63ab-4d8b-7bcc">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9741-d1db-a87c-126a" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1002-63ab-4d8b-7bcc" name="Elite Jump Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1844-650e-981b-ca9a" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4391-6b5e-7aab-5532" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9bc3-4acd-ef95-5998" name="Elite Jump Trooper" hidden="false" targetId="e220-d9dd-d7ca-88a5" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="d86d-ed82-7691-8516" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="d58b-cec7-79af-4f8e" name="Move(jump)" hidden="false" targetId="e6da-4b9a-f775-4a57" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="acee-ea6c-13c6-e3ad" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="3f2e-1c1e-cb48-4272" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="d86d-ed82-7691-8516" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1002-63ab-4d8b-7bcc" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="1bae-c7a8-a5c7-cf14" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="d86d-ed82-7691-8516" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1002-63ab-4d8b-7bcc" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2e-1c1e-cb48-4272" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bae-c7a8-a5c7-cf14" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="de12-90ad-3bfb-2da8" name="Rod of Convention" hidden="false" collective="false" import="true" targetId="5caa-a74a-186d-eecf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ea5-9348-8eb6-44d9" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="08ad-e149-3b88-20e3" name="Energy Sword and Combat Shield" hidden="false" collective="false" import="true" targetId="f6ab-be13-7c6c-c17d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b52-c613-73e7-d3fe" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="752a-d3e6-ffca-b875" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="83ea-9eac-76ac-0c47" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="5972-1b3b-659b-ba17" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ed0-280d-4071-4433" name="Energy Sword and Matter Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4386-7fde-94e2-2204" name="Energy Sword" hidden="false" targetId="5908-bb28-058c-7727" type="profile"/>
+        <infoLink id="f0ee-1e2c-5099-fceb" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="684b-dbed-5d73-6879" name="Matter pistol" hidden="false" targetId="1e1e-316a-499b-5f35" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a32-c0ba-6a8c-0d40" name="Nanite COIN-Specialist" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="f4c6-bd8d-3306-151c" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cb5d-8ecd-c6ba-d376" name="Nanite COIN-Specialist" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc62-381f-8668-902b">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="158a-52e2-2b0a-7537" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bc62-381f-8668-902b" name="COIN-Specialist" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ab-68dd-4b3f-5641" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c48f-0015-2755-5d77" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d81f-045d-204b-4db5" name="COIN-Specialist" hidden="false" targetId="0781-b6e7-fe93-73b9" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="9a32-c0ba-6a8c-0d40" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="6b93-99dc-d745-7598" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
+                <infoLink id="cd15-b2e1-e792-f9ed" name="Counter-Insertion" hidden="false" targetId="2df1-44df-ca9d-3ac3" type="rule"/>
+                <infoLink id="664d-0f58-f6eb-2216" name="Priority(vital Strike, hit(re-roll))" hidden="false" targetId="a6cb-3375-ee7a-c762" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d2f8-3d55-d721-f764" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="5dd1-0e9c-e17d-6415" name="Disintegrator Rifle" hidden="false" collective="false" import="true" targetId="d962-af2c-2735-3cbe" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649d-35f4-7b10-a17f" type="max"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef9-5d6c-09d2-e775" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="4190-7a0c-d2dd-2619" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="a881-732f-fc22-18c1" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="a8dd-6b70-2238-c4e5" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d442-dcfc-a378-91a9" name="Nanite Terror Trooper" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="e866-33a3-1189-2483" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="71c0-1cba-f38e-5361" name="Nanite Terror Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="f922-09dd-b27d-0c6f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e55-b6f3-5b97-edfd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f922-09dd-b27d-0c6f" name="Terror Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f86-2a08-78fd-4eff" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8603-aa26-aa97-83f9" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="af3f-8ca9-b4ab-f774" name="Terror Trooper" hidden="false" targetId="c8d0-2aaf-81e2-a71f" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="4, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="d442-dcfc-a378-91a9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="8461-4d08-4048-12ea" name="Repel(2)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="14.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="910d-306b-819d-fa39" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="ae27-58bf-01da-e33a" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="d442-dcfc-a378-91a9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f922-09dd-b27d-0c6f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="6be2-f1ba-c374-8a9e" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="d442-dcfc-a378-91a9" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f922-09dd-b27d-0c6f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6be2-f1ba-c374-8a9e" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae27-58bf-01da-e33a" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5447-8564-b1d0-dd97" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" targetId="c02b-f217-0c54-ccf6" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2906-b750-e92c-e68e" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6a1e-2be1-8dc8-29d8" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e8-925a-6e29-24e6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5972-f085-dea4-0aed" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="7c19-c8e7-58a0-cdf8" name="Infiltrate" hidden="false" collective="false" import="true" targetId="d153-e2c5-7ae1-8075" type="selectionEntry"/>
+                <entryLink id="65c2-ae61-b964-c4f4" name="Insertion" hidden="false" collective="false" import="true" targetId="2407-b27f-2342-2046" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d5a9-a61d-fd76-019f" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="c0d2-a508-6152-1e4c" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="a31a-8d07-388a-af62" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0ddd-0fab-40e2-5014" name="Nanite Phase Beast" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="a48e-d12a-33b4-904c" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="327e-e925-023d-697e" name="Nanite Phase Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="6d5c-d5db-6be6-1530">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0e9-e309-cbcc-6089" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6d5c-d5db-6be6-1530" name="Phase Beast" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e45d-b4d0-be26-3e7c" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6171-d084-f02b-1aa1" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fb9a-dc2c-b99a-4762" name="Phase Beast" hidden="false" targetId="1c4a-341c-b6d2-b98d" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="min 4">
+                      <conditions>
+                        <condition field="selections" scope="0ddd-0fab-40e2-5014" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="a794-16d3-a021-67c2" name="Move(teleport)" hidden="false" targetId="3d1c-969c-f5f6-3fd1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="81a7-bf13-69f7-8447" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="489d-5a8d-8e5e-2966" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="0ddd-0fab-40e2-5014" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d5c-d5db-6be6-1530" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="b681-315e-b792-74ec" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="0ddd-0fab-40e2-5014" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6d5c-d5db-6be6-1530" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="489d-5a8d-8e5e-2966" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b681-315e-b792-74ec" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="e22d-73e8-4ebf-64fc" name="Tentacles" hidden="false" collective="false" import="true" targetId="a440-4511-b1e3-1554" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d30c-15cd-ff14-427d" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="b25c-5618-8285-d4e5" name="Teleport Blaster" hidden="false" collective="false" import="true" targetId="9a44-bdc4-0f1d-dbdd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c4f-a164-593f-9505" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="1ad8-6d17-6039-5082" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="94de-53c5-5e47-f8b0" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="6a61-82bc-b1ae-e45f" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e88-5c8e-3b51-f97c" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="5855-45ca-6e9b-b7a9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="false"/>
+        <categoryLink id="7cb0-145a-0b61-09d2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="e21e-33de-4d32-7089" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d6e-4d59-7503-6b3f">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fdf-7bf1-34d3-d014" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1d6e-4d59-7503-6b3f" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899d-be35-e385-5992" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="177b-0839-3c0a-a6f4" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="0043-40ad-7762-f438" name="Heavy Hover-Trooper" hidden="false" targetId="3803-4488-463d-e966" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="8e88-5c8e-3b51-f97c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="8cc4-533a-8ff4-d6be" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="45.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="c8b0-89cc-8f78-468f" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="0d67-ee83-c158-d360" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="8e88-5c8e-3b51-f97c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d6e-4d59-7503-6b3f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="ee23-69a4-416e-272f" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="8e88-5c8e-3b51-f97c" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="1d6e-4d59-7503-6b3f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d67-ee83-c158-d360" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee23-69a4-416e-272f" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="99b2-964f-10a0-122e" name="Heavy Corrosion Cannon" hidden="false" collective="false" import="true" targetId="d299-f952-957f-2351" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bb3-c612-557a-cc68" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5ae8-d1fd-e770-fedf" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="7179-7541-297f-2ab8" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="dcd4-7b70-736c-303f" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c111-8704-4aeb-35c2" name="Nanite Jetbike" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="fe72-4f72-b2cc-4a58" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="b671-72e5-3aee-9cd1" name="Nanite Jetbike" hidden="false" collective="false" import="true" defaultSelectionEntryId="3bcd-9ec2-6baf-02ff">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdbf-e5b8-b158-f92e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="3bcd-9ec2-6baf-02ff" name="Jetbike" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52e8-e3eb-9485-537d" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bb7-82d6-2fd5-7fcc" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cfa8-a963-ca5a-9fda" name="Jetbike" hidden="false" targetId="3378-5ec8-a947-7b03" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                      <conditions>
+                        <condition field="selections" scope="c111-8704-4aeb-35c2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="3553-2b1e-5ce1-026d" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                <infoLink id="451e-b5d9-002b-aacf" name="Ignore Concealment" hidden="false" targetId="7c72-61e3-2388-db9f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="20e8-dc20-b3cd-4a1f" name="Weapon Options" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="3e7c-2e16-9a26-9225" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c111-8704-4aeb-35c2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3bcd-9ec2-6baf-02ff" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="23f4-8476-3899-1e4d" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c111-8704-4aeb-35c2" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3bcd-9ec2-6baf-02ff" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e7c-2e16-9a26-9225" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23f4-8476-3899-1e4d" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3933-50ed-0a73-c089" name="Dual Edison Carbine" hidden="false" collective="false" import="true" targetId="2302-3274-4411-9c4e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270a-3b81-9ec3-9d75" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="8c7a-9a88-18f8-791b" name="Dual Corrosion Blaster" hidden="false" collective="false" import="true" targetId="c5ee-a942-3f53-3a33" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2685-b839-3470-b38b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="3048-da60-ccf7-3a68" name="Matter Beamer" hidden="false" collective="false" import="true" targetId="dfc4-4173-7972-7e13" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f0e-4b55-f7ab-814b" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="719a-888d-136d-ae68" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="2504-5e65-475d-ad01" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="c137-43fc-d391-ba19" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4890-0298-fdf6-16d8" name="Nanite Attack Raft" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="6a87-2450-4c5b-02c6" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="8647-06bc-ffe1-339c" name="Nanite Attack Raft" hidden="false" collective="false" import="true" defaultSelectionEntryId="7f9b-b71f-99be-62fa">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cf3-6c9d-fe51-0b80" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7f9b-b71f-99be-62fa" name="Nanite Attack Raft" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf9-5393-d274-387c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8411-e5b5-7648-1c46" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="30b7-3f06-493e-1ec8" name="Nanite Attack Raft" hidden="false" targetId="1c4c-6890-d45e-050e" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="7">
+                      <conditions>
+                        <condition field="selections" scope="4890-0298-fdf6-16d8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="1e8f-1648-d269-07fd" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="1bc9-8e26-6ed1-9b8b" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="711e-e88b-5504-16b2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18db-30a9-93c4-89a7" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0169-8db4-a790-7688" name="Edison Cannon" hidden="false" collective="false" import="true" targetId="c4ec-a5ef-d506-1ebb" type="selectionEntry"/>
+                <entryLink id="d914-72a9-d56f-18d7" name="Corrosion Cannon" hidden="false" collective="false" import="true" targetId="b649-ceb2-5ae1-5b18" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="fc61-d446-812b-900a" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="94c0-e70e-cc02-51ca" name="Dual Edison Destructor" page="" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b05-f010-f732-2fd5" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e34-ab19-e15d-219b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="cfb4-663a-b072-7c89" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="af83-e0b0-2ab4-dab2" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup"/>
+        <entryLink id="b8aa-ff5f-8d1e-6350" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8b49-ccf3-bde6-f002" name="Nanite Large Raft" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7314-7d8f-2329-192d" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ffa8-56c0-72db-bd77" name="Nanite Large Raft" hidden="false" collective="false" import="true" defaultSelectionEntryId="d303-4430-6bf5-78fe">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4398-6991-dce0-e0bf" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d303-4430-6bf5-78fe" name="Nanite Large Raft" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d26-febb-2f29-6dde" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff4d-4a8b-ca0a-260c" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1a0b-cd19-2ce6-485d" name="Nanite Large Raft" hidden="false" targetId="a546-e542-3cbd-c107" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="61ff-d3d0-d23d-332c" value="10">
+                      <conditions>
+                        <condition field="selections" scope="8b49-ccf3-bde6-f002" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="15fa-64f4-fe3c-aff2" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="7">
+                      <conditions>
+                        <condition field="selections" scope="8b49-ccf3-bde6-f002" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="20ad-973d-3c2a-832e" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="50e3-9c73-30df-78ba" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2bd-ab01-aa60-8d12" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2715-410e-9562-475f" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="15fa-64f4-fe3c-aff2" name="Transport" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="3d1f-7766-dd41-3077" name="Reconstructor" hidden="false" targetId="f5e9-4715-12f1-36f2" type="rule"/>
+                    <infoLink id="bd14-a11a-0a49-7ac9" name="Capacity(10)" hidden="false" targetId="54f7-e32f-8a28-2a0b" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <entryLinks>
+                <entryLink id="2c3a-d373-c162-be7e" name="Eradication Cannon" hidden="false" collective="false" import="true" targetId="59c6-1f8e-bf18-43a2" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="232a-8c0f-428c-2217" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="e58a-19e2-457b-566c" name="Corrosion Rifle Array" page="" hidden="false" collective="false" import="true" targetId="d26f-ac3f-3296-7810" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f4e-82f9-5543-20d8" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a0-5d5a-ed79-b14f" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d174-1aae-88df-eb10" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="19f0-9553-1da6-e692" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup"/>
+        <entryLink id="13f5-f20e-0c65-3cfa" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f828-c4ef-8c08-8b25" name="Nanite Portal Pyramid" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="1ebc-4f8e-1c64-dc94" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cf2f-7b22-f269-3067" name="Nanite Portal Pyramid" hidden="false" collective="false" import="true" defaultSelectionEntryId="a51d-a883-dca2-33af">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d4b-5f38-5ae4-ad2e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="a51d-a883-dca2-33af" name="Nanite Portal Pyramid" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8638-15c6-8c49-5ac2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c67-f957-4cfd-17f9" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5071-6951-92ca-cfbd" name="Nanite Portal Pyramid" hidden="false" targetId="d41b-93f7-5645-b810" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="10">
+                      <conditions>
+                        <condition field="selections" scope="f828-c4ef-8c08-8b25" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="1ff0-1179-3c9f-fa07" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                <infoLink id="8dcd-7033-1249-7849" name="Vanguard" hidden="false" targetId="5c49-cb74-ee43-18b4" type="rule"/>
+                <infoLink id="e62f-fc01-17fc-ec7e" name="Gate" hidden="false" targetId="6949-049f-3068-1e8d" type="rule"/>
+                <infoLink id="8c94-bdfa-875b-574f" name="Vehicle(hover)" hidden="false" targetId="083f-e941-1be6-6e66" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="250.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="d54a-a125-30cd-8cf5" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="aa2e-3e1d-7966-2490" name="Matter Whip" page="" hidden="false" collective="false" import="true" targetId="4f4d-f38c-e745-5ec3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c7-1756-eec4-c49d" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208c-cc3a-86f7-d3d5" type="min"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="7aa2-c009-a233-b3a4" name="Corrosion Arc" page="" hidden="false" collective="false" import="true" targetId="e539-78a8-a5b2-4aff" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5390-4316-6ca6-e1ea" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e6-fb8a-7f3c-6044" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9d9f-ddc6-257d-3118" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="559e-dee8-df38-1acc" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup"/>
+        <entryLink id="6472-890a-c0ce-0c2e" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="77a2-601d-c58a-8a4b" name="Nanite Walker" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="7d0f-c0cc-7b80-5325" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7f83-dda7-ffbf-d634" name="Nanite Walker" hidden="false" collective="false" import="true" defaultSelectionEntryId="72fa-34cb-7121-0fab">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d9c-e34a-b398-be53" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="72fa-34cb-7121-0fab" name="Nanite Walker" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4efd-d87e-c507-abe3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef9-6430-1a0e-1656" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9248-c726-1031-a74d" name="Nanite Walker" hidden="false" targetId="ad10-4a0e-5762-9f54" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="7">
+                      <conditions>
+                        <condition field="selections" scope="77a2-601d-c58a-8a4b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="f782-b38f-82bd-ae54" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                <infoLink id="afc0-a281-3b72-30a4" name="Bestow Masterwork(12&quot;)" hidden="false" targetId="9d23-b60f-76e8-97dd" type="rule"/>
+                <infoLink id="1a86-f85e-0928-eae2" name="Vehicle(walker)" hidden="false" targetId="57dd-f324-dd55-8fce" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="ae91-deda-1d7d-6e24" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3df-0bec-2368-e610" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9be-faaa-6794-9e1f" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ae63-48f4-cd90-11ef" name="Heat Ray" hidden="false" collective="false" import="true" targetId="f06c-b55d-c5da-25df" type="selectionEntry"/>
+                <entryLink id="92e4-d949-af22-63a9" name="Dual Heavy Corrosion Cannon" hidden="false" collective="false" import="true" targetId="568d-8e6c-4df9-6fbc" type="selectionEntry"/>
+                <entryLink id="e618-fe7b-a497-130a" name="Matter Whip" hidden="false" collective="false" import="true" targetId="4f4d-f38c-e745-5ec3" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="bc12-a231-5792-20a4" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="3ab1-e231-3a38-0684" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup"/>
+        <entryLink id="de15-eddd-100e-ab4e" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fdd5-318e-2c99-b236" name="Nanite Aircraft" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="5b75-9fbb-2c5f-e7f9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="134c-7e0a-7654-8f86" name="Nanite Aircraft" hidden="false" collective="false" import="true" defaultSelectionEntryId="b1e4-bb7b-8290-8af9">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac38-171f-143f-1b98" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b1e4-bb7b-8290-8af9" name="Nanite Aircraft" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3911-623f-6d84-90f1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73bd-e5b3-6840-71f2" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="08e9-7866-1afa-be99" name="Nanite Aircraft" hidden="false" targetId="a1f8-3c94-20ac-90a4" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="7">
+                      <conditions>
+                        <condition field="selections" scope="fdd5-318e-2c99-b236" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="07cd-e31b-3200-cb41" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                <infoLink id="81b1-4973-8bd8-236a" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="160.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="eb6d-fd11-4230-90be" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a179-4e41-ccc1-4927" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ae9-8180-c2af-90a2" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="6dc5-44b7-ef36-8a05" name="Heat Ray" hidden="false" collective="false" import="true" targetId="f06c-b55d-c5da-25df" type="selectionEntry"/>
+                <entryLink id="fa68-58b9-7d66-4efd" name="Insertion Beam" hidden="false" collective="false" import="true" targetId="9335-bd22-cc3c-c647" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="982e-9d7c-c04f-81eb" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="85c8-d323-3222-6575" name="Dual Edison Destructor" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ff4-4917-56d3-7abc" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f93-9cfa-6e96-d960" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="e5fb-c06b-eda2-c59b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="7d39-ff92-ddd4-3034" type="selectionEntryGroup"/>
+        <entryLink id="8e54-264e-99b2-f4c1" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup"/>
+        <entryLink id="963e-a602-9a2c-f1b1" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="958c-4609-2553-9e1b" name="Contained Singularity" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="8694-878f-5b3b-dc5c" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1a17-0fd8-424e-297b" name="Contained Singularity" hidden="false" collective="false" import="true" defaultSelectionEntryId="175a-e631-337c-9673">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ced-4f5b-0f0e-fd43" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="175a-e631-337c-9673" name="Contained Singularity" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="518f-5240-c3d8-c853" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="393d-7aed-c36a-671a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ac57-2cf4-cbb4-08e8" name="Contained Singularity" hidden="false" targetId="cd25-a2b7-a1d7-087f" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="8">
+                      <conditions>
+                        <condition field="selections" scope="958c-4609-2553-9e1b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="50d1-bcec-8f38-d429" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
+                <infoLink id="491a-efaf-0a62-98c4" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                <infoLink id="05ff-838c-4681-b88a" name="Oversized(+2)" hidden="false" targetId="bf5a-e06b-380c-7824" type="rule"/>
+                <infoLink id="9276-e716-239f-4d18" name="Singularity Mystic(3)" hidden="false" targetId="07c5-8f8a-e760-902d" type="rule"/>
+                <infoLink id="45e1-a230-8451-eecf" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="486c-87d8-870d-8230" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84a2-50ec-9687-c22d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6516-b05f-d866-eb10" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="f994-0b7f-5752-64cc" name="Heat Ray" hidden="false" collective="false" import="true" targetId="f06c-b55d-c5da-25df" type="selectionEntry"/>
+                <entryLink id="07b6-87e2-6bee-352c" name="Battlescythe" hidden="false" collective="false" import="true" targetId="d5c6-488a-e4db-e048" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f7fe-7f53-c525-9475" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="e2eb-6b64-0891-12fe" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="e0a2-dc00-ef58-9b22" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="17d7-c261-514e-41f4" name="Nanite Fabrication Unit" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="22e1-788b-7cfd-df92" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="334f-2722-b09d-9ce3" name="Nanite Fabrication Unit" hidden="false" collective="false" import="true" defaultSelectionEntryId="8cd6-bb7a-3407-1b37">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44fb-da7f-470a-ae38" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8cd6-bb7a-3407-1b37" name="Nanite Fabrication Unit" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9721-4d91-ccef-9a18" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1dbe-0517-7559-6d4a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e220-e19d-6b86-e506" name="Nanite Fabrication Unit" hidden="false" targetId="d33d-1c61-c870-c3f1" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7">
+                      <conditions>
+                        <condition field="selections" scope="17d7-c261-514e-41f4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="9d33-dfb4-44d8-f3d0" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
+                <infoLink id="8432-e8a4-a481-5631" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                <infoLink id="0c1f-39b4-c808-47b5" name="Summon Disassembler Swarm" hidden="false" targetId="cfe4-3a5d-99ca-94d0" type="rule"/>
+                <infoLink id="10b0-794e-b8d3-5975" name="Vehicle Repair" hidden="false" targetId="6d29-b100-7a36-98b7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0024-f67e-601b-9f19" name="Weapon Options" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="450c-5de4-bf27-f2e4" name="Dual Matter Beamer" hidden="false" collective="false" import="true" targetId="08c5-3922-0529-5406" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7945-8fe2-a251-3d9c" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4da-5f71-1abc-a753" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="8654-7fbd-0164-ad45" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="6908-08ea-c99c-7fd1" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="53b3-a34d-29ef-6043" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0521-20af-336b-3c2d" name="Nanite Leader" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="45ee-fd12-b8f1-df65" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
+        <categoryLink id="2b95-3842-7c95-2029" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="6f97-6fd3-0262-e73b" name="Nanite Leader" hidden="false" collective="false" import="true">
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e185-f8fd-c753-ef5a" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="58ad-9d22-85ab-9d3a" name="Time’s Arrow" hidden="false" collective="false" import="true" targetId="0e82-6c8c-06c9-4bd4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b7-c082-f584-6748" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8b-60f5-da7b-f3f7" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="37d3-edf6-a615-2aff" name="Nanite Leader" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a78-d305-9089-339e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="569d-867d-9357-d376" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="968d-52a9-22a8-ea22" name="Command Throne" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2861-97ff-608a-53c0" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="f826-5076-d513-2332" name="Nanite Leader" hidden="false" targetId="968a-3166-1e2b-6a62" type="profile">
+                      <modifiers>
+                        <modifier type="set" field="a61d-9a4d-ee19-f432" value="7">
+                          <conditions>
+                            <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7ba8-d187-7f5e-31fe" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                    <infoLink id="55d5-5370-6c93-f5fe" name="Vehicle(hover)" hidden="false" targetId="083f-e941-1be6-6e66" type="rule"/>
+                    <infoLink id="0413-695a-b354-a022" name="Leader(1)" hidden="false" targetId="afb2-247b-92b8-da01" type="rule"/>
+                    <infoLink id="3113-86a2-6e30-39db" name="Communications" hidden="false" targetId="e7bc-d0a3-516c-7f9d" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="e2c2-e033-2346-e1f6" name="Hover-Body" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43a4-c63a-727a-147d" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="5683-1247-8281-6dd9" name="Nanite Leader" hidden="false" targetId="9ece-bcff-425d-2dec" type="profile">
+                      <modifiers>
+                        <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                          <conditions>
+                            <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="6dcd-ab7a-c954-1c9b" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
+                    <infoLink id="02dd-94d0-ace5-d0e0" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="44a1-d445-6f61-58ef" name="Superior Leader" hidden="false" collective="false" import="true" type="model">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed40-93b0-a512-c1fc" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="2b6c-a904-736c-173c" name="Nanite Leader" hidden="false" targetId="1974-907c-ab33-23e7" type="profile">
+                      <modifiers>
+                        <modifier type="set" field="591c-163f-c1e8-dfa3" value="5, re-roll">
+                          <conditions>
+                            <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9b49-aabc-32dc-b805" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </infoLink>
+                    <infoLink id="7a66-b26b-571b-2180" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
+                    <infoLink id="739b-ceb9-9478-9458" name="Bestow Morale(1)" hidden="false" targetId="fd36-84c7-7a08-d0f8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="6e96-ac8f-34ab-ddb9" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0310-e4b4-6780-cb31" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c30-ba13-0ef6-1469" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="bdb0-76c1-6ce5-d025" name="Lumen Staff" hidden="false" collective="false" import="true" targetId="6e1b-8693-2d25-6b06" type="selectionEntry"/>
+                <entryLink id="f896-80d4-49b4-6d84" name="Battlescythe" hidden="false" collective="false" import="true" targetId="d5c6-488a-e4db-e048" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="47e5-a163-a612-285a" name="Weapon Options" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968d-52a9-22a8-ea22" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="f54b-e8f3-3bb9-86bd" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968d-52a9-22a8-ea22" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="3403-71f2-e80a-f74e" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968d-52a9-22a8-ea22" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3403-71f2-e80a-f74e" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f54b-e8f3-3bb9-86bd" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5b9d-1e5f-502b-11b6" name="Edison Cannon" hidden="false" collective="false" import="true" targetId="c4ec-a5ef-d506-1ebb" type="selectionEntry"/>
+                <entryLink id="e091-725f-f434-9317" name="Corrosion Cannon" hidden="false" collective="false" import="true" targetId="b649-ceb2-5ae1-5b18" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="2c7c-aaa3-cdef-2ea2" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d75c-d850-9fee-3cd6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a36d-5578-31b9-52d3" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="6519-831c-3171-b82e" name="Adaptation Protocols" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="1cb3-7cb9-3182-64bf" name="Adaptation Protocols" hidden="false" targetId="2bbc-354d-196f-ec8a" type="rule"/>
+                    <infoLink id="aacb-d5d9-4582-0a89" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ce7c-8e5d-1be3-7068" name="Nightmare Portal" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="3df6-f0f5-5d13-e0f0" name="Nightmare Portal" hidden="false" targetId="ed24-d180-4a05-1b00" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1f94-434f-2748-e322" name="Resurrection Globe" hidden="false" collective="false" import="true" type="upgrade">
+                  <infoLinks>
+                    <infoLink id="e5ba-ba1f-d28f-93e4" name="Resurrection Globe" hidden="false" targetId="0b15-148f-b502-cfad" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3f06-6fa8-6acf-96ee" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="c25d-1110-3f2e-56af" type="selectionEntryGroup"/>
+        <entryLink id="90e4-d2e1-6918-1946" name="Upgrade Any Vehicle" hidden="true" collective="false" import="true" targetId="dcfe-7bfb-262d-2971" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="968d-52a9-22a8-ea22" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="de3f-999d-efe0-11a9" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="d005-d084-d77f-9fb8" type="selectionEntryGroup"/>
+        <entryLink id="fd8d-a451-4559-86e1" name="Upgrade Any Non-Vehicle Unit" hidden="true" collective="false" import="true" targetId="f04b-19ff-9169-e6fa" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e2c2-e033-2346-e1f6" type="equalTo"/>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44a1-d445-6f61-58ef" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="419c-e4e9-9dc9-47a8" name="Nanite Singularity Mainframe Unleashed Mode" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="6d30-c3f1-36f3-7125" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7a25-d29f-2e5a-746e" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d30-c3f1-36f3-7125" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="4c74-f8c3-0507-5cc2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c808-9f38-1abd-fd8e" name="Nanite Singularity Mainframe Unleashed Mode" hidden="false" collective="false" import="true" defaultSelectionEntryId="bb1e-3c71-0ae9-6a70">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f348-986b-f900-51b1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bb1e-3c71-0ae9-6a70" name="Nanite Singularity Mainframe Unleashed Mode" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a75-088f-0e10-11c2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7f3-ab09-dd44-6359" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="335a-47fd-7156-0260" name="Singularity Mainframe Unleashed" hidden="false" targetId="b1bd-235a-9244-63c2" type="profile"/>
+                <infoLink id="3680-1816-7cb8-c15e" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                <infoLink id="e2de-8941-22cf-8621" name="Robust(1)" hidden="false" targetId="99aa-f2f8-b3b8-03d2" type="rule"/>
+                <infoLink id="c8c5-8891-b32e-e347" name="Vehicle(hover)" hidden="false" targetId="083f-e941-1be6-6e66" type="rule"/>
+                <infoLink id="03b3-9257-81b1-1fdb" name="Power of the Elements Mystic(3x2)" hidden="false" targetId="e30e-2fb5-a84f-acc8" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="750.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4931-9ef5-4d3d-68c8" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="050e-59e2-d93c-b5c2" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5360-6514-0bb5-603c" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-f082-0ca4-8ed3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7a25-d29f-2e5a-746e" name="Nanite Singularity Mainframe Interdiction Mode" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="a467-298e-b8ec-f25e" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="419c-e4e9-9dc9-47a8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a467-298e-b8ec-f25e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="e74f-c94d-dcba-2527" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="2640-3cc1-9899-eaf4" name="Nanite Singularity Mainframe Interdiction Mode" hidden="false" collective="false" import="true" defaultSelectionEntryId="ab92-8e04-2a2d-6b45">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88d9-5e43-0c6f-786c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ab92-8e04-2a2d-6b45" name="Nanite Singularity Mainframe Interdiction Mode" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c970-1f22-ebf5-55e0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="51fc-cdec-e778-59c0" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1e17-39ed-dacb-ae62" name="Singularity Mainframe Interdiction" hidden="false" targetId="0954-1b8a-8be7-6e97" type="profile"/>
+                <infoLink id="6e76-65b9-1d73-9951" name="Self-Repair" hidden="false" targetId="1bfa-80b0-674d-6cba" type="rule"/>
+                <infoLink id="1c5d-db3d-4037-0cc2" name="Robust(1)" hidden="false" targetId="99aa-f2f8-b3b8-03d2" type="rule"/>
+                <infoLink id="7824-31af-40ca-d8e6" name="Vehicle(hover)" hidden="false" targetId="083f-e941-1be6-6e66" type="rule"/>
+                <infoLink id="8e15-b0ec-9aa9-aa78" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
+                <infoLink id="1a5a-b77c-a453-d49d" name="Aerial interdiction" hidden="false" targetId="8a45-9087-92b3-0bcf" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="350.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4904-c05d-de35-5c34" name="Weapons" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="c747-bcf6-e8b6-e246" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5241-f545-15cc-1b51" type="max"/>
+                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a750-93ae-eaf8-7bd3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e06d-0e4b-aedb-353a" name="AA Shroud" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6c84-1290-9ef3-0ec3" name="AA Shroud" hidden="false" targetId="439f-f0b1-8224-6d02" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7e12-4846-2a13-3c3c" name="Quantum Shielding" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="45cb-9c52-9464-e5d0" name="Quantum Shielding" hidden="false" targetId="d4bf-3279-9dc8-956a" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="2089-94f8-9e68-7199" name="Mindeless" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="00b2-65c6-bac6-ec05" name="Mindeless" hidden="false" targetId="8b8f-8fea-6ac0-eb61" type="rule"/>
+        <infoLink id="0aa3-6a63-6110-849c" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0a1d-ac90-7c93-88fd" name="Greater Awareness" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9793-2109-00df-595f" name="Greater Awareness" hidden="false" targetId="61bb-e287-76d0-a254" type="rule"/>
+        <infoLink id="3c45-8b30-10a3-3f36" name="Unbending" hidden="false" targetId="4dc8-cabe-1830-b374" type="rule"/>
+        <infoLink id="add7-f55a-bde6-340a" name="No Rush:" hidden="false" targetId="9088-9105-c11d-dc35" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="0c85-d809-93e9-4dda" name="Flesh Rags" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c23-6d77-7a73-093a" name="Flesh Rags" hidden="false" targetId="e714-119b-815d-32aa" type="rule"/>
+        <infoLink id="533c-c0e0-5f22-dbe9" name="Repel(2)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="313d-6e2f-4b05-6886" name="Golden Skin" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0e6b-fb0e-6aa0-4666" name="Golden Skin" hidden="false" targetId="cd2d-aff6-64b5-d71f" type="rule"/>
+        <infoLink id="4805-83d4-55d5-50d0" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="9b49-aabc-32dc-b805" name="Rusted" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ef88-80f2-7438-9d98" name="Rusted" hidden="false" targetId="cd73-ab1c-5d1b-0b02" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="7853-c6ef-771f-4acc" name="IFF Protocols" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2abd-ecdb-755a-b62a" name="IFF Protocols" hidden="false" targetId="11e3-6c19-3272-87e8" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+  </sharedSelectionEntries>
+  <sharedSelectionEntryGroups>
+    <selectionEntryGroup id="7d39-ff92-ddd4-3034" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="776a-eacf-7859-96dc" name="Composed Pilot" hidden="false" collective="false" import="true" targetId="5f07-aad3-1013-a381" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="024a-807f-69c3-ef4c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="64ab-5c99-1125-e7bc" name="Wing Sirens" hidden="false" collective="false" import="true" targetId="6976-722e-f412-e658" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dcec-3c77-5d36-f09b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c630-5ada-4072-5dd8" name="Countermeasures" hidden="false" collective="false" import="true" targetId="cf77-70ad-efd3-f789" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff15-c984-b6d7-361c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="c25d-1110-3f2e-56af" name="Upgrade Any Model" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="419e-88c9-8d89-8fb0" name="AA Shroud" hidden="false" collective="false" import="true" targetId="e06d-0e4b-aedb-353a" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a55-723a-03c7-b12a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="dcfe-7bfb-262d-2971" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="5fc2-8bf1-4c76-43f8" name="Quantum Shielding" hidden="false" collective="false" import="true" targetId="7e12-4846-2a13-3c3c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23c4-a714-bb25-130a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="d005-d084-d77f-9fb8" name="Upgrade Any Unit" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="8568-f874-52ff-86c9" name="Golden Skin" hidden="false" collective="false" import="true" targetId="313d-6e2f-4b05-6886" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96a2-b3aa-dd7d-828b" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="77b0-9be4-ac72-3a27" name="IFF Protocols" hidden="false" collective="false" import="true" targetId="7853-c6ef-771f-4acc" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b583-878b-5ce4-ae52" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a86f-5877-da00-2349" name="Rusted" hidden="false" collective="false" import="true" targetId="9b49-aabc-32dc-b805" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a1f-d77b-21af-4f91" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="-10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="29fb-060d-3b97-c1d5" name="Flesh Rags" hidden="false" collective="false" import="true" targetId="0c85-d809-93e9-4dda" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b8b-f6d7-ae95-9398" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="f04b-19ff-9169-e6fa" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="ec75-8435-6e67-08aa" name="Greater Awareness" hidden="false" collective="false" import="true" targetId="0a1d-ac90-7c93-88fd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8929-1490-9fbe-3914" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="af22-c27f-9edb-7ff0" name="Mindeless" hidden="false" collective="false" import="true" targetId="2089-94f8-9e68-7199" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98fd-58e8-587f-17d9" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+  </sharedSelectionEntryGroups>
+  <sharedRules>
+    <rule id="cfe4-3a5d-99ca-94d0" name="Summon Disassembler Swarm" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Summon(D3 wounds of Disassembler Swarm within 6” with full action)</description>
+    </rule>
+    <rule id="0b15-148f-b502-cfad" name="Resurrection Globe" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
+      <description>Restore one (1) wound to a friendly unit within 12” that has the Defence(re-roll) trait (deploy any returned models in cohesion) in the endphase.</description>
+    </rule>
+    <rule id="ed24-d180-4a05-1b00" name="Nightmare Portal" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
+      <description>Deploy one (1) unit from staging within 6” of this model (without action markers), one use.</description>
+    </rule>
+    <rule id="2bbc-354d-196f-ec8a" name="Adaptation Protocols" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
+      <description>+2FP, spend only on allies or upgrades.</description>
+    </rule>
+    <rule id="e30e-2fb5-a84f-acc8" name="Power of the Elements Mystic(3x2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="8a45-9087-92b3-0bcf" name="Aerial Interdiction" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false">
+      <description>36” from this model is hazardous terrain for enemy aircraft/VTOL.</description>
+    </rule>
+    <rule id="439f-f0b1-8224-6d02" name="AA Shroud" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Aircraft and spotters may not trace line of sight to units within 15” of this model.</description>
+    </rule>
+    <rule id="d4bf-3279-9dc8-956a" name="Quantum Shielding" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Vehicle has one (1) extra Defence(8) wound.</description>
+    </rule>
+    <rule id="8b8f-8fea-6ac0-eb61" name="Mindeless" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Unit is Fanatic.</description>
+    </rule>
+    <rule id="61bb-e287-76d0-a254" name="Greater Awareness" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Unit ignores the No Rush and Unbending faction traits.</description>
+    </rule>
+    <rule id="9088-9105-c11d-dc35" name="No Rush" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
+      <description>Units in this faction may not take the triple move action.</description>
+    </rule>
+    <rule id="4dc8-cabe-1830-b374" name="Unbending" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
+      <description>Units in this faction receives a maximum of +1 cover bonus.</description>
+    </rule>
+    <rule id="e714-119b-815d-32aa" name="Flesh Rags" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Unit has Repel(2).</description>
+    </rule>
+    <rule id="cd2d-aff6-64b5-d71f" name="Golden Skin" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Unit has Loathing.</description>
+    </rule>
+    <rule id="cd73-ab1c-5d1b-0b02" name="Rusted" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Unit has Defence(-1).</description>
+    </rule>
+    <rule id="11e3-6c19-3272-87e8" name="IFF Protocols" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false">
+      <description>Add +1 to the roll when randomizing hits from this unit versus targets with friendly models within 2”.</description>
+    </rule>
+  </sharedRules>
+  <sharedProfiles>
+    <profile id="e5e0-7aa6-3550-ec49" name="Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7e20-3894-e057-c7e4" name="Eternal" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bfc7-941f-e64b-e54c" name="Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="31ef-8a80-1a49-ae6c" name="Disassembler Swarm" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">3, re-eroll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="af33-5230-ac3e-d3ab" name="Nanite Mystic" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="61d4-102e-e582-101e" name="CC Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e220-d9dd-d7ca-88a5" name="Elite Jump Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12/6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0781-b6e7-fe93-73b9" name="COIN-Specialist" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c8d0-2aaf-81e2-a71f" name="Terror Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6	</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1c4a-341c-b6d2-b98d" name="Phase Beast" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(teleport)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3803-4488-463d-e966" name="Heavy Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3378-5ec8-a947-7b03" name="Jetbike" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1c4c-6890-d45e-050e" name="Nanite Attack Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a546-e542-3cbd-c107" name="Nanite Large Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d41b-93f7-5645-b810" name="Nanite Portal Pyramid" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ad10-4a0e-5762-9f54" name="Nanite Walker" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a1f8-3c94-20ac-90a4" name="Nanite Aircraft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="cd25-a2b7-a1d7-087f" name="Contained Singularity" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d33d-1c61-c870-c3f1" name="Nanite Fabrication Unit" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1974-907c-ab33-23e7" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="968a-3166-1e2b-6a62" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ece-bcff-425d-2dec" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b1bd-235a-9244-63c2" name="Singularity Mainframe Unleashed" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">5</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10, re-roll</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0954-1b8a-8be7-6e97" name="Singularity Mainframe Interdiction" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">4</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+      </characteristics>
+    </profile>
+  </sharedProfiles>
+</catalogue>
