@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files in development
@@ -9,15 +9,14 @@ The Army of the Republic(s)
 The Chambers
 The Enclaves
 The Mutant Menace
+The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
 The Unseelie Court
 
 Battle Factions in development:
-Chamber of Faith
 The Tide
 The Tide Cult
-The Nanite Resurrection
 
 Skirmishes added for evaluation</readme>
   <publications>
@@ -53,7 +52,7 @@ Skirmishes added for evaluation</readme>
     <profileType id="d94e-cbef-94c3-d963" name="Vehicles">
       <characteristicTypes>
         <characteristicType id="38c7-4971-d159-0612" name="Type"/>
-        <characteristicType id="0856-73ac-860b-c2f3" name="Wound"/>
+        <characteristicType id="0856-73ac-860b-c2f3" name="Wounds"/>
         <characteristicType id="a61d-9a4d-ee19-f432" name="Defence"/>
         <characteristicType id="61ff-d3d0-d23d-332c" name="Capacity"/>
         <characteristicType id="2760-e837-ae05-5d45" name="Move"/>
@@ -1190,7 +1189,7 @@ Skirmishes added for evaluation</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e95c-e2ff-1a25-5501" name="Dual Hicap missile pod" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e95c-e2ff-1a25-5501" name="Dual Hicap Missile Pod" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7e23-2f9b-1b86-5430" name="Hicap missile pod" hidden="false" targetId="a0b1-14ee-7dd3-81d7" type="profile"/>
         <infoLink id="bbc2-a670-63e0-abde" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -4154,6 +4153,314 @@ Skirmishes added for evaluation</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a389-be90-7512-72c6" name="Edison Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bb26-ec8b-dde4-e986" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="8fea-ddbc-ace1-d72b" name="Edison Carbine" hidden="false" targetId="c1f6-7d81-818a-2fb2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c4ec-a5ef-d506-1ebb" name="Edison Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5033-4e95-2d24-dddb" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="ce43-f41f-7c84-499a" name="Edison Cannon" hidden="false" targetId="45e2-02e9-654d-bd6d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3854-135e-e93b-8562" name="Edison Destructor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0ab5-fc86-29ff-3235" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="f992-ee33-853e-8202" name="Edison Destructor" hidden="false" targetId="c96f-96e9-ead2-b6ca" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e539-78a8-a5b2-4aff" name="Corrosion Arc" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ea03-049e-d95e-f012" name="Corrosion Arc" hidden="false" targetId="65af-d6d2-9c36-a41a" type="profile"/>
+        <infoLink id="67f9-aa16-7792-f756" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7077-9083-c826-3dd6" name="Corrosion Blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25a2-6214-3b62-2c5c" name="Corrosion Blaster" hidden="false" targetId="70aa-1129-6e27-d9ee" type="profile"/>
+        <infoLink id="6bd5-9e74-9d52-f425" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b649-ceb2-5ae1-5b18" name="Corrosion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1326-f4fe-e46a-c29a" name="Corrosion Cannon" hidden="false" targetId="fc4f-560a-328d-8659" type="profile"/>
+        <infoLink id="ac00-2d08-8715-cc3a" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2753-327a-5ed0-e669" name="Corrosion Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f1a2-34b2-695b-0518" name="Corrosion Rifle" hidden="false" targetId="e5a3-a3fd-46a4-817d" type="profile"/>
+        <infoLink id="b84a-3c31-7f6f-f993" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d26f-ac3f-3296-7810" name="Corrosion Rifle Array" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8eea-d960-9fc9-3afa" name="Corrosion Rifle Array" hidden="false" targetId="3a6d-1943-36bb-8e19" type="profile"/>
+        <infoLink id="4db1-c86a-002e-99ba" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d962-af2c-2735-3cbe" name="Disintegrator Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="88e2-5ebe-2408-881c" name="Disintegrator Rifle" hidden="false" targetId="5657-d472-6a13-2e7f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d299-f952-957f-2351" name="Heavy Corrosion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dec6-5b0d-0739-ffe1" name="Heavy Corrosion Cannon" hidden="false" targetId="f576-1d94-7cb7-7a5a" type="profile"/>
+        <infoLink id="9462-8ab0-4b23-3cb9" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="69ca-f166-6b04-d9e7" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fc32-6455-4726-0248" name="Simple Corrosive CC" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a47-3d5f-87a1-d362" name="Simple Corrosive CC" hidden="false" targetId="f647-64ed-5bd9-0251" type="profile"/>
+        <infoLink id="4f6c-1b9e-4bdf-cf59" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e1b-8693-2d25-6b06" name="Lumen Staff" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6f14-adc1-a806-0b43" name="Lumen Staff" hidden="false" targetId="9128-069f-dade-f89b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="59c6-1f8e-bf18-43a2" name="Eradication Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9744-8b09-178b-0f30" name="Eradication Cannon" hidden="false" targetId="232d-7c57-216e-dc6f" type="profile"/>
+        <infoLink id="fd34-f765-3513-6480" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="954f-fe00-36dd-63be" name="Spin Up" hidden="false" targetId="21e2-4ab0-27fc-8382" type="rule"/>
+        <infoLink id="c08c-8320-0db8-8300" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d5c6-488a-e4db-e048" name="Battlescythe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cadb-ac65-b698-ec64" name="Battlescythe" hidden="false" targetId="0404-6f09-a5d4-3710" type="profile"/>
+        <infoLink id="045a-4107-bc94-dd59" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="652d-5b7d-cc15-6c8d" name="Matter Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6523-de57-6be9-f1d0" name="Matter pistol" hidden="false" targetId="1e1e-316a-499b-5f35" type="profile"/>
+        <infoLink id="0eb4-6529-9fbf-c399" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5caa-a74a-186d-eecf" name="Rod of Convention" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="de33-b918-1d07-d08c" name="Rod of Convention" hidden="false" targetId="247d-961e-bb83-f738" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a9e-7657-e81e-0510" name="Counter-Insertion" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a50-06c5-4290-37db" name="Counter-Insertion" hidden="false" targetId="2df1-44df-ca9d-3ac3" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c5ee-a942-3f53-3a33" name="Dual Corrosion Blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="66c4-4fbb-da5f-0b40" name="Corrosion Blaster" hidden="false" targetId="70aa-1129-6e27-d9ee" type="profile"/>
+        <infoLink id="5d9a-8136-737d-0c4f" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+        <infoLink id="8768-4866-a715-5e12" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2302-3274-4411-9c4e" name="Dual Edison Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2b6d-a7b0-60c2-1630" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="54f9-a976-6798-1340" name="Edison Carbine" hidden="false" targetId="c1f6-7d81-818a-2fb2" type="profile"/>
+        <infoLink id="aed0-c7fe-96c3-7507" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfc4-4173-7972-7e13" name="Matter Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69ce-1238-31a2-0bdc" name="Matter Beamer" hidden="false" targetId="eeda-7666-1aa2-19aa" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2269-3fab-512f-a155" name="Dual Edison Destructor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1d20-2504-2e68-6e10" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="0e20-9552-ef11-7d72" name="Edison Destructor" hidden="false" targetId="c96f-96e9-ead2-b6ca" type="profile"/>
+        <infoLink id="5bcb-6298-fcd0-d83d" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="25f8-855a-0c90-d6e4" name="Reconstructor" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c984-2ebb-b8e2-3b93" name="Reconstructor" hidden="false" targetId="f5e9-4715-12f1-36f2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f4d-f38c-e745-5ec3" name="Matter Whip" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6a41-6dbd-4719-d702" name="Matter Whip" hidden="false" targetId="9fe5-ac3a-b832-d751" type="profile"/>
+        <infoLink id="dd7c-44c4-1d68-30f3" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0dc1-54b5-9f6b-4cda" name="Fire Gauntlet" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1a28-88a7-90d6-feb8" name="Fire Gauntlet" hidden="false" targetId="b404-81fa-1840-022a" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f06c-b55d-c5da-25df" name="Heat Ray" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2427-fa9d-7498-5448" name="Heat Ray" hidden="false" targetId="7f35-f6b8-4de6-8aef" type="profile"/>
+        <infoLink id="c409-81e8-cc3f-640f" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0e82-6c8c-06c9-4bd4" name="Time’s Arrow" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fdc3-ad6b-143d-d523" name="Time’s Arrow" hidden="false" targetId="6017-0d5d-83f1-880b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="568d-8e6c-4df9-6fbc" name="Dual Heavy Corrosion Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e84d-7553-50d0-8409" name="Heavy Corrosion Cannon" hidden="false" targetId="f576-1d94-7cb7-7a5a" type="profile"/>
+        <infoLink id="093a-8d44-5482-c09c" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="22e5-ea91-93d4-a993" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
+        <infoLink id="a9d7-cb04-b90a-3ecf" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9335-bd22-cc3c-c647" name="Insertion Beam" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4d0b-44e3-0caf-788c" name="Insertion Beam" hidden="false" targetId="d271-11cf-ad9f-20f6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0b77-2a52-bdaf-3204" name="Gate" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="865d-3711-1e34-c108" name="Gate" hidden="false" targetId="6949-049f-3068-1e8d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="08c5-3922-0529-5406" name="Dual Matter Beamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="233b-483a-4829-f923" name="Matter Beamer" hidden="false" targetId="eeda-7666-1aa2-19aa" type="profile"/>
+        <infoLink id="94d3-e748-26c5-5076" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3fa8-f332-13d7-ea11" name="Edison Globe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0836-ceba-4717-be89" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="3844-a35d-fb51-adcc" name="Edison Globe" hidden="false" targetId="093a-d925-fac9-7ee0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -4741,17 +5048,17 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="dc57-13d6-d445-a242" name="Maelstrom Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+    <rule id="dc57-13d6-d445-a242" name="Maelstrom Mystic(3)" publicationId="e42d-4466-8267-ac1b" page="96" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="d18a-db54-94e4-7fac" name="Maelstrom Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+    <rule id="d18a-db54-94e4-7fac" name="Maelstrom Mystic(2)" publicationId="e42d-4466-8267-ac1b" page="96" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="51e6-0db4-bfb6-0a7a" name="Maelstrom Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+    <rule id="51e6-0db4-bfb6-0a7a" name="Maelstrom Mystic(1)" publicationId="e42d-4466-8267-ac1b" page="96" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
@@ -4771,6 +5078,90 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
     <rule id="7a9a-12f3-f41a-b238" name="Inflict Inaccurate(6&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Enemy units within range suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
+    </rule>
+    <rule id="53e2-c196-d564-1f97" name="Corrosive" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
+      <description>Wound(min 6 vs non-vehicles), EMP on wound(‘6’) vs vehicles.</description>
+    </rule>
+    <rule id="21e2-4ab0-27fc-8382" name="Spin Up" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
+      <description>Can only fire if unit had no action markers in the previous endphase (may not fire first turn).</description>
+    </rule>
+    <rule id="74d2-8033-0e36-4b8d" name="Light Arts Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="f0db-a2f0-3e64-31ad" name="Light Arts Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="8ac9-f2aa-004e-91af" name="Light Arts Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="2df1-44df-ca9d-3ac3" name="Counter-Insertion" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>Directly after the opponent deploys a unit using Insertion or Ambush you may deploy this unit from staging within 18” of the enemy unit, and attack it with priority.</description>
+    </rule>
+    <rule id="c25d-d3df-de7e-4b2d" name="Repel(2)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>CC attacks vs this model has their range reduced by distance.</description>
+    </rule>
+    <rule id="f5e9-4715-12f1-36f2" name="Reconstructor" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>Embarked units regain D3 wounds in the end phase.</description>
+    </rule>
+    <rule id="58d9-a9e1-5d29-18ca" name="Capacity(12)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="9de2-6fe9-4f6a-a9a3" name="Capacity(6)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="54f7-e32f-8a28-2a0b" name="Capacity(10)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="9ba7-1beb-5213-5446" name="Capacity(5)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="96ab-2d81-d194-aa19" name="Capacity(amount)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="d271-11cf-ad9f-20f6" name="Insertion Beam" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>Deploy one (1) non-vehicle, non-massive unit from staging within 12” of this model, with one (1) action marker, one use.</description>
+    </rule>
+    <rule id="6949-049f-3068-1e8d" name="Gate" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>One (1) unit may enter from staging as if this model was connected to the friendly board edge per turn.</description>
+    </rule>
+    <rule id="b609-2af7-0d0f-1b33" name="Singularity Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="de61-7bfa-c839-afde" name="Singularity Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="07c5-8f8a-e760-902d" name="Singularity Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="81e5-82a7-4046-c7a9" name="Power of the Elements Mystic(1)" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
+    </rule>
+    <rule id="cc9d-9c97-ce62-5d8c" name="Power of the Elements Mystic(3)" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
+    </rule>
+    <rule id="9d23-b60f-76e8-97dd" name="Bestow Masterwork(12&quot;)" publicationId="e42d-4466-8267-ac1b" page="114" hidden="false">
+      <description>All models in units within range gains ability: Re-roll results of ‘1’ to hit for this model.</description>
+    </rule>
+    <rule id="99aa-f2f8-b3b8-03d2" name="Robust(1)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>-1 modifier on damage table.</description>
+    </rule>
+    <rule id="e24f-5fb8-b0c0-8b57" name="Robust(2)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>-2 modifier on damage table.</description>
+    </rule>
+    <rule id="8d8d-4b48-c3d1-b833" name="Robust(modifier)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>- modifier on damage table.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -6889,6 +7280,219 @@ Mighty Swing: CC (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="e5a3-a3fd-46a4-817d" name="Corrosion Rifle" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2) 24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3a6d-1943-36bb-8e19" name="Corrosion Rifle Array" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (5) 
+24” (5)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1
+.</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive
+corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fc4f-560a-328d-8659" name="Corrosion Cannon" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="70aa-1129-6e27-d9ee" name="Corrosion Blaster" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2) 24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="65af-d6d2-9c36-a41a" name="Corrosion Arc" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (3) 24” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="45e2-02e9-654d-bd6d" name="Edison Cannon" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c1f6-7d81-818a-2fb2" name="Edison Carbine" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c96f-96e9-ead2-b6ca" name="Edison Destructor" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5657-d472-6a13-2e7f" name="Disintegrator Rifle" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2 first attack only</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="f576-1d94-7cb7-7a5a" name="Heavy Corrosion Cannon" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f647-64ed-5bd9-0251" name="Simple Corrosive CC" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9128-069f-dade-f89b" name="Lumen Staff" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="232d-7c57-216e-dc6f" name="Eradication Cannon" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Low power: 24” (1)
+High power: 72” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)
+blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4
++8</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">.
+hazardous, priority(only), spin up</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0404-6f09-a5d4-3710" name="Battlescythe" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1e1e-316a-499b-5f35" name="Matter Pistol" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="247d-961e-bb83-f738" name="Rod of Convention" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="eeda-7666-1aa2-19aa" name="Matter Beamer" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (1), hit(re-roll)) 
+24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll
+.</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2
++2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy
+heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9fe5-ac3a-b832-d751" name="Matter Whip" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (1)
+24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll, blast(D6)
+blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3
++3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy
+heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b404-81fa-1840-022a" name="Fire Gauntlet" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">8” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="7f35-f6b8-4de6-8aef" name="Heat Ray" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6017-0d5d-83f1-880b" name="Time’s Arrow" publicationId="81dd-fe5f-c233-17c5" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">120” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+8</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="093a-d925-fac9-7ee0" name="Edison Globe" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (5)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
