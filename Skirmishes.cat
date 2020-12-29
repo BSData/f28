@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes - Uprising on Ferrum Magna" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes - Uprising on Ferrum Magna" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="8" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>File created for the event Uprising on Ferrum Magna. It dosen&apos;t use the force generation rules in the rulebook.
 
 Force Generation:
-Teams are built with four standard models, one advancement each, 1 restricted access, and 12p of gear (to share, not each). Set cost types as follows: 12p, 4M, 1A. Disregard cost type U, is not used in Skirmishes.
+Teams are built with four standard models, one advancement each, 1 restricted access, and 12p of gear (to share, not each). Set cost types as follows: 12p, 4M, 1R, 4A. Disregard cost type U, is not used in Skirmishes.
 
 Cost Types:
 p: Points
@@ -17,6 +17,33 @@ A: Advancement Points</readme>
   </costTypes>
   <entryLinks>
     <entryLink id="bfca-6727-24ca-b627" name="Standard model" hidden="false" collective="false" import="true" targetId="c3fd-a67c-8de3-413f" type="selectionEntry"/>
+    <entryLink id="8663-cc3b-f983-e174" name="Thug" hidden="true" collective="false" import="true" targetId="0599-3eb2-a665-7210" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9588-5ec9-df53-4f45" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="64b1-f38e-93e4-c987" name="Sellsword" hidden="true" collective="false" import="true" targetId="e5bc-2c14-e61a-8890" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3828-2a3c-c290-526f" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="d907-6fc7-5f93-e30a" name="Mercenary" hidden="true" collective="false" import="true" targetId="3cf3-c834-54d8-d17b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d27d-0ba3-60da-00aa" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="c3fd-a67c-8de3-413f" name="Standard model" hidden="false" collective="false" import="true" type="model">
@@ -83,6 +110,18 @@ A: Advancement Points</readme>
         <selectionEntry id="bcf5-f76f-8bf8-80a3" name="Show Restricted Access" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dbd-5795-bb3b-7e1f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="60ab-6666-abed-0fb8" name="Show Narrative Gear" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="714f-d8e8-d0c1-c974" type="max"/>
           </constraints>
           <costs>
             <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
@@ -262,9 +301,14 @@ A: Advancement Points</readme>
         <entryLink id="c563-96d2-d28c-e93c" name="1h Weapons" hidden="false" collective="false" import="true" targetId="0d5e-d12d-ee1a-ac97" type="selectionEntryGroup">
           <modifiers>
             <modifier type="decrement" field="03ea-aa1a-53ae-1e7b" value="2.0">
-              <conditions>
-                <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37bd-febd-fe37-c274" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37bd-febd-fe37-c274" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -272,24 +316,142 @@ A: Advancement Points</readme>
           </constraints>
         </entryLink>
         <entryLink id="ab4b-6c9e-ab83-7c96" name="2h Weapons" hidden="false" collective="false" import="true" targetId="37bd-febd-fe37-c274" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="d01b-f87b-06c6-f8f9" value="1.0">
+              <conditions>
+                <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d01b-f87b-06c6-f8f9" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="ceb0-f5d0-0036-f903" name="Consumables" hidden="false" collective="false" import="true" targetId="fcf1-6c66-f45d-526f" type="selectionEntryGroup">
           <modifiers>
-            <modifier type="increment" field="97cf-ee12-b9a3-f523" value="2.0">
+            <modifier type="decrement" field="97cf-ee12-b9a3-f523" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37bd-febd-fe37-c274" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="97cf-ee12-b9a3-f523" value="1.0">
               <repeats>
-                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8572-8778-1d8d-dc95" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2804-4cbc-d207-ed3f" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="97cf-ee12-b9a3-f523" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d5e-d12d-ee1a-ac97" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cf-ee12-b9a3-f523" type="max"/>
+            <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cf-ee12-b9a3-f523" type="max"/>
           </constraints>
         </entryLink>
         <entryLink id="838e-e18e-e3f3-dcbb" name="Gear" hidden="false" collective="false" import="true" targetId="f0a4-fedb-3985-7943" type="selectionEntryGroup"/>
         <entryLink id="e9a9-2863-0d06-e84d" name="Underslung Weapon" hidden="false" collective="false" import="true" targetId="27f8-ea5a-1e10-7dcc" type="selectionEntryGroup"/>
+        <entryLink id="0eae-bbd5-92dd-c331" name="Unarmed" hidden="false" collective="false" import="true" targetId="07c5-f5d5-3aa7-f5d9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="34cf-1f2c-0450-d185" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2804-4cbc-d207-ed3f" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="705b-ee7f-3d7a-3116" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="295c-1b99-8b5f-6f35" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2804-4cbc-d207-ed3f" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="705b-ee7f-3d7a-3116" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34cf-1f2c-0450-d185" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="295c-1b99-8b5f-6f35" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3aff-91f6-94f3-d569" name="2h Weapons CC" hidden="false" collective="false" import="true" targetId="59c8-3aab-687a-6664" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="bb51-d284-abfc-7bc6" value="1.0">
+              <conditions>
+                <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37bd-febd-fe37-c274" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb51-d284-abfc-7bc6" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="384e-efe5-6842-3a98" name="1h Weapons CC" hidden="false" collective="false" import="true" targetId="2804-4cbc-d207-ed3f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="70c0-83f8-76da-a728" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="59c8-3aab-687a-6664" type="equalTo"/>
+                    <condition field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="37bd-febd-fe37-c274" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70c0-83f8-76da-a728" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b3a3-a99a-80dc-a8a6" name="Services" hidden="false" collective="false" import="true" targetId="8840-47fe-1ae6-f42b" type="selectionEntryGroup"/>
+        <entryLink id="c297-cdde-a9fd-c5a5" name="Cheap Weapons" hidden="false" collective="false" import="true" targetId="a497-6cd1-c212-3d95" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="2c24-9a85-beb3-e957" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="705b-ee7f-3d7a-3116" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="de95-1855-6071-ad3b" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="705b-ee7f-3d7a-3116" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c24-9a85-beb3-e957" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="de95-1855-6071-ad3b" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="f466-6d35-fe20-87ff" name="Cheap Weapons CC" hidden="false" collective="false" import="true" targetId="705b-ee7f-3d7a-3116" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="decrement" field="a24b-c227-e966-5bfe" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a497-6cd1-c212-3d95" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="2860-25ad-2244-77c3" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="c3fd-a67c-8de3-413f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a497-6cd1-c212-3d95" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2860-25ad-2244-77c3" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a24b-c227-e966-5bfe" type="min"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -705,7 +867,7 @@ A: Advancement Points</readme>
     <selectionEntry id="dfe7-dc87-203f-954c" name="Gunslinger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fe63-d0ea-e249-39e7" name="Gunslinger" hidden="false" targetId="f8fa-a4ab-8c54-9a20" type="rule"/>
-        <infoLink id="e769-19a0-b636-260d" name="Rapid Strike" hidden="false" targetId="6466-3a35-8880-1bd3" type="rule"/>
+        <infoLink id="f0dd-f203-9fe1-9021" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
@@ -767,7 +929,7 @@ A: Advancement Points</readme>
     </selectionEntry>
     <selectionEntry id="018c-9e38-3b81-c3e1" name="[2+] Move and Fire" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="27d8-d164-bf30-c0e4" name="Move and Fire" hidden="false" targetId="4464-6c03-f1cd-ce5c" type="rule"/>
+        <infoLink id="27d8-d164-bf30-c0e4" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1860,31 +2022,1401 @@ A: Advancement Points</readme>
       <infoLinks>
         <infoLink id="0596-0381-17f0-62de" name="Deployable Explosive AT" hidden="false" targetId="47b1-d6da-914f-4ade" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7f8d-8407-c019-dfa4" name="Deployable Explosive AP" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="be78-a98c-c4a5-930c" name="Deployable Explosive AP" hidden="false" targetId="27b5-4d8d-58b6-e978" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9c67-8a58-e0c5-80a1" name="Deployable Explosive AT, Proximity sensor" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="59d9-94c8-9e48-30e0" name="Deployable Explosive AT, Proximity sensor" hidden="false" targetId="cddc-95bf-f7c9-93dc" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="eaae-2d26-1d8c-c05f" name="Deployable Explosive AP, Proximity sensor" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="32cf-5438-8ddb-0645" name="Deployable Explosive AP, Proximity sensor" hidden="false" targetId="4ddb-7fe4-31e9-1314" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1666-7fbb-07b9-a2f9" name="Additional Ammo" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3781-c38f-0665-c310" name="Additional ammo" hidden="false" targetId="83b9-e675-7624-50fe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b943-8a29-aba4-9431" name="Concealable/Collapsible Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1f0f-1956-2f45-b181" name="Concealable/Collapsible Weapon" hidden="false" targetId="90f6-4611-92ef-a501" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="10f7-17e3-01f4-f6a9" name="Cutting Beam" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="77e7-533d-2bae-42b4" name="Cutting Beam" hidden="false" targetId="9bd1-ba8a-fffe-0a76" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5178-113d-1462-5ee2" name="Silencer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cba7-5956-3040-5a08" name="Silencer" hidden="false" targetId="f086-ccb9-9a89-bb98" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1f56-3ed2-10b5-50b1" name="Currency" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7444-6817-8c43-5944" name="Currency" hidden="false" targetId="bd43-613d-cf38-6097" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e6ba-2853-d696-8521" name="Deployable Raft" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="366e-b50e-f60f-aae2" name="Deployable Raft" hidden="false" targetId="200a-b798-a063-a5b6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fb1e-0183-bccd-83aa" name="Flexible Assets" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3057-61ba-b6d9-8519" name="Flexible Assets" hidden="false" targetId="0665-2213-1847-b103" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1bd8-c63b-675e-8b1c" name="Heat Camera" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c3a5-d630-b22c-5238" name="Heat Camera" hidden="false" targetId="49a1-cc90-f837-7737" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f9f-30d2-c655-cf2b" name="Intrusion Drone" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="64ee-3b2f-23db-736e" name="Intrusion Drone" hidden="false" targetId="12f6-437e-9ff5-159a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5cda-a75d-9dec-3c7a" name="Loudhailer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f385-3258-f714-46fd" name="Loudhailer" hidden="false" targetId="5f1b-ec51-5f9c-2e5d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bc08-c397-b552-d093" name="Opto-Snakedrill" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="de73-efc9-0dcf-2795" name="Opto-Snakedrill" hidden="false" targetId="d40f-7e61-5911-2c1c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e9c4-21ac-35c7-1e6d" name="Tacdrone, Mini" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2bd7-9f10-b147-b88c" name="Tacdrone, Mini" hidden="false" targetId="8dec-d582-7f63-12f9" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dc48-3577-348b-b920" name="Operator Drugs AuxProc" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0feb-8676-7fc9-fb89" name="Operator Drugs AuxProc" hidden="false" targetId="5a39-4294-0745-0872" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ec20-f672-7cee-aafb" name="Operator Drugs Coldheart" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fd40-22f1-aa3a-ead1" name="Operator Drugs Coldheart" hidden="false" targetId="b409-eb49-d862-34fc" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="251c-7e4e-7773-878c" name="Operator Drugs PheroDate" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9799-cf7e-475f-b2fe" name="Operator Drugs PheroDate" hidden="false" targetId="0195-5d03-ebd7-9847" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a94a-dfb8-322e-8908" name="Operator Drugs ReCall" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69fe-8034-567a-b2a6" name="Operator Drugs ReCall" hidden="false" targetId="0e46-6787-f7a3-6cf0" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6e32-b3a4-e91d-5b2d" name="Operator Drugs SaphJuice" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="eaf6-7812-97a3-5c03" name="Operator Drugs SaphJuice" hidden="false" targetId="80d9-b92c-d693-e0df" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a759-4497-ee9d-660b" name="Operator Drugs SharpSense" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c061-c58f-59f6-29b6" name="Operator Drugs SharpSense" hidden="false" targetId="e275-812e-377d-4453" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a175-686d-78c5-228a" name="Tools, Specialised" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="189d-a86e-61e4-e161" name="Tools, Specialised" hidden="false" targetId="f8a8-1901-946a-e894" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0599-3eb2-a665-7210" name="Thug" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="bb63-160d-4ffa-b19b" name="0,5p Weapons" hidden="false">
+          <description>Choose weapons for a total of 0,5p.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="e64f-051e-03e8-39ad" name="Thug" hidden="false" targetId="ba5e-e100-20c8-ab33" type="profile"/>
+        <infoLink id="ea6b-0484-9f91-cfc0" name="Subordinate" hidden="false" targetId="7e7f-b041-363a-95c5" type="rule"/>
+        <infoLink id="94fd-f2b4-c602-5838" name="Nerves(3)" hidden="false" targetId="1248-e47e-b4f8-b7fd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a454-38af-7d91-4887" name="New CategoryLink" hidden="false" targetId="d822-4a8e-8f61-5cf5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="010e-1ed2-8536-43ab" name="Weapon (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="decrement" field="be48-3744-2b1b-0d7c" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a85b-9922-98f8-ce8d" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d64-fd28-50ea-82c1" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1233-690d-7585-87eb" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9869-b7c1-6f90-812b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="aa5e-d817-f476-4801" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a85b-9922-98f8-ce8d" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d64-fd28-50ea-82c1" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1233-690d-7585-87eb" type="equalTo"/>
+                    <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9869-b7c1-6f90-812b" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa5e-d817-f476-4801" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be48-3744-2b1b-0d7c" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="26b5-a7e0-ba9d-1915" name="Hand Cannon" hidden="false" collective="false" import="true" targetId="f0c0-8a8b-49ee-7c3d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3610-9e34-66fa-702d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0235-dfa0-61cd-e981" name="Holdout pistol" hidden="false" collective="false" import="true" targetId="7efa-ab05-a8a8-8296" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="deac-7871-b277-2a94" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2129-0443-9645-6a9f" name="Pistol" hidden="false" collective="false" import="true" targetId="7763-d3e9-d836-5f2c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4339-858b-bb41-2fe6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="771b-4ff9-aa6b-19c8" name="Unarmed" hidden="false" collective="false" import="true" targetId="07c5-f5d5-3aa7-f5d9" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="43f9-eccc-481b-b872" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a85b-9922-98f8-ce8d" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d64-fd28-50ea-82c1" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1233-690d-7585-87eb" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9869-b7c1-6f90-812b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+                <modifier type="set" field="df62-ee87-80f9-9f46" value="0.0">
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a85b-9922-98f8-ce8d" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9d64-fd28-50ea-82c1" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1233-690d-7585-87eb" type="equalTo"/>
+                        <condition field="selections" scope="0599-3eb2-a665-7210" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9869-b7c1-6f90-812b" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="43f9-eccc-481b-b872" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df62-ee87-80f9-9f46" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="1233-690d-7585-87eb" name="Axe" hidden="false" collective="false" import="true" targetId="33ba-c430-3a97-892a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3de-fd53-8e11-45b6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a85b-9922-98f8-ce8d" name="Sword" hidden="false" collective="false" import="true" targetId="28a1-a91b-5392-8ed1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e66b-d2ec-16d5-87d1" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9869-b7c1-6f90-812b" name="Vibro-Sword" hidden="false" collective="false" import="true" targetId="366d-1720-bf3c-bc9e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1101-f5fa-31d3-7029" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f89e-8dc1-8e82-6a05" name="SMG" hidden="false" collective="false" import="true" targetId="a737-f24c-5837-1888" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f95-dac8-660c-3f61" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0200-b114-458b-bf73" name="Speargun" hidden="false" collective="false" import="true" targetId="0146-f7b8-347c-1905" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19b8-02ac-db04-ad0b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9d64-fd28-50ea-82c1" name="Sledgehammer" hidden="false" collective="false" import="true" targetId="49d4-4da8-c9ed-b820" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7035-9f25-458e-c064" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c1bf-61bb-9e60-f27b" name="Rifle" hidden="false" collective="false" import="true" targetId="cdda-0d04-b708-b569" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f9-910c-d075-2dff" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ecf9-4263-5a33-3452" name="Special Care" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8c03-0073-395d-b8d5" name="Special Care" hidden="false" targetId="e76e-4f2f-d09f-bd26" type="rule"/>
+        <infoLink id="7c57-ec25-6ef0-b022" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b349-77c4-da25-9b92" name="Interrogation Specialist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f2d4-38ff-c71a-eed8" name="Interrogation Specialist" hidden="false" targetId="dee0-daca-4ccb-f1eb" type="rule"/>
+        <infoLink id="e51a-e959-2be7-6372" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f1b1-cedb-54d7-5eb3" name="Cheap Weapons" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6c93-5595-3b1e-e2d4" name="Cheap Weapons" hidden="false" targetId="b1fd-2320-dc1b-9d4f" type="rule"/>
+        <infoLink id="0217-4c28-58f7-ebfc" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8121-7787-a888-d6b1" name="Fence" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a8b-db65-7903-e514" name="Fence" hidden="false" targetId="30d7-4106-0060-0b9b" type="rule"/>
+        <infoLink id="c380-3e42-aa16-8112" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4b91-e9d4-54e6-f152" name="Scrapsmith" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="90e9-a877-63d5-7456" name="Scrapsmith" hidden="false" targetId="b2e5-4870-17fe-5178" type="rule"/>
+        <infoLink id="1509-f8a8-824e-300e" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4f66-93a3-0ac1-6bc1" name="Local Informant" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="69c0-c1fe-f34c-b95a" name="Local Informant" hidden="false" targetId="0117-8bc0-2068-17e5" type="rule"/>
+        <infoLink id="922c-276c-21b3-338f" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e5bc-2c14-e61a-8890" name="Sellsword" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="c7b1-0842-145e-744d" name="1p Weapons" hidden="false">
+          <description>Choose weapons for a total of 1p.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="81f2-f432-88a4-00b2" name="Sellsword" hidden="false" targetId="f1d4-f9f9-2dd5-e19f" type="profile"/>
+        <infoLink id="3e05-302c-1b52-eae4" name="Nerves(3)" hidden="false" targetId="1248-e47e-b4f8-b7fd" type="rule"/>
+        <infoLink id="064e-b274-853b-c241" name="Subordinate" hidden="false" targetId="7e7f-b041-363a-95c5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="eb88-804a-64f2-b7bf" name="New CategoryLink" hidden="false" targetId="d822-4a8e-8f61-5cf5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="a40f-0d6b-134c-1dfa" name="1h Weapons (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="6fc8-c3fe-a242-21e3" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="6fc8-c3fe-a242-21e3" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="6fc8-c3fe-a242-21e3" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6fc8-c3fe-a242-21e3" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6ae8-cef3-d413-d133" name="Hand Cannon" hidden="false" collective="false" import="true" targetId="f0c0-8a8b-49ee-7c3d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0e94-d11c-f1f6-e097" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="454d-035a-14a7-e6a6" name="Holdout pistol" hidden="false" collective="false" import="true" targetId="7efa-ab05-a8a8-8296" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="538a-983e-cd15-c73a" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="fb37-3ff5-2228-fe7f" name="Pistol" hidden="false" collective="false" import="true" targetId="7763-d3e9-d836-5f2c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c61-8d87-986c-1cbf" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f09a-2ce8-9625-d115" name="1h Weapons CC (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="b61b-5470-a7ac-5723" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="b61b-5470-a7ac-5723" value="1.0">
+              <conditions>
+                <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="decrement" field="b61b-5470-a7ac-5723" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a40f-0d6b-134c-1dfa" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b61b-5470-a7ac-5723" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="b2bd-c5f7-d793-d7d0" name="Axe" hidden="false" collective="false" import="true" targetId="33ba-c430-3a97-892a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="326e-9ba0-1104-91e8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="32c3-6d3f-ffc8-f015" name="Sword" hidden="false" collective="false" import="true" targetId="28a1-a91b-5392-8ed1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ccf-be53-c842-963f" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5733-3ad6-e066-c572" name="Vibro-Sword" hidden="false" collective="false" import="true" targetId="366d-1720-bf3c-bc9e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3c4-f205-395c-4000" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="e14e-7c26-559a-e9f9" name="1h Weapons (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a40f-0d6b-134c-1dfa" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ccd-41bd-792c-61fe" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="9c84-2013-6cc9-3345" name="Hicap Pistol" hidden="false" collective="false" import="true" targetId="1531-5d42-3b6f-786f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9118-03ee-56a7-c564" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="bf56-93fd-36b9-6b8c" name="Slug Pistol" hidden="false" collective="false" import="true" targetId="8808-0493-7bed-3bc3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f21-82bf-18d0-7ed7" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="91ec-acea-2d6b-640a" name="1h Weapons CC (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a40f-0d6b-134c-1dfa" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8e5-e09b-95e4-45d4" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8517-9f96-4db3-8db6" name="Combat Claw" hidden="false" collective="false" import="true" targetId="7fa4-2fcc-2596-9f5d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdda-e1ee-6ec9-fdb0" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8451-b7a7-1dfd-78b1" name="2h Weapons (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b49-90c1-97b6-2c53" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="8566-572b-9acd-009f" name="SMG" hidden="false" collective="false" import="true" targetId="a737-f24c-5837-1888" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2def-f98e-4bc1-7ec4" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d527-663f-c709-a716" name="Speargun" hidden="false" collective="false" import="true" targetId="0146-f7b8-347c-1905" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db33-5941-b761-a4a0" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f95f-af11-4d1d-352a" name="Rifle" hidden="false" collective="false" import="true" targetId="cdda-0d04-b708-b569" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acc3-ccc6-593b-6858" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9bfd-3e9c-9280-70f2" name="2h Weapons CC (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a45e-7c79-eaa5-3986" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a07d-9238-1e24-83f8" name="Sledgehammer" hidden="false" collective="false" import="true" targetId="49d4-4da8-c9ed-b820" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed1a-03c3-7495-da02" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="6776-a99b-cc52-2e6e" name="2h Weapons (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a40f-0d6b-134c-1dfa" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a36d-fe99-302b-c729" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1fe3-331c-5b37-73fb" name="Autocarbine" hidden="false" collective="false" import="true" targetId="818f-3c7e-2796-eb16" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4360-e3fb-c987-ab2d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="aa60-7542-72e6-cee5" name="Autorifle" hidden="false" collective="false" import="true" targetId="07d9-891b-1d9d-f105" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3efb-58eb-8c6e-8058" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="39ef-07e8-a30b-fd9a" name="Compact carbine" hidden="false" collective="false" import="true" targetId="7361-e4e6-7f0b-343a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97b9-d1ae-6ca0-714c" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="96f3-1e98-a9d5-1849" name="CQB/sawed-off shotgun" hidden="false" collective="false" import="true" targetId="db5c-2e00-058e-e172" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4219-7fc1-6ded-948d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c43e-ed98-6155-87c2" name="Scoped Rifle" hidden="false" collective="false" import="true" targetId="0cb5-4a34-d258-d948" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ba9a-4c6c-91e2-88bd" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3a8c-a534-a1ba-2023" name="Shotgun" hidden="false" collective="false" import="true" targetId="6eba-02b7-711e-0570" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3019-25ea-5d78-9f5d" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="56c7-af61-4bd5-195f" name="Slug Rifle" hidden="false" collective="false" import="true" targetId="e0e2-9869-c4e1-48c0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d088-8344-1ece-4c44" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7cd7-37d0-23a6-b51d" name="2h Weapons CC (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8451-b7a7-1dfd-78b1" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6776-a99b-cc52-2e6e" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e14e-7c26-559a-e9f9" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a40f-0d6b-134c-1dfa" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33b4-cf6e-e647-63fa" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a9f9-fd2b-1c6f-a492" name="Axe, two-handed" hidden="false" collective="false" import="true" targetId="f1ca-8aa3-f469-d42d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c297-7598-be5c-5b4b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2969-f5ca-150d-884c" name="Hammer, two-handed" hidden="false" collective="false" import="true" targetId="faf0-f4e0-54f5-6228" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b354-b5cd-92cc-8ae4" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="b6ee-69f4-df21-b24f" name="Unarmed" hidden="false" collective="false" import="true" targetId="07c5-f5d5-3aa7-f5d9" type="selectionEntry">
+          <modifiers>
+            <modifier type="decrement" field="eaf8-c37c-8a05-b758" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="8912-bb0b-ceee-95b9" value="1.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f09a-2ce8-9625-d115" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cd7-37d0-23a6-b51d" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9bfd-3e9c-9280-70f2" type="equalTo"/>
+                    <condition field="selections" scope="e5bc-2c14-e61a-8890" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="91ec-acea-2d6b-640a" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8912-bb0b-ceee-95b9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaf8-c37c-8a05-b758" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="4.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3cf3-c834-54d8-d17b" name="Mercenary" hidden="false" collective="false" import="true" type="upgrade">
+      <rules>
+        <rule id="80ad-4c24-58fd-7821" name="2p Weapons" hidden="false">
+          <description>Choose weapons for a total of 2p.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="2d09-8303-7192-ee77" name="Mercenary" hidden="false" targetId="ee89-5d70-b5f8-6615" type="profile"/>
+        <infoLink id="515b-5fda-6e0e-2775" name="Subordinate" hidden="false" targetId="7e7f-b041-363a-95c5" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0d83-23d3-8fc1-45e5" name="New CategoryLink" hidden="false" targetId="d822-4a8e-8f61-5cf5" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="f8b1-4eb4-92ce-9f50" name="1h Weapons (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="e4c4-1ef4-60ab-a7c1" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="e4c4-1ef4-60ab-a7c1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e4c4-1ef4-60ab-a7c1" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524a-8a62-d35a-003e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="e4c4-1ef4-60ab-a7c1" value="1.0">
+              <conditions>
+                <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4c4-1ef4-60ab-a7c1" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="667d-15ec-9fbd-f345" name="Hand Cannon" hidden="false" collective="false" import="true" targetId="f0c0-8a8b-49ee-7c3d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="67ee-f693-3415-1059" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a371-fbcd-0063-dfe5" name="Holdout pistol" hidden="false" collective="false" import="true" targetId="7efa-ab05-a8a8-8296" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f00-31e3-0684-3ebc" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="d5d2-5e09-8a94-f2ef" name="Pistol" hidden="false" collective="false" import="true" targetId="7763-d3e9-d836-5f2c" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f315-5bba-b1cf-dc39" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2933-9d5c-36d5-2890" name="1h Weapons CC (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="b6c9-5d12-6250-aef2" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="b6c9-5d12-6250-aef2" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524a-8a62-d35a-003e" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b6c9-5d12-6250-aef2" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8b1-4eb4-92ce-9f50" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="b6c9-5d12-6250-aef2" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6c9-5d12-6250-aef2" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ca8e-97c4-2105-e0db" name="Axe" hidden="false" collective="false" import="true" targetId="33ba-c430-3a97-892a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02fa-bf84-21d9-f0cf" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6304-07fe-a716-b060" name="Sword" hidden="false" collective="false" import="true" targetId="28a1-a91b-5392-8ed1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bc2-a768-a0d5-3bf7" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="c8af-8541-aae1-2d45" name="Vibro-Sword" hidden="false" collective="false" import="true" targetId="366d-1720-bf3c-bc9e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72b1-bdd2-493d-c036" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="524a-8a62-d35a-003e" name="1h Weapons (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="a4c0-729e-b24f-beef" value="2.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="decrement" field="a4c0-729e-b24f-beef" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a4c0-729e-b24f-beef" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+            <modifier type="decrement" field="a4c0-729e-b24f-beef" value="1.0">
+              <repeats>
+                <repeat field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8b1-4eb4-92ce-9f50" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4c0-729e-b24f-beef" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="57a4-dfd8-28af-2f4f" name="Hicap Pistol" hidden="false" collective="false" import="true" targetId="1531-5d42-3b6f-786f" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8374-f735-bf2c-9d79" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="ee16-004c-8e23-ce2f" name="Slug Pistol" hidden="false" collective="false" import="true" targetId="8808-0493-7bed-3bc3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9227-12cd-0dcf-380b" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="dd82-93b3-6ba7-feb6" name="1h Weapons CC (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e186-793c-defb-819c" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1f82-e914-507d-71ba" name="Combat Claw" hidden="false" collective="false" import="true" targetId="7fa4-2fcc-2596-9f5d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c97-9db8-4b13-e759" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="f7d1-6b7a-7772-672e" name="2h Weapons (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebef-1301-6b0a-6088" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="da27-6ab7-dc73-827a" name="SMG" hidden="false" collective="false" import="true" targetId="a737-f24c-5837-1888" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aced-6ae1-17c4-8e0b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="deed-34fc-0292-a65d" name="Speargun" hidden="false" collective="false" import="true" targetId="0146-f7b8-347c-1905" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c06-2eff-05a9-ced8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7daa-6a5f-a0b3-71c8" name="Rifle" hidden="false" collective="false" import="true" targetId="cdda-0d04-b708-b569" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a9c-fd61-4d3b-b910" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="a0f6-a7df-2a83-e581" name="2h Weapons CC (0,5p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9d2-0b2d-e4ef-f98e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="ed57-2378-9269-3091" name="Sledgehammer" hidden="false" collective="false" import="true" targetId="49d4-4da8-c9ed-b820" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d59-507e-2ba9-361c" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="415d-9756-b091-9fb2" name="2h Weapons (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca3f-6856-667f-30a7" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0ad4-e644-724e-3250" name="Autocarbine" hidden="false" collective="false" import="true" targetId="818f-3c7e-2796-eb16" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df17-c00d-ffbe-1413" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="09fa-37d4-5460-65d0" name="Autorifle" hidden="false" collective="false" import="true" targetId="07d9-891b-1d9d-f105" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2427-09bf-6848-859b" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="80e7-e6f3-b1eb-5e29" name="Compact carbine" hidden="false" collective="false" import="true" targetId="7361-e4e6-7f0b-343a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b5c-0596-b7c1-cfd3" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9ac1-81cc-2125-b10e" name="CQB/sawed-off shotgun" hidden="false" collective="false" import="true" targetId="db5c-2e00-058e-e172" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5932-9e05-8b36-3eb8" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="0b4e-4645-6e0c-bf27" name="Scoped Rifle" hidden="false" collective="false" import="true" targetId="0cb5-4a34-d258-d948" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8e5-0335-2d19-8e66" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8504-fa6e-c29c-b524" name="Shotgun" hidden="false" collective="false" import="true" targetId="6eba-02b7-711e-0570" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf80-ea4c-c4d5-2064" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="a8af-bca8-336d-04a1" name="Slug Rifle" hidden="false" collective="false" import="true" targetId="e0e2-9869-c4e1-48c0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eaa5-554b-274c-8597" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="7f49-6b6b-36a5-6328" name="2h Weapons CC (1p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a933-50a9-e4f1-cd4b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="6399-90de-829a-23c5" name="Axe, two-handed" hidden="false" collective="false" import="true" targetId="f1ca-8aa3-f469-d42d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a510-e3e8-5d75-f3ee" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7eb8-52bc-70a5-0e05" name="Hammer, two-handed" hidden="false" collective="false" import="true" targetId="faf0-f4e0-54f5-6228" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6c7-0acf-f419-be61" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="713e-b20c-902b-93d9" name="1h Weapons CC (2p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8b1-4eb4-92ce-9f50" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524a-8a62-d35a-003e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="1765-95f1-bd26-9a15" name="Vibrofist/Kill Saw" hidden="false" collective="false" import="true" targetId="ae49-7866-80ac-add0" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="836b-405e-6dd4-5f57" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="2271-307b-2794-9d84" name="2h Weapons (2p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8b1-4eb4-92ce-9f50" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524a-8a62-d35a-003e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="2920-ed77-abc1-bff2" name="Full Auto Shotgun" hidden="false" collective="false" import="true" targetId="9239-d916-33ce-d616" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17ac-bec2-b0a8-f846" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f91a-dd04-6847-ca82" name="Hicap Rifle" hidden="false" collective="false" import="true" targetId="742d-fcf9-e8ed-d8d8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cbd-2b77-6d0e-bd7e" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="682d-a664-7f86-e853" name="Scoped Slugrifle" hidden="false" collective="false" import="true" targetId="477a-cfa9-d1d7-beac" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a375-59c7-caf0-b135" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="2113-1a85-b0be-446f" name="Slug Autocarbine" hidden="false" collective="false" import="true" targetId="c02b-01eb-b755-7492" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a029-aa87-043a-6bf6" type="max"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5751-5f75-559f-ccb2" name="Slugger" hidden="false" collective="false" import="true" targetId="9af3-b6c0-36fc-76a2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd8b-bc3c-2ee2-422a" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="ac7b-4290-9e8a-7cad" name="2h Weapons CC (2p)" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="hidden" value="true">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="713e-b20c-902b-93d9" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="415d-9756-b091-9fb2" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f7d1-6b7a-7772-672e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2271-307b-2794-9d84" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f8b1-4eb4-92ce-9f50" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524a-8a62-d35a-003e" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" type="equalTo"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <entryLinks>
+            <entryLink id="4674-1ce4-10d9-4287" name="Big Vibrosword" hidden="false" collective="false" import="true" targetId="2f8e-0f02-0f4f-b088" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdcc-acfd-682f-4d9e" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="9f99-c328-47fc-ab42" name="Unarmed" hidden="false" collective="false" import="true" targetId="07c5-f5d5-3aa7-f5d9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="431c-1371-c38b-619d" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+            <modifier type="set" field="74c0-ecff-fb29-4906" value="0.0">
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dd82-93b3-6ba7-feb6" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a0f6-a7df-2a83-e581" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2933-9d5c-36d5-2890" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7f49-6b6b-36a5-6328" type="atLeast"/>
+                    <condition field="selections" scope="3cf3-c834-54d8-d17b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac7b-4290-9e8a-7cad" type="atLeast"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74c0-ecff-fb29-4906" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="431c-1371-c38b-619d" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="6.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0d5e-d12d-ee1a-ac97" name="1h Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="ac1b-2cd5-5205-73ba" name="Axe" hidden="false" collective="false" import="true" targetId="33ba-c430-3a97-892a" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
-          </costs>
-        </entryLink>
         <entryLink id="9ec0-bcf3-7636-1e88" name="Slug Pistol" hidden="false" collective="false" import="true" targetId="8808-0493-7bed-3bc3" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
@@ -1893,76 +3425,6 @@ A: Advancement Points</readme>
         <entryLink id="c59a-78c7-067c-0837" name="Pistol" hidden="false" collective="false" import="true" targetId="7763-d3e9-d836-5f2c" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
-          </costs>
-        </entryLink>
-        <entryLink id="8572-8778-1d8d-dc95" name="Unarmed" hidden="false" collective="false" import="true" targetId="07c5-f5d5-3aa7-f5d9" type="selectionEntry"/>
-        <entryLink id="22f0-3c10-fcd8-5019" name="Club" hidden="false" collective="false" import="true" targetId="bba3-d239-7fc5-03ce" type="selectionEntry"/>
-        <entryLink id="db26-d775-8250-6997" name="Knife" hidden="false" collective="false" import="true" targetId="a3f9-833a-6134-198d" type="selectionEntry"/>
-        <entryLink id="1f39-77ea-97b6-8306" name="Combat Claw" hidden="false" collective="false" import="true" targetId="7fa4-2fcc-2596-9f5d" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="d03c-b7ac-67dd-968c" name="Vibro-Sword" hidden="false" collective="false" import="true" targetId="366d-1720-bf3c-bc9e" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
-          </costs>
-        </entryLink>
-        <entryLink id="c729-1f88-9eff-2336" name="Sword" hidden="false" collective="false" import="true" targetId="28a1-a91b-5392-8ed1" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
-          </costs>
-        </entryLink>
-        <entryLink id="b1d9-1c39-04e3-43ff" name="Energy Fist" hidden="true" collective="false" import="true" targetId="c3cc-be5a-6348-8566" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="8737-b282-e989-6c94" name="Energy Maul" hidden="true" collective="false" import="true" targetId="7cb8-afa6-3a8c-7c8d" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="d07c-6c42-66ab-a7f9" name="Energy Axe" hidden="true" collective="false" import="true" targetId="e351-4312-3804-0032" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="8c35-d193-1b74-1a74" name="Energy Sword" hidden="true" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
           </costs>
         </entryLink>
         <entryLink id="df14-fb7e-3083-2e79" name="Plasma Pistol" hidden="true" collective="false" import="true" targetId="62ed-8218-0d0f-7272" type="selectionEntry">
@@ -1991,19 +3453,6 @@ A: Advancement Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
           </costs>
         </entryLink>
-        <entryLink id="b649-e421-a29d-e6a2" name="Energy Combat Claw" hidden="true" collective="false" import="true" targetId="8937-d36c-a443-c743" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="b6a3-57f2-246f-d7c5" name="Hand Cannon" hidden="false" collective="false" import="true" targetId="f0c0-8a8b-49ee-7c3d" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -2022,13 +3471,6 @@ A: Advancement Points</readme>
         <entryLink id="f6de-e751-d5d0-5762" name="Holdout pistol" hidden="false" collective="false" import="true" targetId="7efa-ab05-a8a8-8296" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
-          </costs>
-        </entryLink>
-        <entryLink id="f17c-b86d-b552-1a7e" name="Throwing weapon, large" hidden="false" collective="false" import="true" targetId="def9-d28e-c07c-4870" type="selectionEntry"/>
-        <entryLink id="f9b8-88c9-e21b-f61d" name="Throwing weapon, small" hidden="false" collective="false" import="true" targetId="51b6-4678-bb7b-9c24" type="selectionEntry"/>
-        <entryLink id="625a-de07-8f2c-8c60" name="Vibrofist/Kill Saw" hidden="false" collective="false" import="true" targetId="ae49-7866-80ac-add0" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -2055,13 +3497,11 @@ A: Advancement Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="dce7-2072-d359-66e8" name="Bow" hidden="false" collective="false" import="true" targetId="c848-4e5a-add2-c958" type="selectionEntry"/>
         <entryLink id="058e-050c-772e-1dab" name="Slug Rifle" hidden="false" collective="false" import="true" targetId="e0e2-9869-c4e1-48c0" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="71e8-646b-c8af-65dd" name="Musket" hidden="false" collective="false" import="true" targetId="980b-e875-3b78-e94c" type="selectionEntry"/>
         <entryLink id="3c1a-27b9-ed29-7271" name="Scoped Rifle" hidden="false" collective="false" import="true" targetId="0cb5-4a34-d258-d948" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
@@ -2085,11 +3525,6 @@ A: Advancement Points</readme>
         <entryLink id="de2c-5e18-593f-adc1" name="Scoped Slugrifle" hidden="false" collective="false" import="true" targetId="477a-cfa9-d1d7-beac" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="e2e2-8823-67b6-978d" name="Sledgehammer" hidden="false" collective="false" import="true" targetId="49d4-4da8-c9ed-b820" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
           </costs>
         </entryLink>
         <entryLink id="caf1-44ea-0aa9-5ea2" name="HMG" hidden="true" collective="false" import="true" targetId="5400-40bd-bd89-83aa" type="selectionEntry">
@@ -2326,29 +3761,6 @@ A: Advancement Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
           </costs>
         </entryLink>
-        <entryLink id="d748-b1b7-b1f9-e7b7" name="Energy Sword 2-handed" hidden="true" collective="false" import="true" targetId="b6ae-0d90-9bf2-ade1" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="ba25-cce3-b26b-fe3f" name="Axe, two-handed" hidden="false" collective="false" import="true" targetId="f1ca-8aa3-f469-d42d" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="5827-1bc0-f048-3381" name="Big Vibrosword" hidden="false" collective="false" import="true" targetId="2f8e-0f02-0f4f-b088" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
         <entryLink id="f103-13ce-c991-745f" name="Compact carbine" hidden="false" collective="false" import="true" targetId="7361-e4e6-7f0b-343a" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
@@ -2362,11 +3774,6 @@ A: Advancement Points</readme>
         <entryLink id="a929-7fdc-c966-81ab" name="Full Auto Shotgun" hidden="false" collective="false" import="true" targetId="9239-d916-33ce-d616" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="717e-05eb-d264-b8e4" name="Hammer, two-handed" hidden="false" collective="false" import="true" targetId="faf0-f4e0-54f5-6228" type="selectionEntry">
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
           </costs>
         </entryLink>
         <entryLink id="e8ed-308b-0c9e-9200" name="Hicap Rifle" hidden="false" collective="false" import="true" targetId="742d-fcf9-e8ed-d8d8" type="selectionEntry">
@@ -2692,6 +4099,90 @@ A: Advancement Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
           </costs>
         </entryLink>
+        <entryLink id="984f-f3ac-8c48-4068" name="Additional Ammo" hidden="true" collective="false" import="true" targetId="1666-7fbb-07b9-a2f9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="bfa7-1736-a2e8-3762" name="Operator Drugs AuxProc" hidden="true" collective="false" import="true" targetId="dc48-3577-348b-b920" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b4d2-b4d6-fa5b-f5ac" name="Operator Drugs Coldheart" hidden="true" collective="false" import="true" targetId="ec20-f672-7cee-aafb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="75e3-6f78-30fd-8ad8" name="Operator Drugs PheroDate" hidden="true" collective="false" import="true" targetId="251c-7e4e-7773-878c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ad7c-0d4c-94d5-a5b0" name="Operator Drugs ReCall" hidden="true" collective="false" import="true" targetId="a94a-dfb8-322e-8908" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="2fe7-2058-788c-69a1" name="Operator Drugs SaphJuice" hidden="true" collective="false" import="true" targetId="6e32-b3a4-e91d-5b2d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="22b7-4243-ef9a-5d3a" name="Operator Drugs SharpSense" hidden="true" collective="false" import="true" targetId="a759-4497-ee9d-660b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f0a4-fedb-3985-7943" name="Gear" hidden="false" collective="false" import="true">
@@ -2955,6 +4446,168 @@ A: Advancement Points</readme>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8e78-0a56-7197-00ad" name="Concealable/Collapsible Weapon" hidden="true" collective="false" import="true" targetId="b943-8a29-aba4-9431" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="317a-e99c-62b4-5f8e" name="Cutting Beam" hidden="true" collective="false" import="true" targetId="10f7-17e3-01f4-f6a9" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5f58-e4f9-b893-54c1" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="abd5-506f-5c41-4201" name="Silencer" hidden="true" collective="false" import="true" targetId="5178-113d-1462-5ee2" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3ef2-b8e0-185e-6554" name="Currency" hidden="true" collective="false" import="true" targetId="1f56-3ed2-10b5-50b1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="08ed-db06-dae8-b8fe" name="Deployable Raft" hidden="true" collective="false" import="true" targetId="e6ba-2853-d696-8521" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3495-ce71-acc8-b3b2" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7a0d-05e1-9020-ab23" name="Flexible Assets" hidden="true" collective="false" import="true" targetId="fb1e-0183-bccd-83aa" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="2243-770f-f624-02d6" name="Heat Camera" hidden="true" collective="false" import="true" targetId="1bd8-c63b-675e-8b1c" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29ff-f006-8d5b-90ac" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d718-1e0d-a908-2e05" name="Intrusion Drone" hidden="true" collective="false" import="true" targetId="8f9f-30d2-c655-cf2b" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db42-e65c-524a-b3a6" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="a402-db69-f55e-4722" name="Loudhailer" hidden="true" collective="false" import="true" targetId="5cda-a75d-9dec-3c7a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e26b-3855-ad51-e57f" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="9385-7cd5-9fcb-e877" name="Opto-Snakedrill" hidden="true" collective="false" import="true" targetId="bc08-c397-b552-d093" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3ed-5956-2195-122a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8e34-c836-26ed-87de" name="Tacdrone, Mini" hidden="true" collective="false" import="true" targetId="e9c4-21ac-35c7-1e6d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3cb3-dbfa-a93e-e9f1" name="Tools, Specialised" hidden="true" collective="false" import="true" targetId="a175-686d-78c5-228a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -3863,6 +5516,281 @@ A: Advancement Points</readme>
         <entryLink id="30cf-07b8-1b7d-57df" name="Recoilless Rifle" hidden="false" collective="false" import="true" targetId="39e3-1e4d-d71a-cab9" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="a497-6cd1-c212-3d95" name="Cheap Weapons" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1b1-cedb-54d7-5eb3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="f479-b8d5-9392-aae1" name="Bow" hidden="false" collective="false" import="true" targetId="c848-4e5a-add2-c958" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="571b-db63-b06d-5376" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="989b-9f93-46d6-0343" name="Musket" hidden="false" collective="false" import="true" targetId="980b-e875-3b78-e94c" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e18-38eb-baed-07ef" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="b231-aab1-7775-3e27" name="Throwing weapon, large" hidden="false" collective="false" import="true" targetId="def9-d28e-c07c-4870" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b2c-6aa9-bfd9-7b21" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="a64a-fc78-4d7b-880b" name="Throwing weapon, small" hidden="false" collective="false" import="true" targetId="51b6-4678-bb7b-9c24" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dff9-3ffe-452b-2e5d" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="2804-4cbc-d207-ed3f" name="1h Weapons CC" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="da78-f32d-7557-6d49" name="Axe" hidden="false" collective="false" import="true" targetId="33ba-c430-3a97-892a" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="4c36-8a64-6e5e-fc30" name="Combat Claw" hidden="false" collective="false" import="true" targetId="7fa4-2fcc-2596-9f5d" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="2649-c98a-bd74-57d1" name="Energy Axe" hidden="true" collective="false" import="true" targetId="e351-4312-3804-0032" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c79f-7081-c5af-ebef" name="Energy Combat Claw" hidden="true" collective="false" import="true" targetId="8937-d36c-a443-c743" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="7759-0ac7-43a9-d32d" name="Energy Fist" hidden="true" collective="false" import="true" targetId="c3cc-be5a-6348-8566" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="bbb9-87d4-359c-70e2" name="Energy Maul" hidden="true" collective="false" import="true" targetId="7cb8-afa6-3a8c-7c8d" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="8d7c-d38d-1982-a065" name="Energy Sword" hidden="true" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="ed4a-5490-7304-ebd7" name="Sword" hidden="false" collective="false" import="true" targetId="28a1-a91b-5392-8ed1" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="5382-b0c2-d424-c002" name="Vibro-Sword" hidden="false" collective="false" import="true" targetId="366d-1720-bf3c-bc9e" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="922a-75d1-8b91-fad2" name="Vibrofist/Kill Saw" hidden="false" collective="false" import="true" targetId="ae49-7866-80ac-add0" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="59c8-3aab-687a-6664" name="2h Weapons CC" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="7423-ab6c-9f8b-f1f0" name="Sledgehammer" hidden="false" collective="false" import="true" targetId="49d4-4da8-c9ed-b820" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="882e-5217-1648-9432" name="Hammer, two-handed" hidden="false" collective="false" import="true" targetId="faf0-f4e0-54f5-6228" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="707d-2744-22d2-5eb8" name="Big Vibrosword" hidden="false" collective="false" import="true" targetId="2f8e-0f02-0f4f-b088" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b605-4d51-fd32-1ebb" name="Axe, two-handed" hidden="false" collective="false" import="true" targetId="f1ca-8aa3-f469-d42d" type="selectionEntry">
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="fbf5-4a88-ae23-053b" name="Energy Sword 2-handed" hidden="true" collective="false" import="true" targetId="b6ae-0d90-9bf2-ade1" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="705b-ee7f-3d7a-3116" name="Cheap Weapons CC" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1b1-cedb-54d7-5eb3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <entryLinks>
+        <entryLink id="2673-fd92-3fdb-8888" name="Knife" hidden="false" collective="false" import="true" targetId="a3f9-833a-6134-198d" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7756-8e0d-d279-99de" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="3bf0-96fe-52a5-2fb1" name="Club" hidden="false" collective="false" import="true" targetId="bba3-d239-7fc5-03ce" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8766-0a4f-c463-221a" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8840-47fe-1ae6-f42b" name="Services" hidden="true" collective="false" import="true">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="60ab-6666-abed-0fb8" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <selectionEntries>
+        <selectionEntry id="9588-5ec9-df53-4f45" name="Thug" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3be0-575b-4793-2ec3" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="8c72-1cb7-c378-f4b5" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="M" typeId="b12f-15e1-68b0-8d81" value="0.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3828-2a3c-c290-526f" name="Sellsword" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa5-6c04-60e0-967d" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="684c-ddca-0a2e-5d25" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+        <selectionEntry id="d27d-0ba3-60da-00aa" name="Mercenary" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab37-75cb-d27d-0e37" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="36bc-38e0-9140-0c98" name="Services" hidden="false" targetId="d715-0127-9bc5-2118" type="rule"/>
+          </infoLinks>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="c944-cf6c-3e00-38ef" name="Special Care" hidden="false" collective="false" import="true" targetId="ecf9-4263-5a33-3452" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1066-79e7-beaf-2ae5" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="22e3-67e4-fcd4-3659" name="Interrogation Specialist" hidden="false" collective="false" import="true" targetId="b349-77c4-da25-9b92" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c66-66ea-06e9-618d" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="71df-b270-08a1-14f3" name="Cheap Weapons" hidden="false" collective="false" import="true" targetId="f1b1-cedb-54d7-5eb3" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b21-a10f-b8e5-7f87" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="3d51-f5e7-3398-87b8" name="Fence" hidden="false" collective="false" import="true" targetId="8121-7787-a888-d6b1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7558-446e-49a2-cb94" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="c34c-7942-cf23-473d" name="Scrapsmith" hidden="false" collective="false" import="true" targetId="4b91-e9d4-54e6-f152" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="958e-2d6a-f2a8-968e" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b474-a442-e27f-0f2c" name="Local Informant" hidden="false" collective="false" import="true" targetId="4f66-93a3-0ac1-6bc1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="750e-6a1d-8214-5e52" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="05c2-7ed2-e5c5-062f" name="Smoke Grenade" publicationId="81dd-fe5f-c233-17c5" page="110" hidden="false">
@@ -3918,7 +5846,7 @@ behind the breach with 6” (1) blast(D3), one use.</description>
       <description>No movement penalty from ducking.</description>
     </rule>
     <rule id="5336-28b7-8101-1551" name="Shield Other(x”)" publicationId="81dd-fe5f-c233-17c5" page="119" hidden="false">
-      <description>Hits vs targets within X” may be redirected to this model.</description>
+      <description>Hits vs closest non-vehicle/ massive targets within X” may be redirected to this model.</description>
     </rule>
     <rule id="5905-0eeb-bd98-1e1e" name="Ablative Armour" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
       <description>Model has one (1) additional Defence(3) wound.</description>
@@ -3933,7 +5861,7 @@ behind the breach with 6” (1) blast(D3), one use.</description>
       <description>Priority(hit(re-roll)) with rifle or scoped rifle.</description>
     </rule>
     <rule id="f8fa-a4ab-8c54-9a20" name="Gunslinger" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Rapid Strike with pistol.</description>
+      <description>First Strike with pistol.</description>
     </rule>
     <rule id="d88b-6b93-129f-3765" name="Deadeye Shot" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
       <description>Priority(Vital Strike) with rifle or scoped rifle.</description>
@@ -4164,6 +6092,131 @@ Emplace in base contact instead of attack. Proximity sensor: attacks first unit 
 Emplace in base contact instead of attack. Proximity sensor: attacks first unit within 3” automatically (after emplacing unit has left). One use.
 </description>
     </rule>
+    <rule id="83b9-e675-7624-50fe" name="Additional Ammo" publicationId="81dd-fe5f-c233-17c5" page="120" hidden="false">
+      <comment>Narrative</comment>
+      <description>Replenishes a weapon once (only if using ammo option).</description>
+    </rule>
+    <rule id="90f6-4611-92ef-a501" name="Concealable/Collapsible Weapon" publicationId="81dd-fe5f-c233-17c5" page="120" hidden="false">
+      <comment>Narrative</comment>
+      <description>Weapon can be concealed from scanners and searches (non-restricted weapons can be drawn and used immediately, restricted weapons require a moment of discreet assembly)</description>
+    </rule>
+    <rule id="f086-ccb9-9a89-bb98" name="Silencer" publicationId="81dd-fe5f-c233-17c5" page="120" hidden="false">
+      <comment>Narrative</comment>
+      <description>Attack with weapon does not raise alarm (when applicable, not for restricted weapons).</description>
+    </rule>
+    <rule id="bd43-613d-cf38-6097" name="Currency" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>A few substantial units of local currency, used for bribes and services during missions. (The exact effect is entirely up to the GM).</description>
+    </rule>
+    <rule id="200a-b798-a063-a5b6" name="Deployable Raft" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>Counts as heavy load until deployment. Deploy as full action. Up to four human-sized models may use it to cross water obstacles.</description>
+    </rule>
+    <rule id="0665-2213-1847-b103" name="Flexible Assets" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>X points that can be converted into whatever the character needs before every mission. (May only be bought with “permanent” points, and renew each game).</description>
+    </rule>
+    <rule id="49a1-cc90-f837-7737" name="Heat Camera" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>Model can see heat sources, possibly spotting hidden units/areas of activity/active machinery and the like.</description>
+    </rule>
+    <rule id="12f6-437e-9ff5-159a" name="Intrusion Drone" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>User may perform Technology/Larceny actions up to 12” away.</description>
+    </rule>
+    <rule id="5f1b-ec51-5f9c-2e5d" name="Loudhailer" publicationId="e42d-4466-8267-ac1b" page="85" hidden="false">
+      <comment>Narrative</comment>
+      <description>Allows model to communicate at a distance (up to 18”), and address crowds, besieged individuals and the like. Extends Leader ability to 18”.</description>
+    </rule>
+    <rule id="d40f-7e61-5911-2c1c" name="Opto-Snakedrill" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Use instead of attack: allows clandestinely looking through doors and cracks.</description>
+    </rule>
+    <rule id="8dec-d582-7f63-12f9" name="Tacdrone, Mini" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Deploy within 24” on 2+ as full action. Model may view as if at this spot until end of turn. One use.</description>
+    </rule>
+    <rule id="0195-5d03-ebd7-9847" name="Operator Drugs PheroDate" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>PheroDate: Influence/Deception(+1). Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="e275-812e-377d-4453" name="Operator Drugs SharpSense" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>SharpSense: Perception/Investigation(+1). Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="80d9-b92c-d693-e0df" name="Operator Drugs SaphJuice" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>SaphJuice: player may ask GM one (1) yes/no question. Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="b409-eb49-d862-34fc" name="Operator Drugs Coldheart" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Coldheart: User is not picked up by proximity sensors, motion detectors, heatscopes and the like. Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="0e46-6787-f7a3-6cf0" name="Operator Drugs ReCall" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>ReCall: Intel/Lore(+1). Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="5a39-4294-0745-0872" name="Operator Drugs AuxProc" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>AuxProc: Technology/Larceny(+1). Two use, max 1 use/turn/model.
+Unless otherwise specified, these drugs may be used when activated and lasts until the end of turn.
+</description>
+    </rule>
+    <rule id="f8a8-1901-946a-e894" name="Tools, Specialised" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Specialized tools give a +1 dice bonus to one specific usage of a skill 
+- examples include:
+Lock Spike: Larceny to pick lock
+Forged Documents: Deception to pass checkpoint 
+Ghillie suit: Stealth in specific terrain piece</description>
+    </rule>
+    <rule id="d715-0127-9bc5-2118" name="Services" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Services are usually paid for with temporary liquid assets and the like and last for one game/once only.</description>
+    </rule>
+    <rule id="7e7f-b041-363a-95c5" name="Subordinate" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+      <description>Model does not remove action markers automatically unless a non-subordinate friendly model within 12” with less than two (2) markers takes one (1) action marker in the endphase.</description>
+    </rule>
+    <rule id="d4a6-e105-5bef-8779" name="Nerves(x)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+      <description>Return unit to staging if it has X action markers remaining in endphase (after removal).</description>
+    </rule>
+    <rule id="1248-e47e-b4f8-b7fd" name="Nerves(3)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+      <description>Return unit to staging if it has 3 action markers remaining in endphase (after removal).</description>
+    </rule>
+    <rule id="e76e-4f2f-d09f-bd26" name="Special Care" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>One re-roll on the lasting injury table.</description>
+    </rule>
+    <rule id="dee0-daca-4ccb-f1eb" name="Interrogation Specialist" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Converts prisoners into minor clues on 5+.</description>
+    </rule>
+    <rule id="b1fd-2320-dc1b-9d4f" name="Cheap Weapons" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Two (2) &lt;0.5p weapons</description>
+    </rule>
+    <rule id="30d7-4106-0060-0b9b" name="Fence" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Converts loot into temporary liquid assets, GM decides worth.</description>
+    </rule>
+    <rule id="b2e5-4870-17fe-5178" name="Scrapsmith" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Restore function of previously exhausted item on 4+ (if fail or exhausted again, it is gone forever).</description>
+    </rule>
+    <rule id="0117-8bc0-2068-17e5" name="Local Informant" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false">
+      <comment>Narrative</comment>
+      <description>Lore/Intel(+1) for any pre-mission roll.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="1c98-ae8f-5774-ee24" name="Standard model" publicationId="81dd-fe5f-c233-17c5" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
@@ -4219,6 +6272,49 @@ Emplace in base contact instead of attack. Proximity sensor: attacks first unit 
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">potshots</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3, re-roll vs Structures</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="9bd1-ba8a-fffe-0a76" name="Cutting Beam" publicationId="81dd-fe5f-c233-17c5" page="120" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <comment>Narrative</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">1&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vs structures only</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ba5e-e100-20c8-ab33" name="Thug" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <comment>Narrative</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">3</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f1d4-f9f9-2dd5-e19f" name="Sellsword" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <comment>Narrative</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ee89-5d70-b5f8-6615" name="Mercenary" publicationId="e42d-4466-8267-ac1b" page="86" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+      <comment>Narrative</comment>
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
+        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
