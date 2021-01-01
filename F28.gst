@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files in development
@@ -12,11 +12,15 @@ The Mutant Menace
 The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
+The Tide
 The Unseelie Court
 
 Battle Factions in development:
-The Tide
 The Tide Cult
+The Orders of the Republic (PG)
+The Dvergi Freeholds (PG)
+The Smiths of A.R.E.S. (PG)
+
 
 Skirmishes added for evaluation</readme>
   <publications>
@@ -3001,7 +3005,7 @@ Skirmishes added for evaluation</readme>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7407-a86d-63bc-3019" name="Immune to suppression" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="7407-a86d-63bc-3019" name="Immune to Suppression" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d31b-98c7-187e-899c" name="Suppression(modifier)" hidden="false" targetId="2066-da1e-58bd-2da6" type="rule"/>
       </infoLinks>
@@ -4461,6 +4465,283 @@ Skirmishes added for evaluation</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="31c3-04cc-a7c1-41e1" name="Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f04a-590a-746a-2265" name="Claws" hidden="false" targetId="0d03-8d4c-f2b3-6a91" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dcf8-c9c3-9683-4646" name="Osseus Monoswords" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f8f9-4fdb-4119-b1d7" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="8365-53f1-e712-c675" name="Osseus Monoswords" hidden="false" targetId="de39-734c-08e5-2ace" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e13-4ceb-e014-98a6" name="Enhanced Bio-carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="351d-48c6-3bee-52d9" name="Enhanced Bio-carbine" hidden="false" targetId="019a-8110-1c1e-ebde" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="34a7-0070-4665-b9bb" name="Acid Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="84b7-56ed-7357-205b" name="Acid Cannon" hidden="false" targetId="9a7a-640b-790b-8870" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e959-6bbc-2231-4325" name="Implant Gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="25ea-7e59-c605-8705" name="Implant Gun" hidden="false" targetId="d060-4769-0729-bea9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0265-9bb0-46d0-99bc" name="Implant Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1164-123b-5f2e-08ae" name="Implant Cannon" hidden="false" targetId="f71a-b1c7-4325-ad52" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0c7e-dd3f-7178-1ecd" name="Bio-Whip" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7e96-db77-f8b2-cb46" name="Bio-Whip" hidden="false" targetId="5995-e349-fdbc-97f5" type="rule"/>
+        <infoLink id="9262-78a4-cde0-5787" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bec3-0558-d923-6898" name="Osseus Energysword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6ec7-32fe-b4b8-8959" name="Osseus Energysword" hidden="false" targetId="6c07-f57a-44dc-9f0e" type="profile"/>
+        <infoLink id="7b25-e63f-0108-4c32" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a1d8-842a-bad7-d3e4" name="Energy Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0bd1-8628-ba69-1903" name="Energy Claws" hidden="false" targetId="c554-be93-615e-33b5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e788-0036-7da5-6944" name="Bio-plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5e54-b52a-dc44-9749" name="Bio-plasma Cannon" hidden="false" targetId="c296-d946-96c7-8b53" type="profile"/>
+        <infoLink id="20be-117c-0dc0-ab92" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8f7e-8fc9-0912-8031" name="Bio-Plasma" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d7ff-8deb-8dd7-cd2c" name="Bio-Plasma" hidden="false" targetId="83b7-704c-81f3-2db3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6e2-16d9-c5c1-a58a" name="Super-enhanced Bio-carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="84f2-a458-9ba7-a8d8" name="Super-enhanced Bio-carbine" hidden="false" targetId="951a-6e98-fb59-7de5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="80b9-fcbb-c4cc-44ce" name="Heavy Acid Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0ae6-e083-44c3-723e" name="Heavy Acid Cannon" hidden="false" targetId="db5b-37a9-32b2-7498" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="88c0-e4d5-c367-5541" name="Thorn Cluster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2302-4464-7c6a-8d0c" name="Thorn Cluster" hidden="false" targetId="10ef-7d83-6c3a-83f5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2964-d7ad-0eda-3a04" name="Psychic Blast" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="393c-746d-fee3-c08d" name="Psychic Blast" hidden="false" targetId="aef3-943c-36e3-d7ee" type="profile"/>
+        <infoLink id="e391-1245-9726-dd1b" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="cfbe-9b32-854a-00fd" name="Crushing Energy Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7a48-ae7e-da86-48a2" name="Crushing Energy Claws" hidden="false" targetId="edd0-0283-d1e0-50d4" type="profile"/>
+        <infoLink id="1f2c-514b-e4e8-daea" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ef29-d810-e67e-7859" name="Feeder" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a5b4-29dc-deb7-4960" name="Feeder" hidden="false" targetId="89c2-ba74-de41-fc45" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6065-81b0-a432-c765" name="Acid Spray" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0f41-0a0b-75a5-c23a" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="c039-0c5a-0730-9d7a" name="Acid Spray" hidden="false" targetId="d24d-17de-5f47-939d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fec6-01e9-9e4d-e9bd" name="Bio-Hive" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2947-ce11-ed66-001d" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="2a13-0ceb-b770-4799" name="Bio-Hive" hidden="false" targetId="8924-5aa3-76a3-dd95" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e793-9c71-b65a-5509" name="Fissure Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f942-fe37-7c60-6bfd" name="Fissure Cannon" hidden="false" targetId="a437-d628-27f9-9ca7" type="profile"/>
+        <infoLink id="31c4-3412-4e14-70eb" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8546-dbaf-652e-6685" name="Skewer Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="757c-2d9c-3ad8-7882" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
+        <infoLink id="5e6f-7cf2-1732-b97f" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+        <infoLink id="fe50-c38e-46f7-dfa1" name="Skewer Cannon" hidden="false" targetId="74d9-f0bb-59e7-6938" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6d84-0c0e-140e-9637" name="Electrocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1ba2-413e-a58f-cf59" name="EMP" hidden="false" targetId="c7a1-d6cc-49d5-127d" type="rule"/>
+        <infoLink id="808f-dd63-7059-b1ae" name="Electrocannon" hidden="false" targetId="8c8a-7f92-0e08-df1d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5279-0f6e-d6b8-4e07" name="Insertion Assault" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e13f-0d40-66ff-5ec9" name="Insertion Assault" hidden="false" targetId="60c6-04a0-a825-1b81" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a058-f5f0-5d2a-296c" name="Tunneller" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="448d-c459-7071-1956" name="Tunneller" hidden="false" targetId="aa52-17d5-cd65-6a2b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c33-cf49-fd99-5603" name="Dual Implant Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="75fe-f193-2393-22cc" name="Implant Cannon" hidden="false" targetId="f71a-b1c7-4325-ad52" type="profile"/>
+        <infoLink id="93d2-5d9d-7886-35d1" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9f65-1451-1c0a-8a96" name="Dual Heavy Acid Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e27b-c0ff-f174-7d80" name="Heavy Acid Cannon" hidden="false" targetId="db5b-37a9-32b2-7498" type="profile"/>
+        <infoLink id="69a1-8fca-4a34-239c" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0352-94f1-8b85-7315" name="Bio-Missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fabf-c690-6713-d84a" name="EMP" hidden="false" targetId="c7a1-d6cc-49d5-127d" type="rule"/>
+        <infoLink id="3e92-4575-2373-7de6" name="Bio-Missile" hidden="false" targetId="6f41-527a-3786-50c3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b38c-ff33-7465-1e53" name="Bio-Pulse" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1263-0f70-38e9-f58c" name="Bio-Pulse" hidden="false" targetId="9e99-536d-bf22-c2de" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="62bc-fcd0-4abf-8900" name="Crushing Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="82dc-74e3-013e-aec9" name="Crushing Claws" hidden="false" targetId="db3d-7be4-ff7b-420a" type="profile"/>
+        <infoLink id="c8c6-3f76-4331-1471" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -4750,7 +5031,7 @@ Example: Suppression(+X) – weapon causes +X suppression hits with attack, Supp
     <rule id="88bb-4027-9f80-37f8" name="Insignificant" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
       <description>May not be allocated wounds and does not count toward unit size. If all models in a unit has Insignificant, remove unit.</description>
     </rule>
-    <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115," hidden="false">
+    <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
       <description>All models in units within range gains ability: Tough(1)</description>
     </rule>
     <rule id="1e59-8c45-4d6b-09f5" name="+1 Faction Point" publicationId="aae0-5552-35a8-74d6" page="" hidden="false">
@@ -4920,7 +5201,7 @@ For every action marker you would allocate from suppression to this unit, it ins
       <description>Incoming attacks vs this model receive modifier to hit.</description>
     </rule>
     <rule id="aa0b-d00b-5aed-09e7" name="Oversized(+1)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
-      <description>Wound(+number) and reach(+number) for CC attacks.</description>
+      <description>Wound(+1) and reach(+1) for CC attacks.</description>
     </rule>
     <rule id="6721-d6bf-3c74-4af1" name="Disruption(18)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
       <description>Enemies within distance may not remove extra action markers in endphase.</description>
@@ -4987,7 +5268,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>May change options when activating.</description>
     </rule>
     <rule id="bf5a-e06b-380c-7824" name="Oversized(+2)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
-      <description>Wound(+number) and reach(+number) for CC attacks.</description>
+      <description>Wound(+2) and reach(+2) for CC attacks.</description>
     </rule>
     <rule id="9a48-86d4-c6ec-d969" name="Bestow Ignore Concealment(12&quot;)" publicationId="e42d-4466-8267-ac1b" page="115" hidden="false">
       <description>All models in units within range gains ability: Unit does not suffer minus to hit from Concealment.</description>
@@ -5028,8 +5309,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="aee4-8bcc-4161-ab77" name="Insertion(only)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
       <description>When activated may deploy from staging, anywhere on the board, beyond 2” of enemy units, with two (2) action markers.</description>
     </rule>
-    <rule id="d83d-0b9a-4792-7e26" name="Hazardous Target(CC only)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Enemy weapons gain Hazardous when attacking this unit.</description>
+    <rule id="d83d-0b9a-4792-7e26" name="Hazardous Target(CC)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Enemy weapons gain Hazardous when attacking this unit in Close Combat.</description>
     </rule>
     <rule id="c53a-c2f1-5725-ed94" name="Cover(no)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Model does not benefit from cover.</description>
@@ -5162,6 +5443,79 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
     <rule id="8d8d-4b48-c3d1-b833" name="Robust(modifier)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <description>- modifier on damage table.</description>
+    </rule>
+    <rule id="5995-e349-fdbc-97f5" name="Bio-Whip" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false">
+      <description>First strike.</description>
+    </rule>
+    <rule id="315e-c513-c565-2bc3" name="Stealth(18)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model is out of line of sight beyond 18&quot;.</description>
+    </rule>
+    <rule id="a196-6347-2d67-de12" name="Stealth(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model is out of line of sight beyond distance.</description>
+    </rule>
+    <rule id="53ae-970d-90de-0cd2" name="Summon(how, what, where)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>Deploy unit of what, how, where (without action markers, unless otherwise specified).</description>
+    </rule>
+    <rule id="e91e-7bb5-4a22-73ce" name="Tidemind Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="42b7-de7b-c95c-273f" name="Tidemind Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="cc19-70cd-c130-a7b5" name="Tidemind Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="e7ae-0682-39d1-a3ba" name="Terror(6)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    </rule>
+    <rule id="b241-766a-3ee5-fcb1" name="Bestow Tough(+1) (12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>All models in units within range gains ability: Tough(+1)</description>
+    </rule>
+    <rule id="eb74-1d94-2774-395d" name="Immune to Suppression" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
+      <description>Amount of Suppression caused is nullified.</description>
+    </rule>
+    <rule id="4a6e-573c-2ba6-fa4c" name="Oversized(+3)" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
+      <description>Wound(+3) and reach(+3) for CC attacks.</description>
+    </rule>
+    <rule id="7d58-48f6-c342-8bf2" name="Defence(min 6)" hidden="false">
+      <description>Model has Defence min 6.</description>
+    </rule>
+    <rule id="8725-8cd4-c85f-6932" name="Bestow Hazardous Target(CC)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>All models in attached unit gains ability: Enemy weapons gain Hazardous when attacking this unit in Close Combat.</description>
+    </rule>
+    <rule id="fe84-895e-03a3-5fac" name="Bestow Concealment" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>All models in attached unit gains ability: If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Concealment does not stack.</description>
+    </rule>
+    <rule id="89c2-ba74-de41-fc45" name="Feeder" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>Regenerate one (1) wound in endphase each turn the unit has caused wounds in close combat.</description>
+    </rule>
+    <rule id="f90d-5a25-6fe3-aae8" name="Mystic Group (1/3)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
+      <description>Models with this trait in the same unit act as a single Mystic, adding their mystic levels. Fractions of a level are rounded down.
+Example: a unit with Mystic Group (1/3) has six (6) models - until it loses its first model, it acts as a mystic with two (2) dice.</description>
+    </rule>
+    <rule id="6a7c-7309-8dcd-4ec0" name="Tidemind Mystic(x)" publicationId="e42d-4466-8267-ac1b" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="aa52-17d5-cd65-6a2b" name="Tunneller" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>After Insertion, place adjacent to the model: 1x Tunnel: Structure(light), Wounds(3), Defence(8), Gate.</description>
+    </rule>
+    <rule id="60c6-04a0-a825-1b81" name="Insertion Assault" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>You may make a close combat attack from staging vs any enemy target, without priority (placing yourself within 2” of the target, as usual).</description>
+    </rule>
+    <rule id="cd90-c74e-f86e-b21a" name="Capacity(20)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May hold amount of models. (See transport rules).</description>
+    </rule>
+    <rule id="3947-ca5f-d41c-30c1" name="Pylon Pattern" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
+      <description>Instead of normal movement (including aircraft being removed from the table) model moves (counter)clockwise between board edge midpoints in the endphase, or returns to staging. If in staging, starts at any friendly board edge.
+If multiple Pylon Pattern units are at the same board edge place them in a row centred on the midpoint.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -7493,6 +7847,230 @@ heavy</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0d03-8d4c-f2b3-6a91" name="Claws" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="de39-734c-08e5-2ace" name="Osseus Monoswords" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="019a-8110-1c1e-ebde" name="Enhanced Bio-carbine" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="9a7a-640b-790b-8870" name="Acid Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)
+36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3), re-roll
+blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3
++3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="f71a-b1c7-4325-ad52" name="Implant Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)
+36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6), re-roll
+blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1
++1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)
+suppression(x2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d060-4769-0729-bea9" name="Implant Gun" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)
+36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6), re-roll
+blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(+2)
+suppression(+2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6c07-f57a-44dc-9f0e" name="Osseus Energysword" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c554-be93-615e-33b5" name="Energy Claws" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="c296-d946-96c7-8b53" name="Bio-plasma Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Stream: 12” (2D6)
+Blast: 36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto
+blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3
++4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy
+heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="83b7-704c-81f3-2db3" name="Bio-Plasma" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="951a-6e98-fb59-7de5" name="Super-enhanced Bio-carbine" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (12)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="db5b-37a9-32b2-7498" name="Heavy Acid Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)
+36” (1) </characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3), re-roll
+blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6
++6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="10ef-7d83-6c3a-83f5" name="Thorn Cluster" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="aef3-943c-36e3-d7ee" name="Psychic Blast" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">min 6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="edd0-0283-d1e0-50d4" name="Crushing Energy Claws" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="d24d-17de-5f47-939d" name="Acid Spray" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8924-5aa3-76a3-dd95" name="Bio-Hive" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (20)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a437-d628-27f9-9ca7" name="Fissure Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+8</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="74d9-f0bb-59e7-6938" name="Skewer Cannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect, ignores cover</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8c8a-7f92-0e08-df1d" name="Electrocannon" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">EMP</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6f41-527a-3786-50c3" name="Bio-Missile" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">EMP, one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9e99-536d-bf22-c2de" name="Bio-Pulse" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">9” (12) 18” (8)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="db3d-7be4-ff7b-420a" name="Crushing Claws" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
