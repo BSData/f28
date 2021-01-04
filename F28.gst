@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="10" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files in development
@@ -13,10 +13,10 @@ The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
 The Tide
+The Tide Cult
 The Unseelie Court
 
 Battle Factions in development:
-The Tide Cult
 The Orders of the Republic (PG)
 The Dvergi Freeholds (PG)
 The Smiths of A.R.E.S. (PG)
@@ -91,6 +91,7 @@ Skirmishes added for evaluation</readme>
     <categoryEntry id="a4de-12bc-8cf2-7d2f" name="Upgrade Force" publicationId="ddee-15a6-f17c-590a" page="4" hidden="false"/>
     <categoryEntry id="d822-4a8e-8f61-5cf5" name="Models" hidden="false"/>
     <categoryEntry id="69c5-eb45-5f67-b18e" name="Surplus Appendage" hidden="false"/>
+    <categoryEntry id="bd43-6299-26b3-f2cf" name="Faction Traits" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="04f2-1f68-17f9-043b" name="Battle - War Always Changes" publicationId="81dd-fe5f-c233-17c5" page="26, 65" hidden="false">
@@ -98,9 +99,14 @@ Skirmishes added for evaluation</readme>
         <categoryLink id="9d67-6a76-536d-3cb2" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
             <modifier type="set" field="ded3-c919-72cf-629d" value="2.0">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
-              </conditions>
+              <conditionGroups>
+                <conditionGroup type="or">
+                  <conditions>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
+                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
           <constraints>
@@ -151,6 +157,7 @@ Skirmishes added for evaluation</readme>
         </categoryLink>
         <categoryLink id="edf9-a772-8e9d-c6a5" name="Upgrade Force" hidden="false" targetId="a4de-12bc-8cf2-7d2f" primary="false"/>
         <categoryLink id="fbff-7365-1597-9d4f" name="Surplus Appendage" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="false"/>
+        <categoryLink id="99e6-63bd-5f63-447c" name="Faction Traits" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="false"/>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="4509-5e75-6112-bbea" name="Skirmishes - War Always Changes" publicationId="81dd-fe5f-c233-17c5" page="32" hidden="false">
@@ -4742,6 +4749,106 @@ Skirmishes added for evaluation</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="04af-5df8-532d-f038" name="Guide Their Hand" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ade0-baa8-c254-df79" name="Guide Their Hand" hidden="false" targetId="16f7-6c19-16e2-73da" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b353-1619-3e0b-91b7" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="326e-a75d-9176-e70c" name="Tectonic Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e8f3-a3dc-f34b-d012" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="49c1-2aa5-eb5a-9eab" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="dd9c-1cfb-8343-9377" name="Tectonic Cannon" hidden="false" targetId="bfd0-5387-1434-31eb" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8fe8-ae05-2c45-b491" name="Needle Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7ff2-013b-125b-726c" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="bf56-1dd5-f5c2-9087" name="Needle Pistol" hidden="false" targetId="8246-1402-019e-341b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3238-936a-ea72-c538" name="Netter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3eed-8f68-69c7-d873" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
+        <infoLink id="25d1-e23a-8014-d57d" name="Netter" hidden="false" targetId="856a-1f68-08a2-3af6" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ac2e-4349-4041-8d47" name="Mining Laser" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2038-2eba-88a5-fcd7" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="e6b3-20ad-b7a9-721c" name="Mining Laser" hidden="false" targetId="9ffd-105b-e99c-9a76" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1ca-04a9-e71d-f8f7" name="Energy Mining Tool" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d708-2c3b-b038-e632" name="Energy Mining Tool" hidden="false" targetId="f2af-1ac8-0405-5c54" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6728-774a-b01a-28fa" name="Mining Implement" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9df8-5670-5dc5-4407" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="c27e-8b0f-e511-e9af" name="Mining Implement" hidden="false" targetId="5def-f761-dd28-e455" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b8bd-fb20-5a42-681b" name="Barrel Bombs" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="81fc-3c3f-aae3-99cc" name="Barrel Bombs" hidden="false" targetId="b4be-1d43-91d2-c537" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4853-750e-5b0a-fad8" name="Demolition Charge" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1845-0da7-241a-cd46" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="5560-eb64-85e0-ebe7" name="Demolition Charge" hidden="false" targetId="879f-be67-9c21-4303" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="24a1-a143-88af-b3e2" name="One-shot AA Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="64ff-637a-fe65-7805" name="One-shot AA Launcher" hidden="false" targetId="73f1-32fd-f0a6-8b40" type="profile"/>
+        <infoLink id="7697-4d3e-4147-18e0" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="cf80-c946-57ce-60f5" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="aff6-7f73-5ab0-dc8b" name="One-shot AT Launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2933-0ff1-effa-6513" name="One-shot AT Launcher" hidden="false" targetId="c7b8-5868-0bfb-0619" type="profile"/>
+        <infoLink id="c315-e478-2e60-5317" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
@@ -4968,8 +5075,8 @@ Example: Suppression(+X) – weapon causes +X suppression hits with attack, Supp
     <rule id="74a7-9700-3946-640b" name="Loathing" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
       <description>Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
-    <rule id="c251-5963-361e-f608" name="Blocker" publicationId="aae0-5552-35a8-74d6" page="116" hidden="false">
-      <description>May use this model’s Defence first when attacked, if so any wounds have to be allocated to this unit first</description>
+    <rule id="c251-5963-361e-f608" name="Blocker" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>May use this model’s Defence first when attacked as part of a mixed unit, if so any wounds have to be allocated to this unit first.</description>
     </rule>
     <rule id="6fd8-1737-2ff1-ead2" name="Repel(distance)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
       <description>CC attacks vs this model has their range reduced by distance.</description>
@@ -5125,9 +5232,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
       <description>Keep attacking with one (1) additional dice each time the model causes wound in CC.</description>
     </rule>
     <rule id="fd36-84c7-7a08-d0f8" name="Bestow Morale(1)" publicationId="aae0-5552-35a8-74d6" page="114, 115" hidden="false">
-      <description>All models in attached unit gains ability. If a range is specified, all models in units within range gains ability. 
-
-Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
+      <description>All models in attached unit gains ability: Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
     </rule>
     <rule id="283a-332f-bbca-fc6c" name="Defence(3)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
       <description>Model has Defence 3	</description>
@@ -5516,6 +5621,36 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="3947-ca5f-d41c-30c1" name="Pylon Pattern" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
       <description>Instead of normal movement (including aircraft being removed from the table) model moves (counter)clockwise between board edge midpoints in the endphase, or returns to staging. If in staging, starts at any friendly board edge.
 If multiple Pylon Pattern units are at the same board edge place them in a row centred on the midpoint.</description>
+    </rule>
+    <rule id="16f7-6c19-16e2-73da" name="Guide Their Hand" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false">
+      <description>Faction may pick two (2) command choices without expending FP.</description>
+    </rule>
+    <rule id="9285-b9ec-4dd3-6c2f" name="Serfmind Mystic(1)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="6dc2-e7dc-26e0-1425" name="Serfmind Mystic(2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="e75d-9126-28ad-c43f" name="Serfmind Mystic(3)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="2082-5a4b-6881-60ef" name="Extra Strike(3)" publicationId="aae0-5552-35a8-74d6" page="114" hidden="false">
+      <description>Model has number extra attack dice with CC attacks.</description>
+    </rule>
+    <rule id="8940-13b4-2096-3d20" name="Bestow Fanatic(12&quot;)" publicationId="aae0-5552-35a8-74d6" page="115" hidden="false">
+      <description>All models in units within range gains ability: For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
+    </rule>
+    <rule id="d565-5d8f-6891-2424" name="Bestow Charge(1) (12&quot;)" hidden="false">
+      <description>All models in units within range gains ability: CC attacks have +distance range.</description>
+    </rule>
+    <rule id="28ac-e645-c09d-5ad2" name="Bestow Wound(re-roll)" hidden="false">
+      <description>All models in units within range gains ability: Wound(+1)	</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8071,6 +8206,99 @@ blast(D3)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bfd0-5387-1434-31eb" name="Tectonic Cannon" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2)
+24” (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5
++1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, cleave
+heavy, cleave</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8246-1402-019e-341b" name="Needle Pistol" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="856a-1f68-08a2-3af6" name="Netter" publicationId="81dd-fe5f-c233-17c5" page="91" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">max 6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9ffd-105b-e99c-9a76" name="Mining Laser" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f2af-1ac8-0405-5c54" name="Energy Mining Tool" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="5def-f761-dd28-e455" name="Mining Implement" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b4be-1d43-91d2-c537" name="Barrel Bombs" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6), -3</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="879f-be67-9c21-4303" name="Demolition Charge" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (1), </characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="73f1-32fd-f0a6-8b40" name="One-shot AA Launcher" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, antiair, vs aircraft or VTOL only, one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c7b8-5868-0bfb-0619" name="One-shot AT Launcher" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+      <characteristics>
+        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, one use</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
