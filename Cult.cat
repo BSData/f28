@@ -1,27 +1,32 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="21" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
 ● One (1) Command entry
 ● Max one (1) Special entry for each Core entry
-● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once)
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
 Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
 ● One (1) additional Command entry, (to a maximum of two (2))
 ● One (1) extra Special entry 
-● Two (2) additional upgrades</readme>
+● Two (2) additional upgrades
+
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="0cf5-2576-6d58-face" name="Guide Their Hand" hidden="false" collective="false" import="true" targetId="04af-5df8-532d-f038" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f587-be96-233b-ef9b" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="138c-e273-8a46-a41c" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f587-be96-233b-ef9b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="138c-e273-8a46-a41c" type="min"/>
       </constraints>
     </entryLink>
     <entryLink id="8554-382b-81ff-cba3" name="Stellar Alignment" hidden="false" collective="false" import="true" targetId="2b4a-88f8-7cee-d522" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1e25-d217-88a4-a0e6" type="max"/>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2e5-9e80-e9c5-67a4" type="min"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1e25-d217-88a4-a0e6" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d2e5-9e80-e9c5-67a4" type="min"/>
       </constraints>
     </entryLink>
     <entryLink id="814d-2feb-6d47-8ec8" name="Republic IFV" hidden="false" collective="false" import="true" targetId="2de5-8eca-b436-23e7" type="selectionEntry"/>
@@ -33,7 +38,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
     <entryLink id="3f65-b17a-f1d6-8c40" name="Cult Mystic" hidden="false" collective="false" import="true" targetId="8fa8-42b0-7d4e-cc44" type="selectionEntry"/>
     <entryLink id="658d-34a4-0fb6-c826" name="Cult Standard Bearer" hidden="false" collective="false" import="true" targetId="be18-1724-04f7-2f01" type="selectionEntry"/>
     <entryLink id="b187-575b-a195-13dd" name="Battle Tank" hidden="false" collective="false" import="true" targetId="9f2b-e579-accc-3846" type="selectionEntry"/>
-    <entryLink id="b602-5ab0-d4f6-a85f" name="Assault Tank" hidden="false" collective="false" import="true" targetId="009b-5876-7a6b-4c82" type="selectionEntry"/>
+    <entryLink id="b602-5ab0-d4f6-a85f" name="Cult Assault Tank" hidden="false" collective="false" import="true" targetId="009b-5876-7a6b-4c82" type="selectionEntry"/>
     <entryLink id="7856-03f1-a3d0-12ea" name="Armoured Walkers" hidden="false" collective="false" import="true" targetId="cf81-3b78-262c-b366" type="selectionEntry"/>
     <entryLink id="10d0-fa13-6c51-7a28" name="Cult Soldier" hidden="false" collective="false" import="true" targetId="8f4f-aa11-4e99-d916" type="selectionEntry"/>
     <entryLink id="54f9-5de7-d18c-5afc" name="Cult Soldier Weapons Team" hidden="false" collective="false" import="true" targetId="e989-26c7-93c0-787b" type="selectionEntry"/>
@@ -45,11 +50,18 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
     <entryLink id="9b11-8cf1-b5ae-33f5" name="Cult Revolutionaries" hidden="false" collective="false" import="true" targetId="9839-7b2b-4990-3fa1" type="selectionEntry"/>
     <entryLink id="b6d4-d56c-2056-e918" name="Cult Skyhook" hidden="false" collective="false" import="true" targetId="8bab-f5f0-00ca-25b4" type="selectionEntry"/>
     <entryLink id="c257-5329-9da0-1991" name="Prepared Insurrection" hidden="false" collective="false" import="true" targetId="bbb8-b207-0182-4fa6" type="selectionEntry"/>
+    <entryLink id="8fd7-f2de-dc46-7ba3" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8531-f646-58af-7193" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="9ada-f348-054f-d7c1" name="Cult Converted Mining Platform" hidden="false" collective="false" import="true" targetId="b7bf-48d7-ddc0-d0a7" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2b4a-88f8-7cee-d522" name="Stellar Alignment" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f8d8-9dcf-21e8-a8d9" name="Stellar Alignment" hidden="false" targetId="3249-3a56-7d65-d9ab" type="rule"/>
+        <infoLink id="5f3b-e0c7-c9fb-d675" name="Ambush" hidden="false" targetId="9780-81df-ef93-3245" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="cf94-222c-fa96-e1e5" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
@@ -57,6 +69,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2de5-8eca-b436-23e7" name="Republic IFV" hidden="false" collective="false" import="true" type="unit">
@@ -81,6 +94,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -139,6 +153,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8333-3afd-10f3-609c" name="Firing Ports(6, non-support weapons only)" hidden="false" collective="false" import="true" type="upgrade">
@@ -148,6 +163,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2d12-119a-86bd-d54c" name="Cult Transport" hidden="false" collective="false" import="true" type="unit">
@@ -173,6 +189,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="70.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -203,6 +220,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8c6-77ae-86c8-3e7a" name="Cult Mining Vehicle" hidden="false" collective="false" import="true" type="unit">
@@ -229,6 +247,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="70.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -280,6 +299,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="78fc-edec-dbfb-61eb" name="Civilian Car(s)" hidden="false" collective="false" import="true" type="unit">
@@ -305,6 +325,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -321,6 +342,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="32eb-3abb-a621-72c8" name="Cult Bestial Leader" hidden="false" collective="false" import="true" type="unit">
@@ -353,6 +375,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -374,6 +397,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be28-a439-530a-7060" name="Cult Leader" hidden="false" collective="false" import="true" type="unit">
@@ -404,6 +428,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -430,6 +455,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8fa8-42b0-7d4e-cc44" name="Cult Mystic" hidden="false" collective="false" import="true" type="unit">
@@ -458,6 +484,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -485,6 +512,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="be18-1724-04f7-2f01" name="Cult Standard Bearer" hidden="false" collective="false" import="true" type="unit">
@@ -512,6 +540,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -538,6 +567,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9f2b-e579-accc-3846" name="Battle Tank" hidden="false" collective="false" import="true" type="unit">
@@ -562,6 +592,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -620,6 +651,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="427c-5757-cadb-262c" name="2x HMG" hidden="false" collective="false" import="true" type="upgrade">
@@ -630,6 +662,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5b8-c692-9fc7-7d74" name="Dual Hicap Autocannon and Antiair" hidden="false" collective="false" import="true" type="upgrade">
@@ -642,6 +675,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="009b-5876-7a6b-4c82" name="Assault Tank" hidden="false" collective="false" import="true" type="unit">
@@ -666,6 +700,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -736,6 +771,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bfd3-2639-18a8-0f30" name="2x Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
@@ -745,6 +781,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="40ed-1b03-d15e-c0bf" name="2x Heat Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -755,6 +792,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="89bc-205b-7b73-b3c5" name="2x Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -766,6 +804,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf81-3b78-262c-b366" name="Armoured Walkers" hidden="false" collective="false" import="true" type="unit">
@@ -791,6 +830,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -837,6 +877,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f4f-aa11-4e99-d916" name="Cult Soldier" hidden="false" collective="false" import="true" type="unit">
@@ -849,7 +890,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e719-75e0-c2bb-40fe" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="b835-4c28-a98f-9445" name="Soldier" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="b835-4c28-a98f-9445" name="Cult Soldier" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb1-2696-1199-a998" type="max"/>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63ef-77b3-300b-bad7" type="min"/>
@@ -861,6 +902,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -968,6 +1010,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7627-4ac6-44dd-b6b4" name="Civilian Car(s)" hidden="false" collective="false" import="true" type="model">
@@ -976,7 +1019,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc9-d2a4-e494-4f8b" type="max"/>
       </constraints>
       <infoLinks>
-        <infoLink id="fe9d-f011-886d-985f" name="Civilian Car(s)" hidden="false" targetId="82b5-a01a-4b8d-46aa" type="profile"/>
+        <infoLink id="fe9d-f011-886d-985f" name="Cu. Civilian Car(s)" hidden="false" targetId="82b5-a01a-4b8d-46aa" type="profile"/>
         <infoLink id="209f-2b58-befa-5b94" name="Vehicle(light)" hidden="false" targetId="a431-90d3-3f53-8231" type="rule"/>
         <infoLink id="4dee-bd0b-9313-2372" name="Vehicle(wheeled)" hidden="false" targetId="8b2a-2837-aca0-3c56" type="rule"/>
       </infoLinks>
@@ -990,6 +1033,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d1b3-b4e8-7ae4-1d5f" name="Cult Transport" hidden="false" collective="false" import="true" type="model">
@@ -1024,6 +1068,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1f83-3e49-eac6-eb6a" name="Republic IFV" hidden="false" collective="false" import="true" type="model">
@@ -1085,6 +1130,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e989-26c7-93c0-787b" name="Cult Soldier Weapons Team" hidden="false" collective="false" import="true" type="unit">
@@ -1097,7 +1143,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b9f-570b-5bd6-e895" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="01a2-b3f3-5766-0ca4" name="Soldier" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="01a2-b3f3-5766-0ca4" name="Cult Soldier" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1464-5977-baf7-3316" type="max"/>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce57-524b-416a-a134" type="min"/>
@@ -1109,6 +1155,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1138,6 +1185,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d54-b792-de77-9ef5" name="Cult Technical" hidden="false" collective="false" import="true" type="unit">
@@ -1150,7 +1198,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="270c-9203-b159-8593" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="eabc-d344-1715-614f" name="Technical" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="eabc-d344-1715-614f" name="Cult Technical" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98be-673f-5552-ea41" type="max"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f90-6dd8-57bf-5633" type="min"/>
@@ -1163,6 +1211,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1209,6 +1258,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="379d-58bd-6a04-1b6a" name="Cult Brute" hidden="false" collective="false" import="true" type="unit">
@@ -1221,7 +1271,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3aef-0e9d-4fd9-ff86" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ec8c-b42f-0465-3f06" name="Brute" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="ec8c-b42f-0465-3f06" name="Cult Brute" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ce9-ee0a-3cd5-8b0f" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f576-5e21-977c-e352" type="min"/>
@@ -1234,6 +1284,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1278,6 +1329,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19ef-e5a8-29bf-ff1d" name="Cult Infiltration Beast" hidden="false" collective="false" import="true" type="unit">
@@ -1291,7 +1343,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb94-a6c8-bb61-59f7" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="78a0-f026-2ff6-5252" name="Infiltration Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="78a0-f026-2ff6-5252" name="Cult Infiltration Beast" hidden="false" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="decrement" field="58bd-5186-11c0-8311" value="1.0">
                   <conditions>
@@ -1328,9 +1380,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="11.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9808-d932-68d1-9477" name="Infiltration Beast Leader" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="9808-d932-68d1-9477" name="Cult Infiltration Beast Leader" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bc8-7cb1-57cf-87f0" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a02-6e40-1512-5501" type="min"/>
@@ -1356,6 +1409,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="21.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1368,6 +1422,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7bea-e6f8-d50f-a61b" name="Claws" hidden="false" collective="true" import="true" type="upgrade">
@@ -1377,6 +1432,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d37a-861a-28ec-4dd3" name="Cult Insurrectionists" hidden="false" collective="false" import="true" type="unit">
@@ -1389,7 +1445,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1c8-24e0-911a-3452" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="d742-ed22-5f87-af6f" name="Insurrectionist" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="d742-ed22-5f87-af6f" name="Cult Insurrectionist" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e38c-071a-1618-0636" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4bfa-d65e-0a68-e7bd" type="min"/>
@@ -1403,6 +1459,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1451,6 +1508,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1496,6 +1554,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1524,6 +1583,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3019-2b2f-8c6e-9c7d" name="Cult Off-Road Runner" hidden="false" collective="false" import="true" type="unit">
@@ -1550,6 +1610,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1601,6 +1662,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9839-7b2b-4990-3fa1" name="Cult Revolutionaries" hidden="false" collective="false" import="true" type="unit">
@@ -1614,7 +1676,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="caa2-2f11-0a44-021b" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="e4a0-b838-44d6-8486" name="Bike Shooter" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="e4a0-b838-44d6-8486" name="Cult Bike Shooter" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b740-076a-1ebe-312f" type="max"/>
               </constraints>
@@ -1637,9 +1699,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8b77-b492-f241-23fb" name="Blade-Assassin" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="8b77-b492-f241-23fb" name="Cult Blade-Assassin" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b22-cceb-9171-da7d" type="max"/>
               </constraints>
@@ -1668,15 +1731,17 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="8d65-6ffe-3ee7-4bb5" name="Gunslinger" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="8d65-6ffe-3ee7-4bb5" name="Cult Gunslinger" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bef-4448-b667-6d62" type="max"/>
               </constraints>
@@ -1697,9 +1762,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="3efe-f151-ca85-ab88" name="Nexuskeeper" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="3efe-f151-ca85-ab88" name="Cult Nexuskeeper" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60b0-d549-d731-da0d" type="max"/>
               </constraints>
@@ -1726,9 +1792,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e11a-1371-6b55-3bda" name="Bodyguard" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="e11a-1371-6b55-3bda" name="Cult Bodyguard" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69ba-0412-44de-69a4" type="max"/>
               </constraints>
@@ -1748,9 +1815,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="f192-6c49-5b9f-7f85" name="Agitprop Expert" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="f192-6c49-5b9f-7f85" name="Cult Agitprop Expert" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="10b9-f78d-1915-a305" type="max"/>
               </constraints>
@@ -1771,9 +1839,10 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="e417-ed88-9770-c05c" name="Bio-Chemist" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="e417-ed88-9770-c05c" name="Cult Bio-Chemist" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9124-6897-fb62-8bd2" type="max"/>
               </constraints>
@@ -1799,12 +1868,14 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1817,6 +1888,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8bab-f5f0-00ca-25b4" name="Cult Skyhook" hidden="false" collective="false" import="true" type="unit">
@@ -1842,6 +1914,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="125.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1864,6 +1937,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6598-f606-430c-2775" name="People" hidden="false" collective="false" import="true" type="upgrade">
@@ -1874,6 +1948,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="68bb-4847-8bf2-d7d6" name="Lift" hidden="false" collective="false" import="true" type="upgrade">
@@ -1883,6 +1958,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="982a-122b-e157-ca42" name="EW" hidden="false" collective="false" import="true" type="upgrade">
@@ -1892,6 +1968,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ec1a-feae-e150-734c" name="C&amp;C" hidden="false" collective="false" import="true" type="upgrade">
@@ -1902,6 +1979,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="642d-befa-0cca-a066" name="Barrel Bomber" hidden="false" collective="false" import="true" type="upgrade">
@@ -1916,6 +1994,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1942,6 +2021,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bbb8-b207-0182-4fa6" name="Prepared Insurrection" hidden="false" collective="false" import="true" type="upgrade">
@@ -1955,7 +2035,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <categoryLink id="e16d-a9a5-e48d-6fef" name="New CategoryLink" hidden="false" targetId="a4de-12bc-8cf2-7d2f" primary="true"/>
       </categoryLinks>
       <entryLinks>
-        <entryLink id="c4c0-5776-5629-9c56" name="+1 Faction Point" hidden="false" collective="false" import="true" targetId="0411-247b-89d4-5bba" type="selectionEntry">
+        <entryLink id="c4c0-5776-5629-9c56" name="+1 FP Power" hidden="false" collective="false" import="true" targetId="f6d2-abb8-3bfa-891f" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af6d-4133-94cd-76d4" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b1-9a06-0bf2-573b" type="min"/>
@@ -1965,6 +2045,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f1e7-7000-9398-832e" name="Hasty Traps" hidden="false" collective="false" import="true" type="upgrade">
@@ -1974,6 +2055,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5d2e-df68-b1c8-38a7" name="2x One-shot AA Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -1982,17 +2064,108 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <infoLink id="008c-55ce-3e45-65bd" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="8394-32a6-40ec-a3b4" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b066-10ca-00fb-b0a1" name="2x One-shot AT Launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1631-267b-3117-6759" name="One-shot AT Launcher" hidden="false" targetId="c7b8-5868-0bfb-0619" type="profile"/>
         <infoLink id="01f6-1b60-fa08-4acf" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6060-9f0b-b647-cc70" name="Familiar" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4635-a851-1057-264d" name="Familiar" hidden="false" targetId="20dc-b109-40fc-8f02" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b7bf-48d7-ddc0-d0a7" name="Cult Converted Mining Platform" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b1e1-2601-667b-bf4e" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="c8bd-d9d7-f1f3-44e9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="cc77-b037-7ec9-b656" name="Cult Converted Mining Platform" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3913-dd9f-c061-18fd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9d52-75b3-a85e-87d2" name="Cult Converted Mining Platform" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b3f-04c1-c33b-f776" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cf8-e17c-03bd-9865" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8d74-f39d-bf59-f26f" name="Cult Converted Mining Platform" hidden="false" targetId="0a2a-7ad3-4169-70ce" type="profile"/>
+                <infoLink id="fb14-38a8-34fc-4083" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="97dd-beb3-7229-8ab4" name="Vehicle(open)" hidden="false" targetId="0a23-ef4c-b74f-b5f9" type="rule"/>
+                <infoLink id="0bd7-0221-5dec-e66c" name="Superior" hidden="false" targetId="81b7-00c4-6dea-18b7" type="rule"/>
+                <infoLink id="fee5-a772-8c53-e94a" name="Platform(4”)" hidden="false" targetId="2c57-772e-1581-b034" type="rule"/>
+                <infoLink id="8411-ca10-7055-1543" name="Wounds in the Earth" hidden="false" targetId="fa80-536a-fef8-1903" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="320.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e5f9-53bf-4ac8-0e92" name="Excavator Blade" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3372-d9d5-88ab-ea8b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0c9f-f65b-6cbd-9557" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1885-70ff-3692-105a" name="Excavator Blade" hidden="false" targetId="7a24-bb07-1ef2-3ab3" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="e877-9387-ff11-7cbb" name="Dual LMG" hidden="false" collective="false" import="true" targetId="1e88-c1ad-ed03-381b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="818a-b495-d820-46c7" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6eff-455a-f1e5-6eaf" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4c44-46af-58ec-e09e" name="Missile Launcher with AA" hidden="false" collective="false" import="true" targetId="b63b-1561-73fd-5daa" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16f3-3eff-1b06-e51b" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1984-6b81-48de-ac0f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2205,9 +2378,15 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
     <rule id="20dc-b109-40fc-8f02" name="Familiar" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false">
       <description>Insignificant, sacrifice model to boost any mystic power.</description>
     </rule>
+    <rule id="fa80-536a-fef8-1903" name="Wounds in the Earth" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false">
+      <description>May remove one (1) terrain feature within 9” once per game.</description>
+    </rule>
+    <rule id="2c57-772e-1581-b034" name="Platform(4”)" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false">
+      <description>May make 4” move in endphase.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="7ce7-b223-45a3-ca3f" name="Republic IFV" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="7ce7-b223-45a3-ca3f" name="Cu. Republic IFV" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2216,7 +2395,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="2a71-42ff-ed94-e736" name="Cult Transport" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="2a71-42ff-ed94-e736" name="Cu. Transport" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, open)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2225,7 +2404,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="17ef-ddfd-40b5-6d9b" name="Cult Mining Vehicle" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="17ef-ddfd-40b5-6d9b" name="Cu. Mining Vehicle" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2234,7 +2413,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="82b5-a01a-4b8d-46aa" name="Civilian Car(s)" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="82b5-a01a-4b8d-46aa" name="Cu. Civilian Car(s)" publicationId="81dd-fe5f-c233-17c5" page="89" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, light)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">3</characteristic>
@@ -2243,7 +2422,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="a00a-451e-069e-8ac5" name="Cult Bestial Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a00a-451e-069e-8ac5" name="Cu. Bestial Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2253,7 +2432,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="eeaf-259a-29e1-c967" name="Cult Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="eeaf-259a-29e1-c967" name="Cu. Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2263,7 +2442,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="3ba2-3466-cea9-788f" name="Cult Mystic" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3ba2-3466-cea9-788f" name="Cu. Mystic" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2273,7 +2452,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="368f-ca7c-eb75-62b0" name="Cult Standard Bearer" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="368f-ca7c-eb75-62b0" name="Cu. Standard Bearer" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2283,7 +2462,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="bf36-ebb7-e9c7-90d6" name="Battle Tank" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="bf36-ebb7-e9c7-90d6" name="Cu. Battle Tank" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2292,7 +2471,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="f3f4-157c-fd5b-3338" name="Assault Tank" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="f3f4-157c-fd5b-3338" name="Cu. Assault Tank" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2301,7 +2480,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ca1-146f-b797-fcea" name="Armoured Walker" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="4ca1-146f-b797-fcea" name="Cu. Armoured Walker" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2310,7 +2489,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="b56e-f8e8-1eda-de6f" name="Soldier" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b56e-f8e8-1eda-de6f" name="Cu. Soldier" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2320,7 +2499,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d07a-5660-5035-c15c" name="Technical" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="d07a-5660-5035-c15c" name="Cu. Technical" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, light)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2329,7 +2508,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="e6a6-8680-07a5-5d34" name="Brute" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e6a6-8680-07a5-5d34" name="Cu. Brute" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2339,7 +2518,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1907-aecd-9274-79bd" name="Infiltration Beast" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1907-aecd-9274-79bd" name="Cu. Infiltration Beast" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2349,7 +2528,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="2f29-da77-1802-d3b1" name="Infiltration Beast Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="2f29-da77-1802-d3b1" name="Cu. Infiltration Beast Leader" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2359,7 +2538,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1939-f51c-d72e-5b38" name="Insurrectionist" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1939-f51c-d72e-5b38" name="Cu. Insurrectionist" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2369,7 +2548,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="20c0-9cd3-29e5-8439" name="Cult Off-Road Runner" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="20c0-9cd3-29e5-8439" name="Cu. Off-Road Runner" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2378,7 +2557,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="773a-9a89-d0ec-f0f9" name="Bike Shooter" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="773a-9a89-d0ec-f0f9" name="Cu. Bike Shooter" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2388,7 +2567,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="be1d-d4d2-232d-fc73" name="Blade-Assassin" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="be1d-d4d2-232d-fc73" name="Cu. Blade-Assassin" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2398,7 +2577,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1c89-4b90-c6bc-d9bd" name="Gunslinger" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1c89-4b90-c6bc-d9bd" name="Cu. Gunslinger" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2408,7 +2587,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="ba62-81da-5084-2525" name="Nexuskeeper" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ba62-81da-5084-2525" name="Cu. Nexuskeeper" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2418,7 +2597,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1cd4-be01-32ea-6cec" name="Bodyguard" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1cd4-be01-32ea-6cec" name="Cu. Bodyguard" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2428,7 +2607,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="f2ce-0590-fc21-864b" name="Agitprop Expert" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="f2ce-0590-fc21-864b" name="Cu. Agitprop Expert" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2438,7 +2617,7 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d1fe-b6d2-e444-7003" name="Bio-Chemist" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d1fe-b6d2-e444-7003" name="Cu. Bio-Chemist" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2448,13 +2627,31 @@ Players get 1 Faction Point per full 300 points in their force, and can spend th
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1756-d01c-2052-c7b0" name="Cult Skyhook" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1756-d01c-2052-c7b0" name="Cu. Skyhook" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0a2a-7ad3-4169-70ce" name="Cu. Converted Mining Platform" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">12</characteristic>
+        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">6</characteristic>
+        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">30</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">4</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7a24-bb07-1ef2-3ab3" name="Excavator Blade" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (20) 9” (10)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
   </sharedProfiles>

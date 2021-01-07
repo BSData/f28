@@ -1,30 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ab42-0171-ff50-7669" name="The Nanite Resurrection" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="19" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ab42-0171-ff50-7669" name="The Nanite Resurrection" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
 ● One (1) Command entry
 ● Max one (1) Special entry for each Core entry
-● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once)
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
 Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
 ● One (1) additional Command entry, (to a maximum of two (2))
 ● One (1) extra Special entry 
 ● Two (2) additional upgrades
 
-Faction Traits
-
-● No Rush: Units in this faction may not take the triple move action.
-
-● Unbending: Units in this faction receives a maximum of +1 cover bonus.
-
-● The Futility of Resistance: Spend one (1) Faction Point:
-
-- Assuming direct control: remove all remaining action markers from one (1) unit in endphase
-
-- The Rebel Metal: one (1) enemy vehicle immediately rolls on the damage table with -3
-
-- Back to Dust: return any one (1) friendly unit to staging</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="841c-21f7-b142-ff1f" name="Nanite Trooper" hidden="false" collective="false" import="true" targetId="563d-f48b-b791-7772" type="selectionEntry"/>
     <entryLink id="88e4-26b7-7628-1982" name="Nanite Eternal" hidden="false" collective="false" import="true" targetId="ae21-c918-4f96-c1e5" type="selectionEntry"/>
@@ -48,11 +39,23 @@ Faction Traits
     <entryLink id="76df-906b-1587-14fa" name="Nanite Leader" hidden="false" collective="false" import="true" targetId="0521-20af-336b-3c2d" type="selectionEntry"/>
     <entryLink id="ccec-14d7-dad2-04b1" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fe1-6eb7-1af0-5a9b" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5fe1-6eb7-1af0-5a9b" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="cad8-e87d-fac2-434a" name="Nanite Singularity Mainframe Interdiction Mode" hidden="false" collective="false" import="true" targetId="7a25-d29f-2e5a-746e" type="selectionEntry"/>
     <entryLink id="a4a0-03c0-ec58-5bdc" name="Nanite Singularity Mainframe Unleashed Mode" hidden="false" collective="false" import="true" targetId="419c-e4e9-9dc9-47a8" type="selectionEntry"/>
+    <entryLink id="ab4b-d719-59b9-e550" name="Unbending" hidden="false" collective="false" import="true" targetId="99d5-30e2-1f90-e737" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="598a-a8db-d8ca-2091" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e990-3fa9-77b1-d6b9" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="5d83-1291-5e5a-4c6d" name="No Rush" hidden="false" collective="false" import="true" targetId="8db5-6770-7750-4d75" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5ab9-5b2f-54f5-35c0" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="577e-4fc5-6a60-5207" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="563d-f48b-b791-7772" name="Nanite Trooper" hidden="false" collective="false" import="true" type="unit">
@@ -71,7 +74,7 @@ Faction Traits
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f826-d595-24c4-73b7" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="1c67-c0ac-12fb-6678" name="Trooper" hidden="false" targetId="e5e0-7aa6-3550-ec49" type="profile">
+                <infoLink id="1c67-c0ac-12fb-6678" name="Na. Trooper" hidden="false" targetId="e5e0-7aa6-3550-ec49" type="profile">
                   <modifiers>
                     <modifier type="set" field="591c-163f-c1e8-dfa3" value="4, re-roll">
                       <conditions>
@@ -84,21 +87,18 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b6e6-260d-3088-77cf" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="dc7a-7cbf-2e92-ea17" name="Corrosion Rifle" hidden="false" collective="false" import="true" targetId="2753-327a-5ed0-e669" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="681c-2ae4-0374-62bf" type="max"/>
-                    <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c4a-66d1-0832-b84c" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="17be-8ddf-3ecf-b5bb" name="Corrosion Rifle" hidden="false" collective="false" import="true" targetId="2753-327a-5ed0-e669" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="66df-e482-dafc-a964" type="max"/>
+                <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5bc-545d-3f7f-21dc" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -109,6 +109,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ae21-c918-4f96-c1e5" name="Nanite Eternal" hidden="false" collective="false" import="true" type="unit">
@@ -140,6 +141,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -180,19 +182,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="26e0-8eb8-d67f-4abd" name="Hover-Trooper Squad" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="26e0-8eb8-d67f-4abd" name="Nanite Hover-Trooper Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d67c-c1af-c7f4-c64b" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="cf5a-f750-a4df-89b3" name="Hover-Trooper Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc0f-5d9a-2396-a3e2">
+        <selectionEntryGroup id="cf5a-f750-a4df-89b3" name="Nanite Hover-Trooper Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc0f-5d9a-2396-a3e2">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="120a-b938-1f9b-0dd6" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bc0f-5d9a-2396-a3e2" name="Hover-Trooper" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="bc0f-5d9a-2396-a3e2" name="Nanite Hover-Trooper" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9a9-dee4-c9a0-51f8" type="max"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dd85-80a4-7aac-e15a" type="min"/>
@@ -212,6 +215,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -267,19 +271,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7462-929c-b9f8-6884" name="Disassembler Swarm" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7462-929c-b9f8-6884" name="Nanite Disassembler Swarm" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4ee4-5323-c6d7-07a4" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d808-ca74-6c4f-8e27" name="Disassembler Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="65e1-a293-61b4-2ae4">
+        <selectionEntryGroup id="d808-ca74-6c4f-8e27" name="Nanite Disassembler Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="65e1-a293-61b4-2ae4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa2-f9d8-af4e-1a6c" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="65e1-a293-61b4-2ae4" name="Disassembler Swarm" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="65e1-a293-61b4-2ae4" name="Nanite Disassembler Swarm" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="717b-e3ee-8061-0db1" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2414-0e2d-ddf3-39ab" type="min"/>
@@ -300,6 +305,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -340,6 +346,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a43a-bb58-c266-1ea8" name="Nanite Mystic" hidden="false" collective="false" import="true" type="unit">
@@ -373,21 +380,18 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="45.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9fff-5c3f-91ed-da42" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="dddc-aea4-ac92-c3c8" name="Lumen Staff" hidden="false" collective="false" import="true" targetId="6e1b-8693-2d25-6b06" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91b3-6f0c-fa0b-34c2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b07-db22-5fb7-3140" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="17cd-38fb-b374-8074" name="Lumen Staff" hidden="false" collective="false" import="true" targetId="6e1b-8693-2d25-6b06" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a009-55a4-2898-14a8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76b9-7f70-f568-3aeb" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -398,6 +402,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cb53-d2b7-8d3e-9aca" name="Nanite Close Combat Trooper" hidden="false" collective="false" import="true" type="unit">
@@ -429,6 +434,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -477,6 +483,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f6ab-be13-7c6c-c17d" name="Energy Sword and Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
@@ -487,19 +494,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d86d-ed82-7691-8516" name="Elite Jump Trooper" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d86d-ed82-7691-8516" name="Nanite Elite Jump Trooper" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="c950-e137-40f8-a272" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="11cf-0286-f70c-57bd" name="Elite Jump Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1002-63ab-4d8b-7bcc">
+        <selectionEntryGroup id="11cf-0286-f70c-57bd" name="Nanite Elite Jump Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1002-63ab-4d8b-7bcc">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9741-d1db-a87c-126a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1002-63ab-4d8b-7bcc" name="Elite Jump Trooper" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="1002-63ab-4d8b-7bcc" name="Nanite Elite Jump Trooper" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1844-650e-981b-ca9a" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4391-6b5e-7aab-5532" type="min"/>
@@ -519,6 +527,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -567,6 +576,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5ed0-280d-4071-4433" name="Energy Sword and Matter Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -578,6 +588,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9a32-c0ba-6a8c-0d40" name="Nanite COIN-Specialist" hidden="false" collective="false" import="true" type="unit">
@@ -612,21 +623,18 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d2f8-3d55-d721-f764" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="5dd1-0e9c-e17d-6415" name="Disintegrator Rifle" hidden="false" collective="false" import="true" targetId="d962-af2c-2735-3cbe" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649d-35f4-7b10-a17f" type="max"/>
-                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cef9-5d6c-09d2-e775" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="386e-a566-392b-b776" name="Disintegrator Rifle" hidden="false" collective="false" import="true" targetId="d962-af2c-2735-3cbe" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8260-ff0e-5065-6a0e" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11a1-f26e-337a-b054" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -637,6 +645,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d442-dcfc-a378-91a9" name="Nanite Terror Trooper" hidden="false" collective="false" import="true" type="unit">
@@ -669,6 +678,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="14.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -722,6 +732,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0ddd-0fab-40e2-5014" name="Nanite Phase Beast" hidden="false" collective="false" import="true" type="unit">
@@ -754,6 +765,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -799,20 +811,21 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8e88-5c8e-3b51-f97c" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8e88-5c8e-3b51-f97c" name="Nanite Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5855-45ca-6e9b-b7a9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="false"/>
         <categoryLink id="7cb0-145a-0b61-09d2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e21e-33de-4d32-7089" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d6e-4d59-7503-6b3f">
+        <selectionEntryGroup id="e21e-33de-4d32-7089" name="Nanite Heavy Hover-Trooper" hidden="false" collective="false" import="true" defaultSelectionEntryId="1d6e-4d59-7503-6b3f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fdf-7bf1-34d3-d014" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1d6e-4d59-7503-6b3f" name="Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="1d6e-4d59-7503-6b3f" name="Nanite Heavy Hover-Trooper" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="899d-be35-e385-5992" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="177b-0839-3c0a-a6f4" type="min"/>
@@ -832,6 +845,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="45.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -872,6 +886,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c111-8704-4aeb-35c2" name="Nanite Jetbike" hidden="false" collective="false" import="true" type="unit">
@@ -905,6 +920,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -958,6 +974,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4890-0298-fdf6-16d8" name="Nanite Attack Raft" hidden="false" collective="false" import="true" type="unit">
@@ -990,6 +1007,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1004,17 +1022,15 @@ Faction Traits
                 <entryLink id="d914-72a9-d56f-18d7" name="Corrosion Cannon" hidden="false" collective="false" import="true" targetId="b649-ceb2-5ae1-5b18" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="fc61-d446-812b-900a" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="94c0-e70e-cc02-51ca" name="Dual Edison Destructor" page="" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b05-f010-f732-2fd5" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e34-ab19-e15d-219b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="7a00-b612-7a07-0182" name="Dual Edison Destructor" page="" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b19f-2651-08bb-f8d5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3641-9b3b-fc76-e60c" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1025,6 +1041,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8b49-ccf3-bde6-f002" name="Nanite Large Raft" hidden="false" collective="false" import="true" type="unit">
@@ -1062,6 +1079,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1080,6 +1098,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1091,17 +1110,15 @@ Faction Traits
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="232a-8c0f-428c-2217" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="e58a-19e2-457b-566c" name="Corrosion Rifle Array" page="" hidden="false" collective="false" import="true" targetId="d26f-ac3f-3296-7810" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f4e-82f9-5543-20d8" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00a0-5d5a-ed79-b14f" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="d9f0-691b-4633-0450" name="Corrosion Rifle Array" page="" hidden="false" collective="false" import="true" targetId="d26f-ac3f-3296-7810" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7293-f33f-d96e-0716" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d23f-a89c-65d3-298b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1112,6 +1129,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f828-c4ef-8c08-8b25" name="Nanite Portal Pyramid" hidden="false" collective="false" import="true" type="unit">
@@ -1147,27 +1165,24 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="250.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="d54a-a125-30cd-8cf5" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="aa2e-3e1d-7966-2490" name="Matter Whip" page="" hidden="false" collective="false" import="true" targetId="4f4d-f38c-e745-5ec3" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9c7-1756-eec4-c49d" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208c-cc3a-86f7-d3d5" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="7aa2-c009-a233-b3a4" name="Corrosion Arc" page="" hidden="false" collective="false" import="true" targetId="e539-78a8-a5b2-4aff" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5390-4316-6ca6-e1ea" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e6-fb8a-7f3c-6044" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="6382-ee50-d1bd-1455" name="Corrosion Arc" page="" hidden="false" collective="false" import="true" targetId="e539-78a8-a5b2-4aff" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5802-0592-a1db-43de" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fe06-3fd3-3c0f-3f3a" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b3b8-e808-149c-365e" name="Matter Whip" page="" hidden="false" collective="false" import="true" targetId="4f4d-f38c-e745-5ec3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e8ff-1f1b-cc02-41b5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a04-3ca7-d166-560e" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1178,6 +1193,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="77a2-601d-c58a-8a4b" name="Nanite Walker" hidden="false" collective="false" import="true" type="unit">
@@ -1212,6 +1228,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1238,6 +1255,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fdd5-318e-2c99-b236" name="Nanite Aircraft" hidden="false" collective="false" import="true" type="unit">
@@ -1271,6 +1289,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="160.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1285,17 +1304,15 @@ Faction Traits
                 <entryLink id="fa68-58b9-7d66-4efd" name="Insertion Beam" hidden="false" collective="false" import="true" targetId="9335-bd22-cc3c-c647" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="982e-9d7c-c04f-81eb" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="85c8-d323-3222-6575" name="Dual Edison Destructor" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ff4-4917-56d3-7abc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f93-9cfa-6e96-d960" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="4648-b1a3-6894-a02f" name="Dual Edison Destructor" hidden="false" collective="false" import="true" targetId="2269-3fab-512f-a155" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="482b-0516-f091-23e7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d84b-1d0f-7a08-69c2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1306,6 +1323,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="958c-4609-2553-9e1b" name="Contained Singularity" hidden="false" collective="false" import="true" type="unit">
@@ -1342,6 +1360,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1367,6 +1386,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="17d7-c261-514e-41f4" name="Nanite Fabrication Unit" hidden="false" collective="false" import="true" type="unit">
@@ -1402,6 +1422,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1427,6 +1448,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0521-20af-336b-3c2d" name="Nanite Leader" hidden="false" collective="false" import="true" type="unit">
@@ -1437,16 +1459,6 @@ Faction Traits
       <selectionEntryGroups>
         <selectionEntryGroup id="6f97-6fd3-0262-e73b" name="Nanite Leader" hidden="false" collective="false" import="true">
           <selectionEntryGroups>
-            <selectionEntryGroup id="e185-f8fd-c753-ef5a" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="58ad-9d22-85ab-9d3a" name="Time’s Arrow" hidden="false" collective="false" import="true" targetId="0e82-6c8c-06c9-4bd4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6b7-c082-f584-6748" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb8b-60f5-da7b-f3f7" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="37d3-edf6-a615-2aff" name="Nanite Leader" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a78-d305-9089-339e" type="min"/>
@@ -1475,6 +1487,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e2c2-e033-2346-e1f6" name="Hover-Body" hidden="false" collective="false" import="true" type="model">
@@ -1497,6 +1510,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="44a1-d445-6f61-58ef" name="Superior Leader" hidden="false" collective="false" import="true" type="model">
@@ -1519,6 +1533,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1566,16 +1581,6 @@ Faction Traits
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a36d-5578-31b9-52d3" type="min"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="6519-831c-3171-b82e" name="Adaptation Protocols" hidden="false" collective="false" import="true" type="upgrade">
-                  <infoLinks>
-                    <infoLink id="1cb3-7cb9-3182-64bf" name="Adaptation Protocols" hidden="false" targetId="2bbc-354d-196f-ec8a" type="rule"/>
-                    <infoLink id="aacb-d5d9-4582-0a89" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-                  </costs>
-                </selectionEntry>
                 <selectionEntry id="ce7c-8e5d-1be3-7068" name="Nightmare Portal" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="3df6-f0f5-5d13-e0f0" name="Nightmare Portal" hidden="false" targetId="ed24-d180-4a05-1b00" type="rule"/>
@@ -1583,6 +1588,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="1f94-434f-2748-e322" name="Resurrection Globe" hidden="false" collective="false" import="true" type="upgrade">
@@ -1592,11 +1598,23 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <entryLinks>
+                <entryLink id="466e-ca1d-4244-25b2" name="Adaption Protocols" hidden="false" collective="false" import="true" targetId="e910-f8fe-c00b-9fbb" type="selectionEntry"/>
+              </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="064f-c4a5-9474-b761" name="Time’s Arrow" hidden="false" collective="false" import="true" targetId="0e82-6c8c-06c9-4bd4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18b5-1e28-b0c5-a32b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="78ee-e10b-dabb-1a80" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1629,6 +1647,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="419c-e4e9-9dc9-47a8" name="Nanite Singularity Mainframe Unleashed Mode" hidden="true" collective="false" import="true" type="unit">
@@ -1645,7 +1664,7 @@ Faction Traits
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6d30-c3f1-36f3-7125" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d30-c3f1-36f3-7125" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4c74-f8c3-0507-5cc2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -1671,26 +1690,24 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="750.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="4931-9ef5-4d3d-68c8" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="050e-59e2-d93c-b5c2" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5360-6514-0bb5-603c" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8003-f082-0ca4-8ed3" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="625a-1d98-e1f2-b4a6" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6724-6dfa-6702-76f9" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08c1-0ca4-203e-56c2" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7a25-d29f-2e5a-746e" name="Nanite Singularity Mainframe Interdiction Mode" hidden="true" collective="false" import="true" type="unit">
@@ -1707,7 +1724,7 @@ Faction Traits
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a467-298e-b8ec-f25e" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a467-298e-b8ec-f25e" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="e74f-c94d-dcba-2527" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -1734,43 +1751,56 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="350.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="4904-c05d-de35-5c34" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="c747-bcf6-e8b6-e246" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5241-f545-15cc-1b51" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a750-93ae-eaf8-7bd3" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="cbe4-63b3-08d9-36d5" name="Edison Globe" hidden="false" collective="false" import="true" targetId="3fa8-f332-13d7-ea11" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b32c-ed64-4e05-d897" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1328-ca96-4542-084d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e06d-0e4b-aedb-353a" name="AA Shroud" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6c84-1290-9ef3-0ec3" name="AA Shroud" hidden="false" targetId="439f-f0b1-8224-6d02" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7e12-4846-2a13-3c3c" name="Quantum Shielding" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="45cb-9c52-9464-e5d0" name="Quantum Shielding" hidden="false" targetId="d4bf-3279-9dc8-956a" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="2089-94f8-9e68-7199" name="Mindeless" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="00b2-65c6-bac6-ec05" name="Mindeless" hidden="false" targetId="8b8f-8fea-6ac0-eb61" type="rule"/>
         <infoLink id="0aa3-6a63-6110-849c" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0a1d-ac90-7c93-88fd" name="Greater Awareness" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1778,28 +1808,79 @@ Faction Traits
         <infoLink id="3c45-8b30-10a3-3f36" name="Unbending" hidden="false" targetId="4dc8-cabe-1830-b374" type="rule"/>
         <infoLink id="add7-f55a-bde6-340a" name="No Rush:" hidden="false" targetId="9088-9105-c11d-dc35" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0c85-d809-93e9-4dda" name="Flesh Rags" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8c23-6d77-7a73-093a" name="Flesh Rags" hidden="false" targetId="e714-119b-815d-32aa" type="rule"/>
         <infoLink id="533c-c0e0-5f22-dbe9" name="Repel(2)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="313d-6e2f-4b05-6886" name="Golden Skin" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0e6b-fb0e-6aa0-4666" name="Golden Skin" hidden="false" targetId="cd2d-aff6-64b5-d71f" type="rule"/>
         <infoLink id="4805-83d4-55d5-50d0" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="9b49-aabc-32dc-b805" name="Rusted" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ef88-80f2-7438-9d98" name="Rusted" hidden="false" targetId="cd73-ab1c-5d1b-0b02" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7853-c6ef-771f-4acc" name="IFF Protocols" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2abd-ecdb-755a-b62a" name="IFF Protocols" hidden="false" targetId="11e3-6c19-3272-87e8" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8db5-6770-7750-4d75" name="No Rush" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="52bc-b7d0-0c26-15b6" name="No Rush" hidden="false" targetId="9088-9105-c11d-dc35" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3884-3a2e-2089-ce6a" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="99d5-30e2-1f90-e737" name="Unbending" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a8ba-eb1e-406b-bdea" name="Unbending" hidden="false" targetId="4dc8-cabe-1830-b374" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="75af-2235-efce-359d" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1933,9 +2014,6 @@ Faction Traits
     <rule id="ed24-d180-4a05-1b00" name="Nightmare Portal" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
       <description>Deploy one (1) unit from staging within 6” of this model (without action markers), one use.</description>
     </rule>
-    <rule id="2bbc-354d-196f-ec8a" name="Adaptation Protocols" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
-      <description>+2FP, spend only on allies or upgrades.</description>
-    </rule>
     <rule id="e30e-2fb5-a84f-acc8" name="Power of the Elements Mystic(3x2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
@@ -1976,7 +2054,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="e5e0-7aa6-3550-ec49" name="Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e5e0-7aa6-3550-ec49" name="Na. Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -1986,7 +2064,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="7e20-3894-e057-c7e4" name="Eternal" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="7e20-3894-e057-c7e4" name="Na. Eternal" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -1996,7 +2074,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="bfc7-941f-e64b-e54c" name="Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="bfc7-941f-e64b-e54c" name="Na. Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2006,7 +2084,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="31ef-8a80-1a49-ae6c" name="Disassembler Swarm" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="31ef-8a80-1a49-ae6c" name="Na. Disassembler Swarm" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2016,7 +2094,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="af33-5230-ac3e-d3ab" name="Nanite Mystic" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="af33-5230-ac3e-d3ab" name="Na. Mystic" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2026,7 +2104,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="61d4-102e-e582-101e" name="CC Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="61d4-102e-e582-101e" name="Na. CC Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2036,7 +2114,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="e220-d9dd-d7ca-88a5" name="Elite Jump Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e220-d9dd-d7ca-88a5" name="Na. Elite Jump Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2046,7 +2124,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12/6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0781-b6e7-fe93-73b9" name="COIN-Specialist" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="0781-b6e7-fe93-73b9" name="Na. COIN-Specialist" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2056,7 +2134,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="c8d0-2aaf-81e2-a71f" name="Terror Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="c8d0-2aaf-81e2-a71f" name="Na. Terror Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2066,7 +2144,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6	</characteristic>
       </characteristics>
     </profile>
-    <profile id="1c4a-341c-b6d2-b98d" name="Phase Beast" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1c4a-341c-b6d2-b98d" name="Na. Phase Beast" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(teleport)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2076,7 +2154,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="3803-4488-463d-e966" name="Heavy Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3803-4488-463d-e966" name="Na. Heavy Hover-Trooper" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2086,7 +2164,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="3378-5ec8-a947-7b03" name="Jetbike" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3378-5ec8-a947-7b03" name="Na. Jetbike" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2096,7 +2174,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="1c4c-6890-d45e-050e" name="Nanite Attack Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1c4c-6890-d45e-050e" name="Na. Attack Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2105,7 +2183,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="a546-e542-3cbd-c107" name="Nanite Large Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="a546-e542-3cbd-c107" name="Na. Large Raft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2114,7 +2192,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="d41b-93f7-5645-b810" name="Nanite Portal Pyramid" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="d41b-93f7-5645-b810" name="Na. Portal Pyramid" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2123,7 +2201,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="ad10-4a0e-5762-9f54" name="Nanite Walker" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="ad10-4a0e-5762-9f54" name="Na. Walker" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2132,7 +2210,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="a1f8-3c94-20ac-90a4" name="Nanite Aircraft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="a1f8-3c94-20ac-90a4" name="Na. Aircraft" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2141,7 +2219,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="cd25-a2b7-a1d7-087f" name="Contained Singularity" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="cd25-a2b7-a1d7-087f" name="Na. Contained Singularity" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -2151,7 +2229,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="d33d-1c61-c870-c3f1" name="Nanite Fabrication Unit" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d33d-1c61-c870-c3f1" name="Na. Fabrication Unit" publicationId="81dd-fe5f-c233-17c5" page="105" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2161,7 +2239,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1974-907c-ab33-23e7" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1974-907c-ab33-23e7" name="Na. Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2171,7 +2249,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="968a-3166-1e2b-6a62" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="968a-3166-1e2b-6a62" name="Na. Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
@@ -2180,7 +2258,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="9ece-bcff-425d-2dec" name="Nanite Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9ece-bcff-425d-2dec" name="Na. Leader" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2190,7 +2268,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="b1bd-235a-9244-63c2" name="Singularity Mainframe Unleashed" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="b1bd-235a-9244-63c2" name="Na. Singularity Mainframe Unleashed" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">5</characteristic>
@@ -2199,7 +2277,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="0954-1b8a-8be7-6e97" name="Singularity Mainframe Interdiction" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="0954-1b8a-8be7-6e97" name="Na. Singularity Mainframe Interdiction" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">4</characteristic>

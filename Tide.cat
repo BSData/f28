@@ -1,28 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="22" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
 ● One (1) Command entry
 ● Max one (1) Special entry for each Core entry
-● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once)
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
 Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
 ● One (1) additional Command entry, (to a maximum of two (2))
 ● One (1) extra Special entry 
 ● Two (2) additional upgrades
 
-Faction Traits
-
-● One Mind: All units in this faction has Fanatic.
-
-● High Tide: Spend one (1) Faction Point:
-
-- Saturate the air: aircraft may not enter the table this turn.
-
-- Endless Hordes: one unit of Small Beasts regains D6 wounds (return models within cohesion).
-
-- Shadow of the Maelstrom: cancel any mystical power.</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="cecf-850a-2457-783d" name="Muncher Swarm" hidden="false" collective="false" import="true" targetId="46f2-b15a-cd17-346c" type="selectionEntry"/>
     <entryLink id="4615-276d-0a7b-963f" name="Small Beast Group" hidden="false" collective="false" import="true" targetId="f472-4745-a1fb-f196" type="selectionEntry"/>
@@ -44,23 +37,35 @@ Faction Traits
     <entryLink id="c913-4b13-bd84-335f" name="Winged Monster" hidden="false" collective="false" import="true" targetId="5646-f63c-9b03-d94d" type="selectionEntry"/>
     <entryLink id="69ad-3e89-3bb2-dfb5" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e33-f632-0ad5-c8ec" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7e33-f632-0ad5-c8ec" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="e107-6c41-80a4-58e6" name="Huge Flying Beast" hidden="false" collective="false" import="true" targetId="9b98-7f9a-e993-571d" type="selectionEntry"/>
+    <entryLink id="f0e6-ccf4-120b-10b8" name="High TIde" hidden="false" collective="false" import="true" targetId="f8b7-dd54-7700-3497" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eb8c-12bb-7900-2237" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1da5-b93a-63cd-3cca" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="beab-7d1f-e047-7f6a" name="One Mind" hidden="false" collective="false" import="true" targetId="5500-5878-276c-f4ec" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6e2f-0a50-0385-4fec" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1a07-9062-5f62-e966" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="46f2-b15a-cd17-346c" name="Muncher Swarm" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="46f2-b15a-cd17-346c" name="Tide Muncher Swarm" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="702b-78cf-0c39-33be" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6c8c-5876-7105-f130" name="Muncher Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7ff-7969-d300-7e1f">
+        <selectionEntryGroup id="6c8c-5876-7105-f130" name="Tide Muncher Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7ff-7969-d300-7e1f">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ee-c060-a0ab-f2a7" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="a7ff-7969-d300-7e1f" name="Muncher Swarm" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="a7ff-7969-d300-7e1f" name="Tide Muncher Swarm" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ee0-25f1-25e8-6563" type="max"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6205-929d-338c-14be" type="min"/>
@@ -78,10 +83,12 @@ Faction Traits
                 <infoLink id="717c-46ed-f7f3-317c" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                 <infoLink id="d62c-b899-e25e-c7ca" name="Ignore Suppression" hidden="false" targetId="625b-bc80-a6e2-9ea2" type="rule"/>
                 <infoLink id="dbe6-0f2c-e820-3756" name="Extra Strike(1)" hidden="false" targetId="73d5-04b1-9b46-374c" type="rule"/>
+                <infoLink id="994f-05d5-861c-fa4e" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -136,19 +143,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f472-4745-a1fb-f196" name="Small Beast Group" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="f472-4745-a1fb-f196" name="Tide Small Beast Group" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0910-a0ce-32c8-cfed" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1b76-c287-c23c-2ed1" name="Small Beast Group" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb77-e98e-bb36-9c20">
+        <selectionEntryGroup id="1b76-c287-c23c-2ed1" name="Tide Small Beast Group" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb77-e98e-bb36-9c20">
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998c-39d8-ee94-9703" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="fb77-e98e-bb36-9c20" name="Small Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="fb77-e98e-bb36-9c20" name="Tide Small Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2e1-e0bc-e23d-99c2" type="max"/>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aa2-ef4d-3b05-d843" type="min"/>
@@ -163,10 +171,12 @@ Faction Traits
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink id="aff2-f7fd-e731-559b" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -198,6 +208,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="cb83-35e6-9a98-4241" name="Charge(3) and Basic CC" hidden="false" collective="false" import="true" type="upgrade">
@@ -208,6 +219,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d528-b968-b56a-bfc7" name="Pistol and Move(9, hover)" hidden="false" collective="false" import="true" type="upgrade">
@@ -220,6 +232,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -233,6 +246,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fba8-042c-da14-1ac7" name="Tide Primary" hidden="false" collective="false" import="true" type="unit">
@@ -256,10 +270,12 @@ Faction Traits
                 <infoLink id="bb41-16f5-2b74-e835" name="Bestow Ignore Suppression" hidden="false" targetId="ca40-aced-1e66-d92c" type="rule"/>
                 <infoLink id="1b15-96a0-7cdf-7a55" name="Extra Strike(1)" hidden="false" targetId="73d5-04b1-9b46-374c" type="rule"/>
                 <infoLink id="69d8-d21a-4bee-4ec1" name="Tide Primary" hidden="false" targetId="2b3e-d485-8493-4a23" type="rule"/>
+                <infoLink id="e5a1-7d9c-4b7a-19a1" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -281,6 +297,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d88a-769c-e649-35fb" name="Enhanced Bio- carbine and Energy Claws" hidden="false" collective="false" import="true" type="upgrade">
@@ -291,6 +308,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -305,19 +323,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d598-b93b-d20b-a999" name="Cannon Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="d598-b93b-d20b-a999" name="Tide Cannon Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="91cb-bf02-0cc7-b868" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="edc3-6c97-9266-2bfa" name="Cannon Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="18a4-91d8-deb0-5a34">
+        <selectionEntryGroup id="edc3-6c97-9266-2bfa" name="Tide Cannon Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="18a4-91d8-deb0-5a34">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c6d-bd11-9645-8ace" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="18a4-91d8-deb0-5a34" name="Cannon Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="18a4-91d8-deb0-5a34" name="Tide Cannon Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df2e-0e23-f9d1-1258" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="513f-d2c9-d82f-8fb9" type="min"/>
@@ -327,31 +346,29 @@ Faction Traits
                 <infoLink id="83c8-5068-de44-0b18" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="6f3c-fe3d-c68e-17e5" name="Oversized(+2)" hidden="false" targetId="bf5a-e06b-380c-7824" type="rule"/>
                 <infoLink id="ea15-d19b-1214-8e34" name="Extra Strike(1)" hidden="false" targetId="73d5-04b1-9b46-374c" type="rule"/>
+                <infoLink id="f36e-645e-dc4b-bd39" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="0840-a042-e1e1-2b69" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="a2b8-12c6-fe10-9539" name="Bio-plasma Cannon" hidden="false" collective="false" import="true" targetId="e788-0036-7da5-6944" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e8b-e1bd-4d88-76cc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="090b-a046-bc52-2eeb" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="984d-21f6-4938-ffdd" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2293-0592-8af7-3fee" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a264-66bc-98b6-4450" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="006b-e71f-248d-1be0" name="Bio-plasma Cannon" hidden="false" collective="false" import="true" targetId="e788-0036-7da5-6944" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac65-43a5-15b7-0b42" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a79d-3d39-6ab8-7e4b" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="8307-7f30-8661-bb17" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eab3-1fc7-227f-b7cb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b2-a67b-db24-865f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -361,6 +378,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="84ab-2fa2-46ad-55eb" name="Tide Warrior" hidden="false" collective="false" import="true" type="unit">
@@ -381,10 +399,12 @@ Faction Traits
               <infoLinks>
                 <infoLink id="6458-2676-2b56-ae68" name="Tide Warrior" hidden="false" targetId="1918-1dc8-034a-ef27" type="profile"/>
                 <infoLink id="9845-d3f8-c257-d801" name="Oversized(+1)" hidden="false" targetId="aa0b-d00b-5aed-09e7" type="rule"/>
+                <infoLink id="3712-5ff1-f764-046c" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -427,12 +447,14 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6b74-e1a2-2818-6a0a" name="Range" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -468,6 +490,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -550,25 +573,26 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="7edc-631e-70ad-25af" name="Stalker Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="7edc-631e-70ad-25af" name="Tide Stalker Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="7174-dd13-48f5-cd14" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="187d-bd12-ec5d-8b1d" name="Stalker Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="09ab-b1ba-4485-1e8a">
+        <selectionEntryGroup id="187d-bd12-ec5d-8b1d" name="Tide Stalker Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="09ab-b1ba-4485-1e8a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc3-8ba3-0f68-0ec6" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="09ab-b1ba-4485-1e8a" name="Stalker Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="09ab-b1ba-4485-1e8a" name="Tide Stalker Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2154-d6f1-393a-e3fc" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfca-1733-9fe8-5d81" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="bc67-7b11-7cdc-7cf9" name="Stalker Beast" hidden="false" targetId="de25-8400-b91e-4a2c" type="profile"/>
+                <infoLink id="bc67-7b11-7cdc-7cf9" name="Tide Stalker Beast" hidden="false" targetId="de25-8400-b91e-4a2c" type="profile"/>
                 <infoLink id="2ee6-09fd-c61f-cb04" name="Move(fleet)" hidden="false" targetId="d63a-1bad-5f14-8395" type="rule"/>
                 <infoLink id="ee87-eef6-b5de-9283" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                 <infoLink id="681f-80eb-1eb3-1d00" name="Concealment" hidden="false" targetId="2693-921a-149b-88fd" type="rule"/>
@@ -578,33 +602,35 @@ Faction Traits
                 <infoLink id="6b52-05ba-5df0-a4b6" name="Extra Strike(1)" hidden="false" targetId="73d5-04b1-9b46-374c" type="rule"/>
                 <infoLink id="94e5-79f5-647e-3565" name="Superior Ambush" hidden="false" targetId="39da-5e02-4dbb-7d09" type="rule"/>
                 <infoLink id="bb5d-a4ee-3750-15b7" name="Stalker Beast" hidden="false" targetId="152f-f0a4-3830-915c" type="rule"/>
+                <infoLink id="f6ff-fcb1-e210-59a0" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="fe91-3bc1-b1a6-8e60" name="Weapons" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="f2c8-a4ab-39d5-3664" name="Weapon Options" hidden="false" collective="false" import="true">
               <modifiers>
-                <modifier type="increment" field="2ee7-4949-573c-58f1" value="1.0">
+                <modifier type="increment" field="f866-aa50-e576-87b5" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="7edc-631e-70ad-25af" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09ab-b1ba-4485-1e8a" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="b40c-e4fe-d19e-a0dc" value="1.0">
+                <modifier type="increment" field="a287-a628-0a2d-c432" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="7edc-631e-70ad-25af" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="09ab-b1ba-4485-1e8a" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ee7-4949-573c-58f1" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b40c-e4fe-d19e-a0dc" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f866-aa50-e576-87b5" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-a628-0a2d-c432" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="1a37-feb6-4a36-9018" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry"/>
+                <entryLink id="13c0-b0b1-8c56-c7f0" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -616,19 +642,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6cfe-3e43-e37f-3336" name="Bio-Mine" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6cfe-3e43-e37f-3336" name="Tide Bio-Mine" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="cada-f071-2a42-3090" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e879-42a0-3d94-a4bb" name="Bio-Mine" hidden="false" collective="false" import="true" defaultSelectionEntryId="78b1-4618-5413-8e25">
+        <selectionEntryGroup id="e879-42a0-3d94-a4bb" name="Tide Bio-Mine" hidden="false" collective="false" import="true" defaultSelectionEntryId="78b1-4618-5413-8e25">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a5a7-eae3-4f09-638d" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="78b1-4618-5413-8e25" name="Bio-Mine" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="78b1-4618-5413-8e25" name="Tide Bio-Mine" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8530-ecc2-9d8d-ee4a" type="max"/>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da31-c4e7-5912-23bc" type="min"/>
@@ -641,10 +668,12 @@ Faction Traits
                 <infoLink id="3ee9-cb66-7003-2726" name="Immune to Suppression" hidden="false" targetId="eb74-1d94-2774-395d" type="rule"/>
                 <infoLink id="a054-0baf-8185-39c3" name="Volatile" hidden="false" targetId="852a-7637-9296-b226" type="rule"/>
                 <infoLink id="52fa-2761-1ae1-4981" name="EMP Attack" hidden="false" targetId="f4be-044c-15dc-827c" type="profile"/>
+                <infoLink id="9482-a2d9-fe70-d3ee" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -656,19 +685,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ea7d-6233-e482-778a" name="Spawn Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ea7d-6233-e482-778a" name="Tide Spawn Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="26e6-269a-023c-0cfb" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="b25d-7ff3-9adc-39f1" name="Spawn Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd35-f09f-6cef-71ec">
+        <selectionEntryGroup id="b25d-7ff3-9adc-39f1" name="Tide Spawn Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="dd35-f09f-6cef-71ec">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f49-cf34-0637-6d12" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="dd35-f09f-6cef-71ec" name="Spawn Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="dd35-f09f-6cef-71ec" name="Tide Spawn Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd04-b980-b06e-c4c0" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="32da-459f-0cf2-3c6f" type="min"/>
@@ -679,6 +709,7 @@ Faction Traits
                 <infoLink id="17b4-0954-47e6-a3ff" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
                 <infoLink id="98bc-c509-c495-0ba9" name="Oversized(+3)" hidden="false" targetId="4a6e-573c-2ba6-fa4c" type="rule"/>
                 <infoLink id="abb2-a439-f1ad-5374" name="Summon Small Beasts" hidden="false" targetId="7f0f-07fa-d263-73dc" type="rule"/>
+                <infoLink id="4d94-728d-5985-f4ba" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="a77b-1c6f-a7ea-df13" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
@@ -697,9 +728,10 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="250.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="fd20-a033-a78b-5820" name="Summon Reference: Small Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="fd20-a033-a78b-5820" name="Summon Reference: Tide Small Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1605-c1b9-50b3-9f9f" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e800-cf6c-2c0c-5b71" type="min"/>
@@ -707,6 +739,7 @@ Faction Traits
               <infoLinks>
                 <infoLink id="9a79-0510-98d9-22d0" name="Small Beast" hidden="false" targetId="d2ca-c417-60c5-9f03" type="profile"/>
                 <infoLink id="c9c3-d2d1-cb16-6a6a" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
+                <infoLink id="c61e-9b07-6d12-7df7" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="984e-5faa-f6f5-1ce9" name="Pistol" hidden="false" collective="false" import="true" targetId="7763-d3e9-d836-5f2c" type="selectionEntry">
@@ -719,6 +752,7 @@ Faction Traits
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -731,14 +765,15 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2938-7722-3d39-c3c8" name="Bio-Artillery" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2938-7722-3d39-c3c8" name="Tide Bio-Artillery" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="813e-9b31-2001-a4b3" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="235c-2cdd-bfb7-827c" name="Summon Reference: Bio-Mine" hidden="true" collective="false" import="true" type="model">
+        <selectionEntry id="235c-2cdd-bfb7-827c" name="Summon Reference: Tide Bio-Mine" hidden="true" collective="false" import="true" type="model">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -780,28 +815,31 @@ Faction Traits
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c831-d9ae-ba8e-7a20" name="Bio-Artillery" hidden="false" collective="false" import="true" defaultSelectionEntryId="74de-4228-9977-e406">
+        <selectionEntryGroup id="c831-d9ae-ba8e-7a20" name="Tide Bio-Artillery" hidden="false" collective="false" import="true" defaultSelectionEntryId="74de-4228-9977-e406">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb01-eeb1-bbdb-e668" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="74de-4228-9977-e406" name="Bio-Artillery" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="74de-4228-9977-e406" name="Tide Bio-Artillery" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b1a-7c68-f778-8be7" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="512a-b75a-9bb5-8437" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="bd84-e8bd-6ee6-1cb1" name="Bio-Artillery" hidden="false" targetId="dc62-6570-7267-7bbb" type="profile"/>
+                <infoLink id="b81f-5035-e67b-9e94" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="0a11-97ab-f9e3-bb4a" name="Options" hidden="false" collective="false" import="true">
@@ -819,6 +857,7 @@ Faction Traits
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="1355-5e77-994c-cb00" name="Mine Spawner" hidden="false" collective="false" import="true" type="upgrade">
@@ -828,6 +867,7 @@ Faction Traits
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -836,6 +876,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -847,19 +888,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c212-445d-5e64-ccae" name="Command Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c212-445d-5e64-ccae" name="Tide Command Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="4aa7-b89a-923e-b26f" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="51e8-6aa4-6df9-1a3b" name="Command Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc47-0a1b-70c7-6f1f">
+        <selectionEntryGroup id="51e8-6aa4-6df9-1a3b" name="Tide Command Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="bc47-0a1b-70c7-6f1f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64f2-ed19-d3f5-55a2" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="bc47-0a1b-70c7-6f1f" name="Command Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="bc47-0a1b-70c7-6f1f" name="Tide Command Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="effc-0ad8-0707-7b75" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f712-12ae-1ef0-0263" type="min"/>
@@ -877,10 +919,12 @@ Faction Traits
                 <infoLink id="1314-1e43-11ec-9fcd" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
                 <infoLink id="44b1-d336-2000-8a05" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="bda1-c050-c755-52e8" name="Oversized(+2)" hidden="false" targetId="bf5a-e06b-380c-7824" type="rule"/>
+                <infoLink id="2b40-3c4e-1288-e853" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -902,6 +946,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="bc36-cb3c-e904-5163" name="Claws, Implant Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -913,6 +958,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="cc87-5545-60a4-01da" name="Claws, Heavy Acid Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -923,6 +969,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -948,6 +995,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -966,19 +1014,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6ca6-4e60-13b4-bc04" name="Bio-Support" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="6ca6-4e60-13b4-bc04" name="Tide Bio-Support" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="859e-fb0b-3336-9536" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2023-c6bb-b23a-1ded" name="Bio-Support" hidden="false" collective="false" import="true" defaultSelectionEntryId="dedc-723d-7d27-315d">
+        <selectionEntryGroup id="2023-c6bb-b23a-1ded" name="Tide Bio-Support" hidden="false" collective="false" import="true" defaultSelectionEntryId="dedc-723d-7d27-315d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168a-0d46-df9a-9846" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="dedc-723d-7d27-315d" name="Bio-Support" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="dedc-723d-7d27-315d" name="Tide Bio-Support" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b7b-1da5-3be0-71e3" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16fe-5ed5-5727-2ae0" type="min"/>
@@ -993,10 +1042,12 @@ Faction Traits
                     </modifier>
                   </modifiers>
                 </infoLink>
+                <infoLink id="c09d-3199-0a92-1d95" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1030,6 +1081,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="f1c5-fff1-9cb6-88c4" name="Mystic" hidden="false" collective="false" import="true" type="upgrade">
@@ -1043,6 +1095,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1056,19 +1109,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9e58-73b4-f9c0-90e6" name="Bio-Tank" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="9e58-73b4-f9c0-90e6" name="Tide Bio-Tank" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="3b7e-0878-66a5-bf2e" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="9277-6bef-7bcc-6e4f" name="Bio-Tank" hidden="false" collective="false" import="true" defaultSelectionEntryId="41ce-fdc7-5a95-4e56">
+        <selectionEntryGroup id="9277-6bef-7bcc-6e4f" name="Tide Bio-Tank" hidden="false" collective="false" import="true" defaultSelectionEntryId="41ce-fdc7-5a95-4e56">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="901a-70f5-2172-634a" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="41ce-fdc7-5a95-4e56" name="Bio-Tank" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="41ce-fdc7-5a95-4e56" name="Tide Bio-Tank" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a93-4234-7cf8-da78" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d89-e2c1-51c2-b522" type="min"/>
@@ -1078,10 +1132,12 @@ Faction Traits
                 <infoLink id="8f8b-e1d3-44ad-f5bd" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="f5a0-e3d9-91e3-7d3a" name="Oversized(+2)" hidden="false" targetId="bf5a-e06b-380c-7824" type="rule"/>
                 <infoLink id="f044-c9ad-fd95-0c73" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
+                <infoLink id="ccd3-689d-924e-ac48" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1101,6 +1157,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e846-9d7f-28a9-94cf" name="Claws, Heavy Acid Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1111,6 +1168,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="05f6-d87a-907a-e124" name="Claws, Implant Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1122,6 +1180,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1143,19 +1202,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="a254-4bf5-667a-5576" name="Giant Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="a254-4bf5-667a-5576" name="Tide Giant Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="74e6-f9d3-647a-aad0" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="4222-e0df-4226-d079" name="Giant Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="6382-90d1-8758-2469">
+        <selectionEntryGroup id="4222-e0df-4226-d079" name="Tide Giant Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="6382-90d1-8758-2469">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7414-2081-a386-9eb6" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="6382-90d1-8758-2469" name="Giant Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="6382-90d1-8758-2469" name="Tide Giant Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b7c-9399-5c6b-a181" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b260-0f73-4be2-bea6" type="min"/>
@@ -1164,10 +1224,12 @@ Faction Traits
                 <infoLink id="becc-24fa-bb3c-59f7" name="Giant Beast" hidden="false" targetId="8547-cd99-0b9a-6460" type="profile"/>
                 <infoLink id="2652-bb6b-b5fa-7055" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="2459-6578-1cee-955c" name="Oversized(+3)" hidden="false" targetId="4a6e-573c-2ba6-fa4c" type="rule"/>
+                <infoLink id="95da-f977-349e-e34a" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="200.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1187,17 +1249,15 @@ Faction Traits
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-            <selectionEntryGroup id="3e4b-3d29-fd1b-22c5" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="75bd-145b-5468-d00b" name="Thorn Cluster" hidden="false" collective="false" import="true" targetId="88c0-e4d5-c367-5541" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c31a-2541-2e42-2995" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="203e-50d8-aeeb-21a7" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="8804-e4d4-833c-fe41" name="Thorn Cluster" hidden="false" collective="false" import="true" targetId="88c0-e4d5-c367-5541" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a706-40d9-7a7a-9862" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3769-b07b-7249-634f" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1207,19 +1267,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ae4d-ac35-6628-e448" name="Feeder Monster" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="ae4d-ac35-6628-e448" name="Tide Feeder Monster" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="be19-fd15-45cc-d3ca" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="67af-2bb4-32dd-8fe0" name="Feeder Monster" hidden="false" collective="false" import="true" defaultSelectionEntryId="200c-44c2-695c-bc4a">
+        <selectionEntryGroup id="67af-2bb4-32dd-8fe0" name="Tide Feeder Monster" hidden="false" collective="false" import="true" defaultSelectionEntryId="200c-44c2-695c-bc4a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a259-6bcb-db5f-cd8b" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="200c-44c2-695c-bc4a" name="Feeder Monster" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="200c-44c2-695c-bc4a" name="Tide Feeder Monster" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f05e-ba92-bb32-b050" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f35-27bf-5f4d-a0db" type="min"/>
@@ -1233,25 +1294,23 @@ Faction Traits
                 <infoLink id="f6a0-bb36-83db-f89c" name="Hazardous Target(CC)" hidden="false" targetId="d83d-0b9a-4792-7e26" type="rule"/>
                 <infoLink id="c52d-e0f6-ab7a-c18a" name="No Escape" hidden="false" targetId="5162-3674-4eb4-3387" type="rule"/>
                 <infoLink id="7c6b-3cd4-a708-5483" name="Extra Strike(2)" hidden="false" targetId="9860-ce1f-bfab-1fa1" type="rule"/>
+                <infoLink id="aa8e-2fe7-6106-e176" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="9103-5a39-b479-c0fb" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="1520-f6dd-5ed0-a529" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2894-986a-990c-dca0" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="997b-319e-1fc1-eafe" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="a57d-6f5b-c8ea-aa67" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6beb-592c-29f9-5e0b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="307c-947e-ca57-e1ab" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1261,19 +1320,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2349-0141-5492-030a" name="Large Toxic Beast" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2349-0141-5492-030a" name="Tide Large Toxic Beast" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0faf-a6be-2bd2-3128" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="70c2-f3f5-78f4-6546" name="Large Toxic Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="57ca-c19e-8fd8-6bcf">
+        <selectionEntryGroup id="70c2-f3f5-78f4-6546" name="Tide Large Toxic Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="57ca-c19e-8fd8-6bcf">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bed0-1dbf-65ae-2f31" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="57ca-c19e-8fd8-6bcf" name="Large Toxic Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="57ca-c19e-8fd8-6bcf" name="Tide Large Toxic Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed79-fe80-864f-7f25" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61d9-4e8b-ea43-1bd5" type="min"/>
@@ -1283,32 +1343,29 @@ Faction Traits
                 <infoLink id="ae97-abea-49e1-889a" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="3a4d-51b2-9dfc-f615" name="Hazardous Target(CC)" hidden="false" targetId="d83d-0b9a-4792-7e26" type="rule"/>
                 <infoLink id="ffcc-38e6-abc8-1c2b" name="Toxic Cloud" hidden="false" targetId="f554-5d9a-5efb-6837" type="rule"/>
+                <infoLink id="57f9-c592-3ed4-45c7" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="140.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1bde-c5a6-93f5-f5e6" name="Toxic Whips" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3962-b9e3-8920-c3b8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee7f-889a-eb76-e464" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="819e-f3f0-5ac0-d375" name="Toxic Whips" hidden="false" targetId="cbb1-7044-b21d-55d8" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="b1ee-77e3-ba11-ff60" name="Weapons" hidden="false" collective="false" import="true">
-              <selectionEntries>
-                <selectionEntry id="9979-1130-acd9-b3f2" name="Toxic Whips" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc6-3691-dd30-df59" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28ae-bc76-4d81-521b" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="4c6d-8110-22fd-3b83" name="Toxic Whips" hidden="false" targetId="cbb1-7044-b21d-55d8" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1318,19 +1375,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="07ef-d611-db6b-dc2d" name="Tunnelling Horror" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="07ef-d611-db6b-dc2d" name="Tide Tunnelling Horror" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="eaca-cf1e-ff40-4e99" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="f068-2d3c-e33a-4faf" name="Tunnelling Horror" hidden="false" collective="false" import="true" defaultSelectionEntryId="ddd9-5307-451d-401f">
+        <selectionEntryGroup id="f068-2d3c-e33a-4faf" name="Tide Tunnelling Horror" hidden="false" collective="false" import="true" defaultSelectionEntryId="ddd9-5307-451d-401f">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ad-b271-85e0-0416" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="ddd9-5307-451d-401f" name="Tunnelling Horror" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="ddd9-5307-451d-401f" name="Tide Tunnelling Horror" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c03c-6178-5e8e-1dd1" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8eb9-993b-1183-4ce4" type="min"/>
@@ -1339,10 +1397,12 @@ Faction Traits
                 <infoLink id="4f96-89ca-0b90-75f6" name="Tunnelling Horror" hidden="false" targetId="005c-ba51-aa47-8736" type="profile"/>
                 <infoLink id="9ed8-78e5-44df-f89e" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="fd2f-1c9c-9060-9dc5" name="Oversized(+3)" hidden="false" targetId="4a6e-573c-2ba6-fa4c" type="rule"/>
+                <infoLink id="0069-3f6a-a870-1e0d" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="250.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1361,6 +1421,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="55ad-b88b-d927-a9a9" name="Exfiltrate, Insertion Assault, Extra Strike(2)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1372,21 +1433,20 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="cb82-0265-6586-e9bc" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="f2ef-f30c-e93f-6a55" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2de5-dea8-fda9-b0bc" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41c4-4c63-9b32-b47c" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="7949-980a-8336-3370" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c058-8021-2d40-ffb3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d77-eb75-04d0-2732" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1396,6 +1456,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4458-2339-c1f4-1b0b" name="Tide Guard" hidden="false" collective="false" import="true" type="unit">
@@ -1408,7 +1469,7 @@ Faction Traits
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a1-7017-c1a8-f3ce" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f709-79fb-efdf-9fa3" name="Guard" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="f709-79fb-efdf-9fa3" name="Tide Guard" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9413-9338-36b4-6134" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7185-1b65-8b5a-9e8d" type="min"/>
@@ -1425,10 +1486,12 @@ Faction Traits
                 </infoLink>
                 <infoLink id="e300-923a-d2ae-3259" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="de6b-7550-b170-9691" name="Oversized(+3)" hidden="false" targetId="4a6e-573c-2ba6-fa4c" type="rule"/>
+                <infoLink id="c73b-6bfa-1232-7b53" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1443,6 +1506,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e0fc-c34f-b704-5dff" name="Close Combat" hidden="false" collective="false" import="true" type="upgrade">
@@ -1453,6 +1517,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1517,6 +1582,7 @@ Faction Traits
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1606,19 +1672,20 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5646-f63c-9b03-d94d" name="Winged Monster" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5646-f63c-9b03-d94d" name="Tide Winged Monster" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="bbb9-ed92-b51e-b9cc" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="8cd0-78c7-edbc-5826" name="Winged Monster" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ce9-04b6-fad7-7e97">
+        <selectionEntryGroup id="8cd0-78c7-edbc-5826" name="Tide Winged Monster" hidden="false" collective="false" import="true" defaultSelectionEntryId="0ce9-04b6-fad7-7e97">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fac9-39cd-49b4-ab27" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="0ce9-04b6-fad7-7e97" name="Winged Monster" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="0ce9-04b6-fad7-7e97" name="Tide Winged Monster" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="318b-8891-af62-da8a" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d6c-d65f-5073-fdae" type="min"/>
@@ -1628,10 +1695,12 @@ Faction Traits
                 <infoLink id="e510-1962-0930-0dea" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="69db-690d-6deb-5ed6" name="Oversized(+2)" hidden="false" targetId="bf5a-e06b-380c-7824" type="rule"/>
                 <infoLink id="d59f-4035-cc1c-9d02" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                <infoLink id="d68f-9508-a528-1f64" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1652,6 +1721,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="9862-1f02-98a6-2200" name="Heavy Flamer, 4x Bio-Missile, Extra Strike(2), Energy Claws" hidden="false" collective="false" import="true" type="upgrade">
@@ -1665,6 +1735,7 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ba86-4f7c-4703-03ad" name="Dual Heavy Acid Cannon, Disruption(18”)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1676,21 +1747,20 @@ Faction Traits
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
-            <selectionEntryGroup id="f771-60d5-21f5-6dd4" name="Weapons" hidden="false" collective="false" import="true">
-              <entryLinks>
-                <entryLink id="74a2-b1e2-bc68-1bfa" name="Thorn Cluster" hidden="false" collective="false" import="true" targetId="88c0-e4d5-c367-5541" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54eb-7f34-bd99-3097" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90a1-d3c1-45d4-c722" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="2078-164a-bf09-af11" name="Thorn Cluster" hidden="false" collective="false" import="true" targetId="88c0-e4d5-c367-5541" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a377-aeb7-22c2-f17a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22b0-d714-c101-81cb" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -1700,9 +1770,10 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9b98-7f9a-e993-571d" name="Huge Flying Beast" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="9b98-7f9a-e993-571d" name="Tide Huge Flying Beast" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
@@ -1711,18 +1782,18 @@ Faction Traits
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c186-cc40-dc95-15ef" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c186-cc40-dc95-15ef" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="1765-1504-160f-6b16" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a85d-7793-59ac-171e" name="Huge Flying Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="af12-fbdd-09ba-05fa">
+        <selectionEntryGroup id="a85d-7793-59ac-171e" name="Tide Huge Flying Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="af12-fbdd-09ba-05fa">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a0-69d1-965a-2cc7" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="af12-fbdd-09ba-05fa" name="Huge Flying Beast" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="af12-fbdd-09ba-05fa" name="Tide Huge Flying Beast" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ff-185f-d158-ab20" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d39a-9a7e-a635-2894" type="min"/>
@@ -1734,6 +1805,7 @@ Faction Traits
                 <infoLink id="61b2-88ab-a182-e922" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
                 <infoLink id="2e1d-6c7d-9d52-51e6" name="Capacity(20)" hidden="false" targetId="cd90-c74e-f86e-b21a" type="rule"/>
                 <infoLink id="9e40-fb1f-70b1-17b2" name="Pylon Pattern" hidden="false" targetId="3947-ca5f-d41c-30c1" type="rule"/>
+                <infoLink id="30b9-be6c-b23c-5047" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="3507-e252-32a6-9caa" name="Custom Plasma Cannon" hidden="false" collective="false" import="true" targetId="f14c-52e7-66ca-1beb" type="selectionEntry">
@@ -1746,6 +1818,7 @@ Faction Traits
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="320.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c85b-fe9c-901b-4af7" name="Small Beast" hidden="false" collective="false" import="true" type="model">
@@ -1769,6 +1842,7 @@ Faction Traits
                   </modifiers>
                 </infoLink>
                 <infoLink id="bfee-3bfb-7b32-4bc0" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
+                <infoLink id="160c-a637-e5b4-2343" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
               <selectionEntries>
                 <selectionEntry id="670b-f982-fbdc-66eb" name="Winged" hidden="false" collective="true" import="true" type="upgrade">
@@ -1776,6 +1850,11 @@ Faction Traits
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9af9-89c3-2cfe-d29f" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5386-776e-b7ee-7708" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
@@ -1788,6 +1867,8 @@ Faction Traits
               </entryLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1796,6 +1877,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fd64-e116-77fe-2e1d" name="Pistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -1806,6 +1888,7 @@ Faction Traits
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4bc1-6f6a-8b33-2b62" name="Acid Blood" hidden="false" collective="false" import="true" type="upgrade">
@@ -1813,33 +1896,63 @@ Faction Traits
         <infoLink id="80aa-aa99-b897-44db" name="Acid Blood" hidden="false" targetId="4f2c-2592-82e9-fb66" type="rule"/>
         <infoLink id="7c68-94da-f1e2-cee3" name="Hazardous Target(CC)" hidden="false" targetId="d83d-0b9a-4792-7e26" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f271-f256-8405-4092" name="Adrenaline Glands" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6d69-a47e-6c23-ec98" name="Adrenaline Glands" hidden="false" targetId="8277-1a2f-3f7b-2999" type="rule"/>
         <infoLink id="610c-22d6-3c20-22d0" name="Frenzied Assault" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="92d3-23e0-548a-6dde" name="Adapted" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ae71-508f-cdc0-45ea" name="Adapted" hidden="false" targetId="5802-d580-bb66-fc5a" type="rule"/>
         <infoLink id="6000-7911-5087-d1f1" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1ea2-74d6-cc61-5b61" name="Regeneration(1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e53d-49a5-9d7d-0cf8" name="Regeneration(number)" hidden="false" targetId="190c-2504-f2b5-8e32" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ac38-a7a5-b761-6ed8" name="Chitin Plates" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0ff8-ef59-ebd3-5007" name="Chitin Plates" hidden="false" targetId="f42d-1918-093d-9291" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6e66-84a0-b997-d806" name="Mutamorph" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="b3e6-45b1-3da5-6dda" name="Mutamorph" hidden="false" targetId="ceb1-fd18-1557-68e5" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ee7e-dd2f-9ef2-2693" name="Ancient Enemy" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -1847,6 +1960,47 @@ Faction Traits
         <infoLink id="8364-022b-6d5b-c044" name="Terror(6)" hidden="false" targetId="e7ae-0682-39d1-a3ba" type="rule"/>
         <infoLink id="5fbf-2b50-41d3-42cd" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3800-1af4-db8a-64ae" name="Energy Claws" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4643-7da4-0985-52e4" name="Energy Claws" hidden="false" targetId="c554-be93-615e-33b5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f8b7-dd54-7700-3497" name="High TIde" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ab64-a2c6-4d9b-6a65" name="High Tide" hidden="false" targetId="e8c3-fcdd-01c6-985f" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="e8aa-1969-b107-ab02" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5500-5878-276c-f4ec" name="One Mind" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="024e-4bc4-ef6f-feb4" name="One Mind" hidden="false" targetId="d758-8229-cdce-d07e" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cf86-7a0a-399d-47d7" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -1972,9 +2126,18 @@ Faction Traits
     <rule id="209b-a0e9-3ade-fd38" name="Ancient Enemy" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false">
       <description>Terror(6), all enemy models have Loathing vs this model.</description>
     </rule>
+    <rule id="e8c3-fcdd-01c6-985f" name="High Tide" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false">
+      <description>Spend one (1) Faction Point:
+● Saturate the air: aircraft may not enter the table this turn.
+● Endless Hordes: one unit of Small Beasts regains D6 wounds (return models within cohesion).
+● Shadow of the Maelstrom: cancel any mystical power.</description>
+    </rule>
+    <rule id="d758-8229-cdce-d07e" name="One Mind" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false">
+      <description>All units in this faction has Fanatic.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="45c1-01dd-5fd3-9981" name="Muncher Swarm" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="45c1-01dd-5fd3-9981" name="Ti. Muncher Swarm" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -1984,7 +2147,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d2ca-c417-60c5-9f03" name="Small Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d2ca-c417-60c5-9f03" name="Ti. Small Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -1994,7 +2157,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d78b-82e4-bfae-e58d" name="Tide Primary" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d78b-82e4-bfae-e58d" name="Ti. Primary" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2004,7 +2167,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="ad11-a65f-32c3-d9f7" name="Cannon Beast" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ad11-a65f-32c3-d9f7" name="Ti. Cannon Beast" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -2014,7 +2177,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1918-1dc8-034a-ef27" name="Tide Warrior" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1918-1dc8-034a-ef27" name="Ti. Warrior" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2024,7 +2187,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="de25-8400-b91e-4a2c" name="Stalker Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="de25-8400-b91e-4a2c" name="Ti. Stalker Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2034,7 +2197,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d5ba-7876-a3a0-30b0" name="Bio-Mine" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d5ba-7876-a3a0-30b0" name="Ti. Bio-Mine" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2044,7 +2207,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">3</characteristic>
       </characteristics>
     </profile>
-    <profile id="175c-7746-b3b7-a7dc" name="Spawn Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="175c-7746-b3b7-a7dc" name="Ti. Spawn Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
@@ -2054,16 +2217,16 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="f4be-044c-15dc-827c" name="EMP Attack" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="f4be-044c-15dc-827c" name="EMP Attack" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">volatile, one use.</characteristic>
       </characteristics>
     </profile>
-    <profile id="dc62-6570-7267-7bbb" name="Bio-Artillery" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="dc62-6570-7267-7bbb" name="Ti. Bio-Artillery" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2073,7 +2236,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b12e-1548-c7e5-e28c" name="Command Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b12e-1548-c7e5-e28c" name="Ti. Command Beast" publicationId="81dd-fe5f-c233-17c5" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -2083,7 +2246,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="90bd-a8d8-1a42-a4e8" name="Bio-Support" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="90bd-a8d8-1a42-a4e8" name="Ti. Bio-Support" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2093,7 +2256,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="cc68-8f98-5746-b724" name="Bio-Tank" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="cc68-8f98-5746-b724" name="Ti. Bio-Tank" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -2103,7 +2266,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="8547-cd99-0b9a-6460" name="Giant Beast" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8547-cd99-0b9a-6460" name="Ti. Giant Beast" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
@@ -2113,7 +2276,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="dca8-bbef-3d10-2856" name="Feeder Monster" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="dca8-bbef-3d10-2856" name="Ti. Feeder Monster" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
@@ -2123,7 +2286,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="3f71-b56e-e819-86b0" name="Large Toxic Beast" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3f71-b56e-e819-86b0" name="Ti. Large Toxic Beast" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
@@ -2133,16 +2296,16 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="cbb1-7044-b21d-55d8" name="Toxic Whips" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="cbb1-7044-b21d-55d8" name="Toxic Whips" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">8” (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="005c-ba51-aa47-8736" name="Tunnelling Horror" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="005c-ba51-aa47-8736" name="Ti. Tunnelling Horror" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
@@ -2152,7 +2315,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5db0-edd6-5e01-4af6" name="Guard" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5db0-edd6-5e01-4af6" name="Ti. Guard" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2162,7 +2325,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1af4-eb25-d0b6-3ab9" name="Winged Monster" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1af4-eb25-d0b6-3ab9" name="Ti. Winged Monster" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
@@ -2172,7 +2335,7 @@ Faction Traits
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">48</characteristic>
       </characteristics>
     </profile>
-    <profile id="9ff7-6310-f144-c34a" name="Huge Flying Beast" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9ff7-6310-f144-c34a" name="Ti. Huge Flying Beast" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">10</characteristic>

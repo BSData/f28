@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="27" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
-The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
-Weapons are included in the listed price, unless otherwise mentioned, or preceded by an asterix ‘*’ which means that they are an option, and paid for separately. 
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
 
-Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades .
-
-Favour of the Old Ones: Spend one (1) Faction Point:
-
-• Return to the Maelstrom: one (1) unit of Maelstrom Entities is returned to staging and regains D3 wounds.
-
-• Scorch Earth: target terrain feature becomes dangerous (in addition to any other effects)
-
-• Instil Doubt: one (1) attack is made as potshots</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="a653-4ccf-0363-94ed" name="APC" hidden="false" collective="false" import="true" targetId="2cbe-9e08-ed10-6d9b" type="selectionEntry"/>
     <entryLink id="1658-ad5e-e16b-900f" name="Enclave Soldiers" hidden="false" collective="false" import="true" targetId="723a-4974-2d4d-01d0" type="selectionEntry"/>
@@ -49,12 +50,18 @@ Favour of the Old Ones: Spend one (1) Faction Point:
     <entryLink id="98dd-043f-3ade-0fa0" name="Enclave Sickness Mortar Carrier" hidden="false" collective="false" import="true" targetId="0691-68b5-bb7c-f747" type="selectionEntry"/>
     <entryLink id="2400-1384-3d87-cd30" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="637d-7f60-ffa6-2254" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="637d-7f60-ffa6-2254" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="db37-45af-c25f-03c7" name="Enclave Prince of The Maelstorm" hidden="false" collective="false" import="true" targetId="948d-6555-8c35-7fb6" type="selectionEntry"/>
     <entryLink id="cc41-051c-0f43-c0ef" name="Enclave Greater Entity of The Maelstorm" hidden="false" collective="false" import="true" targetId="c63f-993e-1b08-bcdb" type="selectionEntry"/>
     <entryLink id="cdd2-de4f-abc4-1126" name="Enclave Anger Centaur Tank" hidden="false" collective="false" import="true" targetId="f310-a6cf-64f6-01c9" type="selectionEntry"/>
+    <entryLink id="fb4c-42ac-b3ab-df04" name="Favor of the Old Ones" hidden="false" collective="false" import="true" targetId="49d8-7caf-988f-b1f1" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0c65-0bdf-22a7-fc5f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7776-378c-1e0d-da93" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2cbe-9e08-ed10-6d9b" name="APC" hidden="false" collective="false" import="true" type="unit">
@@ -78,6 +85,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -105,6 +113,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cf76-e44f-e5e7-d761" name="Energy Sword and Plasma Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -117,6 +126,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="723a-4974-2d4d-01d0" name="Enclave Soldiers" hidden="false" collective="false" import="true" type="unit">
@@ -140,6 +150,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="11.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -203,6 +214,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a668-9507-68b9-2dad" name="Slug Pistol and Vibrosword" hidden="false" collective="false" import="true" type="upgrade">
@@ -214,6 +226,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4460-2fe1-6aff-c54e" name="APC" hidden="false" collective="false" import="true" type="model">
@@ -244,6 +257,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed8a-7bea-ddf8-2b4c" name="Cultists" hidden="false" collective="false" import="true" type="unit">
@@ -267,6 +281,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -346,6 +361,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d3e-8646-4904-b4cf" name="Basic CC and Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -357,6 +373,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dfe7-a1af-81bc-3f5a" name="Enclave Elite Soldiers" hidden="false" collective="false" import="true" type="unit">
@@ -381,6 +398,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="14.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -444,6 +462,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9811-5d06-47b1-e9bb" name="Enclave Fire Support" hidden="false" collective="false" import="true" type="unit">
@@ -467,6 +486,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="11.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -532,6 +552,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="84ef-83d1-b1c3-8f3d" name="Encalve Maelstrom Soldier" hidden="false" collective="false" import="true" type="unit">
@@ -558,6 +579,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -598,6 +620,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="647b-6dee-af1b-7b1d" name="Encalve Claw Soldier" hidden="false" collective="false" import="true" type="unit">
@@ -622,6 +645,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -662,6 +686,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed85-abf8-7e4b-37b7" name="Enclave Jump Soldiers" hidden="false" collective="false" import="true" type="unit">
@@ -686,6 +711,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="14.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -731,6 +757,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10b2-3eb9-cd5d-e43f" name="Enclave Bikers" hidden="false" collective="false" import="true" type="unit">
@@ -754,6 +781,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -799,6 +827,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a371-08a6-2174-d8bc" name="Enclave Leader" hidden="false" collective="false" import="true" type="unit">
@@ -835,30 +864,11 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="cc67-b0a3-df0b-abd6" name="Weapon Options" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3da-c716-9413-186e" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a55-fa9f-b347-b049" type="min"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="365d-2688-e622-9595" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="62ed-8218-0d0f-7272" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ef2-2dd3-1a0e-f251" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a827-9330-684d-537a" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="ead0-5c3f-4757-f49a" name="Relic Blade" hidden="false" collective="false" import="true" targetId="89de-ddaa-86f4-b67d" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4df3-6330-c2ce-d2dd" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="42da-1d60-75da-13e4" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="5eec-f13e-30d1-b8df" name="Options" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab00-794d-d441-31ce" type="max"/>
@@ -866,21 +876,16 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               </constraints>
               <selectionEntries>
                 <selectionEntry id="66dc-726e-47d3-34a6" name="Favoured" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b53-9c54-2400-f733" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="50f4-18f9-abf9-b251" name="+1 Faction Point" hidden="false" targetId="1e59-8c45-4d6b-09f5" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="-1.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="0d2c-479c-7145-64e7" name="Bike with Dual Slugger" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fe0-1898-cee0-7f29" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="5d1c-0a52-2350-d57a" name="Move(12)" hidden="false" targetId="b8c7-794d-e013-bd45" type="rule"/>
                     <infoLink id="59a6-f1d5-4bd7-37cf" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -889,18 +894,29 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
               <entryLinks>
-                <entryLink id="71f3-09da-2d6e-bf6c" name="Man-Tank" hidden="false" collective="false" import="true" targetId="7511-33d9-caec-fd98" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec89-5185-760d-5cd4" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="71f3-09da-2d6e-bf6c" name="Man-Tank" hidden="false" collective="false" import="true" targetId="7511-33d9-caec-fd98" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="8fb6-4805-3282-1ed3" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="62ed-8218-0d0f-7272" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d149-8b93-283d-bfef" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="27cd-787e-fd7c-3c0c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="6a7a-1c47-4e7b-e773" name="Relic Blade" hidden="false" collective="false" import="true" targetId="89de-ddaa-86f4-b67d" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ebe-6e91-d121-67a9" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85bd-68af-d4a0-b6b4" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -911,6 +927,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb86-25d9-c123-e75b" name="Enclave Mystic" hidden="false" collective="false" import="true" type="unit">
@@ -943,30 +960,11 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="ad22-c9bb-1aa3-5dec" name="Weapon Options" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d18-b4bc-7223-87c0" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97bb-1b1e-bdfc-77d9" type="min"/>
-              </constraints>
-              <entryLinks>
-                <entryLink id="5508-6b46-5165-138d" name="Slug Pistol" hidden="false" collective="false" import="true" targetId="8808-0493-7bed-3bc3" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="348f-6a5f-73dc-fe73" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="902c-67b0-54b2-f221" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="aadb-96ef-d9e2-4727" name="Mystic Energy Sword" hidden="false" collective="false" import="true" targetId="ae0f-8b24-7046-8f44" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6e6-5c51-6970-adf6" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="491a-b05d-4730-78a8" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
-            </selectionEntryGroup>
             <selectionEntryGroup id="07f7-be46-9186-f996" name="Options" hidden="false" collective="false" import="true">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05f3-a108-d195-5373" type="max"/>
@@ -974,9 +972,6 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               </constraints>
               <entryLinks>
                 <entryLink id="dcd9-2391-d98b-5d3a" name="Man-Tank" hidden="false" collective="false" import="true" targetId="7511-33d9-caec-fd98" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f178-a9bf-56c9-3a6b" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                   </costs>
@@ -984,6 +979,20 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="73f9-ab5e-53fc-e03b" name="Mystic Energy Sword" hidden="false" collective="false" import="true" targetId="ae0f-8b24-7046-8f44" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa85-561d-5243-a173" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f34f-cba2-4e66-1467" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="3356-27ca-ca0b-bb55" name="Slug Pistol" hidden="false" collective="false" import="true" targetId="8808-0493-7bed-3bc3" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c97f-d0a1-f4e1-f1a2" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a867-6189-5ad2-84df" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -994,6 +1003,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ec53-4475-5b10-7789" name="Maelstrom Smith" hidden="false" collective="false" import="true" type="unit">
@@ -1019,6 +1029,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1054,6 +1065,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7a8b-659c-4efd-f1b1" name="Enclave Apostle" hidden="false" collective="false" import="true" type="unit">
@@ -1079,6 +1091,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1090,9 +1103,6 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               </constraints>
               <selectionEntries>
                 <selectionEntry id="d9a8-bad7-2517-0482" name="Plasma Pistol and Energy Maul" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d1a3-0805-0a73-5b52" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="9287-c2ce-ccd9-a4b1" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
                     <infoLink id="14de-6b74-aa45-8c31" name="Plasma Pistol" hidden="false" targetId="06c6-c329-39be-374d" type="profile"/>
@@ -1102,12 +1112,10 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="3168-450d-6054-2f36" name="Slugger with underslung Flamer" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35d7-453b-4d3d-4896" type="max"/>
-                  </constraints>
                   <infoLinks>
                     <infoLink id="c468-bd03-ce3d-3806" name="Underslung Weapon" hidden="false" targetId="2de1-86d1-fd25-c8e1" type="rule"/>
                     <infoLink id="2376-e09a-a9e5-ea67" name="Slugger" hidden="false" targetId="de65-91da-25ce-abf1" type="profile"/>
@@ -1116,20 +1124,19 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8b4c-4cc0-4bd2-0780" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1cef-3767-0b83-d3d6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dac1-9aaa-a254-2a11" type="min"/>
+              </constraints>
               <entryLinks>
-                <entryLink id="01bc-7070-70cb-9be7" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="3c6d-bd65-c051-fd59" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff5a-1f8d-fb9d-4812" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="cad3-840f-3a15-d8f0" name="Heat Gun" hidden="false" collective="false" import="true" targetId="ff94-46d1-3391-b0b2" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20d2-ec26-2149-5fb8" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="2946-c6c3-86b4-032c" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="3c6d-bd65-c051-fd59" type="selectionEntry"/>
+                <entryLink id="d25f-9efb-17c6-3198" name="Heat Gun" hidden="false" collective="false" import="true" targetId="ff94-46d1-3391-b0b2" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -1143,6 +1150,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7333-56a4-fa64-67e6" name="Enclave Man-Tanks" hidden="false" collective="false" import="true" type="unit">
@@ -1167,6 +1175,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1253,6 +1262,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e911-c812-c3eb-06b0" name="Slugger with underslung heatgun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1264,6 +1274,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="b903-2566-c130-68e8" name="Slugger with underslung plasmagun" hidden="false" collective="false" import="true" type="upgrade">
@@ -1275,6 +1286,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1325,6 +1337,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8f19-eefa-fdb1-0839" name="Enclave Hellwalker" hidden="false" collective="false" import="true" type="unit">
@@ -1351,6 +1364,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1399,6 +1413,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b635-4913-42cf-fed1" name="Enclave Weapon Beasts" hidden="false" collective="false" import="true" type="unit">
@@ -1425,6 +1440,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1471,6 +1487,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1483,6 +1500,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ba1-f1cf-5f8b-ad8b" name="Enclave Siege Tank" hidden="false" collective="false" import="true" type="unit">
@@ -1507,6 +1525,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1532,6 +1551,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="da9a-32f3-ee10-13eb" name="Enclave Tank" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
@@ -1556,6 +1576,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1613,6 +1634,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e4b-05af-0734-ef7c" name="2x HMG" hidden="false" collective="false" import="true" type="upgrade">
@@ -1622,6 +1644,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9966-3123-835e-bab1" name="2x LATcannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -1631,6 +1654,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dac8-73cb-4f16-6848" name="Enclave Assault Transport" hidden="false" collective="false" import="true" type="unit">
@@ -1658,6 +1682,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1688,6 +1713,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bb01-6741-7b5e-2cff" name="Tentacle Beasts" hidden="false" collective="false" import="true" type="unit">
@@ -1712,6 +1738,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1748,6 +1775,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="94a6-fbb4-0fbb-6c12" name="Beast CC" hidden="false" collective="false" import="true" type="upgrade">
@@ -1757,6 +1785,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a695-1b4a-79e4-9188" name="Helldragon" hidden="false" collective="false" import="true" type="unit">
@@ -1784,6 +1813,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1809,6 +1839,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9b64-e801-85f1-00fd" name="Walker Tank" hidden="false" collective="false" import="true" type="unit">
@@ -1835,6 +1866,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1896,6 +1928,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="116e-7187-e6b7-6b74" name="Enclave Fiend" hidden="false" collective="false" import="true" type="unit">
@@ -1923,6 +1956,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1937,6 +1971,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5b5d-f58f-234b-4bc4" name="Close Combat Weapons" hidden="false" collective="false" import="true" type="upgrade">
@@ -1946,6 +1981,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2006,6 +2042,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b392-b0a6-30de-c715" name="Enclave Gehenna Fighter" hidden="false" collective="false" import="true" type="unit">
@@ -2032,6 +2069,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2059,6 +2097,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7bf7-8cad-dfae-52e8" name="2x Dual Light Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2069,6 +2108,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e87b-8b4a-1631-53dd" name="Enclave Gehenna Bomber" hidden="false" collective="false" import="true" type="unit">
@@ -2094,6 +2134,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2137,6 +2178,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c843-770f-9805-f563" name="Specalist Soldiers" hidden="false" collective="false" import="true" type="unit">
@@ -2184,6 +2226,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2204,6 +2247,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="abd5-2e71-0114-25ca" name="Insight" hidden="false" collective="false" import="true" type="upgrade">
@@ -2216,6 +2260,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e093-5045-5521-767e" name="Sickness" hidden="false" collective="false" import="true" type="upgrade">
@@ -2226,6 +2271,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ec30-9fd4-e53d-8848" name="Pleasure" hidden="false" collective="false" import="true" type="upgrade">
@@ -2236,6 +2282,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2320,6 +2367,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2358,6 +2406,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2444,6 +2493,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="95ab-d030-0bb7-7a57" name="Plasma Pistol and Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2456,6 +2506,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aec4-77ad-5b8c-1d24" name="Maelstrom Entitys" hidden="false" collective="false" import="true" type="unit">
@@ -2489,6 +2540,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2509,12 +2561,14 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e7e6-79c4-c871-3d0d" name="Insight" hidden="false" collective="false" import="true" type="upgrade">
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e444-891a-759e-49ca" name="Sickness" hidden="false" collective="false" import="true" type="upgrade">
@@ -2525,6 +2579,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ae09-eeb4-c23e-8e3e" name="Pleasure" hidden="false" collective="false" import="true" type="upgrade">
@@ -2536,6 +2591,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2670,6 +2726,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="800e-ca87-60d2-9eaf" name="Enclave Sickness-Zombies" hidden="false" collective="false" import="true" type="unit">
@@ -2698,6 +2755,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2711,6 +2769,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d76e-0f63-ca6f-7992" name="Enclave Sickness-Loader" hidden="false" collective="false" import="true" type="unit">
@@ -2785,6 +2844,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="70.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2796,6 +2856,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e8e6-41eb-19a8-c56d" name="Enclave Sickness Fly" hidden="false" collective="false" import="true" type="unit">
@@ -2841,6 +2902,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2861,6 +2923,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2872,6 +2935,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0691-68b5-bb7c-f747" name="Enclave Sickness Mortar Carrier" hidden="false" collective="false" import="true" type="unit">
@@ -2896,6 +2960,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2923,6 +2988,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2956,6 +3022,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2974,6 +3041,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5bb-3e3a-5cab-7a86" name="2x Recoilless Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -2984,6 +3052,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="948d-6555-8c35-7fb6" name="Enclave Prince of The Maelstorm" hidden="true" collective="false" import="true" type="unit">
@@ -3005,7 +3074,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7056-0cfc-1117-dd64" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7056-0cfc-1117-dd64" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="db26-8fc3-febc-4a89" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -3042,6 +3111,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="220.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3060,6 +3130,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="09ab-fc7a-cb0d-204f" name="Axe (and Claw)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3069,6 +3140,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4f8b-6c5e-c4e4-acab" name="Sword (and Claw)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3078,6 +3150,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3095,6 +3168,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5b6e-0832-a52d-e60e" name="Sickness" hidden="false" collective="false" import="true" type="upgrade">
@@ -3105,6 +3179,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="5c1e-8330-6b2c-c947" name="Insight" hidden="false" collective="false" import="true" type="upgrade">
@@ -3115,6 +3190,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="e51f-053f-679b-4dac" name="Excess" hidden="false" collective="false" import="true" type="upgrade">
@@ -3125,6 +3201,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3147,6 +3224,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c63f-993e-1b08-bcdb" name="Enclave Greater Entity of The Maelstorm" hidden="true" collective="false" import="true" type="unit">
@@ -3168,7 +3246,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4bf-66ab-a1dd-9973" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e4bf-66ab-a1dd-9973" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="20b5-d3a8-20fd-6b18" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -3207,6 +3285,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="400.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3227,6 +3306,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a0fb-527f-30a4-b298" name="Sickness" hidden="false" collective="false" import="true" type="upgrade">
@@ -3238,6 +3318,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="d66c-c76f-9a2a-62e6" name="Insight" hidden="false" collective="false" import="true" type="upgrade">
@@ -3250,6 +3331,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a212-962a-8db3-760e" name="Excess" hidden="false" collective="false" import="true" type="upgrade">
@@ -3263,6 +3345,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3273,6 +3356,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f310-a6cf-64f6-01c9" name="Enclave Anger Centaur Tank" hidden="true" collective="false" import="true" type="unit">
@@ -3294,7 +3378,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5cc-ac24-7dcc-03b8" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a5cc-ac24-7dcc-03b8" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="7649-6e65-0a0a-81e5" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -3318,6 +3402,7 @@ Favour of the Old Ones: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="500.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3352,6 +3437,11 @@ Favour of the Old Ones: Spend one (1) Faction Point:
                   <infoLinks>
                     <infoLink id="6b68-97c8-4140-59b7" name="Cleaver of Anger" hidden="false" targetId="9b57-01c5-f841-6521" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -3361,12 +3451,18 @@ Favour of the Old Ones: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dab8-f5b2-c091-bafe" name="Icon of the Old Gods" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e080-2e26-a57a-c166" name="Icon of the Old Gods" hidden="false" targetId="392b-16c9-6212-1af3" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="77bc-f462-4608-d4b7" name="Mark of Anger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -3374,11 +3470,21 @@ Favour of the Old Ones: Spend one (1) Faction Point:
         <infoLink id="858c-e629-71ed-0103" name="Frenzied Assault" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
         <infoLink id="0264-28c5-c257-eebc" name="Ignores difficult terrain for CC attacks" hidden="false" targetId="0046-5dd7-fa4f-0760" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="94cc-386a-03a0-3ed3" name="Mark of Insight" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1508-c893-dbfa-ab63" name="Mark of Insight" hidden="false" targetId="a25f-a709-7c30-ca5b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f3dd-993a-aca7-bc6c" name="Mark of Pleasure" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -3386,11 +3492,34 @@ Favour of the Old Ones: Spend one (1) Faction Point:
         <infoLink id="3c7f-ecce-8fed-ad8d" name="Move(fleet)" hidden="false" targetId="d63a-1bad-5f14-8395" type="rule"/>
         <infoLink id="d2a6-71e8-634e-a98c" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e11e-f99f-eb12-4282" name="Mark of Sickness" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="93c0-95da-35fd-d2ed" name="Mark of Sickness" hidden="false" targetId="40f1-3b10-d509-cb89" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="49d8-7caf-988f-b1f1" name="Favour of the Old Ones" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f353-705a-23c0-3d3d" name="Favour of the Old Ones" hidden="false" targetId="ed73-9109-3735-c56b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="cf67-76c4-1195-5b23" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -3612,11 +3741,10 @@ Favour of the Old Ones: Spend one (1) Faction Point:
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="ed73-9109-3735-c56b" name="Favour of the Old Ones" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false">
-      <description>Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades . 
-Spend one (1) Faction Point:
+      <description>Spend one (1) Faction Point:
 ● Return to the Maelstrom: one (1) unit of Maelstrom Entities is returned to staging and regains D3 wounds.
-● Scorch Earth: target terrain feature becomes dangerous (in addition to any other effects)
-● Instil Doubt: one (1) attack is made as potshots</description>
+● Scorch Earth: target terrain feature becomes dangerous (in addition to any other effects).
+● Instil Doubt: one (1) attack is made as potshots.</description>
     </rule>
     <rule id="0046-5dd7-fa4f-0760" name="Ignores difficult terrain for CC attacks" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false"/>
     <rule id="4f38-15a2-9024-2bb6" name="Fateweawing Mystic(3x2)" publicationId="aae0-5552-35a8-74d6" page="117" hidden="false">
@@ -3641,16 +3769,16 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="6776-6428-4965-3532" name="APC" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="6776-6428-4965-3532" name="En. APC" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle (tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="aa73-3b26-3df4-a889" name="Enclave Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="aa73-3b26-3df4-a889" name="En. Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3660,7 +3788,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d238-20bd-a693-bb69" name="Cultist" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d238-20bd-a693-bb69" name="En. Cultist" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3670,7 +3798,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d618-b0fa-ccec-aebf" name="Enclave Elite Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d618-b0fa-ccec-aebf" name="En. Elite Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3680,7 +3808,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="a91f-ff78-9b65-ad9c" name="Maelstrom Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a91f-ff78-9b65-ad9c" name="En. Maelstrom Soldier" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3690,7 +3818,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="3c91-cb96-a6db-a11e" name="Claw Soldier" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3c91-cb96-a6db-a11e" name="En. Claw Soldier" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3700,7 +3828,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12/6</characteristic>
       </characteristics>
     </profile>
-    <profile id="9e34-fd7d-2c9e-ea53" name="Jump Soldier" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9e34-fd7d-2c9e-ea53" name="En. Jump Soldier" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3710,7 +3838,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12/6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b2b5-3d01-a39f-7cae" name="Biker" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b2b5-3d01-a39f-7cae" name="En. Biker" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3720,7 +3848,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="3e23-d65c-5ada-061b" name="Enclave Leader" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3e23-d65c-5ada-061b" name="En. Leader" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3730,7 +3858,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="37be-c8c5-83df-607c" name="Enclave Mystic" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="37be-c8c5-83df-607c" name="En. Mystic" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3740,7 +3868,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="54bd-c068-bfec-5095" name="Maelstrom Smith" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="54bd-c068-bfec-5095" name="En. Maelstrom Smith" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3750,7 +3878,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d5ea-d793-eab4-1366" name="Enclave Apostle" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d5ea-d793-eab4-1366" name="En. Apostle" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3760,7 +3888,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="35a3-f202-d506-e3d3" name="Man-Tank" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="35a3-f202-d506-e3d3" name="En. Man-Tank" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3770,7 +3898,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5567-4878-b5cc-b13f" name="Enclave Hellwalker" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5567-4878-b5cc-b13f" name="En. Hellwalker" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3780,7 +3908,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="9225-7b0b-3d1d-10f3" name="Weapon Beast" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9225-7b0b-3d1d-10f3" name="En. Weapon Beast" publicationId="81dd-fe5f-c233-17c5" page="76" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3790,34 +3918,34 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="fc9c-e8b0-1b78-e820" name="Enclave Siege Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="fc9c-e8b0-1b78-e820" name="En. Siege Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="afcd-d97a-8cc4-e1af" name="Enclave Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="afcd-d97a-8cc4-e1af" name="En. Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="656b-3b03-e6ea-78cf" name="Enclave Assault Transport" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="656b-3b03-e6ea-78cf" name="En. Assault Transport" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, assault)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="a1a5-394b-e747-b791" name="Beast" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a1a5-394b-e747-b791" name="En. Beast" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3827,25 +3955,25 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="7c41-4cef-81f2-b6e0" name="Beast CC" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="7c41-4cef-81f2-b6e0" name="Beast CC" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC(D3)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="113d-2952-a58d-f5ca" name="Helldragon" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="113d-2952-a58d-f5ca" name="En. Helldragon" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(vtol)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9 min 4</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
       </characteristics>
     </profile>
-    <profile id="6adf-8d49-5c40-58ea" name="Walker Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="6adf-8d49-5c40-58ea" name="En. Walker Tank" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -3855,7 +3983,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="f685-ddff-f696-19d1" name="Enclave Fiend" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="f685-ddff-f696-19d1" name="En. Fiend" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
@@ -3865,25 +3993,25 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b51c-4211-a945-ce08" name="Enclave Gehenna Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="b51c-4211-a945-ce08" name="En. Gehenna Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="d97b-7ea2-2c0a-4286" name="Enclave Gehenna Bomber" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="d97b-7ea2-2c0a-4286" name="En. Gehenna Bomber" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8 min 4</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="9b5d-2ec7-fce8-ba7b" name="Anger Specalist" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9b5d-2ec7-fce8-ba7b" name="En. Anger Specalist" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3893,7 +4021,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="c5f7-3c58-b126-2670" name="Specalist" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="c5f7-3c58-b126-2670" name="En. Specalist" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3903,7 +4031,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="fa48-52a7-7931-8219" name="Maelstrom Entity" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="fa48-52a7-7931-8219" name="En. Maelstrom Entity" publicationId="81dd-fe5f-c233-17c5" page="77" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3913,7 +4041,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="6d40-52f7-9520-bbfe" name="Zombie" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="6d40-52f7-9520-bbfe" name="En. Zombie" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3923,34 +4051,34 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">4</characteristic>
       </characteristics>
     </profile>
-    <profile id="856f-56eb-5f92-c65b" name="Loader" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="856f-56eb-5f92-c65b" name="En. Loader" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="3153-0e11-adde-d829" name="Fly" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="3153-0e11-adde-d829" name="En. Fly" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="d2c8-81af-528e-cfc5" name="Mortar Carrier" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="d2c8-81af-528e-cfc5" name="En. Mortar Carrier" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="bfc9-3d82-8342-cc32" name="Enclave Prince" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="bfc9-3d82-8342-cc32" name="En. Prince" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
@@ -3960,34 +4088,34 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f4c-9692-dda3-6526" name="Sword (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="7f4c-9692-dda3-6526" name="Sword (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="fab6-759c-ea9d-0c11" name="Axe (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="fab6-759c-ea9d-0c11" name="Axe (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="1203-a7c6-c951-05f4" name="Claw (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="1203-a7c6-c951-05f4" name="Claw (and Claw)" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
-    <profile id="8d7c-a29d-517a-4b67" name="Greater Entity" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8d7c-a29d-517a-4b67" name="En. Greater Entity" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">10</characteristic>
@@ -3997,54 +4125,54 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d516-f70b-5dd0-e34d" name="Anger Axe" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="d516-f70b-5dd0-e34d" name="Anger Axe" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (8)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
-    <profile id="7452-ceee-034f-39f4" name="Flail or Blade" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="7452-ceee-034f-39f4" name="Flail or Blade" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="c8da-9771-353c-f1ac" name="Staff of Insight" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="c8da-9771-353c-f1ac" name="Staff of Insight" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">savage strike</characteristic>
       </characteristics>
     </profile>
-    <profile id="0006-1fc3-e3ec-204c" name="Sword and Claw and Whip" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="0006-1fc3-e3ec-204c" name="Sword and Claw and Whip" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (6)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">first strike</characteristic>
       </characteristics>
     </profile>
-    <profile id="84d5-6683-f0af-7ade" name="Anger Centaur Tank" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="84d5-6683-f0af-7ade" name="En. Anger Centaur Tank" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">5</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">5</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10 min 4</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="9b57-01c5-f841-6521" name="Cleaver of Anger" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="9b57-01c5-f841-6521" name="Cleaver of Anger" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"></characteristic>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Slash: CC (8)
 Smash: CC (4)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
