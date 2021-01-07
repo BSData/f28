@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
-The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
-Weapons are included in the listed price, unless otherwise mentioned, or preceded by an asterix ‘*’ which means that they are an option, and paid for separately. 
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
 
-Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades .
-
-Republic War Machine: Spend one (1) Faction Point:
-
-• Blitz: one core (1) unit gets vanguard
-
-• Artillery support: fire one (1) free Fire Mission (may be fired by any Spotter, else indirect)
-
-• Artillery Smoke: fire one (1) free Smoke Mission</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="1ad1-2da3-cbba-e1f2" name="Conscript Squad" hidden="false" collective="false" import="true" targetId="f13f-a991-a4a1-76e0" type="selectionEntry"/>
     <entryLink id="4883-0d71-22b0-fa64" name="Universal Carrier" hidden="false" collective="false" import="true" targetId="1c62-5940-31f1-d7bd" type="selectionEntry"/>
@@ -48,11 +49,17 @@ Republic War Machine: Spend one (1) Faction Point:
     <entryLink id="e692-011f-9412-8b0b" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" targetId="a1d4-a68a-3141-f218" type="selectionEntry"/>
     <entryLink id="080b-de88-9fc6-0a7b" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1002-9fa5-c9f3-4340" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1002-9fa5-c9f3-4340" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="7efd-12d4-5cde-153d" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" targetId="2c0a-5903-01a8-f690" type="selectionEntry"/>
     <entryLink id="1b25-6677-9454-db9d" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" targetId="8a79-f927-4673-9df9" type="selectionEntry"/>
+    <entryLink id="7bdd-eb71-9bfa-170b" name="Republic War Machine" hidden="false" collective="false" import="true" targetId="074f-1ff0-1530-ddd8" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a52a-7f01-a9e8-2b63" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b05-cfb4-e60b-8254" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2442-a4d0-a5eb-f52e" name="Autorifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -62,6 +69,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f13f-a991-a4a1-76e0" name="Conscript Squad" hidden="false" collective="false" import="true" type="unit">
@@ -85,6 +93,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -103,6 +112,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1c62-5940-31f1-d7bd" name="Universal Carrier" hidden="false" collective="false" import="true" type="unit">
@@ -188,6 +198,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -196,6 +207,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="776f-b8fa-b8b6-c70e" name="Republic Armoured Car" hidden="false" collective="false" import="true" type="unit">
@@ -285,6 +297,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -293,6 +306,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d5f7-d960-22e2-7ed3" name="Republic IFV" hidden="false" collective="false" import="true" type="unit">
@@ -384,6 +398,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="75.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -392,6 +407,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7325-9cc8-6c95-3b34" name="Firing Ports(6, non-support weapons only)" hidden="false" collective="false" import="true" type="upgrade">
@@ -401,6 +417,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d79d-b6f0-1364-cae6" name="Republic VTOL Transport" hidden="false" collective="false" import="true" type="unit">
@@ -488,6 +505,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -496,6 +514,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c9d0-2a38-98a8-bff2" name="2x ATGM" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
@@ -505,6 +524,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8226-0211-2385-e6c3" name="2x Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
@@ -514,6 +534,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5dfd-62e6-a352-5410" name="2x HMG" hidden="false" collective="false" import="true" type="upgrade">
@@ -524,6 +545,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b27b-43ad-3b37-c8f9" name="Infantry Squad" hidden="false" collective="false" import="true" type="unit">
@@ -547,6 +569,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -614,6 +637,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3daf-bc9f-fc02-c11d" name="Republic IFV" hidden="false" collective="false" import="true" type="model">
@@ -692,6 +716,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f70d-04ad-4509-5ea6" name="Fire Support Squad" hidden="false" collective="false" import="true" type="unit">
@@ -728,6 +753,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -780,6 +806,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c496-b47f-52f4-3312" name="Universal Carrier" hidden="false" collective="false" import="true" type="model">
@@ -852,6 +879,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="28b4-fd9d-fe79-3a1a" name="Platoon Leadership" hidden="false" collective="false" import="true" type="unit">
@@ -908,6 +936,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="dd6a-2495-2440-573c" name="Assisting Platoon Leader" hidden="false" collective="false" import="true" type="model">
@@ -941,6 +970,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -953,6 +983,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="70c1-314e-6d14-3691" name="Veteran Squad" hidden="false" collective="false" import="true" type="unit">
@@ -977,6 +1008,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="8.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1061,6 +1093,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4bb-aca5-2fb8-a886" name="Pistol and Vibrosword" hidden="false" collective="false" import="true" type="upgrade">
@@ -1072,6 +1105,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a0f-32c8-7e84-d357" name="Republic Armoured Car" hidden="false" collective="false" import="true" type="model">
@@ -1148,6 +1182,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="051e-5d35-22df-ce3a" name="Storm Trooper Squad" hidden="false" collective="false" import="true" type="unit">
@@ -1174,6 +1209,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1265,6 +1301,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cfef-0960-b4f1-b28a" name="Recon Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -1289,6 +1326,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1360,6 +1398,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f67d-585b-60fe-907f" name="1x Spotter" hidden="false" collective="false" import="true" type="upgrade">
@@ -1369,6 +1408,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5419-d8bb-e15e-bcb7" name="Scoped Rifle and Priority(vital-strike, hit(re-roll)) and Assassin" hidden="false" collective="false" import="true" type="upgrade">
@@ -1380,6 +1420,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b4ec-3aa0-99d8-6f3e" name="Stuntie Sharpshooter Squad" hidden="false" collective="false" import="true" type="unit">
@@ -1407,6 +1448,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="8.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1419,6 +1461,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="55cf-362b-385a-81bb" name="Scoped Rifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -1428,6 +1471,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="941d-25d5-466e-d531" name="Walker Recon Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -1441,7 +1485,7 @@ Republic War Machine: Spend one (1) Faction Point:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="df41-142c-6907-d9a3" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f69f-f724-0743-fd66" name="Scout Sentinel" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="f69f-f724-0743-fd66" name="Scout Walker" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff63-bdb5-3550-67b3" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ec-8f34-b70e-3178" type="min"/>
@@ -1474,6 +1518,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1482,6 +1527,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c4a3-5968-be37-79fc" name="Armoured Walker Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -1495,13 +1541,13 @@ Republic War Machine: Spend one (1) Faction Point:
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7637-d058-ea8f-aa09" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="f642-7ffa-87a0-40fc" name="Armoured Sentinel" hidden="false" collective="false" import="true" type="unit">
+            <selectionEntry id="f642-7ffa-87a0-40fc" name="Armoured Walker" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a3b-995e-fa33-03dd" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2630-44ea-994a-ad32" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="bd68-4fac-a185-e9f2" name="Scout Sentinel" hidden="false" targetId="1fd6-0577-0230-7c25" type="profile"/>
+                <infoLink id="bd68-4fac-a185-e9f2" name="Armoured Sentinel" hidden="false" targetId="34e5-37cb-b79e-7e69" type="profile"/>
                 <infoLink id="64fd-413c-5124-5428" name="Vehicle(light)" hidden="false" targetId="a431-90d3-3f53-8231" type="rule"/>
                 <infoLink id="7b1e-ab0e-69c5-aa10" name="Vehicle(walker)" hidden="false" targetId="57dd-f324-dd55-8fce" type="rule"/>
               </infoLinks>
@@ -1527,6 +1573,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1535,6 +1582,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f1a9-3604-e6c4-b6b9" name="Primary Telepath" hidden="false" collective="false" import="true" type="unit">
@@ -1568,6 +1616,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e6ef-7eed-7e71-6d0a" name="Caretaker" hidden="false" collective="false" import="true" type="model">
@@ -1582,6 +1631,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1594,6 +1644,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f7c5-9c74-2da6-3b11" name="Assault Engineer Squad" hidden="false" collective="false" import="true" type="unit">
@@ -1618,6 +1669,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="8.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1700,6 +1752,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8060-d811-3a08-7d55" name="Field HQ" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" collective="false" import="true" type="unit">
@@ -1745,6 +1798,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e021-0be2-e7a1-21aa" name="Medic" hidden="false" collective="false" import="true" type="model">
@@ -1767,6 +1821,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0cbd-6fff-a85c-015a" name="Signals" hidden="false" collective="false" import="true" type="model">
@@ -1788,6 +1843,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f522-638d-23fc-515d" name="Fleet Officer" hidden="false" collective="false" import="true" type="model">
@@ -1810,6 +1866,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c683-c40a-759f-4485" name="Artillery Officer" hidden="false" collective="false" import="true" type="model">
@@ -1843,6 +1900,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="47e1-a928-d17f-38ee" name="Astral-Telepath" hidden="false" collective="false" import="true" type="model">
@@ -1870,6 +1928,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9457-d29e-ebd0-3818" name="Company Standard" hidden="false" collective="false" import="true" type="model">
@@ -1892,6 +1951,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="3b78-f4d7-2ba8-d49e" name="Staff Clerk" hidden="false" collective="false" import="true" type="model">
@@ -1920,6 +1980,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="e554-a42f-462d-f09c" name="Storm Trooper" hidden="false" collective="false" import="true" type="model">
@@ -1948,6 +2009,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4104-7d46-0d50-a41f" name="Weapons Specialist" hidden="false" collective="false" import="true" type="model">
@@ -1969,6 +2031,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2004,6 +2067,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d284-6b25-e358-3126" name="Plasma Pistol and Energy Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2015,6 +2079,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1259-be9d-b8b0-a1d4" name="AT Grenades" hidden="false" collective="true" import="true" type="upgrade">
@@ -2025,6 +2090,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="535a-53dc-4a6f-9d03" name="Slug Autocarbine" hidden="false" collective="true" import="true" type="upgrade">
@@ -2034,6 +2100,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="089b-82a9-4ab3-e3df" name="Senior Political Officer" hidden="false" collective="false" import="true" type="unit">
@@ -2080,6 +2147,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2092,6 +2160,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="467e-b445-ea27-2b57" name="Assault Tank Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -2203,6 +2272,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2211,6 +2281,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2cf2-484d-967e-809c" name="2x Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
@@ -2220,6 +2291,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="09d3-d6fe-b089-8240" name="Dual Hicap Autocannon and Antiair" hidden="false" collective="false" import="true" type="upgrade">
@@ -2232,6 +2304,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="aac5-de68-e849-be12" name="Battle Tank Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -2334,6 +2407,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2342,6 +2416,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e5a5-bd20-300e-6f93" name="Tank Commander" hidden="false" collective="false" import="true" type="unit">
@@ -2460,6 +2535,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="7ce0-260a-f720-58d5" name="Assault Tank" hidden="false" collective="false" import="true" type="model">
@@ -2559,6 +2635,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2567,6 +2644,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2575,6 +2653,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1e6-fe8b-2de8-0a30" name="Flame Tank Platoon" hidden="false" collective="false" import="true" type="unit">
@@ -2639,6 +2718,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2647,6 +2727,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d172-1c10-c799-1fde" name="2x Heat Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2657,6 +2738,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="88ba-525c-a1c1-1148" name="2x Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2668,6 +2750,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3ff2-8792-48af-92d9" name="Artillery Battery" hidden="false" collective="false" import="true" type="unit">
@@ -2753,6 +2836,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="95.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2761,6 +2845,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f49d-ae60-30d5-bbd2" name="2x Dual Autocannon and Antiair" hidden="false" collective="false" import="true" type="upgrade">
@@ -2772,6 +2857,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c57c-1e2d-1a2a-12cb" name="2x Dual Mortar" hidden="false" collective="false" import="true" type="upgrade">
@@ -2784,6 +2870,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="35da-0433-8c10-5657" name="Heavy Mortar and Vanguard" hidden="false" collective="false" import="true" type="upgrade">
@@ -2796,6 +2883,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a570-ade6-9aba-3a26" name="Ogre Squad" hidden="false" collective="false" import="true" type="unit">
@@ -2820,6 +2908,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2875,6 +2964,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="18eb-9b60-769f-c230" name="Grenade Gauntlet and Combat Shield" hidden="false" collective="true" import="true" type="upgrade">
@@ -2885,6 +2975,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c08-7777-09f3-896b" name="Energy Maul and Combat Sheild" hidden="false" collective="true" import="true" type="upgrade">
@@ -2895,6 +2986,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f972-fdc1-12cd-966d" name="Ogre Gun" hidden="false" collective="true" import="true" type="upgrade">
@@ -2904,6 +2996,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14f0-a09c-a6bc-3179" name="ATGM Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -2914,6 +3007,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0f8-45b2-ae7f-8d2d" name="Political Officer" hidden="false" collective="false" import="true" type="model">
@@ -2951,6 +3045,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7629-7b8d-8247-520b" name="Slug Pistol and Vibrosword" hidden="false" collective="false" import="true" type="upgrade">
@@ -2962,6 +3057,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="18d3-793d-deb5-ea6f" name="Priest" hidden="false" collective="false" import="true" type="model">
@@ -2999,6 +3095,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7234-3b58-8ad6-0a79" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" type="unit">
@@ -3023,6 +3120,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3068,6 +3166,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4483-5353-063a-dd72" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" type="unit">
@@ -3109,6 +3208,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="b4ca-578a-ffdb-400d" name="2x Missle Launcher" hidden="false" collective="false" import="true" type="upgrade">
@@ -3122,6 +3222,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3140,6 +3241,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3148,6 +3250,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b84-f71b-7c59-c723" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" type="unit">
@@ -3188,6 +3291,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="140.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3196,6 +3300,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b9c-c85d-f6e5-0f71" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" type="unit">
@@ -3247,6 +3352,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3255,6 +3361,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e453-b7a7-524d-23d1" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" type="unit">
@@ -3365,6 +3472,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="5027-5f20-4345-8d02" name="Anti-Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -3374,6 +3482,7 @@ Republic War Machine: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3446,6 +3555,7 @@ Republic War Machine: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="130.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3454,6 +3564,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1cbb-75c3-b3a3-a60b" name="2x AL-ATM" hidden="false" collective="false" import="true" type="upgrade">
@@ -3466,6 +3577,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1d4-a68a-3141-f218" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" type="unit">
@@ -3484,96 +3596,97 @@ Republic War Machine: Spend one (1) Faction Point:
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0765-4367-80b4-51cb" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c3ae-82c1-e492-20d0" name="Republic Retribution Ground Attack Fighter" hidden="false" targetId="649e-8e1c-fd75-39dc" type="profile"/>
+                <infoLink id="c3ae-82c1-e492-20d0" name="Re. Retribution Ground Attack Fighter" hidden="false" targetId="649e-8e1c-fd75-39dc" type="profile"/>
                 <infoLink id="e626-f7ca-482e-70e3" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="2c02-7852-7824-48ce" name="Rotary Autocannon with Tight Spread" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f298-0caa-860a-b663" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6213-4c3e-4ded-4303" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="bf52-cc1d-3525-43e4" name="Rotary Autocannon" hidden="false" targetId="8e16-e649-b52a-29bd" type="profile"/>
-                    <infoLink id="b44d-2041-df95-13af" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
-                    <infoLink id="f322-268a-298b-529f" name="Tight Spread" hidden="false" targetId="d60c-55a0-0459-185e" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="2a70-6def-3b84-0b27" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c004-5946-c448-6dc2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfb6-4128-e6aa-218d" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="96a5-fbb9-5258-7e1a" name="2x LAT-Cannon" page="" hidden="false" collective="false" import="true" targetId="ff1b-1a3b-7846-ccb3" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3347-ec27-a788-1c95" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="4bb8-f49b-001f-5d00" name="2x Rapid Laser" hidden="false" collective="false" import="true" targetId="bac6-1ecd-dab7-b7f7" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7e13-6686-471e-87e9" type="max"/>
-                      </constraints>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="6d39-37d0-b555-bae2" name="Weapon Options" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="effc-62f2-fc61-94b5" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d17-b8d0-fbf2-0269" type="min"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="8d61-a1cb-d3a9-2a1f" name="2x LAM" hidden="false" collective="false" import="true" targetId="4ed1-5961-88a1-ed27" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60a8-eb39-4258-005b" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="9a1b-c7e0-00c6-20ae" name="2x Bomb Cluster" hidden="false" collective="false" import="true" targetId="74fb-d942-9a59-6e29" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b136-40f0-b7e8-7601" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                    <entryLink id="501b-3578-7eea-d26c" name="2x AL-ATM" hidden="false" collective="false" import="true" targetId="1cbb-75c3-b3a3-a60b" type="selectionEntry">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f08d-e08e-95f3-3794" type="max"/>
-                      </constraints>
-                      <costs>
-                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-                      </costs>
-                    </entryLink>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <entryLinks>
-                <entryLink id="e3d7-1ad1-e8ab-d31e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
-                <entryLink id="0bdb-27df-9cdf-5c5b" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="170.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="21fa-4996-235b-bd81" name="Rotary Autocannon with Tight Spread" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5253-32cd-95a5-28c6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50df-6aa0-cb4f-6291" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="d991-67d7-035b-6ad5" name="Rotary Autocannon" hidden="false" targetId="8e16-e649-b52a-29bd" type="profile"/>
+                <infoLink id="12b4-60a2-69cb-d91f" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+                <infoLink id="09b0-2f68-6c59-1959" name="Tight Spread" hidden="false" targetId="d60c-55a0-0459-185e" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="b62a-7923-0f24-0104" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8f4-f318-8be8-70d1" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d60-1537-f74b-5620" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ae01-6fde-96ef-c28d" name="2x LAT-Cannon" page="" hidden="false" collective="false" import="true" targetId="ff1b-1a3b-7846-ccb3" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a431-2ad6-7eae-8d69" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="0004-28a4-c8dd-22fa" name="2x Rapid Laser" hidden="false" collective="false" import="true" targetId="bac6-1ecd-dab7-b7f7" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaf5-e1a1-bf9d-20b1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="4bb1-a8ab-93d2-4b2d" name="Weapon Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97cf-2395-7ce4-7d9f" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="209b-9877-eff0-1f6f" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0c67-1ed3-8def-aaff" name="2x LAM" hidden="false" collective="false" import="true" targetId="4ed1-5961-88a1-ed27" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b48a-e5a9-da0b-0258" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="9866-474d-b185-9147" name="2x Bomb Cluster" hidden="false" collective="false" import="true" targetId="74fb-d942-9a59-6e29" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fb6-038b-3708-1930" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="b432-4a75-58bd-4004" name="2x AL-ATM" hidden="false" collective="false" import="true" targetId="1cbb-75c3-b3a3-a60b" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e3fd-4d5b-0318-59ed" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="f342-f154-e6cf-cafb" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="e688-f458-d6a3-f729" type="selectionEntryGroup"/>
+        <entryLink id="a0e9-354a-71bf-7979" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="dd0a-8e6d-4e5d-34c3" type="selectionEntryGroup"/>
+      </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bac6-1ecd-dab7-b7f7" name="2x Rapid Laser" hidden="false" collective="false" import="true" type="upgrade">
@@ -3584,6 +3697,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ff1b-1a3b-7846-ccb3" name="2x LAT-Cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3594,6 +3708,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4ed1-5961-88a1-ed27" name="2x LAM" hidden="false" collective="false" import="true" type="upgrade">
@@ -3603,6 +3718,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="74fb-d942-9a59-6e29" name="2x Bomb Cluster" hidden="false" collective="false" import="true" type="upgrade">
@@ -3612,6 +3728,7 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2c0a-5903-01a8-f690" name="Republic Supremacy Tank" hidden="true" collective="false" import="true" type="unit">
@@ -3628,7 +3745,7 @@ Republic War Machine: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c815-61ee-8813-157a" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c815-61ee-8813-157a" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="239f-fc09-523c-ca3b" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -3646,63 +3763,59 @@ Republic War Machine: Spend one (1) Faction Point:
               </constraints>
               <infoLinks>
                 <infoLink id="ec5d-4540-1800-dba0" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
-                <infoLink id="965e-69fd-5271-fb4e" name="Republic Supremacy Tank" hidden="false" targetId="1f7b-fe5c-4436-170d" type="profile"/>
+                <infoLink id="965e-69fd-5271-fb4e" name="Re. Supremacy Tank" hidden="false" targetId="1f7b-fe5c-4436-170d" type="profile"/>
+                <infoLink id="801e-1a02-235e-cbaf" name="Superior" hidden="false" targetId="81b7-00c4-6dea-18b7" type="rule"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="95e4-cc0d-2906-1fa3" name="4x LAT-Cannon and Dual HMG" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c6ec-a8d3-8065-db8f" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbbf-287f-9ed9-3acd" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="bf89-9331-e9de-8e2e" name="LATcannon" hidden="false" targetId="9ef3-152c-1dbb-c057" type="profile"/>
-                    <infoLink id="fbf6-6298-8e5d-7f2b" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
-                    <infoLink id="8ef9-cbc8-fbd4-1999" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
-                    <infoLink id="659b-0be9-7d14-8525" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
-                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="6ed7-0163-64e0-39ec" name="Superior" hidden="false" collective="false" import="true" targetId="2163-3d43-af1b-a37a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34da-3b7b-7b3f-cc25" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2861-4179-87fe-1203" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="78b9-61ed-f163-f86d" name="Heavy Tank Gun" hidden="false" collective="false" import="true" targetId="7ca8-45ee-1a18-47c8" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20e5-b2c6-829b-dbeb" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aeb4-51c8-68b8-df32" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="7b5b-b497-6b12-0ae7" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a0d-cfb6-7db4-83d1" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9569-9e60-41fe-9004" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="bd44-4ae9-fba8-d7b5" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a84-f047-b2ad-c9d2" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffb6-1f5c-574b-9e4b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="500.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="92ea-1713-c854-fe33" name="4x LAT-Cannon and Dual HMG" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e2e-e20f-bb47-2088" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26f3-c9f6-df4e-729b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dc04-0e1e-381c-600f" name="LATcannon" hidden="false" targetId="9ef3-152c-1dbb-c057" type="profile"/>
+                <infoLink id="7685-c696-4b65-a8c0" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
+                <infoLink id="0417-0072-4926-1476" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+                <infoLink id="6af4-688e-8e70-9db8" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="160b-66a9-65bc-b673" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="218a-9c16-94a7-1122" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21ed-c401-600f-b8e5" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b799-e52a-2679-72bb" name="Heavy Tank Gun" hidden="false" collective="false" import="true" targetId="7ca8-45ee-1a18-47c8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="62fb-3097-49fe-de2f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dfa8-4459-b8e2-9448" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="4c17-6f1f-22cd-5ce3" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9dbf-ff58-9249-44ff" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a9f-416a-4b72-f812" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8a79-f927-4673-9df9" name="Republic Supremacy Ground Attack Craft" hidden="true" collective="false" import="true" type="unit">
@@ -3719,13 +3832,13 @@ Republic War Machine: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad0e-2cf6-f6cd-0f5f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad0e-2cf6-f6cd-0f5f" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="97e6-a144-1f06-4ccd" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="ba44-44ef-0224-f83a" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="ba44-44ef-0224-f83a" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" defaultSelectionEntryId="3080-a0dc-7efa-89d4">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fda-21a2-2761-da49" type="min"/>
           </constraints>
@@ -3737,62 +3850,63 @@ Republic War Machine: Spend one (1) Faction Point:
               </constraints>
               <infoLinks>
                 <infoLink id="f60a-e6d5-cc83-72e8" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
-                <infoLink id="ab5e-2c15-f376-7037" name="Republic Supremacy Ground Attack Craft" hidden="false" targetId="1e0f-8b2e-2f88-6d02" type="profile"/>
+                <infoLink id="ab5e-2c15-f376-7037" name="Re. Supremacy Ground Attack Craft" hidden="false" targetId="1e0f-8b2e-2f88-6d02" type="profile"/>
               </infoLinks>
-              <selectionEntries>
-                <selectionEntry id="752e-e3fc-0bcc-4ce1" name="Defence Turret(Dual HMG)" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af3f-d0e7-5940-5301" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b37-0a2a-774e-5b83" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="2948-c40a-ec9b-59ae" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
-                    <infoLink id="1816-d991-9898-d822" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
-                    <infoLink id="7c44-f9f1-d923-3ebd" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
-                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <entryLinks>
-                <entryLink id="7f91-4b8b-e8a8-2314" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="392d-80d3-a4ef-d89a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a47b-86e0-1984-c4d2" type="max"/>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f1f-21eb-f2ef-4905" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="1326-48f5-c91e-08f0" name="Dual Rotary Cannon" hidden="false" collective="false" import="true" targetId="320b-39f4-e339-1c01" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81fc-1eec-ff0f-ee24" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f890-ede5-3f80-a806" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="0bb5-1b5f-3795-5445" name="Bomb Cluster" hidden="false" collective="false" import="true" targetId="6503-2dc4-c489-9cef" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83ce-555f-d97f-3751" type="max"/>
-                    <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="363f-5205-cbdb-0acd" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="1362-0460-5403-99cd" name="3x Dual Autocannon" hidden="false" collective="false" import="true" targetId="4415-e125-1c16-52ae" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="045f-8c66-ea3a-3436" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc3c-adee-6ee8-7f8b" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="400.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6d0f-9f8a-678f-069c" name="Defence Turret(Dual HMG)" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f2a-d4d7-2524-4b50" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8482-b58f-a745-a0a8" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b507-5438-07d6-eadc" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
+                <infoLink id="4ddc-b734-8f47-c8c9" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+                <infoLink id="c71b-6d9e-d940-c71b" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="6f9c-528b-b272-407b" name="3x Dual Autocannon" hidden="false" collective="false" import="true" targetId="4415-e125-1c16-52ae" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0083-e6a4-534c-b6ee" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4789-03b0-fe49-be50" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="9749-6338-e6ed-438c" name="Bomb Cluster" hidden="false" collective="false" import="true" targetId="6503-2dc4-c489-9cef" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0738-8f9c-f4df-bc90" type="max"/>
+                <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f26c-c60c-9b96-e818" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7126-f32f-8eff-f8b4" name="Dual Rotary Cannon" hidden="false" collective="false" import="true" targetId="320b-39f4-e339-1c01" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="807a-e8f0-e89d-6053" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12a5-54ee-71b4-a06c" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="492b-e44c-b717-9e4a" name="Missile Launcher" hidden="false" collective="false" import="true" targetId="392d-80d3-a4ef-d89a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a330-4582-1ea2-4fef" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ede2-21c7-5746-f46d" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4415-e125-1c16-52ae" name="3x Dual Autocannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -3803,6 +3917,21 @@ Republic War Machine: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="074f-1ff0-1530-ddd8" name="Republic War Machine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3d66-f518-2e16-b92c" name="Republic War Machine" hidden="false" targetId="9187-24f2-00bb-218c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5a5f-620b-f55a-9839" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+        <categoryLink id="7842-ac24-6aa0-65e5" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="false"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4051,9 +4180,15 @@ Republic War Machine: Spend one (1) Faction Point:
     <rule id="f6b0-2dba-5dfa-12b0" name="ATGM Launcher" hidden="false">
       <description>Model has 1x ATGM.</description>
     </rule>
+    <rule id="9187-24f2-00bb-218c" name="Republic War Machine" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false">
+      <description>Spend one (1) Faction Point:
+● Blitz: one (1) core unit gets Vanguard.
+● Artillery support: fire one (1) free Fire Mission (may be fired by any Spotter, else indirect).
+● Artillery Smoke: fire one (1) free Smoke Mission.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="a832-e011-0dec-2379" name="Conscript" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a832-e011-0dec-2379" name="Re. Conscript" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4063,43 +4198,43 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="7f9a-2f79-5065-b651" name="Universal Carrier" publicationId="aae0-5552-35a8-74d6" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="7f9a-2f79-5065-b651" name="Re. Universal Carrier" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="02b1-d2bc-9f88-a8e7" name="Republic Armoured Car" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="02b1-d2bc-9f88-a8e7" name="Re. Armoured Car" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="4b1a-766b-8a25-2486" name="Republic IFV" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="4b1a-766b-8a25-2486" name="Re. Republic IFV" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="8d78-44b3-ffe3-bc27" name="Republic VTOL Transport" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="8d78-44b3-ffe3-bc27" name="Re. VTOL Transport" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
       </characteristics>
     </profile>
-    <profile id="01f4-e398-7244-b88c" name="Soldier" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="01f4-e398-7244-b88c" name="Re. Soldier" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4109,7 +4244,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d8e5-4e07-029e-ef15" name="Platoon Leader" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d8e5-4e07-029e-ef15" name="Re. Platoon Leader" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4119,7 +4254,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">1</characteristic>
       </characteristics>
     </profile>
-    <profile id="8405-c118-8083-3e69" name="Assisting Platoon Leader" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8405-c118-8083-3e69" name="Re. Assisting Platoon Leader" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4129,7 +4264,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">1</characteristic>
       </characteristics>
     </profile>
-    <profile id="1247-2639-8acc-c67b" name="Veteran Soldier" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1247-2639-8acc-c67b" name="Re. Veteran Soldier" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4139,7 +4274,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d1b7-383d-5ac0-4484" name="Storm Trooper" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d1b7-383d-5ac0-4484" name="Re. Storm Trooper" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4149,7 +4284,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="41bd-b675-e301-b5b6" name="Recon Soldier" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="41bd-b675-e301-b5b6" name="Re. Recon Soldier" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4159,7 +4294,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b621-d23f-0bac-5e8c" name="Stuntie Sniper" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b621-d23f-0bac-5e8c" name="Re. Stuntie Sniper" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4169,25 +4304,25 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1fd6-0577-0230-7c25" name="Scout Sentinel" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1fd6-0577-0230-7c25" name="Re. Scout Walker" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="34e5-37cb-b79e-7e69" name="Armoured Sentinel" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="34e5-37cb-b79e-7e69" name="Re. Armoured Walker" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="6bc6-db1b-bb64-11a1" name="Telepath" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="6bc6-db1b-bb64-11a1" name="Re. Telepath" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4197,7 +4332,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="6c98-0153-ccb7-9e49" name="Caretaker" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="6c98-0153-ccb7-9e49" name="Re. Caretaker" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4207,7 +4342,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="eb1c-7cc4-61a3-3821" name="Combat Engineer" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="eb1c-7cc4-61a3-3821" name="Re. Combat Engineer" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4217,7 +4352,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="cd41-1212-f08e-ef8a" name="Company Commander" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="cd41-1212-f08e-ef8a" name="Re. Company Commander" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -4227,7 +4362,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="03ae-5172-f7c6-fb0a" name="Astral-Telepath" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="03ae-5172-f7c6-fb0a" name="Re. Astral-Telepath" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4237,7 +4372,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="12d2-f3f1-9263-4486" name="Fleet Officer" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="12d2-f3f1-9263-4486" name="Re. Fleet Officer" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4247,7 +4382,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="afb3-ae7a-ed54-3fd1" name="Artillery Officer" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="afb3-ae7a-ed54-3fd1" name="Re. Artillery Officer" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4257,7 +4392,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="fbc2-0bea-796f-35d6" name="Senior Political Officer" publicationId="aae0-5552-35a8-74d6" page="73" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="fbc2-0bea-796f-35d6" name="Re. Senior Political Officer" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infanty</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -4267,43 +4402,43 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="02d9-8497-9813-22af" name="Assault Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="02d9-8497-9813-22af" name="Re. Assault Tank" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/9</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="f12e-5d5d-d1cf-d65f" name="Battle Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="f12e-5d5d-d1cf-d65f" name="Re. Battle Tank" publicationId="81dd-fe5f-c233-17c5" page="66" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="c30f-437d-583f-d36b" name="Flame Tank" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="c30f-437d-583f-d36b" name="Re. Flame Tank" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="e82b-3fea-7ec2-c3e2" name="Artillery Vehicle" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="e82b-3fea-7ec2-c3e2" name="Re. Artillery Vehicle" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="317e-4a99-0f73-cd78" name="Ogre" publicationId="aae0-5552-35a8-74d6" page="74" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="317e-4a99-0f73-cd78" name="Re. Ogre" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -4313,7 +4448,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="fcba-4fb1-33f8-ac47" name="Political Officer" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="fcba-4fb1-33f8-ac47" name="Re. Political Officer" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4323,7 +4458,7 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="a752-f1a0-4e95-5d06" name="Priest" publicationId="aae0-5552-35a8-74d6" page="75" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a752-f1a0-4e95-5d06" name="Re. Priest" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4333,73 +4468,73 @@ Republic War Machine: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d5a8-14dc-a747-66e2" name="Republic Off-Road Buggy" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="d5a8-14dc-a747-66e2" name="Re. Off-Road Buggy" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="0119-6cda-bb5f-1144" name="Republic Air Superiority Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="0119-6cda-bb5f-1144" name="Re. Air Superiority Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="e1c1-1000-ecfe-720c" name="Republic Heavy Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="e1c1-1000-ecfe-720c" name="Re. Heavy Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="538e-2939-ed31-0af8" name="Republic VTOL Transport (Alternative)" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="538e-2939-ed31-0af8" name="Re. VTOL Transport (Alternative)" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
       </characteristics>
     </profile>
-    <profile id="be37-5576-663b-a534" name="Republic VTOL Gunship" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="be37-5576-663b-a534" name="Re. VTOL Gunship" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
       </characteristics>
     </profile>
-    <profile id="649e-8e1c-fd75-39dc" name="Republic Retribution Ground Attack Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="649e-8e1c-fd75-39dc" name="Re. Retribution Ground Attack Fighter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f7b-fe5c-4436-170d" name="Republic Supremacy Tank" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1f7b-fe5c-4436-170d" name="Re. Supremacy Tank" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">5</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">5</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/9</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="1e0f-8b2e-2f88-6d02" name="Republic Supremacy Ground Attack Craft" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1e0f-8b2e-2f88-6d02" name="Re. Supremacy Ground Attack Craft" publicationId="e42d-4466-8267-ac1b" page="45" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">3</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">3</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>

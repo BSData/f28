@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="6" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
-The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
-Weapons are included in the listed price, unless otherwise mentioned, or preceded by an asterix ‘*’ which means that they are an option, and paid for separately.
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
 
-Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades.
-
-Grace in Exile: Spend one (1) Faction Point:
-
-• We strike where we please: move one (1) terrain piece 12” before game
-
-• We have seen the future: cancel opponent FP use on 2+, on ‘6’, retain FP
-
-• We transcend the limitations of space: one (1) attack has all ranges doubled</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="1d33-8bc5-cf78-43de" name="Seelie Avengers" hidden="false" collective="false" import="true" targetId="d552-4fa1-0dee-6cbc" type="selectionEntry"/>
     <entryLink id="c4a3-3aeb-58a4-69c0" name="Seelie Shielded Transport" hidden="false" collective="false" import="true" targetId="a6ea-a849-a421-3247" type="selectionEntry"/>
@@ -43,7 +44,13 @@ Grace in Exile: Spend one (1) Faction Point:
     <entryLink id="7df0-3688-3b32-b159" name="Seelie Living God" hidden="false" collective="false" import="true" targetId="0d1c-a884-820e-c577" type="selectionEntry"/>
     <entryLink id="6713-41da-a471-97c5" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a41-cb48-9561-0c79" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a41-cb48-9561-0c79" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="ac35-01e0-cf81-72cd" name="Grace in Exile" hidden="false" collective="false" import="true" targetId="7b33-37b0-1205-3a7b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9296-6fcc-c865-7dea" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71ac-1625-76e6-4dbe" type="min"/>
       </constraints>
     </entryLink>
   </entryLinks>
@@ -97,6 +104,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="12.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f9e2-3b38-0541-582f" name="Avenger Exalted" hidden="true" collective="false" import="true" type="model">
@@ -165,6 +173,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="24.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -179,6 +188,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eafa-013b-d605-110d" name="Avenger Disc Catapult" hidden="false" collective="true" import="true" type="upgrade">
@@ -189,6 +199,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="57ec-a6d9-0477-3f82" name="Move and Fire" hidden="false" collective="true" import="true" type="upgrade">
@@ -198,6 +209,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e34-bf36-53fd-5a98" name="Move(fleet)" hidden="false" collective="true" import="true" type="upgrade">
@@ -207,6 +219,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a6ea-a849-a421-3247" name="Seelie Shielded Transport" hidden="false" collective="false" import="true" type="unit">
@@ -277,6 +290,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -290,6 +304,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="cafc-1483-14f5-bf57" name="Combat Shield(front only)" hidden="false" collective="false" import="true" type="upgrade">
@@ -299,6 +314,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="590d-8f52-32dd-5e61" name="Seelie Transport Tank" hidden="false" collective="false" import="true" type="unit">
@@ -369,6 +385,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -382,6 +399,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2a0f-4f1c-6c6c-3c5d" name="Seelie Transport Tank" hidden="false" collective="false" import="true" type="model">
@@ -440,6 +458,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a7cd-2fc3-41de-3821" name="Seelie Shielded Transport" hidden="false" collective="false" import="true" type="model">
@@ -498,6 +517,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3529-7a04-030f-a693" name="Disc catapult" hidden="false" collective="true" import="true" type="upgrade">
@@ -507,6 +527,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b537-9f9b-c6c6-0295" name="Seelie Defenders" hidden="false" collective="false" import="true" type="unit">
@@ -558,6 +579,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="9.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="730c-9271-67b9-8341" name="Defender with Support Weapon" hidden="false" collective="false" import="true" type="model">
@@ -603,6 +625,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="9.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fddd-9ee7-b3be-e404" name="Defender Exalted" hidden="true" collective="false" import="true" type="model">
@@ -671,6 +694,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="18.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -685,6 +709,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e2ca-9330-c081-3082" name="Seelie Rangers" hidden="false" collective="false" import="true" type="unit">
@@ -703,6 +728,7 @@ Grace in Exile: Spend one (1) Faction Point:
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -775,6 +801,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="98fe-4ea3-195e-5bbb" name="Ranger Exalted" hidden="true" collective="false" import="true" type="model">
@@ -867,6 +894,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -880,6 +908,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f2f6-58de-375f-6c2c" name="Concealment" hidden="false" collective="true" import="true" type="upgrade">
@@ -889,6 +918,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="45de-63c6-281c-e68d" name="Infiltrate" hidden="false" collective="true" import="true" type="upgrade">
@@ -898,6 +928,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a85e-119a-872f-8c6d" name="Spotter" hidden="false" collective="true" import="true" type="upgrade">
@@ -907,6 +938,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fe1b-93fe-ce65-384e" name="Priority(vital strike, hit(re-roll))" hidden="false" collective="true" import="true" type="upgrade">
@@ -918,6 +950,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2099-9649-0202-5b13" name="Scoped Rifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -927,6 +960,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="406b-151e-64d5-0968" name="Move(nimble)" hidden="false" collective="true" import="true" type="upgrade">
@@ -936,6 +970,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3a6a-7377-b80a-7090" name="Seelie Jetbikes" hidden="false" collective="false" import="true" type="unit">
@@ -993,6 +1028,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c26b-cd1b-27ba-0321" name="Jetbike with Disc Cannon" hidden="false" collective="false" import="true" type="model">
@@ -1042,6 +1078,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="ced8-a147-7d2f-6041" name="Jetbike with Heavy Rapid Laser" hidden="false" collective="false" import="true" type="model">
@@ -1091,6 +1128,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="83bb-aa94-1360-4cf2" name="Jetbike Exalted" hidden="true" collective="false" import="true" type="model">
@@ -1190,6 +1228,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="32.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1203,6 +1242,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7e38-4e19-1851-2fbc" name="Move(hover)" hidden="false" collective="true" import="true" type="upgrade">
@@ -1212,6 +1252,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3aad-212a-5573-418b" name="Heavy Rapid Laser" hidden="false" collective="true" import="true" type="upgrade">
@@ -1222,6 +1263,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="66b9-0462-edee-b1fd" name="Dual Disc catapult" hidden="false" collective="true" import="true" type="upgrade">
@@ -1232,6 +1274,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c023-ada1-33df-0c98" name="Disc Cannon" hidden="false" collective="true" import="true" type="upgrade">
@@ -1242,6 +1285,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3637-18f4-c184-a7b7" name="Seelie Knights" hidden="false" collective="false" import="true" type="unit">
@@ -1297,6 +1341,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8bf4-432b-451e-81a5" name="Dragon" hidden="false" collective="false" import="true" type="model">
@@ -1332,6 +1377,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="917d-c28e-9d15-3c97" name="Reaper" hidden="false" collective="false" import="true" type="model">
@@ -1367,6 +1413,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2410-7588-f448-b4f4" name="Striker" hidden="false" collective="false" import="true" type="model">
@@ -1432,6 +1479,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4e9d-144f-38f4-7fbe" name="Spider" hidden="false" collective="false" import="true" type="model">
@@ -1473,6 +1521,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b2c3-92d6-96b8-fd32" name="Eagle" hidden="false" collective="false" import="true" type="model">
@@ -1545,6 +1594,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="03d0-d198-6fe3-350d" name="Eagle with EMP Grenade" hidden="true" collective="false" import="true" type="model">
@@ -1643,6 +1693,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="13.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="189e-66e1-0443-e817" name="Dragon Exalted" hidden="true" collective="false" import="true" type="model">
@@ -1727,6 +1778,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0085-887d-852b-4e02" name="Eagle Exalted" hidden="true" collective="false" import="true" type="model">
@@ -1846,6 +1898,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="9f16-8312-6a94-dd44" name="Howler Exalted" hidden="true" collective="false" import="true" type="model">
@@ -1939,6 +1992,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="724b-4650-c012-a322" name="Reaper Exalted" hidden="true" collective="false" import="true" type="model">
@@ -2023,6 +2077,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="44f6-c73b-d6ae-cadb" name="Spider Exalted" hidden="true" collective="false" import="true" type="model">
@@ -2118,6 +2173,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="a91f-b89d-c964-4127" name="Striker Exalted" hidden="true" collective="false" import="true" type="model">
@@ -2232,6 +2288,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="26.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2245,6 +2302,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3fb4-6d80-6b54-e740" name="Howler Mask" hidden="false" collective="true" import="true" type="upgrade">
@@ -2254,6 +2312,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0a1d-4e27-93d6-c5cf" name="Disc Pistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -2265,6 +2324,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1508-df95-fc90-22e9" name="Energy Sword" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
@@ -2274,6 +2334,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c5be-9589-b155-0b3d" name="Heat Gun" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
@@ -2284,6 +2345,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="677c-6439-8ef5-f283" name="Seelie Missile Launcher" hidden="false" collective="true" import="true" type="upgrade">
@@ -2294,6 +2356,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1eae-2175-0c1a-adc0" name="Striker Minilaser" hidden="false" collective="true" import="true" type="upgrade">
@@ -2303,6 +2366,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4755-020a-0ade-e01d" name="Expert-Crafted Vibro-Sword" hidden="false" collective="true" import="true" type="upgrade">
@@ -2313,6 +2377,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5fb0-e463-8a57-11bb" name="Monofilament Projector" hidden="false" collective="true" import="true" type="upgrade">
@@ -2322,6 +2387,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="43b7-2194-326f-b1fb" name="Move(teleport)" hidden="false" collective="true" import="true" type="upgrade">
@@ -2331,6 +2397,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f139-36d3-c2b2-6daa" name="Insertion" hidden="false" collective="true" import="true" type="upgrade">
@@ -2340,6 +2407,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9e50-1436-b93c-7f40" name="Exfiltrate" hidden="false" collective="true" import="true" type="upgrade">
@@ -2349,6 +2417,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2566-a3ee-9577-f336" name="Hicap Rifle" hidden="false" collective="true" import="true" type="upgrade">
@@ -2358,6 +2427,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="36b4-b5a8-0c9c-5feb" name="EMP Grenade" hidden="false" collective="true" import="true" type="upgrade">
@@ -2368,6 +2438,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2e38-ce7c-488d-2886" name="Support Battery" hidden="false" collective="false" import="true" type="unit">
@@ -2417,6 +2488,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2429,6 +2501,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f42b-5f97-d625-2614" name="Battlewalkers" hidden="false" collective="false" import="true" type="unit">
@@ -2493,6 +2566,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2505,6 +2579,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d43b-4129-0c7e-b0b3" name="Seelie Lancers" hidden="false" collective="false" import="true" type="unit">
@@ -2561,6 +2636,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="74f4-194d-e935-bcf8" name="Lancer Exalted" hidden="true" collective="false" import="true" type="model">
@@ -2636,6 +2712,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2649,6 +2726,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e6f-1a67-19c6-56f0" name="Superior Withdrawal" hidden="false" collective="true" import="true" type="upgrade">
@@ -2658,6 +2736,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a1f0-4f86-c597-91f6" name="Energy Lance" hidden="false" collective="true" import="true" type="upgrade">
@@ -2668,6 +2747,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3bca-8933-04c2-5a8f" name="Seelie Senior Mystic" hidden="false" collective="false" import="true" type="unit">
@@ -2728,6 +2808,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2768,6 +2849,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="65.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2779,6 +2861,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c709-821d-db31-28c5" name="Seelie Overseer" hidden="false" collective="false" import="true" type="unit">
@@ -2841,6 +2924,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="45.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2852,6 +2936,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10d1-fd62-48b0-be40" name="Bestow Expert-crafted (6”, seelie constructs)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2862,6 +2947,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fcf6-0f64-3566-00e3" name="Seelie Regent" hidden="false" collective="false" import="true" type="unit">
@@ -2959,6 +3045,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -2985,6 +3072,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="cbf1-e248-31f7-532e" name="Howler Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3001,6 +3089,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3027,6 +3116,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="ede2-76d5-ae40-a9ea" name="Striker Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3043,6 +3133,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3087,6 +3178,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="4a67-84f5-3e74-e341" name="Dragon Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3103,6 +3195,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3117,6 +3210,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="bd6f-6c0b-bf9e-7c8d" name="Eagle Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3133,6 +3227,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3165,6 +3260,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="508f-9b96-4231-073c" name="Spider Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3181,6 +3277,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3201,6 +3298,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="6c08-cfdf-5775-5676" name="Reaper Outit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3217,6 +3315,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3231,6 +3330,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="8743-4fdb-11c0-38e8" name="Jetbike Outfit" hidden="false" collective="false" import="true" type="upgrade">
@@ -3247,6 +3347,7 @@ Grace in Exile: Spend one (1) Faction Point:
                           <costs>
                             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                           </costs>
                         </selectionEntry>
                       </selectionEntries>
@@ -3273,6 +3374,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3307,6 +3409,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3318,6 +3421,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8477-b96f-f85b-86f6" name="Howler Mask" hidden="false" collective="false" import="true" type="upgrade">
@@ -3327,6 +3431,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b066-1bfa-3ded-77b5" name="Expert-Crafted Vibro-Sword" hidden="false" collective="false" import="true" type="upgrade">
@@ -3337,6 +3442,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3b30-b172-d9eb-6efc" name="Striker Minilaser" hidden="false" collective="false" import="true" type="upgrade">
@@ -3346,6 +3452,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ceab-bb93-b3c5-8ecf" name="Attack Dice(x2)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3355,6 +3462,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8339-6431-61cf-950b" name="Move(12, hover)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3364,6 +3472,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ced5-0232-c1d2-1043" name="Move(18, hover)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3373,6 +3482,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1a80-4b92-0b2a-2857" name="Seelie Junior Mystic Group" hidden="false" collective="false" import="true" type="unit">
@@ -3444,6 +3554,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3480,6 +3591,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3593,6 +3705,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3550-77a0-16a0-b4c2" name="Seelie Hovertank" hidden="false" collective="false" import="true" type="unit">
@@ -3659,6 +3772,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3672,6 +3786,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ee68-6385-05f6-460f" name="Seelie Aircraft" page="" hidden="false" collective="false" import="true" type="unit">
@@ -3722,6 +3837,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="910e-614f-b88a-2896" name="Disruption" hidden="false" collective="false" import="true" type="upgrade">
@@ -3751,6 +3867,7 @@ Grace in Exile: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -3808,6 +3925,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3833,6 +3951,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2cb5-5b39-bb75-3e71" name="Disruption(12)" hidden="false" collective="false" import="true" type="upgrade">
@@ -3842,6 +3961,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a046-0e07-ec67-609b" name="2x Lance" hidden="false" collective="false" import="true" type="upgrade">
@@ -3852,6 +3972,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d366-da09-86cf-c4ee" name="Seelie Large Construct" hidden="false" collective="false" import="true" type="unit">
@@ -3940,6 +4061,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3952,6 +4074,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eae8-ad1f-ed9e-f4dd" name="2x Disc Catapult" hidden="false" collective="false" import="true" type="upgrade">
@@ -3961,6 +4084,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7807-c6c6-e209-c36d" name="Light Attack Vehicle Squadron" hidden="false" collective="false" import="true" type="unit">
@@ -4026,6 +4150,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4038,6 +4163,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c7e-92d8-3499-7592" name="Seelie Construct" hidden="false" collective="false" import="true" type="unit">
@@ -4087,6 +4213,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6e9e-ea50-6db3-f595" name="Construct with Energy Axe and Assault Shield" hidden="false" collective="false" import="true" type="model">
@@ -4125,6 +4252,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d8e-417f-19c5-4f7d" name="Construct with Ghostcannon" hidden="false" collective="true" import="true" type="model">
@@ -4157,6 +4285,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="f326-3dcd-4300-81be" name="Construct with W-Scythe" hidden="false" collective="false" import="true" type="model">
@@ -4189,6 +4318,7 @@ Grace in Exile: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4201,6 +4331,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1abf-6c79-6c6e-ba67" name="2x Energy Sword" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
@@ -4210,6 +4341,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="f9ba-5a2d-70bf-b8ab" name="Energy Axe and Assault Shield" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
@@ -4220,6 +4352,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4c9c-56b6-9324-4045" name="Massive" hidden="false" collective="true" import="true" type="upgrade">
@@ -4229,6 +4362,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3383-2988-edf3-9a71" name="Oversized(+1)" hidden="false" collective="true" import="true" type="upgrade">
@@ -4238,6 +4372,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5f13-b67c-36ce-0673" name="Extra Strike(1)" hidden="false" collective="true" import="true" type="upgrade">
@@ -4247,6 +4382,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bcb-d7ac-6b79-6b3c" name="Ghostcannon" hidden="false" collective="true" import="true" type="upgrade">
@@ -4256,6 +4392,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6929-8d39-e80a-9d22" name="W-Scythe" hidden="false" collective="true" import="true" type="upgrade">
@@ -4265,6 +4402,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b7e0-e179-d913-51fc" name="Hologram-Protection" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" collective="false" import="true" type="upgrade">
@@ -4274,6 +4412,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8e35-1b5c-be20-6684" name="Vectored Engines" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" collective="false" import="true" type="upgrade">
@@ -4283,6 +4422,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3638-5733-4397-5803" name="Fated" hidden="false" collective="false" import="true" type="upgrade">
@@ -4295,6 +4435,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8365-ebe6-fbb4-0e5a" name="Guided" hidden="false" collective="false" import="true" type="upgrade">
@@ -4307,6 +4448,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5636-3a99-0e88-fa56" name="Exalted" hidden="false" collective="false" import="true" type="upgrade">
@@ -4319,6 +4461,7 @@ Grace in Exile: Spend one (1) Faction Point:
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4345,6 +4488,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="56f5-6162-af08-309f" name="Paired Energy Swords" hidden="false" collective="true" import="true" type="upgrade">
@@ -4354,6 +4498,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ad72-1222-6940-8750" name="Newsletter #1 Playtest point values" publicationId="2863-26cb-0a2c-33a2" page="4" hidden="false" collective="false" import="true" type="upgrade">
@@ -4366,6 +4511,7 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0d1c-a884-820e-c577" name="Seelie Living God" hidden="true" collective="false" import="true" type="unit">
@@ -4377,7 +4523,7 @@ Grace in Exile: Spend one (1) Faction Point:
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a8e-5f56-4deb-7c06" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9a8e-5f56-4deb-7c06" type="max"/>
       </constraints>
       <categoryLinks>
         <categoryLink id="4927-0030-7f5c-3ca2" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
@@ -4394,57 +4540,34 @@ Grace in Exile: Spend one (1) Faction Point:
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e3a-71e0-4b42-5e13" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c07e-1c79-ab28-5e2d" name="Seelie Living God" hidden="false" targetId="0165-0307-b616-83cb" type="profile"/>
+                <infoLink id="c07e-1c79-ab28-5e2d" name="Se. Living God" hidden="false" targetId="0165-0307-b616-83cb" type="profile"/>
+                <infoLink id="7adf-71d7-3bb4-213f" name="Superior" hidden="false" targetId="81b7-00c4-6dea-18b7" type="rule"/>
+                <infoLink id="0bd0-9d03-5da0-3a5e" name="Bestow Loathing (18&quot;)" hidden="false" targetId="ed49-958f-327c-678a" type="rule"/>
+                <infoLink id="66fd-ae93-f7cc-c458" name="Bestow Tough(+2) (12&quot;)" hidden="false" targetId="384c-2339-d25b-5a07" type="rule"/>
+                <infoLink id="711c-c6aa-9c8a-1cf7" name="Immune to Suppression" hidden="false" targetId="eb74-1d94-2774-395d" type="rule"/>
+                <infoLink id="c28d-de84-1d18-e3fe" name="Inflict Tough(0) (12&quot;)" hidden="false" targetId="9c6a-39e0-9a21-cecb" type="rule"/>
               </infoLinks>
-              <entryLinks>
-                <entryLink id="7b0a-e1fb-9959-252d" name="Superior" hidden="false" collective="false" import="true" targetId="2163-3d43-af1b-a37a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8fa-0de2-67cf-372a" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bc7-5b46-02df-6d2d" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="3fb1-5964-53f7-7ecc" name="Immune to suppression" hidden="false" collective="false" import="true" targetId="7407-a86d-63bc-3019" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0594-7b14-2af1-8174" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee15-9eef-3d68-d410" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="401d-9932-7d60-05dd" name="Bestow Loathing(18&quot;)" hidden="false" collective="false" import="true" targetId="43a6-8550-6f55-3be4" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9498-9c6f-9255-482e" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e96-7f18-15f9-ecfd" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="ac68-9230-9130-9d84" name="Bestow Tough(+2) (12&quot;)" hidden="false" collective="false" import="true" targetId="42a6-a8c9-adaf-44bb" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c37-412e-724e-90ff" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a857-5ef8-83f6-de79" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="3b87-6343-a7a5-fdf2" name="Inflict Tough(0) (12&quot;)" hidden="false" collective="false" import="true" targetId="66ed-3039-1b42-fe58" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcc1-d945-11a2-f6d7" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="345b-96e3-e00e-de71" type="min"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="b6e4-920c-232d-a026" name="Doomspear" hidden="false" collective="false" import="true" targetId="64d2-3bf2-a39c-811a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b478-6259-225f-b109" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7522-2f29-aa4a-e3c7" type="min"/>
-                  </constraints>
-                </entryLink>
-              </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="400.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <entryLinks>
+            <entryLink id="c987-dee1-1e1c-b658" name="Doomspear" hidden="false" collective="false" import="true" targetId="64d2-3bf2-a39c-811a" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a97-966a-f7b9-b9b7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="085b-ba1d-b0ca-d691" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="64d2-3bf2-a39c-811a" name="Doomspear" hidden="false" collective="false" import="true" type="upgrade">
@@ -4456,6 +4579,20 @@ Grace in Exile: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7b33-37b0-1205-3a7b" name="Grace in Exile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="24cb-60b5-20fe-5951" name="Grace in Exile" hidden="false" targetId="4169-ab9a-0345-635b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ad83-4a94-385d-3ade" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -4759,9 +4896,15 @@ Grace in Exile: Spend one (1) Faction Point:
     <rule id="bedb-34ce-8ace-56e3" name="Guided" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false">
       <description>You may spend one (1) FP to re- roll any attack dice from one (1) unit.</description>
     </rule>
+    <rule id="4169-ab9a-0345-635b" name="Grace in Exile" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false">
+      <description>Spend one (1) Faction Point:
+● We strike where we please: move one (1) terrain piece 12” before game.
+● We have seen the future: cancel opponent FP use on 2+, on ‘6’ you retain your FP.
+● We transcend the limitations of space: the attack of one (1) unit has all ranges doubled.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="4e55-568e-6ae1-0436" name="Seelie Avenger" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="4e55-568e-6ae1-0436" name="Se. Avenger" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4771,25 +4914,25 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f42-742f-7afc-f841" name="Seelie Shielded Transport" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1f42-742f-7afc-f841" name="Se. Shielded Transport" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="f9a1-74b8-779a-19c3" name="Seelie Transport Tank" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="f9a1-74b8-779a-19c3" name="Se. Transport Tank" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="08ed-4eb0-4ff7-3952" name="Seelie Defender" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="08ed-4eb0-4ff7-3952" name="Se. Defender" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4799,7 +4942,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="4d8d-1859-4475-8856" name="Seelie Ranger" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="4d8d-1859-4475-8856" name="Se. Ranger" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4809,7 +4952,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="580f-b343-a456-903f" name="Seelie Jetbike" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="580f-b343-a456-903f" name="Se. Jetbike" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4819,7 +4962,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="e93b-e607-60dd-5cbc" name="Seelie Knight Striker" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e93b-e607-60dd-5cbc" name="Se. Knight Striker" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4829,7 +4972,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d0d6-5f6c-a9a1-a7ef" name="Seelie Knight Dragon" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d0d6-5f6c-a9a1-a7ef" name="Se. Knight Dragon" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4839,7 +4982,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="8a69-8ca7-28ae-25a0" name="Seelie Knight Eagle" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8a69-8ca7-28ae-25a0" name="Se. Knight Eagle" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4849,7 +4992,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">18</characteristic>
       </characteristics>
     </profile>
-    <profile id="9344-573b-5af0-add9" name="Seelie Knight Spider" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9344-573b-5af0-add9" name="Se. Knight Spider" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, teleport)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4859,7 +5002,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="ef23-7d79-c60f-6a9d" name="Seelie Knight Reaper" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ef23-7d79-c60f-6a9d" name="Se. Knight Reaper" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4869,7 +5012,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="4914-cded-646b-10c6" name="Seelie Knight Howler" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="4914-cded-646b-10c6" name="Se. Knight Howler" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4879,7 +5022,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="649b-45e7-28a6-6a0c" name="Support Battery" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="649b-45e7-28a6-6a0c" name="Se. Support Battery" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -4889,16 +5032,16 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="66f5-e3ac-21c7-81e4" name="Battlewalker" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="66f5-e3ac-21c7-81e4" name="Se. Battlewalker" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7 min 4</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="271f-ec58-5756-0a08" name="Seelie Lancer" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="271f-ec58-5756-0a08" name="Se. Lancer" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4908,7 +5051,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="1ee5-1da1-5063-0b65" name="Seelie Senior Mystic" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1ee5-1da1-5063-0b65" name="Se. Senior Mystic" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -4918,7 +5061,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="90e5-ec55-e72d-265d" name="Seelie Overseer" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="90e5-ec55-e72d-265d" name="Se. Overseer" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -4928,7 +5071,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5240-fd75-eb76-6195" name="Seelie Regent" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5240-fd75-eb76-6195" name="Se. Regent" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -4938,7 +5081,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b30b-8a9b-1962-1dbf" name="Seelie Junior Mystic" publicationId="aae0-5552-35a8-74d6" page="100" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b30b-8a9b-1962-1dbf" name="Se. Junior Mystic" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -4948,25 +5091,25 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="2deb-49d8-0791-5a6f" name="Seelie Hovertank" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="2deb-49d8-0791-5a6f" name="Se. Hovertank" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="54c8-3450-f1fd-40f9" name="Seelie Aircraft" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="54c8-3450-f1fd-40f9" name="Se. Aircraft" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="caea-4c4c-6f7f-136c" name="Seelie Large Construct" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="caea-4c4c-6f7f-136c" name="Se. Large Construct" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -4976,16 +5119,16 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="dead-b4e7-bf4e-9513" name="Light Attack Vehicle" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="dead-b4e7-bf4e-9513" name="Se. Light Attack Vehicle" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(fleet, hover, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="78a3-6399-4fe8-f3c2" name="Seelie Construct" publicationId="aae0-5552-35a8-74d6" page="101" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="78a3-6399-4fe8-f3c2" name="Se. Construct" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -4995,7 +5138,7 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0165-0307-b616-83cb" name="Seelie Living God" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="0165-0307-b616-83cb" name="Se. Living God" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">8</characteristic>
@@ -5005,9 +5148,9 @@ Grace in Exile: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="4913-232f-7633-4b48" name="Doomspear" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="4913-232f-7633-4b48" name="Doomspear" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (16)
 18&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">.

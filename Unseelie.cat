@@ -1,23 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f023-66b4-8d2a-2ee0" name="The Unseelie Court" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f023-66b4-8d2a-2ee0" name="The Unseelie Court" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
-The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
-Weapons are included in the listed price, unless otherwise mentioned, or preceded by an asterix ‘*’ which means that they are an option, and paid for separately.
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
 
-Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades.
-
-Strength From Suffering
-• For every two (2) remaining enemy action markers in the endphase (after normal and trait reduction), remove one (1) extra action marker from any friendly unit.
-
-Do you know how we got these scars?!: Spend one (1) Faction Point:
-
-• Secret paths of the World: return one (1) friendly unit to staging.
-
-• Combat Drugs: one (1) non-priority action counts as priority for timing purposes.
-
-• Reign of Dread: target any one (1) unit with a (4), wound(no), suppression(x2) attack.</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="ac14-f4cf-1692-0bde" name="Unseelie Transport" hidden="false" collective="false" import="true" targetId="7ad6-14b6-54eb-4fd0" type="selectionEntry"/>
     <entryLink id="6958-ca3f-87aa-7def" name="Unseelie Light Transport" hidden="false" collective="false" import="true" targetId="0f8d-fef9-821b-1e6d" type="selectionEntry"/>
@@ -40,8 +38,24 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
     <entryLink id="bf6b-a328-cf9d-0c63" name="Unseelie Tempter" hidden="false" collective="false" import="true" targetId="1ef8-a3fb-6375-5bd1" type="selectionEntry"/>
     <entryLink id="771f-91f8-6c61-ca4e" name="Unseelie Painmobile" hidden="false" collective="false" import="true" targetId="0f44-eaed-ed7c-ef24" type="selectionEntry"/>
     <entryLink id="bbb1-a862-d9a4-483a" name="Unseelie Aircraft" hidden="false" collective="false" import="true" targetId="b972-3379-bbf6-5be1" type="selectionEntry"/>
-    <entryLink id="933e-7c9c-a7a0-48f9" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry"/>
+    <entryLink id="933e-7c9c-a7a0-48f9" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="34f0-fb4c-969f-c1dd" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="ecb2-d7d1-4ac2-9ecd" name="Unseelie Court Barge" hidden="false" collective="false" import="true" targetId="d3d0-b0df-0ce8-fa37" type="selectionEntry"/>
+    <entryLink id="56df-6bd7-8463-ec5e" name="Strength From Suffering" hidden="false" collective="false" import="true" targetId="0321-48ff-d909-d266" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73cf-0581-3eb4-04d7" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9267-5abe-5a39-6220" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="5f98-504d-fefd-f241" name="Do you know how we got these scars?!" hidden="false" collective="false" import="true" targetId="d057-2a99-94f6-bc04" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d172-199f-fb36-a0c2" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0d6-a7b3-9076-88b7" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="7ad6-14b6-54eb-4fd0" name="Unseelie Transport" hidden="false" collective="false" import="true" type="unit">
@@ -91,6 +105,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -104,6 +119,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f8d-fef9-821b-1e6d" name="Unseelie Light Transport" hidden="false" collective="false" import="true" type="unit">
@@ -160,6 +176,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -173,6 +190,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afb3-d396-eb26-780f" name="Unseelie Light Transport" hidden="false" collective="false" import="true" type="model">
@@ -222,6 +240,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5eb8-7e33-5a1f-b62b" name="Unseelie Transport" hidden="false" collective="false" import="true" type="model">
@@ -266,6 +285,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d65d-def4-988a-f486" name="Unseelie Alchemist" hidden="false" collective="false" import="true" type="unit">
@@ -316,6 +336,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -329,6 +350,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1395-81d9-a180-f700" name="Unseelie Speedtank" hidden="false" collective="false" import="true" type="unit">
@@ -354,6 +376,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -390,6 +413,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a4ee-974c-5539-3377" name="Unseelie Raider" hidden="false" collective="false" import="true" type="unit">
@@ -414,6 +438,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -553,6 +578,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1b7e-0afb-ad3f-5a2f" name="Unseelie Close Combat Raider" hidden="false" collective="false" import="true" type="unit">
@@ -578,6 +604,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="9.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -642,6 +669,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7f41-8250-c5b8-e0a0" name="Vicious Basic CC and Pain Pistol" hidden="false" collective="false" import="true" type="upgrade">
@@ -654,6 +682,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9bd8-bf1b-5074-7975" name="Unseelie Elite Raider" hidden="false" collective="false" import="true" type="unit">
@@ -679,6 +708,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="11.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -818,6 +848,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="afed-878d-f891-b226" name="Unseelie Elite Close Combat Raider" hidden="false" collective="false" import="true" type="unit">
@@ -845,6 +876,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="12.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -909,6 +941,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="eea4-6fd9-50df-9f5b" name="Unseelie Armoured Raider" hidden="false" collective="false" import="true" type="unit">
@@ -936,6 +969,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -988,6 +1022,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d84b-7d2c-c113-0d60" name="Unseelie Ambush Raider" hidden="false" collective="false" import="true" type="unit">
@@ -1017,6 +1052,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1069,6 +1105,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c4be-3711-b824-394c" name="Unseelie Brute" hidden="false" collective="false" import="true" type="unit">
@@ -1095,6 +1132,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1145,6 +1183,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="490e-b797-f248-9615" name="Vicious Basic CC with Cleave" hidden="false" collective="false" import="true" type="upgrade">
@@ -1156,6 +1195,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="19e3-2395-0137-cb88" name="Mono Sword and Ghostblast" hidden="false" collective="false" import="true" type="upgrade">
@@ -1166,6 +1206,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="07b9-6b8c-dd3f-ee1f" name="Unseelie Torturer" hidden="false" collective="false" import="true" type="unit">
@@ -1190,6 +1231,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1268,6 +1310,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="4b58-d81d-d586-5c05" name="Unseelie Beastmaster" hidden="false" collective="false" import="true" type="unit">
@@ -1309,6 +1352,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="025c-29b8-9594-b15c" name="Bird Flock" hidden="false" collective="false" import="true" type="upgrade">
@@ -1320,6 +1364,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1610-5055-6ccd-eb42" name="Claw Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -1332,6 +1377,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2854-c8bc-a6e9-15e3" name="Winged Beast" hidden="false" collective="false" import="true" type="upgrade">
@@ -1343,6 +1389,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1357,6 +1404,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2b05-6053-4cfc-00f6" name="Unseelie Jumpraider" hidden="false" collective="false" import="true" type="unit">
@@ -1381,6 +1429,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="12.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1522,6 +1571,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="502d-a52b-cf2d-fe77" name="Vicious Basic CC and Improved Pain Carbine" hidden="false" collective="false" import="true" type="upgrade">
@@ -1534,6 +1584,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="5b5d-a000-243a-9970" name="Unseelie Court" hidden="false" collective="false" import="true" type="unit">
@@ -1566,6 +1617,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b36e-884a-102e-b749" name="Alien Horror" hidden="false" collective="false" import="true" type="upgrade">
@@ -1586,6 +1638,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="4233-59dc-6574-04ce" name="Alien Merc" hidden="false" collective="false" import="true" type="upgrade">
@@ -1610,6 +1663,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="8760-8d33-a460-ae6a" name="Wastrel" hidden="false" collective="false" import="true" type="upgrade">
@@ -1653,6 +1707,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="cca8-8712-fe10-57ba" name="Lamia" hidden="false" collective="false" import="true" type="upgrade">
@@ -1678,6 +1733,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="8.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1693,6 +1749,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2926-c2a6-6000-5f5f" name="Energy Sword" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
@@ -1702,6 +1759,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1da0-9611-4eaf-9d43" name="Pain Pistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -1713,6 +1771,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="83f6-2c1f-066f-7347" name="Simple CC" hidden="false" collective="true" import="true" type="upgrade">
@@ -1722,6 +1781,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="dd89-cd5f-b1a4-d9a7" name="Vicious Basic CC" hidden="false" collective="true" import="true" type="upgrade">
@@ -1732,6 +1792,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8205-b070-d961-45fb" name="Improved Pain Carbine" hidden="false" collective="true" import="true" type="upgrade">
@@ -1742,6 +1803,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9d9e-f701-e353-f9af" name="Stone Gaze" hidden="false" collective="true" import="true" type="upgrade">
@@ -1752,6 +1814,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="14af-e175-cc13-3eb7" name="Unseelie Jetbikers" hidden="false" collective="false" import="true" type="unit">
@@ -1778,6 +1841,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1834,6 +1898,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0b8a-034f-b228-21ff" name="Vicious Basic CC and Pain Rifle" hidden="false" collective="false" import="true" type="upgrade">
@@ -1845,6 +1910,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="edc5-6b51-76f4-c8c0" name="Unseelie Hoverboarder" hidden="false" collective="false" import="true" type="unit">
@@ -1871,6 +1937,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1908,6 +1975,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8db0-8461-3756-da54" name="2h-Axe and Pain pods" hidden="false" collective="false" import="true" type="upgrade">
@@ -1919,6 +1987,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="df21-5cc5-f6a0-c28c" name="Unseelie Regent" hidden="false" collective="false" import="true" type="unit">
@@ -1952,6 +2021,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2009,6 +2079,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="224b-2ce6-8527-63a2" name="Court unit has 1 extra Wastrel and lose Insignificant" hidden="false" collective="false" import="true" type="upgrade">
@@ -2018,6 +2089,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2054,6 +2126,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="2fa0-fa55-979c-75d9" name="Wayfarer Portal" hidden="false" collective="false" import="true" type="upgrade">
@@ -2063,6 +2136,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1ef8-a3fb-6375-5bd1" name="Unseelie Tempter" hidden="false" collective="false" import="true" type="unit">
@@ -2087,6 +2161,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2152,6 +2227,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0f44-eaed-ed7c-ef24" name="Unseelie Painmobile" hidden="false" collective="false" import="true" type="unit">
@@ -2176,6 +2252,8 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2264,6 +2342,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e29-d505-a07a-1423" type="max"/>
                   </constraints>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="1533-d2de-61fb-5aee" name="Terror" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -2295,6 +2378,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -2306,6 +2394,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <entryLink id="a687-827e-8096-172f" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="c8cf-5afb-4fb8-96d1" type="selectionEntryGroup"/>
         <entryLink id="2ecd-addc-ae1e-8d22" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="12d6-b825-81b8-3423" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="b972-3379-bbf6-5be1" name="Unseelie Aircraft" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
@@ -2328,6 +2421,8 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2415,6 +2510,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="af20-1ca4-6abd-fedf" name="Bomber" hidden="false" collective="false" import="true" type="upgrade">
                   <selectionEntryGroups>
@@ -2469,6 +2569,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
                       </constraints>
                     </entryLink>
                   </entryLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -2479,6 +2584,11 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <entryLink id="5817-0bf2-2ecd-0efd" name="Upgrade Any Aircraft" hidden="false" collective="false" import="true" targetId="93f8-e59f-ba9f-d028" type="selectionEntryGroup"/>
         <entryLink id="0f5e-8c93-dc89-3e3e" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="cd21-caf1-e8f5-43e0" type="selectionEntryGroup"/>
       </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d3d0-b0df-0ce8-fa37" name="Unseelie Court Barge" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
@@ -2488,6 +2598,9 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="87c6-9741-fd1d-0b46" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="6680-635a-f2f7-4da8" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -2535,51 +2648,93 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
               </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="600.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="56a2-cba6-9e7a-2536" name="Blades and Wicked Guns" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3b5b-e8de-81e5-5173" name="Blades and Wicked Guns" hidden="false" targetId="8599-734b-a5d5-ad11" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="0281-fe98-639a-f5b8" name="Platform(9”)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9bd6-d20d-6a38-005b" name="Platform(9”)" hidden="false" targetId="b44f-a644-8217-efd1" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4528-0d43-e873-00e9" name="Autumn’s Cloak" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a9b0-ae2d-d29a-5550" name="Autumn’s Cloak" hidden="false" targetId="5ebd-e309-1a5b-a9fd" type="rule"/>
         <infoLink id="8b7f-7c91-036e-3a3e" name="Concealment" hidden="false" targetId="2693-921a-149b-88fd" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="c195-4de1-98e2-a1d6" name="Ghost Grenades" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9214-8011-004d-3a38" name="Ghost grenades" hidden="false" targetId="1740-febf-1b4c-e012" type="profile"/>
         <infoLink id="5c66-42e2-b92f-5c6d" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="819d-a07c-5a3c-5841" name="Stun Prow" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d0af-e201-cd26-e72c" name="Stun Prow" hidden="false" targetId="9c66-a6ee-e3fa-2f14" type="profile"/>
         <infoLink id="2464-a56c-6882-517e" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="6db8-9f37-03ae-a906" name="Ammo Racks" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e228-d1be-7757-519f" name="Ammo Racks" hidden="false" targetId="6e30-c35b-945c-f8b5" type="rule"/>
         <infoLink id="4d31-95b3-86e8-cb34" name="Masterwork" hidden="false" targetId="86e0-4e52-9d17-facc" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="bec8-e326-8a73-825f" name="The Alchemist’s Best" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="33ca-b4b4-5f29-cff1" name="The Alchemist’s Best" hidden="false" targetId="17fd-8436-a5f2-e791" type="rule"/>
         <infoLink id="ccd2-8c97-d017-0449" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="ba81-3ff3-4b0b-4100" name="Astral Shunt" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2587,6 +2742,37 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <infoLink id="c8f4-f767-f4e0-4982" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
         <infoLink id="f46b-7357-20e6-6328" name="Charge(distance)" hidden="false" targetId="0803-37eb-c60f-6786" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="0321-48ff-d909-d266" name="Strength From Suffering" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e1b9-8d96-d19b-8c95" name="Strength From Suffering" hidden="false" targetId="23a0-cef7-c7da-fb52" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3110-098f-d411-a237" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d057-2a99-94f6-bc04" name="Do you know how we got these scars?!" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cc0a-09eb-6132-9172" name="Do you know how we got these scars?!" hidden="false" targetId="cf60-71b1-0dfb-e00b" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b733-6f7f-ae1f-97f5" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2753,27 +2939,36 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
     <rule id="a41f-e119-2fae-83b1" name="Astral Shunt" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false">
       <description>Model has antiair with CC weapons, and Charge(6) vs aircraft.</description>
     </rule>
+    <rule id="23a0-cef7-c7da-fb52" name="Strength From Suffering" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false">
+      <description>For every two (2) remaining enemy action markers in the endphase (after normal and trait reduction), remove one (1) extra action marker from any friendly unit.</description>
+    </rule>
+    <rule id="cf60-71b1-0dfb-e00b" name="Do you know how we got these scars?!" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false">
+      <description>Spend one (1) Faction Point:
+● Secret paths of the World: return one (1) friendly unit to staging.
+● Combat Drugs: one (1) non-priority action counts as priority for timing purposes.
+● Reign of Dread: target any one (1) unit with a (4), wound(no), suppression(x2) attack.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="f74d-e0f5-7fc8-a69c" name="Unseelie Transport" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="f74d-e0f5-7fc8-a69c" name="Un. Transport" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover, light, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="4646-8c7e-8f67-0b33" name="Unseelie Light Transport" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="4646-8c7e-8f67-0b33" name="Un. Light Transport" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7 min 4</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">5</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="e4e2-1dba-15ca-51df" name="Unseelie Alchemist" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e4e2-1dba-15ca-51df" name="Un. Alchemist" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2783,7 +2978,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="8322-b0fd-2e19-e309" name="Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8322-b0fd-2e19-e309" name="Un. Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2793,7 +2988,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0a63-17a6-8781-69f3" name="CC Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="0a63-17a6-8781-69f3" name="Un. CC Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2803,16 +2998,16 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="486c-6204-0f16-159e" name="Unseelie Speedtank" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="486c-6204-0f16-159e" name="Un. Speedtank" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="e2a9-0379-9f83-8a0f" name="Elite Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e2a9-0379-9f83-8a0f" name="Un. Elite Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2822,7 +3017,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="ef10-1c39-a2ad-64d8" name="Elite CC Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ef10-1c39-a2ad-64d8" name="Un. Elite CC Raider" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2832,7 +3027,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d4c8-64bf-5653-072d" name="Armoured Raider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d4c8-64bf-5653-072d" name="Un. Armoured Raider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2842,7 +3037,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5dda-5cb3-3718-6820" name="Ambush Raider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5dda-5cb3-3718-6820" name="Un. Ambush Raider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2852,7 +3047,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f0b-721a-80ef-2d20" name="Brute" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="0f0b-721a-80ef-2d20" name="Un. Brute" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2862,7 +3057,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="e92f-1a83-1650-8fe9" name="Torturer" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="e92f-1a83-1650-8fe9" name="Un. Torturer" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2872,7 +3067,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="eb51-9da3-2aef-ca93" name="Beastmaster" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="eb51-9da3-2aef-ca93" name="Un. Beastmaster" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover, fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2882,7 +3077,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="2bae-cda2-d319-6fd7" name="Winged Beast" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="2bae-cda2-d319-6fd7" name="Un. Winged Beast" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2892,7 +3087,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="9173-fe9a-a9fc-715a" name="Bird Flock" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="9173-fe9a-a9fc-715a" name="Un. Bird Flock" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2902,7 +3097,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="1181-48f8-728f-9fbf" name="Claw Beast" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1181-48f8-728f-9fbf" name="Un. Claw Beast" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -2912,7 +3107,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="52fa-4105-f0fd-c06a" name="Jumpraider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="52fa-4105-f0fd-c06a" name="Un. Jumpraider" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2922,7 +3117,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="d8e1-e639-c423-2b17" name="Alien Horror" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d8e1-e639-c423-2b17" name="Un. Alien Horror" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2932,7 +3127,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5d98-6447-87bb-cb9d" name="Lamia" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5d98-6447-87bb-cb9d" name="Un. Lamia" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2942,7 +3137,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="a111-957d-5edf-2cf9" name="Alien Merc" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a111-957d-5edf-2cf9" name="Un. Alien Merc" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -2952,7 +3147,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b7c7-6ece-72dd-6246" name="Medusa" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b7c7-6ece-72dd-6246" name="Un. Medusa" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2962,7 +3157,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="d5e1-727c-d006-7f2b" name="Wastrel" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="d5e1-727c-d006-7f2b" name="Un. Wastrel" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2972,7 +3167,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="fe1c-9d57-d0c0-eb09" name="Jetbiker" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="fe1c-9d57-d0c0-eb09" name="Un. Jetbiker" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infatry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2982,7 +3177,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="edd8-5f7d-f47d-39b0" name="Hoverboarder" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="edd8-5f7d-f47d-39b0" name="Un. Hoverboarder" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infartry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -2992,7 +3187,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="8782-16a8-f9f9-0c43" name="Unseelie Regent" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="8782-16a8-f9f9-0c43" name="Un. Regent" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3002,7 +3197,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="4f6a-a0ee-5c2d-edbf" name="Unseelie Tempter" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="4f6a-a0ee-5c2d-edbf" name="Un. Tempter" publicationId="81dd-fe5f-c233-17c5" page="96" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3012,7 +3207,7 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="a9cd-f41e-1715-5ee2" name="Unseelie Painmobile" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="a9cd-f41e-1715-5ee2" name="Un. Painmobile" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3022,27 +3217,27 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="8b28-8387-1f2e-753d" name="Unseelie Aircraft" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="8b28-8387-1f2e-753d" name="Un. Aircraft" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="7df9-7a99-ced8-dfe2" name="Unseelie Court Barge" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="7df9-7a99-ced8-dfe2" name="Un. Court Barge" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(hover, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">5</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">5</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8, re-roll</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">16</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="8599-734b-a5d5-ad11" name="Blades and Wicked Guns" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="8599-734b-a5d5-ad11" name="Blades and Wicked Guns" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (12)
 36” (12)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
@@ -3051,18 +3246,18 @@ Do you know how we got these scars?!: Spend one (1) Faction Point:
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="1740-febf-1b4c-e012" name="Ghost Grenades" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="1740-febf-1b4c-e012" name="Ghost Grenades" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">no</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppress(x2) after double move, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="9c66-a6ee-e3fa-2f14" name="Stun Prow" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapon">
+    <profile id="9c66-a6ee-e3fa-2f14" name="Stun Prow" publicationId="81dd-fe5f-c233-17c5" page="97" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
-        <characteristic name="Type" typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)
 </characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>

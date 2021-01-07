@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="20" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
-The lists are divided into three unit categories; Command, Core and Special. When generating forces players must limit themselves to one (1) Special entry for each Core entry, and one (1) Command entry. Players can take two (2) upgrades per full 300 points in their force. Manually add calculated upgrades to U:
+The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
+● One (1) Command entry
+● Max one (1) Special entry for each Core entry
+● Max two (2) upgrades per full 300 points in their force. (Unless otherwise specified, a unit may only take an upgrade once).
 
-Weapons are included in the listed price, unless otherwise mentioned, or preceded by an asterix ‘*’ which means that they are an option, and paid for separately. 
+Players get 1 Faction Point per full 300 points in their force, and can spend them during force generation to exceed the limits above - one (1) FP lets you take:
+● One (1) additional Command entry, (to a maximum of two (2))
+● One (1) extra Special entry 
+● Two (2) additional upgrades
 
-Players get 1 Faction Point per full 300 points in their force, and can use them during force generation to exceed the limits above - one (1) FP lets you take one (1) additional Command entry, to a maximum of two (2), one (1) extra Special entry, or two (2) additional upgrades .
-
-Mutant Momentum: Spend one (1) Faction Point:
-
-• “Raaaaaargh!!”: one (1) unit gets Relentless Assault until end of turn, and ignores difficult terrain for CC attacks.
-
-• “You there! Join up!”: in the endphase, one (1) non-vehicle unit which has lost models may merge with a larger non-vehicle unit within 6” (remove the smaller unit’s action markers).
-
-• “Move, Move, Move!”: one (1) unit may make a 6” move after enemy within 2” makes withdrawal move or is wiped out with CC attacks.</readme>
+Cost types:
+p: Points
+U: Upgrades
+FP: Faction Points</readme>
   <entryLinks>
     <entryLink id="b396-cc90-3a6a-143c" name="Small Mutant Gang" hidden="false" collective="false" import="true" targetId="5e88-a714-f836-2360" type="selectionEntry"/>
     <entryLink id="d906-6aae-d59e-7e2d" name="Truck" hidden="false" collective="false" import="true" targetId="c842-a520-5437-b6dc" type="selectionEntry"/>
@@ -39,16 +40,19 @@ Mutant Momentum: Spend one (1) Faction Point:
     <entryLink id="9aeb-c928-8203-5f51" name="Mutant Walking Tank" hidden="false" collective="false" import="true" targetId="feb6-b522-9fa7-3baf" type="selectionEntry"/>
     <entryLink id="af37-b4c8-f881-ea05" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e745-30e8-ea69-47e5" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e745-30e8-ea69-47e5" type="max"/>
       </constraints>
     </entryLink>
     <entryLink id="f9b5-47d2-a5b2-68d0" name="Mutant Trample Walker" hidden="false" collective="false" import="true" targetId="ca68-49d7-f903-eea0" type="selectionEntry"/>
+    <entryLink id="b14a-549b-8ca6-647a" name="Mutant Momentum" hidden="false" collective="false" import="true" targetId="e60b-8d9d-993f-4e88" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="323e-64b4-a4dc-f63f" type="max"/>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9952-db00-68e0-c579" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5e88-a714-f836-2360" name="Small Mutant Gang" hidden="false" collective="false" import="true" type="unit">
-      <modifiers>
-        <modifier type="set" field="2744-00fe-78fa-f968" value="1.0"/>
-      </modifiers>
       <categoryLinks>
         <categoryLink id="e393-24fe-c3dc-9f44" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
@@ -72,6 +76,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -86,6 +91,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c842-a520-5437-b6dc" name="Truck" hidden="false" collective="false" import="true" type="unit">
@@ -147,6 +153,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="55.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -160,6 +167,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="fa06-4501-4d1f-ed1b" name="Armoured Truck" hidden="false" collective="false" import="true" type="unit">
@@ -220,6 +228,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="55.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -233,6 +242,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b03c-7942-ed45-90ca" name="Bikers" hidden="false" collective="false" import="true" type="unit">
@@ -258,6 +268,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -270,6 +281,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="1196-8b43-6d9c-bf94" name="Mutant Gang" hidden="false" collective="false" import="true" type="unit">
@@ -314,6 +326,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="6.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="fd94-1f82-b1ae-020d" name="Big Mutant Boss" hidden="false" collective="false" import="true" type="model">
@@ -328,6 +341,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="21.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -405,6 +419,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="3245-849e-308f-31a8" name="Pistol and Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -416,6 +431,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="60ed-3fdc-3884-9b21" name="Truck" hidden="false" collective="false" import="true" type="model">
@@ -469,6 +485,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="0cc2-100f-a25f-bd25" name="Quadbike" hidden="false" collective="false" import="true" type="unit">
@@ -489,6 +506,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -528,6 +546,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ae2a-2418-a34a-471e" name="Quadbike(tracked)" hidden="false" collective="false" import="true" type="upgrade">
@@ -547,6 +566,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -636,6 +656,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="c0e2-7a7f-cf97-e6bb" name="Jump Mutants" hidden="false" collective="false" import="true" type="unit">
@@ -675,6 +696,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="c79d-8ba7-12c4-e19f" name="Big Mutant Boss" hidden="false" collective="false" import="true" type="model">
@@ -696,6 +718,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -709,6 +732,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="65d2-dedc-8ca4-d230" name="Specialists Mutants" hidden="false" collective="false" import="true" type="unit">
@@ -744,6 +768,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="6.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b359-7ae1-5964-9164" name="Big Mutant Boss" hidden="false" collective="false" import="true" type="model">
@@ -758,6 +783,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="21.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -892,6 +918,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7c30-fb95-27cf-7bad" name="Flamer and Gas Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -903,6 +930,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="276a-69c3-16a1-5ff7" name="2x Bomb Creature" hidden="false" collective="false" import="true" type="upgrade">
@@ -912,6 +940,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ed1e-de48-137d-381e" name="Mutant Commando" hidden="false" collective="false" import="true" type="unit">
@@ -948,6 +977,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="9.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="bbbb-7632-64b8-614f" name="Big Mutant Boss" hidden="false" collective="false" import="true" type="model">
@@ -963,6 +993,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="24.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1121,6 +1152,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a875-3bdd-e6c4-3ebc" name="Mini-heli" hidden="false" collective="false" import="true" type="unit">
@@ -1145,6 +1177,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1182,6 +1215,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="10ec-f981-779b-28f0" name="Mutant Mystic" hidden="false" collective="false" import="true" type="unit">
@@ -1219,6 +1253,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="7d33-87f5-0475-e4c3" name="Minders" hidden="false" collective="false" import="true" type="model">
@@ -1233,6 +1268,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1245,6 +1281,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="55.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d822-3f66-5fee-fe02" name="Mutant Small Walker" hidden="false" collective="false" import="true" type="unit">
@@ -1325,6 +1362,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1337,6 +1375,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b3da-be9e-9da1-0dec" name="Mutant Big Walker" hidden="false" collective="false" import="true" type="unit">
@@ -1429,6 +1468,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1441,6 +1481,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="15a7-8ad8-02cd-7b52" name="2x Energy Claw" hidden="false" collective="false" import="true" type="upgrade">
@@ -1450,6 +1491,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="89f9-a296-a3e8-47b2" name="Big Guns" hidden="false" collective="false" import="true" type="unit">
@@ -1473,6 +1515,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1526,6 +1569,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="a0fa-031e-f460-a623" name="Mounted Big Gun" hidden="false" collective="false" import="true" type="unit">
@@ -1559,6 +1603,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1639,6 +1684,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6df5-f08e-a29c-8fa2" name="2x Hopper Autocannon and antiair " hidden="false" collective="false" import="true" type="upgrade">
@@ -1650,6 +1696,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="734f-cfe9-1606-fdf9" name="Mutant Boss" hidden="false" collective="false" import="true" type="unit">
@@ -1686,6 +1733,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1709,6 +1757,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -1723,6 +1772,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4151-4881-ea18-29b0" name="Man-Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -1752,6 +1802,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4eb0-9651-4cf7-4a7a" name="Foot" hidden="false" collective="false" import="true" type="upgrade">
@@ -1775,6 +1826,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1828,6 +1880,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="6c72-1341-2878-da00" name="Underslung Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -1841,6 +1894,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4929-ab22-036b-8b90" name="autocarbine hit(re-roll)" hidden="false" collective="false" import="true" type="upgrade">
@@ -1850,6 +1904,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1884,6 +1939,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d63d-35e1-fae0-e2fd" name="Mutant Senior Mechanic" hidden="false" collective="false" import="true" type="unit">
@@ -1915,6 +1971,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1951,6 +2008,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1971,6 +2029,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="6b86-a4af-8ddd-c681" name="Support" hidden="false" collective="false" import="true" type="upgrade">
@@ -1994,6 +2053,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="2b3d-e7ab-036a-9efd" name="Artillery" hidden="false" collective="false" import="true" type="upgrade">
@@ -2011,6 +2071,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="0692-eafb-d4c6-0a1b" name="Man-Tank" hidden="false" collective="false" import="true" type="upgrade">
@@ -2052,6 +2113,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2064,6 +2126,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="6f44-aeae-c73a-b830" name="Mutant Aircraft" hidden="false" collective="false" import="true" type="unit">
@@ -2088,6 +2151,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2125,6 +2189,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="81b3-8558-1e8b-8b43" name="Bomber" hidden="false" collective="false" import="true" type="upgrade">
@@ -2144,6 +2209,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2164,6 +2230,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="7d31-8ee2-b3d1-a23a" name="Fire-Bomber" hidden="false" collective="false" import="true" type="upgrade">
@@ -2183,6 +2250,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2209,6 +2277,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2223,6 +2292,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="d9d3-7e74-a295-85b0" name="Mutant Large Battle-Vehicle" hidden="false" collective="false" import="true" type="unit">
@@ -2264,6 +2334,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2284,6 +2355,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="62f9-1a1b-1af5-8c6e" name="Replace Vehicle(open) with Fire-points(5)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2293,6 +2365,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="a941-c707-fd8f-3776" name="Vehicle CC Weapon, Driving Hunger" hidden="false" collective="false" import="true" type="upgrade">
@@ -2306,6 +2379,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2375,6 +2449,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="bf91-25fc-9a66-5e07" name="Big Mutant Gang" hidden="false" collective="false" import="true" type="unit">
@@ -2419,6 +2494,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="16.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2454,6 +2530,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="041b-fc28-e920-0de3" name="Man-Tank (Range)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2484,6 +2561,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c6dd-ded8-988b-1140" name="Masterwork Improved Slugger" hidden="false" collective="false" import="true" type="upgrade">
@@ -2512,6 +2590,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="4.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="2a02-4e08-2fb6-6474" name="Man-Tank (CC)" hidden="false" collective="false" import="true" type="upgrade">
@@ -2540,6 +2619,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="4daf-0701-adf3-f30d" name="2h-hammer OR Pistol and Axe" hidden="false" collective="false" import="true" type="upgrade">
@@ -2564,6 +2644,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="ed5f-1ba4-284c-d17c" name="Energyclaw OR Kill Saw" hidden="false" collective="false" import="true" type="upgrade">
@@ -2588,6 +2669,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2682,6 +2764,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="3be9-0508-9878-ab5f" name="Underslung Heavy Flamer" hidden="false" collective="false" import="true" type="upgrade">
@@ -2692,12 +2775,14 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="3f44-8e56-77b0-0630" name="autocarbine hit(re-roll)" hidden="false" collective="false" import="true" type="upgrade">
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2732,6 +2817,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                     <selectionEntry id="f5ac-24df-8663-80fc" name="2x Kill Saw" hidden="false" collective="false" import="true" type="upgrade">
@@ -2742,6 +2828,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                       <costs>
                         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
@@ -2774,6 +2861,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="7938-ca27-b248-dbba" name="Extra Strike(1)" hidden="false" collective="true" import="true" type="upgrade">
@@ -2783,6 +2871,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="8c0c-56a5-1feb-0a0d" name="Armoured Truck" hidden="false" collective="false" import="true" type="model">
@@ -2835,6 +2924,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="feb6-b522-9fa7-3baf" name="Mutant Walking Tank" hidden="false" collective="false" import="true" type="unit">
@@ -2867,6 +2957,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="160.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2889,6 +2980,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="fb3b-eed7-cf22-9762" name="Plasma carbine and Custom plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
@@ -2904,6 +2996,7 @@ Mutant Momentum: Spend one (1) Faction Point:
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -2939,6 +3032,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="e3c8-3c38-0eb2-46cd" name="Paint Booster" hidden="false" collective="false" import="true" type="upgrade">
@@ -2948,6 +3042,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="b442-4ce2-693e-a800" name="Mutant Medic" hidden="false" collective="false" import="true" type="model">
@@ -2975,6 +3070,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="24fb-fb9a-1bc4-5d7a" name="Small Mutants" hidden="false" collective="false" import="true" type="model">
@@ -3006,6 +3102,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3014,6 +3111,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="951d-a5e9-8d60-307d" name="Pistol" hidden="false" collective="true" import="true" type="upgrade">
@@ -3024,6 +3122,7 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ca68-49d7-f903-eea0" name="Mutant Trample Walker" hidden="true" collective="false" import="true" type="unit">
@@ -3034,6 +3133,9 @@ Mutant Momentum: Spend one (1) Faction Point:
           </conditions>
         </modifier>
       </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="afdf-1990-d97c-d988" type="max"/>
+      </constraints>
       <categoryLinks>
         <categoryLink id="d86d-8084-d9ab-3194" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -3110,6 +3212,7 @@ Mutant Momentum: Spend one (1) Faction Point:
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="750.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -3118,6 +3221,21 @@ Mutant Momentum: Spend one (1) Faction Point:
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e60b-8d9d-993f-4e88" name="Mutant Momentum" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b8f0-bd69-5157-6931" name="Mutant Momentum" hidden="false" targetId="8c23-0adc-4fa5-7f9d" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="b24f-2277-d695-3fd6" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="false"/>
+        <categoryLink id="053a-56e3-588c-c72d" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
   </sharedSelectionEntries>
@@ -3267,9 +3385,15 @@ Mutant Momentum: Spend one (1) Faction Point:
     <rule id="89a1-563e-03be-bdac" name="Small Mutant" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false">
       <description>Sacrifice model to either ignore difficult and dangerous terrain for one (1) move, or count all weapons in unit as Masterwork for one (1) attack.</description>
     </rule>
+    <rule id="8c23-0adc-4fa5-7f9d" name="Mutant Momentum" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false">
+      <description>Spend one (1) Faction Point:
+● “Raaaaaargh!!”: one (1) unit gets Relentless Assault until end of turn, and ignores difficult terrain for CC attacks.
+● “You there! Join up!”: in the endphase, one (1) non-vehicle unit which has lost models may merge with a larger non-vehicle unit within 6” (remove the smaller unit’s action markers).
+● “Move, Move, Move!”: one (1) unit may make a 6” move after enemy within 2” makes withdrawal move or is wiped out with CC attacks.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
-    <profile id="fada-044c-4ebe-9645" name="Small Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="fada-044c-4ebe-9645" name="Mu. Small Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3279,25 +3403,25 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f3b-0d7e-8138-f201" name="Truck" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="0f3b-0d7e-8138-f201" name="Mu. Truck" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="cf4c-0711-6e8f-ec6f" name="Armoured Truck" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="cf4c-0711-6e8f-ec6f" name="Mu. Armoured Truck" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="75ef-d705-2eda-3b8b" name="Biker" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="75ef-d705-2eda-3b8b" name="Mu. Biker" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3307,7 +3431,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="1f0e-466c-a4f2-e4c0" name="Ganger" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="1f0e-466c-a4f2-e4c0" name="Mu. Ganger" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3317,25 +3441,25 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="82f5-06db-e4e0-5681" name="Quadbike(wheeled)" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="82f5-06db-e4e0-5681" name="Mu. Quadbike(wheeled)" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="53a5-575c-f679-e057" name="Quadbike(tracked)" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="53a5-575c-f679-e057" name="Mu. Quadbike(tracked)" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, light)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="7808-adbd-6e1d-7f27" name="Jump Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="7808-adbd-6e1d-7f27" name="Mu. Jump Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(jump)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3345,7 +3469,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="ec00-fe6b-b03f-5eff" name="Specialist" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ec00-fe6b-b03f-5eff" name="Mu. Specialist" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3355,7 +3479,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="676a-14bd-a2ab-cf03" name="Commando" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="676a-14bd-a2ab-cf03" name="Mu. Commando" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3365,7 +3489,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="ddff-11d2-5474-2ada" name="Mini-heli" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="ddff-11d2-5474-2ada" name="Mu. Mini-heli" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3375,7 +3499,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
       </characteristics>
     </profile>
-    <profile id="caa4-e890-a722-cbc1" name="Mystic" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="caa4-e890-a722-cbc1" name="Mu. Mystic" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3385,7 +3509,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0780-edab-348b-c3db" name="Minders" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="0780-edab-348b-c3db" name="Mu. Minders" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
@@ -3395,7 +3519,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="76fe-ded2-1b04-caad" name="Small Walker" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="76fe-ded2-1b04-caad" name="Mu. Small Walker" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Walker</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3405,7 +3529,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="221a-2a3e-22e7-a3fe" name="Big Walker" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="221a-2a3e-22e7-a3fe" name="Mu. Big Walker" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Walker</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3415,7 +3539,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="3ba4-80a9-0527-5501" name="Big Gun" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="3ba4-80a9-0527-5501" name="Mu. Big Gun" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3425,16 +3549,16 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1401-ae7e-f0b2-3c81" name="Mounted Big Gun" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1401-ae7e-f0b2-3c81" name="Mu. Mounted Big Gun" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled, open)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
-    <profile id="4ff2-0e16-ca70-ab5d" name="Mutant Boss" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="4ff2-0e16-ca70-ab5d" name="Mu. Boss" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
@@ -3444,7 +3568,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="5445-4e67-4bd5-fe7d" name="Mutant Senior Mechanic" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="5445-4e67-4bd5-fe7d" name="Mu. Senior Mechanic" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3454,16 +3578,16 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="1a4f-f3f0-16a5-ad69" name="Mutant Aircraft" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="1a4f-f3f0-16a5-ad69" name="Mu. Aircraft" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
       </characteristics>
     </profile>
-    <profile id="93f2-8761-a264-1b7b" name="Mutant Large Battle-Vehicle" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
+    <profile id="93f2-8761-a264-1b7b" name="Mu. Large Battle-Vehicle" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Transport">
       <characteristics>
         <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Vehicle(tracked, open)</characteristic>
         <characteristic name="Defence" typeId="b07e-740c-af96-1c4b">11/8</characteristic>
@@ -3471,7 +3595,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">20</characteristic>
       </characteristics>
     </profile>
-    <profile id="2f90-6f8f-5183-eb14" name="Big Mutant" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="2f90-6f8f-5183-eb14" name="Mu. Big Mutant" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3481,16 +3605,16 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="0f47-a0e6-c373-63ce" name="Mutant Walking Tank" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="0f47-a0e6-c373-63ce" name="Mu. Walking Tank" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10/9</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="b009-3ea1-42fc-5f9e" name="Big Mutant Boss" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="b009-3ea1-42fc-5f9e" name="Mu. Big Mutant Boss" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3500,7 +3624,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="c7f1-1704-9688-fb51" name="Mutant Medic" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="c7f1-1704-9688-fb51" name="Mu. Medic" publicationId="81dd-fe5f-c233-17c5" page="81" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
@@ -3510,7 +3634,7 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="423f-a159-b190-4882" name="Small Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Unit">
+    <profile id="423f-a159-b190-4882" name="Mu. Small Mutant" publicationId="81dd-fe5f-c233-17c5" page="80" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <comment>upgrade</comment>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
@@ -3521,10 +3645,10 @@ Mutant Momentum: Spend one (1) Faction Point:
         <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="48f2-4441-13b4-a720" name="Mutant Trample Walker" publicationId="e42d-4466-8267-ac1b" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="48f2-4441-13b4-a720" name="Mu. Trample Walker" publicationId="e42d-4466-8267-ac1b" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker)</characteristic>
-        <characteristic name="Wound" typeId="0856-73ac-860b-c2f3">10</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">10</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">20</characteristic>
         <characteristic name="Move" typeId="2760-e837-ae05-5d45">6</characteristic>
