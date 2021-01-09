@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="11" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="12" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first edition, third print of F28 (F28 1ED3P) and the first edition, first print of the Players Guide (PG 1ED1P). Alla factions from the rulebook is avalible in BattleScribe with the added units and assets in the players guide. The new factions from the players guide is still in development. 
@@ -142,7 +142,23 @@ The Smiths of A.R.E.S. (PG)</readme>
   <entryLinks>
     <entryLink id="971b-b71d-5206-7985" name="Command Entry" hidden="false" collective="false" import="true" targetId="3602-7848-97fd-f38a" type="selectionEntry"/>
     <entryLink id="32d2-6950-06e0-6437" name="Special Entry" hidden="false" collective="false" import="true" targetId="3e6b-b8cc-4735-9bf9" type="selectionEntry"/>
-    <entryLink id="f59a-5cba-8219-9e94" name="Upgrades" hidden="false" collective="false" import="true" targetId="9c41-c9a2-5e03-009a" type="selectionEntry"/>
+    <entryLink id="f59a-5cba-8219-9e94" name="Upgrades" hidden="false" collective="false" import="true" targetId="9c41-c9a2-5e03-009a" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="2.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46ba-4be1-1f48-01b2" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="214b-6888-0c6c-b708" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfaa-2ffd-f0fb-ca31" type="min"/>
+      </constraints>
+    </entryLink>
     <entryLink id="35cb-976c-4a25-b5ba" name="+1 FP Power" hidden="false" collective="false" import="true" targetId="b424-e987-ac82-a8c8" type="selectionEntry">
       <modifiers>
         <modifier type="increment" field="07e4-c03c-bb89-b27b" value="1.0">
@@ -155,8 +171,35 @@ The Smiths of A.R.E.S. (PG)</readme>
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="07e4-c03c-bb89-b27b" type="min"/>
       </constraints>
     </entryLink>
-    <entryLink id="3442-ae17-4155-6684" name="Allied Core Entry" hidden="false" collective="false" import="true" targetId="6356-79e6-70fb-8add" type="selectionEntry"/>
-    <entryLink id="88dd-2ef6-e71b-2839" name="Allied Special Entry" hidden="false" collective="false" import="true" targetId="9e7e-75ac-b802-4d14" type="selectionEntry"/>
+    <entryLink id="3442-ae17-4155-6684" name="Allied Core Entry" hidden="false" collective="false" import="true" targetId="6356-79e6-70fb-8add" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="9e26-70e8-386e-d732" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="214b-6888-0c6c-b708" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="increment" field="9e26-70e8-386e-d732" value="2.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa24-c222-814d-cf74" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e26-70e8-386e-d732" type="min"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="88dd-2ef6-e71b-2839" name="Allied Special Entry" hidden="false" collective="false" import="true" targetId="9e7e-75ac-b802-4d14" type="selectionEntry">
+      <modifiers>
+        <modifier type="increment" field="03f2-7e96-8598-7270" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c614-56d3-c8fd-fab4" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f2-7e96-8598-7270" type="min"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="4abf-3f4b-1af5-e9d2" name="Thrust Pack" hidden="false" collective="false" import="true" type="upgrade">
@@ -5587,6 +5630,26 @@ The Smiths of A.R.E.S. (PG)</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="aa24-c222-814d-cf74" name="+2 Allied Core Entry" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3002-7aee-831f-c4a6" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="46ba-4be1-1f48-01b2" name="+2 Upgrades" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="03fa-f595-be67-5245" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="c614-56d3-c8fd-fab4" name="+1 Allied Special Entry" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a5b-2924-d019-4db9" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="214b-6888-0c6c-b708" name="+1 Allied Core Entry and +1 Upgrade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cd06-9225-89ab-fcb4" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
@@ -6005,7 +6068,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
       <description>Concealment and Antiair attacks lose re-roll until end of turn, one use.</description>
     </rule>
     <rule id="5a96-405e-9c5b-8549" name="Disruption(6&quot;)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Enemies within distance may not remove extra action markers in endphase.</description>
+      <description>Enemies within 6&quot; may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="6d4f-c49b-cca5-4385" name="Composed Pilot" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false">
       <description>Ignore rolls of ‘1’ on the vehicle damage table.</description>
@@ -6041,7 +6104,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
       <description>Wound(+1) and reach(+1) for CC attacks.</description>
     </rule>
     <rule id="6721-d6bf-3c74-4af1" name="Disruption(18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Enemies within distance may not remove extra action markers in endphase.</description>
+      <description>Enemies within 18&quot; may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
@@ -6270,7 +6333,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
     </rule>
     <rule id="9d23-b60f-76e8-97dd" name="Bestow Masterwork(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>All models in units within 12&quot; gains ability: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>All models in units within 12&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="99aa-f2f8-b3b8-03d2" name="Robust(1)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <description>-1 modifier on damage table.</description>
@@ -6336,7 +6399,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>Models with this trait in the same unit act as a single Mystic, adding their mystic levels. Fractions of a level are rounded down.
 Example: a unit with Mystic Group (1/3) has six (6) models - until it loses its first model, it acts as a mystic with two (2) dice.</description>
     </rule>
-    <rule id="6a7c-7309-8dcd-4ec0" name="Tidemind Mystic(x)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+    <rule id="6a7c-7309-8dcd-4ec0" name="Tidemind Mystic(level)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
@@ -6446,6 +6509,89 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
     <rule id="9c6a-39e0-9a21-cecb" name="Inflict Tough(0) (12&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Enemy units within 12&quot; suffer: Tough(0)</description>
+    </rule>
+    <rule id="0527-8690-35c7-a862" name="Attack Dice(x2)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>Models number of attack dice is modified by x2.</description>
+    </rule>
+    <rule id="230d-f0ab-0e26-9e9c" name="Attack Dice(x3)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>Models number of attack dice is modified by x3.</description>
+    </rule>
+    <rule id="a466-0c31-3c2a-1cd9" name="Attack Dice(x4)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>Models number of attack dice is modified by x4.</description>
+    </rule>
+    <rule id="87a6-e1d6-807a-da3e" name="Fateweawing Mystic(level)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="27df-9015-c766-0259" name="Bestow Masterwork (6”, seelie constructs)" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
+      <description>ll models in units within 12&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+    </rule>
+    <rule id="3f3d-0f36-7a54-fc77" name="Move(18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(18&quot;) with each move.</description>
+    </rule>
+    <rule id="6974-f868-5fce-cb86" name="Disruption(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <description>Enemies within 12&quot; may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="7667-845a-bb8f-0d4b" name="Alchemy Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="fa33-9022-b4ac-6a11" name="Alchemy Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="936e-2a41-866e-8071" name="Alchemy Mystic(x)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="c3ee-c8b5-e630-dc08" name="Alchemy Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="2e59-2cb1-5779-54a2" name="Weird Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="f3a1-5475-c93e-b996" name="Weird Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="01cd-0c83-6d27-c67b" name="Weird Mystic(level)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="1182-25be-a139-f55c" name="Weird Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="4d5b-ae15-ec53-05d6" name="Telepath Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="eefb-87a4-2d76-308b" name="Telepath Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="8871-a3d5-02d4-1674" name="Telepath Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    </rule>
+    <rule id="2e89-97f3-0212-4add" name="Telepath Mystic(x)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+
+Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
