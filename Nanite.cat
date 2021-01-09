@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ab42-0171-ff50-7669" name="The Nanite Resurrection" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ab42-0171-ff50-7669" name="The Nanite Resurrection" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1604,6 +1604,35 @@ FP: Faction Points</readme>
               </selectionEntries>
               <entryLinks>
                 <entryLink id="466e-ca1d-4244-25b2" name="Adaption Protocols" hidden="false" collective="false" import="true" targetId="e910-f8fe-c00b-9fbb" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a315-3191-e4bf-f852" name="Options (Adaption Protocols)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="466e-ca1d-4244-25b2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="6940-229d-ce1b-9306" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="466e-ca1d-4244-25b2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="553d-d20f-1341-78ef" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="0521-20af-336b-3c2d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="466e-ca1d-4244-25b2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="553d-d20f-1341-78ef" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6940-229d-ce1b-9306" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="d04c-9734-0b74-9187" name="+1 Allied Special Entry" hidden="false" collective="false" import="true" targetId="c614-56d3-c8fd-fab4" type="selectionEntry"/>
+                <entryLink id="0c3b-ce4b-fecf-da4c" name="+2 Allied Core Entry" hidden="false" collective="false" import="true" targetId="aa24-c222-814d-cf74" type="selectionEntry"/>
+                <entryLink id="2110-71b5-7a1c-1cf0" name="+2 Upgrades" hidden="false" collective="false" import="true" targetId="46ba-4be1-1f48-01b2" type="selectionEntry"/>
+                <entryLink id="861e-ff41-c2e1-9e8d" name="1+ Upgrade and +1 Allied Core Entry" hidden="false" collective="false" import="true" targetId="214b-6888-0c6c-b708" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
