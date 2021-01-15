@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -64,12 +64,12 @@ FP: Faction Points</readme>
     </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
-    <selectionEntry id="2d76-0aca-1b35-9d6e" name="Chamber Squad" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="2d76-0aca-1b35-9d6e" name="Chamber Squad" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="b902-c018-1af4-8889" name="Core" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="7154-5ddf-0806-3cb2" name="Chamber Soldiers" hidden="false" collective="false" import="true" defaultSelectionEntryId="7060-febb-3595-b439">
+        <selectionEntryGroup id="7154-5ddf-0806-3cb2" name="Chamber Soldiers (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="7060-febb-3595-b439">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a8-7001-f220-b1b0" type="min"/>
           </constraints>
@@ -137,7 +137,7 @@ FP: Faction Points</readme>
                 <entryLink id="f8f6-1c93-c45c-2a25" name="Slugger" hidden="false" collective="false" import="true" targetId="9af3-b6c0-36fc-76a2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b607-87d7-e511-65e4" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bd-3c5d-46c7-954a" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89bd-3c5d-46c7-954a" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="878c-2b44-350f-177f" name="Specalist Weapons" hidden="false" collective="false" import="true" targetId="294e-b18f-79e2-6733" type="selectionEntryGroup">
@@ -179,7 +179,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8a88-dd73-4c6e-fd2a" name="Chamber APC" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="8a88-dd73-4c6e-fd2a" name="Chamber APC" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="17c2-642a-bfde-dd5b" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -196,10 +196,11 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="2c98-3718-2718-8d16" name="APC" hidden="false" targetId="f615-80c8-817b-7cba" type="profile"/>
+                <infoLink id="028d-75c4-4bc3-ad9e" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -226,8 +227,8 @@ FP: Faction Points</readme>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="40.0"/>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ea46-c372-7a0d-b244" name="Chamber IFV" hidden="false" collective="false" import="true" type="unit">
@@ -251,7 +252,7 @@ FP: Faction Points</readme>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -263,28 +264,17 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d2a5-dae8-6de5-e57c" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="c0d1-e4a8-49dc-8f5d" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="785e-7fe5-8666-3522" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="c0d1-e4a8-49dc-8f5d" name="Dual HMG" hidden="false" collective="false" import="true" targetId="9bc9-8aed-06cb-0fe1" type="selectionEntry"/>
                 <entryLink id="5876-58c6-1727-7183" name="Dual LATCannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="92b2-6625-9e38-cf6e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1fa0-fa6e-bb01-ec34" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0f18-853d-726c-b86d" name="Dual Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7346-6ed0-93f5-1e42" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="0f18-853d-726c-b86d" name="Dual Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry"/>
                 <entryLink id="b318-d7de-a755-4b02" name="Dual Heat Cannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="6fff-fbca-39a3-73b8" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f63e-fb8a-1772-63ce" type="max"/>
-                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -297,11 +287,11 @@ FP: Faction Points</readme>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bc2d-f923-bf2f-1e3e" name="Chamber Insertion Capsule" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="bc2d-f923-bf2f-1e3e" name="Chamber Insertion Capsule" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="1874-8c83-9fc2-46bf" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -373,6 +363,9 @@ FP: Faction Points</readme>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="555e-bd4b-f478-7ffc" name="Chamber Captain" hidden="false" collective="false" import="true" defaultSelectionEntryId="8cc9-dd0c-8cbf-8679">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8cbe-e27c-bd3b-dfef" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="8cc9-dd0c-8cbf-8679" name="Chamber Captain" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -417,7 +410,7 @@ FP: Faction Points</readme>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
@@ -530,11 +523,11 @@ FP: Faction Points</readme>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="93a6-8643-2ebc-4eb8" name="Chamber Tank" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="93a6-8643-2ebc-4eb8" name="Chamber Tank" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="5e94-950a-75aa-3e6b" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -622,7 +615,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c551-a86a-0236-3e48" name="Chamber Assault Squad" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="c551-a86a-0236-3e48" name="Chamber Assault Squad" page="" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="8882-253b-967f-1dba">
           <conditions>
@@ -639,7 +632,7 @@ FP: Faction Points</readme>
         <categoryLink id="ee75-0264-77ea-96ca" name="Core" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="104b-85fc-ac40-e591" name="Chamber Assault Soldiers" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ce4-b921-9edf-833c">
+        <selectionEntryGroup id="104b-85fc-ac40-e591" name="Chamber Assault Soldiers (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3ce4-b921-9edf-833c">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a2c-92e5-dc21-7549" type="min"/>
           </constraints>
@@ -695,7 +688,7 @@ FP: Faction Points</readme>
                 <entryLink id="7a8a-2028-565f-40c8" name="Slug Pistol and Vibrosword" hidden="false" collective="false" import="true" targetId="2228-afb3-da07-a3ec" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4a-e5d0-1386-fe12" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b9e-8f54-e303-f2f1" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b9e-8f54-e303-f2f1" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="5d76-4ddd-6b5e-b0a4" name="Specalist Weapons" hidden="false" collective="false" import="true" targetId="294e-b18f-79e2-6733" type="selectionEntryGroup">
@@ -760,12 +753,12 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cbfe-1b77-ed3a-30c8" name="Chamber Veteran Squad" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="cbfe-1b77-ed3a-30c8" name="Chamber Veteran Squad" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="0c98-0144-bb80-1727" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0a64-a78b-4f1c-15f7" name="Chamber Veteran Soldiers" hidden="false" collective="false" import="true" defaultSelectionEntryId="a118-4710-25cb-0ff6">
+        <selectionEntryGroup id="0a64-a78b-4f1c-15f7" name="Chamber Veteran Soldiers (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="a118-4710-25cb-0ff6">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e9f6-d02e-1e19-14ef" type="min"/>
           </constraints>
@@ -834,14 +827,14 @@ FP: Faction Points</readme>
                 <entryLink id="fbaf-c55a-07a7-8b87" name="Slugger" hidden="false" collective="false" import="true" targetId="9af3-b6c0-36fc-76a2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91be-23ec-3337-19c4" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a054-f54a-21e7-02fb" type="min"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a054-f54a-21e7-02fb" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="2a5e-1e33-e6f6-6f8b" name="Specalist Weapons" hidden="false" collective="false" import="true" targetId="294e-b18f-79e2-6733" type="selectionEntryGroup">
                   <modifiers>
                     <modifier type="decrement" field="5363-3c7f-9336-d062" value="1.0">
                       <conditions>
-                        <condition field="selections" scope="cbfe-1b77-ed3a-30c8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecf2-b0bc-717d-ad3c" type="greaterThan"/>
+                        <condition field="selections" scope="cbfe-1b77-ed3a-30c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecf2-b0bc-717d-ad3c" type="equalTo"/>
                       </conditions>
                     </modifier>
                     <modifier type="set" field="5363-3c7f-9336-d062" value="0.0">
@@ -876,16 +869,16 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="eb53-9605-057c-618e" name="Chamber Scout Squad" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="eb53-9605-057c-618e" name="Chamber Scout Squad" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="8882-253b-967f-1dba">
           <conditions>
-            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="81b0-0d12-1afc-d3a1" type="equalTo"/>
+            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d153-e2c5-7ae1-8075" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="remove" field="category" value="3c56-72a8-f435-00f6">
           <conditions>
-            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="81b0-0d12-1afc-d3a1" type="equalTo"/>
+            <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="d153-e2c5-7ae1-8075" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -893,7 +886,7 @@ FP: Faction Points</readme>
         <categoryLink id="2202-65f3-8246-b09f" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="dbe3-7157-81ba-603b" name="Chamber Scouts" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" defaultSelectionEntryId="cacc-264d-ea7c-79e9">
+        <selectionEntryGroup id="dbe3-7157-81ba-603b" name="Chamber Scouts (3-5)" hidden="false" collective="false" import="true" defaultSelectionEntryId="cacc-264d-ea7c-79e9">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca21-5aba-3169-211d" type="min"/>
           </constraints>
@@ -985,31 +978,31 @@ FP: Faction Points</readme>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="91fe-d3c4-180e-d852" name="Options" hidden="false" collective="false" import="true">
+              <entryLinks>
+                <entryLink id="fae6-35f1-5caa-01c7" name="Infiltrate" hidden="false" collective="false" import="true" targetId="d153-e2c5-7ae1-8075" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="95b5-c653-a5e7-8869" value="2.0">
+                      <repeats>
+                        <repeat field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cacc-264d-ea7c-79e9" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5337-bac5-7629-9997" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="68d7-e9fe-87a6-8b6a" name="Insertion Beacon" hidden="false" collective="false" import="true" targetId="01c1-d023-6c70-ee3e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6831-709f-8e53-b519" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
-        </selectionEntryGroup>
-        <selectionEntryGroup id="f914-0742-cee2-d040" name="Options" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="81b0-0d12-1afc-d3a1" name="Infiltrate" hidden="false" collective="false" import="true" targetId="d153-e2c5-7ae1-8075" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="95b5-c653-a5e7-8869" value="2.0">
-                  <repeats>
-                    <repeat field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9cae-10bc-1dd3-fcf8" type="max"/>
-              </constraints>
-            </entryLink>
-            <entryLink id="a102-45ca-7b4c-c5bf" name="Insertion Beacon" hidden="false" collective="false" import="true" targetId="01c1-d023-6c70-ee3e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3bd-4177-93e0-c1d0" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="7ecb-a344-0354-8019" name="Transport Options" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -1036,7 +1029,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e95c-458a-a89f-6cdb" name="Chamber Light Hovercraft Transport" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="e95c-458a-a89f-6cdb" name="Chamber Light Hovercraft Transport" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="733b-2f41-8c30-7585" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
@@ -1120,12 +1113,15 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="db64-49ea-d95c-a152" name="Chamber Chaplain" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="db64-49ea-d95c-a152" name="Chamber Chaplain" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="db39-7d6f-715a-55c8" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="943d-703b-24e3-c53e" name="Chamber Chaplain" hidden="false" collective="false" import="true" defaultSelectionEntryId="4b29-af68-c353-4347">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c9d-798f-c7e0-0062" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="4b29-af68-c353-4347" name="Chamber Chaplain" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1362,7 +1358,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0874-099d-96db-2a73" name="Chamber Medic" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="model">
+    <selectionEntry id="0874-099d-96db-2a73" name="Chamber Medic" hidden="false" collective="false" import="true" type="model">
       <infoLinks>
         <infoLink id="b6db-6eb5-067e-e00e" name="Chamber Medic" hidden="false" targetId="6c2a-7217-3887-a63e" type="profile">
           <modifiers>
@@ -1485,12 +1481,12 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0d2c-47cb-8cdb-8d4b" name="Chamber Heavy Weapon Squad" publicationId="aae0-5552-35a8-74d6" page="78" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="0d2c-47cb-8cdb-8d4b" name="Chamber Heavy Weapon Squad" page="" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="d04a-2dc6-b9cd-1bf4" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1e6f-a7e2-3b24-d06d" name="Chamber Heavy Weapon Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="e4fb-fed0-b02d-5abe">
+        <selectionEntryGroup id="1e6f-a7e2-3b24-d06d" name="Chamber Heavy Weapon Squad (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="e4fb-fed0-b02d-5abe">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbd9-4ab2-2f4b-ac33" type="min"/>
           </constraints>
@@ -1553,7 +1549,7 @@ FP: Faction Points</readme>
                 <entryLink id="2416-8a0c-cecc-b065" name="Slugger" hidden="false" collective="false" import="true" targetId="9af3-b6c0-36fc-76a2" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9490-abd9-eb0a-bf1c" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1b-dc07-f63b-4f77" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa1b-dc07-f63b-4f77" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1583,6 +1579,9 @@ FP: Faction Points</readme>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="3849-6fce-841e-cc30" name="Chamber Mystic" hidden="false" collective="false" import="true" defaultSelectionEntryId="6487-a7e3-7a37-7ff0">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ef39-c195-9895-3fde" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="6487-a7e3-7a37-7ff0" name="Chamber Mystic" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -1667,9 +1666,15 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="b72b-4486-1cf2-1598" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="714f-1881-420d-8548" type="equalTo"/>
                       </conditions>
                     </modifier>
+                    <modifier type="increment" field="0cb4-5b2a-edfd-c83a" value="1.0">
+                      <conditions>
+                        <condition field="selections" scope="b72b-4486-1cf2-1598" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="714f-1881-420d-8548" type="equalTo"/>
+                      </conditions>
+                    </modifier>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e87c-ce36-c41a-ee8f" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cb4-5b2a-edfd-c83a" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1752,7 +1757,7 @@ FP: Faction Points</readme>
         <categoryLink id="a6a8-06ec-47ed-a699" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c89f-f70f-56f0-31f0" name="Chamber Man-Tank Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="6445-3682-05d7-b3ed">
+        <selectionEntryGroup id="c89f-f70f-56f0-31f0" name="Chamber Man-Tank Squad (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="6445-3682-05d7-b3ed">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4245-6afa-3d7d-24d7" type="min"/>
           </constraints>
@@ -1803,13 +1808,13 @@ FP: Faction Points</readme>
               <selectionEntryGroups>
                 <selectionEntryGroup id="65da-6220-acea-f6e9" name="Range" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="860f-b58d-bd3c-2860" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="f460-0735-0725-f36e" type="selectionEntry"/>
+                    <entryLink id="860f-b58d-bd3c-2860" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry"/>
                     <entryLink id="5951-ce93-7453-5973" name="Vibro-Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="b333-eda6-7d95-df22" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="6fec-23f5-70f2-ee90" name="Assault" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="78e3-5490-2fdf-e30f" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" targetId="093a-2f5f-cdfa-5bcb" type="selectionEntry"/>
+                    <entryLink id="78e3-5490-2fdf-e30f" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" targetId="c02b-f217-0c54-ccf6" type="selectionEntry"/>
                     <entryLink id="0bca-5698-9a5b-b67a" name="Lightning Hammer and Assault Shield" hidden="false" collective="false" import="true" targetId="266d-9583-9408-9b97" type="selectionEntry"/>
                   </entryLinks>
                 </selectionEntryGroup>
@@ -1853,12 +1858,12 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5740-ce0b-0648-caab" name="Chamber Light Hovercraft" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="5740-ce0b-0648-caab" name="Chamber Light Hovercraft" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
         <categoryLink id="a216-0254-3a61-7c3d" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="32ca-8a3d-238c-b9eb" name="Chamber Light Hovercraft" hidden="false" collective="false" import="true" defaultSelectionEntryId="9174-9fd6-bd65-89ee">
+        <selectionEntryGroup id="32ca-8a3d-238c-b9eb" name="Chamber Light Hovercraft (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="9174-9fd6-bd65-89ee">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d4b-3417-e34a-2cfc" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4879-9780-44b0-27c8" type="min"/>
@@ -1969,10 +1974,10 @@ FP: Faction Points</readme>
     </selectionEntry>
     <selectionEntry id="0dc4-097d-f28e-5209" name="Chamber Bike Squad" hidden="false" collective="false" import="true" type="unit">
       <categoryLinks>
-        <categoryLink id="f51a-e6e1-7aa7-1b89" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+        <categoryLink id="0707-7796-abbc-b8ab" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="d56d-bd42-2429-f056" name="Chamber Bikes" hidden="false" collective="false" import="true" defaultSelectionEntryId="42fe-5df5-2a83-3ce6">
+        <selectionEntryGroup id="d56d-bd42-2429-f056" name="Chamber Bikes (3-9)" hidden="false" collective="false" import="true" defaultSelectionEntryId="42fe-5df5-2a83-3ce6">
           <constraints>
             <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1850-1972-881d-28af" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ecb4-729e-3984-44e5" type="min"/>
@@ -2012,7 +2017,7 @@ FP: Faction Points</readme>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
-        <selectionEntryGroup id="feef-daa6-753e-095b" name="Chamber Attack Bikes" hidden="false" collective="false" import="true" defaultSelectionEntryId="90f3-ad68-7a7d-898b">
+        <selectionEntryGroup id="feef-daa6-753e-095b" name="Chamber Attack Bikes (0-2)" hidden="false" collective="false" import="true" defaultSelectionEntryId="90f3-ad68-7a7d-898b">
           <modifiers>
             <modifier type="set" field="8bfc-2a71-100d-374e" value="0.0">
               <conditions>
@@ -2388,7 +2393,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5f26-8797-47ae-befd" name="Chamber Combat Drop" publicationId="ddee-15a6-f17c-590a" page="4" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5f26-8797-47ae-befd" name="Chamber Combat Drop" page="" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2181-89b6-d57b-8718" name="Combat Drop" hidden="false" targetId="712b-8c1c-2ee2-b1de" type="rule"/>
       </infoLinks>
@@ -2421,33 +2426,11 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f460-0735-0725-f36e" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="a081-a884-1d6c-e36f" name="Storm Slugger" hidden="false" targetId="3e2c-54c3-8b2b-c7d9" type="profile"/>
-        <infoLink id="ed86-0d6a-5359-5d1f" name="Energy Fist" hidden="false" targetId="27da-2728-e0de-71c9" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="266d-9583-9408-9b97" name="Lightning Hammer and Assault Shield" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d206-76b9-8150-be31" name="Lightning Hammer" hidden="false" targetId="7179-cab6-866e-56d6" type="profile"/>
         <infoLink id="808a-aed9-e8ce-b019" name="Assault Shield" hidden="false" targetId="1770-005b-7ed9-6a21" type="rule"/>
         <infoLink id="db43-39d8-5765-ba99" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="093a-2f5f-cdfa-5bcb" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="e4e1-62fe-f8d2-f7c1" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
-        <infoLink id="b5c4-7d8e-567d-d278" name="Paired Energy Combat Claws" hidden="false" targetId="3180-bce3-ae15-2b35" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2477,7 +2460,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df25-b7ee-195a-0183" name="Slugger w/ Underslung Specalist Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="df25-b7ee-195a-0183" name="Slugger w/ Underslung Specalist Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3b60-4187-46e0-2607" name="Slugger" hidden="false" targetId="de65-91da-25ce-abf1" type="profile"/>
         <infoLink id="b986-f0ad-fd78-c0cd" name="Underslung Weapon" hidden="false" targetId="2de1-86d1-fd25-c8e1" type="rule"/>
@@ -2492,6 +2475,7 @@ FP: Faction Points</readme>
       <comment>Transport (no Category, no unit, no cost)</comment>
       <infoLinks>
         <infoLink id="7894-7c1d-d661-3858" name="APC" hidden="false" targetId="f615-80c8-817b-7cba" type="profile"/>
+        <infoLink id="cdaf-955d-4f45-a51c" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
       </infoLinks>
       <entryLinks>
         <entryLink id="fa3d-a499-7032-d701" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="d18a-1941-f3b6-592c" type="selectionEntryGroup"/>
@@ -2550,6 +2534,9 @@ FP: Faction Points</readme>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c02-bc7e-ccf6-6e5c" type="max"/>
               </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+              </costs>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -2678,7 +2665,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6cc7-b219-f914-6fbe" name="Energy Axe and Slug Pistol" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6cc7-b219-f914-6fbe" name="Energy Axe and Slug Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="cb43-90ad-44e6-ed1e" name="Energy Axe" hidden="false" targetId="bf31-a83e-7c4f-f35d" type="profile"/>
         <infoLink id="e657-2ab2-2b1c-c1af" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
@@ -2702,7 +2689,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d817-f651-b06f-07ad" name="Energy Sword and Slug Pistol" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d817-f651-b06f-07ad" name="Energy Sword and Slug Pistol" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c412-4c08-dd0d-bf8d" name="Energy Sword" hidden="false" targetId="5908-bb28-058c-7727" type="profile"/>
         <infoLink id="19a8-2ff7-b77f-be93" name="Slug Pistol" hidden="false" targetId="95ea-a0c1-fac8-9020" type="profile"/>
@@ -3620,7 +3607,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="aca0-1ec4-bb4e-2df1" name="Dual Slugger" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="aca0-1ec4-bb4e-2df1" name="Dual Slugger" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="057d-908e-0e38-d198" name="Slugger" hidden="false" targetId="de65-91da-25ce-abf1" type="profile">
           <modifiers>
