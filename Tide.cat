@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="11" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -60,7 +60,7 @@ FP: Faction Points</readme>
         <categoryLink id="702b-78cf-0c39-33be" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="6c8c-5876-7105-f130" name="Tide Muncher Swarm" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7ff-7969-d300-7e1f">
+        <selectionEntryGroup id="6c8c-5876-7105-f130" name="Tide Muncher Swarm (3-6)" hidden="false" collective="false" import="true" defaultSelectionEntryId="a7ff-7969-d300-7e1f">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2ee-c060-a0ab-f2a7" type="min"/>
           </constraints>
@@ -114,6 +114,7 @@ FP: Faction Points</readme>
                 <entryLink id="4ffb-2e8d-25b9-0a8a" name="Basic CC" hidden="false" collective="false" import="true" targetId="0aef-c316-7181-61ca" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e44a-35e6-765c-226a" type="max"/>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c29-dbab-35dc-079d" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -151,7 +152,7 @@ FP: Faction Points</readme>
         <categoryLink id="0910-a0ce-32c8-cfed" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="1b76-c287-c23c-2ed1" name="Tide Small Beast Group" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb77-e98e-bb36-9c20">
+        <selectionEntryGroup id="1b76-c287-c23c-2ed1" name="Tide Small Beast Group (10-20)" hidden="false" collective="false" import="true" defaultSelectionEntryId="fb77-e98e-bb36-9c20">
           <constraints>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="998c-39d8-ee94-9703" type="min"/>
           </constraints>
@@ -201,21 +202,33 @@ FP: Faction Points</readme>
               <selectionEntries>
                 <selectionEntry id="4a46-c0ab-88d1-c53b" name="Pistol and Move(nimble)" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="c4cd-12e7-c963-2ad1" name="Pistol" hidden="false" targetId="730e-f2a9-b6f6-114b" type="profile"/>
-                    <infoLink id="0183-de80-88b8-b81f" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
                     <infoLink id="4833-dfbf-f8af-76db" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink id="655d-0a5a-f19b-bf8c" name="Pistol" hidden="false" collective="false" import="true" targetId="fd64-e116-77fe-2e1d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="501c-7b39-c16a-6bf1" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb5e-090f-e5f4-71d7" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="cb83-35e6-9a98-4241" name="Charge(3) and Basic CC" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="56f7-2bad-fb44-14d9" name="Charge(3)" hidden="false" targetId="7c92-fa16-ee47-4ebc" type="rule"/>
-                    <infoLink id="8f87-09af-fef2-d166" name="Basic CC" hidden="false" targetId="76fe-3b83-fd34-d028" type="profile"/>
+                    <infoLink id="56f7-2bad-fb44-14d9" name="Charge(3&quot;)" hidden="false" targetId="7c92-fa16-ee47-4ebc" type="rule"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink id="f55a-5117-6344-3a1b" name="Basic CC" hidden="false" collective="false" import="true" targetId="d8ce-afc4-78c5-475d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="63fb-9553-0499-4a5a" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a6e-f57d-69ad-4a7f" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -224,14 +237,20 @@ FP: Faction Points</readme>
                 </selectionEntry>
                 <selectionEntry id="d528-b968-b56a-bfc7" name="Pistol and Move(9, hover)" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
-                    <infoLink id="0c1b-61a7-0b99-e2b1" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
-                    <infoLink id="b216-d2f4-9598-2404" name="Pistol" hidden="false" targetId="730e-f2a9-b6f6-114b" type="profile"/>
                     <infoLink id="da59-bf1a-71db-c127" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
-                    <infoLink id="45ef-0345-76f6-29c4" name="Move(9)" hidden="false" targetId="bb63-ae4b-ba4e-0fb7" type="rule"/>
+                    <infoLink id="45ef-0345-76f6-29c4" name="Move(9&quot;)" hidden="false" targetId="bb63-ae4b-ba4e-0fb7" type="rule"/>
                   </infoLinks>
+                  <entryLinks>
+                    <entryLink id="201b-4274-be78-c020" name="Pistol" hidden="false" collective="false" import="true" targetId="fd64-e116-77fe-2e1d" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48dd-0e4a-0288-2363" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c303-29a8-6105-79b4" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="3.0"/>
                     <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
                   </costs>
                 </selectionEntry>
@@ -386,7 +405,7 @@ FP: Faction Points</readme>
         <categoryLink id="444c-f730-f72d-d7b2" name="New CategoryLink" hidden="false" targetId="3c56-72a8-f435-00f6" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2150-18d8-6dcd-47eb" name="Tide Warrior" hidden="false" collective="false" import="true" defaultSelectionEntryId="28e1-0393-8a45-53ae">
+        <selectionEntryGroup id="2150-18d8-6dcd-47eb" name="Tide Warrior (3-9)" hidden="false" collective="false" import="true" defaultSelectionEntryId="28e1-0393-8a45-53ae">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff0a-a395-d0d7-5265" type="min"/>
           </constraints>
@@ -581,7 +600,7 @@ FP: Faction Points</readme>
         <categoryLink id="7174-dd13-48f5-cd14" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="187d-bd12-ec5d-8b1d" name="Tide Stalker Beast" hidden="false" collective="false" import="true" defaultSelectionEntryId="09ab-b1ba-4485-1e8a">
+        <selectionEntryGroup id="187d-bd12-ec5d-8b1d" name="Tide Stalker Beast (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="09ab-b1ba-4485-1e8a">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebc3-8ba3-0f68-0ec6" type="min"/>
           </constraints>
@@ -630,7 +649,12 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-a628-0a2d-c432" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="13c0-b0b1-8c56-c7f0" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry"/>
+                <entryLink id="13c0-b0b1-8c56-c7f0" name="Energy Claws" hidden="false" collective="false" import="true" targetId="a1d8-842a-bad7-d3e4" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7762-15bf-c339-9a52" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2f-84c8-5bc3-6d1a" type="min"/>
+                  </constraints>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -827,7 +851,7 @@ FP: Faction Points</readme>
         </selectionEntry>
       </selectionEntries>
       <selectionEntryGroups>
-        <selectionEntryGroup id="c831-d9ae-ba8e-7a20" name="Tide Bio-Artillery" hidden="false" collective="false" import="true" defaultSelectionEntryId="74de-4228-9977-e406">
+        <selectionEntryGroup id="c831-d9ae-ba8e-7a20" name="Tide Bio-Artillery (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="74de-4228-9977-e406">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb01-eeb1-bbdb-e668" type="min"/>
           </constraints>
@@ -1022,7 +1046,7 @@ FP: Faction Points</readme>
         <categoryLink id="859e-fb0b-3336-9536" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2023-c6bb-b23a-1ded" name="Tide Bio-Support" hidden="false" collective="false" import="true" defaultSelectionEntryId="dedc-723d-7d27-315d">
+        <selectionEntryGroup id="2023-c6bb-b23a-1ded" name="Tide Bio-Support (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="dedc-723d-7d27-315d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="168a-0d46-df9a-9846" type="min"/>
           </constraints>
@@ -1464,7 +1488,7 @@ FP: Faction Points</readme>
         <categoryLink id="c7a1-be1d-b862-69cf" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="e1fb-d79c-713b-f229" name="Tide Guard" hidden="false" collective="false" import="true" defaultSelectionEntryId="f709-79fb-efdf-9fa3">
+        <selectionEntryGroup id="e1fb-d79c-713b-f229" name="Tide Guard (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="f709-79fb-efdf-9fa3">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5a1-7017-c1a8-f3ce" type="min"/>
           </constraints>
@@ -2001,6 +2025,11 @@ FP: Faction Points</readme>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
+    </selectionEntry>
+    <selectionEntry id="d8ce-afc4-78c5-475d" name="Basic CC" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d660-4a24-26b1-1b59" name="Basic CC" hidden="false" targetId="76fe-3b83-fd34-d028" type="profile"/>
+      </infoLinks>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
