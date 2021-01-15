@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -230,18 +230,11 @@ FP: Faction Points</readme>
               </constraints>
               <entryLinks>
                 <entryLink id="c859-55bd-9784-d9ad" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="560b-50d1-ba0f-07b0" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="5fa2-c72e-7c40-f66c" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="f3a1-03ed-cf5a-645a" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ebf-69be-0204-ad5e" type="max"/>
-                  </constraints>
-                </entryLink>
+                <entryLink id="5df4-c078-4628-055a" name="Dual Volley Gun" hidden="false" collective="false" import="true" targetId="3b8c-17aa-75ea-1a14" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="9267-733b-29f3-89ae" name="Weapon Options Optional" hidden="false" collective="false" import="true">
@@ -251,25 +244,16 @@ FP: Faction Points</readme>
               </constraints>
               <entryLinks>
                 <entryLink id="b04b-c1ca-4c78-2f45" name="LATcannon" hidden="false" collective="false" import="true" targetId="b42c-6be1-04e2-3030" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea10-1a31-1285-c5e8" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
                 </entryLink>
                 <entryLink id="30c8-b216-de86-7100" name="Dual Missile Launcher" hidden="false" collective="false" import="true" targetId="ba73-f6bc-5814-1d97" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eb21-ce61-769f-74bb" type="max"/>
-                  </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="1c7c-286b-8a2b-41ed" name="Dual Volley Gun" hidden="false" collective="false" import="true" targetId="3b8c-17aa-75ea-1a14" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="64ce-6a17-9847-a2b1" type="max"/>
-                  </constraints>
+                <entryLink id="32bc-ebbc-3b27-b183" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="f3a1-03ed-cf5a-645a" type="selectionEntry">
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
@@ -1072,18 +1056,11 @@ FP: Faction Points</readme>
           </constraints>
           <entryLinks>
             <entryLink id="e9ec-c94b-354a-2a19" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9d-d42a-894b-342b" type="max"/>
-              </constraints>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
               </costs>
             </entryLink>
-            <entryLink id="1402-632a-3c47-a43c" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="f3a1-03ed-cf5a-645a" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de2-f4cf-65e7-c1e0" type="max"/>
-              </constraints>
-            </entryLink>
+            <entryLink id="bdc1-c3e6-45d1-b3c1" name="Dual Volley Gun" hidden="false" collective="false" import="true" targetId="3b8c-17aa-75ea-1a14" type="selectionEntry"/>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="d09d-87d2-43dc-0c8a" name="Weapon Options Optional" hidden="false" collective="false" import="true">
@@ -1093,25 +1070,16 @@ FP: Faction Points</readme>
           </constraints>
           <entryLinks>
             <entryLink id="cfe1-a393-d79e-46f6" name="LATcannon" hidden="false" collective="false" import="true" targetId="b42c-6be1-04e2-3030" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3b1-fc76-3c7f-b3e8" type="max"/>
-              </constraints>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
               </costs>
             </entryLink>
             <entryLink id="3862-063a-c0dd-30a1" name="Dual Missile Launcher" hidden="false" collective="false" import="true" targetId="ba73-f6bc-5814-1d97" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4593-527d-1df3-9167" type="max"/>
-              </constraints>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
               </costs>
             </entryLink>
-            <entryLink id="3a6c-1287-d3d6-e68e" name="Dual Volley Gun" hidden="false" collective="false" import="true" targetId="3b8c-17aa-75ea-1a14" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="392d-8fb9-1d07-ae14" type="max"/>
-              </constraints>
+            <entryLink id="68dd-60ed-171e-a2a4" name="Gatling Gun" hidden="false" collective="false" import="true" targetId="f3a1-03ed-cf5a-645a" type="selectionEntry">
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
               </costs>
@@ -1134,7 +1102,7 @@ FP: Faction Points</readme>
         <categoryLink id="79d8-cab9-d385-a75d" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="204c-ec20-d022-556b" name="Storm Trooper Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b13-8ab2-e7f8-a6a6">
+        <selectionEntryGroup id="204c-ec20-d022-556b" name="Storm Trooper Squad (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="3b13-8ab2-e7f8-a6a6">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3653-74d4-1ccb-4855" type="min"/>
           </constraints>
@@ -1179,7 +1147,7 @@ FP: Faction Points</readme>
                 <entryLink id="aac0-6003-d16e-0d44" name="Slug Autocarbine" hidden="false" collective="false" import="true" targetId="c02b-01eb-b755-7492" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f49e-9e55-4f78-c9e6" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188c-dfd2-6061-cc0f" type="min"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="188c-dfd2-6061-cc0f" type="min"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="f356-a0bd-39fd-5011" name="Specalist Weapons" hidden="false" collective="false" import="true" targetId="4cc2-8d73-cebf-62b4" type="selectionEntryGroup">
@@ -1417,7 +1385,7 @@ FP: Faction Points</readme>
                 <entryLink id="c00d-1e93-e6b5-250d" name="Heavy Scoped Rifle" hidden="false" collective="false" import="true" targetId="e150-4f12-a6aa-219b" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd2d-5190-615e-c7bc" type="max"/>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9706-e73d-639b-26b7" type="min"/>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9706-e73d-639b-26b7" type="min"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -1506,7 +1474,7 @@ FP: Faction Points</readme>
         <categoryLink id="8c38-dd98-872f-b8ca" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="78f3-7c78-e09d-47b0" name="Armoured Walker Platoon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f642-7ffa-87a0-40fc">
+        <selectionEntryGroup id="78f3-7c78-e09d-47b0" name="Armoured Walker Platoon (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="f642-7ffa-87a0-40fc">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4913-7253-5ed1-5a9c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7637-d058-ea8f-aa09" type="min"/>
@@ -1630,7 +1598,7 @@ FP: Faction Points</readme>
         <categoryLink id="5083-cdf1-d4aa-a987" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="228a-5525-3c69-cc28" name="Assault Engineer Squad" hidden="false" collective="false" import="true" defaultSelectionEntryId="20f9-d13a-bb93-f8ae">
+        <selectionEntryGroup id="228a-5525-3c69-cc28" name="Assault Engineer Squad (5-10)" hidden="false" collective="false" import="true" defaultSelectionEntryId="20f9-d13a-bb93-f8ae">
           <constraints>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2495-4a5b-80f3-db91" type="min"/>
           </constraints>
@@ -2146,7 +2114,7 @@ FP: Faction Points</readme>
         <categoryLink id="97e4-e1a6-9704-feef" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="db39-f33f-c811-e5e2" name="Assault Tank Platoon" hidden="false" collective="false" import="true" defaultSelectionEntryId="1053-c6e4-9827-11e4">
+        <selectionEntryGroup id="db39-f33f-c811-e5e2" name="Assault Tank Platoon (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="1053-c6e4-9827-11e4">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f5da-1f17-5fd5-4970" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a410-25a6-87ec-1a55" type="min"/>
@@ -2263,7 +2231,7 @@ FP: Faction Points</readme>
         <categoryLink id="87ce-709a-ba68-8876" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="233e-ee4f-d847-effe" name="Battle Tank Platoon" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5f9-684a-cdb0-0e04">
+        <selectionEntryGroup id="233e-ee4f-d847-effe" name="Battle Tank Platoon (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="f5f9-684a-cdb0-0e04">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d321-f853-40a5-489c" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab47-9d9b-edb7-24d9" type="min"/>
@@ -2529,7 +2497,7 @@ FP: Faction Points</readme>
         <categoryLink id="b06f-ebe5-c407-388e" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="2002-7b76-9d2c-50cb" name="Flame Tank Platoon" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="2002-7b76-9d2c-50cb" name="Flame Tank Platoon (1-3)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7d6-9dfd-d850-a28d" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ded-65df-0307-7d6b" type="min"/>
@@ -2610,7 +2578,7 @@ FP: Faction Points</readme>
         <categoryLink id="61c9-27fa-0bc4-8b8d" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="871b-ed59-d276-ef12" name="Artillery Battery" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="871b-ed59-d276-ef12" name="Artillery Battery (1-3)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fdb-1165-bd56-aaad" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a420-dafa-0fd1-d267" type="min"/>
@@ -2761,7 +2729,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ee-265c-f4ea-f58d" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="74f1-e3cc-cb94-5ffa" name="Ogre Gun" hidden="false" collective="false" import="true" targetId="f972-fdc1-12cd-966d" type="selectionEntry"/>
+                <entryLink id="74f1-e3cc-cb94-5ffa" name="Ogre Gun" hidden="false" collective="false" import="true" targetId="7560-b139-568b-d9fd" type="selectionEntry"/>
                 <entryLink id="e5b8-59e9-06d6-3b85" name="Energy Maul and Combat Sheild" hidden="false" collective="false" import="true" targetId="2c08-7777-09f3-896b" type="selectionEntry"/>
                 <entryLink id="389d-07c9-7930-c728" name="Grenade Gauntlet and Combat Shield" hidden="false" collective="false" import="true" targetId="18eb-9b60-769f-c230" type="selectionEntry"/>
               </entryLinks>
@@ -2797,7 +2765,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="18eb-9b60-769f-c230" name="Grenade Gauntlet and Combat Shield" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="18eb-9b60-769f-c230" name="Grenade Gauntlet and Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="d421-3050-0337-c99a" name="Grenade Gauntlet" hidden="false" targetId="b797-7890-f6a6-5773" type="profile"/>
         <infoLink id="4ebd-e71a-9c3d-721a" name="Combat Shield" hidden="false" targetId="33b3-ed42-3ea2-d606" type="rule"/>
@@ -2808,20 +2776,10 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c08-7777-09f3-896b" name="Energy Maul and Combat Sheild" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="2c08-7777-09f3-896b" name="Energy Maul and Combat Sheild" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="488d-fa0d-db73-f011" name="Energy Maul" hidden="false" targetId="8129-43dd-c2d0-480d" type="profile"/>
         <infoLink id="2e56-4058-46d7-8e6e" name="Combat Shield" hidden="false" targetId="33b3-ed42-3ea2-d606" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="f972-fdc1-12cd-966d" name="Ogre Gun" hidden="false" collective="true" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c995-06b3-e8c8-039e" name="Ogre Gun" hidden="false" targetId="4ab2-1a76-6dc1-267e" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4029,7 +3987,7 @@ FP: Faction Points</readme>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
         <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
         <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
       </characteristics>
     </profile>
     <profile id="4b1a-766b-8a25-2486" name="Re. Republic IFV" publicationId="81dd-fe5f-c233-17c5" page="67" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
