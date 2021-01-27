@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -3125,7 +3125,15 @@ FP: Faction Points</readme>
                 </infoLink>
                 <infoLink id="1b96-09d3-57bf-8818" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
                 <infoLink id="9894-d81b-6d18-86f2" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
-                <infoLink id="ea87-5588-fdb2-175a" name="Bestow Tough(+1) (6&quot;)" hidden="false" targetId="dc70-9183-64b8-d98e" type="rule"/>
+                <infoLink id="ea87-5588-fdb2-175a" name="Bestow Tough(+1) (6&quot;)" hidden="false" targetId="dc70-9183-64b8-d98e" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="afe4-a435-5d7a-78e5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8b9-bc36-2f26-e0b2" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="150.0"/>
