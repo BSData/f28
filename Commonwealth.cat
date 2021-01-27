@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="12" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -113,24 +113,17 @@ FP: Faction Points</readme>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="8fe8-5e63-00a2-448c" name="Transport Options" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="e887-9e9c-5595-5883" name="Hover APC" hidden="false" collective="false" import="true" targetId="f224-8ab1-289e-1911" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20c0-3220-9053-292b" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="c662-5aff-7dcb-ebc4" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="13df-b30f-c850-adbb" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="503c-88a0-24bd-7efd" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
         <entryLink id="c022-0095-201e-a9ba" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
+        <entryLink id="962f-6fba-4283-8320" name="Transport Option" hidden="false" collective="false" import="true" targetId="a468-a7c2-c86c-e8cb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a5-5279-f065-3690" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -404,24 +397,17 @@ FP: Faction Points</readme>
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="addf-35cb-ce90-24b5" name="Transport Options" hidden="false" collective="false" import="true">
-          <entryLinks>
-            <entryLink id="b0a7-51c7-29e8-4541" name="Hover APC" hidden="false" collective="false" import="true" targetId="1428-57d9-e65a-6653" type="selectionEntry">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab41-aad4-2ded-9369" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
-              </costs>
-            </entryLink>
-          </entryLinks>
-        </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="a117-e2f6-0054-1a22" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="68ce-cb17-6196-0f40" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="a036-a49a-14c1-e2f8" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
         <entryLink id="97e1-3a3c-5860-c695" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
+        <entryLink id="a6ea-8d2d-3212-0bfb" name="Transport Option" hidden="false" collective="false" import="true" targetId="a468-a7c2-c86c-e8cb" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea78-1ad0-498a-71ad" type="max"/>
+          </constraints>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1971,7 +1957,7 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1f3e-b5cb-b8e6-a499" name="LGMs" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1f3e-b5cb-b8e6-a499" name="2x LGM" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2504-63d5-58e8-20cb" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
         <infoLink id="512a-7bcc-6cdb-e7d0" name="Potshots" hidden="false" targetId="68bd-2ead-946c-e730" type="rule"/>
@@ -3200,6 +3186,18 @@ FP: Faction Points</readme>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="a468-a7c2-c86c-e8cb" name="Transport Option" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="be1f-a259-c4d8-dfc3" name="Scandinavian Hover APC" hidden="false" collective="false" import="true" targetId="f224-8ab1-289e-1911" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b96-dd3d-4f10-e606" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
           </costs>
         </entryLink>
       </entryLinks>
