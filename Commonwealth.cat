@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -60,6 +60,18 @@ FP: Faction Points</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="c018-96bc-b71f-b6f9" name="Scandinavian Soldiers" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="3cfe-25cd-ebb7-d6e8" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="920f-0186-7162-3813" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="8147-c931-97e8-ba10" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="920f-0186-7162-3813" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8147-c931-97e8-ba10" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cfe-25cd-ebb7-d6e8" type="min"/>
@@ -72,11 +84,6 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="066f-8dc6-c4b5-345d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
-                      <conditions>
-                        <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba9-22ac-ef4d-514a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                   </modifiers>
                 </infoLink>
               </infoLinks>
@@ -84,6 +91,37 @@ FP: Faction Points</readme>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="7.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="920f-0186-7162-3813" name="Scandinavian Veteran Soldier" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1ff-d90b-f689-cfbe" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6d7e-2c0f-b540-78cf" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="bc5e-e8d4-df78-f81b" value="1">
+                      <conditions>
+                        <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="066f-8dc6-c4b5-345d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
+                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="1d1a-b293-1356-4871" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="f41c-c0c7-ab2a-b187" name="Laser Marker" hidden="false" collective="false" import="true" targetId="671a-d78d-d9fb-2c80" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c077-6bd5-c55a-8d7f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2344-0aba-98ba-ad2b" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="22.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -111,6 +149,34 @@ FP: Faction Points</readme>
                 <entryLink id="c5af-b5bb-ded4-59fd" name="Wave Blaster" hidden="false" collective="false" import="true" targetId="f80e-f938-1816-aa5f" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="bdd8-fe62-896a-1afc" name="Weapon Options (Veteran)" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="920f-0186-7162-3813" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="5b58-a523-b624-d890" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="920f-0186-7162-3813" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="84e6-df86-8f7f-6b46" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="907d-20a0-4d42-27c0" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="920f-0186-7162-3813" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84e6-df86-8f7f-6b46" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b58-a523-b624-d890" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="9a40-4e49-b2ff-13d1" name="Heavy Scoped Rifle" hidden="false" collective="false" import="true" targetId="e150-4f12-a6aa-219b" type="selectionEntry"/>
+                <entryLink id="fe1e-896e-e597-0b1d" name="Slug Carbine" hidden="false" collective="false" import="true" targetId="9433-a971-aa5b-55cb" type="selectionEntry"/>
+                <entryLink id="b808-988e-9c3e-2f8c" name="Wave Blaster" hidden="false" collective="false" import="true" targetId="f80e-f938-1816-aa5f" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -118,7 +184,6 @@ FP: Faction Points</readme>
         <entryLink id="c662-5aff-7dcb-ebc4" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="13df-b30f-c850-adbb" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="503c-88a0-24bd-7efd" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="c022-0095-201e-a9ba" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
         <entryLink id="962f-6fba-4283-8320" name="Transport Option" hidden="false" collective="false" import="true" targetId="a468-a7c2-c86c-e8cb" type="selectionEntryGroup">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57a5-5279-f065-3690" type="max"/>
@@ -280,7 +345,6 @@ FP: Faction Points</readme>
         <entryLink id="c6c9-af26-749e-bbe5" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="545e-88ad-68b8-f934" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="9f19-2715-96f4-9c2d" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="1063-6121-165c-e868" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -299,6 +363,18 @@ FP: Faction Points</readme>
           </constraints>
           <selectionEntries>
             <selectionEntry id="8af7-cddd-5e27-b2e7" name="Scandinavian Scouts" hidden="false" collective="false" import="true" type="model">
+              <modifiers>
+                <modifier type="decrement" field="3f2c-b4fd-8ccb-d8b6" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="448a-96f4-eea1-1ea1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ce-7dd5-daed-789e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="faca-10d8-31c9-ec6f" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="448a-96f4-eea1-1ea1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="35ce-7dd5-daed-789e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f2c-b4fd-8ccb-d8b6" type="max"/>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="faca-10d8-31c9-ec6f" type="min"/>
@@ -311,11 +387,6 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="448a-96f4-eea1-1ea1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="066f-8dc6-c4b5-345d" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
-                      <conditions>
-                        <condition field="selections" scope="448a-96f4-eea1-1ea1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba9-22ac-ef4d-514a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
                   </modifiers>
                 </infoLink>
                 <infoLink id="64e9-ca00-95e9-05c9" name="Vanguard" hidden="false" targetId="5c49-cb74-ee43-18b4" type="rule"/>
@@ -324,6 +395,47 @@ FP: Faction Points</readme>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="8.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="35ce-7dd5-daed-789e" name="Scandinavian Veteran Scout" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34a9-3055-117a-d95c" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5ddd-c542-355e-2cc3" name="Sc. Scout" hidden="false" targetId="8d2e-3116-a087-9d49" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="bc5e-e8d4-df78-f81b" value="1">
+                      <conditions>
+                        <condition field="selections" scope="448a-96f4-eea1-1ea1" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="066f-8dc6-c4b5-345d" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
+                    <modifier type="set" field="name" value="Sc. Scout (Veteran)"/>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="6b0f-d912-9851-acc5" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="9698-339b-f78e-fc85" name="Slug Carbine and Laser Marker" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0092-3691-fb4a-3e72" type="min"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5708-54ee-1a28-d4aa" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="4b61-9b95-c888-edfa" name="Slug Carbine" hidden="false" targetId="96c7-7c66-b80a-4d6b" type="profile"/>
+                    <infoLink id="baad-189c-5eb1-0b83" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
+                    <infoLink id="45ac-6c48-2860-3268" name="Spotter" hidden="false" targetId="b50b-7db8-ff30-68b8" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="23.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -401,7 +513,6 @@ FP: Faction Points</readme>
       <entryLinks>
         <entryLink id="a117-e2f6-0054-1a22" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="68ce-cb17-6196-0f40" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
-        <entryLink id="a036-a49a-14c1-e2f8" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
         <entryLink id="97e1-3a3c-5860-c695" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
         <entryLink id="a6ea-8d2d-3212-0bfb" name="Transport Option" hidden="false" collective="false" import="true" targetId="a468-a7c2-c86c-e8cb" type="selectionEntryGroup">
           <constraints>
@@ -488,7 +599,6 @@ FP: Faction Points</readme>
         <entryLink id="15a9-1f51-74fb-8af2" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="75cf-bcf1-05de-f2b6" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="3c52-7797-83b0-84f1" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="abc7-593d-ae66-9b27" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -685,7 +795,6 @@ FP: Faction Points</readme>
         <entryLink id="f687-7aa8-50dd-9285" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="10ef-d247-9560-965b" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="118c-7b6c-1ed2-0e2f" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="e6af-46f9-6e2c-facb" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -886,7 +995,6 @@ FP: Faction Points</readme>
         <entryLink id="e7e1-7087-aa7e-0663" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="a5f2-9764-b889-f391" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="82fa-04df-b5d4-f97d" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="a708-0bd5-ff3c-39c7" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -990,7 +1098,6 @@ FP: Faction Points</readme>
         <entryLink id="409c-3dde-bee9-7472" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="d608-a359-35d7-6dc6" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="26bc-1f86-d321-4d24" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="9e1b-e8f7-6e8d-10e6" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1127,7 +1234,6 @@ FP: Faction Points</readme>
         <entryLink id="07ae-95bb-54d4-eb00" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="46a2-ec7c-ea76-039b" name="Upgrade Any Non-Aircraft Unit" hidden="false" collective="false" import="true" targetId="77dc-8ed8-6e18-720e" type="selectionEntryGroup"/>
         <entryLink id="0caf-81f1-5b77-4f51" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="4992-389a-84c0-16f1" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1433,7 +1539,6 @@ FP: Faction Points</readme>
       <entryLinks>
         <entryLink id="d895-01a7-356a-0e66" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="0473-c05e-9b39-5c4e" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="c2e9-6cfb-e741-290d" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2693,7 +2798,6 @@ FP: Faction Points</readme>
       <entryLinks>
         <entryLink id="f1b6-511b-7e4d-f62f" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="85be-94eb-2174-8c5a" type="selectionEntryGroup"/>
         <entryLink id="4427-eccf-0f13-06e4" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true" targetId="315f-06f6-1277-390d" type="selectionEntryGroup"/>
-        <entryLink id="32a7-f73d-1eeb-40c6" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true" targetId="9b30-eacb-d899-c208" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3087,18 +3191,12 @@ FP: Faction Points</readme>
     <selectionEntryGroup id="315f-06f6-1277-390d" name="Upgrade Any Non-Vehicle Unit" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="a3ff-a2cd-0b40-3daa" name="Comradeship Mark" hidden="false" collective="false" import="true" targetId="066f-8dc6-c4b5-345d" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="95b5-c653-a5e7-8869" value="10.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8006-7ed1-d18a-ca52" type="max"/>
           </constraints>
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -3140,26 +3238,6 @@ FP: Faction Points</readme>
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
-          </costs>
-        </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="9b30-eacb-d899-c208" name="Upgrade any Non-Vehicle, Non-Command Model" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="5c82-829d-e639-782a" name="Veteran" hidden="false" collective="false" import="true" targetId="8ba9-22ac-ef4d-514a" type="selectionEntry">
-          <modifiers>
-            <modifier type="increment" field="95b5-c653-a5e7-8869" value="15.0">
-              <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-              </repeats>
-            </modifier>
-          </modifiers>
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db0a-69a5-d9d0-02f6" type="max"/>
-            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="5e4b-cfbb-3aac-8730" type="max"/>
-          </constraints>
-          <costs>
-            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
