@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="10" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="15" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -34,7 +34,11 @@ FP: Faction Points</readme>
     <entryLink id="559a-4d9e-2fd9-2247" name="Chamber Walker" hidden="false" collective="false" import="true" targetId="cb49-9f3b-b074-0836" type="selectionEntry"/>
     <entryLink id="a95d-ee7f-6f98-5830" name="Chamber VTOL Attack Craft" hidden="false" collective="false" import="true" targetId="10bb-04dc-a85d-1277" type="selectionEntry"/>
     <entryLink id="0846-e33d-d4ff-7c43" name="Chamber Artillery Vehicle" hidden="false" collective="false" import="true" targetId="a8a0-d946-9c7c-2f9a" type="selectionEntry"/>
-    <entryLink id="ff3c-f33f-a366-165f" name="Combat Drop" hidden="false" collective="false" import="true" targetId="5f26-8797-47ae-befd" type="selectionEntry"/>
+    <entryLink id="ff3c-f33f-a366-165f" name="Chamber Combat Drop" hidden="false" collective="false" import="true" targetId="5f26-8797-47ae-befd" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5849-5f72-2d0c-8bdb" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="6fc6-115a-32ed-5fe6" name="APC" hidden="false" collective="false" import="true" targetId="8a88-dd73-4c6e-fd2a" type="selectionEntry"/>
     <entryLink id="a907-fb89-4a24-1b96" name="Chamber IFV" hidden="false" collective="false" import="true" targetId="ea46-c372-7a0d-b244" type="selectionEntry"/>
     <entryLink id="4382-23df-1f1c-05ea" name="Insertion Capsule" hidden="false" collective="false" import="true" targetId="bc2d-f923-bf2f-1e3e" type="selectionEntry"/>
@@ -2170,6 +2174,9 @@ FP: Faction Points</readme>
       </categoryLinks>
       <selectionEntryGroups>
         <selectionEntryGroup id="6d60-b18a-2d71-5138" name="Chamber Walker" hidden="false" collective="false" import="true" defaultSelectionEntryId="9a1e-1613-5501-c145">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb13-cd5b-0ac2-715b" type="min"/>
+          </constraints>
           <selectionEntries>
             <selectionEntry id="9a1e-1613-5501-c145" name="Chamber Walker" hidden="false" collective="false" import="true" type="model">
               <constraints>
@@ -2395,7 +2402,7 @@ FP: Faction Points</readme>
     </selectionEntry>
     <selectionEntry id="5f26-8797-47ae-befd" name="Chamber Combat Drop" page="" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="2181-89b6-d57b-8718" name="Combat Drop" hidden="false" targetId="712b-8c1c-2ee2-b1de" type="rule"/>
+        <infoLink id="2181-89b6-d57b-8718" name="Chamber Combat Drop" hidden="false" targetId="712b-8c1c-2ee2-b1de" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="afd5-9664-c411-3112" name="New CategoryLink" hidden="false" targetId="a4de-12bc-8cf2-7d2f" primary="true"/>
