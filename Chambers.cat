@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="11" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="12" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="14" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1809,60 +1809,118 @@ FP: Faction Points</readme>
             </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
-            <selectionEntryGroup id="eb0d-c757-56b6-021a" name="Weapon Options" hidden="false" collective="false" import="true">
+            <selectionEntryGroup id="1b64-3892-9cd3-5d39" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="22ab-adf5-2a07-6170" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3716-82bf-d06f-ad12" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="35e9-65d4-9a07-336a" name="Assault" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="1e9c-3f62-e97f-0e2e" name="Standard" hidden="false" collective="false" import="true" type="upgrade">
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="e636-5aa3-ddc7-97fb" name="Weapon Options" hidden="true" collective="false" import="true">
               <modifiers>
-                <modifier type="increment" field="76e8-57b0-9441-ec32" value="1.0">
+                <modifier type="increment" field="b21c-7123-4220-53f6" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="1222-1ea3-ae42-fa91" value="1.0">
+                <modifier type="increment" field="e547-758e-eb79-5961" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
                   </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e9c-3f62-e97f-0e2e" type="equalTo"/>
+                  </conditions>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1222-1ea3-ae42-fa91" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76e8-57b0-9441-ec32" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b21c-7123-4220-53f6" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e547-758e-eb79-5961" type="min"/>
               </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="65da-6220-acea-f6e9" name="Range" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="860f-b58d-bd3c-2860" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry"/>
-                    <entryLink id="5951-ce93-7453-5973" name="Vibro-Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="b333-eda6-7d95-df22" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-                <selectionEntryGroup id="6fec-23f5-70f2-ee90" name="Assault" hidden="false" collective="false" import="true">
-                  <entryLinks>
-                    <entryLink id="78e3-5490-2fdf-e30f" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" targetId="c02b-f217-0c54-ccf6" type="selectionEntry"/>
-                    <entryLink id="0bca-5698-9a5b-b67a" name="Lightning Hammer and Assault Shield" hidden="false" collective="false" import="true" targetId="266d-9583-9408-9b97" type="selectionEntry"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <entryLinks>
-                <entryLink id="770f-d6a7-d640-1e46" name="Support Weapons Man-Tank" hidden="false" collective="false" import="true" targetId="b647-0268-382c-0331" type="selectionEntryGroup">
+                <entryLink id="073b-2304-36de-8b08" name="Support Weapons Man-Tank" hidden="false" collective="false" import="true" targetId="b647-0268-382c-0331" type="selectionEntryGroup">
                   <modifiers>
-                    <modifier type="increment" field="9c93-597d-52ee-7410" value="1.0">
-                      <conditionGroups>
-                        <conditionGroup type="and">
-                          <conditions>
-                            <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="8.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65da-6220-acea-f6e9" type="atLeast"/>
-                            <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b647-0268-382c-0331" type="atLeast"/>
-                          </conditions>
-                        </conditionGroup>
-                      </conditionGroups>
-                    </modifier>
-                    <modifier type="increment" field="9c93-597d-52ee-7410" value="1.0">
+                    <modifier type="increment" field="b59c-bc80-098c-dcfa" value="1.0">
                       <conditions>
-                        <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="65da-6220-acea-f6e9" type="atLeast"/>
+                        <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c93-597d-52ee-7410" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b59c-bc80-098c-dcfa" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="4e04-8b16-a0e5-c58c" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="c8b2-28ac-abfd-9bee" name="Weapon Options" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="801c-fffc-d769-1926" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="f6bd-23d7-3916-084e" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e9c-3f62-e97f-0e2e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6bd-23d7-3916-084e" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="801c-fffc-d769-1926" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="5201-56ee-5eb2-e943" name="Vibro-Fist" hidden="false" collective="false" import="true" targetId="3fc4-d4a9-af66-3b01" type="selectionEntry"/>
+                <entryLink id="cf03-f8cd-cec7-15ec" name="Energy Fist" hidden="false" collective="false" import="true" targetId="c3cc-be5a-6348-8566" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="a5fb-587a-9519-5bbe" name="Weapon Options" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="increment" field="3d03-8705-de7a-6b43" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="e7d6-4661-9f17-dcd1" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="6445-3682-05d7-b3ed" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="f5ed-eb9f-34ea-d5f5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35e9-65d4-9a07-336a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3d03-8705-de7a-6b43" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7d6-4661-9f17-dcd1" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="cc3f-e095-8f27-8497" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" targetId="c02b-f217-0c54-ccf6" type="selectionEntry"/>
+                <entryLink id="4448-79c7-9c91-6e98" name="Lightning Hammer and Assault Shield" hidden="false" collective="false" import="true" targetId="266d-9583-9408-9b97" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -2455,28 +2513,6 @@ FP: Faction Points</readme>
         <infoLink id="d206-76b9-8150-be31" name="Lightning Hammer" hidden="false" targetId="7179-cab6-866e-56d6" type="profile"/>
         <infoLink id="808a-aed9-e8ce-b019" name="Assault Shield" hidden="false" targetId="1770-005b-7ed9-6a21" type="rule"/>
         <infoLink id="db43-39d8-5765-ba99" name="Suppression(x2)" hidden="false" targetId="4403-d329-9eaf-e166" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b333-eda6-7d95-df22" name="Vibro-Fist and Storm Slugger" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="5267-cfed-2a43-4ea9" name="Storm Slugger" hidden="false" targetId="3e2c-54c3-8b2b-c7d9" type="profile"/>
-        <infoLink id="fd7c-6948-4b06-a0fa" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
-        <infoLink id="2a29-06b7-9df5-eaf9" name="Vibro-Fist" hidden="false" targetId="19b7-59ef-30f8-130d" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1d7c-e7d5-3218-40bf" name="Energy Fist and Man-Tank Weapon" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c04d-2e25-7ccd-55d6" name="Energy Fist" hidden="false" targetId="27da-2728-e0de-71c9" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
