@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="16" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="17" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The factions are in the progress of being updated, see below. 
@@ -1587,9 +1587,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="626f-2b0c-8c38-e6c5" name="Independent Missile System" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="626f-2b0c-8c38-e6c5" name="Independent missile system" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="dab1-7b7f-15cb-dcfb" name="Independent Missile System" hidden="false" targetId="f1b7-165e-93a2-b660" type="profile"/>
+        <infoLink id="c70f-328c-386e-eee9" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+        <infoLink id="f423-b8c7-709b-08bc" name="Ignore Cover(1)" hidden="false" targetId="59ac-b884-dc2d-6c29" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4138,10 +4140,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4c9a-1541-1932-5f81" name="Heavy Barrage Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4c9a-1541-1932-5f81" name="Heavy barrage cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="ae90-8329-e2d2-1a61" name="Heavy Barrage Cannon" hidden="false" targetId="de3e-41bc-de0c-b3d3" type="profile"/>
-        <infoLink id="b1fd-53eb-a272-0f6f" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="ae90-8329-e2d2-1a61" name="Heavy barrage cannon" hidden="false" targetId="de3e-41bc-de0c-b3d3" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -6978,10 +6979,108 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="6af6-c9b0-3e72-e36f" name="AT-missile pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="054a-1ff1-9c12-984d" name="AT-missile pod" hidden="false" targetId="bc3f-3a3b-a281-b6f8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b38-0c26-8c55-e151" name="Cycle proton lacerator" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ed00-5c44-1fc6-f9c0" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="8721-a1f7-43c4-cff6" name="Cycle proton lacerator " hidden="false" targetId="5fe5-99c6-7af1-bb1e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a172-4f5a-089b-77cc" name="Heat blaster" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cc26-364f-e5d9-d635" name="Heat blaster" hidden="false" targetId="1d1c-0fd1-8de0-9850" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e984-453e-5ae2-4f27" name="Indie large gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="aa3c-9d25-7706-f39b" name="Indie large gun" hidden="false" targetId="61cb-8dc1-dcc6-99f9" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07d9-f42f-5388-49d5" name="Bestow Concealment(6&quot;)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cf27-da56-9d26-200b" name="Bestow Concealment(6&quot;)" hidden="false" targetId="79e8-b9d8-6269-6cfd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c649-f6e6-69bf-7fae" name="Flak" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1c6e-a25e-90d4-46eb" name="Flak" hidden="false" targetId="6284-54c7-4ca1-5bfe" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ffcf-7b6d-cad0-bc6c" name="Hicap Barrage Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c8c8-a31d-d9fc-f392" name="Hicap Barrage Cannon" hidden="false" targetId="971d-ee07-5309-e23c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4361-7f23-29a0-81f4" name="Quad-plasma" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4566-aeef-a129-77f0" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="b532-8cf9-7a35-6f42" name="Quad-plasma" hidden="false" targetId="6edc-c5d4-c14d-4269" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e0b-5df8-3fc3-05a0" name="Dual AT-missile pod" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="219c-e71b-394e-818d" name="AT-missile pod" hidden="false" targetId="bc3f-3a3b-a281-b6f8" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="a8d4-9833-bd63-2638" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
-    <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Deploy anywhere on table at the start of the game, beyond 6” of enemy units (if you start with the initiative do this after any enemy units with Infiltrate have been deployed). Unit may not contribute towards holding scenario objectives.</description>
+    <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
     </rule>
     <rule id="46bd-5443-c838-e6dc" name="Insertion" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <comment>w</comment>
@@ -6994,8 +7093,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <rule id="aa11-80ae-9177-3f47" name="Dual Weapon" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Weapon has hit(re-roll). If it already has (or recieves), it gets Attack(x2) instead and loses hit(re-roll).</description>
     </rule>
-    <rule id="e417-ad3a-3c0b-2794" name="Inaccurate" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
-      <description>If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
+    <rule id="e417-ad3a-3c0b-2794" name="Inaccurate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Attacks with this model has hit(-1). Multiple sources of inaccurate does not stack.</description>
     </rule>
     <rule id="e6da-4b9a-f775-4a57" name="Move(jump)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>One (1) move each turn gets distance 12” and ignores (most) terrain.</description>
@@ -7052,8 +7151,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <description>Ignore first wound suffered by non-vehicle/massive unit each turn. (You may mark this by turning a model on its side and turning it back up in the endphase)
 </description>
     </rule>
-    <rule id="6137-700d-31f3-d5f2" name="Assassin" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Attacker may target individual model (instead of unit). Suppression is still applied versus the unit as a whole.</description>
+    <rule id="6137-700d-31f3-d5f2" name="Assassin" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
     </rule>
     <rule id="3292-0130-df97-f167" name="Extra Strike" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>Model has number extra attack dice with CC attacks.</description>
@@ -7078,10 +7177,10 @@ In addition, apply any result of one or more ‘1’.</description>
       <description>AT(+D6) and damage(2) 
 range: only within range</description>
     </rule>
-    <rule id="18bd-ea47-5c88-c607" name="Hazardous" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>Model using weapon takes one (1) hit at wound(min 6) for each ‘1’ on the to hit roll.</description>
+    <rule id="18bd-ea47-5c88-c607" name="Hazardous" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Model using weapon suffers 1 wound(min 6) hit for each ‘1’ on the to hit roll.</description>
     </rule>
-    <rule id="3682-4263-ec97-3fe5" name="Heavy" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
+    <rule id="3682-4263-ec97-3fe5" name="Heavy" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Unless mounted on a vehicle or massive model, non-priority attacks are potshots. Priority attacks are Accurate.</description>
     </rule>
     <rule id="2c11-d87e-5cc4-4635" name="Pistol" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
@@ -7152,8 +7251,8 @@ May not be the target of weapons that have less than two (2) attack dice or 24�
     <rule id="194c-2932-f83a-e1c6" name="Antiair" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>May attack Aircraft and VTOL despite lack of attack dice or range. Aircraft have Target(6) and VTOL have Target(5) vs antiair attacks. Accurate vs Aircraft and VTOL.</description>
     </rule>
-    <rule id="102e-95ec-4ca3-eb95" name="Priority(only)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>The weapon can only be fired with priority.</description>
+    <rule id="102e-95ec-4ca3-eb95" name="Priority(only)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>The weapon can only be used with priority.</description>
     </rule>
     <rule id="2f31-28a4-24bc-4b75" name="Indirect(modifier)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Weapon may attack without line of sight with hit(modifier), unless otherwise specified. If any model in the same unit as the attacker has line of sight to the target, ignore the modifier.</description>
@@ -7200,8 +7299,8 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
     <rule id="0b0a-6bbc-c7f7-543e" name="Priority(accurate)" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
       <description>When attacking with priority gain effect: If an attack is Accurate, +1 to hit. Multiple sources of Accurate does not stack.</description>
     </rule>
-    <rule id="b1ef-7f72-0aea-5ab6" name="Bestow Priority(vital Strike, hit(re-roll))" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>All models in attached unit gains ability: When attacking with priority gain effect.</description>
+    <rule id="b1ef-7f72-0aea-5ab6" name="Bestow Priority(vital Strike, hit(re-roll))" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>All models in attached unit gains ability: When attacking with priority gain: Hit rolls of ‘6’ has an additional wound(+3) and you may re-roll any to-hit dice.</description>
     </rule>
     <rule id="a363-87ce-254e-2793" name="Vital Strike" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Hit rolls of ‘6’ has an additional wound(+3).</description>
@@ -7218,7 +7317,7 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
     <rule id="5040-289f-4234-fa7a" name="Defence Turret(weapon)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <description>All enemy aircraft moving in range of (weapon) are automatically attacked by (weapon).</description>
     </rule>
-    <rule id="74a7-9700-3946-640b" name="Loathing" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+    <rule id="74a7-9700-3946-640b" name="Loathing" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
     <rule id="c251-5963-361e-f608" name="Blocker" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
@@ -7321,8 +7420,8 @@ least this level of Morale.</description>
     <rule id="18a3-0966-7b7c-ae17" name="Frenzied Assault" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>Strike in CC even if suppressed or killed by reaction attack.</description>
     </rule>
-    <rule id="1609-f037-f8cf-20da" name="Parry" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Incoming CC attacks get hit(-1).</description>
+    <rule id="1609-f037-f8cf-20da" name="Parry" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Target(+1) vs CC attacks. Does not stack with further instances of Parry.</description>
     </rule>
     <rule id="5162-3674-4eb4-3387" name="No Escape" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>Enemy units within 2” may not make withdrawal moves in endphase.</description>
@@ -7456,12 +7555,12 @@ This model has First Strike vs Aircraft that attack ground targets.</description
     <rule id="6721-d6bf-3c74-4af1" name="Disruption(18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <description>Enemies within 18&quot; may not remove extra action markers in endphase.</description>
     </rule>
-    <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Units within distance of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
-    <rule id="08a5-e6ab-7e0e-ac8f" name="Terror(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+    <rule id="08a5-e6ab-7e0e-ac8f" name="Terror(12&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <comment>w</comment>
-      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+      <description>Units within 12&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
     <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>All models in attached unit gains ability. CC attacks have +3&quot; distance range.</description>
@@ -7560,6 +7659,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>When activated deploy from staging, anywhere on the board, beyond 2” of enemy units, with two (2) action markers.</description>
     </rule>
     <rule id="d83d-0b9a-4792-7e26" name="Hazardous Target(CC)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <comment>w</comment>
       <description>As long as at least half of the wounds in this unit has this trait, enemy weapons gain hazardous when attacking this unit in Close Combat.</description>
     </rule>
     <rule id="c53a-c2f1-5725-ed94" name="Cover(no)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
@@ -7604,8 +7704,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="bac4-f369-253a-c8ff" name="Terror(9&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    <rule id="bac4-f369-253a-c8ff" name="Terror(9&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Units within 9&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
     <rule id="7a9a-12f3-f41a-b238" name="Inflict Inaccurate(6&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Enemy units within 6&quot; suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
@@ -7721,8 +7821,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="e7ae-0682-39d1-a3ba" name="Terror(6&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Units within distance of this model suffer one (1) wound in endphase for each remaining action marker (after removal for traits and any withdrawals).</description>
+    <rule id="e7ae-0682-39d1-a3ba" name="Terror(6&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Units within 6&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
     <rule id="b241-766a-3ee5-fcb1" name="Bestow Tough(+1) (12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>All models in units within 12&quot; gains ability: Tough(+1).</description>
@@ -7836,8 +7936,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="09f5-9e2a-75f7-11f6" name="Bestow Concealment(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
       <description>All models in units within 12&quot; gains ability: If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Concealment does not stack.</description>
     </rule>
-    <rule id="9414-a88d-3bba-206c" name="Bestow Infiltrate" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All models in attached unit gains ability: Deploy anywhere on table at the start of the game, beyond 6” of enemy units (if you start with the initiative do this after any enemy units with Infiltrate have been deployed). Unit may not contribute towards holding scenario objectives.</description>
+    <rule id="9414-a88d-3bba-206c" name="Bestow Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in attached unit gains ability: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
     </rule>
     <rule id="ed49-958f-327c-678a" name="Bestow Loathing (18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>All models in units within 18&quot; gains ability: Re-roll results of ‘1’ to wound for this model.</description>
@@ -7970,6 +8070,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>Attacks vs this model from beyond range or from aircraft/VTOL are potshots.</description>
     </rule>
     <rule id="0c84-0530-8db3-c3d2" name="Camouflage(12&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <comment>w</comment>
       <description>Attacks vs this model from beyond 12&quot; or from aircraft/VTOL are potshots.</description>
     </rule>
     <rule id="5bb6-e189-3c78-b891" name="Superior Insertion" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
@@ -8070,8 +8171,8 @@ Instead of removing the model outright, roll on the vehicle damage table.</descr
     <rule id="057f-45e2-107b-b157" name="Infiltrate(inferior, own table half)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Unit receives two (2) action markers after setting up on own table half.</description>
     </rule>
-    <rule id="59ac-b884-dc2d-6c29" name="Ignore Cover(1)" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>Target gets no bonus to Defence from Cover(1).</description>
+    <rule id="59ac-b884-dc2d-6c29" name="Ignore Cover(1)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Target gets no bonus to Defence from Cover, or has its Cover modified by 1.</description>
     </rule>
     <rule id="4fef-53eb-8220-5deb" name="Cover(max 1)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Model may not gain more than 1 bonus from cover.</description>
@@ -8105,8 +8206,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="ee25-41b2-ae06-1ed7" name="Move(stationary)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>Model may not move or be moved by outside effects.</description>
     </rule>
-    <rule id="d83c-abd5-4daf-6a12" name="Outflank(18&quot;)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
-      <description>This model counts friendly table edge(s) as 18” longer (at both ends), extending around corners if necessary.</description>
+    <rule id="d83c-abd5-4daf-6a12" name="Outflank(18&quot;)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>This model counts friendly table edge(s) as distance longer (at both ends), extending around corners if necessary.</description>
     </rule>
     <rule id="babe-a5c1-c648-dd90" name="Cohesion(18&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Model needs to remain within 18” from all other models in unit instead of the regular 12”, and vice versa.</description>
@@ -8308,6 +8409,27 @@ least this level of Morale.</description>
     </rule>
     <rule id="6e90-84cb-2392-b833" name="Leader(2, not self)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Remove a total of 2 extra action markers from non-vehicle units within 12” in endphase not including this model’s unit.</description>
+    </rule>
+    <rule id="532e-63b1-1ede-61a8" name="Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Target(+1) vs ranged attacks beyond 12&quot; only. Multiple sources of Concealment does not stack.</description>
+    </rule>
+    <rule id="9e56-a99a-574c-ec87" name="Bestow Assassin" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>All models in attached unit gains ability. Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
+    </rule>
+    <rule id="79e8-b9d8-6269-6cfd" name="Bestow Concealment(6&quot;)" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
+      <description>All models in units within 6&quot; gains ability: If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Concealment does not stack.</description>
+    </rule>
+    <rule id="6284-54c7-4ca1-5bfe" name="Flak" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Target(+1) vs Aircraft and VTOL attacks. Multiple sources of Flak does not stack.</description>
+    </rule>
+    <rule id="cb10-fea3-790d-af65" name="Hazardous Target(aircraft)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>As long as at least half of the wounds in this unit has this trait, enemy weapons gain hazardous when attacking this unit with aircraft.</description>
+    </rule>
+    <rule id="ca99-fc01-9939-09c4" name="Insertion(unreliable)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>The unit receives D3 action markers instead.</description>
+    </rule>
+    <rule id="1821-b496-5cc5-9de7" name="Camouflage(18&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <description>Attacks vs this model from beyond 18&quot; or from aircraft/VTOL are potshots.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -8733,6 +8855,7 @@ vs vehicles only</characteristic>
       </characteristics>
     </profile>
     <profile id="ab27-000d-b4d4-484d" name="Barrage Cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment>w</comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (4)</characteristic>
@@ -8741,13 +8864,13 @@ vs vehicles only</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="f1b7-165e-93a2-b660" name="Independent Missile System" publicationId="81dd-fe5f-c233-17c5" page="102" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="f1b7-165e-93a2-b660" name="Independent missile System" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (4)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(potshots), ignore cover</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-2), ignore cover(1)</characteristic>
       </characteristics>
     </profile>
     <profile id="6483-4469-4c24-cc9c" name="ER Heatgun" publicationId="81dd-fe5f-c233-17c5" page="103" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -8795,7 +8918,7 @@ vs vehicles only</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="ab21-d6f6-17c6-41f2" name="Cycle Proton Blaster" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="ab21-d6f6-17c6-41f2" name="Cycle proton blaster" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">15” (3)</characteristic>
@@ -10034,13 +10157,13 @@ ignore cover(1), heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="de3e-41bc-de0c-b3d3" name="Heavy Barrage Cannon" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="de3e-41bc-de0c-b3d3" name="Heavy barrage cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (10)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30&quot; (12)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
     <profile id="7e27-4a4e-9fda-7ada" name="Hicap ER Heatgun" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -11629,6 +11752,60 @@ without Aircraft, VTOL, hover or jump)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bc3f-3a3b-a281-b6f8" name="AT-missile pod" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="5fe5-99c6-7af1-bb1e" name="Cycle proton lacerator" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1d1c-0fd1-8de0-9850" name="Heat blaster" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="61cb-8dc1-dcc6-99f9" name="Indie large gun" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (2), 48&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="971d-ee07-5309-e23c" name="Hicap Barrage Cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (8)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="6edc-c5d4-c14d-4269" name="Quad-plasma" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
