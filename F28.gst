@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="17" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="18" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The factions are in the progress of being updated, see below. 
@@ -8645,7 +8645,7 @@ heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="c10f-4fec-adae-628d" name="Scoped slugrifle" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="c10f-4fec-adae-628d" name="Scoped slug rifle" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
@@ -8729,7 +8729,7 @@ heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)</characteristic>
       </characteristics>
     </profile>
-    <profile id="19b7-59ef-30f8-130d" name="Vibrofist" publicationId="91df-c558-75f9-73ea" page="" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="19b7-59ef-30f8-130d" name="Vibrofist" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -8845,13 +8845,15 @@ vs vehicles only</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="8aee-454a-5003-fe26" name="Wave Blaster" publicationId="81dd-fe5f-c233-17c5" page="102" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="8aee-454a-5003-fe26" name="Wave Blaster" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (2)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (2)
+9&quot; (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">wound(+2, 9&quot;)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">.
++2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
     <profile id="ab27-000d-b4d4-484d" name="Barrage Cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -8981,30 +8983,26 @@ vs vehicles only</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="b70a-b4dd-b720-691b" name="Magna-Cannon" publicationId="81dd-fe5f-c233-17c5" page="102" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="b70a-b4dd-b720-691b" name="Magna-Cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72” (1)
-72” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Rod: 72” (1)
+Canister: 72” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast
 .</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">.
 +8</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, hit(re-roll, 36&quot;)
-heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2), priority(hit(re-roll))
+priority(hit(re-roll))</characteristic>
       </characteristics>
     </profile>
-    <profile id="0329-104c-b948-bcb1" name="Proton Cannon" publicationId="81dd-fe5f-c233-17c5" page="102" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="0329-104c-b948-bcb1" name="Proton Cannon" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60” (1)
-60” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)
-blast(D6)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3
-+4</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">.
-hazardous, priority(only)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(hit(re-roll)), non-priority(hazardous)</characteristic>
       </characteristics>
     </profile>
     <profile id="45f8-ca32-ff90-b9f4" name="Laser-guided missile" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -9016,11 +9014,11 @@ hazardous, priority(only)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">topstrike, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="c1ce-97ba-e614-3f3f" name="Wave bombs" publicationId="81dd-fe5f-c233-17c5" page="102" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="c1ce-97ba-e614-3f3f" name="Wave bombs" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">3” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="24" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force Generation:
 Decide on a number of points (p), max restricted weapons (R), advancements (A), Faction Powers (FP) and Themed Skrimish Faction Descriptors (D).
 
@@ -458,8 +458,10 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <entryLink id="a0e4-3126-048c-dfa0" name="Leadership" hidden="false" collective="false" import="true" targetId="dd08-dd04-0205-d00f" type="selectionEntryGroup"/>
             <entryLink id="568a-93be-9de3-aae8" name="Mystic" hidden="false" collective="false" import="true" targetId="b117-1e3c-091e-8368" type="selectionEntryGroup"/>
             <entryLink id="35e6-9f14-6144-af75" name="Skills" hidden="false" collective="false" import="true" targetId="d732-7d42-17ad-73a8" type="selectionEntryGroup"/>
-            <entryLink id="416c-0796-242c-04ba" name="Tank" hidden="false" collective="false" import="true" targetId="39d5-ecc7-7f0e-b37a" type="selectionEntryGroup"/>
+            <entryLink id="416c-0796-242c-04ba" name="Advancement: Tank" hidden="false" collective="false" import="true" targetId="39d5-ecc7-7f0e-b37a" type="selectionEntryGroup"/>
             <entryLink id="832e-b99b-3cd8-9762" name="Mystic" hidden="false" collective="false" import="true" targetId="cc0e-d37a-b287-964e" type="selectionEntryGroup"/>
+            <entryLink id="9cca-5e8b-f899-ad84" name="Skills" hidden="false" collective="false" import="true" targetId="166e-1c50-1fd0-7d33" type="selectionEntryGroup"/>
+            <entryLink id="aae2-7a69-3834-258d" name="Skills" hidden="false" collective="false" import="true" targetId="63b0-8920-fefe-6c6c" type="selectionEntryGroup"/>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5174,69 +5176,173 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
       <infoLinks>
         <infoLink id="61c2-7034-f278-8598" name="Sticky Fingers" hidden="false" targetId="b3ef-13fc-c758-ee68" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="61ec-7cad-ee3c-7347" name="Lucky(1) [2+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="78fa-d694-3b8c-41a5" name="Lucky(1)" hidden="false" targetId="75da-25a2-2896-3f32" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7245-8ae4-f91b-36fd" name="Cuisine Vitamine [4+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5b81-7100-97bb-6a88" name="Cuisine Vitamine" hidden="false" targetId="ef35-74c5-209d-a894" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="a601-7cdd-4d4d-e0c4" name="Adapted" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4bb6-c0bd-3940-ebb0" name="Adapted" hidden="false" targetId="5d9e-73a3-ab8c-77a2" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="adb7-df42-79c2-2bc6" name="Horrible Visage [1+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="74fb-e5e0-a78a-d7f2" name="Horrible Visage" hidden="false" targetId="ea2f-e4cd-ea91-3dc3" type="rule"/>
         <infoLink id="4fff-9723-2e20-cbc0" name="Terror(6&quot;)" hidden="false" targetId="e7ae-0682-39d1-a3ba" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1ec0-81c1-db7f-1848" name="Bounding Leap [2+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2e0a-7dea-d2f9-468e" name="Bounding Leap" hidden="false" targetId="06c8-8cc5-060b-c9ed" type="rule"/>
         <infoLink id="147c-5b9c-4b4c-42c8" name="Move(jump)" hidden="false" targetId="e6da-4b9a-f775-4a57" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="3715-07db-5dd3-d0de" name="Inspiring" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a638-f6c3-897e-fb64" name="Inspiring" hidden="false" targetId="5bc2-3603-9e95-e9ba" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="f049-6d81-99f5-4e5a" name="Inspiring last words" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ebe8-7abe-4dec-0bc2" name="Inspiring last words" hidden="false" targetId="e7d1-f66c-4ec2-eb17" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="7bd7-8b3a-e1d0-52d2" name="Preacher [+1]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="2f04-ac47-aba8-c8b7" name="Preacher" hidden="false" targetId="4104-a66a-e67b-af4f" type="rule"/>
         <infoLink id="de45-7938-ed0d-803c" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e266-fbe2-8445-541c" name="Hurler" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1076-37d3-4b21-4623" name="Hurler" hidden="false" targetId="ebaf-0127-c635-5c61" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="92ce-e612-bb3c-cf94" name="Loader" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="53b1-d78a-a91f-e12d" name="Loader" hidden="false" targetId="174f-da76-619d-93a0" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="d1c6-8dc5-7ac3-319c" name="Hello there farmer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="140e-9688-d4b7-49e6" name="Hello there farmer" hidden="false" targetId="8a94-237d-915f-f69b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="939b-c3aa-5a7e-a981" name="Jack of All Trades" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c838-fb65-f000-1510" name="Jack of All Trades" hidden="false" targetId="cc4c-83a0-cde4-6d99" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="01f0-36d3-0849-29d0" name="Technology and Larceny(1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -5307,11 +5413,27 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
       <infoLinks>
         <infoLink id="2b78-e1e8-6b91-340b" name="Double Shifter" hidden="false" targetId="d1c3-aee3-cfa7-b3af" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="def2-d80e-5e36-2836" name="Skill Expert [2+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="10c7-df9c-098a-067d" name="Skill Expert" hidden="false" targetId="b761-fddf-e5dd-093b" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e559-b427-48a3-7227" name="Influence and Deception(+1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -5382,17 +5504,41 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
       <infoLinks>
         <infoLink id="2d54-9cce-cbfb-582b" name="Mystic Sense" hidden="false" targetId="c0b1-cfe7-b751-3499" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5eb4-d0b0-2972-8356" name="Propelled by Power [2+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4b91-6665-8d88-48f1" name="Propelled by Power" hidden="false" targetId="11a7-2993-cab6-1a4c" type="rule"/>
         <infoLink id="20ee-d2df-b048-bc45" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="4921-9195-3c35-2229" name="Disciplined Mind [3+]" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="218e-ae56-fcaf-8b39" name="Disciplined Mind" hidden="false" targetId="09ee-b61e-2257-1e62" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -7980,9 +8126,20 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9398-d42c-6536-b054" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="increment" field="892c-931a-1972-f247" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9398-d42c-6536-b054" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="increment" field="892c-931a-1972-f247" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e468-a3d7-76f5-2d18" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ec3-3f09-7c11-819c" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="892c-931a-1972-f247" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="568b-0a52-5f44-7581" name="Perception and Investigation(2)" hidden="false" collective="false" import="true" targetId="3c9f-fbb5-5af1-1f97" type="selectionEntry">
@@ -8925,9 +9082,15 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="939b-c3aa-5a7e-a981" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="increment" field="44e1-704a-0702-4de6" value="3.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="939b-c3aa-5a7e-a981" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a634-9190-bcc5-a1df" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e1-704a-0702-4de6" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="5cd1-2451-e322-aebd" name="Perception and Investigation(1)" hidden="false" collective="false" import="true" targetId="3c84-0fcc-f660-6584" type="selectionEntry">
@@ -8970,9 +9133,15 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="def2-d80e-5e36-2836" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="increment" field="fffb-739c-ead5-baaf" value="1.0">
+          <conditions>
+            <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="def2-d80e-5e36-2836" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e72-efe4-1d23-c1ca" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fffb-739c-ead5-baaf" type="min"/>
       </constraints>
       <entryLinks>
         <entryLink id="56e6-8ee4-e6de-a413" name="Perception and Investigation(+1)" hidden="false" collective="false" import="true" targetId="0e70-2dee-cf22-e6bc" type="selectionEntry">
