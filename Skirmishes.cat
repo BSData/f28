@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="25" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force Generation:
 Decide on a number of points (p), max restricted weapons (R), advancements (A), Faction Powers (FP) and Themed Skrimish Faction Descriptors (D).
 
@@ -6891,6 +6891,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="649a-8b62-5365-65dc" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="1ec5-7400-cffa-229e" name="Stack Up and Move Out!" hidden="true" collective="false" import="true" targetId="a832-80ed-8107-a70e" type="selectionEntry">
           <modifiers>
@@ -6903,6 +6906,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8674-9f28-97e5-9847" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="3930-cf4d-b93c-d172" name="Dynamic Entry [1+] " hidden="true" collective="false" import="true" targetId="e136-924b-0c4e-9c30" type="selectionEntry">
           <modifiers>
@@ -6920,6 +6926,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a50a-bd50-38ce-a206" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -6947,7 +6956,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="b5fc-d7b7-d523-0b8d" name="Infiltrator" hidden="false" collective="false" import="true" targetId="0842-f5ad-370c-8a52" type="selectionEntry">
+        <entryLink id="b5fc-d7b7-d523-0b8d" name="Infiltrator [Spearhead]" hidden="false" collective="false" import="true" targetId="0842-f5ad-370c-8a52" type="selectionEntry">
           <modifiers>
             <modifier type="increment" field="2a3d-f652-bae7-c0be" value="1.0">
               <conditions>
@@ -7012,6 +7021,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d1c-d701-4bef-70fc" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="a87f-1cca-aaa8-0520" name="Flanker [1+]" hidden="true" collective="false" import="true" targetId="6110-d9a3-51e2-70e9" type="selectionEntry">
           <modifiers>
@@ -7029,6 +7041,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ae-2cd2-e266-76a6" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="100c-6d3a-e064-1822" name="Low profile [2+]" hidden="true" collective="false" import="true" targetId="89a5-168f-2997-11fa" type="selectionEntry">
           <modifiers>
@@ -7046,6 +7061,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a90-632a-db2a-e16c" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7138,6 +7156,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23fe-a5d4-a89e-cea5" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="8f6a-e0e6-34e9-48cc" name="Friendlier Fire" hidden="true" collective="false" import="true" targetId="923e-bf1c-9e0d-3c48" type="selectionEntry">
           <modifiers>
@@ -7150,6 +7171,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94de-0632-4cd3-a1c7" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="a0a9-cace-0d75-661b" name="Blind Strike [3+]" hidden="true" collective="false" import="true" targetId="7c35-702c-59bf-a86e" type="selectionEntry">
           <modifiers>
@@ -7167,6 +7191,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4288-4801-25a6-606f" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7252,6 +7279,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e6a-a148-a4a6-6f26" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="5cc2-4e3a-3df9-6826" name="Diehard" hidden="true" collective="false" import="true" targetId="337f-6aae-8811-b50d" type="selectionEntry">
           <modifiers>
@@ -7264,6 +7294,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ddf8-3306-794e-ac18" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="15b7-be09-4be9-af9b" name="Hardened Armour" hidden="true" collective="false" import="true" targetId="c0bf-0dbf-5632-80fb" type="selectionEntry">
           <modifiers>
@@ -7276,6 +7309,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0ecd-d63a-2fd8-5147" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7373,6 +7409,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9468-999e-bb93-a69a" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="5562-b510-48e6-a6a1" name="Point Blank specialist" hidden="true" collective="false" import="true" targetId="ed96-fffe-3a46-d20c" type="selectionEntry">
           <modifiers>
@@ -7385,6 +7424,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5317-d012-fbfe-413c" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="20ad-f3f4-0d4e-2826" name="You go low, I go high" hidden="true" collective="false" import="true" targetId="82a3-9a6f-ee5c-e820" type="selectionEntry">
           <modifiers>
@@ -7397,6 +7439,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7cd-3d7c-bd91-76db" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7488,6 +7533,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e1e-7cde-263a-9818" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="c272-bf1e-ac5a-570f" name="Henchperson/Pet [2+]" hidden="true" collective="false" import="true" targetId="1695-ac40-812c-1065" type="selectionEntry">
           <modifiers>
@@ -7505,6 +7553,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c303-a672-a046-ccf2" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="d2e3-c7c2-6830-625b" name="Triage master [4+]" hidden="true" collective="false" import="true" targetId="794c-9bf2-f5fe-1f16" type="selectionEntry">
           <modifiers>
@@ -7522,6 +7573,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4feb-388e-cd94-ebf0" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7600,6 +7654,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eba6-1fa2-43bd-5164" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="00ee-46e0-3b50-0755" name="Loader" hidden="true" collective="false" import="true" targetId="92ce-e612-bb3c-cf94" type="selectionEntry">
           <modifiers>
@@ -7612,6 +7669,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05d2-526f-bd26-0b4d" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="c843-192c-ca61-5601" name="Hello there farmer" hidden="true" collective="false" import="true" targetId="d1c6-8dc5-7ac3-319c" type="selectionEntry">
           <modifiers>
@@ -7624,6 +7684,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf6-25d0-ab24-43f4" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7679,7 +7742,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="248f-a850-94ef-d643" name="For my own good" hidden="false" collective="false" import="true" targetId="2832-a8b4-6c8a-4c78" type="selectionEntry">
+        <entryLink id="248f-a850-94ef-d643" name="Mystic Shield" hidden="false" collective="false" import="true" targetId="2832-a8b4-6c8a-4c78" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84eb-0a15-f4d9-8cb1" type="max"/>
           </constraints>
@@ -7722,6 +7785,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29bc-b25c-1bba-333f" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="1cc6-a143-a118-31a2" name="Propelled by Power [2+]" hidden="true" collective="false" import="true" targetId="5eb4-d0b0-2972-8356" type="selectionEntry">
           <modifiers>
@@ -7739,6 +7805,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0496-e457-c338-fa37" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="b4f4-35f0-0670-fd74" name="Disciplined Mind [3+]" hidden="true" collective="false" import="true" targetId="4921-9195-3c35-2229" type="selectionEntry">
           <modifiers>
@@ -7756,6 +7825,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7313-345a-4200-0d3e" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7841,6 +7913,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05c5-663d-4d74-68ae" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="e84e-ab15-528a-5a8c" name="Inspiring last words" hidden="true" collective="false" import="true" targetId="f049-6d81-99f5-4e5a" type="selectionEntry">
           <modifiers>
@@ -7853,6 +7928,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ad0-4144-b79f-323e" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="8f1c-a4b6-5006-7fde" name="Preacher [+1]" hidden="true" collective="false" import="true" targetId="7bd7-8b3a-e1d0-52d2" type="selectionEntry">
           <modifiers>
@@ -7870,6 +7948,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccdb-0c31-1fd3-4d6e" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -7955,6 +8036,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9f1-e9b4-b8c8-3598" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="3b51-0a1d-d267-f603" name="Lucky(1) [2+]" hidden="true" collective="false" import="true" targetId="61ec-7cad-ee3c-7347" type="selectionEntry">
           <modifiers>
@@ -7972,6 +8056,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6646-dc27-2443-b3cd" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="f5fc-021f-38c8-37f3" name="Cuisine Vitamine [4+]" hidden="true" collective="false" import="true" targetId="7245-8ae4-f91b-36fd" type="selectionEntry">
           <modifiers>
@@ -7989,6 +8076,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7c6-b3f4-38ce-7752" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -8067,6 +8157,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3f28-0bbb-01a7-8f9c" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="42c4-2201-a0a8-58fd" name="Horrible Visage [1+]" hidden="true" collective="false" import="true" targetId="adb7-df42-79c2-2bc6" type="selectionEntry">
           <modifiers>
@@ -8084,6 +8177,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f01-c88e-0f64-99a0" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="53de-5b9f-12b2-0043" name="Bounding Leap [2+]" hidden="true" collective="false" import="true" targetId="1ec0-81c1-db7f-1848" type="selectionEntry">
           <modifiers>
@@ -8101,6 +8197,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3292-81b7-299b-eb67" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
@@ -8231,7 +8330,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="e468-a3d7-76f5-2d18" name="Any Skill(2)" hidden="false" collective="false" import="true" targetId="1ae6-4cf5-9138-d079" type="selectionEntry">
+        <entryLink id="e468-a3d7-76f5-2d18" name="Skilled" hidden="false" collective="false" import="true" targetId="1ae6-4cf5-9138-d079" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72b0-b2c9-0544-caf8" type="max"/>
           </constraints>
@@ -8258,6 +8357,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e88-508d-404d-4758" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="393d-922a-6892-b148" name="Double Shifter" hidden="true" collective="false" import="true" targetId="cdfe-e4f1-21e0-eb7e" type="selectionEntry">
           <modifiers>
@@ -8270,6 +8372,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8147-8a85-7187-22e3" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
         <entryLink id="9358-f8ec-68a9-a986" name="Skill Expert [2+]" hidden="true" collective="false" import="true" targetId="def2-d80e-5e36-2836" type="selectionEntry">
           <modifiers>
@@ -8287,6 +8392,9 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           <constraints>
             <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9487-aae8-66dc-f150" type="max"/>
           </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
