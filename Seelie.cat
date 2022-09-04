@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -93,7 +93,7 @@ FP: Faction Points</readme>
     <entryLink id="152c-2b3b-0dae-7a1c" name="Cloudsurfer station free special choice: Hoverbikers or Lancer Knights" hidden="false" collective="false" import="true" targetId="b6a4-593f-3340-2124" type="selectionEntry"/>
     <entryLink id="d3ee-77a2-38b6-a33f" name="Show hidden Doctrines" hidden="false" collective="false" import="true" targetId="baf9-0ce2-31e8-d4ed" type="selectionEntry">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ff-884c-d392-fbb9" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b0ff-884c-d392-fbb9" type="max"/>
       </constraints>
     </entryLink>
   </entryLinks>
@@ -5568,9 +5568,17 @@ FP: Faction Points</readme>
       </costs>
     </selectionEntry>
     <selectionEntry id="baf9-0ce2-31e8-d4ed" name="Show hidden Doctrines" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f27a-62c6-7b05-c1ec" name="Hidden Doctrines" hidden="false" targetId="cf69-0d24-b307-86d6" type="rule"/>
+      </infoLinks>
       <categoryLinks>
         <categoryLink id="442f-d368-1940-39d9" name="New CategoryLink" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
