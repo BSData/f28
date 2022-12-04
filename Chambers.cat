@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="12" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="18" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="13" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1411,7 +1411,7 @@ FP: Faction Points</readme>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="ce10-69df-1380-1c96" name="Chamber Scout Commander" hidden="true" collective="false" import="true" type="upgrade">
+            <selectionEntry id="ce10-69df-1380-1c96" name="Chamber Scout Commander" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -2459,6 +2459,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="3d99-2766-2dee-e12a" name="Chamber Siege Tank" hidden="false" targetId="ddef-e9e7-574e-535a" type="profile"/>
                 <infoLink id="372b-2d12-8808-9be6" name="Vehicle(tracked)" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="c975-87aa-92a4-1770" name="Robust(1)" hidden="false" targetId="99aa-f2f8-b3b8-03d2" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
@@ -3497,11 +3498,11 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="df25-b7ee-195a-0183" name="Slugger w/ Underslung Specalist Weapon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="df25-b7ee-195a-0183" name="Slugger w/ Combined Specalist Weapon" hidden="false" collective="false" import="true" type="upgrade">
       <comment>Adept</comment>
       <infoLinks>
         <infoLink id="3b60-4187-46e0-2607" name="Slugger" hidden="false" targetId="de65-91da-25ce-abf1" type="profile"/>
-        <infoLink id="b986-f0ad-fd78-c0cd" name="Underslung Weapon" hidden="false" targetId="2de1-86d1-fd25-c8e1" type="rule"/>
+        <infoLink id="b986-f0ad-fd78-c0cd" name="Combined weapon" hidden="false" targetId="fe13-5ad3-c184-fabb" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -5196,13 +5197,36 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3f4-255f-bce5-949d" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="02ab-7e24-da5a-924e" name="Slugger w/ Underslung Specalist Weapon" hidden="false" collective="false" import="true" targetId="df25-b7ee-195a-0183" type="selectionEntry"/>
+                <entryLink id="02ab-7e24-da5a-924e" name="Slugger w/ Combined Specalist Weapon" hidden="false" collective="false" import="true" targetId="df25-b7ee-195a-0183" type="selectionEntry"/>
               </entryLinks>
             </entryLink>
             <entryLink id="6ac0-294e-2f83-3c7c" name="Veteran Weapons CC" hidden="false" collective="false" import="true" targetId="1f43-b088-007e-fdcb" type="selectionEntryGroup">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9712-6d70-3d1d-b7a7" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3eac-467b-f564-1f0e" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="5e0f-deb6-c8bf-116c" name="Specalist Weapons" hidden="true" collective="false" import="true" targetId="8564-a00a-fc95-b214" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df25-b7ee-195a-0183" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="74eb-899d-a3c1-2ee9" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df25-b7ee-195a-0183" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="7553-7abb-85e9-37ae" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="df25-b7ee-195a-0183" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7553-7abb-85e9-37ae" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="74eb-899d-a3c1-2ee9" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -7157,12 +7181,12 @@ FP: Faction Points</readme>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="294e-b18f-79e2-6733" name="Specalist Weapons" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="68a1-4603-a60b-63f0" name="Storm Slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+        <entryLink id="68a1-4603-a60b-63f0" name="Storm slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
           </costs>
         </entryLink>
-        <entryLink id="f206-93b9-3110-3521" name="Plasma Gun" hidden="false" collective="false" import="true" targetId="3c6d-bd65-c051-fd59" type="selectionEntry">
+        <entryLink id="f206-93b9-3110-3521" name="Plasma gun" hidden="false" collective="false" import="true" targetId="3c6d-bd65-c051-fd59" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
           </costs>
@@ -7673,6 +7697,14 @@ FP: Faction Points</readme>
             </modifier>
           </modifiers>
         </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="8564-a00a-fc95-b214" name="Specalist Weapons" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="3b98-1365-4c70-92a3" name="Storm slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry"/>
+        <entryLink id="aef7-f864-ccbd-9d5c" name="Plasma gun" hidden="false" collective="false" import="true" targetId="3c6d-bd65-c051-fd59" type="selectionEntry"/>
+        <entryLink id="b0cb-fa21-d405-42ea" name="Flamer" hidden="false" collective="false" import="true" targetId="4fa1-44d4-ffaf-e416" type="selectionEntry"/>
+        <entryLink id="08e6-ffa4-ed83-66f7" name="Heatgun" hidden="false" collective="false" import="true" targetId="ff94-46d1-3391-b0b2" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>

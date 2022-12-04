@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="21" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="22" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The factions are in the progress of being updated, see below. 
@@ -18,13 +18,13 @@ Updated for revised:
 Skirmish
 The Army of the Republic(s)
 The Chambers
+The Enclaves
 The Scandinavian Commonwealth
 The Seelie Court
 The Tide
 The Unseelie Court
 
 Not updated for revised:
-The Enclaves
 The Mutant Menace
 The Nanite Resurrection
 The Tide Cult
@@ -412,7 +412,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       </costs>
     </selectionEntry>
     <selectionEntry id="00ba-a1ea-80a1-0deb" name="Plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
-      <comment>w</comment>
       <infoLinks>
         <infoLink id="584c-e1a4-3785-b0e5" name="Plasma Cannon" hidden="false" targetId="69fa-8ae0-b9ad-acf7" type="profile"/>
         <infoLink id="b503-8c36-04f7-aba4" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
@@ -574,7 +573,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="4ace-30bc-62a4-b7fc" name="Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="2f2e-939f-9995-3765" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="auto, re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="3ce4-ca91-0f44-8be9" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -1067,7 +1066,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c02b-f217-0c54-ccf6" name="Paired Energy Combat Claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c02b-f217-0c54-ccf6" name="Paired Energy combat claws" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7b0c-c7ae-8286-3a90" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
         <infoLink id="1482-f820-9635-40ac" name="Energy Combat Claw" hidden="false" targetId="63c5-4c48-f28b-0d5e" type="profile">
@@ -1268,10 +1267,10 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="44cc-dc40-b01f-f0b5" name="Dual Independent Missile System" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="36d6-2efc-d6b9-f4ae" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
-        <infoLink id="7604-5151-8a56-4921" name="Independent Missile System" hidden="false" targetId="f1b7-165e-93a2-b660" type="profile">
+        <infoLink id="7604-5151-8a56-4921" name="Independent missile System" hidden="false" targetId="f1b7-165e-93a2-b660" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=",re-roll"/>
           </modifiers>
         </infoLink>
       </infoLinks>
@@ -1682,7 +1681,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="d6fd-e901-6191-ed2f" name="Flamer" hidden="false" targetId="3c41-25bd-16ca-ea28" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="auto, re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="1555-0af1-9bdf-f8aa" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -2646,7 +2645,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="712a-ac63-08f7-bbe3" name="Mortar" hidden="false" targetId="458c-1e64-726a-8718" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="blast(D3), re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="5ea3-1c37-b4dc-d3af" name="Indirect*(modifier)" hidden="false" targetId="2f31-28a4-24bc-4b75" type="rule"/>
@@ -3207,7 +3206,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="bb11-8db3-04cd-3ed8" name="Hand Flamer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="bb11-8db3-04cd-3ed8" name="Hand flamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c595-14e1-41a5-687a" name="Hand Flamer" hidden="false" targetId="daca-765b-b3fb-2e6a" type="profile"/>
         <infoLink id="3049-88b8-3474-c114" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
@@ -3480,11 +3479,12 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e026-aead-70e8-527b" name="Zapper Gun" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e026-aead-70e8-527b" name="Zapper cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="7aa6-a4c6-1108-dad2" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="7aa6-a4c6-1108-dad2" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
         <infoLink id="743d-78fa-7a51-14c6" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
-        <infoLink id="95af-51a6-0682-0700" name="Zapper Gun" hidden="false" targetId="e16d-6e97-72b9-137a" type="profile"/>
+        <infoLink id="95af-51a6-0682-0700" name="Zapper cannon" hidden="false" targetId="e16d-6e97-72b9-137a" type="profile"/>
+        <infoLink id="b353-be85-33a7-024a" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3871,7 +3871,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="42c0-341d-54b3-4ff7" name="Driving Hunger" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="42c0-341d-54b3-4ff7" name="Driving hunger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4766-3e65-38ae-a5be" name="Driving Hunger" hidden="false" targetId="b2a4-8707-21fc-82aa" type="rule"/>
       </infoLinks>
@@ -4524,7 +4524,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="1b77-1a34-c25f-6417" name="Thorn pod" hidden="false" targetId="30b1-c4ef-b29f-265b" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="blast(D3), re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="cdd0-b316-db2c-1390" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -4679,9 +4679,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="adc5-7ea3-82eb-524d" name="Dark Arts Mystic(3)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="adc5-7ea3-82eb-524d" name="Mystic(Dark Arts 3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="25f3-2b88-4669-5dcf" name="school Mystic (level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+        <infoLink id="25f3-2b88-4669-5dcf" name="Mystic(Dark Arts 3)" hidden="false" targetId="fec4-8ea5-da41-9adf" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4709,7 +4709,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1434-9b5b-cad3-48fd" name="Multiple Rocket Pod" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1434-9b5b-cad3-48fd" name="Multiple rocket pod" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9bfb-a97f-8711-47d9" name="Multiple Rocket Pod" hidden="false" targetId="7d84-3a64-461f-be72" type="profile"/>
       </infoLinks>
@@ -4730,7 +4730,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6a9e-9a35-4ce2-a47b" name="Gehenna Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6a9e-9a35-4ce2-a47b" name="Gehenna autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e37d-431b-7d5b-d08b" name="Gehenna Autocannon" hidden="false" targetId="fdfd-766e-d9d8-9479" type="profile"/>
       </infoLinks>
@@ -4830,7 +4830,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="70ec-4ce2-75c1-753f" name="Sick Knife" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="70ec-4ce2-75c1-753f" name="Sick knife" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="283e-252a-bcaa-62a7" name="Sick Knife" hidden="false" targetId="4e20-5aca-1d47-9f25" type="profile"/>
       </infoLinks>
@@ -4851,9 +4851,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e985-ff5a-6011-4647" name="Sick Sword" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e985-ff5a-6011-4647" name="Sick blade" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="a371-d66d-0e32-6762" name="Sick Sword" hidden="false" targetId="72e6-f4a5-870d-3b01" type="profile"/>
+        <infoLink id="a371-d66d-0e32-6762" name="Sick blade" hidden="false" targetId="72e6-f4a5-870d-3b01" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -5538,7 +5538,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="9c33-cf49-fd99-5603" name="Dual Implant Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="75fe-f193-2393-22cc" name="Implant Cannon (Dual)" hidden="false" targetId="6597-146e-204b-bc73" type="profile"/>
+        <infoLink id="75fe-f193-2393-22cc" name="Implant cannon (Dual)" hidden="false" targetId="6597-146e-204b-bc73" type="profile"/>
         <infoLink id="93d2-5d9d-7886-35d1" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
       </infoLinks>
       <costs>
@@ -5882,7 +5882,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="a6df-ae96-d02e-7ad6" name="Hand Flamer" hidden="false" targetId="daca-765b-b3fb-2e6a" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="auto, re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="169c-c514-cd2e-6ca5" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
@@ -6950,7 +6950,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="c26a-b612-f5c9-cec0" name="Mono Combat claws" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="c26a-b612-f5c9-cec0" name="Mono combat claws" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="74d7-ed8e-7fa2-ab3f" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
         <infoLink id="ac4f-9214-4137-155a" name="Mono Combat claws" hidden="false" targetId="6d5b-0a33-aff3-0ba0" type="profile"/>
@@ -7382,7 +7382,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="718f-8849-152f-0afb" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile">
           <modifiers>
             <modifier type="append" field="name" value="(Dual)"/>
-            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=",re-roll"/>
           </modifiers>
         </infoLink>
         <infoLink id="b8cb-e9d9-1eec-6d21" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
@@ -7443,6 +7443,218 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         </infoLink>
         <infoLink id="6161-2c79-f32d-a2be" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="48c4-69d2-4ad5-57c5" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="15e9-392b-bd20-7c42" name="Massive energy cutter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="31e9-3810-7c31-174c" name="Massive energy cutter" hidden="false" targetId="9a49-dc1a-5219-aa48" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9570-bae6-0208-11b3" name="Bomb chucker" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7523-1415-1ddc-030b" name="Bomb chucker" hidden="false" targetId="b36b-7a48-ebba-c92f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5b3e-20b7-c4b9-7382" name="Energy cutter" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3521-e334-7283-288d" name="Energy cutter" hidden="false" targetId="a00e-e3f7-36a9-8a9c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7d3-84e6-dc74-f6f2" name="Massive Vehicle CC Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c05b-e62d-3254-0dec" name="Massive Vehicle CC Weapon" hidden="false" targetId="df15-4522-0b6a-b831" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2e08-364c-e0b6-ce31" name="Field gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="cac3-180b-5314-e9f0" name="Field gun" hidden="false" targetId="a44e-ad2f-9bc5-e690" type="profile"/>
+        <infoLink id="9768-ba0a-2cff-44cf" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="28a1-74f2-f671-3c6f" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7bb0-7047-13a0-3382" name="Dual Massive energy fist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="990b-8f17-ee84-1940" name="Massive Energy fist" hidden="false" targetId="70f4-643d-da86-3cd6" type="profile">
+          <modifiers>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=",re-roll"/>
+            <modifier type="append" field="name" value="(Dual)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="065e-db06-0357-8525" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2db1-2ba0-216b-be42" name="Massive Lightning hammer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="de72-9690-4ba2-ca1d" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="abb7-4a04-618f-b77c" name="Massive Lightning hammer" hidden="false" targetId="5833-89be-7389-70f1" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e32c-16b9-0e82-c05c" name="Mystic(Dark Arts 1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="21bf-ee6d-1d3b-fe66" name="Mystic(Dark Arts 1)" hidden="false" targetId="339a-9ac1-78f1-5e13" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f48-1ce9-6401-877f" name="Heavy Gatling gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="94b4-21fd-6322-389c" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="91b5-41d5-8954-959f" name="Heavy Gatling gun" hidden="false" targetId="6fd9-3af0-36fd-489e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f198-9e07-bbf5-bb0a" name="Massive claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c956-2f54-c528-2cd0" name="Massive claws" hidden="false" targetId="c833-1250-0506-f3d1" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="031f-68b8-3120-8370" name="Massive Energy axe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e0de-785f-b5b2-5e31" name="Massive Energy axe" hidden="false" targetId="f3f4-7955-657a-3409" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c7a3-6e02-eceb-fb48" name="Massive Energy claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0dd6-71e5-aeb7-ec14" name="Massive Energy claws" hidden="false" targetId="2af6-a656-924c-06e0" type="profile"/>
+        <infoLink id="0617-60b5-9ce4-769e" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ff23-33cc-9242-3611" name="Attack(+1)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1cd1-2aaf-9cf5-f36a" name="Attack(+1)" hidden="false" targetId="cdad-77da-75ba-2701" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d549-773f-7de6-10c0" name="Energy flail" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b67f-d923-ce7a-d445" name="Energy flail" hidden="false" targetId="d0b4-5651-7883-ee8b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e8fb-deed-f598-28db" name="Dual Massive Vibrofist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="75ec-4a6b-ac5a-5d18" name="Massive Vibrofist" hidden="false" targetId="54d0-4454-ab7f-ee77" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=",re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="6f04-3da5-29b1-2563" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="d03e-6478-8302-1543" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="aa8c-5fce-3272-a90c" name="Massive Vibrofist" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="54e4-8f08-112b-0f5e" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="f29b-0131-99e0-54d1" name="Massive Vibrofist" hidden="false" targetId="54d0-4454-ab7f-ee77" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="79cd-dc63-3390-c7b3" name="Dual Massive flails" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5dcc-68dc-c971-9f33" name="Massive flails" hidden="false" targetId="5941-e6c9-d005-52d4" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=",re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="564b-6457-e766-6742" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6ded-1ae0-90b7-2336" name="Paired Mono combat claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f73f-a32c-5006-2117" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="2017-3ae8-cbf6-eefe" name="Mono Combat claws" hidden="false" targetId="6d5b-0a33-aff3-0ba0" type="profile">
+          <modifiers>
+            <modifier type="set" field="fea5-12e0-2cf5-710d" value="CC (3)"/>
+            <modifier type="append" field="name" value="(Paired)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="899b-6b53-e259-7997" name="Paired" hidden="false" targetId="691f-b11b-77fa-9109" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -7514,8 +7726,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <rule id="1271-c787-1a8a-3fca" name="Bestow Morale(level)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>All models in attached unit gains ability: Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
     </rule>
-    <rule id="2de1-86d1-fd25-c8e1" name="Underslung Weapon" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>As weapon, one use</description>
+    <rule id="2de1-86d1-fd25-c8e1" name="Underslung weapon" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>As weapon with one use.</description>
     </rule>
     <rule id="857e-6bf3-ffc2-1970" name="Bike" hidden="false">
       <description>Move (12&quot;)</description>
@@ -7848,8 +8060,8 @@ Unless the source has Superior at the same or greater scale (1 is default):
 ● Model may not be moved by outside effects.
 ● Model is not affected by bestow, cause or inflict.</description>
     </rule>
-    <rule id="b2a4-8707-21fc-82aa" name="Driving Hunger" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Keep attacking with one (1) additional dice each time the model causes wound in CC.</description>
+    <rule id="b2a4-8707-21fc-82aa" name="Driving hunger" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Each time the model causes a wound with a CC attack, it receives another attack dice with cumulative hit(-1).</description>
     </rule>
     <rule id="fd36-84c7-7a08-d0f8" name="Bestow Morale(1)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>All models in attached unit gains ability Morale(1): Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
@@ -7958,20 +8170,23 @@ This model has First Strike vs Aircraft that attack ground targets.</description
     <rule id="6cc4-4016-fc17-f55d" name="Weaken Defences" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
       <description>Enemy vehicles within 18” has Defence(-1).</description>
     </rule>
-    <rule id="339a-9ac1-78f1-5e13" name="Dark Arts Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="339a-9ac1-78f1-5e13" name="Mystic(Dark Arts 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Dark Arts list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="f569-4d0d-0266-91a9" name="Dark Arts Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="f569-4d0d-0266-91a9" name="Mystic(Dark Arts 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Dark Arts list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="fec4-8ea5-da41-9adf" name="Dark Arts Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="fec4-8ea5-da41-9adf" name="Mystic(Dark Arts 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Dark Arts list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="d7e2-f1d7-de0a-e02c" name="Mystic(Smite 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Smite list of power level equal or less than the highest dice rolled.
@@ -8198,16 +8413,16 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="53ae-970d-90de-0cd2" name="Summon(how, what, where)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
       <description>Deploy unit of what, how, where (without action markers, unless otherwise specified).</description>
     </rule>
-    <rule id="e91e-7bb5-4a22-73ce" name="Mystic (Tidemind 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="e91e-7bb5-4a22-73ce" name="Mystic(Tidemind 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.</description>
     </rule>
-    <rule id="42b7-de7b-c95c-273f" name="Mystic (Tidemind 2)" publicationId="81dd-fe5f-c233-17c5" page="147" hidden="false">
+    <rule id="42b7-de7b-c95c-273f" name="Mystic(Tidemind 2)" publicationId="81dd-fe5f-c233-17c5" page="147" hidden="false">
       <description>When attacking, you may roll two(2) dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="cc19-70cd-c130-a7b5" name="Mystic (Tidemind 3)" publicationId="81dd-fe5f-c233-17c5" page="147" hidden="false">
+    <rule id="cc19-70cd-c130-a7b5" name="Mystic(Tidemind 3)" publicationId="81dd-fe5f-c233-17c5" page="147" hidden="false">
       <description>When attacking, you may roll three(3) dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
@@ -8240,7 +8455,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="f90d-5a25-6fe3-aae8" name="Mystic(school 1/3, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>One (1) model with this trait in a unit may add the mystic levels from others with this trait in the same unit (fractions are rounded down).</description>
     </rule>
-    <rule id="6a7c-7309-8dcd-4ec0" name="Mystic (Tidemind level)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="6a7c-7309-8dcd-4ec0" name="Mystic(Tidemind x)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <comment>w</comment>
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.
 
@@ -8374,57 +8589,59 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="6974-f868-5fce-cb86" name="Disruption(12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within 12&quot; may not remove extra action markers in endphase.</description>
     </rule>
-    <rule id="7667-845a-bb8f-0d4b" name="Mystic (Alchemy 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="7667-845a-bb8f-0d4b" name="Mystic(Alchemy 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.</description>
     </rule>
-    <rule id="fa33-9022-b4ac-6a11" name="Mystic (Alchemy 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="fa33-9022-b4ac-6a11" name="Mystic(Alchemy 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll two(2) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="936e-2a41-866e-8071" name="Mystic (Alchemy x)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="936e-2a41-866e-8071" name="Mystic(Alchemy x)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Fate list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="c3ee-c8b5-e630-dc08" name="Mystic (Alchemy 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="c3ee-c8b5-e630-dc08" name="Mystic(Alchemy 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll three(3) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="2e59-2cb1-5779-54a2" name="Weird Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
-
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+    <rule id="2e59-2cb1-5779-54a2" name="Mystic(Weird 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <comment>w</comment>
+      <description>When attacking, you may roll 1 number of dice and pick one (1) power from the Weird list of power level equal or less than the highest dice rolled.</description>
     </rule>
-    <rule id="f3a1-5475-c93e-b996" name="Weird Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="f3a1-5475-c93e-b996" name="Mystic(Weird 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll 2 number of dice and pick one (1) power from the Weird list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="01cd-0c83-6d27-c67b" name="Weird Mystic(level)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="01cd-0c83-6d27-c67b" name="Mystic(Weird x)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Weird list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="1182-25be-a139-f55c" name="Weird Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="1182-25be-a139-f55c" name="Mystic(Weird 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll 3 number of dice and pick one (1) power from the Weird list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="4d5b-ae15-ec53-05d6" name="Mystic (Telepathy 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="4d5b-ae15-ec53-05d6" name="Mystic(Telepathy 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.</description>
     </rule>
-    <rule id="eefb-87a4-2d76-308b" name="Mystic (Telepathy 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="eefb-87a4-2d76-308b" name="Mystic(Telepathy 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll two(2) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="8871-a3d5-02d4-1674" name="Mystic (Telepathy 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="8871-a3d5-02d4-1674" name="Mystic(Telepathy 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll three(3) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
@@ -8867,7 +9084,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="9067-6a12-fb58-c680" name="Inflict Defence(-1) (2”, regular, no stacking)" publicationId="91df-c558-75f9-73ea" hidden="false">
       <description>Models of enemy regular units within 2&quot; has Defence(-1), this effeckt does not stack.</description>
     </rule>
-    <rule id="5da5-8d13-0422-4fc2" name="Mystic (Tidemind 1/2, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="5da5-8d13-0422-4fc2" name="Mystic(Tidemind 1/2, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
@@ -8903,7 +9120,7 @@ group: one (1) model with this trait in a unit may add the mystic levels from ot
       <description>Model may not move or be moved and not attack in CC.</description>
     </rule>
     <rule id="6589-024f-642c-fd89" name="Defence(+1 in cover)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false"/>
-    <rule id="1f5a-b83c-fd6f-6fea" name="Mystic (Telepathy 1, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+    <rule id="1f5a-b83c-fd6f-6fea" name="Mystic(Telepathy 1, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
 If you roll doubles, you may use the boosted version of a power at the same level.
@@ -8946,6 +9163,56 @@ exposed.</description>
     </rule>
     <rule id="9ef0-76b8-620e-c895" name="Inflict Disruption(18&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Models of enemy units within 18&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="5272-99ce-7e03-af8e" name="Loathing(CC)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Re-roll CC results of ‘1’ to wound for this model.</description>
+    </rule>
+    <rule id="6b99-d433-bbde-e4c3" name="Bestow Defence(min 4)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>All models in this model’s unit have Defence(min 4). If a unit already has trait at a better level, it takes precedence.</description>
+    </rule>
+    <rule id="af07-d38a-b6a4-b17f" name="Mystic(Weird 1 per 6 wounds in the unit)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Weird list of power level equal or less than the highest dice rolled.
+
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
+    </rule>
+    <rule id="3a2d-ad18-789f-cc12" name="Capacity(15)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 15 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="95f5-dfc0-8bea-786a" name="Capacity(5 ports)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>5 passengers may attack with max 5p ranged weapons.</description>
+    </rule>
+    <rule id="492f-126c-447d-cd2f" name="Capacity(6 ports)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>6 passengers may attack with max 5p ranged weapons.</description>
+    </rule>
+    <rule id="2010-12a5-c937-b1df" name="Capacity(4 ports)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>4 passengers may attack with max 5p ranged weapons.</description>
+    </rule>
+    <rule id="7d6d-6840-c03f-a991" name="Capacity(8)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 8 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="2c8e-7340-f65f-2840" name="Unstable" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>This unit takes a dangerous terrain test in the withdrawal step of every endphase. Stacks with further instances of Unstable.</description>
+    </rule>
+    <rule id="8d67-aa1d-0abb-9ae8" name="Inflict Inaccurate(2&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <description>Enemy units within 2&quot; suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
+    </rule>
+    <rule id="fe13-5ad3-c184-fabb" name="Combined weapon" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>As weapon that may be used instead of parent weapon. Not affected by Attack multipliers unless specifically mentioned. If used by a model that has an Attack multiplier, lower the multiplier by 1.
+example: an Attack(x3) model has “slugger with combined Flamer”. it can either use the slugger with x3 dice, or the slugger with x2 dice and the Flamer normally.</description>
+    </rule>
+    <rule id="09f8-aa68-32f8-9554" name="Inflict Disruption(8&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within 8&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="f4f4-92c8-c544-710f" name="Bestow Masterwork(6&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>All models in units within 6&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+    </rule>
+    <rule id="c27b-5d22-7f2b-4c01" name="Inflict Disruption(2&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within 2&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -10195,11 +10462,11 @@ indirect(-2), one use</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="daca-765b-b3fb-2e6a" name="Hand Flamer" publicationId="81dd-fe5f-c233-17c5" page="74" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="daca-765b-b3fb-2e6a" name="Hand flamer" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (D3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">auto</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">spray(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol	</characteristic>
       </characteristics>
@@ -10352,13 +10619,13 @@ indirect(-2), one use</characteristic>
 heavy, +1 on vehicle damage table</characteristic>
       </characteristics>
     </profile>
-    <profile id="e16d-6e97-72b9-137a" name="Zapper Gun" publicationId="81dd-fe5f-c233-17c5" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="e16d-6e97-72b9-137a" name="Zapper cannon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll vs vehicles</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+D6+2</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, damage(2) vs vehicles, priority(only)</characteristic>
       </characteristics>
     </profile>
     <profile id="e617-196d-76cd-dc6c" name="Bubble Launcher" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -10513,12 +10780,12 @@ heavy</characteristic>
 heavy </characteristic>
       </characteristics>
     </profile>
-    <profile id="6a59-9f50-94db-7e14" name="Vehicle CC Weapon" publicationId="81dd-fe5f-c233-17c5" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="6a59-9f50-94db-7e14" name="Vehicle CC Weapon" publicationId="91df-c558-75f9-73ea" page="105" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (D3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -10912,11 +11179,11 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">parry, suppression(x2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="7d84-3a64-461f-be72" name="Multiple Rocket Pod" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="7d84-3a64-461f-be72" name="Multiple rocket pod" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast, re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
@@ -10930,7 +11197,7 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="fdfd-766e-d9d8-9479" name="Gehenna Autocannon" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="fdfd-766e-d9d8-9479" name="Gehenna autocannon" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (3)</characteristic>
@@ -10993,7 +11260,7 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover</characteristic>
       </characteristics>
     </profile>
-    <profile id="4e20-5aca-1d47-9f25" name="Sick Knife" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="4e20-5aca-1d47-9f25" name="Sick knife" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -11002,21 +11269,21 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="b696-4400-5ca0-04ab" name="Pincer" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="b696-4400-5ca0-04ab" name="Pincer" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
-    <profile id="72e6-f4a5-870d-3b01" name="Sick Sword" publicationId="81dd-fe5f-c233-17c5" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="72e6-f4a5-870d-3b01" name="Sick blade" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2, re-roll</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -12187,7 +12454,7 @@ without Aircraft, VTOL, hover or jump)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="6d5b-0a33-aff3-0ba0" name="Mono Combat claws" publicationId="91df-c558-75f9-73ea" page="136" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="6d5b-0a33-aff3-0ba0" name="Mono combat claws" publicationId="91df-c558-75f9-73ea" page="136" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -12492,6 +12759,118 @@ without Aircraft, VTOL, hover or jump)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">min 4+</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">wound(re-roll) when charging</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9a49-dc1a-5219-aa48" name="Massive energy cutter" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="b36b-7a48-ebba-c92f" name="Bomb chucker" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a00e-e3f7-36a9-8a9c" name="Energy cutter" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="df15-4522-0b6a-b831" name="Massive Vehicle CC Weapon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="a44e-ad2f-9bc5-e690" name="Field gun" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">AT: 36” (1)
+HE: 36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">.
+blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1
++4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-2), priority(only)
+priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5833-89be-7389-70f1" name="Massive Lightning hammer" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6fd9-3af0-36fd-489e" name="Heavy Gatling gun" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (8)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3f4-7955-657a-3409" name="Massive Energy axe" publicationId="91df-c558-75f9-73ea" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="2af6-a656-924c-06e0" name="Massive Energy claws" publicationId="91df-c558-75f9-73ea" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c833-1250-0506-f3d1" name="Massive claws" publicationId="91df-c558-75f9-73ea" page="98" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="d0b4-5651-7883-ee8b" name="Energy flail" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">min 4+</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">wound(re-roll) when charging</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="54d0-4454-ab7f-ee77" name="Massive Vibrofist" publicationId="91df-c558-75f9-73ea" page="100" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
