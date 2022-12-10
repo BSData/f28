@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -340,7 +340,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="688b-b9f1-4506-c3c6" name="Ti. Cannon Beast" hidden="false" targetId="ad11-a65f-32c3-d9f7" type="profile"/>
                 <infoLink id="83c8-5068-de44-0b18" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
-                <infoLink id="f36e-645e-dc4b-bd39" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="f36e-645e-dc4b-bd39" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="110.0"/>
@@ -448,6 +448,16 @@ FP: Faction Points</readme>
                     <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
+                <modifier type="decrement" field="a683-7b95-eff6-c4a2" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0809-6103-3fa7-f03e" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="d673-4324-3dce-0c42" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0809-6103-3fa7-f03e" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a683-7b95-eff6-c4a2" type="max"/>
@@ -507,6 +517,34 @@ FP: Faction Points</readme>
                   </constraints>
                 </entryLink>
               </entryLinks>
+            </entryLink>
+            <entryLink id="6cfb-2b8f-959d-159b" name="Paired Warrior CC weapons" hidden="false" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="increment" field="a6b2-57fb-d1ef-82c0" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="45b6-05ca-e627-67fd" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="a6b2-57fb-d1ef-82c0" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e658-ac57-9d54-976f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="45b6-05ca-e627-67fd" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e658-ac57-9d54-976f" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b2-57fb-d1ef-82c0" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45b6-05ca-e627-67fd" type="min"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -571,7 +609,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a287-a628-0a2d-c432" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="13c0-b0b1-8c56-c7f0" name="Tearing claws with attack(+1)" hidden="false" collective="false" import="true" targetId="5ab6-6c2e-5295-4e0c" type="selectionEntry">
+                <entryLink id="13c0-b0b1-8c56-c7f0" name="Paired Tearing claws" hidden="false" collective="false" import="true" targetId="8a71-1a21-8630-8764" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7762-15bf-c339-9a52" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db2f-84c8-5bc3-6d1a" type="min"/>
@@ -663,9 +701,10 @@ FP: Faction Points</readme>
                 <infoLink id="0013-1ef9-46a0-5595" name="Ti. Spawn Beast" hidden="false" targetId="175c-7746-b3b7-a7dc" type="profile"/>
                 <infoLink id="5df4-52fa-9a5a-05dc" name="Mystic (Tidemind 2)" hidden="false" targetId="42b7-de7b-c95c-273f" type="rule"/>
                 <infoLink id="abb2-a439-f1ad-5374" name="Capacity(20 small beasts or 6 munchers)" hidden="false" targetId="04ae-754c-72e3-f994" type="rule"/>
-                <infoLink id="4d94-728d-5985-f4ba" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="4d94-728d-5985-f4ba" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
                 <infoLink id="1563-4e54-82b9-093a" name="Bestow Restore(D3) and Masterwork (12”, small beasts, munchers)" hidden="false" targetId="932c-440c-237d-a344" type="rule"/>
                 <infoLink id="742f-6109-5784-5325" name="Bestow Masterwork (12”, small beasts, munchers)" hidden="false" targetId="8166-45be-02bb-be93" type="rule"/>
+                <infoLink id="6bc8-fc36-205f-7830" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="1dac-8be8-5a82-b79d" name="Thorn Cluster" hidden="false" collective="false" import="true" targetId="88c0-e4d5-c367-5541" type="selectionEntry">
@@ -871,7 +910,7 @@ FP: Faction Points</readme>
                 </infoLink>
                 <infoLink id="44b1-d336-2000-8a05" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="bda1-c050-c755-52e8" name="Mystic (Tidemind 2)" hidden="false" targetId="42b7-de7b-c95c-273f" type="rule"/>
-                <infoLink id="2b40-3c4e-1288-e853" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="2b40-3c4e-1288-e853" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="80.0"/>
@@ -1041,7 +1080,7 @@ FP: Faction Points</readme>
                 <infoLink id="3348-860b-228e-35c5" name="Bio-Tank" hidden="false" targetId="cc68-8f98-5746-b724" type="profile"/>
                 <infoLink id="8f8b-e1d3-44ad-f5bd" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="f044-c9ad-fd95-0c73" name="Charge(3&quot;)" hidden="false" targetId="7c92-fa16-ee47-4ebc" type="rule"/>
-                <infoLink id="ccd3-689d-924e-ac48" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="ccd3-689d-924e-ac48" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="65.0"/>
@@ -1089,7 +1128,7 @@ FP: Faction Points</readme>
                 <infoLink id="becc-24fa-bb3c-59f7" name="Giant Beast" hidden="false" targetId="8547-cd99-0b9a-6460" type="profile"/>
                 <infoLink id="2652-bb6b-b5fa-7055" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="2459-6578-1cee-955c" name="Priority(Attack(x2))" hidden="false" targetId="e274-e57d-1eb2-cc85" type="rule"/>
-                <infoLink id="95da-f977-349e-e34a" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="95da-f977-349e-e34a" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="200.0"/>
@@ -1157,7 +1196,7 @@ FP: Faction Points</readme>
                 <infoLink id="02b7-466f-148f-2382" name="Driving Hunger" hidden="false" targetId="b2a4-8707-21fc-82aa" type="rule"/>
                 <infoLink id="f6a0-bb36-83db-f89c" name="Hazardous Target(CC)" hidden="false" targetId="d83d-0b9a-4792-7e26" type="rule"/>
                 <infoLink id="c52d-e0f6-ab7a-c18a" name="No Escape" hidden="false" targetId="5162-3674-4eb4-3387" type="rule"/>
-                <infoLink id="aa8e-2fe7-6106-e176" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="aa8e-2fe7-6106-e176" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="120.0"/>
@@ -1206,7 +1245,7 @@ FP: Faction Points</readme>
                 <infoLink id="ae97-abea-49e1-889a" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="3a4d-51b2-9dfc-f615" name="Hazardous Target(CC)" hidden="false" targetId="d83d-0b9a-4792-7e26" type="rule"/>
                 <infoLink id="ffcc-38e6-abc8-1c2b" name="Toxic Cloud" hidden="false" targetId="f554-5d9a-5efb-6837" type="rule"/>
-                <infoLink id="57f9-c592-3ed4-45c7" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="57f9-c592-3ed4-45c7" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="140.0"/>
@@ -1260,7 +1299,7 @@ FP: Faction Points</readme>
                 <infoLink id="4f96-89ca-0b90-75f6" name="Ti. Tunnelling Horror" hidden="false" targetId="005c-ba51-aa47-8736" type="profile"/>
                 <infoLink id="9ed8-78e5-44df-f89e" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="fd2f-1c9c-9060-9dc5" name="Oversized(+3)" hidden="false" targetId="4a6e-573c-2ba6-fa4c" type="rule"/>
-                <infoLink id="0069-3f6a-a870-1e0d" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="0069-3f6a-a870-1e0d" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="160.0"/>
@@ -1351,7 +1390,7 @@ FP: Faction Points</readme>
                 </infoLink>
                 <infoLink id="e300-923a-d2ae-3259" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="de6b-7550-b170-9691" name="Attach(any massive unit, not tide guard)" hidden="false" targetId="ed66-d986-a853-88fa" type="rule"/>
-                <infoLink id="c73b-6bfa-1232-7b53" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="c73b-6bfa-1232-7b53" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1377,7 +1416,6 @@ FP: Faction Points</readme>
                 <selectionEntry id="e0fc-c34f-b704-5dff" name="Assault" hidden="false" collective="false" import="true" type="upgrade">
                   <infoLinks>
                     <infoLink id="9a72-2800-a4eb-858b" name="Defence(8)" hidden="false" targetId="877b-e507-ba6d-e852" type="rule"/>
-                    <infoLink id="8064-1dff-6afa-e108" name="Attack(+1)" hidden="false" targetId="cdad-77da-75ba-2701" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1416,7 +1454,7 @@ FP: Faction Points</readme>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="b89c-0288-da00-be33" name="Warrior CC weapons" hidden="true" collective="false" import="true" targetId="e658-ac57-9d54-976f" type="selectionEntryGroup">
+            <entryLink id="b89c-0288-da00-be33" name="Paired Warrior CC weapons" hidden="true" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1538,7 +1576,7 @@ FP: Faction Points</readme>
                 <infoLink id="49dc-955d-a163-ec06" name="Winged Monster" hidden="false" targetId="1af4-eb25-d0b6-3ab9" type="profile"/>
                 <infoLink id="e510-1962-0930-0dea" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
                 <infoLink id="d59f-4035-cc1c-9d02" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
-                <infoLink id="d68f-9508-a528-1f64" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="d68f-9508-a528-1f64" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1703,7 +1741,7 @@ FP: Faction Points</readme>
                 <infoLink id="61b2-88ab-a182-e922" name="Move(hover)" hidden="false" targetId="f77b-bcdb-fbf3-0db8" type="rule"/>
                 <infoLink id="2e1d-6c7d-9d52-51e6" name="Capacity(20)" hidden="false" targetId="cd90-c74e-f86e-b21a" type="rule"/>
                 <infoLink id="9e40-fb1f-70b1-17b2" name="Pylon Pattern" hidden="false" targetId="3947-ca5f-d41c-30c1" type="rule"/>
-                <infoLink id="30b9-be6c-b23c-5047" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="30b9-be6c-b23c-5047" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="3507-e252-32a6-9caa" name="Custom Plasma Cannon" hidden="false" collective="false" import="true" targetId="f14c-52e7-66ca-1beb" type="selectionEntry">
@@ -1927,22 +1965,6 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ab6-6c2e-5295-4e0c" name="Tearing claws with attack(+1)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="7d82-8ee2-91ec-0b0b" name="Vital Strike" hidden="false" targetId="a363-87ce-254e-2793" type="rule"/>
-        <infoLink id="df60-7b1a-7941-7223" name="Tearing claws" hidden="false" targetId="80c4-524a-dcc9-dcef" type="profile">
-          <modifiers>
-            <modifier type="set" field="fea5-12e0-2cf5-710d" value="CC (3)"/>
-            <modifier type="append" field="name" value="(attack(+1))"/>
-          </modifiers>
-        </infoLink>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="3bc5-2d98-15c0-3825" name="Psychic Blast" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c8ff-6262-2b72-192d" name="Psychic Blast" hidden="false" targetId="aef3-943c-36e3-d7ee" type="profile"/>
@@ -1978,7 +2000,12 @@ FP: Faction Points</readme>
     </selectionEntry>
     <selectionEntry id="c320-23ab-3319-4614" name="Swoop strike with Attack(+2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="34b1-fe8f-9ebc-6f72" name="Swoop strike" hidden="false" targetId="1517-4203-48f2-84e6" type="profile"/>
+        <infoLink id="34b1-fe8f-9ebc-6f72" name="Swoop strike" hidden="false" targetId="1517-4203-48f2-84e6" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Tide Hag)"/>
+            <modifier type="set" field="fea5-12e0-2cf5-710d" value="6&quot; (8)"/>
+          </modifiers>
+        </infoLink>
         <infoLink id="e299-d6b0-05be-5d66" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
         <infoLink id="5956-df43-0b47-30a8" name="Topstrike" hidden="false" targetId="fda4-59ac-e1e1-eb1b" type="rule"/>
         <infoLink id="a893-7b55-25cd-e075" name="Attack(+2)" hidden="false" targetId="e283-2ed2-23c0-dc95" type="rule"/>
@@ -2020,7 +2047,7 @@ FP: Faction Points</readme>
                   </modifiers>
                 </infoLink>
                 <infoLink id="7f80-79d2-3cd1-d592" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
-                <infoLink id="f4e9-65b8-ce8f-053d" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="f4e9-65b8-ce8f-053d" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2116,7 +2143,7 @@ FP: Faction Points</readme>
                   </modifiers>
                 </infoLink>
                 <infoLink id="187d-ac27-0e4f-1e3b" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
-                <infoLink id="8810-f017-670b-d5a3" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
+                <infoLink id="8810-f017-670b-d5a3" name="Fanatic(optional)" hidden="false" targetId="4046-b62e-4476-3cac" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2399,6 +2426,15 @@ FP: Faction Points</readme>
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
+    <selectionEntryGroup id="0809-6103-3fa7-f03e" name="Warrior CC weapons (Paired)" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="dcd1-7cd0-91ae-fce9" name="Paired Bone-blade and whip" hidden="false" collective="false" import="true" targetId="00e4-0c34-1ac5-0802" type="selectionEntry"/>
+        <entryLink id="ec9d-2ed5-ec28-98a1" name="Paired Bone-blades" hidden="false" collective="false" import="true" targetId="101e-a886-6cba-de6e" type="selectionEntry"/>
+        <entryLink id="5656-585d-114d-940a" name="Paired Bone-scythes" hidden="false" collective="false" import="true" targetId="c86d-01cd-2601-73bb" type="selectionEntry"/>
+        <entryLink id="3a47-8637-bb7b-5ae7" name="Paired Crushing Claws" hidden="false" collective="false" import="true" targetId="56c4-a65c-52ce-6a4f" type="selectionEntry"/>
+        <entryLink id="707d-349a-0b54-12eb" name="Paired Tearing claws" hidden="false" collective="false" import="true" targetId="8a71-1a21-8630-8764" type="selectionEntry"/>
+      </entryLinks>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="2b3e-d485-8493-4a23" name="Attach(tide warriors)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
@@ -2538,7 +2574,7 @@ Tide units may only use Tide transports.</description>
     </profile>
     <profile id="d5ba-7876-a3a0-30b0" name="Ti. Bio-mine" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
-        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
         <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">2</characteristic>
         <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
