@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="23" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="24" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The factions are in the progress of being updated, see below. 
@@ -23,11 +23,11 @@ The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
 The Tide
+The Tide Cult
 The Unseelie Court
 
 Not updated for revised:
 The Mutant Menace
-The Tide Cult
 
 Not added yet:
 The Primary Chambers
@@ -120,15 +120,15 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <categoryLinks>
         <categoryLink id="9d67-6a76-536d-3cb2" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
-            <modifier type="set" field="ded3-c919-72cf-629d" value="2.0">
-              <conditionGroups>
-                <conditionGroup type="or">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
+            <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
+              </conditions>
+            </modifier>
+            <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
+              </conditions>
             </modifier>
           </modifiers>
           <constraints>
@@ -266,7 +266,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </forceEntry>
   </forceEntries>
   <entryLinks>
-    <entryLink id="971b-b71d-5206-7985" name="Command Entry" hidden="false" collective="false" import="true" targetId="3602-7848-97fd-f38a" type="selectionEntry"/>
+    <entryLink id="971b-b71d-5206-7985" name="Command Entry" hidden="false" collective="false" import="true" targetId="3602-7848-97fd-f38a" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f004-8fe7-d22b-0aff" type="max"/>
+      </constraints>
+    </entryLink>
     <entryLink id="32d2-6950-06e0-6437" name="Special Entry" hidden="false" collective="false" import="true" targetId="3e6b-b8cc-4735-9bf9" type="selectionEntry"/>
     <entryLink id="f59a-5cba-8219-9e94" name="Upgrades" hidden="false" collective="false" import="true" targetId="9c41-c9a2-5e03-009a" type="selectionEntry">
       <modifiers>
@@ -341,7 +345,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03f2-7e96-8598-7270" type="min"/>
       </constraints>
     </entryLink>
-    <entryLink id="c180-f1bb-4c44-d1ec" name="Allies (optional)" hidden="false" collective="false" import="true" targetId="31bc-6efa-8332-db76" type="selectionEntry">
+    <entryLink id="c180-f1bb-4c44-d1ec" name="Allies" hidden="false" collective="false" import="true" targetId="31bc-6efa-8332-db76" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b026-30c6-f90b-e977" type="max"/>
       </constraints>
@@ -823,13 +827,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       </costs>
     </selectionEntry>
     <selectionEntry id="3602-7848-97fd-f38a" name="Command Entry" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
-          </conditions>
-        </modifier>
-      </modifiers>
       <infoLinks>
         <infoLink id="b44e-5313-a789-9654" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
       </infoLinks>
@@ -5602,13 +5599,21 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <categoryLinks>
         <categoryLink id="b353-1619-3e0b-91b7" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
       </categoryLinks>
+      <entryLinks>
+        <entryLink id="fe4e-0d8a-0c84-d948" name="Faction extra doctrine" hidden="false" collective="false" import="true" targetId="2c89-5a25-dc70-0e3e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="886e-6e62-7a5c-9f9f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="69bf-642a-8f41-465b" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="326e-a75d-9176-e70c" name="Tectonic Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="326e-a75d-9176-e70c" name="Tectonic cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e8f3-a3dc-f34b-d012" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
         <infoLink id="49c1-2aa5-eb5a-9eab" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
@@ -5663,9 +5668,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6728-774a-b01a-28fa" name="Mining Implement" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6728-774a-b01a-28fa" name="Mining implement" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="9df8-5670-5dc5-4407" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="9df8-5670-5dc5-4407" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
         <infoLink id="c27e-8b0f-e511-e9af" name="Mining Implement" hidden="false" targetId="5def-f761-dd28-e455" type="profile"/>
       </infoLinks>
       <costs>
@@ -5684,7 +5689,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4853-750e-5b0a-fad8" name="Demolition Charge" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4853-750e-5b0a-fad8" name="Demolition charge" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1845-0da7-241a-cd46" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="5560-eb64-85e0-ebe7" name="Demolition Charge" hidden="false" targetId="879f-be67-9c21-4303" type="profile"/>
@@ -6815,7 +6820,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fb23-9916-c184-e054" name="Paired Energy Maul" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="fb23-9916-c184-e054" name="Paired Energy maul" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="a2fc-66ce-8f7b-6173" name="Energy Maul" hidden="false" targetId="8129-43dd-c2d0-480d" type="profile">
           <modifiers>
@@ -6831,7 +6836,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2b94-7768-a018-04e2" name="Paired Energy Fists" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2b94-7768-a018-04e2" name="Paired Energy fists" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4d99-6ad6-6abf-ef63" name="Energy Fist" hidden="false" targetId="27da-2728-e0de-71c9" type="profile">
           <modifiers>
@@ -6847,7 +6852,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="cd89-1a8f-710e-9b5c" name="Paired Energy Axes" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="cd89-1a8f-710e-9b5c" name="Paired Energy axes" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="f189-1601-2ea8-6bf4" name="Energy Axe" hidden="false" targetId="bf31-a83e-7c4f-f35d" type="profile">
           <modifiers>
@@ -6863,7 +6868,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="74cc-2eea-37d5-83da" name="Paired Lightning Hammers" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="74cc-2eea-37d5-83da" name="Paired Lightning hammers" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="708b-c4ac-b880-954d" name="Lightning Hammer" hidden="false" targetId="7179-cab6-866e-56d6" type="profile">
           <modifiers>
@@ -7731,7 +7736,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5791-e922-c64c-8747" name="Paired Flail" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5791-e922-c64c-8747" name="Paired Flails" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e602-a63c-4086-3583" name="Flail" hidden="false" targetId="40e5-dedb-771b-43cf" type="profile">
           <modifiers>
@@ -7874,6 +7879,56 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
           </modifiers>
         </infoLink>
         <infoLink id="5fd3-31b8-fab4-d823" name="Paired" hidden="false" targetId="691f-b11b-77fa-9109" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f937-394a-2d2d-b1d9" name="Heavy tectonic cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="07c5-db09-c11e-d0de" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="8fe6-4e90-9684-17f8" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="3f6f-0490-628f-5089" name="Heavy Tectonic cannon" hidden="false" targetId="4893-ffd9-4c95-2be4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5ce2-e64a-0ab8-355a" name="Mono-axe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6c44-34c1-d2aa-8e16" name="Mono-axe" hidden="false" targetId="b80a-5e10-72c2-31ff" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e791-608c-3251-ddc1" name="Paired Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6205-0c10-f493-6f2a" name="Claws" hidden="false" targetId="0d03-8d4c-f2b3-6a91" type="profile">
+          <modifiers>
+            <modifier type="set" field="fea5-12e0-2cf5-710d" value="CC (3)"/>
+            <modifier type="append" field="name" value="(Paired)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8792-d63b-68e8-a14d" name="Paired" hidden="false" targetId="691f-b11b-77fa-9109" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3463-edf1-230b-d8b3" name="Bone-blade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="21c2-00c1-e9ac-2344" name="Parry" hidden="false" targetId="1609-f037-f8cf-20da" type="rule"/>
+        <infoLink id="3f8d-7f1c-d0b8-fdbc" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="7747-55c2-9b3d-0478" name="Bone-blade" hidden="false" targetId="7e57-8ca0-764b-7fd5" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8368,8 +8423,8 @@ This model has First Strike vs Aircraft that attack ground targets.</description
       <comment>w</comment>
       <description>Units within 12&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
-    <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in attached unit gains ability. CC attacks have +3&quot; distance range.</description>
+    <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in attached unit gains ability. CC attacks have +3&quot; range.</description>
     </rule>
     <rule id="18ed-af94-5e84-a332" name="Clone Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
       <description>Defence(min 6).</description>
@@ -8696,23 +8751,26 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
       <description>Instead of normal movement (including aircraft being removed from the table) model moves (counter)clockwise between board edge midpoints in the endphase, or returns to staging. If in staging, starts at any friendly board edge.
 If multiple Pylon Pattern units are at the same board edge place them in a row centred on the midpoint.</description>
     </rule>
-    <rule id="16f7-6c19-16e2-73da" name="Guide Their Hand" publicationId="81dd-fe5f-c233-17c5" page="88" hidden="false">
-      <description>Faction may pick two (2) command choices without expending FP.</description>
+    <rule id="16f7-6c19-16e2-73da" name="Guide Their Hand" publicationId="91df-c558-75f9-73ea" page="108" hidden="false">
+      <description>You may pick one (1) additional command choice besides Cult Leadership, and a third for 1 FP.</description>
     </rule>
-    <rule id="9285-b9ec-4dd3-6c2f" name="Serfmind Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="9285-b9ec-4dd3-6c2f" name="Mystic(Serfmind 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Serfmind list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="6dc2-e7dc-26e0-1425" name="Serfmind Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="6dc2-e7dc-26e0-1425" name="Mystic(Serfmind 2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Serfmind list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="e75d-9126-28ad-c43f" name="Serfmind Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
+    <rule id="e75d-9126-28ad-c43f" name="Mystic(Serfmind 3)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When attacking, you may roll level number of dice and pick one (1) power from the Serfmind list of power level equal or less than the highest dice rolled.
 
-Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
+If you roll doubles, you may use the boosted version of a power at the same level.
+In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="2082-5a4b-6881-60ef" name="Extra Strike(3)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>Model has 3 extra attack dice with CC attacks.</description>
@@ -8720,8 +8778,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="8940-13b4-2096-3d20" name="Bestow Fanatic(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>All models in units within 12&quot; gains ability: For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
     </rule>
-    <rule id="d565-5d8f-6891-2424" name="Bestow Charge(1&quot;) (12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in units within 12&quot; gains ability: CC attacks have +1&quot; distance range.</description>
+    <rule id="d565-5d8f-6891-2424" name="Bestow Charge(1&quot;) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in units within 12&quot; gains ability: CC attacks have +1&quot; range.</description>
     </rule>
     <rule id="28ac-e645-c09d-5ad2" name="Bestow Wound(re-roll)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
       <description>All models in attached unit gains ability: Wound(re-roll)	</description>
@@ -8766,7 +8824,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>All models in units within 12&quot; gains ability: If a target has Concealment, -1 to hit, unless using a CC weapon. Multiple sources of Concealment does not stack.</description>
     </rule>
     <rule id="9414-a88d-3bba-206c" name="Bestow Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>All models in attached unit gains ability: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
+      <description>All models in attached unit gains Infiltrate: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
     </rule>
     <rule id="ed49-958f-327c-678a" name="Bestow Loathing (18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>All models in units within 18&quot; gains ability: Re-roll results of ‘1’ to wound for this model.</description>
@@ -8803,7 +8861,7 @@ If you roll doubles, you may use the boosted version of a power at the same leve
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="27df-9015-c766-0259" name="Bestow Masterwork" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>ll models in units gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>ll models in attached unit gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="3f3d-0f36-7a54-fc77" name="Move(18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>Model moves distance(18&quot;) with each move.</description>
@@ -9118,8 +9176,8 @@ Mechanical Support: Regeneration(1)</description>
     <rule id="4170-4442-7884-180a" name="Tough(4)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>Ignore wound rolls of 4 or lower when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
     </rule>
-    <rule id="c70d-3213-7388-3dc4" name="Bestow Charge(2&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in attached unit gains ability. CC attacks have +2&quot; distance range.</description>
+    <rule id="c70d-3213-7388-3dc4" name="Bestow Charge(2&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in attached unit gains ability. CC attacks have +2&quot; range.</description>
     </rule>
     <rule id="931d-3ba5-8061-1036" name="Bestow Charge(relentless)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>All models in attached unit gains ability. Strike in CC even if suppressed by reaction attack.</description>
@@ -9460,6 +9518,21 @@ example: an Attack(x3) model has “slugger with combined Flamer”. it can eith
     </rule>
     <rule id="9102-2ff3-633c-b9a5" name="Inherit(Tough)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>If all models without Inherit(Tough) in this unit has Tough (or better), this model has Tough.</description>
+    </rule>
+    <rule id="6051-ff82-7b47-934f" name="Bestow Charge(1&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in attached unit gains ability. CC attacks have +1&quot; range.</description>
+    </rule>
+    <rule id="b692-04fd-f825-fcb0" name="Bestow Masterwork(CC)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>All models in attached unit gains ability Masterwork(CC): Re-roll CC results of ‘1’ to hit for this model.</description>
+    </rule>
+    <rule id="00d1-025f-abf8-1029" name="Cancel Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>Enemy models in units within 12&quot; that have Concealment does not.</description>
+    </rule>
+    <rule id="f0ca-1bed-fdd1-c23a" name="Project(dangerous and difficult, 12&quot;)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>12&quot; from model counts as dangerous and difficult for enemy units.</description>
+    </rule>
+    <rule id="eecc-3f41-32a3-78b5" name="Bestow Insertion(superior)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in attached unit gains Insertion(superior): When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -11750,12 +11823,12 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vicious</characteristic>
       </characteristics>
     </profile>
-    <profile id="0d03-8d4c-f2b3-6a91" name="Claws" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="0d03-8d4c-f2b3-6a91" name="Claws" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
@@ -11948,7 +12021,7 @@ Swing: CC (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
-    <profile id="bfd0-5387-1434-31eb" name="Tectonic Cannon" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="bfd0-5387-1434-31eb" name="Tectonic cannon" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (2)
@@ -11969,11 +12042,11 @@ heavy, cleave</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="856a-1f68-08a2-3af6" name="Netter" publicationId="81dd-fe5f-c233-17c5" page="91" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="856a-1f68-08a2-3af6" name="Netter" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">max 6</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">suppression(x2)</characteristic>
       </characteristics>
@@ -11996,13 +12069,13 @@ heavy, cleave</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="5def-f761-dd28-e455" name="Mining Implement" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="5def-f761-dd28-e455" name="Mining implement" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2)</characteristic>
       </characteristics>
     </profile>
     <profile id="b4be-1d43-91d2-c537" name="Barrel Bombs" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -12014,7 +12087,7 @@ heavy, cleave</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="879f-be67-9c21-4303" name="Demolition Charge" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="879f-be67-9c21-4303" name="Demolition charge" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (1)</characteristic>
@@ -12023,16 +12096,16 @@ heavy, cleave</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="73f1-32fd-f0a6-8b40" name="One-shot AA Launcher" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="73f1-32fd-f0a6-8b40" name="One-shot AA Launcher" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, antiair, vs aircraft or VTOL only, one use</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair(only), heavy, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="c7b8-5868-0bfb-0619" name="One-shot AT Launcher" publicationId="81dd-fe5f-c233-17c5" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="c7b8-5868-0bfb-0619" name="One-shot AT Launcher" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)</characteristic>
@@ -12794,6 +12867,7 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       </characteristics>
     </profile>
     <profile id="0dbd-f036-dbaf-912c" name="Bone-blades" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment>w</comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -13174,6 +13248,36 @@ priority(only)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2), topstrike</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4893-ffd9-4c95-2be4" name="Heavy tectonic cannon" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (3)
+24&quot; (6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5
++1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, heavy
+cleave, heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b80a-5e10-72c2-31ff" name="Mono-axe" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="7e57-8ca0-764b-7fd5" name="Bone-blade" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, parry</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
