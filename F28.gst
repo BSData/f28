@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="24" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="25" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
-Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The factions are in the progress of being updated, see below. 
+Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The new factions are in the progress of being created, see below. 
 
 If you are looking for the BattleScribe files for the first edtion, you can download it here: http://greyport.net/f28/f28_bs_1ed3p.zip
 
@@ -14,11 +14,11 @@ Skirmishes - War Always Changes: Is updated with thye first revised edition. For
 
 Narrative: Is under development.
 
-Updated for revised:
-Skirmish
+Factions:
 The Army of the Republic(s)
 The Chambers
 The Enclaves
+The Mutant Menace
 The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
@@ -26,16 +26,12 @@ The Tide
 The Tide Cult
 The Unseelie Court
 
-Not updated for revised:
-The Mutant Menace
-
-Not added yet:
+Factions not added yet:
 The Primary Chambers
-Convents of the Faithful
+Convents of the Faithful (replaces Order of Internal Affairs)
 
 Factions that can&apos;t be updated:
 Orders of the Republic 
-Order of Internal Affairs 
 Order of External Affairs 
 Order of Eldritch Affairs
 Dvergi Freeholds
@@ -1220,13 +1216,14 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="78a3-c24b-2769-0125" name="Dual Autocannon and Antiair" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="78a3-c24b-2769-0125" name="Dual Autocannon with Antiair" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5393-7f44-6add-6817" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
         <infoLink id="9dde-d6bd-bcee-f120" name="Autocannon" hidden="false" targetId="d0e0-6450-0ef0-59ca" type="profile">
           <modifiers>
-            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="append" field="name" value="(AA, Dual)"/>
             <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+            <modifier type="set" field="62b8-d616-a7fc-060c" value="antiair, heavy"/>
           </modifiers>
         </infoLink>
         <infoLink id="969f-5178-f085-efac" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
@@ -3402,7 +3399,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9d18-0327-a604-304a" name="Hopper Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="9d18-0327-a604-304a" name="Hopper autocannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="1a8b-bfa8-041c-0e3d" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="d569-ae42-67f8-e3cd" name="Hopper Autocannon" hidden="false" targetId="4aec-622f-07e4-002a" type="profile"/>
@@ -3413,9 +3410,10 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b70c-7c52-bbdc-5266" name="Bomb Creature" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b70c-7c52-bbdc-5266" name="Bomb creature" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9e77-d097-c793-4508" name="Bomb Creature" hidden="false" targetId="1d3a-e747-3d35-1f6e" type="profile"/>
+        <infoLink id="6b23-8204-a20c-6ef9" name="Topstrike" hidden="false" targetId="fda4-59ac-e1e1-eb1b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3489,10 +3487,10 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="b8e8-c289-7bc2-f658" name="Bubble Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="b8e8-c289-7bc2-f658" name="Bubble launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="1716-181f-0b37-55e9" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
-        <infoLink id="2997-548e-02b0-2af7" name="Bubble Launcher" hidden="false" targetId="e617-196d-76cd-dc6c" type="profile"/>
+        <infoLink id="1716-181f-0b37-55e9" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="2997-548e-02b0-2af7" name="Bubble launcher" hidden="false" targetId="e617-196d-76cd-dc6c" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3500,10 +3498,10 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e6ad-3778-67f8-1a57" name="Tractor Beamer" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e6ad-3778-67f8-1a57" name="Tractor beamer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4226-f173-5f03-9c73" name="Tractor Beamer" hidden="false" targetId="65c0-830d-26c3-d41b" type="profile"/>
-        <infoLink id="4157-e3c0-8bb6-413d" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="4157-e3c0-8bb6-413d" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3684,7 +3682,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca75-5b58-714e-ffa3" name="Kill Saw" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="ca75-5b58-714e-ffa3" name="Kill saw" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="95bf-2b23-1c70-ff3e" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="5f85-41ed-e19b-6cb0" name="Kill Saw" hidden="false" targetId="ae6e-661f-d2e4-0bf8" type="profile"/>
@@ -3695,11 +3693,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d81b-dfb6-baaa-8a0e" name="Portal Artillery" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="d81b-dfb6-baaa-8a0e" name="Portal artillery" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="d5bb-1c83-31e7-98c4" name="Portal Artillery" hidden="false" targetId="ae35-d15e-e9a4-a4e1" type="profile"/>
+        <infoLink id="d5bb-1c83-31e7-98c4" name="Portal artillery" hidden="false" targetId="ae35-d15e-e9a4-a4e1" type="profile"/>
         <infoLink id="d4e9-c4c7-5e3d-32e4" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
-        <infoLink id="9483-8626-e375-cd61" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="9483-8626-e375-cd61" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3739,10 +3737,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3fd6-6c30-a9f8-549b" name="Incendiary Bomb" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3fd6-6c30-a9f8-549b" name="Incendiary bomb" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="3794-e3fc-02b7-3e63" name="Incendiary Bomb" hidden="false" targetId="8c3b-f942-092c-c643" type="profile"/>
         <infoLink id="0665-b8b1-881e-a1be" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+        <infoLink id="d708-0578-1f0e-cd07" name="Savage Strike" hidden="false" targetId="6f96-a37b-1fe7-1240" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3750,10 +3749,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="3f8d-82a1-ff28-254e" name="Incendiary Rocket" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="3f8d-82a1-ff28-254e" name="Incendiary rockets" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="65be-7ac6-8eb8-05cd" name="Incendiary Rocket" hidden="false" targetId="4b33-be4d-9458-7244" type="profile"/>
-        <infoLink id="d147-e296-13cf-ab02" name="Ignore Cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+        <infoLink id="d147-e296-13cf-ab02" name="Ignore cover(1)" hidden="false" targetId="59ac-b884-dc2d-6c29" type="rule"/>
+        <infoLink id="ee37-27d5-f740-ac64" name="Savage Strike" hidden="false" targetId="6f96-a37b-1fe7-1240" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3909,6 +3909,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="dc70-105a-9210-9ed1" name="Deathstorm cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="c9a4-43c2-8a22-bd01" name="Deathstorm cannon" hidden="false" targetId="15ad-0081-70ef-fa41" type="profile"/>
+        <infoLink id="b16b-579b-ae6d-bbfe" name="Thight spread" hidden="false" targetId="e726-2f61-1c85-7bfd" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3916,7 +3917,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="04c1-5691-4710-12ae" name="Plasma Carbine" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="04c1-5691-4710-12ae" name="Plasma carbine" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="0a12-24c0-c14b-1817" name="Plasma Carbine" hidden="false" targetId="98d3-aeb5-87d2-65a3" type="profile"/>
         <infoLink id="22b4-6587-bafa-98cc" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
@@ -3927,12 +3928,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="f14c-52e7-66ca-1beb" name="Custom Plasma Cannon" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="f14c-52e7-66ca-1beb" name="Custom Plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
       <comment>w</comment>
       <infoLinks>
         <infoLink id="0409-2d42-7463-971d" name="Custom Plasma Cannon" hidden="false" targetId="6b79-e20e-8b4e-702d" type="profile"/>
         <infoLink id="5bd7-47f8-c1b8-80d3" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
-        <infoLink id="6800-eba3-f59f-7401" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -7936,6 +7936,44 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="2c68-8473-95bc-01e0" name="Burner rig" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="54bb-01d7-46c3-73de" name="Burner rig" hidden="false" targetId="6473-e793-1b60-9a23" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3758-ef1e-8046-bd50" name="Iron bomb" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d716-a74b-491d-687a" name="Iron bomb" hidden="false" targetId="8fa7-b05c-affd-6eb5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6140-0f1c-81ac-de68" name="Dual Plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c102-5e87-ad47-1b8b" name="Plasma cannon" hidden="false" targetId="69fa-8ae0-b9ad-acf7" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="blast(half), re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="5798-7a51-8643-aaec" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="3dfc-94de-1f98-8b42" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="a587-87d6-e0ab-9fcf" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -9534,6 +9572,18 @@ example: an Attack(x3) model has “slugger with combined Flamer”. it can eith
     <rule id="eecc-3f41-32a3-78b5" name="Bestow Insertion(superior)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>All models in attached unit gains Insertion(superior): When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
     </rule>
+    <rule id="2e17-3832-966c-6c88" name="Inherit(Move)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>If all models without Inherit(Move) in this unit has Move (or better), this model has Move.</description>
+    </rule>
+    <rule id="f96c-a1ac-65fd-bd21" name="Insertion(dangerous)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Unit takes a dangerous terrain test after insertion.</description>
+    </rule>
+    <rule id="9bf6-b28b-2136-97a0" name="Hard Dive" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Aircraft may lose inaccurate for its next attack against ground targets. After the attack vehicles roll on the damage table with -3, non-vehicles take a dangerous terrain test.</description>
+    </rule>
+    <rule id="c29d-c906-7524-c046" name="Move(5&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <description>Model moves distance(5&quot;) with each move.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="de65-91da-25ce-abf1" name="Slugger" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -10554,10 +10604,10 @@ priority(hit(re-roll))</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">uses 2h</characteristic>
       </characteristics>
     </profile>
-    <profile id="406f-9bb4-c394-ae18" name="Rocket Launcher" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="406f-9bb4-c394-ae18" name="Rocket launcher" publicationId="91df-c558-75f9-73ea" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (2)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
@@ -10881,7 +10931,7 @@ indirect(-2), one use</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
-    <profile id="4aec-622f-07e4-002a" name="Hopper Autocannon" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="4aec-622f-07e4-002a" name="Hopper autocannon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48&quot; (D3)</characteristic>
@@ -10890,13 +10940,13 @@ indirect(-2), one use</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
-    <profile id="1d3a-e747-3d35-1f6e" name="Bomb Creature" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="1d3a-e747-3d35-1f6e" name="Bomb creature" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+2</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">AT(+3), topstrike, one use</characteristic>
       </characteristics>
     </profile>
     <profile id="f0b7-e189-4592-0069" name="Mystic Staff" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -10917,11 +10967,11 @@ indirect(-2), one use</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="9c7f-dd2c-340e-528a" name="Scrapcannon" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="9c7f-dd2c-340e-528a" name="Scrapcannon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
@@ -10948,40 +10998,40 @@ heavy, +1 on vehicle damage table</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, damage(2) vs vehicles, priority(only)</characteristic>
       </characteristics>
     </profile>
-    <profile id="e617-196d-76cd-dc6c" name="Bubble Launcher" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="e617-196d-76cd-dc6c" name="Bubble launcher" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+D3</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)</characteristic>
       </characteristics>
     </profile>
-    <profile id="65c0-830d-26c3-d41b" name="Tractor Beamer" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="65c0-830d-26c3-d41b" name="Tractor beamer" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">all aircraft moving within 18” suffers wound(+4) hit on 3+, heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only), project(hostile for Aircraft and VTOL in los, 36”)</characteristic>
       </characteristics>
     </profile>
-    <profile id="ae6e-661f-d2e4-0bf8" name="Kill Saw" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="ae6e-661f-d2e4-0bf8" name="Kill saw" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC(2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
-    <profile id="ae35-d15e-e9a4-a4e1" name="Portal Artillery" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="ae35-d15e-e9a4-a4e1" name="Portal artillery" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+D6</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, priority(only)</characteristic>
       </characteristics>
     </profile>
     <profile id="3a1d-358e-7a00-af92" name="Teleport blaster" publicationId="91df-c558-75f9-73ea" page="132" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -11011,22 +11061,22 @@ heavy, +1 on vehicle damage table</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="8c3b-f942-092c-c643" name="Incendiary Bomb" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="8c3b-f942-092c-c643" name="Incendiary bomb" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">3” (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6)</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, one use</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, savage strike, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="4b33-be4d-9458-7244" name="Incendiary Rocket" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="4b33-be4d-9458-7244" name="Incendiary rockets" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, one use</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover(1), savage strike</characteristic>
       </characteristics>
     </profile>
     <profile id="a3d9-0149-58b6-078f" name="Hicap missile launcher" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -11129,16 +11179,16 @@ CC (4)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy, one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="15ad-0081-70ef-fa41" name="Deathstorm cannon" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="15ad-0081-70ef-fa41" name="Deathstorm cannon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (3D6)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">spray, re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">tight spread</characteristic>
       </characteristics>
     </profile>
-    <profile id="98d3-aeb5-87d2-65a3" name="Plasma Carbine" publicationId="e42d-4466-8267-ac1b" page="43" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="98d3-aeb5-87d2-65a3" name="Plasma carbine" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (2)</characteristic>
@@ -11147,13 +11197,13 @@ CC (4)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
-    <profile id="6b79-e20e-8b4e-702d" name="Custom Plasma Cannon" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="6b79-e20e-8b4e-702d" name="Custom Plasma cannon" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast (D6)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast (half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
       </characteristics>
     </profile>
     <profile id="6d9c-4bf7-445b-ea7e" name="Surgeon’s Scalpel" publicationId="81dd-fe5f-c233-17c5" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -13097,7 +13147,7 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs armed</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
@@ -13278,6 +13328,28 @@ cleave, heavy</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6473-e793-1b60-9a23" name="Burner rig" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Gas Torch: CC (2)
+Full Burn: 12” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">.
+spray</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1
+.</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">AT(+D6)
+.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8fa7-b05c-affd-6eb5" name="Iron bomb" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">3&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
