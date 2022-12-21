@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="26" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="27" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
-Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P). The new factions are in the progress of being created, see below. 
+Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
 
 If you are looking for the BattleScribe files for the first edtion, you can download it here: http://greyport.net/f28/f28_bs_1ed3p.zip
 
@@ -14,23 +14,21 @@ Skirmishes - War Always Changes: Is updated with thye first revised edition. For
 
 Narrative: Is under development.
 
-Factions:
+Faction lists, revised edition (F28 1RE1P):
 The Army of the Republic(s)
 The Chambers
 The Convents of the Faithful
 The Enclaves
 The Mutant Menace
 The Nanite Resurrection
+The Primary Chambers
 The Scandinavian Commonwealth
 The Seelie Court
 The Tide
 The Tide Cult
 The Unseelie Court
 
-Factions not added yet:
-The Primary Chambers
-
-Factions that can&apos;t be updated:
+Factions lists, players guide (PG 1ED1P):
 Orders of the Republic 
 Order of External Affairs 
 Order of Eldritch Affairs
@@ -51,11 +49,22 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </publication>
     <publication id="e42d-4466-8267-ac1b" name="PG 1ED1P" shortName="PG 1ED1P" publicationDate="2019-12-07"/>
     <publication id="81dd-fe5f-c233-17c5" name="F28 1ED3P" shortName="F28 1ED3P" publicationDate="2019-02-15"/>
-    <publication id="2863-26cb-0a2c-33a2" name="Newsletter #1" shortName="F28 Newsletter Issue #1" publicationDate="2020-05-19"/>
-    <publication id="1aef-f298-9eff-af8e" name="Newsletter #2" shortName="F28 Newsletter Issue #2" publicationDate="2020-07-12"/>
-    <publication id="dcee-d17a-12db-0d00" name="Newsletter #3" shortName="F28 Newsletter Issue #3" publicationDate="2020-09-02"/>
-    <publication id="648e-37d5-45ed-cf25" name="Newsletter #4" shortName="F28 Newsletter Issue #4" publicationDate="2020-10-16"/>
+    <publication id="2863-26cb-0a2c-33a2" name="Newsletter #01" shortName="F28 Newsletter Issue #1" publicationDate="2020-05-19"/>
+    <publication id="1aef-f298-9eff-af8e" name="Newsletter #02" shortName="F28 Newsletter Issue #2" publicationDate="2020-07-12"/>
+    <publication id="dcee-d17a-12db-0d00" name="Newsletter #03" shortName="F28 Newsletter Issue #3" publicationDate="2020-09-02"/>
+    <publication id="648e-37d5-45ed-cf25" name="Newsletter #04" shortName="F28 Newsletter Issue #4" publicationDate="2020-10-16"/>
     <publication id="91df-c558-75f9-73ea" name="F28 1RE1P" shortName="F28 1RE1P" publicationDate="2021-06-01"/>
+    <publication id="5a43-5d64-26bb-b191" name="Newsletter #05" shortName="F28 Newsletter Issue #5" publicationDate="2020-12-04"/>
+    <publication id="b280-bccb-e925-e5ca" name="Newsletter #06" shortName="F28 Newsletter Issue #6" publicationDate="2021-02-02"/>
+    <publication id="3d2e-80ca-8fd6-f31a" name="Newsletter #07" shortName="F28 Newsletter Issue #7" publicationDate="2021-04-01"/>
+    <publication id="6cd8-490b-a4ff-30d6" name="Newsletter #08" shortName="F28 Newsletter Issue #8" publicationDate="2021-06-02"/>
+    <publication id="32de-c459-8a56-7450" name="Newsletter #09" shortName="F28 Newsletter Issue #9" publicationDate="2021-09-19"/>
+    <publication id="5970-2ec8-10d3-2eeb" name="Newsletter #10" shortName="F28 Newsletter Issue #10" publicationDate="2021-11-30"/>
+    <publication id="c3b8-a225-2f1d-fc78" name="Newsletter #11 " shortName="F28 Newsletter Issue #11" publicationDate="2022-02-10"/>
+    <publication id="ee46-b8c8-95bb-1929" name="Newsletter #12" shortName="F28 Newsletter Issue #12" publicationDate="2022-04-10"/>
+    <publication id="84b9-3380-0ec9-d6db" name="Newsletter #13" shortName="F28 Newsletter Issue #13" publicationDate="2022-06-09"/>
+    <publication id="588d-0535-e56b-3640" name="Newsletter #14" shortName="F28 Newsletter Issue #14" publicationDate="2022-08-080"/>
+    <publication id="7891-f4a0-99f7-6e53" name="Newsletter #15 " shortName="F28 Newsletter Issue #15" publicationDate="2022-10-17"/>
   </publications>
   <costTypes>
     <costType id="95b5-c653-a5e7-8869" name="p" defaultCostLimit="-1.0" hidden="false"/>
@@ -503,7 +512,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="79e6-9195-7f18-6b28" name="Heat cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="4f45-850b-69f7-d159" name="Heat Cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
+        <infoLink id="4f45-850b-69f7-d159" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
         <infoLink id="3c34-d036-52bc-6a93" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="10c1-5b58-b489-881f" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
@@ -722,6 +731,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="9c4a-859e-561c-f828" name="AT-grenades" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e715-be2e-fc78-bd88" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile"/>
+        <infoLink id="a206-de7d-05df-3c63" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
+        <infoLink id="5a3a-83e1-1ebd-8245" name="AT(modifier)" hidden="false" targetId="f1e3-778e-4b74-7758" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -864,7 +875,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="62ed-8218-0d0f-7272" name="Plasma Pistol" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="19e4-f29d-96f5-357b" name="Plasma Pistol" hidden="false" targetId="06c6-c329-39be-374d" type="profile"/>
+        <infoLink id="19e4-f29d-96f5-357b" name="Plasma pistol" hidden="false" targetId="06c6-c329-39be-374d" type="profile"/>
         <infoLink id="c64b-bd28-9ab0-98ca" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
         <infoLink id="8050-1bcc-01ea-3089" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
       </infoLinks>
@@ -998,7 +1009,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="95c6-eacd-d9a6-f1b8" name="Priority(only)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="638c-df42-ea20-13bf" name="Priority(effect)" hidden="false" targetId="693f-bd83-1218-4abc" type="rule"/>
+        <infoLink id="638c-df42-ea20-13bf" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1516,7 +1527,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="28fe-af25-a3dc-a87c" name="Priority(accurate)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="0b54-020f-5ffe-e582" name="Priority(Accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
+        <infoLink id="0b54-020f-5ffe-e582" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1952,7 +1963,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="4654-38d6-885a-a084" name="Enhanced rapid laser" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="5fd9-b2dd-c609-6639" name="Heavy Rapid Laser" hidden="false" targetId="553c-cb52-0db6-7a45" type="profile"/>
+        <infoLink id="5fd9-b2dd-c609-6639" name="Enhanced rapid laser" hidden="false" targetId="553c-cb52-0db6-7a45" type="profile"/>
         <infoLink id="5954-4c93-0493-4990" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
       </infoLinks>
       <costs>
@@ -8034,6 +8045,362 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="219a-1e40-07c2-0864" name="Bestow Move(+1&quot;)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="37c9-1db8-ab0e-1b3c" name="Bestow Move(+1)" hidden="false" targetId="6698-a412-84d1-23b6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f25c-9af5-cfa6-54a2" name="Enhanced Primary Autorifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9ceb-e970-fed7-912f" name="Enhanced Primary Autorifle" hidden="false" targetId="6e49-e102-61be-0db8" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bee3-a954-65ef-812a" name="Enhanced Primary Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="477c-21fc-6bf7-e3dc" name="Enhanced Primary Carbine" hidden="false" targetId="9910-63a5-1464-1864" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7be-369f-05af-2034" name="Enhanced Primary Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b3fa-e206-7c14-90e1" name="Enhanced Primary Rifle" hidden="false" targetId="729b-518f-4c03-6fe8" type="profile"/>
+        <infoLink id="3eaa-8dd0-a947-8468" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d706-7f5f-9b42-f356" name="Heat Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3a85-3b86-58a2-7dd5" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
+        <infoLink id="60b1-79c7-7934-0c71" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4db0-182a-491f-7a17" name="Primary Antitank rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4703-e6f4-7e7c-c8c9" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="cc32-6170-f6eb-08cf" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="500f-2e8b-5eb5-2c87" name="Primary Antitank rifle" hidden="false" targetId="dae0-5b82-1c05-98b4" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c82c-2fea-d137-6735" name="Primary Assault pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2acd-a3e4-66e3-4054" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="4d0b-1636-44df-e73c" name="Primary Assault pistol" hidden="false" targetId="4b2a-d3ea-08d6-7fc3" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="696b-c4e4-86d4-532f" name="Primary AT-grenades" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dcc8-a434-4fcc-304d" name="Primary AT-grenades" hidden="false" targetId="425c-b737-650b-1b35" type="profile"/>
+        <infoLink id="1885-5da2-2e25-f156" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="2576-29d9-1d6d-dec6" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
+        <infoLink id="f776-d0ef-2696-30b3" name="AT(modifier)" hidden="false" targetId="f1e3-778e-4b74-7758" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a66d-6d31-76e0-0a21" name="Primary Autorifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a4b6-d906-1cda-98b6" name="Primary Autorifle" hidden="false" targetId="bf89-81dd-99b1-5d67" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d3c7-bafd-8faf-6b87" name="Primary Carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e032-0aff-f588-2c0e" name="Primary Carbine" hidden="false" targetId="869c-4c4d-fcba-293b" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3daa-ede7-8433-3ffd" name="Primary Energy axe" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5ae6-331c-659b-60c7" name="Primary Energy axe" hidden="false" targetId="cea6-1fc7-4031-4091" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8956-24a8-dc47-48a7" name="Primary Energy sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="13bb-aff3-7b90-d213" name="Parry" hidden="false" targetId="1609-f037-f8cf-20da" type="rule"/>
+        <infoLink id="c036-6545-ec02-7754" name="Primary Energy sword" hidden="false" targetId="0408-1e72-7ce5-4db0" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="36cf-f827-cd4e-f804" name="Primary Pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f5aa-f243-4b8b-6103" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="c332-a43d-fe34-ad8d" name="Primary Pistol" hidden="false" targetId="3bbc-8518-7e0e-d10f" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="555d-5f30-1ba1-d71e" name="Primary Plasma blasters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="08db-e743-5232-5307" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="fd0d-40d0-e08b-5c67" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="e543-e015-89b1-303e" name="Primary Plasma blasters" hidden="false" targetId="37e2-32a6-d2e5-4986" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f89f-611b-74b8-5d9f" name="Primary Plasma gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="282a-162b-0d45-740a" name="Primary Plasma gun" hidden="false" targetId="e1f5-aad1-202f-2ebd" type="profile"/>
+        <infoLink id="9e75-ee05-0377-ee1f" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a03b-68a4-1897-001d" name="Primary Plasma rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6a6e-2951-18d2-539b" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="2a93-f783-9e19-8031" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
+        <infoLink id="9a5a-5bf9-8365-c750" name="Primary Plasma rifle" hidden="false" targetId="54f8-2480-e3f2-3f88" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="237e-489f-96b3-7144" name="Primary Plasma carbine" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1a14-d21a-633c-3b74" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="a635-e3ab-9f00-a90e" name="Primary Plasma carbine" hidden="false" targetId="8291-bb30-dcf0-f323" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ffdd-d865-27d4-4764" name="Primary Rifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="52d1-f837-74e8-752f" name="Primary Rifle" hidden="false" targetId="c06c-8c25-ad2e-b211" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e76-2772-05ee-836c" name="Primary SMG" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="51f0-3998-1b6f-3bfe" name="Primary SMG" hidden="false" targetId="86b3-48c2-21b9-cc91" type="profile"/>
+        <infoLink id="dc28-9ae5-30f7-14a9" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="1467-53b6-e684-8ae3" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1914-5d10-8dee-156f" name="Primary Sniper kit" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="02f6-a1a6-b866-5df6" name="Primary Sniper kit" hidden="false" targetId="4c84-cd4b-d45b-bd8e" type="profile"/>
+        <infoLink id="cc93-f6e0-db2b-ff81" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="03bc-eb60-dd90-dfd5" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
+        <infoLink id="705e-665f-848c-3ef8" name="Assassin" hidden="false" targetId="6137-700d-31f3-d5f2" type="rule"/>
+        <infoLink id="3b61-7067-fb4b-a807" name="Vital Strike" hidden="false" targetId="a363-87ce-254e-2793" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f4c9-a4fb-1f2e-1700" name="Primary Sword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9faf-ea7a-9a49-6406" name="Primary Sword" hidden="false" targetId="ea8b-0978-53b8-f92f" type="profile"/>
+        <infoLink id="30b0-17c6-1e3d-2350" name="Parry" hidden="false" targetId="1609-f037-f8cf-20da" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8ecf-3097-aa8d-f005" name="Primary Vibrosword" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="296c-56de-6494-d0cf" name="Primary Vibrosword" hidden="false" targetId="f5b0-b940-ef3a-8e47" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dfe2-c568-f354-40d0" name="Hicap Storm slugger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0bce-59b9-7e72-2c90" name="Hicap Storm slugger" hidden="false" targetId="d82a-253b-569b-9f3e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f587-2a27-3eec-262d" name="Hicap Auto-LAT" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dead-a0c9-f4b0-c27b" name="Hicap Auto-LAT" hidden="false" targetId="e649-a882-44c5-bf77" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e902-513a-a41f-1869" name="Hicap Primary Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4c32-9c31-b470-8ec5" name="Hicap Primary Autocannon" hidden="false" targetId="0443-cdc4-9ba7-4ef0" type="profile"/>
+        <infoLink id="b2bd-cb1b-b8a5-baa8" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b966-721f-7054-3693" name="Primary Gatling Cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e9b5-c1f4-6c68-63d1" name="Primary Gatling Cannon" hidden="false" targetId="5ede-7edb-734e-1a09" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="342f-55a7-1bf7-6e9c" name="Bestow Charge(frenzied)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5724-7b72-2239-c637" name="Bestow Charge(frenzied)" hidden="false" targetId="c479-98d4-9f2e-ad00" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d0f7-b498-532a-eb36" name="Command Uplink" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4968-b015-c211-be0e" name="Command Uplink" hidden="false" targetId="55d3-a69d-01be-806e" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c864-382c-9362-421e" name="Dual Primary Autorifle" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="89a6-41f1-d7c7-9be1" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+        <infoLink id="ed77-e600-b8c5-431f" name="Primary Autorifle" hidden="false" targetId="bf89-81dd-99b1-5d67" type="profile">
+          <modifiers>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+            <modifier type="append" field="name" value="(Dual)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="295b-5a7f-e4f5-151d" name="Primary AT-grenades" hidden="false" targetId="425c-b737-650b-1b35" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f429-9937-b6de-c337" name="Dual Primary Assault pistol" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="3407-e302-6c48-66d2" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="f7bf-8711-f07e-d0b4" name="Primary Assault pistol" hidden="false" targetId="4b2a-d3ea-08d6-7fc3" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="f7ef-511f-066d-b5b7" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="406e-02f1-74c5-9af7" name="Dual Primary Plasma blasters" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="8408-b8b7-e089-9492" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="3bf4-51be-7af6-6dd4" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
+        <infoLink id="e5f8-7bb4-6b8a-53c8" name="Primary Plasma blasters" hidden="false" targetId="37e2-32a6-d2e5-4986" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="691b-3100-c962-4630" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -9277,17 +9644,17 @@ Mechanical Support: Regeneration(1)</description>
     <rule id="c70d-3213-7388-3dc4" name="Bestow Charge(2&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>All models in attached unit gains ability. CC attacks have +2&quot; range.</description>
     </rule>
-    <rule id="931d-3ba5-8061-1036" name="Bestow Charge(relentless)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in attached unit gains ability. Strike in CC even if suppressed by reaction attack.</description>
+    <rule id="931d-3ba5-8061-1036" name="Bestow Charge(relentless)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>All models in attached unit gains Relentless: when charging, apply any suppression suffered by this unit after it has made the attack.</description>
     </rule>
-    <rule id="d514-12bb-9cc8-af9d" name="Wounds(+2)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+    <rule id="d514-12bb-9cc8-af9d" name="Wounds(+2)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Add +2 to Wounds.</description>
     </rule>
     <rule id="933b-d81e-904c-bbd6" name="Bestow Command Uplink (9”, closest)" hidden="false">
       <description>All models in closest unit within 9&quot; gains ability: This unit counts as attached to a selected command unit for Bestow purposes.</description>
     </rule>
-    <rule id="55d3-a69d-01be-806e" name="Command Uplink" hidden="false">
-      <description>This unit counts as attached to a selected command unit for Bestow purposes.</description>
+    <rule id="55d3-a69d-01be-806e" name="Command Uplink" publicationId="91df-c558-75f9-73ea" page="89" hidden="false">
+      <description>This model’s unit counts as attached to a selected command unit for Bestow purposes.</description>
     </rule>
     <rule id="362f-7845-5fb1-e5fb" name="Capacity(assault)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>Passengers may make CC attacks.</description>
@@ -9477,7 +9844,7 @@ group: one (1) model with this trait in a unit may add the mystic levels from ot
     <rule id="6dfa-7d02-8d44-cad2" name="Gate(one use)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>One (1) regular unit may enter from or exit to staging through this model, as if it was connected to staging.</description>
     </rule>
-    <rule id="801e-6aee-6a9c-2fec" name="Pistol 2&quot;" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+    <rule id="801e-6aee-6a9c-2fec" name="Pistol(2&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Weapon ignores the close quarters penalty for being within 2” of an enemy or attacking a target within 2” of an enemy. Only within 2&quot;.</description>
     </rule>
     <rule id="89ee-5db1-15e4-1761" name="Indirect" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
@@ -9504,8 +9871,8 @@ In addition, apply any result of one or more ‘1’.
 
 group: one (1) model with this trait in a unit may add the mystic levels from others with this trait in the same unit (fractions are rounded down).</description>
     </rule>
-    <rule id="9bbc-9187-6ea3-2d55" name="Pistol 6&quot;" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>Weapon ignores the close quarters penalty for being within 6” of an enemy or attacking a target within 2” of an enemy. Only within 2&quot;.</description>
+    <rule id="9bbc-9187-6ea3-2d55" name="Pistol(6&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Weapon ignores the close quarters penalty for being within 2” of an enemy or attacking a target within 2” of an enemy. Only within 6&quot;.</description>
     </rule>
     <rule id="430f-ca21-b68b-3269" name="Accurate(6&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>Attacks within 6&quot; with this model has hit(+1). Multiple sources of Accurate does not stack.</description>
@@ -9689,6 +10056,24 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="23f6-a678-4c20-e986" name="Defence(re-roll)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>You may force opponent to re-roll any wound roll dice versus this model. For purposes of attacking a mixed unit, defence(x, re-roll) is considered better than defence(x).</description>
     </rule>
+    <rule id="ebcd-51d1-852f-a539" name="Contact" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Attacks as a CC weapon, but is not considered one for other purposes. A model may not attack with contact wepons and other close combat weapons in the same attack.</description>
+    </rule>
+    <rule id="f1e3-778e-4b74-7758" name="AT(modifier)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Wound(+modifier) versus vehicles.</description>
+    </rule>
+    <rule id="3c3f-d7df-4442-5361" name="AT(only)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Weapon may only attack vehicles.</description>
+    </rule>
+    <rule id="c479-98d4-9f2e-ad00" name="Bestow Charge(frenzied)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>All models in attached unit gains Frenzied: when charging, apply any wounds and suppression suffered by this unit after it has made the attack.</description>
+    </rule>
+    <rule id="db20-d6bc-ce55-747e" name="Bestow Defence (min 5, passengers)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>All pasengers have Defence(min 5). If a unit already has trait at a better level, it takes precedence.</description>
+    </rule>
+    <rule id="82db-39f2-ac82-661d" name="Pistol(12&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Weapon ignores the close quarters penalty for being within 2” of an enemy or attacking a target within 2” of an enemy. Only within 12&quot;.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="de65-91da-25ce-abf1" name="Slugger" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -9733,7 +10118,7 @@ In addition, apply any result of one or more ‘1’.</description>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(6)</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(6&quot;)</characteristic>
       </characteristics>
     </profile>
     <profile id="5417-ed6b-b5cd-fe1f" name="LMG" publicationId="91df-c558-75f9-73ea" page="80" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -9760,7 +10145,7 @@ In addition, apply any result of one or more ‘1’.</description>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(12), heavy</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(12&quot;), heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="69fa-8ae0-b9ad-acf7" name="Plasma cannon" publicationId="91df-c558-75f9-73ea" page="87" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -13482,6 +13867,237 @@ spray</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6e49-e102-61be-0db8" name="Enhanced Primary Autorifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">15” (2) 30”(1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="9910-63a5-1464-1864" name="Enhanced Primary Carbine" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24”(3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="729b-518f-4c03-6fe8" name="Enhanced Primary Rifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(accurate)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="92ad-e4c0-9779-e192" name="Heat Rifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(12&quot;)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dae0-5b82-1c05-98b4" name="Primary Antitank rifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Main: 36” (1)
+Side: 18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4
++1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)
+pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4b2a-d3ea-08d6-7fc3" name="Primary Assault pistol" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol(6”)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="425c-b737-650b-1b35" name="Primary AT-grenades" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Contact (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">AT(only, +5)</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="bf89-81dd-99b1-5d67" name="Primary Autorifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">15” (2) 30”(1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="869c-4c4d-fcba-293b" name="Primary Carbine" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24&quot; (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="cea6-1fc7-4031-4091" name="Primary Energy axe" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="0408-1e72-7ce5-4db0" name="Primary Energy sword" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="3bbc-8518-7e0e-d10f" name="Primary Pistol" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18”(1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="37e2-32a6-d2e5-4986" name="Primary Plasma blasters" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">15” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, pistol(6”)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="e1f5-aad1-202f-2ebd" name="Primary Plasma gun" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">15” (2) 30”(1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="54f8-2480-e3f2-3f88" name="Primary Plasma rifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, priority(accurate)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8291-bb30-dcf0-f323" name="Primary Plasma carbine" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c06c-8c25-ad2e-b211" name="Primary Rifle" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="86b3-48c2-21b9-cc91" name="Primary SMG" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">contact, pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c84-cd4b-d45b-bd8e" name="Primary Sniper kit" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">Main: 36” (1)
+Side: 18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1
++1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">assassin, priority(hit(re-roll), vital strike
+pistol</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ea8b-0978-53b8-f92f" name="Primary Sword" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f5b0-b940-ef3a-8e47" name="Primary Vibrosword" publicationId="91df-c558-75f9-73ea" page="90" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="d82a-253b-569b-9f3e" name="Hicap Storm slugger" publicationId="91df-c558-75f9-73ea" page="91" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">12” (8) 24” (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="e649-a882-44c5-bf77" name="Hicap Auto-LAT" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="0443-cdc4-9ba7-4ef0" name="Hicap Primary Autocannon" publicationId="91df-c558-75f9-73ea" page="91" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48” (6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5ede-7edb-734e-1a09" name="Primary Gatling Cannon" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (9)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
   </sharedProfiles>
