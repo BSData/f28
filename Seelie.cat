@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -193,7 +193,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="ce0c-52fe-d9cc-84e2" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="e63e-919d-ec53-da17" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -596,7 +596,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="fcd3-e463-4cac-88ea" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="0462-c0de-502c-a730" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -884,7 +884,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="27d7-3f2c-065f-cf80" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="db98-8f0a-436b-0735" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -1048,7 +1048,7 @@ FP: Faction Points</readme>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="83bb-aa94-1360-4cf2" name="Jetbike Exalted" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="83bb-aa94-1360-4cf2" name="Hoverbiker Exalted" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9f8c-c10f-aa66-467b" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7cf4-e40d-e58b-bfd7" type="min"/>
@@ -1086,7 +1086,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="fab2-056b-fdc5-012e" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="4594-afd9-ae75-23e9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -1315,7 +1315,7 @@ FP: Faction Points</readme>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="917d-c28e-9d15-3c97" name="Reaper" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="917d-c28e-9d15-3c97" name="Harvester" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8394-2251-2332-e399" type="max"/>
               </constraints>
@@ -1598,7 +1598,7 @@ FP: Faction Points</readme>
                 <infoLink id="6c97-2856-8d55-b37e" name="Howler Mask" hidden="false" targetId="18eb-7045-7c38-41bc" type="rule"/>
                 <infoLink id="e215-3aa1-3f8f-d19c" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
                 <infoLink id="141a-a297-5dcb-70e0" name="Move(fleet)" hidden="false" targetId="d63a-1bad-5f14-8395" type="rule"/>
-                <infoLink id="8ad6-3d14-1635-1e27" name="Attack Dice(x2)" hidden="false" targetId="0527-8690-35c7-a862" type="rule"/>
+                <infoLink id="8ad6-3d14-1635-1e27" name="Attack(x2)" hidden="false" targetId="0527-8690-35c7-a862" type="rule"/>
                 <infoLink id="2103-ac9d-e91c-f6c4" name="Bestow Morale(1)" hidden="false" targetId="fd36-84c7-7a08-d0f8" type="rule"/>
               </infoLinks>
               <entryLinks>
@@ -1621,7 +1621,7 @@ FP: Faction Points</readme>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="724b-4650-c012-a322" name="Reaper Exalted" hidden="true" collective="false" import="true" type="model">
+            <selectionEntry id="724b-4650-c012-a322" name="Harvester Exalted" hidden="true" collective="false" import="true" type="model">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
@@ -1875,7 +1875,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="a9fb-aa8c-6e7d-8d52" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="b449-3ef2-9dc0-1bc3" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a6a-7377-b80a-7090" type="equalTo"/>
                       </conditions>
@@ -2151,7 +2151,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="6e8e-4557-c21b-6bae" name="Se. Senior Mystic" hidden="false" targetId="1ee5-1da1-5063-0b65" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="3bca-8933-04c2-5a8f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -2185,7 +2185,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="b589-35db-efa9-1d5f" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="afff-ee2f-7c06-bb78" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -2328,7 +2328,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="7756-734b-cbc9-ee61" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="5988-bee3-9cdb-cc2a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -2707,7 +2707,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="efc6-e508-62a8-9711" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="1a80-4b92-0b2a-2857" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -2732,7 +2732,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="5ab2-8530-487b-b556" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="1e8f-e86a-a50c-d4ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -3637,7 +3637,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="0dc9-abdc-5640-697f" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="ffe5-18ab-f232-12de" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -3663,7 +3663,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="b873-b83d-212c-a055" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="638a-37c9-42d9-e956" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -3873,7 +3873,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="9e2f-506a-23f2-ad06" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="63d1-014f-c64f-ae8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4074,7 +4074,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="ee75-549a-840c-038a" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="308a-6edf-58f7-bebc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4225,7 +4225,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="6883-cd71-1d86-cf00" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="c911-945d-d3cc-3232" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4392,7 +4392,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="689d-cd66-291f-34e6" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="7f23-4dab-43fc-6909" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4575,7 +4575,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="3277-f69f-b474-67b1" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="3e82-df49-b27d-3ecb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4716,10 +4716,10 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13af-b9e3-1ff4-0fff" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="3fc5-0d22-aa52-212d" name="Se. Knight Spider" hidden="false" targetId="9344-573b-5af0-add9" type="profile">
+                <infoLink id="3fc5-0d22-aa52-212d" name="Se. Spider Knight" hidden="false" targetId="9344-573b-5af0-add9" type="profile">
                   <modifiers>
-                    <modifier type="increment" field="c48e-fefe-28bf-76e3" value="1"/>
                     <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
+                    <modifier type="append" field="name" value="Exalted"/>
                   </modifiers>
                 </infoLink>
                 <infoLink id="cfe0-ee56-187c-575f" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
@@ -4750,7 +4750,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="1d58-e8cd-0c96-49cb" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="187c-9d14-9c11-d1ba" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -4919,7 +4919,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="ede9-2ac0-e152-a33f" name="Se. Junior Mystic" hidden="false" targetId="b30b-8a9b-1962-1dbf" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="5d6c-36f7-f91c-36a2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d8b5-074c-3042-b4ed" type="equalTo"/>
                       </conditions>
@@ -5898,244 +5898,269 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1f42-742f-7afc-f841" name="Se. Shield Transport" publicationId="91df-c558-75f9-73ea" page="119" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9,re-roll/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12 or 6 constructs</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9,re-roll/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12 or 6 constructs</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="f9a1-74b8-779a-19c3" name="Se. Transport Tank" publicationId="91df-c558-75f9-73ea" page="119" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="08ed-4eb0-4ff7-3952" name="Se. Defender" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="4d8d-1859-4475-8856" name="Se. Ranger" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="580f-b343-a456-903f" name="Se. Hoverbiker" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="e93b-e607-60dd-5cbc" name="Se. Striker Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d0d6-5f6c-a9a1-a7ef" name="Se. Dragon Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="8a69-8ca7-28ae-25a0" name="Se. Eagle Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">15</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">15</characteristic>
       </characteristics>
     </profile>
     <profile id="9344-573b-5af0-add9" name="Se. Spider Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ef23-7d79-c60f-6a9d" name="Se. Harvester Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="4914-cded-646b-10c6" name="Se. Howler Knight" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="649b-45e7-28a6-6a0c" name="Se. Support Battery" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="66f5-e3ac-21c7-81e4" name="Se. Battlewalker" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7 min 4</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7 min 4</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="271f-ec58-5756-0a08" name="Se. Lancer" publicationId="81dd-fe5f-c233-17c5" page="93" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet, hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="1ee5-1da1-5063-0b65" name="Se. Senior Mystic" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="90e5-ec55-e72d-265d" name="Se. Overseer" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="5240-fd75-eb76-6195" name="Se. Regent" publicationId="81dd-fe5f-c233-17c5" page="92" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(fleet)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="b30b-8a9b-1962-1dbf" name="Se. Junior Mystic" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2deb-49d8-0791-5a6f" name="Se. Hovertank" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="54c8-3450-f1fd-40f9" name="Se. Aircraft" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle, Aircraft</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">flight</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="caea-4c4c-6f7f-136c" name="Se. Large Construct" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="dead-b4e7-bf4e-9513" name="Se. Light Attack Vehicle" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="78a3-6399-4fe8-f3c2" name="Se. Construct" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="0165-0307-b616-83cb" name="Se. Living God" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">8</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8, re-roll</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8, re-roll</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="4913-232f-7633-4b48" name="Doomspear" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -6155,90 +6180,99 @@ assasin, anti-air</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">02</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="e258-ac83-b7da-ef0e" name="Se. Avenger Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="9c83-20fc-069c-802d" name="Se. Howler Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="951d-2577-2d57-6ebd" name="Se. Eagle Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">15</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">15</characteristic>
       </characteristics>
     </profile>
     <profile id="f55b-19b7-7f93-73c4" name="Se. Striker Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="bc45-b1b3-814d-64c2" name="Se. Dragon Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="0726-819a-a37f-1a19" name="Se. Spider Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="f1f2-a3b5-83cd-ba8f" name="Se. Lance Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="6912-91b5-a19d-6048" name="Se. Harvester Knight Regent" publicationId="91df-c558-75f9-73ea" page="118" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

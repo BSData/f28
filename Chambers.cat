@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="13" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="37" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="14" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1253,15 +1253,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="276f-a4f4-5fd5-66bd" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="cfa4-5814-4823-8a2d" name="Ch. Veteran Soldier" hidden="false" targetId="70a2-d2a4-a882-64fe" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
-                      <conditions>
-                        <condition field="selections" scope="cbfe-1b77-ed3a-30c8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="atLeast"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="cfa4-5814-4823-8a2d" name="Ch. Veteran Soldier" hidden="false" targetId="70a2-d2a4-a882-64fe" type="profile"/>
                 <infoLink id="60fb-c384-e8b2-f149" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
               </infoLinks>
               <costs>
@@ -1396,7 +1388,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="de3c-742e-22f7-a830" name="Ch. Scout" hidden="false" targetId="44b7-6d06-cdc9-b8ee" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="eb53-9605-057c-618e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec71-e10b-3199-c344" type="equalTo"/>
                       </conditions>
@@ -1505,6 +1497,18 @@ FP: Faction Points</readme>
                         <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                       </costs>
                     </entryLink>
+                    <entryLink id="32ec-b994-a6c8-226a" name="Grenade Launcher" hidden="true" collective="false" import="true" targetId="1430-bdcd-e4e5-1e21" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <costs>
+                        <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                      </costs>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1527,11 +1531,27 @@ FP: Faction Points</readme>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f7cc-afd6-c2bb-df81" type="min"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="fc52-ba39-ee2c-e9f3" name="Slug Pistol and Vibrosword" hidden="false" collective="false" import="true" targetId="2228-afb3-da07-a3ec" type="selectionEntry">
+                <entryLink id="fc52-ba39-ee2c-e9f3" name="Vibrosword and Slug Pistol and AT-grenades" hidden="false" collective="false" import="true" targetId="2228-afb3-da07-a3ec" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e98a-f179-e911-a09a" type="max"/>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da80-e316-4f34-907c" type="min"/>
                   </constraints>
+                </entryLink>
+                <entryLink id="254f-19cc-e9bb-5eec" name="Maul and Combat Shield" hidden="true" collective="false" import="true" targetId="8135-f69c-5fdf-6e78" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3255-abcd-3c0b-cb89" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6dd4-b86e-6db4-aa4f" type="min"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -1722,17 +1742,17 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="f583-b70c-d8e7-6a65" name="Ch. Reverend" hidden="false" targetId="050c-6519-49f7-ca08" type="profile">
                   <modifiers>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 4">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 4">
                       <conditions>
                         <condition field="selections" scope="db64-49ea-d95c-a152" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe4-468e-b9c2-5ebb" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="db64-49ea-d95c-a152" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bd30-cfc0-d910-df6f" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="db64-49ea-d95c-a152" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6ea-6ae7-b065-9a01" type="equalTo"/>
                       </conditions>
@@ -1742,7 +1762,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="db64-49ea-d95c-a152" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe4-468e-b9c2-5ebb" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="3">
+                    <modifier type="set" field="c48e-fefe-28bf-76e3" value="3">
                       <conditions>
                         <condition field="selections" scope="db64-49ea-d95c-a152" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbe4-468e-b9c2-5ebb" type="equalTo"/>
                       </conditions>
@@ -1966,7 +1986,7 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="b6db-6eb5-067e-e00e" name="Ch. Medic" hidden="false" targetId="6c2a-7217-3887-a63e" type="profile">
           <modifiers>
-            <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+            <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
               <conditions>
                 <condition field="selections" scope="0874-099d-96db-2a73" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="equalTo"/>
               </conditions>
@@ -2054,7 +2074,7 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="06eb-cd75-6d5a-fa2e" name="Ch. Duelist" hidden="false" targetId="c321-dfb4-7e21-3109" type="profile">
           <modifiers>
-            <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+            <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
               <conditions>
                 <condition field="selections" scope="9061-73ee-a4df-8912" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="equalTo"/>
               </conditions>
@@ -2102,7 +2122,7 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="31eb-658a-5d56-a3fb" name="Chamber Technology Specialist" hidden="false" targetId="ad3e-7f92-41f9-6c23" type="profile">
           <modifiers>
-            <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+            <modifier type="set" field="6423-148f-5061-e61e" value="12">
               <conditionGroups>
                 <conditionGroup type="and">
                   <conditions>
@@ -3286,6 +3306,7 @@ FP: Faction Points</readme>
                 <infoLink id="ea49-5783-4242-f568" name="Chamber VTOL Attack Craft" hidden="false" targetId="b56f-ecdb-d7b3-9c51" type="profile"/>
                 <infoLink id="980b-05da-d21b-0848" name="Vehicle(vtol)" hidden="false" targetId="428c-e0ea-ff6d-9f18" type="rule"/>
                 <infoLink id="1a54-7758-02c9-fd52" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="319f-262e-b606-2ce8" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="115.0"/>
@@ -3321,7 +3342,7 @@ FP: Faction Points</readme>
             </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
-            <entryLink id="adcd-c138-9ce4-f70e" name="Dual Rotary Cannon" hidden="false" collective="false" import="true" targetId="320b-39f4-e339-1c01" type="selectionEntry">
+            <entryLink id="adcd-c138-9ce4-f70e" name="Dual Rotary cannon" hidden="false" collective="false" import="true" targetId="320b-39f4-e339-1c01" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae11-bc10-34ce-fc51" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b815-bf0a-e31d-d55e" type="min"/>
@@ -3721,22 +3742,22 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="1a92-cfb3-7ea5-644e" name="Ch. Commander" hidden="false" targetId="5b86-c9ef-ca22-b050" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="88e7-be68-a75d-a0e5" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f0f-27a1-b338-c916" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="6 min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="6 min 5">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2a4-e738-d3e2-5f79" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 5">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b2a4-e738-d3e2-5f79" type="equalTo"/>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f0f-27a1-b338-c916" type="equalTo"/>
@@ -3752,7 +3773,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b6eb-4dc5-6ba4-7a18" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="54bb-99d9-5139-dbf1" type="equalTo"/>
                       </conditions>
@@ -3762,7 +3783,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f0f-27a1-b338-c916" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="3">
+                    <modifier type="set" field="c48e-fefe-28bf-76e3" value="3">
                       <conditions>
                         <condition field="selections" scope="8bb4-061c-4ffe-18ab" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f0f-27a1-b338-c916" type="equalTo"/>
                       </conditions>
@@ -4276,7 +4297,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="30ae-18fb-bdca-d55e" name="Chamber Master" hidden="false" targetId="7c3b-cc68-3b5b-280f" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditionGroups>
                         <conditionGroup type="or">
                           <conditions>
@@ -4596,6 +4617,8 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="f9ef-3fa2-fa1a-0956" name="Chamber Ancient Interceptor" hidden="false" targetId="9d09-5696-382c-299e" type="profile"/>
                 <infoLink id="34e6-cbed-ca09-374e" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+                <infoLink id="0f38-f057-530c-e274" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
+                <infoLink id="9ada-c4d2-21c5-815c" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="170.0"/>
@@ -4882,6 +4905,8 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="8981-0a76-0fb8-c4d4" name="Chamber Angel Hunter" hidden="false" targetId="440c-c514-cfc4-2a15" type="profile"/>
                 <infoLink id="3d19-717c-6553-4aae" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
+                <infoLink id="d5e2-a49a-585f-753b" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
+                <infoLink id="dcec-57e0-b420-08a2" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="170.0"/>
@@ -5110,17 +5135,17 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="bc3c-0b0a-9345-cadc" name="Ch. Adept" hidden="false" targetId="050c-6519-49f7-ca08" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 4">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 4">
                       <conditions>
                         <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec71-e10b-3199-c344" type="equalTo"/>
                       </conditions>
@@ -5130,7 +5155,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="3">
+                    <modifier type="set" field="c48e-fefe-28bf-76e3" value="3">
                       <conditions>
                         <condition field="selections" scope="4e09-c598-7b59-cc3a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
@@ -5651,7 +5676,7 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="6310-14f9-615b-5a73" name="Ch. Standard Bearer" hidden="false" targetId="ad58-b44d-f934-bf8b" type="profile">
           <modifiers>
-            <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+            <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
               <conditions>
                 <condition field="selections" scope="f766-f77e-1763-be98" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="equalTo"/>
               </conditions>
@@ -5825,7 +5850,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="0fb8-c77d-5f16-9a62" name="Ch. Veteran Soldier" hidden="false" targetId="70a2-d2a4-a882-64fe" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="2db3-3e2a-2a9d-244a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="atLeast"/>
                       </conditions>
@@ -6034,17 +6059,17 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="999d-f1e0-60f3-944f" name="Ch. Mystic" hidden="false" targetId="fa6e-e827-864f-2c3e" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="2345-1b1c-5759-4b2b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4abf-3f4b-1af5-e9d2" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 4">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 4">
                       <conditions>
                         <condition field="selections" scope="2345-1b1c-5759-4b2b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="2345-1b1c-5759-4b2b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec71-e10b-3199-c344" type="equalTo"/>
                       </conditions>
@@ -6054,7 +6079,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="2345-1b1c-5759-4b2b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="3">
+                    <modifier type="set" field="c48e-fefe-28bf-76e3" value="3">
                       <conditions>
                         <condition field="selections" scope="2345-1b1c-5759-4b2b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
                       </conditions>
@@ -6480,7 +6505,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="f066-4d32-a810-d9e2" name="Ch. Scout Commander" hidden="false" targetId="a53f-ea11-4a30-056c" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="02fb-e9b0-3fb0-883c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ec71-e10b-3199-c344" type="equalTo"/>
                       </conditions>
@@ -7177,6 +7202,18 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8135-f69c-5fdf-6e78" name="Maul and Combat Shield" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Line Squad/Scout Squad</comment>
+      <infoLinks>
+        <infoLink id="0a66-ddd9-1f6f-2e6f" name="Maul" hidden="false" targetId="0409-4f3c-8c40-ac22" type="profile"/>
+        <infoLink id="8b92-d94b-1e6b-f327" name="Combat Shield" hidden="false" targetId="33b3-ed42-3ea2-d606" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="294e-b18f-79e2-6733" name="Specalist Weapons" hidden="false" collective="false" import="true">
@@ -7751,249 +7788,275 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="f615-80c8-817b-7cba" name="Ch. APC" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">10</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="1ab5-e287-4ec8-5eef" name="Ch. IFV" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="0f90-52c6-86ef-28a3" name="Ch. Insertion Capsule" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
         <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">1</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">8</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">10 or 1 Mech</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">8</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">10 OR 1 Mech</characteristic>
       </characteristics>
     </profile>
     <profile id="aed1-c7d8-e98a-946c" name="Ch. Captain" publicationId="81dd-fe5f-c233-17c5" page="70" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="27dc-c4e4-f61d-d892" name="Ch. Tank" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">10/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="8c42-f128-30d6-edc5" name="Ch. Assault Soldier" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12/6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12/6</characteristic>
       </characteristics>
     </profile>
     <profile id="70a2-d2a4-a882-64fe" name="Ch. Veteran Soldier" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="44b7-6d06-cdc9-b8ee" name="Ch. Scout" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="fb6e-34a3-cb77-17b4" name="Ch. Light Hovercraft Transport" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">5 scouts, cover</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">5 scouts, cover</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="050c-6519-49f7-ca08" name="Ch. Adept" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="6c2a-7217-3887-a63e" name="Ch. Medic" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="c321-dfb4-7e21-3109" name="Ch. Duellist" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ad3e-7f92-41f9-6c23" name="Ch. Tech-Soldier" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="fa6e-e827-864f-2c3e" name="Ch. Mystic" publicationId="81dd-fe5f-c233-17c5" page="" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ddef-e9e7-574e-535a" name="Ch. Siege Tank" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">11/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="cd63-8117-03a2-4959" name="Ch. Tanksuit" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="6e85-ce27-b7ca-0eed" name="Ch. Light Hovercraft" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="4ec8-71c7-19db-60f7" name="Ch. Bike" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="2779-b57f-8088-3217" name="Ch. Attack Bike" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="98c5-8f4e-89f8-3459" name="Ch. Assault Transport" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12/6/4</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">11</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12/6/4</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="25c9-e316-cc59-4f92" name="Ch. Mech" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="b56f-ecdb-d7b3-9c51" name="Ch. VTOL Attack Craft" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle, VTOL</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlim.</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 5 OR 5</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="28b3-5300-3d00-7bfc" name="Ch. Artillery Vehicle" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="5b86-c9ef-ca22-b050" name="Ch. Commander" publicationId="91df-c558-75f9-73ea" page="84" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="7c3b-cc68-3b5b-280f" name="Ch. Master" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">2</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">2</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2eea-e65f-eb92-ebde" name="Fists and wrists sluggers" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -8043,10 +8106,11 @@ pistol</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">10</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7 min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">-</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">-</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7 min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">-</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">-</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="e91a-30cc-4843-0e81" name="Legendary sword and gauntlet" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -8065,66 +8129,73 @@ pistol</characteristic>
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlim.</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="63b9-5cc7-38e4-5cd4" name="Ch. Interceptor" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle, Aircraft</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">flight</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="440c-c514-cfc4-2a15" name="Ch. Angel Hunter" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlim.</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="8b17-a522-b275-0180" name="Ch. Heavy Tanksuit" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="ad58-b44d-f934-bf8b" name="Ch. Standard Bearer" publicationId="91df-c558-75f9-73ea" page="85" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="a53f-ea11-4a30-056c" name="Ch. Scout Commander" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="a2aa-7ffb-8916-1b8c" name="Ch. Ancient VTOL" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlim.</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 5 OR 5</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="0afe-9621-158d-e624" name="Landing rockets" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">

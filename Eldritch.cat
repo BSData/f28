@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="97c8-5233-9ce3-5332" name="The Order of Eldritch Affairs" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="97c8-5233-9ce3-5332" name="The Order of Eldritch Affairs" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -442,7 +442,9 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="6e1b-27c3-f697-f7aa" name="El. Storm Crow Transport" hidden="false" targetId="49d9-3e95-872d-ed21" type="profile"/>
-                <infoLink id="f505-897c-ebf4-fbc0" name="Vehicle(vtol)" hidden="false" targetId="428c-e0ea-ff6d-9f18" type="rule"/>
+                <infoLink id="f505-897c-ebf4-fbc0" name="VTOL" hidden="false" targetId="428c-e0ea-ff6d-9f18" type="rule"/>
+                <infoLink id="e393-c976-db2d-1fc2" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="8dda-da72-d8b0-17aa" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1768,135 +1770,149 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ef77-9f5e-4dbb-d37b" name="El. APC" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle (tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">10</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="d511-d870-4fca-2c73" name="El. IFV" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="49d9-3e95-872d-ed21" name="El. Storm Crow Transport" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(vtol)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12+1(W)</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 5 OR 5</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12+1(W)</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="7916-4f7d-894b-60ad" name="El. Walker" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="8821-5b9f-7402-38ef" name="El. Assault Transport" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, assault)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">11</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="318b-57e1-fc98-affd" name="El. Air Defense Vehicle" publicationId="e42d-4466-8267-ac1b" page="55" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="911b-20bf-8a2c-8c26" name="El. Man-Tank" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="8c27-0c63-29d2-f971" name="El. Archglaive Walker" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="5a4e-6381-6816-282e" name="El. Doomknight" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9, re-roll</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9, re-roll</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2607-2924-36ac-2806" name="El. Champion" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="e7a4-f268-f1cd-5025" name="El. Captain" publicationId="e42d-4466-8267-ac1b" page="56" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="31f7-a08d-0c8e-9997" name="El. Venerable" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="fe78-1e3f-e809-bb86" name="El. Technology Specialist" publicationId="e42d-4466-8267-ac1b" page="57" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

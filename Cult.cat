@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="36" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1738,7 +1738,6 @@ FP: Faction Points</readme>
                 <infoLink id="d22d-bdb8-a8c7-2b74" name="Ambush(superior)" hidden="false" targetId="39da-5e02-4dbb-7d09" type="rule"/>
                 <infoLink id="8b9a-98ab-58bc-69a8" name="Vital Strike" hidden="false" targetId="a363-87ce-254e-2793" type="rule"/>
                 <infoLink id="67a6-8073-1089-a2db" name="Cult Command" hidden="false" targetId="22bd-b06c-8f1c-8263" type="rule"/>
-                <infoLink id="60ba-2fc0-aff0-219d" name="Target(5)" hidden="false" targetId="7db9-eaa2-a689-cce8" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="1186-bc36-5adc-ed7e" name="Upgrade any unit" hidden="false" collective="false" import="true" targetId="7abe-9d44-4a4c-d191" type="selectionEntryGroup"/>
@@ -1764,7 +1763,6 @@ FP: Faction Points</readme>
                 <infoLink id="5da6-c33a-4ca3-9e89" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
                 <infoLink id="7772-554b-66e4-6dc8" name="Infiltrate" hidden="false" targetId="213d-24ea-7704-b13f" type="rule"/>
                 <infoLink id="72b9-b64d-1b0a-689f" name="Cult Command" hidden="false" targetId="22bd-b06c-8f1c-8263" type="rule"/>
-                <infoLink id="a988-7be6-b283-ac94" name="Target(5)" hidden="false" targetId="7db9-eaa2-a689-cce8" type="rule"/>
                 <infoLink id="31e8-b2bb-7060-4725" name="Attack(x2)" hidden="false" targetId="0527-8690-35c7-a862" type="rule"/>
               </infoLinks>
               <entryLinks>
@@ -2430,7 +2428,6 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="d96f-29be-eefc-e56f" name="Cu. Outrider" hidden="false" targetId="9fd1-54e0-a2e8-9286" type="profile"/>
-                <infoLink id="e845-3140-c04d-5c7a" name="Target(5 in open)" hidden="false" targetId="c93e-8027-6137-2d34" type="rule"/>
                 <infoLink id="f2eb-3d3b-ba40-157d" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                 <infoLink id="29dd-1722-3098-b823" name="Cargo(no)" hidden="false" targetId="43f3-251b-b7d2-6a7f" type="rule"/>
               </infoLinks>
@@ -2444,6 +2441,8 @@ FP: Faction Points</readme>
               </entryLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="11.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2520,6 +2519,11 @@ FP: Faction Points</readme>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="e349-b915-c9d6-5f39" name="Pistol and Axe" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -2550,6 +2554,11 @@ FP: Faction Points</readme>
       <categoryLinks>
         <categoryLink id="3a4e-3ff4-aa27-b530" name="New CategoryLink" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="true"/>
       </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -2744,7 +2753,6 @@ FP: Faction Points</readme>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="3249-3a56-7d65-d9ab" name="Stellar Alignment" publicationId="91df-c558-75f9-73ea" page="108" hidden="false">
-      <comment></comment>
       <description>Spend one (1) Faction Point:
 ● Insurrection Assault: use when a friendly unit is deployed with Insertion. It receives one (1) less action marker.
 ● Back Underground: return one (1) friendly regular unit to staging and restore one (1) wound.
@@ -2807,259 +2815,286 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12, 6 ports</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12, 6 ports</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="2a71-42ff-ed94-e736" name="Cu. Work Vehicle" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">10, cover</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">10, cover</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="17ef-ddfd-40b5-6d9b" name="Cu. Mining Vehicle" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="82b5-a01a-4b8d-46aa" name="Cu. Civilian Car(s)" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">3</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">6</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="a00a-451e-069e-8ac5" name="Cu. Bestial Progenitor" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="eeaf-259a-29e1-c967" name="Cu. Leader" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="3ba2-3466-cea9-788f" name="Cu. Mystic" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="368f-ca7c-eb75-62b0" name="Cu. Standard Bearer" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="bf36-ebb7-e9c7-90d6" name="Cu. Battle Tank" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">11/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="f3f4-157c-fd5b-3338" name="Cu. Assault Tank" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">11/9</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">11/9</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="4ca1-146f-b797-fcea" name="Cu. Armoured Walker" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="b56e-f8e8-1eda-de6f" name="Cu. Turncoat" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d07a-5660-5035-c15c" name="Cu. Technical" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="e6a6-8680-07a5-5d34" name="Cu. Brute" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1907-aecd-9274-79bd" name="Cu. Xenomorph" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2f29-da77-1802-d3b1" name="Cu. Xenomorph Leader" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1939-f51c-d72e-5b38" name="Cu. Insurrectionist" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="20c0-9cd3-29e5-8439" name="Cu. Scout Car" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="773a-9a89-d0ec-f0f9" name="Cu. Bike Shooter" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4x2</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4x2</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="be1d-d4d2-232d-fc73" name="Cu. Blade-Assassin" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4x2</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">5</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4x2</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1c89-4b90-c6bc-d9bd" name="Cu. Gunslinger" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4x2</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">5</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4x2</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ba62-81da-5084-2525" name="Cu. Nexus Strategist" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1cd4-be01-32ea-6cec" name="Cu. Bodyguard" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="f2ce-0590-fc21-864b" name="Cu. Agitprop Expert" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d1fe-b6d2-e444-7003" name="Cu. Bio-Chemist" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1756-d01c-2052-c7b0" name="Cu. Skyhook" publicationId="e42d-4466-8267-ac1b" page="40" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 5 OR 5</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">unlim.</characteristic>
       </characteristics>
     </profile>
     <profile id="0a2a-7ad3-4169-70ce" name="Cu. Converted Mining Platform" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked, open)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">12</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">6</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">30</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">4</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">30</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">4</characteristic>
       </characteristics>
     </profile>
     <profile id="7a24-bb07-1ef2-3ab3" name="Excavator Blade" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -3075,70 +3110,77 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="c173-fedc-99db-c3f4" name="Cu. Medicus Extremis" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="f167-8f91-893b-e709" name="Cu. Rainmaker" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="292a-f203-04f0-110d" name="Cu. Tattletale Lookout" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="4762-9532-95e6-40e2" name="Cu. Roadblocker" publicationId="91df-c558-75f9-73ea" page="108" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="72c7-50bc-4855-8f40" name="Cu. Turncoat Weapons Team" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="9fd1-54e0-a2e8-9286" name="Cu. Outrider" publicationId="91df-c558-75f9-73ea" page="109" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">5, in open</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

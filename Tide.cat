@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="23" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -73,15 +73,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6205-929d-338c-14be" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8657-c5c3-f181-6aff" name="Ti. Muncher Swarm" hidden="false" targetId="45c1-01dd-5fd3-9981" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
-                      <conditions>
-                        <condition field="selections" scope="46f2-b15a-cd17-346c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a79-6238-aa4f-a583" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="8657-c5c3-f181-6aff" name="Ti. Muncher Swarm" hidden="false" targetId="45c1-01dd-5fd3-9981" type="profile"/>
                 <infoLink id="717c-46ed-f7f3-317c" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                 <infoLink id="dbe6-0f2c-e820-3756" name="Inflict Defence(-1) (2”, regular, no stacking)" hidden="false" targetId="9067-6a12-fb58-c680" type="rule"/>
                 <infoLink id="994f-05d5-861c-fa4e" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
@@ -133,7 +125,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="3918-6372-8c1c-ebfe" name="Small Beast" hidden="false" targetId="d2ca-c417-60c5-9f03" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="f472-4745-a1fb-f196" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d528-b968-b56a-bfc7" type="equalTo"/>
                       </conditions>
@@ -241,7 +233,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="662c-2c4a-777f-a0dd" name="Ti. Primary" hidden="false" targetId="d78b-82e4-bfae-e58d" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="fba8-042c-da14-1ac7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27c7-5b7e-8237-cd20" type="equalTo"/>
                       </conditions>
@@ -397,7 +389,15 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1101-3845-a20f-4fc7" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="6458-2676-2b56-ae68" name="Ti. Warrior" hidden="false" targetId="1918-1dc8-034a-ef27" type="profile"/>
+                <infoLink id="6458-2676-2b56-ae68" name="Ti. Warrior" hidden="false" targetId="1918-1dc8-034a-ef27" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
+                      <conditions>
+                        <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="51fc-8d37-8134-070f" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="9845-d3f8-c257-d801" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
                 <infoLink id="3712-5ff1-f764-046c" name="Fanatic" hidden="false" targetId="e7bd-54e6-3826-9164" type="rule"/>
               </infoLinks>
@@ -901,7 +901,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="9353-f9dd-1a0a-01be" name="Command Beast" hidden="false" targetId="b12e-1548-c7e5-e28c" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12/6">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12/6">
                       <conditions>
                         <condition field="selections" scope="c212-445d-5e64-ccae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2a79-6238-aa4f-a583" type="equalTo"/>
                       </conditions>
@@ -970,7 +970,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="1108-1972-7e35-6759" name="Bio-Support" hidden="false" targetId="90bd-a8d8-1a42-a4e8" type="profile">
                   <modifiers>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5 min 5">
                       <conditions>
                         <condition field="selections" scope="6ca6-4e60-13b4-bc04" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f1c5-fff1-9cb6-88c4" type="atLeast"/>
                       </conditions>
@@ -1381,7 +1381,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="b23a-bc74-14f9-bbb0" name="Guard" hidden="false" targetId="5db0-edd6-5e01-4af6" type="profile">
                   <modifiers>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="8">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="8">
                       <conditions>
                         <condition field="selections" scope="4458-2339-c1f4-1b0b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0fc-c34f-b704-5dff" type="equalTo"/>
                       </conditions>
@@ -1770,7 +1770,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="6dd7-f493-b678-e102" name="Small Beast" hidden="false" targetId="d2ca-c417-60c5-9f03" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="9">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="9">
                       <conditions>
                         <condition field="selections" scope="9b98-7f9a-e993-571d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="670b-f982-fbdc-66eb" type="atLeast"/>
                       </conditions>
@@ -2034,14 +2034,9 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="e391-e8e5-8344-1906" name="Ti. Specialised Beast" hidden="false" targetId="aa37-7c25-3dff-c027" type="profile">
                   <modifiers>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="8 min 5">
                       <conditions>
                         <condition field="selections" scope="76f2-21ed-4850-c658" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb64-7b6c-0268-528a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="8">
-                      <conditions>
-                        <condition field="selections" scope="76f2-21ed-4850-c658" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4236-250e-08f5-2496" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2135,7 +2130,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="1161-b740-04a3-765f" name="Ti. Cyst" hidden="false" targetId="275f-d56b-2180-f5c2" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="no">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="no">
                       <conditions>
                         <condition field="selections" scope="69d6-fa28-b179-bf94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1e9a-9cf9-6dd5-a414" type="equalTo"/>
                       </conditions>
@@ -2516,150 +2511,165 @@ Tide units may only use Tide transports.</description>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 6/max 3</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 6/max 3</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">6</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d2ca-c417-60c5-9f03" name="Ti. Small Beast" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">3</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d78b-82e4-bfae-e58d" name="Ti. Primary" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ad11-a65f-32c3-d9f7" name="Ti. Cannon Beast" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1918-1dc8-034a-ef27" name="Ti. Warrior" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="de25-8400-b91e-4a2c" name="Ti. Stalker Beast" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="d5ba-7876-a3a0-30b0" name="Ti. Bio-mine" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">2</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">3</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">6</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">3</characteristic>
       </characteristics>
     </profile>
     <profile id="175c-7746-b3b7-a7dc" name="Ti. Spawn Beast" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="dc62-6570-7267-7bbb" name="Ti. Living Weapon" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="b12e-1548-c7e5-e28c" name="Ti. Despot" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="90bd-a8d8-1a42-a4e8" name="Ti. Bio-support" publicationId="91df-c558-75f9-73ea" page="126" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="cc68-8f98-5746-b724" name="Ti. Tankbeast" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="8547-cd99-0b9a-6460" name="Ti. Giant Beast" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="dca8-bbef-3d10-2856" name="Ti. Feeder Monster" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="3f71-b56e-e819-86b0" name="Ti. Large Toxic Beast" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="cbb1-7044-b21d-55d8" name="Toxic Whips" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -2675,60 +2685,66 @@ Tide units may only use Tide transports.</description>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="5db0-edd6-5e01-4af6" name="Ti. Guard" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1af4-eb25-d0b6-3ab9" name="Ti. Winged Monster" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">24</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">24</characteristic>
       </characteristics>
     </profile>
     <profile id="9ff7-6310-f144-c34a" name="Ti. Huge Flying Beast" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(hover)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">10</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="aa37-7c25-3dff-c027" name="Ti. Specialised Beast" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="275f-d56b-2180-f5c2" name="Ti. Cyst" publicationId="91df-c558-75f9-73ea" page="127" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="17" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="f91d-6f9a-2fd1-bef9" name="The Scandinavian Commonwealth" revision="10" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -126,12 +126,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5536-736e-32b1-a1f5" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5baa-f332-0e13-929e" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="5baa-f332-0e13-929e" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="4674-5f66-47bd-37c8" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="dbcd-dea1-108a-fe5a" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="4b54-ac93-7858-4f90" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -384,14 +379,9 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="54b5-55c6-0d90-e687" name="Sc. Scout Battleframe" hidden="false" targetId="0a59-b47f-1fc2-fec8" type="profile">
                   <modifiers>
-                    <modifier type="increment" field="bc5e-e8d4-df78-f81b" value="1">
+                    <modifier type="increment" field="c48e-fefe-28bf-76e3" value="1">
                       <conditions>
                         <condition field="selections" scope="a608-2784-a666-289b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="066f-8dc6-c4b5-345d" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
-                      <conditions>
-                        <condition field="selections" scope="a608-2784-a666-289b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba9-22ac-ef4d-514a" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -474,12 +464,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3de5-2eed-7c34-daa1" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="b527-e9af-2f5e-f94d" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="b527-e9af-2f5e-f94d" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="a627-1731-8818-7ffc" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="34b7-fcd6-f85b-1cd1" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="5ce6-ee80-38e0-583c" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -929,17 +914,12 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="1243-4805-2112-edf1" name="Sc. Line Battleframe" hidden="false" targetId="d330-19e9-14a8-344e" type="profile">
                   <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1">
-                      <conditions>
-                        <condition field="selections" scope="3513-ab20-820c-9516" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8ba9-22ac-ef4d-514a" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="increment" field="bc5e-e8d4-df78-f81b" value="1">
+                    <modifier type="increment" field="c48e-fefe-28bf-76e3" value="1">
                       <conditions>
                         <condition field="selections" scope="cd67-f324-bd32-d62a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f4f-a014-fd6d-062b" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 5">
                       <conditions>
                         <condition field="selections" scope="cd67-f324-bd32-d62a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6104-26dc-13c0-dcd1" type="equalTo"/>
                       </conditions>
@@ -1031,12 +1011,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24f3-8b2b-5454-a2ff" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="7710-a40c-884c-3efb" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="7710-a40c-884c-3efb" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="1d2b-6911-addb-8a09" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="855f-c6f6-7388-0ff5" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="dc7e-284b-b3fc-840c" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -1142,15 +1117,10 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="40da-2e87-e41f-5c44" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="8544-1008-f07b-d913" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
                 <infoLink id="079c-6b02-b4bf-a904" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="85d2-e40c-0c6e-e89a" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="ac16-c134-42e7-b112" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
+                <infoLink id="dad8-d801-63ae-f878" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="0036-a673-a0c1-3676" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -1271,12 +1241,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4496-99ed-767a-379c" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="4b27-4c4c-701f-12f3" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="4b27-4c4c-701f-12f3" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="798d-38d5-b10f-a377" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="e868-28dd-b936-1c22" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="fbea-dbcb-8ed8-973e" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -1435,12 +1400,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5161-6dec-da30-976f" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="dd85-cbe1-1eb9-7653" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="dd85-cbe1-1eb9-7653" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="146c-691a-c850-fae5" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="dc7c-b36f-a057-b65b" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="dfd6-c1bc-366a-f66d" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -1603,12 +1563,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a6b-b899-7104-c8df" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="84c9-1beb-f317-a235" name="Sc. Soldier" hidden="false" targetId="4561-fd5b-cc66-79c9" type="profile">
-                  <modifiers>
-                    <modifier type="increment" field="a4e3-afe7-fa56-6899" value="1"/>
-                    <modifier type="set" field="name" value="Sc. Soldier (Veteran)"/>
-                  </modifiers>
-                </infoLink>
+                <infoLink id="84c9-1beb-f317-a235" name="Sc. Veteran Soldier" hidden="false" targetId="150f-e505-d9f3-ff83" type="profile"/>
                 <infoLink id="206f-ef5b-ae14-8b08" name="Priority(accurate)" hidden="false" targetId="0b0a-6bbc-c7f7-543e" type="rule"/>
                 <infoLink id="af22-f73f-1952-7e05" name="Inherit(Vanguard)" hidden="false" targetId="41b6-2cb3-d6f4-79f0" type="rule"/>
                 <infoLink id="a922-1cc5-3eca-bded" name="Laser Marker" hidden="false" targetId="3a42-72bf-29f3-b6bf" type="rule"/>
@@ -2027,17 +1982,17 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="e5e3-c08b-0b4e-31eb" name="Sc. Commander" hidden="false" targetId="b10d-c3e8-afca-5f7c" type="profile">
                   <modifiers>
-                    <modifier type="increment" field="bc5e-e8d4-df78-f81b" value="1">
+                    <modifier type="increment" field="c48e-fefe-28bf-76e3" value="1">
                       <repeats>
                         <repeat field="selections" scope="7e48-9c1a-952f-4e42" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2f4f-a014-fd6d-062b" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="15">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="15">
                       <conditions>
                         <condition field="selections" scope="7e48-9c1a-952f-4e42" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7c1e-be7e-6d0b-5045" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="591c-163f-c1e8-dfa3" value="7 min 5">
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="7 min 5">
                       <conditions>
                         <condition field="selections" scope="7e48-9c1a-952f-4e42" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6104-26dc-13c0-dcd1" type="equalTo"/>
                       </conditions>
@@ -2276,6 +2231,7 @@ FP: Faction Points</readme>
                 <infoLink id="2a9b-53d2-4d0a-4b63" name="Sc. Aircraft" hidden="false" targetId="0aae-195b-9853-f0da" type="profile"/>
                 <infoLink id="3dd1-72ba-759e-c896" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
                 <infoLink id="5344-b3e7-ac42-4543" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
+                <infoLink id="8981-7758-7ac4-8e66" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3771,49 +3727,54 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="adb6-08ee-8d83-7494" name="Sc.Hover APC" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="0a59-b47f-1fc2-fec8" name="Sc. Stealth Battleframe" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="8d2e-3116-a087-9d49" name="Sc. Scout" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="0b2c-4f1b-b466-b140" name="Sc. Tactical AU" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="3f11-b17a-d158-54d4" name="Slug Carbine with inaccurate" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -3829,206 +3790,227 @@ Spend one (1) Faction Point:
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(simple)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">12</characteristic>
       </characteristics>
     </profile>
     <profile id="d330-19e9-14a8-344e" name="Sc. Line Battleframe" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="7269-13a3-734e-2a38" name="Sc. Diplomat" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="150f-e505-d9f3-ff83" name="Sc. Veteran Soldier" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2cb0-e249-1735-d99e" name="Co. Stinger" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="c55a-6bc7-1e6d-f2d2" name="Sc. Operator" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ad96-5a1d-fa84-f5c6" name="Sc. Sniper AU" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="5b75-84d1-0fd1-4a96" name="Sc. Indie Beast-rider" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="44b7-ee75-d385-4d1a" name="Sc. Indie Attack Dog" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="2eda-68f2-d806-11df" name="SC. Indie Soldier" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="c6a5-131b-c47c-fc89" name="Sc. Heavy Battleframe" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="b10d-c3e8-afca-5f7c" name="Sc. Commander" publicationId="91df-c558-75f9-73ea" page="112" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="d80e-44a3-29ff-fa63" name="Sc. Hovertank" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">10/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">10/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="0aae-195b-9853-f0da" name="Sc. Aircraft" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle, Aircraft</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">flight</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="4ee7-fa3c-bd9e-a15a" name="Sc. Sheild AU" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6	</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0	</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="9f1e-defd-8177-8353" name="Sc. Repelling AU" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="7a36-669e-399e-aadf" name="Sc. Automated Stealth Attack Fighter" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft, light)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">6</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">unlim.</characteristic>
       </characteristics>
     </profile>
     <profile id="cb04-e40a-0555-2264" name="Sc. Large Battleframe" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="f198-f5ad-6768-328d" name="Sc. Sheild AU (Fast)" publicationId="e42d-4466-8267-ac1b" page="37" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">9</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">9</characteristic>
       </characteristics>
     </profile>
     <profile id="9d29-37e6-08ca-4ab6" name="Sc. Supremacy Battleframe" publicationId="e42d-4466-8267-ac1b" page="46" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">9 min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">9 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="45cf-7c71-f1a3-12bf" name="Sc. Support Turret" publicationId="91df-c558-75f9-73ea" page="113" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">no</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">0</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

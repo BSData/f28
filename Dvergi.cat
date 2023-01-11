@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="431b-48d2-424d-bb15" name="The Dvergi Freeholds" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="13" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="431b-48d2-424d-bb15" name="The Dvergi Freeholds" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -388,7 +388,7 @@ FP: Faction Points</readme>
                         <condition field="selections" scope="74d8-c966-44bd-8350" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cb0-56d1-82be-c1f2" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="set" field="61ff-d3d0-d23d-332c" value="12">
+                    <modifier type="set" field="2760-e837-ae05-5d45" value="12">
                       <conditions>
                         <condition field="selections" scope="74d8-c966-44bd-8350" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3cb0-56d1-82be-c1f2" type="equalTo"/>
                       </conditions>
@@ -561,7 +561,7 @@ FP: Faction Points</readme>
                 <condition field="selections" scope="d64b-24db-cb87-6668" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="732b-504d-b895-7518" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="set" field="61ff-d3d0-d23d-332c" value="12">
+            <modifier type="set" field="2760-e837-ae05-5d45" value="12">
               <conditions>
                 <condition field="selections" scope="d64b-24db-cb87-6668" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="732b-504d-b895-7518" type="equalTo"/>
               </conditions>
@@ -1082,7 +1082,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="2dcc-4a87-6fc2-e0af" name="Dv. Ancestral Mystic" hidden="false" targetId="c4d8-cb72-8fae-26e5" type="profile">
                   <modifiers>
-                    <modifier type="set" field="dcd1-8457-ab88-a19a" value="12">
+                    <modifier type="set" field="6423-148f-5061-e61e" value="12">
                       <conditions>
                         <condition field="selections" scope="068b-255f-4e26-7bbd" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b5aa-1ad8-168f-908f" type="equalTo"/>
                       </conditions>
@@ -1177,6 +1177,7 @@ FP: Faction Points</readme>
                 <infoLink id="1cb6-8c9f-8a51-e976" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
                 <infoLink id="4461-2ce2-0e8f-621a" name="Pylon Pattern" hidden="false" targetId="3947-ca5f-d41c-30c1" type="rule"/>
                 <infoLink id="4770-e95b-e3a6-7c55" name="Spotter" hidden="false" targetId="b50b-7db8-ff30-68b8" type="rule"/>
+                <infoLink id="847c-eb97-ee17-0797" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="180.0"/>
@@ -2075,7 +2076,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="822c-3cdf-ffff-f6c1" name="Dv. Self-Propelled Gun" hidden="false" targetId="5aad-0cb9-2cb6-00e0" type="profile">
                   <modifiers>
-                    <modifier type="set" field="a61d-9a4d-ee19-f432" value="10/8">
+                    <modifier type="set" field="61ff-d3d0-d23d-332c" value="10/8">
                       <conditions>
                         <condition field="selections" scope="26ae-3479-73e9-f23e" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="511b-2ed6-ad5e-42cc" type="equalTo"/>
                       </conditions>
@@ -2345,6 +2346,7 @@ FP: Faction Points</readme>
                 <infoLink id="9806-e1be-558d-3c40" name="Dv. Biplane" hidden="false" targetId="71c6-f7e6-e199-5b68" type="profile"/>
                 <infoLink id="3edd-9640-8577-22d3" name="Vehicle(aircraft)" hidden="false" targetId="5015-1020-2c91-b1db" type="rule"/>
                 <infoLink id="81c9-2cd2-7235-b1db" name="Vehicle(light)" hidden="false" targetId="a431-90d3-3f53-8231" type="rule"/>
+                <infoLink id="f84e-ad32-dfe9-28ef" name="Move(flight)" hidden="false" targetId="6731-0aa0-7d0f-3876" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="2929-58a8-a5c3-ca16" name="HMG" hidden="false" collective="false" import="true" targetId="5400-40bd-bd89-83aa" type="selectionEntry">
@@ -2958,7 +2960,7 @@ FP: Faction Points</readme>
   <sharedProfiles>
     <profile id="26f9-0ad6-399a-c97b" name="Dv. Ancient Ancestor" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -2967,15 +2969,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2ce0-7c29-ad68-e6d3" name="Dv. Freeholder" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -2984,15 +2987,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5 in cover</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4, +1 in cover</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="377f-ab1c-8a5a-7b79" name="Dv. Ancestor" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3001,15 +3005,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">8</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">8</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ed2c-0e06-d24b-3c54" name="Dv. Sharpshooter" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3018,24 +3023,26 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">3</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">0</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">0</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="1a8c-aeac-0b3b-ba9d" name="Dv. ATC" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">6</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="b293-6d1a-cf57-32bb" name="Dv. Foreperson" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3044,32 +3051,35 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="ab33-83f5-a8c4-478d" name="Dv. Tunneler APC" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle (tracked)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">12</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">6</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">12</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2eed-3e74-5725-e168" name="Dv. Tunnel" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(light)</characteristic>
+        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(simple)</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">2</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">8</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">12</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">8</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">12</characteristic>
       </characteristics>
     </profile>
     <profile id="93dc-258d-8d17-92ec" name="Dv. Exosuit" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3078,15 +3088,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">7</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">3</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="c4d8-cb72-8fae-26e5" name="Dv. Ancestral Mystic" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3095,32 +3106,35 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">min 4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4 min 4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="2b93-3df9-41c5-435a" name="Dv. Airship" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">2</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">8</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">min 6 OR 6</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">pylon pattern</characteristic>
       </characteristics>
     </profile>
     <profile id="ac9c-e634-d217-d9af" name="Dv. HMG-Pillbox" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(light)</characteristic>
+        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(simple)</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">1</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">6</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">-</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">6</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="52a1-45bc-96e0-dc3c" name="Dv. Noble" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3129,15 +3143,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, +1 in cover</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6, +1 in cover</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="fb73-651b-3530-bcfe" name="Dv. Wrecker" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3146,23 +3161,25 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5 in cover</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4, +1 in cover</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="f24c-65b1-7901-11b8" name="Dv. Forward Bunker" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
         <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">3</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">8</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">12</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">8</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">12</characteristic>
       </characteristics>
     </profile>
     <profile id="80fb-d5be-4ad4-89b4" name="Dv. Trencher" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3171,15 +3188,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4, +1 in cover</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4, +1 in cover</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="909a-2567-e501-adb7" name="Dv. Robot" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3188,15 +3206,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6, re-roll</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6, re-roll</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="3444-547d-f197-ba64" name="Dv. Company HQ" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3205,15 +3224,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">3</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4, +1 in cover</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4, +1 in cover</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="469c-b47c-fa73-6697" name="Dv. Penal Miner" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3222,15 +3242,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
     <profile id="2492-af11-0e53-1de6" name="Dv. Bike" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3239,15 +3260,16 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="7093-099d-cc22-81aa" name="Dv. Trike" publicationId="e42d-4466-8267-ac1b" page="60" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3256,24 +3278,26 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">12</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
       </characteristics>
     </profile>
     <profile id="5aad-0cb9-2cb6-00e0" name="Dv. Self-Propelled Gun" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(wheeled)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9/7</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">9</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
       </characteristics>
     </profile>
     <profile id="bfe1-3f54-f0db-d12f" name="Dv. Field Artillery" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3282,33 +3306,36 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">5</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
     <profile id="c543-ad00-33ac-12a7" name="Dv. Attack Gyro" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(VTOL)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">9</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">72</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="71c6-f7e6-e199-5b68" name="Dv. Biplane" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
         <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(aircraft)</characteristic>
         <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
-        <characteristic name="Defence" typeId="a61d-9a4d-ee19-f432">6</characteristic>
-        <characteristic name="Capacity" typeId="61ff-d3d0-d23d-332c">-</characteristic>
-        <characteristic name="Move" typeId="2760-e837-ae05-5d45">unlimited</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">6</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">flight</characteristic>
       </characteristics>
     </profile>
     <profile id="39a8-fd9a-78c4-9bd1" name="Dv. Sub. Obs. Post" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3317,41 +3344,45 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">1</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">-</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="3cee-f0cd-7efe-b14d" name="Dv. Automated Defence Platform" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(light)</characteristic>
+        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(simple)</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">1</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">7</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">-</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">7</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="2014-521f-f7d0-294d" name="Dv. Sensor Platform" publicationId="e42d-4466-8267-ac1b" page="61" hidden="false" typeId="c0a1-f0a7-dbc5-fe4b" typeName="Structures">
       <characteristics>
-        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(light)</characteristic>
+        <characteristic name="Type" typeId="6697-9b0d-68e4-720f">Structure(simple)</characteristic>
         <characteristic name="Wounds" typeId="b07e-740c-af96-1c4b">1</characteristic>
-        <characteristic name="Defence" typeId="6516-438b-0a47-d4ab">7</characteristic>
-        <characteristic name="Capacity" typeId="feb0-7728-1ddc-3abf">-</characteristic>
+        <characteristic name="Target" typeId="6516-438b-0a47-d4ab">1 OR 3</characteristic>
+        <characteristic name="Defence" typeId="feb0-7728-1ddc-3abf">7</characteristic>
+        <characteristic name="Capacity" typeId="fe6a-37b7-5251-54f9">-</characteristic>
       </characteristics>
     </profile>
     <profile id="5e9c-4886-a5b6-c5cc" name="Dv. U. B. Base Area" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">10</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">6</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">1</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">-</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">-</characteristic>
       </characteristics>
     </profile>
     <profile id="b75e-e50c-f2f9-fb9c" name="Dv. Scout" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
       <modifiers>
-        <modifier type="set" field="c48e-fefe-28bf-76e3" value="1">
+        <modifier type="set" field="dcd1-8457-ab88-a19a" value="1">
           <conditions>
             <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e8e7-0cf3-0387-029f" type="equalTo"/>
           </conditions>
@@ -3360,10 +3391,11 @@ FP: Faction Points</readme>
       <characteristics>
         <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Infantry(nimble)</characteristic>
         <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
-        <characteristic name="Defence" typeId="591c-163f-c1e8-dfa3">4</characteristic>
-        <characteristic name="Tough" typeId="bc5e-e8d4-df78-f81b">2</characteristic>
-        <characteristic name="Morale" typeId="c48e-fefe-28bf-76e3">0</characteristic>
-        <characteristic name="Move" typeId="dcd1-8457-ab88-a19a">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">5</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
