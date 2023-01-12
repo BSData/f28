@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -2937,7 +2937,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2b2-a246-d3eb-fcbd" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="eb61-4759-538f-7aa1" name="Pr. Biker" hidden="false" targetId="5776-3f13-bc5a-1f1a" type="profile"/>
+                <infoLink id="eb61-4759-538f-7aa1" name="Pr. Soldier" hidden="false" targetId="c68f-2546-c7e6-1546" type="profile"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="1bef-853e-8aa9-909f" name="Primary Energy sword" hidden="false" collective="false" import="true" targetId="6c87-82c8-dfaf-ebcd" type="selectionEntry">
