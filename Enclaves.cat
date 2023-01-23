@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -3344,8 +3344,6 @@ FP: Faction Points</readme>
     <selectionEntry id="77bc-f462-4608-d4b7" name="Mark of Anger" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9130-dbb3-05b5-a6a9" name="Mark of Anger" hidden="false" targetId="5422-c46f-56b0-8901" type="rule"/>
-        <infoLink id="858c-e629-71ed-0103" name="Frenzied Assault" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
-        <infoLink id="0264-28c5-c257-eebc" name="Ignores difficult terrain for CC attacks" hidden="false" targetId="0046-5dd7-fa4f-0760" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3365,9 +3363,7 @@ FP: Faction Points</readme>
     </selectionEntry>
     <selectionEntry id="f3dd-993a-aca7-bc6c" name="Mark of Excess" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="dde1-6c05-db38-bc71" name="Mark of Pleasure" hidden="false" targetId="32a9-df98-5a3e-d7e8" type="rule"/>
-        <infoLink id="3c7f-ecce-8fed-ad8d" name="Move(fleet)" hidden="false" targetId="d63a-1bad-5f14-8395" type="rule"/>
-        <infoLink id="d2a6-71e8-634e-a98c" name="Move(nimble)" hidden="false" targetId="24bb-22c4-4911-4648" type="rule"/>
+        <infoLink id="dde1-6c05-db38-bc71" name="Mark of Ecxess" hidden="false" targetId="32a9-df98-5a3e-d7e8" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
