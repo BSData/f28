@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="da06-6a14-b1ae-f14c" name="The Tide Cult" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -879,8 +879,10 @@ FP: Faction Points</readme>
     </selectionEntry>
     <selectionEntry id="40ed-1b03-d15e-c0bf" name="2x Heat Cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="0b7b-80eb-02ba-fb25" name="Heat Cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
+        <infoLink id="0b7b-80eb-02ba-fb25" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
         <infoLink id="b1c7-063c-2d68-9e6b" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="b917-6228-ebca-86fd" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="f1ba-ab29-2f60-0ae1" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -2540,6 +2542,9 @@ FP: Faction Points</readme>
     <selectionEntry id="633c-892d-dd12-8cde" name="AT-grenades" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8059-0ef6-c2ae-11a0" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile"/>
+        <infoLink id="7347-d4ca-0bd4-6182" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
+        <infoLink id="1992-b775-2d1d-4afa" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
+        <infoLink id="b959-e58a-98d8-1c2a" name="AT(+4)" hidden="false" targetId="92ef-5c3b-ca39-519b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="28" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="29" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -506,6 +506,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="ca46-67c1-780b-60f8" name="Heat Gun" hidden="false" targetId="c84c-c6ec-4f7d-c469" type="profile"/>
         <infoLink id="545e-04ad-63cb-435d" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
         <infoLink id="5045-eaf1-e450-0926" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="1a99-f415-e672-4843" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -518,6 +519,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="4f45-850b-69f7-d159" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
         <infoLink id="3c34-d036-52bc-6a93" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="10c1-5b58-b489-881f" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="6ef5-6b8c-815c-8fa1" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -735,7 +737,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="e715-be2e-fc78-bd88" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile"/>
         <infoLink id="a206-de7d-05df-3c63" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
-        <infoLink id="5a3a-83e1-1ebd-8245" name="AT(modifier)" hidden="false" targetId="f1e3-778e-4b74-7758" type="rule"/>
+        <infoLink id="5a3a-83e1-1ebd-8245" name="AT(+4)" hidden="false" targetId="92ef-5c3b-ca39-519b" type="rule"/>
+        <infoLink id="6615-cb72-f3f6-3972" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -1035,6 +1038,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="6dfa-17f9-bd53-13c7" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
         <infoLink id="ae16-7013-5194-2820" name="Vibro-Fist" hidden="false" targetId="19b7-59ef-30f8-130d" type="profile"/>
         <infoLink id="c6b4-ea3e-3487-3543" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="e30d-10ad-5284-f165" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1267,6 +1271,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="7f58-fd59-8531-37eb" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="793f-6d67-08b1-d4f5" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="ed78-7760-6b83-7c1f" name="Heatbombs" hidden="false" targetId="4233-9197-c982-2a62" type="profile"/>
+        <infoLink id="8502-9809-ccbf-c788" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="b0bd-5c72-6521-6632" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2610,6 +2616,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="95c4-a19d-f6cb-e37d" name="Long Tank Gun" page="" hidden="false" targetId="4e4f-7121-b144-57ce" type="profile"/>
         <infoLink id="cc35-6990-e481-62e6" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
         <infoLink id="3ff7-6e69-71a8-062f" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="7dc3-52f8-0889-6352" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="7610-de5f-f570-51ab" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3006,6 +3014,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="0c87-4a56-3359-cbde" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="2efd-b684-b26b-b257" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
         <infoLink id="2791-bfea-0790-e1d6" name="Heat Pistol" hidden="false" targetId="ea81-5673-518c-d19e" type="profile"/>
+        <infoLink id="ad04-8865-9601-ab70" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="4100-08d5-6875-8d2b" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3306,6 +3316,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="6dc4-bb82-27c2-012c" name="Platebreaker Rifle" hidden="false" targetId="17e6-bd91-b825-a00f" type="profile"/>
         <infoLink id="ba4a-2c56-7da4-59ec" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="65c8-cad1-2900-5f82" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="8dc1-18fb-50af-a291" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="ddd2-3736-3ede-a474" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3702,6 +3714,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="95bf-2b23-1c70-ff3e" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="5f85-41ed-e19b-6cb0" name="Kill Saw" hidden="false" targetId="ae6e-661f-d2e4-0bf8" type="profile"/>
+        <infoLink id="c91b-bd69-5ed9-4b2a" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="bae0-9318-14c9-dfbe" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -5601,6 +5615,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="82dc-74e3-013e-aec9" name="Crushing Claws" hidden="false" targetId="db3d-7be4-ff7b-420a" type="profile"/>
         <infoLink id="c8c6-3f76-4331-1471" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="683a-95c2-66d8-7ab4" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="ee16-179e-d287-993a" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -6296,6 +6312,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="e619-2ef4-9cb9-48e3" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="5dce-98c0-7ea6-7447" name="Heat Lance" hidden="false" targetId="1f4f-fa40-a19b-36fa" type="profile"/>
+        <infoLink id="feb8-d1ae-61e8-7365" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+        <infoLink id="809e-fae3-72c0-39bd" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -7274,6 +7292,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="fa2e-d2a3-605a-f696" name="Massive Crushing Claws" hidden="false" targetId="f3dc-8a6e-6bf8-0a49" type="profile"/>
         <infoLink id="d5ee-8e92-bdc9-df6e" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="ac71-de62-d4e3-686a" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="d47c-5d4d-addd-01e3" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -7646,6 +7666,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="54e4-8f08-112b-0f5e" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="f29b-0131-99e0-54d1" name="Massive Vibrofist" hidden="false" targetId="54d0-4454-ab7f-ee77" type="profile"/>
+        <infoLink id="eb63-b7bc-75e2-6515" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="aaf6-6e8b-3615-27bf" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8093,6 +8115,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="3a85-3b86-58a2-7dd5" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
         <infoLink id="60b1-79c7-7934-0c71" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="2401-ca15-c6df-291f" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="524c-2482-b84d-417a" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8128,7 +8152,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="dcc8-a434-4fcc-304d" name="Primary AT-grenades" hidden="false" targetId="425c-b737-650b-1b35" type="profile"/>
         <infoLink id="1885-5da2-2e25-f156" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
         <infoLink id="2576-29d9-1d6d-dec6" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
-        <infoLink id="f776-d0ef-2696-30b3" name="AT(modifier)" hidden="false" targetId="f1e3-778e-4b74-7758" type="rule"/>
+        <infoLink id="f776-d0ef-2696-30b3" name="AT(+5)" hidden="false" targetId="f3fd-e16e-403f-0de2" type="rule"/>
+        <infoLink id="fbe0-837e-ea9e-530b" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -10093,6 +10118,15 @@ In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="82db-39f2-ac82-661d" name="Pistol(12&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Weapon ignores the close quarters penalty for being within 2” of an enemy or attacking a target within 2” of an enemy. Only within 12&quot;.</description>
+    </rule>
+    <rule id="92ef-5c3b-ca39-519b" name="AT(+4)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Wound(+4) versus vehicles.</description>
+    </rule>
+    <rule id="f3fd-e16e-403f-0de2" name="AT(+5)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Wound(+5) versus vehicles.</description>
+    </rule>
+    <rule id="7ae7-a942-7988-b836" name="AT(+D6)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Wound(+D6) versus vehicles.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="28" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -2331,8 +2331,9 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="40cd-f737-43df-42d9" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
         <infoLink id="f53b-1bed-724b-cef2" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
-        <infoLink id="27bc-aeae-31e3-af21" name="AT(modifier)" hidden="false" targetId="f1e3-778e-4b74-7758" type="rule"/>
+        <infoLink id="27bc-aeae-31e3-af21" name="AT(+5)" hidden="false" targetId="f3fd-e16e-403f-0de2" type="rule"/>
         <infoLink id="d22b-4fa6-50fd-b981" name="Primary AT-grenades" hidden="false" targetId="425c-b737-650b-1b35" type="profile"/>
+        <infoLink id="5751-3b15-a6d6-1a6a" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>

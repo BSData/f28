@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="4" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -251,6 +251,9 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="cfb6-aa70-64fd-6837" name="Vibrosword" hidden="false" targetId="fdcd-d9df-acc6-1ee3" type="profile"/>
         <infoLink id="8d3b-15b4-8b4f-fe2f" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile"/>
+        <infoLink id="2b4e-c2e3-4367-48fa" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
+        <infoLink id="1d83-9210-8804-a00d" name="AT(+4)" hidden="false" targetId="92ef-5c3b-ca39-519b" type="rule"/>
+        <infoLink id="8580-6991-03bc-2a53" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3736,6 +3739,9 @@ FP: Faction Points</readme>
         <infoLink id="0313-345d-f543-9c47" name="AT-grenades" hidden="false" targetId="cfbc-ec39-a7fa-430b" type="profile"/>
         <infoLink id="6e8c-699b-fd1c-c566" name="Pistol" hidden="false" targetId="2c11-d87e-5cc4-4635" type="rule"/>
         <infoLink id="9005-0898-163f-3718" name="Slug pistol" hidden="false" targetId="95ea-a0c1-fac8-9020" type="profile"/>
+        <infoLink id="627a-c289-34af-1c46" name="AT(only)" hidden="false" targetId="3c3f-d7df-4442-5361" type="rule"/>
+        <infoLink id="f144-2680-5e9a-ab87" name="AT(+4)" hidden="false" targetId="92ef-5c3b-ca39-519b" type="rule"/>
+        <infoLink id="db9e-b9e8-7a38-fcad" name="Contact" hidden="false" targetId="ebcd-51d1-852f-a539" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
