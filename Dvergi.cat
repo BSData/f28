@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="431b-48d2-424d-bb15" name="The Dvergi Freeholds" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="431b-48d2-424d-bb15" name="The Dvergi Freeholds" revision="3" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -410,7 +410,7 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="09a2-eee0-0770-d185" name="Wounds(+1)" hidden="false" targetId="2f1b-db84-f609-dd5c" type="rule"/>
                 <infoLink id="f653-0484-8696-2463" name="Capacity(6)" hidden="false" targetId="9de2-6fe9-4f6a-a9a3" type="rule"/>
-                <infoLink id="fd14-1f9e-7655-a9f6" name="Firing Ports(6)" hidden="false" targetId="6a04-90f4-2397-e847" type="rule"/>
+                <infoLink id="fd14-1f9e-7655-a9f6" name="Capacity(6 ports)" hidden="false" targetId="492f-126c-447d-cd2f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -592,7 +592,7 @@ FP: Faction Points</readme>
           <infoLinks>
             <infoLink id="55c6-670c-f413-98de" name="Wounds(+1)" hidden="false" targetId="2f1b-db84-f609-dd5c" type="rule"/>
             <infoLink id="eb91-3a19-98f5-2123" name="Capacity(6)" hidden="false" targetId="9de2-6fe9-4f6a-a9a3" type="rule"/>
-            <infoLink id="80cf-1413-59e2-f210" name="Firing Ports(6)" hidden="false" targetId="6a04-90f4-2397-e847" type="rule"/>
+            <infoLink id="80cf-1413-59e2-f210" name="Capacity(6 ports)" hidden="false" targetId="492f-126c-447d-cd2f" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1512,7 +1512,7 @@ FP: Faction Points</readme>
                 <infoLink id="62c5-4b37-344f-0b75" name="Dv. Forward Bunker" hidden="false" targetId="f24c-65b1-7901-11b8" type="profile"/>
                 <infoLink id="353f-1102-8f6e-94bd" name="Structure" hidden="false" targetId="63f9-74c8-4634-3808" type="rule"/>
                 <infoLink id="f111-cb42-8b52-d49b" name="Infiltrate(inferior, own table half)" hidden="false" targetId="057f-45e2-107b-b157" type="rule"/>
-                <infoLink id="bded-23f7-4244-f217" name="Firing Ports(6)" hidden="false" targetId="6a04-90f4-2397-e847" type="rule"/>
+                <infoLink id="bded-23f7-4244-f217" name="Capacity(6 ports)" hidden="false" targetId="492f-126c-447d-cd2f" type="rule"/>
                 <infoLink id="39eb-95d3-bf97-1782" name="Gate(after first turn) " hidden="false" targetId="c949-f787-c19e-4f14" type="rule"/>
               </infoLinks>
               <costs>
