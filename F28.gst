@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="29" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="30" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -990,7 +990,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2ceb-230b-dea6-2182" name="Smite Mystic(2)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="2ceb-230b-dea6-2182" name="Mystic(Smite 2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="fe2b-8de7-9a86-5862" name="Smite Mystic(2)" hidden="false" targetId="c58c-cde1-6fe5-fdf3" type="rule"/>
       </infoLinks>
@@ -2268,9 +2268,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8042-4abe-3a76-d851" name="Fateweaving Mystic(3)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8042-4abe-3a76-d851" name="Mystic(Fate 3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="abd2-27bb-0750-cbac" name="school Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+        <infoLink id="abd2-27bb-0750-cbac" name="Mystic(Fate 3)" hidden="false" targetId="48a3-ee80-7007-9749" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2290,9 +2290,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="73ef-79c5-9cf9-8107" name="Fateweaving Mystic(2)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="73ef-79c5-9cf9-8107" name="Mystic(Fate 2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="14b7-f0f9-fd3a-75bb" name="school Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+        <infoLink id="14b7-f0f9-fd3a-75bb" name="Mystic(Fate 2)" hidden="false" targetId="70bb-33bf-4130-7bca" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2300,9 +2300,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="dd7f-1af7-62a9-f464" name="Fateweaving Mystic(1)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="dd7f-1af7-62a9-f464" name="Mystic(Fate 1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="b7a3-3db3-7828-d3cd" name="school Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+        <infoLink id="b7a3-3db3-7828-d3cd" name="Mystic(Fate 1)" hidden="false" targetId="8c52-0946-f089-0c11" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3033,16 +3033,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="432d-32b2-92aa-885d" name="Relentless Assault" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c816-90d6-f95a-ce91" name="Relentless Assault" hidden="false" targetId="c652-4161-b0dc-aa1c" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="3c70-12aa-7acd-0be4" name="Frenzied Assault" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="332a-1f1d-5df6-f3f2" name="Frenzied Assault" page="" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
@@ -3095,7 +3085,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="cc78-2265-9f42-e54d" name="Tough(2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="a830-3736-390a-b19d" name="Tough(level)" hidden="false" targetId="acd1-37ae-a24b-7f43" type="rule"/>
+        <infoLink id="a830-3736-390a-b19d" name="Tough(2)" hidden="false" targetId="7bb8-0ad0-6b79-40bd" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3105,7 +3095,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="435f-a187-a6c3-57d8" name="Tough(3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="bb08-4d1c-4773-9b75" name="Tough(level)" hidden="false" targetId="acd1-37ae-a24b-7f43" type="rule"/>
+        <infoLink id="bb08-4d1c-4773-9b75" name="Tough(3)" hidden="false" targetId="d0b5-c2f5-7437-41cb" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3378,7 +3368,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="0afe-2639-67d6-49ca" name="Tough(1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="cfbb-6da5-edd9-afca" name="Tough(level)" hidden="false" targetId="acd1-37ae-a24b-7f43" type="rule"/>
+        <infoLink id="cfbb-6da5-edd9-afca" name="Tough(1)" hidden="false" targetId="4dfb-bcb3-d4fb-330a" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3460,9 +3450,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="4a1c-b1b7-cbe3-d7fd" name="Weird Mystic(2)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="4a1c-b1b7-cbe3-d7fd" name="Mystic(Weird 2)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="29ae-c304-3a64-a36d" name="School Mystic(level)" hidden="false" targetId="8930-5d44-2b1d-39bd" type="rule"/>
+        <infoLink id="29ae-c304-3a64-a36d" name="Mystic(Weird 2)" hidden="false" targetId="f3a1-5475-c93e-b996" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3549,7 +3539,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="306d-b58f-de01-f46e" name="Bestow Tough(+1)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="bc6d-fb59-2cc0-c0b1" name="Bestow Tough(1)" hidden="false" targetId="fe24-fafe-32e8-355d" type="rule"/>
+        <infoLink id="bc6d-fb59-2cc0-c0b1" name="Bestow Tough(+1)" hidden="false" targetId="45d4-2cb2-0790-ad34" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4489,26 +4479,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c3d-dfd4-704c-796f" name="Hard Target(modifier)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="68d4-87d3-5b38-29aa" name="Hard Target(modifier)" hidden="false" targetId="ddab-4ad2-1eec-3e93" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="adde-e40b-2628-65db" name="Hard Target(1)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="df1d-56e6-52e5-d167" name="Hard Target(modifier)" hidden="false" targetId="ddab-4ad2-1eec-3e93" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="a440-4511-b1e3-1554" name="Tentacles" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ef5d-cb42-6eb5-f1b9" name="Tentacles" hidden="false" targetId="825e-3d8c-cc18-f6b1" type="profile"/>
@@ -4654,26 +4624,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="d14b-0a72-9286-547b" name="Clone Field" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="6baa-6bb9-29c0-1448" name="Clone Field" hidden="false" targetId="18ed-af94-5e84-a332" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="03b1-7781-5650-453d" name="Shadow Field" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="b345-aa94-2e6e-fe50" name="Shadow Field" hidden="false" targetId="0a8b-cb55-4182-24a3" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="b9f3-b65a-21e9-fb0c" name="Anguisher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6810-85d7-963b-1c57" name="Anguisher" hidden="false" targetId="de8f-9223-c7a4-a08b" type="profile"/>
@@ -4709,26 +4659,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="adc5-7ea3-82eb-524d" name="Mystic(Dark Arts 3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="25f3-2b88-4669-5dcf" name="Mystic(Dark Arts 3)" hidden="false" targetId="fec4-8ea5-da41-9adf" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="b0ad-73d0-fd6b-b1e9" name="Weaken Defences" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c779-8e23-a587-dd76" name="Weaken Defences" hidden="false" targetId="6cc4-4016-fc17-f55d" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="8eeb-aa70-fe10-b1e6" name="Flexible Loadout" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="bef7-9e59-603e-eae8" name="Flexible Loadout" hidden="false" targetId="5c45-758a-757f-10fe" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -5197,16 +5127,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="25f8-855a-0c90-d6e4" name="Reconstructor" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="c984-2ebb-b8e2-3b93" name="Reconstructor" hidden="false" targetId="f5e9-4715-12f1-36f2" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="4f4d-f38c-e745-5ec3" name="Matter whip" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="6a41-6dbd-4719-d702" name="Matter Whip" hidden="false" targetId="9fe5-ac3a-b832-d751" type="profile"/>
@@ -5261,16 +5181,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <infoLink id="093a-8d44-5482-c09c" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
         <infoLink id="22e5-ea91-93d4-a993" name="Corrosive" hidden="false" targetId="53e2-c196-d564-1f97" type="rule"/>
         <infoLink id="a9d7-cb04-b90a-3ecf" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="9335-bd22-cc3c-c647" name="Insertion Beam" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="4d0b-44e3-0caf-788c" name="Insertion Beam" hidden="false" targetId="d271-11cf-ad9f-20f6" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -5367,17 +5277,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="1164-123b-5f2e-08ae" name="Implant Cannon" hidden="false" targetId="f71a-b1c7-4325-ad52" type="profile"/>
         <infoLink id="6f4f-ca4a-56e7-3030" name="Savage Strike" hidden="false" targetId="6f96-a37b-1fe7-1240" type="rule"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="0c7e-dd3f-7178-1ecd" name="Bio-Whip" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="7e96-db77-f8b2-cb46" name="Bio-Whip" hidden="false" targetId="5995-e349-fdbc-97f5" type="rule"/>
-        <infoLink id="9262-78a4-cde0-5787" name="First Strike" hidden="false" targetId="b878-0558-db13-f070" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -5549,16 +5448,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="5279-0f6e-d6b8-4e07" name="Groundburst" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="e13f-0d40-66ff-5ec9" name="Groundburst" hidden="false" targetId="97a0-52c1-625d-e01d" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="a058-f5f0-5d2a-296c" name="Tunneller" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="448d-c459-7071-1956" name="Tunneller" hidden="false" targetId="aa52-17d5-cd65-6a2b" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -6147,7 +6036,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5ead-8603-4ce3-9cfd" name="Smite Mystic(3)" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="5ead-8603-4ce3-9cfd" name="Mystic(Smite 3)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="5964-1c90-ce54-c7ae" name="Smite Mystic(3)" hidden="false" targetId="4bcc-8176-1a2c-550b" type="rule"/>
       </infoLinks>
@@ -6160,16 +6049,6 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="6213-1eed-6c01-4d93" name="Hammer" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="7803-019e-8280-dd8f" name="Hammer" hidden="false" targetId="829b-c699-1fd6-ed4a" type="profile"/>
-      </infoLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="1b41-a064-5658-86ca" name="Smoke Mission" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="d004-ac3b-7d16-90f9" name="Smoke Mission" hidden="false" targetId="4c6f-864f-7186-ff14" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8463,19 +8342,25 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <description>No movement penalty for difficult terrain.</description>
     </rule>
     <rule id="ca40-aced-1e66-d92c" name="Bestow Ignore Suppression" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>All models in attached unit gains ability: Unit does not receive action markers from suppression</description>
     </rule>
-    <rule id="90b1-4b58-7f51-0e8d" name="Massive" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model is not automatically wounded on rolls of ‘6’, instead add +1 to the wound roll for each additional ‘6’ rolled. Requiring two ‘6’s for 7, three for 8, and so on. Massive models do not benefit from cover.</description>
+    <rule id="90b1-4b58-7f51-0e8d" name="Massive" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model no longer counts as regular. Cover(no). Model does not suffer a penalty for attacking with heavy weapons without priority.
+Attacks vs Massive models within 2” of regular models become inaccurate instead of potshots from the intermingled rule.
+Massive models within 2” of regular models attack targets beyond 2” with inaccurate instead of potshots from the Close Quarters rule.
+Model’s unarmed attack is CC (2), hit(-2), wound(+2).
+Model is not automatically wounded on rolls of ‘6’, instead add +1 to the wound roll for
+each ‘6’ discarded. requiring two ‘6’s for 7, three for 8, etc.</description>
     </rule>
     <rule id="3622-520a-93c4-e8d0" name="Bestow Loathing" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>All models in attached unit gains Loathing: Re-roll results of ‘1’ to wound for this model.</description>
+      <description>All models in this model’s unit have Loathing: Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
     <rule id="5b6a-3b36-9e52-2fa5" name="Scanner" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Model has Interdiction(2, 15”) vs units that deploy with Insertion or Ambush.</description>
     </rule>
-    <rule id="85db-29ea-96c7-451a" name="Insertion Beacon" publicationId="81dd-fe5f-c233-17c5" page="71" hidden="false">
-      <description>One (1) friendly unit (per turn) deploying with Insertion within 12” of this model arrive with one (1) less action marker.</description>
+    <rule id="85db-29ea-96c7-451a" name="Insertion Beacon" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false">
+      <description>One (1) friendly unit (per turn) deploying with insertion within 12” of this model arrives with one (1) less action marker.</description>
     </rule>
     <rule id="da6a-4683-a56a-18cf" name="Accurate" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <comment>w</comment>
@@ -8490,29 +8375,31 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
 ● One (1) extra Special entry 
 ● Two (2) additional upgrades</description>
     </rule>
-    <rule id="1271-c787-1a8a-3fca" name="Bestow Morale(level)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All models in attached unit gains ability: Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
+    <rule id="1271-c787-1a8a-3fca" name="Bestow Morale(level)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in this model’s unit have Morale(level): Unit removes level extra action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
     </rule>
     <rule id="2de1-86d1-fd25-c8e1" name="Underslung weapon" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>As weapon with one use.</description>
     </rule>
     <rule id="857e-6bf3-ffc2-1970" name="Bike" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Move (12&quot;)</description>
     </rule>
-    <rule id="f563-7229-9e79-1673" name="Medical Support" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Ignore first wound suffered by non-vehicle/massive unit each turn. (You may mark this by turning a model on its side and turning it back up in the endphase)
-</description>
+    <rule id="f563-7229-9e79-1673" name="Medical Support" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Ignore the first wound suffered by this unit from attacks each turn.</description>
     </rule>
     <rule id="6137-700d-31f3-d5f2" name="Assassin" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
     </rule>
     <rule id="3292-0130-df97-f167" name="Extra Strike" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Model has number extra attack dice with CC attacks.</description>
     </rule>
-    <rule id="6d29-b100-7a36-98b7" name="Vehicle Repair" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Clear “damaged” from vehicle within 2” on 3+ instead of a move.</description>
+    <rule id="6d29-b100-7a36-98b7" name="Vehicle Repair" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Remove a total of 1 additional action marker from vehicle units within 12” in the endphase, even if vehicle is damaged.</description>
     </rule>
     <rule id="4a45-8c0a-cecf-2f3d" name="Mystic Weapon" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Add Mystic level attack dice to the weapon’s attack, but gain Hazardous.</description>
     </rule>
     <rule id="8930-5d44-2b1d-39bd" name="Mystic(school level)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
@@ -8523,12 +8410,10 @@ If you roll doubles, you may use the boosted version of a power at the same leve
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="693f-bd83-1218-4abc" name="Priority(effect)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>When attacking with priority gain, effect.
-only: the weapon can only be used with priority.</description>
+      <description>When attacking with priority gain, effect.</description>
     </rule>
     <rule id="a1ed-6517-ae1a-b5bd" name="Platebreaker" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>AT(+D6) and damage(2) 
-range: only within range</description>
+      <description>AT(+D6) and damage(2).</description>
     </rule>
     <rule id="18bd-ea47-5c88-c607" name="Hazardous" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Model using weapon suffers 1 wound(min 6) hit for each ‘1’ on the to hit roll.</description>
@@ -8540,34 +8425,34 @@ range: only within range</description>
       <comment>w</comment>
       <description>Weapon ignores the close quarters penalty for being within 2” of an enemy or attacking a target within 2” of an enemy.</description>
     </rule>
-    <rule id="4403-d329-9eaf-e166" name="Suppression(x2)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Each suppression hit causes two (2) suppression hits.</description>
+    <rule id="4403-d329-9eaf-e166" name="Suppression(x2)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Amount of suppression caused by this weapon is x2.</description>
     </rule>
-    <rule id="f715-7f8f-4ee4-380d" name="Vicious" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>On hit rolls of ‘6’ cause an additional hit</description>
+    <rule id="f715-7f8f-4ee4-380d" name="Vicious" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Hit rolls of ‘6’ cause an additional hit. The extra hit is not affected by e.g. Vital Strike.</description>
     </rule>
     <rule id="1770-005b-7ed9-6a21" name="Assault Shield*" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>As long as at least half of the models in the unit is equipped with Assault Shields, you may force re-roll of all successful hit rolls vs this unit.</description>
     </rule>
-    <rule id="2066-da1e-58bd-2da6" name="Suppression(modifier)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Amount of Suppression caused is modified. Example: 
-Suppression(+X) – weapon causes +X suppression hits with attack, 
-Suppression(none) – weapon doesn’t cause suppression, 
-Suppression(x2) – each suppression hit causes two (2) suppression hits.</description>
+    <rule id="2066-da1e-58bd-2da6" name="Suppression(modifier)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Amount of suppression caused by this weapon is modified.</description>
     </rule>
     <rule id="3a00-bfe1-1964-63ba" name="Run and Gun" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>May attack with potshots after double move, non-CC attacks only.</description>
     </rule>
     <rule id="6123-3ab4-1ca4-3f72" name="Rugged" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
       <description>May re-roll any dangerous terrain tests for this model.</description>
     </rule>
     <rule id="6925-f42f-49a0-9042" name="Vehicle(assault)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Counts as Open for CC purposes (May use vehicle move for CC attack).</description>
     </rule>
     <rule id="2f1b-db84-f609-dd5c" name="Wounds(+1)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
-      <description>Add +1 to Wounds.</description>
+      <description>Model has +1 wounds.</description>
     </rule>
     <rule id="c6e7-b546-f906-104b" name="Oversized(number)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Wound(+number) and reach(+number) for CC attacks.</description>
     </rule>
     <rule id="428c-e0ea-ff6d-9f18" name="VTOL" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
@@ -8576,12 +8461,15 @@ Passengers forced to disembark a destroyed VTOL take a wound(min 6) hit for each
 May not be the target of non-VTOL CC attacks or ranged attacks with 12” or less range.</description>
     </rule>
     <rule id="57dd-f324-dd55-8fce" name="Vehicle(walker)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Ignore (most) difficult/dangerous terrain10.</description>
     </rule>
     <rule id="8b2a-2837-aca0-3c56" name="Vehicle(wheeled)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Roll on the damage table with -2 when entering dangerous terrain.</description>
     </rule>
     <rule id="083f-e941-1be6-6e66" name="Vehicle(hover)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Ignores (most) terrain when moving.</description>
     </rule>
     <rule id="5015-1020-2c91-b1db" name="Aircraft" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
@@ -8597,6 +8485,7 @@ May not be the target of weapons that have less than two (2) attack dice or 24�
       <description>Model no longer counts as regular. Move(9). Additional rules in the “Vehicles” section of the core rules.</description>
     </rule>
     <rule id="0a23-ef4c-b74f-b5f9" name="Vehicle(open)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>+1 on damage table, all passengers may fire out of, may use vehicle move for CC attack.</description>
     </rule>
     <rule id="a431-90d3-3f53-8231" name="Vehicle(simple)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
@@ -8633,8 +8522,8 @@ replaces hit(potshots) with indirect and hit(auto).
 
 Discard all lock tokens when target moves. Laser markers do not benefit from lock tokens. You may execute Laser marker attacks before other friendly weapons in the same attack.</description>
     </rule>
-    <rule id="b50b-7db8-ff30-68b8" name="Spotter" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Weapons with the indirect trait may trace LOS from this model.</description>
+    <rule id="b50b-7db8-ff30-68b8" name="Spotter" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>Instead of attacking (regular) or when attacking (vehicle, massive) target an enemy unit in los. Until end of turn or the target moves, the next attack versus the target loses any indirect penalty OR Aircraft lose inaccurate vs ground targets.</description>
     </rule>
     <rule id="2331-e831-8a08-0bfc" name="Expert-Crafted" publicationId="aae0-5552-35a8-74d6" page="119" hidden="false">
       <description>Re-roll results of ‘1’ to hit for this model.</description>
@@ -8642,44 +8531,38 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
     <rule id="b4bb-8878-b38a-a000" name="Bestow ability *(range)*" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>All models in attached unit gains ability. If a range is specified, all models in units within range gains ability. </description>
     </rule>
-    <rule id="12e4-34b1-36c8-e2f4" name="Leader(level)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Remove level extra action markers within 12” from leader in endphase.</description>
+    <rule id="12e4-34b1-36c8-e2f4" name="Leader(level)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Remove a total of level extra action markers from non-vehicle units within 12” in endphase.</description>
     </rule>
     <rule id="afb2-247b-92b8-da01" name="Leader(1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Remove a total of 1 extra action markers from non-vehicle units within 12” in endphase.</description>
     </rule>
-    <rule id="c700-0b03-a914-6309" name="Power of the Elements Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
+    <rule id="0b0a-6bbc-c7f7-543e" name="Priority(accurate)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>When attacking with priority gain Accurate: Attacks with this model has hit(+1). Multiple sources of Accurate does not stack.</description>
     </rule>
-    <rule id="0b0a-6bbc-c7f7-543e" name="Priority(accurate)" publicationId="91df-c558-75f9-73ea" page="143" hidden="false">
-      <description>When attacking with priority gain, Attacks with this model has hit(+1). Multiple sources of Accurate does not stack.</description>
-    </rule>
-    <rule id="b1ef-7f72-0aea-5ab6" name="Bestow Priority(vital Strike, hit(re-roll))" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
-      <description>All models in attached unit gains ability: When attacking with priority gain: Hit rolls of ‘6’ has an additional wound(+3) and you may re-roll any to-hit dice.</description>
+    <rule id="b1ef-7f72-0aea-5ab6" name="Bestow Priority(vital Strike, hit(re-roll))" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>All models in this model’s unit have Priority(vital Strike, hit(re-roll)): When attacking with priority gain: Hit rolls of ‘6’ has an additional wound(+3) and you may re-roll any to-hit dice.</description>
     </rule>
     <rule id="a363-87ce-254e-2793" name="Vital Strike" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Hit rolls of ‘6’ has an additional wound(+3).</description>
     </rule>
-    <rule id="cdfc-0262-20c3-2150" name="hit(re-roll)" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>May re-roll any dice.</description>
+    <rule id="cdfc-0262-20c3-2150" name="hit(re-roll)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>You may re-roll any to-hit dice.</description>
     </rule>
-    <rule id="68bd-2ead-946c-e730" name="Potshots" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
-      <description>Attacks listed as Potshots hit only on ‘6’, regardless of modifiers. Should several effects make an attack a potshot, it cannot hit at all.</description>
+    <rule id="68bd-2ead-946c-e730" name="Potshot(s)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>Potshot attacks hit only on ‘6’, regardless of modifiers. Blast and spray attacks deduct 3 from the to-hit roll. Should several effects make an attack a potshot, it cannot hit at all.</description>
     </rule>
     <rule id="713a-09b2-0ea1-2ebd" name="Agile" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>This model may change facing before it attacks.</description>
     </rule>
-    <rule id="5040-289f-4234-fa7a" name="Defence Turret(weapon)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>All enemy aircraft moving in range of (weapon) are automatically attacked by (weapon).</description>
-    </rule>
     <rule id="74a7-9700-3946-640b" name="Loathing" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
-    <rule id="c251-5963-361e-f608" name="Blocker" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>May use this model’s Defence first when attacked as part of a mixed unit, if so any wounds have to be allocated to this unit first.</description>
+    <rule id="c251-5963-361e-f608" name="Blocker" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>You may use the Defence of models with this trait first when attacked as part of a mixed unit. If so, any wounds have to be allocated to models with this trait first.</description>
     </rule>
-    <rule id="6fd8-1737-2ff1-ead2" name="Repel(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>CC attacks vs this model has their range reduced by distance.</description>
+    <rule id="6fd8-1737-2ff1-ead2" name="Repel(distance)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>CC attacks vs this model have their range reduced by distance.</description>
     </rule>
     <rule id="33b3-ed42-3ea2-d606" name="Combat Shield" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>As long as at least half of the wounds in the unit has this trait, all have Defence(re-roll). This re-roll does not benefit from Cover and may not be taken against reactions when making a Triple Move.</description>
@@ -8699,13 +8582,13 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
     <rule id="fee1-b81b-2ce3-cf1f" name="Explosive Tip" publicationId="81dd-fe5f-c233-17c5" page="94" hidden="false">
       <description>CC (1), wound +5, one use</description>
     </rule>
-    <rule id="ccd5-bfe7-debe-e636" name="Cleave" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>On wound rolls of ‘6’ that caused a wound, cause an additional wound.</description>
+    <rule id="ccd5-bfe7-debe-e636" name="Cleave" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Wound rolls of ‘6’ cause 1 extra wound (if any). The extra wound can also be applied to another unit within 2” of equal or worse target and defence.</description>
     </rule>
     <rule id="4b1a-5bb4-da8a-2e61" name="Attack(modifier)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>Attack dice for this model is modified by modifier. This only includes the model’s original attacks, and not those granted by Mystic powers, Faction powers, upgrades and the like. Additionally, it does not apply to one use attacks.</description>
     </rule>
-    <rule id="b8f3-772a-763e-0fae" name="Disruption(distance)" publicationId="91df-c558-75f9-73ea" page="118" hidden="false">
+    <rule id="b8f3-772a-763e-0fae" name="Disruption(distance)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within distance&quot; may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="f42c-28c8-2029-beea" name="Essence Stones" publicationId="91df-c558-75f9-73ea" page="119" hidden="false">
@@ -8716,28 +8599,23 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
 least this level of Morale.</description>
     </rule>
     <rule id="625b-bc80-a6e2-9ea2" name="Ignore Suppression" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Unit does not receive action markers from suppression.</description>
     </rule>
-    <rule id="7f37-c2e8-c359-55bd" name="Firing Ports(number)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Number of passengers may attack while embarked.</description>
-    </rule>
     <rule id="a6cb-3375-ee7a-c762" name="Priority(vital Strike, hit(re-roll))" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>When attacking with priority gain, On hit rolls of ‘6’, wound(+3), May re-roll any hit dice.</description>
+      <description>When attacking with priority gain Vital Strike: On hit rolls of ‘6’, wound(+3) and may re-roll any hit dice.</description>
     </rule>
     <rule id="289e-c205-57bf-84ce" name="Leader(2)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Remove a total of 2 extra action markers from non-vehicle units within 12” in endphase.</description>
     </rule>
-    <rule id="e7bc-d0a3-516c-7f9d" name="Communications" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Leader ability in unit has unlimited range.</description>
+    <rule id="e7bc-d0a3-516c-7f9d" name="Communications" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Leader trait in unit has unlimited range.</description>
     </rule>
     <rule id="33b5-bd13-98ef-54cb" name="Interdiction(2, 15”)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <comment>w</comment>
       <description>When an enemy ground unit moves onto the board within 15&quot;, it receives 2 action markers. Only apply highest level of interdiction or other effects that add action markers on entry.</description>
     </rule>
-    <rule id="88bb-4027-9f80-37f8" name="Insignificant" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>May not be allocated wounds and does not count toward unit size. If all models in a unit has Insignificant, remove unit.</description>
-    </rule>
-    <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+    <rule id="33a8-4994-b500-4687" name="Bestow Tough(1) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All models in units within 12&quot; have Tough(1). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="1e59-8c45-4d6b-09f5" name="+1 Faction Point" publicationId="91df-c558-75f9-73ea" page="74" hidden="false">
@@ -8750,12 +8628,13 @@ least this level of Morale.</description>
       <description>For every action marker you would allocate from suppression to a unit with one or more models with this trait, the unit instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
     </rule>
     <rule id="1a9a-bed0-299e-301b" name="Priority(hit(re-roll))" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>When attacking with priority gain, May re-roll any hit dice.</description>
+      <description>When attacking with priority gain hit(re-roll): May re-roll any hit dice.</description>
     </rule>
     <rule id="d4c6-4778-1339-8384" name="Flak Jackets" publicationId="91df-c558-75f9-73ea" page="79" hidden="false">
-      <description>models in unit has Defence(+1) vs attacks with the blast trait.</description>
+      <description>Models in unit has Defence(+1) vs attacks with the blast trait.</description>
     </rule>
     <rule id="b7ca-d51b-0b27-8aa2" name="Vehicle(robust(modifier))" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>+/- modifier on damage table.</description>
     </rule>
     <rule id="0876-0b9c-0b14-f0d0" name="Armour Skirts" publicationId="91df-c558-75f9-73ea" page="79" hidden="false">
@@ -8767,45 +8646,43 @@ least this level of Morale.</description>
     <rule id="9780-81df-ef93-3245" name="Ambush" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>May activate in staging as a full reaction, deploy onto the board and attack the active unit with priority. If it does, this unit has Scoring(no). It has to deploy in cover or beyond 18” of enemy units. </description>
     </rule>
-    <rule id="c652-4161-b0dc-aa1c" name="Relentless Assault" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Strike in CC even if suppressed by reaction attack.</description>
-    </rule>
     <rule id="18a3-0966-7b7c-ae17" name="Frenzied Assault" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Use Charge(frenzied) instead.</description>
     </rule>
     <rule id="1609-f037-f8cf-20da" name="Parry" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Target(+1) vs CC attacks. Does not stack with further instances of Parry.</description>
     </rule>
-    <rule id="5162-3674-4eb4-3387" name="No Escape" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+    <rule id="5162-3674-4eb4-3387" name="No Escape" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Enemy units within 2” may not make withdrawal moves in endphase.</description>
     </rule>
-    <rule id="0803-37eb-c60f-6786" name="Charge(distance)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>CC attacks have +distance range.</description>
+    <rule id="0803-37eb-c60f-6786" name="Charge(distance)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>This model’s CC attacks have +distance range.</description>
     </rule>
     <rule id="122e-2fe8-5c91-4540" name="Hazardous Target" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>As long as at least half of the wounds in this unit has this trait, enemy weapons gain hazardous when attacking this unit.</description>
     </rule>
-    <rule id="acd1-37ae-a24b-7f43" name="Tough(level)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Ignore wound rolls of level or lower when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
+    <rule id="acd1-37ae-a24b-7f43" name="Tough(level)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Ignore unmodified wound rolls of level or lower for suppression vs this unit, as long as all models have at least this level of Tough.</description>
     </rule>
     <rule id="968a-927f-eff7-659b" name="Move and Fire" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <comment>w</comment>
       <description>May attack with hit(-1) after double move, ranged attacks only. If the unit suffers any suppression after the two moves, it loses the attack.</description>
     </rule>
-    <rule id="6466-3a35-8880-1bd3" name="Rapid Strike" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All attacks have priority for timing purposes.</description>
+    <rule id="6466-3a35-8880-1bd3" name="Rapid Attack" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>As long as every model in the unit has this trait, the Attack partial action/reaction taken by this unit is made with priority for timing purposes.</description>
     </rule>
     <rule id="5622-7822-d459-4129" name="Reach(distance)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
       <description>Close Combat range is increased distance”.</description>
     </rule>
-    <rule id="b343-917c-d21e-2e51" name="Wounds(x)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+    <rule id="b343-917c-d21e-2e51" name="Wounds(x)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Model has x wounds.</description>
     </rule>
     <rule id="86e0-4e52-9d17-facc" name="Masterwork" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
-    <rule id="b878-0558-db13-f070" name="First Strike" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Resolve attack first in a simultaneous exchange.</description>
+    <rule id="b878-0558-db13-f070" name="First Strike" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Resolve this model&apos;s attacks before actions with simultaneous timing.</description>
     </rule>
     <rule id="6f96-a37b-1fe7-1240" name="Savage Strike" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Wounds caused by this weapon also count for suppression. If a unit is wiped out by this weapon, closest enemy unit within 12” suffers a wound(no) hit.</description>
@@ -8813,8 +8690,8 @@ least this level of Morale.</description>
     <rule id="a7c5-7791-240c-cb85" name="Unarmed" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
       <description>Does not have a dedicated CC weapon.</description>
     </rule>
-    <rule id="7c72-61e3-2388-db9f" name="Ignore Concealment" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Unit does not suffer minus to hit from Concealment.</description>
+    <rule id="7c72-61e3-2388-db9f" name="Ignore Concealment" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Targets of attacks from this model does not benefit from Concealment.</description>
     </rule>
     <rule id="6c58-2bc7-fde8-3325" name="Supremacy Assets" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false">
       <description>Supremacy Assets are best used in larger battles (1500+ points), as their presence might unbalance smaller games. If used, players may take a single Supremacy Asset from the list below belonging to the same faction as the rest of their force; counting as a special choice. They may not receive upgrades.</description>
@@ -8830,8 +8707,8 @@ Unless the source has Superior at the same or greater scale (1 is default):
     <rule id="b2a4-8707-21fc-82aa" name="Driving hunger" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Each time the model causes a wound with a CC attack, it receives another attack dice with cumulative hit(-1).</description>
     </rule>
-    <rule id="fd36-84c7-7a08-d0f8" name="Bestow Morale(1)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All models in attached unit gains ability Morale(1): Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
+    <rule id="fd36-84c7-7a08-d0f8" name="Bestow Morale(1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in this model’s unit have Morale(1): Unit removes 1 extra action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
     </rule>
     <rule id="283a-332f-bbca-fc6c" name="Defence(3)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>A roll of 3 or more is required to wound this model.</description>
@@ -8857,56 +8734,51 @@ Unless the source has Superior at the same or greater scale (1 is default):
     <rule id="e1ca-d8e8-b447-fcf3" name="Shell Out" publicationId="81dd-fe5f-c233-17c5" page="119" hidden="false">
       <description>When using priority attack you may attack twice with your (non-cc) weapon. You may not use it again during this game.</description>
     </rule>
-    <rule id="a772-9dd9-76d7-52e6" name="Inflict X (range)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Enemy units within range suffer X.</description>
+    <rule id="a772-9dd9-76d7-52e6" name="Inflict X (range)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within range has trait. If a unit already has trait at a worse level, this takes precedence.</description>
     </rule>
     <rule id="e629-b7d0-036a-fb48" name="Interceptor" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>If in staging with less than two (2) action markers and an enemy Aircraft or VTOL unit enters the board, this model may immediately make one move onto the board and take one (1) action marker.
 This model has First Strike vs Aircraft that attack ground targets.</description>
     </rule>
     <rule id="d60c-55a0-0459-185e" name="Tight Spread" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Attack dice from this weapon may not be spread between units further than 5” apart.</description>
     </rule>
-    <rule id="d8a1-d172-3b74-0734" name="Countermeasures" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Concealment and Antiair attacks lose re-roll until end of turn, one use.</description>
+    <rule id="d8a1-d172-3b74-0734" name="Countermeasures" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Use when attacked. Model has Target(re-roll) until end of turn. One use.</description>
     </rule>
-    <rule id="5a96-405e-9c5b-8549" name="Disruption(6&quot;)" publicationId="91df-c558-75f9-73ea" page="118" hidden="false">
+    <rule id="5a96-405e-9c5b-8549" name="Disruption(6&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within 6&quot; may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="6d4f-c49b-cca5-4385" name="Composed Pilot" publicationId="e42d-4466-8267-ac1b" page="41" hidden="false">
       <description>Ignore rolls of ‘1’ on the vehicle damage table.</description>
     </rule>
-    <rule id="6acb-386e-0ed4-e480" name="Calcification" publicationId="81dd-fe5f-c233-17c5" page="117" hidden="false">
-      <description>Unit that has suffered a wound from this weapon takes regular hits equal to the Defence of the model that was allocated the wound.</description>
-    </rule>
     <rule id="39da-5e02-4dbb-7d09" name="Ambush(superior)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>May activate in staging as a full reaction, deploy onto the board and attack the active unit with priority. If it does, this unit has Scoring(no).</description>
     </rule>
     <rule id="73d5-04b1-9b46-374c" name="Extra Strike(1)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Model has 1 extra attack dice with CC attacks.</description>
     </rule>
     <rule id="9860-ce1f-bfab-1fa1" name="Extra Strike(2)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Model has number 2 attack dice with CC attacks.</description>
     </rule>
-    <rule id="3691-00b1-12e3-4c0c" name="Charge(2&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>CC attacks have +distance range.</description>
+    <rule id="3691-00b1-12e3-4c0c" name="Charge(2&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>This model’s CC attacks have +2&quot; range.</description>
     </rule>
-    <rule id="7c92-fa16-ee47-4ebc" name="Charge(3&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>CC attacks have +distance range.</description>
+    <rule id="7c92-fa16-ee47-4ebc" name="Charge(3&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>This model’s CC attacks have +3&quot; range.</description>
     </rule>
-    <rule id="544b-ec82-fc89-543c" name="Bestow Fanatic" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in attached unit gains ability: For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
-    </rule>
-    <rule id="ddab-4ad2-1eec-3e93" name="Hard Target(modifier)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Incoming attacks vs this model receive modifier to hit.</description>
-    </rule>
-    <rule id="8aea-d244-06de-e187" name="Hard Target(1)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Incoming attacks vs this model receive modifier to hit.</description>
+    <rule id="544b-ec82-fc89-543c" name="Bestow Fanatic" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in this model’s unit have Fanatic: For every action marker you would allocate from suppression to a unit with one or more models with this trait, the unit instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
     </rule>
     <rule id="aa0b-d00b-5aed-09e7" name="Oversized(+1)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Wound(+1) and reach(+1) for CC attacks.</description>
     </rule>
-    <rule id="6721-d6bf-3c74-4af1" name="Disruption(18&quot;)" publicationId="91df-c558-75f9-73ea" page="118" hidden="false">
+    <rule id="6721-d6bf-3c74-4af1" name="Disruption(18&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within 18&quot; may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="69b0-111d-4397-1e05" name="Terror(distance)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
@@ -8921,23 +8793,14 @@ This model has First Strike vs Aircraft that attack ground targets.</description
 
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
-    <rule id="18ed-af94-5e84-a332" name="Clone Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
-      <description>Defence(min 6).</description>
+    <rule id="151b-ba7a-3c09-ef1a" name="Move(6&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 6&quot; with each move.</description>
     </rule>
-    <rule id="0a8b-cb55-4182-24a3" name="Shadow Field" publicationId="81dd-fe5f-c233-17c5" page="98" hidden="false">
-      <description>Defence(min 6x2), lose field after first wound.</description>
+    <rule id="bb63-ae4b-ba4e-0fb7" name="Move(9&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 9&quot; with each move.</description>
     </rule>
-    <rule id="151b-ba7a-3c09-ef1a" name="Move(6&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(6&quot;) with each move.</description>
-    </rule>
-    <rule id="bb63-ae4b-ba4e-0fb7" name="Move(9&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(9&quot;) with each move.</description>
-    </rule>
-    <rule id="b8c7-794d-e013-bd45" name="Move(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(12&quot;) with each move.</description>
-    </rule>
-    <rule id="6cc4-4016-fc17-f55d" name="Weaken Defences" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Enemy vehicles within 18” has Defence(-1).</description>
+    <rule id="b8c7-794d-e013-bd45" name="Move(12&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 12&quot; with each move.</description>
     </rule>
     <rule id="339a-9ac1-78f1-5e13" name="Mystic(Dark Arts 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Dark Arts list of power level equal or less than the highest dice rolled.
@@ -8975,20 +8838,18 @@ In addition, apply any result of one or more ‘1’.</description>
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="5c45-758a-757f-10fe" name="Flexible Loadout" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>May change options when activating.</description>
-    </rule>
     <rule id="bf5a-e06b-380c-7824" name="Oversized(+2)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Wound(+2) and reach(+2) for CC attacks.</description>
     </rule>
-    <rule id="9a48-86d4-c6ec-d969" name="Bestow Ignore Concealment(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
-      <description>All models in units within 12&quot; gains ability: Unit does not suffer minus to hit from Concealment.</description>
+    <rule id="9a48-86d4-c6ec-d969" name="Bestow Ignore Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in units within 12&quot; has Ignore Concealment: Targets of attacks from this model does not benefit from Concealment.</description>
     </rule>
-    <rule id="cd2a-3652-c7c0-5459" name="Disruption(8&quot;)" publicationId="91df-c558-75f9-73ea" page="118" hidden="false">
+    <rule id="cd2a-3652-c7c0-5459" name="Disruption(8&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within 8&quot; may not remove extra action markers in endphase.</description>
     </rule>
-    <rule id="1bfa-80b0-674d-6cba" name="Self-Repair" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Remove any damaged condition on model in endphase.</description>
+    <rule id="1bfa-80b0-674d-6cba" name="Self-Repair" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>Model has Regenerate(1). Vehicles remove any damaged condition on model in the endphase.</description>
     </rule>
     <rule id="190c-2504-f2b5-8e32" name="Regenerate(number)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Model regains number of wounds in the endphase. This does not apply to additional wounds (granted by e.g. upgrades).</description>
@@ -8999,14 +8860,14 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="873c-8ed6-de96-b859" name="Ambush(first activation)*" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>When activated may deploy from staging (without action markers), anywhere on the board, beyond 12” or in cover/out of LOS of enemy units. Unit may not contribute towards holding scenario objectives.</description>
     </rule>
-    <rule id="c845-b3d5-d2a2-15c5" name="Wound(modifier)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Attacks with this weapon receives modifier to wound.</description>
+    <rule id="c845-b3d5-d2a2-15c5" name="Wound(modifier)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Attacks with this weapon receive modifier to wound.</description>
     </rule>
-    <rule id="3072-004a-7874-4d08" name="Wound(+1)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Attacks with this weapon receives +1 to wound.</description>
+    <rule id="3072-004a-7874-4d08" name="Wound(+1)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>Attacks with this weapon receive +1 to wound.</description>
     </rule>
-    <rule id="25f6-e792-afac-8a5a" name="Move(4&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(4&quot;) with each move.</description>
+    <rule id="25f6-e792-afac-8a5a" name="Move(4&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 4&quot; with each move.</description>
     </rule>
     <rule id="386a-74c7-a57a-f324" name="Defence(6 min 4)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>A roll of 6 or more is required to wound this model. To wound is never worse than 4+. (in case of conflict with similar ruling on an attack, Defence takes precedence unless specifically mentioned).</description>
@@ -9024,14 +8885,14 @@ In addition, apply any result of one or more ‘1’.</description>
       <comment>w</comment>
       <description>As long as at least half of the wounds in this unit has this trait, enemy weapons gain hazardous when attacking this unit in Close Combat.</description>
     </rule>
-    <rule id="c53a-c2f1-5725-ed94" name="Cover(no)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+    <rule id="c53a-c2f1-5725-ed94" name="Cover(no)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>Model does not benefit from cover.</description>
     </rule>
     <rule id="524d-a8fe-dcac-7b31" name="Scoring(no)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>This model doesn’t count its presence towards scoring objectives.</description>
     </rule>
-    <rule id="9fa7-1d71-daa0-d692" name="Exposed" publicationId="81dd-fe5f-c233-17c5" page="10" hidden="false">
-      <description>If a target is Exposed, +1 to hit. Multiple sources of Exposed does not stack.</description>
+    <rule id="9fa7-1d71-daa0-d692" name="Exposed" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Target(-1) and Cover(no). Multiple sources of exposed does not stack.</description>
     </rule>
     <rule id="e343-a722-51ef-9ab8" name="Defence(8 min 4)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>A roll of 8 or more is required to wound this model. To wound is never worse than 4+. (in case of conflict with similar ruling on an attack, Defence takes precedence unless specifically mentioned).</description>
@@ -9072,38 +8933,35 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="bac4-f369-253a-c8ff" name="Terror(9&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Units within 9&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
-    <rule id="7a9a-12f3-f41a-b238" name="Inflict Inaccurate(6&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Enemy units within 6&quot; suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
+    <rule id="7a9a-12f3-f41a-b238" name="Inflict Inaccurate(6&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within 6&quot; has Inaccurate: Attacks with this model has hit(-1). Multiple sources of inaccurate does not stack.</description>
     </rule>
     <rule id="53e2-c196-d564-1f97" name="Corrosive" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>May attack with wound(min 6) and -3 on the vehicle table.</description>
     </rule>
-    <rule id="21e2-4ab0-27fc-8382" name="Spin Up" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>Can only fire if unit had no action markers in the previous endphase (may not fire first turn).</description>
-    </rule>
     <rule id="74d2-8033-0e36-4b8d" name="Light Arts Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
     <rule id="f0db-a2f0-3e64-31ad" name="Light Arts Mystic(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
     <rule id="8ac9-f2aa-004e-91af" name="Light Arts Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="2df1-44df-ca9d-3ac3" name="Counter-Insertion" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
-      <description>Directly after the opponent deploys a unit using Insertion or Ambush you may deploy this unit from staging within 18” of the enemy unit, and attack it with priority.</description>
+    <rule id="2df1-44df-ca9d-3ac3" name="Counter-Insertion" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>If an enemy unit enters the board with insertion or Ambush you may as a full action deploy this unit from staging within 18” of the enemy unit and attack it with priority and First Strike.</description>
     </rule>
     <rule id="c25d-d3df-de7e-4b2d" name="Repel(2&quot;)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>CC attacks vs this model have their range reduced by 2&quot;.</description>
-    </rule>
-    <rule id="f5e9-4715-12f1-36f2" name="Reconstructor" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Embarked units regain D3 wounds in the end phase.</description>
     </rule>
     <rule id="58d9-a9e1-5d29-18ca" name="Capacity(12)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>May transport 12 regular models (see also the transport rules).
@@ -9117,8 +8975,7 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
     </rule>
     <rule id="54f7-e32f-8a28-2a0b" name="Capacity(10)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>May transport 10 regular models (see also the transport rules).
-If they can’t be attacked, passengers are also unaffected by/does not affect others with
-bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+If they can’t be attacked, passengers are also unaffected by/does not affect others with bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
     </rule>
     <rule id="9ba7-1beb-5213-5446" name="Capacity(5)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>May transport 5 regular models (see also the transport rules).
@@ -9129,9 +8986,6 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
       <description>May transport capacity regular models (see also the transport rules).
 If they can’t be attacked, passengers are also unaffected by/does not affect others with
 bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
-    </rule>
-    <rule id="d271-11cf-ad9f-20f6" name="Insertion Beam" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Deploy one (1) non-vehicle, non-massive unit from staging within 12” of this model, with one (1) action marker, one use.</description>
     </rule>
     <rule id="6949-049f-3068-1e8d" name="Gate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <comment>w</comment>
@@ -9155,14 +9009,8 @@ In addition, apply any result of one or more ‘1’.</description>
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
-    <rule id="81e5-82a7-4046-c7a9" name="Power of the Elements Mystic(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
-    </rule>
-    <rule id="cc9d-9c97-ce62-5d8c" name="Power of the Elements Mystic(3)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>When activated, may roll level number of dice and pick one (1) available power from school list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.</description>
-    </rule>
     <rule id="9d23-b60f-76e8-97dd" name="Bestow Masterwork(12&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>All models in units within 12&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>All models in units within 12&quot; has Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="99aa-f2f8-b3b8-03d2" name="Robust(1)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Rolls on the damage table for this vehicle are reduced by 1.</description>
@@ -9173,17 +9021,8 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="8d8d-4b48-c3d1-b833" name="Robust(modifier)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Rolls on the damage table for this vehicle are reduced by modifier (increased if negative).</description>
     </rule>
-    <rule id="5995-e349-fdbc-97f5" name="Bio-Whip" publicationId="81dd-fe5f-c233-17c5" page="86" hidden="false">
-      <description>First strike.</description>
-    </rule>
     <rule id="315e-c513-c565-2bc3" name="Hidden(18&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Model is out of line of sight beyond 18&quot;, and always from Aircraft.</description>
-    </rule>
-    <rule id="a196-6347-2d67-de12" name="Stealth(distance)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model is out of line of sight beyond distance.</description>
-    </rule>
-    <rule id="53ae-970d-90de-0cd2" name="Summon(how, what, where)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>Deploy unit of what, how, where (without action markers, unless otherwise specified).</description>
     </rule>
     <rule id="e91e-7bb5-4a22-73ce" name="Mystic(Tidemind 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Tidemind list of power level equal or less than the highest dice rolled.</description>
@@ -9203,20 +9042,22 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="e7ae-0682-39d1-a3ba" name="Terror(6&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Units within 6&quot; of any model with this trait counts as within 2” of an enemy unit for overrun and withdrawal purposes in the endphase.</description>
     </rule>
-    <rule id="b241-766a-3ee5-fcb1" name="Bestow Tough(+1) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>All models in units within 12&quot; have Tough(+1). If a unit already has trait at a better level, it takes precedence.</description>
+    <rule id="b241-766a-3ee5-fcb1" name="Bestow Tough(+1) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>All models in units within 12&quot; has Tough(+1).</description>
     </rule>
     <rule id="eb74-1d94-2774-395d" name="Immune to Suppression" page="" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Unit does not receive action markers from suppression.</description>
     </rule>
     <rule id="4a6e-573c-2ba6-fa4c" name="Oversized(+3)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Wound(+3) and reach(+3) for CC attacks.</description>
     </rule>
     <rule id="7d58-48f6-c342-8bf2" name="Defence(min 6)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>A roll of 6 or more is required to wound this model. To wound is never worse than 6+. (in case of conflict with similar ruling on an attack, Defence takes precedence unless specifically mentioned).</description>
     </rule>
-    <rule id="8725-8cd4-c85f-6932" name="Bestow Hazardous Target(CC)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All models in attached unit gains ability: Enemy weapons gain Hazardous when attacking this unit in Close Combat.</description>
+    <rule id="8725-8cd4-c85f-6932" name="Bestow Hazardous Target(CC)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in this model’s unit have Hazardous Target(CC): As long as at least half of the wounds in this unit has this trait, enemy CC weapons gain hazardous when attacking this unit.</description>
     </rule>
     <rule id="fe84-895e-03a3-5fac" name="Bestow Concealment" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
@@ -9224,6 +9065,7 @@ In addition, apply any result of one or more ‘1’.</description>
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
     <rule id="89c2-ba74-de41-fc45" name="Feeder" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Regenerate one (1) wound in endphase each turn the unit has caused wounds in close combat.</description>
     </rule>
     <rule id="f90d-5a25-6fe3-aae8" name="Mystic(school 1/3, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
@@ -9235,9 +9077,6 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
 
 If you roll doubles, you may use the boosted version of a power at the same level.
 In addition, apply any result of one or more ‘1’.</description>
-    </rule>
-    <rule id="aa52-17d5-cd65-6a2b" name="Tunneller" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>After Insertion, place adjacent to the model: 1x Tunnel: Structure(light), Wounds(3), Defence(8), Gate.</description>
     </rule>
     <rule id="cd90-c74e-f86e-b21a" name="Capacity(20)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>May transport 20 regular models (see also the transport rules).
@@ -9270,18 +9109,19 @@ If you roll doubles, you may use the boosted version of a power at the same leve
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="2082-5a4b-6881-60ef" name="Extra Strike(3)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Model has 3 extra attack dice with CC attacks.</description>
     </rule>
     <rule id="8940-13b4-2096-3d20" name="Bestow Fanatic(12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in units within 12&quot; gains ability: For every action marker you would allocate from suppression to this unit, it instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
+      <description>All models in units within 12&quot; has Fanatic: For every action marker you would allocate from suppression to a unit with one or more models with this trait, the unit instead suffers one (1) wound. This wound has to be allocated to a model with this trait.</description>
     </rule>
     <rule id="d565-5d8f-6891-2424" name="Bestow Charge(1&quot;) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 12&quot; has Charge(1&quot;): This model’s CC attacks have +1&quot; range.
 
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
-    <rule id="28ac-e645-c09d-5ad2" name="Bestow Wound(re-roll)" publicationId="81dd-fe5f-c233-17c5" page="118" hidden="false">
-      <description>All models in attached unit gains ability: Wound(re-roll)	</description>
+    <rule id="28ac-e645-c09d-5ad2" name="Bestow Wound(re-roll)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
+      <description>All models in this model’s unit have Wound(re-roll): you may re-roll any to-hit dice.</description>
     </rule>
     <rule id="97fd-0e95-5826-a8cc" name="Defence(min 4)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>A roll of 4 or more is required to wound this model. To wound is never worse than 4+. (in case of conflict with similar ruling on an attack, Defence takes precedence unless specifically mentioned).</description>
@@ -9314,10 +9154,10 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
       <description>A roll of 12 or more is required to wound this model.</description>
     </rule>
     <rule id="cc11-65ea-aa8f-77fb" name="Bestow Loathing (12&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>All models in units within 12&quot; gains Loathing: Re-roll results of ‘1’ to wound for this model.</description>
+      <description>All models in units within 12&quot; has Loathing: Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
-    <rule id="dc70-9183-64b8-d98e" name="Bestow Tough(+1) (6&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>All models in units within 6&quot; have Tough(+1). If a unit already has trait at a better level, it takes precedence.</description>
+    <rule id="dc70-9183-64b8-d98e" name="Bestow Tough(+1) (6&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>All models in units within 6&quot; has Tough(+1).</description>
     </rule>
     <rule id="09f5-9e2a-75f7-11f6" name="Bestow Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 12&quot; has Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
@@ -9325,17 +9165,17 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
     <rule id="9414-a88d-3bba-206c" name="Bestow Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>All models in attached unit gains Infiltrate: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
+      <description>All models in this model’s unit have Infiltrate: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
     </rule>
     <rule id="ed49-958f-327c-678a" name="Bestow Loathing (18&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>All models in units within 18&quot; gains Loathing: Re-roll results of ‘1’ to wound for this model.</description>
+      <description>All models in units within 18&quot; has Loathing: Re-roll results of ‘1’ to wound for this model.</description>
     </rule>
-    <rule id="fe24-fafe-32e8-355d" name="Bestow Tough(1)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+    <rule id="fe24-fafe-32e8-355d" name="Bestow Tough(1)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <comment>w</comment>
       <description>All models in this model’s unit have Tough(1). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
-    <rule id="384c-2339-d25b-5a07" name="Bestow Tough(+2) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>All models in units within 12&quot; have Tough(+2). If a unit already has trait at a better level, it takes precedence.</description>
+    <rule id="384c-2339-d25b-5a07" name="Bestow Tough(+2) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>All models in units within 12&quot; has Tough(+2).</description>
     </rule>
     <rule id="4ad4-9430-c704-f65d" name="Faction Power" publicationId="91df-c558-75f9-73ea" page="74" hidden="false">
       <description>Unused faction point during force generation that can be used in game for faction powers.</description>
@@ -9343,8 +9183,8 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="b41a-861d-01db-5cdd" name="Adaptation Protocols*" publicationId="81dd-fe5f-c233-17c5" page="104" hidden="false">
       <description>+2FP, spend only on allies or upgrades.</description>
     </rule>
-    <rule id="9c6a-39e0-9a21-cecb" name="Inflict Tough(0) (12&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Enemy units within 12&quot; suffer: Tough(0)</description>
+    <rule id="9c6a-39e0-9a21-cecb" name="Inflict Tough(0) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within 12&quot; has : Tough(0)</description>
     </rule>
     <rule id="0527-8690-35c7-a862" name="Attack(x2)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>Attack dice for this model is modified by x2. This only includes the model’s original attacks, and not those granted by Mystic powers, Faction powers, upgrades and the like. Additionally, it does not apply to one use attacks.</description>
@@ -9362,10 +9202,10 @@ If you roll doubles, you may use the boosted version of a power at the same leve
 In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="27df-9015-c766-0259" name="Bestow Masterwork" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>ll models in attached unit gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>All models in this model’s unit have Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
-    <rule id="3f3d-0f36-7a54-fc77" name="Move(18&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(18&quot;) with each move.</description>
+    <rule id="3f3d-0f36-7a54-fc77" name="Move(18&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 18&quot; with each move.</description>
     </rule>
     <rule id="6974-f868-5fce-cb86" name="Disruption(12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Units within 12&quot; may not remove extra action markers in endphase.</description>
@@ -9448,21 +9288,15 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="913e-d99b-13d1-6175" name="Hidden(range)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Model is not visible beyond range, and never to aircraft.</description>
+    <rule id="003d-c324-c24f-f0cd" name="Camouflage(range)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>Target(potshots) vs attacks from beyond range and always from aircraft.</description>
     </rule>
-    <rule id="ffd3-7f23-7434-122b" name="Hidden(18&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Model is not visible beyond 18&quot;, and never to aircraft.</description>
-    </rule>
-    <rule id="003d-c324-c24f-f0cd" name="Camouflage(range)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Attacks vs this model from beyond range or from aircraft/VTOL are potshots.</description>
-    </rule>
-    <rule id="0c84-0530-8db3-c3d2" name="Camouflage(12&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+    <rule id="0c84-0530-8db3-c3d2" name="Camouflage(12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <comment>w</comment>
-      <description>Attacks vs this model from beyond 12&quot; or from aircraft/VTOL are potshots.</description>
+      <description>Target(potshots) vs attacks from beyond 12&quot; and always from aircraft.</description>
     </rule>
     <rule id="5bb6-e189-3c78-b891" name="Superior Insertion" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <comment>remove</comment>
+      <comment>Remove after PG update.</comment>
       <description>When activated may deploy from staging, anywhere on the board, beyond 2” of enemy units, with one (1) action marker.</description>
     </rule>
     <rule id="3fe6-01fd-d164-14a5" name="Impervious(level)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
@@ -9472,12 +9306,15 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>Model may not be assigned wounds nor receive suppression from hits with wound(+0) or less.</description>
     </rule>
     <rule id="4dbd-4cc9-99ea-9e67" name="Martyr(1)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Receive 1 Faction Points when this unit is removed as a casualty.</description>
     </rule>
     <rule id="06b5-79eb-b776-03fb" name="Martyr(2)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Receive 2 Faction Points when this unit is removed as a casualty.</description>
     </rule>
     <rule id="cdea-fc9f-d094-9b94" name="Martyr(level)" publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Receive level Faction Points when this unit is removed as a casualty.</description>
     </rule>
     <rule id="b182-43ba-c336-2e20" name="Pathfinder" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
@@ -9486,17 +9323,19 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="ef32-dd07-45d6-6379" name="Combat Engineer" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>The terrain piece that this unit occupies does not count as Dangerous Terrain for friendly units.</description>
     </rule>
-    <rule id="ad3f-867e-5ae7-4e40" name="Charge(1&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>CC attacks have +distance range.</description>
+    <rule id="ad3f-867e-5ae7-4e40" name="Charge(1&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>This model’s CC attacks have +1&quot; range.</description>
     </rule>
     <rule id="a30b-33df-de01-badb" name="Bestow Frenzied Assault" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <comment>Remove after PG update.</comment>
       <description>Strike in CC even if suppressed or killed by reaction attack.</description>
     </rule>
-    <rule id="db4e-81fc-d68a-6ea9" name="Bestow Repel(2&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>CC attacks vs this model has their range reduced by 2&quot;.</description>
+    <rule id="db4e-81fc-d68a-6ea9" name="Bestow Repel(2&quot;)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
+      <description>All models in this model’s unit have Repel(2&quot;): CC attacks vs this model have their range reduced by 2&quot;.</description>
     </rule>
-    <rule id="8f80-bc2f-4ff4-b5c0" name="Bestow Run and Gun" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>May attack with potshots after double move, non-CC attacks only.</description>
+    <rule id="8f80-bc2f-4ff4-b5c0" name="Bestow Move and Fire" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <comment></comment>
+      <description>All models in this model’s unit have Move and Fire: May attack with hit(-1) after double move, ranged attacks only. If the unit suffers any suppression after the two moves, it loses the attack.</description>
     </rule>
     <rule id="f9ae-1a02-1abd-7057" name="Assault Launcher" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>Unit disembarking from this model gains Concealment until the endphase.</description>
@@ -9519,17 +9358,11 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     <rule id="c4c3-cce3-2df4-5244" name="Go Down Swinging" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
       <description>When this model is removed as a casualty, it may immediately attack with one (1) of its CC weapons.</description>
     </rule>
-    <rule id="45d4-2cb2-0790-ad34" name="Bestow Tough(+1)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>All models in this model’s unit have Tough(+1). If a unit already has trait at a better level, it takes precedence.</description>
-    </rule>
-    <rule id="0956-555d-0755-c603" name="Firing Ports(5)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Number of passengers may attack while embarked.</description>
+    <rule id="45d4-2cb2-0790-ad34" name="Bestow Tough(+1)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>All models in this model’s unit have Tough(+1).</description>
     </rule>
     <rule id="f19f-83d7-50bc-c85b" name="Bestow Medical Support (6&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>Units within 6&quot; gains ability Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
-    </rule>
-    <rule id="6a04-90f4-2397-e847" name="Firing Ports(6)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>Number of passengers may attack while embarked.</description>
+      <description>Units within 6&quot; has Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
     </rule>
     <rule id="8038-a671-52c6-7ca6" name="Structure(simple)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Structures follow the rules for Vehicles (and are considered such), but with Move(no). Target(1 vs CC), Target(-1) vs ranged. Model is destroyed by any positive result on the vehicle damage table. All other results have no effect.
@@ -9539,8 +9372,8 @@ Model no longer counts as regular. Additional rules in the Vehicles section of t
     <rule id="2950-3fdb-30c1-39ee" name="Infiltrate(inferior)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Unit receives two (2) action markers after setting up.</description>
     </rule>
-    <rule id="368d-cddf-4a87-0996" name="Bestow Cover(1) (3”, closest unit only)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>All models in closest unit within 3&quot; gains ability Cover(1): Model has a cover bonus of 1.</description>
+    <rule id="368d-cddf-4a87-0996" name="Bestow Cover(1) (3”, closest unit only)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>All models in closest units within 3&quot; have Cover(1): Model has Defence(+1) versus ranged attacks.</description>
     </rule>
     <rule id="63f9-74c8-4634-3808" name="Structure" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>Structures follow the rules for Vehicles (and are considered such), but with Move(no). Target(1 vs CC), Target(-1) vs ranged.
@@ -9550,11 +9383,11 @@ Model no longer counts as regular. Additional rules in the Vehicles section of t
     <rule id="68d3-7750-5b5c-4ece" name="Monotasked" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
       <description>Model may only take Advance or partial actions (no reactions).</description>
     </rule>
-    <rule id="880c-5722-b6a2-6225" name="Cover(1)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Model has a cover bonus of 1.</description>
+    <rule id="880c-5722-b6a2-6225" name="Cover(1)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Model has Defence(+1) versus ranged attacks.</description>
     </rule>
-    <rule id="c949-f787-c19e-4f14" name="Gate(after first turn) " publicationId="81dd-fe5f-c233-17c5" page="116" hidden="false">
-      <description>One (1) unit may enter from staging as if this model was connected to the friendly board edge per turn, after first turn.</description>
+    <rule id="c949-f787-c19e-4f14" name="Gate(after first turn) " publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>One (1) regular unit per turn may enter from or exit to staging through this model, as if it was connected to staging, after first turn.</description>
     </rule>
     <rule id="057f-45e2-107b-b157" name="Infiltrate(inferior, own table half)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <description>Unit receives two (2) action markers after setting up on own table half.</description>
@@ -9562,11 +9395,8 @@ Model no longer counts as regular. Additional rules in the Vehicles section of t
     <rule id="59ac-b884-dc2d-6c29" name="Ignore cover(1)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Target gets no bonus to Defence from Cover, or has its Cover modified by 1.</description>
     </rule>
-    <rule id="4fef-53eb-8220-5deb" name="Cover(max 1)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
+    <rule id="4fef-53eb-8220-5deb" name="Cover(max 1)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>Model may not gain more than 1 bonus from cover.</description>
-    </rule>
-    <rule id="4c6f-864f-7186-ff14" name="Smoke Mission" publicationId="81dd-fe5f-c233-17c5" page="62" hidden="false">
-      <description>Activate(3+, 2+ in LOS of Spotter). Place smoke cloud (5” diameter circle) anywhere on table. Potshots only vs targets within smoke or LOS passing through until endphase, Concealment for same until 2nd endphase, one use.</description>
     </rule>
     <rule id="b221-619b-022b-5d98" name="Logistics Mystic(1)" publicationId="e42d-4466-8267-ac1b" page="96" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
@@ -9588,8 +9418,8 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 
 Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse power from the applicable school. Player A also applies the boosted version of the ‘1’ result.</description>
     </rule>
-    <rule id="de85-03a7-4df0-0866" name="Cover(2)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Model has a cover bonus of 2.</description>
+    <rule id="de85-03a7-4df0-0866" name="Cover(2)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Model has Defence(+2) versus ranged attacks.</description>
     </rule>
     <rule id="ee25-41b2-ae06-1ed7" name="Move(stationary)" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>Model may not move or be moved by outside effects.</description>
@@ -9605,7 +9435,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
 If a unit already has Antiair at a better level, it takes precedence. </description>
     </rule>
     <rule id="8c70-c89d-045f-5150" name="Bestow Medical Support (18&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>Units within 18&quot; gains ability Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
+      <description>Units within 18&quot; has Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
     </rule>
     <rule id="5e2b-66a1-6c2e-48e8" name="Electromancy Mystic(1)" publicationId="e42d-4466-8267-ac1b" page="96" hidden="false">
       <description>When activated, may roll level number of dice and pick one (1) available power from school mystic list. If you get several dice at target level, you may use boosted version. Also apply all results of ‘1’.
@@ -9645,7 +9475,7 @@ If attached to enemy unit, unit is Irradiated.</description>
       <description>Attacks with this weapon has Run and Gun (may attack with potshots after double move, non-cc only).</description>
     </rule>
     <rule id="77a8-4f98-f220-56ae" name="Inflict Irradiated(6&quot;)" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
-      <description>Enemy units within 6&quot; suffer Irradiated: Unit has Defence(-1). (Further instances does not stack)</description>
+      <description>Models of enemy units within 6&quot; has Irradiated: Unit has Defence(-1). (Further instances does not stack)</description>
     </rule>
     <rule id="612b-8b0a-422c-979e" name="Irradiated" publicationId="e42d-4466-8267-ac1b" page="90" hidden="false">
       <description>Unit has Defence(-1). (Further instances does not stack)</description>
@@ -9660,23 +9490,23 @@ Weapon Overdrive: Vicious
 Override Self-Preservation: Tough(+1) and Fanatic 
 Mechanical Support: Regeneration(1)</description>
     </rule>
-    <rule id="e98a-94fb-5bce-6a9d" name="Bestow Morale(1) (3&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>All models in units within 3&quot; gains ability Morale(1): Unit removes level extra (own) action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
+    <rule id="e98a-94fb-5bce-6a9d" name="Bestow Morale(1) (3&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in units within 3&quot; hasMorale(1): Unit removes 1 extra action markers in endphase, as long as all models in unit has at least this level of Morale.</description>
     </rule>
     <rule id="1ba6-4147-e7d5-e4a5" name="Common Assets" publicationId="e42d-4466-8267-ac1b" hidden="false">
       <description>Special choices that can be used by any faction.</description>
     </rule>
-    <rule id="4dfb-bcb3-d4fb-330a" name="Tough(1)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Ignore wound rolls of 1 when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
+    <rule id="4dfb-bcb3-d4fb-330a" name="Tough(1)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Ignore unmodified wound rolls of 1 or lower for suppression vs this unit, as long as all models have at least this level of Tough.</description>
     </rule>
-    <rule id="7bb8-0ad0-6b79-40bd" name="Tough(2)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Ignore wound rolls of 2 or lower when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
+    <rule id="7bb8-0ad0-6b79-40bd" name="Tough(2)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Ignore unmodified wound rolls of 2 or lower for suppression vs this unit, as long as all models have at least this level of Tough.</description>
     </rule>
-    <rule id="d0b5-c2f5-7437-41cb" name="Tough(3)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Ignore wound rolls of 3 or lower when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
+    <rule id="d0b5-c2f5-7437-41cb" name="Tough(3)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Ignore unmodified wound rolls of 3 or lower for suppression vs this unit, as long as all models have at least this level of Tough.</description>
     </rule>
-    <rule id="4170-4442-7884-180a" name="Tough(4)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Ignore wound rolls of 4 or lower when counting suppression vs this unit, as long as all models in unit has at least this level of Tough.</description>
+    <rule id="4170-4442-7884-180a" name="Tough(4)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Ignore unmodified wound rolls of 4 or lower for suppression vs this unit, as long as all models have at least this level of Tough.</description>
     </rule>
     <rule id="c70d-3213-7388-3dc4" name="Bestow Charge(2&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Charge(2&quot;): This model’s CC attacks have +2&quot; range.
@@ -9687,10 +9517,10 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
       <description>All models in this model’s unit have Charge(relentless): When charging, apply any suppression suffered by this unit after it has made the attack.</description>
     </rule>
     <rule id="d514-12bb-9cc8-af9d" name="Wounds(+2)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
-      <description>Add +2 to Wounds.</description>
+      <description>Model has +2 wounds.</description>
     </rule>
     <rule id="933b-d81e-904c-bbd6" name="Bestow Command Uplink (9”, closest)" publicationId="91df-c558-75f9-73ea" page="89" hidden="false">
-      <description>All models in units within 9&quot; has Command Uplink: This model’s unit counts as attached to a selected command unit for Bestow purposes.This applies only to the closest unit within 9&quot; other than this model’s unit. 
+      <description>All models in closest units within 9&quot; has Command Uplink: This model’s unit counts as attached to a selected command unit for Bestow purposes.
 
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
@@ -9701,7 +9531,7 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
       <description>Passengers may make CC attacks.</description>
     </rule>
     <rule id="977c-6786-dfc8-becf" name="Capacity(12 or 6 Tanksuit)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
-      <description>May transport capacity regular models or 6 Tanksuit models (see also the transport rules).
+      <description>May transport 12 regular models or 6 Tanksuit models (see also the transport rules).
 If they can’t be attacked, passengers are also unaffected by/does not affect others with
 bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
     </rule>
@@ -9711,23 +9541,23 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
     <rule id="b4d9-bd94-8aab-1f6b" name="Insertion(superior)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
     </rule>
-    <rule id="b259-fcc4-7744-b570" name="Damage(number)" hidden="false">
-      <description>Models allocated a wound from this weapon is allocated number wounds instead. If this would cause a vehicle to roll multiple times on the damage table, only keep the highest result.</description>
+    <rule id="b259-fcc4-7744-b570" name="Damage(number)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Models allocated a wound from this weapon is allocated damage wounds instead. If this would cause a vehicle to roll multiple times on the damage table, only keep the highest result.</description>
     </rule>
     <rule id="55aa-c704-5890-ef5d" name="Damage(2)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Models allocated a wound from this weapon is allocated 2 wounds instead. If this would cause a vehicle to roll multiple times on the damage table, only keep the highest result.</description>
     </rule>
-    <rule id="8ff5-1993-635a-e649" name="Charge(shoot)" hidden="false">
-      <description>When charging, this model may also attack with ranged weapons. Those attacks have inaccurate.</description>
+    <rule id="8ff5-1993-635a-e649" name="Charge(shoot)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>When charging, this model may also attack the same target(s) with its ranged weapons. Those attacks have inaccurate.</description>
     </rule>
-    <rule id="1aa6-bfdb-b99d-8a2f" name="Bestow Flak(12&quot;)" hidden="false">
-      <description>All models in units within 12&quot; gains ability: Target(+1) vs Aircraft and VTOL attacks. Multiple sources of Flak does not stack.</description>
+    <rule id="1aa6-bfdb-b99d-8a2f" name="Bestow Flak(12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>All models in units within 12&quot; has Flak: Target(+1) vs Aircraft and VTOL attacks. Multiple sources of Flak does not stack.</description>
     </rule>
     <rule id="2aab-b0ea-3c12-351e" name="Minor Changes" publicationId="91df-c558-75f9-73ea" hidden="false">
       <description>When compiling the lists we have in most places opted for simplicity rather than listing all possible weapon options that appear on character-type models. If players want to switch between similar weapons with the same cost (such as switching an “Energy Fist” for an “Energy Axe”), this is certainly allowed.</description>
     </rule>
-    <rule id="691f-b11b-77fa-9109" name="Paired" hidden="false">
-      <description>If wielding multiple close combat weapons, such as swords in both hands, chose which one to use and add only one (1) attack dice for each additional weapon (these weapons should be of similar cost).</description>
+    <rule id="691f-b11b-77fa-9109" name="Paired" publicationId="91df-c558-75f9-73ea" page="24" hidden="false">
+      <description>Humanoid models should generally not have more weapons than they have hands to hold them. Vehicles, monsters, exo-suits and the like might have more. Regular models wielding multiple weapons, such as swords in both hands, add only one (1) attack dice for each additional weapon. In the example Battle faction lists this is already taken into account, and you will find that dual-wielders often have a “paired” version of their CC-weapon.</description>
     </rule>
     <rule id="7667-75fb-9190-76d2" name="Spray" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Instead of rolling to hit normally, each dice scores as many hits as the to-hit roll.
@@ -9754,8 +9584,8 @@ pistol, CC, or otherwise ignores the close quarters rule).</description>
     <rule id="a6b7-cc14-34f9-186d" name="Indirect(-2)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Weapon may attack without line of sight with hit(-2), unless otherwise specified. If any model in the same unit as the attacker has line of sight to the target, ignore the modifier.</description>
     </rule>
-    <rule id="e9f5-b2d2-b76b-2d55" name="Move(15&quot;)" hidden="false">
-      <description>Model moves distance(15&quot;) with each move.</description>
+    <rule id="e9f5-b2d2-b76b-2d55" name="Move(15&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 15&quot; with each move.</description>
     </rule>
     <rule id="7eb4-2d45-a2a1-280f" name="Target(potshots)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All attacks vs this model are potshots.</description>
@@ -9807,7 +9637,7 @@ least this level of Morale.</description>
       <description>All models in this model’s unit have Assassin: Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
     </rule>
     <rule id="79e8-b9d8-6269-6cfd" name="Bestow Concealment(6&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
-      <description>All models in units within 6&quot; has Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
+      <description>All models in units within 6&quot; have Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
 
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
@@ -9820,14 +9650,14 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="ca99-fc01-9939-09c4" name="Insertion(unreliable)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). Unreliable: the unit receives D3 action markers instead.</description>
     </rule>
-    <rule id="1821-b496-5cc5-9de7" name="Camouflage(18&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Attacks vs this model from beyond 18&quot; or from aircraft/VTOL are potshots.</description>
+    <rule id="1821-b496-5cc5-9de7" name="Camouflage(18&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>Target(potshots) vs attacks from beyond 18&quot; and always from aircraft.</description>
     </rule>
     <rule id="dd48-9d33-4bb1-2555" name="Move(walker)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>No movement penalty for difficult terrain. Counts as regular when evaluating dangerous terrain.</description>
     </rule>
     <rule id="dbaf-fda1-3ef1-6ac7" name="Cargo(0)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
-      <description>This model does not counts as space for Capacity purposes.</description>
+      <description>This model counts as 0 models for Capacity purposes.</description>
     </rule>
     <rule id="cfb0-a61d-0348-8a19" name="Cargo(2)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>This model counts as 2 models for Capacity purposes.</description>
@@ -9849,17 +9679,17 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="4d76-c549-6f21-4542" name="Focus fire" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Discard 1 or more hits from this weapon’s attack to give remaining hits wound(+1) for each hit discarded.</description>
     </rule>
-    <rule id="55ea-bf10-4ef5-ba27" name="Linked fire" publicationId="91df-c558-75f9-73ea" page="120" hidden="false">
+    <rule id="55ea-bf10-4ef5-ba27" name="Linked fire" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>This weapon may trace line of sight from identical weapon in line of sight.</description>
     </rule>
-    <rule id="e726-2f61-1c85-7bfd" name="Thight spread" publicationId="91df-c558-75f9-73ea" page="120" hidden="false">
+    <rule id="e726-2f61-1c85-7bfd" name="Tight spread" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Attack dice from this weapon may not be spread between units further than 5” apart.</description>
     </rule>
-    <rule id="966e-770e-b44e-f0b0" name="Focus fire(combined)" publicationId="91df-c558-75f9-73ea" page="120" hidden="false">
+    <rule id="966e-770e-b44e-f0b0" name="Focus fire(combined)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Discard 1 or more hits from this weapon’s attack to give remaining hits wound(+1) for each hit discarded. You may combine the attacks of up to three (3) identical weapons for the purposes of focus fire.</description>
     </rule>
     <rule id="2c73-4970-84b9-086e" name="Inflict Disruption(12&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>Models of enemy units within 12&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+      <description>Models of enemy units within 12&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="5295-c929-726b-0721" name="Faction extra doctrine" hidden="false">
       <description>Force must take one extra doctrine. See Faction Traits.</description>
@@ -9867,7 +9697,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="5cc0-ce53-6311-c818" name="Swarm" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Defence(min 6) or Defence(max 3) vs blast or spray, Cover(no), Tough(6), Scoring(no). Models within 2” of this model may be targeted without the Intermingled penalty. Regular enemy models treat this model as dangerous terrain instead of blocking.</description>
     </rule>
-    <rule id="9067-6a12-fb58-c680" name="Inflict Defence(-1) (2”, regular, no stacking)" publicationId="91df-c558-75f9-73ea" hidden="false">
+    <rule id="9067-6a12-fb58-c680" name="Inflict Defence(-1) (2”, regular, no stacking)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Models of enemy regular units within 2&quot; has Defence(-1), this effeckt does not stack.</description>
     </rule>
     <rule id="5da5-8d13-0422-4fc2" name="Mystic(Tidemind 1/2, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
@@ -9882,7 +9712,7 @@ group: one (1) model with this trait in a unit may add the mystic levels from ot
       <description>Model regains 1 wounds in the endphase. This does not apply to additional wounds (granted by e.g. upgrades).</description>
     </rule>
     <rule id="e274-e57d-1eb2-cc85" name="Priority(Attack(x2))" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>When attacking with priority gain, Attack (x2).</description>
+      <description>When attacking with priority gain Attack (x2).</description>
     </rule>
     <rule id="6dfa-7d02-8d44-cad2" name="Gate(one use)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>One (1) regular unit may enter from or exit to staging through this model, as if it was connected to staging.</description>
@@ -9905,7 +9735,9 @@ group: one (1) model with this trait in a unit may add the mystic levels from ot
     <rule id="804c-3cb8-371b-a966" name="Move(no)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Model may not move or be moved and not attack in CC.</description>
     </rule>
-    <rule id="6589-024f-642c-fd89" name="Defence(+1 in cover)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false"/>
+    <rule id="6589-024f-642c-fd89" name="Defence(+1 in cover)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Model has Defence(+1) in cover versus ranged attacks.</description>
+    </rule>
     <rule id="1f5a-b83c-fd6f-6fea" name="Mystic(Telepathy 1, group)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll one(1) dice and pick one (1) power from the Telepathy list of power level equal or less than the highest dice rolled.
 
@@ -9944,11 +9776,11 @@ exposed.</description>
     <rule id="c93e-8027-6137-2d34" name="Target(5 in open)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>When in the open a roll of 5 or more is required to hit this model.</description>
     </rule>
-    <rule id="312a-c2f4-09a1-ef81" name="Bestow Tough(2)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+    <rule id="312a-c2f4-09a1-ef81" name="Bestow Tough(2)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All models in this model’s unit have Tough(2). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="9ef0-76b8-620e-c895" name="Inflict Disruption(18&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>Models of enemy units within 18&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+      <description>Models of enemy units within 18&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="5272-99ce-7e03-af8e" name="Loathing(CC)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Re-roll CC results of ‘1’ to wound for this model.</description>
@@ -9984,45 +9816,42 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
     <rule id="2c8e-7340-f65f-2840" name="Unstable" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>This unit takes a dangerous terrain test in the withdrawal step of every endphase. Stacks with further instances of Unstable.</description>
     </rule>
-    <rule id="8d67-aa1d-0abb-9ae8" name="Inflict Inaccurate(2&quot;)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
-      <description>Enemy units within 2&quot; suffer Inaccurate: If an attack is Inaccurate, -1 to hit. Multiple sources of Inaccurate does not stack. </description>
+    <rule id="8d67-aa1d-0abb-9ae8" name="Inflict Inaccurate(2&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Models of enemy units within 2&quot; has Inaccurate: Attacks with this model has hit(-1). Multiple sources of inaccurate does not stack.</description>
     </rule>
     <rule id="fe13-5ad3-c184-fabb" name="Combined weapon" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>As weapon that may be used instead of parent weapon. Not affected by Attack multipliers unless specifically mentioned. If used by a model that has an Attack multiplier, lower the multiplier by 1.
 example: an Attack(x3) model has “slugger with combined Flamer”. it can either use the slugger with x3 dice, or the slugger with x2 dice and the Flamer normally.</description>
     </rule>
     <rule id="09f8-aa68-32f8-9554" name="Inflict Disruption(8&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>Models of enemy units within 8&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+      <description>Models of enemy units within 8&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="f4f4-92c8-c544-710f" name="Bestow Masterwork(6&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>All models in units within 6&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>All models in units within 6&quot; has Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="c27b-5d22-7f2b-4c01" name="Inflict Disruption(2&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>Models of enemy units within 2&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+      <description>Models of enemy units within 2&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="6b3d-f66e-180f-becc" name="Bestow Restore(1)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
-      <description>Attached unit gains ability Restore(1): Unit regains 1 of wounds in the endphase, beginning with models that have lost wounds and then returning lost models (in cohesion).</description>
+      <description>Unit have Restore(1): Unit regains 1 of wounds in the endphase, beginning with models that have lost wounds and then returning lost models (in cohesion).</description>
     </rule>
     <rule id="6698-a412-84d1-23b6" name="Bestow Move(+1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <description>All models in attached unit gains ability Move(+1): Model moves distance(+1&quot;) with each move.</description>
+      <description>All models in this model’s unit have Move(+1): Model moves distance(+1&quot;) with each move.</description>
     </rule>
     <rule id="a75f-fb90-97bd-9ca5" name="Bestow Masterwork(9&quot;)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>All models in units within 9&quot; gains ability Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
+      <description>All models in units within 9&quot; has Masterwork: Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="6424-30e3-6ba2-3a52" name="Project(hostile, 9”)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>9&quot; from model counts as hostile for enemy units.</description>
     </rule>
-    <rule id="8970-c1b3-39fa-00fb" name="Bestow Robust(1)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
-      <description>Attached unit gains ability Robust(1): Rolls on the damage table for this vehicle are reduced by 1.</description>
-    </rule>
     <rule id="1f5b-cd88-2e0a-77b5" name="Inflict Disruption(9&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>Models of enemy units within 9&quot; has trait Distruption: Units may not remove extra action markers in endphase.</description>
+      <description>Models of enemy units within 9&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
     </rule>
     <rule id="070e-08e0-53a6-7202" name="Bestow Defence(min 3)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>All models in this model’s unit have Defence(min 3). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="e64e-4b18-b62c-727d" name="Bestow Target(potshots)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
-      <description>Attached unit gains ability Target(potshots): all attacks vs this model are potshots.</description>
+      <description>All models in this model’s unit have Target(potshots): all attacks vs this model are potshots.</description>
     </rule>
     <rule id="9102-2ff3-633c-b9a5" name="Inherit(Tough)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>If all models without Inherit(Tough) in this unit has Tough (or better), this model has Tough.</description>
@@ -10033,7 +9862,7 @@ example: an Attack(x3) model has “slugger with combined Flamer”. it can eith
 If a unit already has trait at a better level, it takes precedence. </description>
     </rule>
     <rule id="b692-04fd-f825-fcb0" name="Bestow Masterwork(CC)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>All models in attached unit gains ability Masterwork(CC): Re-roll CC results of ‘1’ to hit for this model.</description>
+      <description>All models in this model’s unit have Masterwork(CC): Re-roll CC results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="00d1-025f-abf8-1029" name="Cancel Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>Enemy models in units within 12&quot; that have Concealment does not.</description>
@@ -10042,7 +9871,7 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
       <description>12&quot; from model counts as dangerous and difficult for enemy units.</description>
     </rule>
     <rule id="eecc-3f41-32a3-78b5" name="Bestow Insertion(superior)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>All models in attached unit gains Insertion(superior): When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
+      <description>All models in this model’s unit have Insertion(superior): When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
     </rule>
     <rule id="2e17-3832-966c-6c88" name="Inherit(Move)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>If all models without Inherit(Move) in this unit has Move (or better), this model has Move.</description>
@@ -10053,8 +9882,8 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="9bf6-b28b-2136-97a0" name="Hard Dive" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Aircraft may lose inaccurate for its next attack against ground targets. After the attack vehicles roll on the damage table with -3, non-vehicles take a dangerous terrain test.</description>
     </rule>
-    <rule id="c29d-c906-7524-c046" name="Move(5&quot;)" publicationId="81dd-fe5f-c233-17c5" page="114" hidden="false">
-      <description>Model moves distance(5&quot;) with each move.</description>
+    <rule id="c29d-c906-7524-c046" name="Move(5&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model moves up to 5&quot; with each move.</description>
     </rule>
     <rule id="c66d-07cf-b78b-04f1" name="Martyr(unit, +1 FP)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When this model’s unit is removed as a casualty, +1 FP.</description>
@@ -10065,13 +9894,13 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="225f-e461-0d0f-d8c1" name="Infiltrate(own half)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Unit may deploy anywhere on own half of the table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
     </rule>
-    <rule id="6354-df6f-ed69-9039" name="Bestow Tough(2) (passengers)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+    <rule id="6354-df6f-ed69-9039" name="Bestow Tough(2) (passengers)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All passangers in this model have Tough(2). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="379c-8b5d-41ab-3750" name="Repel(3&quot;)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
       <description>CC attacks vs this model have their range reduced by 3&quot;.</description>
     </rule>
-    <rule id="ab6a-a489-fb9b-0251" name="Bestow Tough(3)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+    <rule id="ab6a-a489-fb9b-0251" name="Bestow Tough(3)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All models in this model’s unit have Tough(3). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="2fa2-8730-f1bf-df1d" name="Mystic(Miracles 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
@@ -10369,9 +10198,9 @@ heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="acba-1acd-1b9c-a9e7" name="+1 Command Entry" publicationId="81dd-fe5f-c233-17c5" page="65" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
-    <profile id="d168-b785-fb36-5a9d" name="+1 Special Entry" publicationId="81dd-fe5f-c233-17c5" page="65" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
-    <profile id="6c13-8095-1473-20c8" name="+2 Upgrades" publicationId="81dd-fe5f-c233-17c5" page="65" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
+    <profile id="acba-1acd-1b9c-a9e7" name="+1 Command Entry" publicationId="91df-c558-75f9-73ea" page="74" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
+    <profile id="d168-b785-fb36-5a9d" name="+1 Special Entry" publicationId="91df-c558-75f9-73ea" page="74" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
+    <profile id="6c13-8095-1473-20c8" name="+2 Upgrades" publicationId="91df-c558-75f9-73ea" page="74" hidden="false" typeId="81b4-2d3b-e838-5fe5" typeName="Faction Points"/>
     <profile id="06c6-c329-39be-374d" name="Plasma pistol" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
