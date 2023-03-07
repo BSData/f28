@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="15" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="16" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -89,7 +89,7 @@ FP: Faction Points</readme>
     </entryLink>
     <entryLink id="6fc6-115a-32ed-5fe6" name="Chamber APC" hidden="false" collective="false" import="true" targetId="8a88-dd73-4c6e-fd2a" type="selectionEntry"/>
     <entryLink id="a907-fb89-4a24-1b96" name="Chamber IFV" hidden="false" collective="false" import="true" targetId="ea46-c372-7a0d-b244" type="selectionEntry"/>
-    <entryLink id="4382-23df-1f1c-05ea" name="Insertion Capsule" hidden="false" collective="false" import="true" targetId="bc2d-f923-bf2f-1e3e" type="selectionEntry"/>
+    <entryLink id="4382-23df-1f1c-05ea" name="Chamber Insertion Capsule" hidden="false" collective="false" import="true" targetId="bc2d-f923-bf2f-1e3e" type="selectionEntry"/>
     <entryLink id="c352-d8af-6646-6d52" name="Chamber Light Hovercraft Transport" hidden="false" collective="false" import="true" targetId="e95c-458a-a89f-6cdb" type="selectionEntry"/>
     <entryLink id="8dfa-d97e-f068-a968" name="Chamber Commander" hidden="false" collective="false" import="true" targetId="8bb4-061c-4ffe-18ab" type="selectionEntry"/>
     <entryLink id="fc87-0dc5-7d7a-cb95" name="Greyport Armoury " hidden="false" collective="false" import="true" targetId="de25-06ce-23fd-706e" type="selectionEntry">
@@ -227,6 +227,7 @@ FP: Faction Points</readme>
       </constraints>
     </entryLink>
     <entryLink id="a2d6-64a1-60b7-99fe" name="Chamber Ancient Interceptor" hidden="false" collective="false" import="true" targetId="d730-4218-da63-8527" type="selectionEntry"/>
+    <entryLink id="538b-4e71-0c5f-2b9b" name="Chamber Renown Squad" hidden="false" collective="false" import="true" targetId="d7bf-e6d3-fc9a-9948" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2d76-0aca-1b35-9d6e" name="Chamber Squad" page="" hidden="false" collective="false" import="true" type="unit">
@@ -376,6 +377,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -477,6 +479,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -521,8 +524,20 @@ FP: Faction Points</readme>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="0f18-853d-726c-b86d" name="Dual Heavy Flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry"/>
+                <entryLink id="0f18-853d-726c-b86d" name="Dual Heavy flamer" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="eaa9-a0a1-2e3f-d805" type="selectionEntry"/>
                 <entryLink id="b318-d7de-a755-4b02" name="Dual Heat Cannon" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="6fff-fbca-39a3-73b8" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="4ad1-9590-8ecb-9870" name="Dual Gatling Cannon" hidden="true" collective="false" import="true" targetId="b0f9-057e-972c-309c" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
@@ -587,6 +602,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -862,6 +878,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1007,6 +1024,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1232,6 +1250,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -1632,6 +1651,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -2024,6 +2044,21 @@ FP: Faction Points</readme>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="6a88-d654-6193-9ab5" name="Defence(min 5)" hidden="true" collective="false" import="true" targetId="5930-9f80-acfe-b1f2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d4ca-c7fc-787d-1984" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="651a-1e3d-08b5-f7cd" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -2205,6 +2240,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a6-8643-2ebc-4eb8" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -2456,6 +2492,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a6-8643-2ebc-4eb8" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -2953,6 +2990,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -3121,6 +3159,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -3171,6 +3210,26 @@ FP: Faction Points</readme>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
                   </costs>
                 </entryLink>
+                <entryLink id="0d1d-1360-d82b-3cfe" name="Mystic(Smite 2)" hidden="true" collective="false" import="true" targetId="2ceb-230b-dea6-2182" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff54-d7d5-4396-32e6" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
             </selectionEntryGroup>
             <selectionEntryGroup id="633a-7672-aee0-0b18" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -3185,7 +3244,11 @@ FP: Faction Points</readme>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="f778-c1bd-d831-e135" name="Plasma Cannon" hidden="false" collective="false" import="true" targetId="00ba-a1ea-80a1-0deb" type="selectionEntry"/>
+                <entryLink id="f778-c1bd-d831-e135" name="Plasma cannon" hidden="false" collective="false" import="true" targetId="00ba-a1ea-80a1-0deb" type="selectionEntry">
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
                 <entryLink id="dad6-0e09-33d4-bd51" name="Heat cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry">
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
@@ -3198,7 +3261,7 @@ FP: Faction Points</readme>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="f362-b61b-03c7-943c" name="Energy Fist and Storm Slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry"/>
+                <entryLink id="f362-b61b-03c7-943c" name="Massive Energy fist and Storm slugger" hidden="false" collective="false" import="true" targetId="5278-4878-91d8-51c9" type="selectionEntry"/>
                 <entryLink id="57e2-fc30-c4bf-9743" name="Dual Autocannon" hidden="false" collective="false" import="true" targetId="9844-14c3-5794-406e" type="selectionEntry">
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
@@ -3208,6 +3271,94 @@ FP: Faction Points</readme>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
                   </costs>
+                </entryLink>
+                <entryLink id="33d4-c6fd-f314-2813" name="Massive Energy fist and Heatgun" hidden="true" collective="false" import="true" targetId="9e09-277d-0d39-a6cf" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="dc07-8e0e-9474-abb5" name="Massive Energy fist and Flamer" hidden="true" collective="false" import="true" targetId="2f13-0ebc-14fa-05d3" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="9042-0cc2-3421-805f" name="Massive Energy claws and Flamer" hidden="true" collective="false" import="true" targetId="3f15-b9a9-0bb4-fbf4" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="918f-bb67-cc97-56c1" name="Massive Energy claws and Heatgun" hidden="true" collective="false" import="true" targetId="227a-b3bb-9ce5-50ba" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="37c7-75ce-cb2a-8693" name="Massive Energy claws and Storm slugger" hidden="true" collective="false" import="true" targetId="c9f6-1b5c-a8ed-d0bf" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                </entryLink>
+                <entryLink id="e6af-72bb-62ee-bf48" name="Massive Energy axe" hidden="true" collective="false" import="true" targetId="031f-68b8-3120-8370" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditionGroups>
+                        <conditionGroup type="and">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                            <condition field="selections" scope="cb49-9f3b-b074-0836" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d1d-1360-d82b-3cfe" type="equalTo"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f97-7505-ab5f-41b6" type="max"/>
+                  </constraints>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -3282,6 +3433,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a6-8643-2ebc-4eb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -3405,6 +3557,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4142,6 +4295,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4173,8 +4327,8 @@ FP: Faction Points</readme>
               </infoLinks>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="200.0"/>
-                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -4279,6 +4433,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4495,6 +4650,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4600,6 +4756,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4718,6 +4875,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -4888,6 +5046,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5268,6 +5427,9 @@ FP: Faction Points</readme>
           </constraints>
           <entryLinks>
             <entryLink id="4350-99de-7641-08b1" name="Tanksuit" hidden="false" collective="false" import="true" targetId="7511-33d9-caec-fd98" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a75-cee7-6980-9ac0" type="max"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="eaf0-8a04-d5a1-cd52" name="Tough(3)" hidden="false" targetId="d0b5-c2f5-7437-41cb" type="rule"/>
                 <infoLink id="5af5-179a-6397-30c5" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
@@ -5276,12 +5438,18 @@ FP: Faction Points</readme>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
               </costs>
             </entryLink>
-            <entryLink id="9f49-8482-dc0a-54e5" name="Bike" hidden="false" collective="false" import="true" targetId="ec71-e10b-3199-c344" type="selectionEntry">
+            <entryLink id="9f49-8482-dc0a-54e5" name="Combat Bike" hidden="false" collective="false" import="true" targetId="ec71-e10b-3199-c344" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8746-8c04-6e4c-4928" type="max"/>
+              </constraints>
               <costs>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
               </costs>
             </entryLink>
             <entryLink id="210b-0393-a848-c2e7" name="Thrust Pack" hidden="false" collective="false" import="true" targetId="4abf-3f4b-1af5-e9d2" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fc04-359f-7d5b-d232" type="max"/>
+              </constraints>
               <infoLinks>
                 <infoLink id="e11b-437e-642c-49fe" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
                 <infoLink id="18f9-9970-e3f9-541e" name="Cargo(no)" hidden="false" targetId="43f3-251b-b7d2-6a7f" type="rule"/>
@@ -5378,6 +5546,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -5752,6 +5921,21 @@ FP: Faction Points</readme>
                 <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
               </costs>
             </entryLink>
+            <entryLink id="cfc6-c05d-ee97-973d" name="Defence(min 5)" hidden="true" collective="false" import="true" targetId="5930-9f80-acfe-b1f2" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e535-ad51-f8b9-a2b6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -5835,6 +6019,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -6268,6 +6453,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -6646,6 +6832,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -7071,6 +7258,7 @@ FP: Faction Points</readme>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="d7bf-e6d3-fc9a-9948" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
       </modifiers>
@@ -7215,6 +7403,287 @@ FP: Faction Points</readme>
       <infoLinks>
         <infoLink id="0a66-ddd9-1f6f-2e6f" name="Maul" hidden="false" targetId="0409-4f3c-8c40-ac22" type="profile"/>
         <infoLink id="8b92-d94b-1e6b-f327" name="Combat Shield" hidden="false" targetId="33b3-ed42-3ea2-d606" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d7bf-e6d3-fc9a-9948" name="Chamber Renown Squad" page="" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="730b-6659-4dd1-ed10" value="99.0">
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="72ea-b75e-43cc-26d2" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
+        </modifier>
+        <modifier type="increment" field="730b-6659-4dd1-ed10" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea02-6921-4c5f-9295" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f5ed-eb9f-34ea-d5f5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0dc4-097d-f28e-5209" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5740-ce0b-0648-caab" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+        <modifier type="decrement" field="730b-6659-4dd1-ed10" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="58e5-1fef-18e7-56bd" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d730-4218-da63-8527" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c551-a86a-0236-3e48" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="93a6-8643-2ebc-4eb8" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a95a-4325-6651-37dc" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0726-d35e-f232-6cf4" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a88-dd73-4c6e-fd2a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a8a0-d946-9c7c-2f9a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bb95-6f7f-00fc-14c7" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2db3-3e2a-2a9d-244a" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e5b2-a2be-c253-5187" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8092-dade-4c2f-b2da" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b997-16cf-940a-394f" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ea46-c372-7a0d-b244" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bc2d-f923-bf2f-1e3e" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ac1b-e729-db4e-045b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e95c-458a-a89f-6cdb" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="afe4-a435-5d7a-78e5" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb49-9f3b-b074-0836" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa92-3392-c07a-25a0" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f64b-3c07-1ee1-9496" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0d2c-47cb-8cdb-8d4b" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10bb-04dc-a85d-1277" repeats="1" roundUp="false"/>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cbfe-1b77-ed3a-30c8" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="730b-6659-4dd1-ed10" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="31ad-1ea6-3cf4-0aa9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="570a-0cff-45c5-b6c3" name="Chamber Renown Soldiers (3-9)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf70-034a-7eaf-5195" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="82ae-0b73-8cc7-63c6" name="Chamber Renown Soldier" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="7.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a15-4a25-32ff-a89c" type="max"/>
+                <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="53f0-0ccf-5992-0edb" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6159-826e-336e-9080" name="Ch. Renown" hidden="false" targetId="f7cd-8dc3-9b3c-4a17" type="profile"/>
+                <infoLink id="7814-6565-cc7e-0938" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="a7b6-f4cc-8f59-887f" name="Great Energy maul" hidden="false" collective="false" import="true" targetId="7e4c-4739-b378-7ecd" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a5d-a2c4-471d-48b6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f775-f9ce-8ddf-9ec9" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="18.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="9088-fc55-6637-9d33" name="Chamber Renown Leader" hidden="false" collective="false" import="true" targetId="691d-66a6-4f91-34c8" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9438-900f-b343-f65a" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="35.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="19c0-840f-3d9b-30b0" name="Chamber Renown Medic" hidden="false" collective="false" import="true" targetId="9a54-d67e-aa88-19c7" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdec-7c9a-8d1f-bdf6" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="30.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="6c55-08f8-992c-e882" name="Transports Options" publicationId="aae0-5552-35a8-74d6" hidden="false" collective="false" import="true" targetId="83e4-87c8-450f-c015" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e86c-2920-5f65-8e59" type="max"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="6255-8420-8a0d-b0a4" name="Upgrade Any Ground Unit" hidden="false" collective="false" import="true" targetId="d458-f84e-ce85-3eac" type="selectionEntryGroup"/>
+        <entryLink id="54d7-25a9-f8e6-aef5" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="d18a-1941-f3b6-592c" type="selectionEntryGroup"/>
+        <entryLink id="fee7-6497-0981-0094" name="Upgrade Any Ground Model Without Insertion" hidden="false" collective="false" import="true" targetId="bb34-e202-3988-9be8" type="selectionEntryGroup">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e451-9fb4-eacb-3385" type="max"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7e4c-4739-b378-7ecd" name="Great Energy maul" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4036-3b65-fd6e-ae37" name="Great Energy maul" hidden="false" targetId="004d-9c5e-3e63-036c" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="691d-66a6-4f91-34c8" name="Chamber Renown Champion" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="a399-5b0e-1032-1d19" name="Ch. Renown Duellist" hidden="false" targetId="663e-2e5a-6766-3f23" type="profile"/>
+        <infoLink id="be83-98b2-1563-5193" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
+        <infoLink id="5ab6-889c-d406-0bb4" name="Assassin" hidden="false" targetId="6137-700d-31f3-d5f2" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="fa63-d92b-825b-9715" name="Renown Relic" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2789-4c25-1f5c-528d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e24-1271-42ba-5f40" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="ddd2-201a-bc01-07ce" name="Bestow Tough(+1)" hidden="false" targetId="45d4-2cb2-0790-ad34" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="0925-a128-fc0d-bde7" name="Great Energy maul" hidden="false" collective="false" import="true" targetId="7e4c-4739-b378-7ecd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf2e-084a-c674-5b70" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0fd-82f9-ef54-4791" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9a54-d67e-aa88-19c7" name="Chamber Renown Medic" hidden="false" collective="false" import="true" type="model">
+      <infoLinks>
+        <infoLink id="3297-126d-1b6e-1a6c" name="Ch. Renown Medic" hidden="false" targetId="0387-3a0a-2ab8-d16d" type="profile"/>
+        <infoLink id="3bfb-7a7f-2128-fd18" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="37a4-8ce6-e9bf-4b92" name="Medical Support" hidden="false" collective="false" import="true" targetId="06a8-4615-14d3-a6f5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1269-c653-7777-530c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2afa-35f0-b01d-3f3c" type="min"/>
+          </constraints>
+        </entryLink>
+        <entryLink id="010a-19a8-6a9f-a549" name="Great Energy maul" hidden="false" collective="false" import="true" targetId="7e4c-4739-b378-7ecd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="475a-5bcb-fe39-ff47" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a036-3613-8ed7-0808" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="78b0-d5ac-a486-59e8" name="Chamber Renown Standard Bearer" hidden="false" collective="false" import="true" type="model">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c5b8-c4de-4863-3916" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="9a68-a4c7-e72f-9dd3" name="Ch. Renown Standard Bearer" hidden="false" targetId="467a-a23b-ecb3-c11b" type="profile"/>
+        <infoLink id="9cf3-254e-85c8-5d0f" name="Bestow Tough(+1) (12&quot;)" hidden="false" targetId="b241-766a-3ee5-fcb1" type="rule"/>
+        <infoLink id="2cba-1d14-efef-1c79" name="Accurate" hidden="false" targetId="da6a-4683-a56a-18cf" type="rule"/>
+      </infoLinks>
+      <entryLinks>
+        <entryLink id="ae6a-4379-3086-8ac0" name="Great Energy maul" hidden="false" collective="false" import="true" targetId="7e4c-4739-b378-7ecd" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d892-00f9-e52f-2aea" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d6c4-4a8c-2546-d58f" type="min"/>
+          </constraints>
+        </entryLink>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="2f13-0ebc-14fa-05d3" name="Massive Energy fist and Flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="40f9-1f58-bdfe-a9c9" name="Massive Energy fist" hidden="false" targetId="70f4-643d-da86-3cd6" type="profile"/>
+        <infoLink id="4eb8-be6f-c04d-894c" name="Flamer" hidden="false" targetId="3c41-25bd-16ca-ea28" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9e09-277d-0d39-a6cf" name="Massive Energy fist and Heatgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="db9e-2d65-1af2-c54e" name="Massive Energy fist" hidden="false" targetId="70f4-643d-da86-3cd6" type="profile"/>
+        <infoLink id="e01f-c888-db6a-3373" name="Heatgun" hidden="false" targetId="c84c-c6ec-4f7d-c469" type="profile"/>
+        <infoLink id="f460-0afc-f74d-ff35" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3f15-b9a9-0bb4-fbf4" name="Massive Energy claws and Flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7eca-f6be-a783-ee21" name="Massive Energy claws" hidden="false" targetId="2af6-a656-924c-06e0" type="profile"/>
+        <infoLink id="eeef-f2c7-71e1-501e" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="5c08-135d-a240-0a00" name="Flamer" hidden="false" targetId="3c41-25bd-16ca-ea28" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="227a-b3bb-9ce5-50ba" name="Massive Energy claws and Heatgun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="1685-1660-db72-ccc4" name="Massive Energy claws" hidden="false" targetId="2af6-a656-924c-06e0" type="profile"/>
+        <infoLink id="a9a9-4404-f031-5b19" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="1b86-b9cf-3b31-62c5" name="Heatgun" hidden="false" targetId="c84c-c6ec-4f7d-c469" type="profile"/>
+        <infoLink id="3021-4da5-515c-4359" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c9f6-1b5c-a8ed-d0bf" name="Massive Energy claws and Storm slugger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5627-69a3-6c3d-e435" name="Massive Energy claws" hidden="false" targetId="2af6-a656-924c-06e0" type="profile"/>
+        <infoLink id="61a2-851b-d9c3-d6b3" name="Vicious" hidden="false" targetId="f715-7f8f-4ee4-380d" type="rule"/>
+        <infoLink id="e28a-a0e6-ef9b-2235" name="Storm slugger" hidden="false" targetId="3e2c-54c3-8b2b-c7d9" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8222,6 +8691,59 @@ pistol</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f7cd-8dc3-9b3c-4a17" name="Ch. Renown Soldier" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6 min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="004d-9c5e-3e63-036c" name="Great Energy maul" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="663e-2e5a-6766-3f23" name="Ch. Renown Champion" page="" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">2</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7 min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">3</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0387-3a0a-2ab8-d16d" name="Ch. Renown Medic" page="" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6 min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="467a-a23b-ecb3-c11b" name="Ch. Renown Standard Bearer" page="" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">6 min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">1</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

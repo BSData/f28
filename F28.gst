@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="30" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="31" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -3065,7 +3065,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="2c11-c679-f848-044c" name="Charge(2&quot;)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="e013-1bcc-711e-3427" name="Charge(distance)" hidden="false" targetId="0803-37eb-c60f-6786" type="rule"/>
+        <infoLink id="e013-1bcc-711e-3427" name="Charge(2&quot;)" hidden="false" targetId="3691-00b1-12e3-4c0c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4075,6 +4075,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="16de-bb8b-6ed9-483e" name="Interceptor" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="9e2f-43db-2245-6eb1" name="Interceptor" hidden="false" targetId="e629-b7d0-036a-fb48" type="rule"/>
+        <infoLink id="1c8a-ec8d-9d19-ce9e" name="Ambush(superior)" hidden="false" targetId="39da-5e02-4dbb-7d09" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -4374,7 +4375,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="6ab0-73a7-edf3-4dbc" name="Charge(3&quot;)" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="2a41-ecfe-6014-0860" name="Charge(distance)" hidden="false" targetId="0803-37eb-c60f-6786" type="rule"/>
+        <infoLink id="2a41-ecfe-6014-0860" name="Charge(3&quot;)" hidden="false" targetId="7c92-fa16-ee47-4ebc" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -7720,7 +7721,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="b107-4122-5069-59b4" name="Bone-blade and whip" hidden="false" targetId="8927-96dc-c171-f8e4" type="profile">
           <modifiers>
-            <modifier type="set" field="fea5-12e0-2cf5-710d" value="CC (3)"/>
+            <modifier type="set" field="fea5-12e0-2cf5-710d" value="CC (2)"/>
             <modifier type="append" field="name" value="(Paired)"/>
           </modifiers>
         </infoLink>
@@ -8308,6 +8309,65 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="0fbb-cf54-1c0b-9c52" name="Guard Tearing claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5432-d397-f79b-76f4" name="Vital Strike" hidden="false" targetId="a363-87ce-254e-2793" type="rule"/>
+        <infoLink id="ebb0-ce73-f40a-604b" name="Guard Tearing claws" hidden="false" targetId="7aee-5b45-c581-fa07" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a424-1c01-84db-741d" name="Guard Bone-blade and whip" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f81b-9207-e7a5-350d" name="Guard Bone-blade and whip" hidden="false" targetId="0093-ce41-98bd-921d" type="profile"/>
+        <infoLink id="9340-e064-2d3b-9154" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="e304-be03-8fda-e2e9" name="Parry" hidden="false" targetId="1609-f037-f8cf-20da" type="rule"/>
+        <infoLink id="1cf2-cf11-d868-244a" name="Assassin" hidden="false" targetId="6137-700d-31f3-d5f2" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6aeb-2517-4a17-927b" name="Guard Bone-blades" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="bcf6-4c3c-0da8-d4fd" name="Parry" hidden="false" targetId="1609-f037-f8cf-20da" type="rule"/>
+        <infoLink id="8db0-76f0-fb7e-6b57" name="Cleave" hidden="false" targetId="ccd5-bfe7-debe-e636" type="rule"/>
+        <infoLink id="3aa5-72c7-b8bf-97f6" name="Guard Bone-blades" hidden="false" targetId="fcc0-305a-8e96-b1da" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="4a8c-5a90-9f59-b7ae" name="Guard Bone-scythes" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="89c4-2af7-ce04-fe2d" name="Guard Bone-scythes" hidden="false" targetId="ecf5-d338-cc6e-2f1d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8e46-7483-eb88-e0e0" name="Guard Crushing Claws" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="51ab-dff8-bb08-2cc3" name="Guard Crushing Claws" hidden="false" targetId="18d6-99df-6f76-49a8" type="profile"/>
+        <infoLink id="ce32-5cc6-24e7-5752" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
+        <infoLink id="2ce1-e529-1474-30e8" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="2ba8-54b2-b509-bdf3" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -8389,7 +8449,7 @@ each ‘6’ discarded. requiring two ‘6’s for 7, three for 8, etc.</descrip
       <description>Ignore the first wound suffered by this unit from attacks each turn.</description>
     </rule>
     <rule id="6137-700d-31f3-d5f2" name="Assassin" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
+      <description>Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole. The Medical Support trait may not be used to cancel wounds from this model.</description>
     </rule>
     <rule id="3292-0130-df97-f167" name="Extra Strike" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <comment>Remove after PG update.</comment>
@@ -8413,7 +8473,7 @@ In addition, apply any result of one or more ‘1’.</description>
       <description>When attacking with priority gain, effect.</description>
     </rule>
     <rule id="a1ed-6517-ae1a-b5bd" name="Platebreaker" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
-      <description>AT(+D6) and damage(2).</description>
+      <description>AT(+D6). When rolling on the vehicle damage table from wounds from this weapon, roll two dice and keep the highest. Damage(2) vs non-vehicles.</description>
     </rule>
     <rule id="18bd-ea47-5c88-c607" name="Hazardous" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Model using weapon suffers 1 wound(min 6) hit for each ‘1’ on the to hit roll.</description>
@@ -8458,7 +8518,8 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="428c-e0ea-ff6d-9f18" name="VTOL" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Target(min 5) or Target(5) vs attacks with antiair. Move(flight). CC(no). Never starts the game deployed on the board.
 Passengers forced to disembark a destroyed VTOL take a wound(min 6) hit for each wound instead of a dangerous terrain test.
-May not be the target of non-VTOL CC attacks or ranged attacks with 12” or less range.</description>
+May not be the target of non-VTOL CC attacks or ranged attacks with 12” or less range.
+Weapons on VTOL do not become accurate from the heavy trait.</description>
     </rule>
     <rule id="57dd-f324-dd55-8fce" name="Vehicle(walker)" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <comment>Remove after PG update.</comment>
@@ -8479,7 +8540,8 @@ If activated in staging with a single action marker, you may still perform a ful
 inaccurate vs ground targets.
 Passengers forced to disembark a destroyed aircraft take a wound(min 6) hit for each
 wound instead of a dangerous terrain test.
-May not be the target of weapons that have less than two (2) attack dice or 24” or less range unless they are mounted on aircraft.</description>
+May not be the target of weapons that have less than two (2) attack dice or 24” or less range unless they are mounted on aircraft.
+Weapons on Aircraft do not become accurate from the heavy trait.</description>
     </rule>
     <rule id="ca51-037a-f7e2-4764" name="Vehicle" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>Model no longer counts as regular. Move(9). Additional rules in the “Vehicles” section of the core rules.</description>
@@ -8738,8 +8800,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
       <description>Models of enemy units within range has trait. If a unit already has trait at a worse level, this takes precedence.</description>
     </rule>
     <rule id="e629-b7d0-036a-fb48" name="Interceptor" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
-      <description>If in staging with less than two (2) action markers and an enemy Aircraft or VTOL unit enters the board, this model may immediately make one move onto the board and take one (1) action marker.
-This model has First Strike vs Aircraft that attack ground targets.</description>
+      <description>This model has Ambush(superior) vs. Aircraft and VTOL attacking ground targets, and is not subject to Interdiction by ground targets, unless they specifically target aircraft.</description>
     </rule>
     <rule id="d60c-55a0-0459-185e" name="Tight Spread" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
       <comment>Remove after PG update.</comment>
@@ -9334,7 +9395,6 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>All models in this model’s unit have Repel(2&quot;): CC attacks vs this model have their range reduced by 2&quot;.</description>
     </rule>
     <rule id="8f80-bc2f-4ff4-b5c0" name="Bestow Move and Fire" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
-      <comment></comment>
       <description>All models in this model’s unit have Move and Fire: May attack with hit(-1) after double move, ranged attacks only. If the unit suffers any suppression after the two moves, it loses the attack.</description>
     </rule>
     <rule id="f9ae-1a02-1abd-7057" name="Assault Launcher" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
@@ -9634,7 +9694,7 @@ least this level of Morale.</description>
       <description>Target(+1) vs ranged attacks beyond 12&quot; only. Multiple sources of Concealment does not stack.</description>
     </rule>
     <rule id="9e56-a99a-574c-ec87" name="Bestow Assassin" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>All models in this model’s unit have Assassin: Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole.</description>
+      <description>All models in this model’s unit have Assassin: Attacker may target individual models (instead of units). Any suppression caused is still applied to the unit as a whole. he Medical Support trait may not be used to cancel wounds from this model.</description>
     </rule>
     <rule id="79e8-b9d8-6269-6cfd" name="Bestow Concealment(6&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 6&quot; have Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
@@ -9657,7 +9717,7 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
       <description>No movement penalty for difficult terrain. Counts as regular when evaluating dangerous terrain.</description>
     </rule>
     <rule id="dbaf-fda1-3ef1-6ac7" name="Cargo(0)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
-      <description>This model counts as 0 models for Capacity purposes.</description>
+      <description>This model does not take up any capacity in transports.</description>
     </rule>
     <rule id="cfb0-a61d-0348-8a19" name="Cargo(2)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>This model counts as 2 models for Capacity purposes.</description>
@@ -12436,10 +12496,11 @@ Swing: CC (1)</characteristic>
       </characteristics>
     </profile>
     <profile id="db3d-7be4-ff7b-420a" name="Crushing Claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1vs unarmed</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"></characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
@@ -13290,40 +13351,42 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       </characteristics>
     </profile>
     <profile id="0dbd-f036-dbaf-912c" name="Bone-blades" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment>w</comment>
+      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"></characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, parry</characteristic>
       </characteristics>
     </profile>
     <profile id="de98-7070-c521-aace" name="Bone-scythes" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
     <profile id="80c4-524a-dcc9-dcef" name="Tearing claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment>w</comment>
+      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vital strike</characteristic>
       </characteristics>
     </profile>
     <profile id="8927-96dc-c171-f8e4" name="Bone-blade and whip" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"></characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">assassin, cleave, parry</characteristic>
       </characteristics>
     </profile>
@@ -13990,6 +14053,53 @@ pistol</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="0093-ce41-98bd-921d" name="Guard Bone-blade and whip" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">assassin, cleave, parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fcc0-305a-8e96-b1da" name="Guard Bone-blades" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment></comment>
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, parry</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ecf5-d338-cc6e-2f1d" name="Guard Bone-scythes" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="18d6-99df-6f76-49a8" name="Guard Crushing Claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"></characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="7aee-5b45-c581-fa07" name="Guard Tearing claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment></comment>
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vital strike</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

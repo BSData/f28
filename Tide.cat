@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="30" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="442c-cdba-2bda-ead8" name="The Tide" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -271,36 +271,77 @@ FP: Faction Points</readme>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
+            <selectionEntryGroup id="c6a4-29fc-c6a7-67df" name="Warrior Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb40-1f4e-d703-3bab" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d1a-df65-e091-e5b0" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2b68-a722-1f74-d731" name="Acid cannon" hidden="false" collective="false" import="true" targetId="34a7-0070-4665-b9bb" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d45e-b198-6c22-be85" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="39aa-dd59-242b-5d66" name="Implant gun" hidden="false" collective="false" import="true" targetId="e959-6bbc-2231-4325" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7093-d0d5-d206-7aa8" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="1479-a79b-a043-8acc" name="Charge(2&quot;) and Paired CC Weapon" hidden="false" collective="false" import="true" targetId="a2df-2b09-c004-e8ac" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35d1-8bc6-7966-2ee7" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="c0ed-4cd3-b81d-58ea" name="Improved carbine" hidden="false" collective="false" import="true" targetId="9c3b-7e27-936f-71c9" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0efe-5ab8-6d89-64e1" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="a35b-b60b-53bf-6e31" name="Warrior CC weapons" hidden="false" collective="false" import="true" targetId="e658-ac57-9d54-976f" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="decrement" field="f616-d3f8-e2e6-d7eb" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="fba8-042c-da14-1ac7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1479-a79b-a043-8acc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="2da7-3648-7376-6329" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="fba8-042c-da14-1ac7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1479-a79b-a043-8acc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f616-d3f8-e2e6-d7eb" type="max"/>
-                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2da7-3648-7376-6329" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f616-d3f8-e2e6-d7eb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2da7-3648-7376-6329" type="min"/>
               </constraints>
-              <entryLinks>
-                <entryLink id="f00a-fc79-3a4f-234b" name="Improved Carbine" hidden="false" collective="false" import="true" targetId="9c3b-7e27-936f-71c9" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3214-b41f-8e12-8737" type="max"/>
-                  </constraints>
-                </entryLink>
-                <entryLink id="b82f-881d-2343-0e51" name="Acid Cannon" hidden="false" collective="false" import="true" targetId="34a7-0070-4665-b9bb" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7221-773f-a727-ec0b" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
-                  </costs>
-                </entryLink>
-                <entryLink id="6f95-b2a1-a2d0-9625" name="Implant Gun" hidden="false" collective="false" import="true" targetId="e959-6bbc-2231-4325" type="selectionEntry">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ed7a-0c29-ad77-3fbf" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
-                  </costs>
-                </entryLink>
-              </entryLinks>
+            </entryLink>
+            <entryLink id="6505-4f52-2485-5c67" name="Warrior CC weapons (Paired)" hidden="false" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="increment" field="24c1-00eb-fbfa-9360" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="fba8-042c-da14-1ac7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1479-a79b-a043-8acc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="increment" field="8a23-a08e-e6e9-407b" value="1.0">
+                  <conditions>
+                    <condition field="selections" scope="fba8-042c-da14-1ac7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1479-a79b-a043-8acc" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="24c1-00eb-fbfa-9360" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a23-a08e-e6e9-407b" type="min"/>
+              </constraints>
             </entryLink>
           </entryLinks>
         </selectionEntryGroup>
@@ -364,14 +405,24 @@ FP: Faction Points</readme>
     <selectionEntry id="84ab-2fa2-46ad-55eb" name="Tide Warrior" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set-primary" field="category" value="8882-253b-967f-1dba">
-          <conditions>
-            <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2407-b27f-2342-2046" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e122-f362-9426-66aa" type="equalTo"/>
+                <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="51fc-8d37-8134-070f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
         <modifier type="remove" field="category" value="3c56-72a8-f435-00f6">
-          <conditions>
-            <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="2407-b27f-2342-2046" type="equalTo"/>
-          </conditions>
+          <conditionGroups>
+            <conditionGroup type="or">
+              <conditions>
+                <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="e122-f362-9426-66aa" type="equalTo"/>
+                <condition field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="51fc-8d37-8134-070f" type="equalTo"/>
+              </conditions>
+            </conditionGroup>
+          </conditionGroups>
         </modifier>
       </modifiers>
       <categoryLinks>
@@ -434,116 +485,151 @@ FP: Faction Points</readme>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="2737-f6a1-3476-1788" name="Warrior CC weapons" hidden="false" collective="false" import="true" targetId="e658-ac57-9d54-976f" type="selectionEntryGroup">
+            <selectionEntryGroup id="8d58-e557-fc2c-dbbc" name="Warrior Weapons" hidden="false" collective="false" import="true">
               <modifiers>
-                <modifier type="increment" field="d673-4324-3dce-0c42" value="2.0">
+                <modifier type="increment" field="5d09-a050-35f2-e447" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="a683-7b95-eff6-c4a2" value="2.0">
+                <modifier type="increment" field="5369-d738-423e-54d4" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="a683-7b95-eff6-c4a2" value="2.0">
-                  <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0809-6103-3fa7-f03e" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="d673-4324-3dce-0c42" value="2.0">
-                  <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0809-6103-3fa7-f03e" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a683-7b95-eff6-c4a2" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d673-4324-3dce-0c42" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d09-a050-35f2-e447" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5369-d738-423e-54d4" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="6f6e-99d1-7b4f-9420" name="Acid Cannon" hidden="false" collective="false" import="true" targetId="34a7-0070-4665-b9bb" type="selectionEntry">
+                <entryLink id="2f3c-8786-eead-f2e8" name="Acid cannon" hidden="false" collective="false" import="true" targetId="34a7-0070-4665-b9bb" type="selectionEntry">
                   <modifiers>
-                    <modifier type="decrement" field="2359-a824-578a-fc35" value="1.0">
+                    <modifier type="decrement" field="b592-b814-9cb1-89eb" value="1.0">
                       <repeats>
                         <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e959-6bbc-2231-4325" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="increment" field="2359-a824-578a-fc35" value="1.0">
+                    <modifier type="increment" field="b592-b814-9cb1-89eb" value="1.0">
                       <repeats>
                         <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2359-a824-578a-fc35" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b592-b814-9cb1-89eb" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="4bff-c6c7-ec96-7279" name="Implant Gun" hidden="false" collective="false" import="true" targetId="e959-6bbc-2231-4325" type="selectionEntry">
+                <entryLink id="554d-2488-7d8c-0267" name="Implant gun" hidden="false" collective="false" import="true" targetId="e959-6bbc-2231-4325" type="selectionEntry">
                   <modifiers>
-                    <modifier type="increment" field="a3d7-9f2d-4954-3792" value="1.0">
+                    <modifier type="increment" field="1c31-7176-d74b-1350" value="1.0">
                       <repeats>
                         <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
-                    <modifier type="decrement" field="a3d7-9f2d-4954-3792" value="1.0">
+                    <modifier type="decrement" field="1c31-7176-d74b-1350" value="1.0">
                       <repeats>
                         <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="34a7-0070-4665-b9bb" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3d7-9f2d-4954-3792" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c31-7176-d74b-1350" type="max"/>
                   </constraints>
                   <costs>
                     <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
                   </costs>
                 </entryLink>
-                <entryLink id="4a83-de30-0a63-2e5b" name="Improved Carbine" hidden="false" collective="false" import="true" targetId="9c3b-7e27-936f-71c9" type="selectionEntry">
+                <entryLink id="5733-db43-934a-f3e2" name="Charge(2&quot;) and Paired CC Weapon" hidden="false" collective="false" import="true" targetId="a2df-2b09-c004-e8ac" type="selectionEntry">
                   <modifiers>
-                    <modifier type="increment" field="96ba-83a3-d12e-9387" value="1.0">
+                    <modifier type="increment" field="a788-c970-a7e0-9f99" value="1.0">
                       <repeats>
                         <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
-                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ba-83a3-d12e-9387" type="max"/>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a788-c970-a7e0-9f99" type="max"/>
                   </constraints>
                 </entryLink>
+                <entryLink id="f949-b810-9aad-d488" name="Improved carbine" hidden="false" collective="false" import="true" targetId="9c3b-7e27-936f-71c9" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="2cf3-901d-03c3-72bf" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cf3-901d-03c3-72bf" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="88a6-b269-cf7d-d203" name="Spitter gun" hidden="false" collective="false" import="true" targetId="6be0-a0ab-bb4f-ac0a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="increment" field="7f13-8516-ed8c-77da" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f13-8516-ed8c-77da" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
               </entryLinks>
-            </entryLink>
-            <entryLink id="6cfb-2b8f-959d-159b" name="Paired Warrior CC weapons" hidden="false" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+          <entryLinks>
+            <entryLink id="6cfb-2b8f-959d-159b" name="Warrior CC weapons (Paired)" hidden="false" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="increment" field="a6b2-57fb-d1ef-82c0" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5733-db43-934a-f3e2" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="increment" field="45b6-05ca-e627-67fd" value="1.0">
                   <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="a6b2-57fb-d1ef-82c0" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e658-ac57-9d54-976f" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-                <modifier type="decrement" field="45b6-05ca-e627-67fd" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e658-ac57-9d54-976f" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5733-db43-934a-f3e2" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b2-57fb-d1ef-82c0" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="45b6-05ca-e627-67fd" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="b673-5573-613d-dcd4" name="Warrior CC weapons" hidden="false" collective="false" import="true" targetId="e658-ac57-9d54-976f" type="selectionEntryGroup">
+              <modifiers>
+                <modifier type="increment" field="0f71-f913-b877-c668" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="increment" field="4d19-1b44-5ee2-d452" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="28e1-0393-8a45-53ae" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="4d19-1b44-5ee2-d452" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5733-db43-934a-f3e2" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="decrement" field="0f71-f913-b877-c668" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="84ab-2fa2-46ad-55eb" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="5733-db43-934a-f3e2" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d19-1b44-5ee2-d452" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f71-f913-b877-c668" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -1452,32 +1538,37 @@ FP: Faction Points</readme>
                 <entryLink id="a80d-22c2-767b-1da7" name="Electrocannon" hidden="false" collective="false" import="true" targetId="6d84-0c0e-140e-9637" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
-          </selectionEntryGroups>
-          <entryLinks>
-            <entryLink id="b89c-0288-da00-be33" name="Paired Warrior CC weapons" hidden="true" collective="false" import="true" targetId="0809-6103-3fa7-f03e" type="selectionEntryGroup">
+            <selectionEntryGroup id="10fc-5a58-d58c-be2d" name="Weapons CC Guard" hidden="true" collective="false" import="true">
               <modifiers>
                 <modifier type="set" field="hidden" value="false">
                   <conditions>
                     <condition field="selections" scope="4458-2339-c1f4-1b0b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e0fc-c34f-b704-5dff" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="2391-daee-cc39-bf6c" value="1.0">
+                <modifier type="increment" field="b2f2-cdc1-4663-d8f9" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="4458-2339-c1f4-1b0b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f709-79fb-efdf-9fa3" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
-                <modifier type="increment" field="3635-7b84-6722-781e" value="1.0">
+                <modifier type="increment" field="81b2-55b6-3bed-b9f5" value="1.0">
                   <repeats>
                     <repeat field="selections" scope="4458-2339-c1f4-1b0b" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="f709-79fb-efdf-9fa3" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2391-daee-cc39-bf6c" type="max"/>
-                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3635-7b84-6722-781e" type="min"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b2f2-cdc1-4663-d8f9" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81b2-55b6-3bed-b9f5" type="min"/>
               </constraints>
-            </entryLink>
-          </entryLinks>
+              <entryLinks>
+                <entryLink id="460d-f25a-f977-c2f2" name="Guard Bone-blade and whip" hidden="false" collective="false" import="true" targetId="a424-1c01-84db-741d" type="selectionEntry"/>
+                <entryLink id="22ce-dfbf-8b67-375e" name="Guard Bone-blades" hidden="false" collective="false" import="true" targetId="6aeb-2517-4a17-927b" type="selectionEntry"/>
+                <entryLink id="d411-ae2f-3585-31f8" name="Guard Bone-scythes" hidden="false" collective="false" import="true" targetId="4a8c-5a90-9f59-b7ae" type="selectionEntry"/>
+                <entryLink id="be94-1f0a-fdd7-db11" name="Guard Crushing Claws" hidden="false" collective="false" import="true" targetId="8e46-7483-eb88-e0e0" type="selectionEntry"/>
+                <entryLink id="e8eb-1e67-5812-377a" name="Guard Tearing claws" hidden="false" collective="false" import="true" targetId="0fbb-cf54-1c0b-9c52" type="selectionEntry"/>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="65bd-50fc-aa4f-9d3e" name="Upgrade Any Massive Model" hidden="false" collective="false" import="true">
           <entryLinks>
@@ -2274,6 +2365,16 @@ FP: Faction Points</readme>
         <infoLink id="9e12-d242-662a-56a7" name="Implant Gun" hidden="false" targetId="d060-4769-0729-bea9" type="profile"/>
         <infoLink id="4fce-7506-2e63-b58a" name="Savage Strike" hidden="false" targetId="6f96-a37b-1fe7-1240" type="rule"/>
         <infoLink id="188e-203a-1f3b-9ccd" name="Inaccurate" hidden="false" targetId="e417-ad3a-3c0b-2794" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a2df-2b09-c004-e8ac" name="Charge(2&quot;) and Paired CC Weapon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="693f-3505-cf69-0990" name="Charge(2&quot;)" hidden="false" targetId="3691-00b1-12e3-4c0c" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
