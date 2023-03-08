@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="16" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="17" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -4116,14 +4116,32 @@ FP: Faction Points</readme>
             <entryLink id="6de5-de72-b08b-a67a" name="Veteran Weapons" hidden="false" collective="false" import="true" targetId="31cc-6dca-901e-7e79" type="selectionEntryGroup">
               <modifiers>
                 <modifier type="set" field="6d6f-a4e9-9382-459f" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c02b-f217-0c54-ccf6" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07b3-c566-524b-293e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c02b-f217-0c54-ccf6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ffae-07d2-67b0-1c7c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4db-c145-289d-3aad" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b94-7768-a018-04e2" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cff-e04c-f527-5254" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" field="7050-30d2-20ad-1a8c" value="0.0">
-                  <conditions>
-                    <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c02b-f217-0c54-ccf6" type="equalTo"/>
-                  </conditions>
+                  <conditionGroups>
+                    <conditionGroup type="or">
+                      <conditions>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="07b3-c566-524b-293e" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c02b-f217-0c54-ccf6" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ffae-07d2-67b0-1c7c" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4db-c145-289d-3aad" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2b94-7768-a018-04e2" type="equalTo"/>
+                        <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7cff-e04c-f527-5254" type="equalTo"/>
+                      </conditions>
+                    </conditionGroup>
+                  </conditionGroups>
                 </modifier>
                 <modifier type="set" field="hidden" value="true">
                   <conditions>
@@ -7959,7 +7977,7 @@ FP: Faction Points</readme>
     </selectionEntryGroup>
     <selectionEntryGroup id="f162-d966-c670-32e6" name="Veteran Weapons CC" hidden="false" collective="false" import="true">
       <entryLinks>
-        <entryLink id="00e9-db76-6d29-0529" name="Energy Sword" hidden="false" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
+        <entryLink id="00e9-db76-6d29-0529" name="Energy sword" hidden="false" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
           </costs>
@@ -8025,6 +8043,40 @@ FP: Faction Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
           </costs>
         </entryLink>
+        <entryLink id="7633-0c76-ed8e-19e6" name="Heat pistol" hidden="true" collective="false" import="true" targetId="e190-fd1f-a913-9b2a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="19e4-6c54-f3fe-1d01" name="Hand flamer" hidden="true" collective="false" import="true" targetId="bb11-8db3-04cd-3ed8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="bb34-e202-3988-9be8" name="Upgrade Any Ground Model Without Insertion" hidden="false" collective="false" import="true">
@@ -8069,7 +8121,7 @@ FP: Faction Points</readme>
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="7a54-bebc-3eb0-0ddb" name="Energy Sword" hidden="true" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
+        <entryLink id="7a54-bebc-3eb0-0ddb" name="Energy sword" hidden="true" collective="false" import="true" targetId="c4ec-7bca-807f-5ebf" type="selectionEntry">
           <modifiers>
             <modifier type="set" field="hidden" value="false">
               <conditions>
@@ -8120,6 +8172,34 @@ FP: Faction Points</readme>
               <conditions>
                 <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7511-33d9-caec-fd98" type="equalTo"/>
               </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="9e81-baf0-78ec-5e38" name="Hand flamer" hidden="true" collective="false" import="true" targetId="bb11-8db3-04cd-3ed8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="37a2-bb40-9aca-48cf" name="Heat pistol" hidden="true" collective="false" import="true" targetId="e190-fd1f-a913-9b2a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
             </modifier>
           </modifiers>
         </entryLink>
