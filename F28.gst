@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="31" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="32" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -12410,7 +12410,7 @@ Swing: CC (1)</characteristic>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2) </characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5, re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive, heavy</characteristic>
       </characteristics>
     </profile>
@@ -12496,11 +12496,10 @@ Swing: CC (1)</characteristic>
       </characteristics>
     </profile>
     <profile id="db3d-7be4-ff7b-420a" name="Crushing Claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"></characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
@@ -12603,7 +12602,7 @@ heavy, cleave</characteristic>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2) </characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive, heavy</characteristic>
       </characteristics>
     </profile>
@@ -13351,17 +13350,15 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       </characteristics>
     </profile>
     <profile id="0dbd-f036-dbaf-912c" name="Bone-blades" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"></characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave, parry</characteristic>
       </characteristics>
     </profile>
     <profile id="de98-7070-c521-aace" name="Bone-scythes" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -13371,7 +13368,6 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       </characteristics>
     </profile>
     <profile id="80c4-524a-dcc9-dcef" name="Tearing claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -13381,12 +13377,11 @@ without Aircraft, VTOL, hover or jump)</characteristic>
       </characteristics>
     </profile>
     <profile id="8927-96dc-c171-f8e4" name="Bone-blade and whip" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"></characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">assassin, cleave, parry</characteristic>
       </characteristics>
     </profile>
@@ -14065,7 +14060,6 @@ pistol</characteristic>
       </characteristics>
     </profile>
     <profile id="fcc0-305a-8e96-b1da" name="Guard Bone-blades" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
@@ -14087,13 +14081,12 @@ pistol</characteristic>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"></characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker</characteristic>
       </characteristics>
     </profile>
     <profile id="7aee-5b45-c581-fa07" name="Guard Tearing claws" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
-      <comment></comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
