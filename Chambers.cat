@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="17" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="31" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="17" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -7973,6 +7973,40 @@ FP: Faction Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
           </costs>
         </entryLink>
+        <entryLink id="8572-7f6a-b352-5483" name="Hand flamer" hidden="true" collective="false" import="true" targetId="bb11-8db3-04cd-3ed8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="b2ad-9501-8450-c57a" name="Heat pistol" hidden="true" collective="false" import="true" targetId="e190-fd1f-a913-9b2a" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditionGroups>
+                <conditionGroup type="and">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
+                  </conditions>
+                </conditionGroup>
+              </conditionGroups>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
+          </costs>
+        </entryLink>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="f162-d966-c670-32e6" name="Veteran Weapons CC" hidden="false" collective="false" import="true">
@@ -8041,40 +8075,6 @@ FP: Faction Points</readme>
           </modifiers>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="7633-0c76-ed8e-19e6" name="Heat pistol" hidden="true" collective="false" import="true" targetId="e190-fd1f-a913-9b2a" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
-          </costs>
-        </entryLink>
-        <entryLink id="19e4-6c54-f3fe-1d01" name="Hand flamer" hidden="true" collective="false" import="true" targetId="bb11-8db3-04cd-3ed8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditionGroups>
-                <conditionGroup type="and">
-                  <conditions>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c6ae-00d0-e102-f77b" type="equalTo"/>
-                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="de25-06ce-23fd-706e" type="equalTo"/>
-                  </conditions>
-                </conditionGroup>
-              </conditionGroups>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="2.5"/>
           </costs>
         </entryLink>
       </entryLinks>
