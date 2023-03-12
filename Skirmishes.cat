@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fbc0-334c-d942-bdff" name="Skirmishes" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force Generation:
 Decide on a number of points (p), max restricted weapons (R), advancements (A), Faction Powers (FP) and Themed Skrimish Faction Descriptors (D).
 
@@ -5540,6 +5540,20 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="7026-edfe-0973-ffe5" name="Restricted Access, Underslung" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4eaa-7b7b-be25-5dfe" name="Restricted Access" hidden="false" targetId="76f7-3e5f-159a-3a0e" type="rule"/>
+        <infoLink id="2dec-28c4-e58c-82cb" name="Underslung Weapon" hidden="false" targetId="99f6-7862-9b94-d14f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="A" typeId="8111-949b-1fb8-303b" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+        <cost name="D" typeId="01e5-b16d-febb-98b7" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0d5e-d12d-ee1a-ac97" name="Weapons, Range (hands(1))" hidden="false" collective="false" import="true">
@@ -5626,6 +5640,19 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           </modifiers>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6e7b-53e9-ae73-3cf7" name="Demolition charge" hidden="true" collective="false" import="true" targetId="4853-750e-5b0a-fad8" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="R" typeId="16ae-ac6b-4ea9-77e4" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -5994,18 +6021,6 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           </modifiers>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-          </costs>
-        </entryLink>
-        <entryLink id="273e-1e90-dcc7-2bff" name="Demolition Charge" hidden="true" collective="false" import="true" targetId="4853-750e-5b0a-fad8" type="selectionEntry">
-          <modifiers>
-            <modifier type="set" field="hidden" value="false">
-              <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bcf5-f76f-8bf8-80a3" type="equalTo"/>
-              </conditions>
-            </modifier>
-          </modifiers>
-          <costs>
-            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
           </costs>
         </entryLink>
         <entryLink id="b123-6a7a-5ebf-849b" name="HMG (Limited Ammo)" hidden="true" collective="false" import="true" targetId="a77a-8f7b-d6e4-b254" type="selectionEntry">
@@ -6664,7 +6679,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="7eb8-3923-bc5b-3615" name="Trinket: Lucky amulet" hidden="false" collective="false" import="true" targetId="a102-c1f9-3d26-7257" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="0d58-4086-116c-531e" value="1.0">
+            <modifier type="decrement" field="bdd1-e713-29f7-9fd5" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6679,7 +6694,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d58-4086-116c-531e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="0d58-4086-116c-531e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bdd1-e713-29f7-9fd5" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -6687,7 +6703,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="402b-6d06-fbea-56e3" name="Trinket: Protective charm" hidden="false" collective="false" import="true" targetId="53f0-3a8a-df20-3e11" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="7ee0-0710-d7ed-8442" value="1.0">
+            <modifier type="decrement" field="f565-5194-b624-3bd2" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6702,7 +6718,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ee0-0710-d7ed-8442" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="7ee0-0710-d7ed-8442" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f565-5194-b624-3bd2" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -6710,7 +6727,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="4c75-7847-ff19-41a0" name="Trinket: Faction symbol" hidden="false" collective="false" import="true" targetId="a2f5-a888-0c28-641b" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="8896-dbc0-a898-d151" value="1.0">
+            <modifier type="decrement" field="745c-f2b4-6003-b6b3" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6725,7 +6742,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8896-dbc0-a898-d151" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="8896-dbc0-a898-d151" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="745c-f2b4-6003-b6b3" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -6733,7 +6751,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="8cd6-0681-4309-2ef6" name="Trinket: Seal of purity" hidden="false" collective="false" import="true" targetId="e63d-caf3-f12b-b7c6" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="332f-cb26-e016-d42e" value="1.0">
+            <modifier type="decrement" field="ae67-ae29-d84e-fef5" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6748,7 +6766,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="332f-cb26-e016-d42e" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="332f-cb26-e016-d42e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae67-ae29-d84e-fef5" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -6756,7 +6775,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="d072-2b13-dce2-90d3" name="Trinket: Cursed Icon" hidden="false" collective="false" import="true" targetId="4bf6-155c-06cb-ca0b" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="4b2f-17e6-57ab-0a21" value="1.0">
+            <modifier type="decrement" field="1611-c7f9-c25f-7365" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6771,7 +6790,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b2f-17e6-57ab-0a21" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="4b2f-17e6-57ab-0a21" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1611-c7f9-c25f-7365" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -6779,7 +6799,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
         </entryLink>
         <entryLink id="fa50-7257-6045-5844" name="Trinket: Mystic focus" hidden="false" collective="false" import="true" targetId="2c46-eed8-25bd-5e42" type="selectionEntry">
           <modifiers>
-            <modifier type="decrement" field="f12f-f21a-8db9-9623" value="1.0">
+            <modifier type="decrement" field="3ef9-0f39-88b1-173c" value="1.0">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -6794,7 +6814,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
             </modifier>
           </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f12f-f21a-8db9-9623" type="max"/>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="f12f-f21a-8db9-9623" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ef9-0f39-88b1-173c" type="max"/>
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.5"/>
@@ -7686,6 +7707,14 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccf6-25d0-ab24-43f4" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="488b-a101-30e0-967d" name="Restricted Access, Underslung" hidden="false" collective="false" import="true" targetId="7026-edfe-0973-ffe5" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ab7c-35a0-6a1c-5c37" type="max"/>
           </constraints>
           <costs>
             <cost name="A" typeId="8111-949b-1fb8-303b" value="1.0"/>
@@ -9054,6 +9083,16 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
     <selectionEntryGroup id="0050-245b-37e5-6f41" name="Gear (inventory(1))" hidden="false" collective="false" import="true">
       <entryLinks>
         <entryLink id="5884-c44b-bf9f-2337" name="Weapon Modifications, ranged: Underslung Weapon" hidden="false" collective="false" import="true" targetId="c111-8675-ca93-f94a" type="selectionEntry">
+          <modifiers>
+            <modifier type="increment" field="bcd3-f875-9f91-a3c4" value="2.0">
+              <repeats>
+                <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7026-edfe-0973-ffe5" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="bcd3-f875-9f91-a3c4" type="max"/>
+          </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="1.0"/>
           </costs>
@@ -9285,7 +9324,7 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="05c2-7ed2-e5c5-062f" name="Smoke grenade" publicationId="91df-c558-75f9-73ea" page="137" hidden="false">
-      <description>Place centre of smoke cloud (5” diameter circle) anywhere within range. Targets of attacks into/out of/through have target(potshots) until end of turn and Concealment until end of next turn.</description>
+      <description>Place centre of smoke cloud (5” diameter circle) anywhere within range. Targets of attacks into/out of/through have target(potshots) until end of turn and Concealment until end of next turn. One use.</description>
     </rule>
     <rule id="feee-90ee-2853-6c8e" name="Combat Armour" publicationId="91df-c558-75f9-73ea" page="138" hidden="false">
       <description>Defence(5)</description>
@@ -9459,7 +9498,8 @@ Disregard cost type U, it is not used in Skirmishes.</readme>
       <description>Marksman weapon or LMG becomes heavy. Upgrade any ranged weapon.</description>
     </rule>
     <rule id="99f6-7862-9b94-d14f" name="Underslung Weapon" publicationId="91df-c558-75f9-73ea" page="139" hidden="false">
-      <description>As any 5p-weapon without one use. One use. 3 or more underslung weapons counts as a restricted weapon. Upgrade any ranged weapon.</description>
+      <description>As any 5p-weapon without one use. One use. 
+Every two (2) underslung weapons in your force counts as a restricted weapon</description>
     </rule>
     <rule id="20be-1a9f-710e-10e0" name="Assault ladder" publicationId="91df-c558-75f9-73ea" page="139" hidden="false">
       <description>Emplace in base contact as part of move. Models may use emplaced ladder to climb up to one floor (roughly 3”) without penalty.
@@ -9737,7 +9777,7 @@ One (1) model receives an advancement from either the Gearhead or shooting categ
 One (1) model receives an advancement from either the Mutations/Enhancements or Close Combat categories.</description>
     </rule>
     <rule id="708b-083d-5eb7-8c35" name="Faction: Aristo" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
-      <description>Best care money can buy: spend 1 FP to skip one (1) roll on the injury table.
+      <description>Best care money can buy: spend 1 FP to re-roll any Triage roll.
 One (1) model receives an advancement from either the Heroism/Madness or support categories.</description>
     </rule>
     <rule id="cdd2-bbb5-4c02-8ea2" name="Faction: Cultist" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
@@ -9773,7 +9813,7 @@ One (1) model receives an advancement from either the Cunning or stealth categor
 One (1) model receives an advancement from either the shooting or stealth categories.</description>
     </rule>
     <rule id="f324-0370-5cfc-64c0" name="Faction: Prole" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
-      <description>Local support: spend 1 FP to evacuate all downed models (enemies included).
+      <description>Strike when the iron is hot: spend 1 FP to Snatch the Initiative (see p19), but you may make two (2) activations.
 One (1) model receives an advancement from either the tank or support categories.</description>
     </rule>
     <rule id="af12-166f-0b10-6d9a" name="Faction: Zealot" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
@@ -9785,7 +9825,7 @@ One (1) model receives an advancement from either the Heroism/Madness or Close C
 One (1) model receives an advancement from either the shooting or Cunning categories.</description>
     </rule>
     <rule id="99ca-2d90-0097-fe51" name="Faction: Alien" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
-      <description>Twitch: spend 1 FP to make one (1) attack with a friendly downed model.
+      <description>Twitch: spend 1 FP to make one (1) attack with a friendly downed model. May only be used by models that do not require evacuation. After use, model requires evacuation (and triage is no longer possible).
 One (1) model receives an advancement from either the Mystic or Close Combat categories.</description>
     </rule>
     <rule id="3bba-2e86-37e0-e1d6" name="Faction: Showboat" publicationId="91df-c558-75f9-73ea" page="135" hidden="false">
@@ -9864,7 +9904,9 @@ One (1) model receives an advancement from either the Movement or support catego
 	Boosted: within 18”, up to 15”
 
 6+	Turn Enemy: 18” (1 enemy unit in los): forced to make an immediate withdrawal move
-	Boosted: 24”, 2 withdrawal moves</description>
+	Boosted: 24”, 2 withdrawal moves
+
+*used instead of attacking</description>
     </rule>
     <rule id="2e73-3b2e-3e57-d1b8" name="Mystic(Wild)" publicationId="91df-c558-75f9-73ea" page="155" hidden="false">
       <description>1	Madness: roll again, opponent choses target (ignore rolls of ‘1’).
@@ -9880,7 +9922,9 @@ One (1) model receives an advancement from either the Movement or support catego
 	Boosted: 24” (6)
 
 6+	Flamestorm: 18” (1), spray, ignore cover(1), tight spread
-	Boosted: 24”, ignore cover</description>
+	Boosted: 24”, ignore cover
+
+*used instead of attacking</description>
     </rule>
     <rule id="2416-295f-d53c-9d6a" name="Seasoned" publicationId="91df-c558-75f9-73ea" page="143" hidden="false">
       <comment>w</comment>
@@ -9903,7 +9947,7 @@ This does not include traits such as Ablative Armour.</description>
       <description>Emplace in base contact as part of move. Models may use emplaced ladder to climb up to two floors(roughly 6”) without penalty. Carrier counts as encumbered unless carried by two models.</description>
     </rule>
     <rule id="db5d-3d65-866f-a13a" name="Steed" publicationId="91df-c558-75f9-73ea" page="138" hidden="false">
-      <description>Move(9, nimble, no climb), Cover(max 1), Cargo(no)</description>
+      <description>Move(9, nimble, no climb, may leap), Cover(max 1), Cargo(no)</description>
     </rule>
     <rule id="aa9f-ce66-0827-882f" name="Flak Jacket" publicationId="91df-c558-75f9-73ea" page="138" hidden="false">
       <description>Defence(5) vs weapons with the blast trait.</description>
@@ -9936,7 +9980,7 @@ This does not include traits such as Ablative Armour.</description>
       <description>Re-roll a single dice of a roll made by this model, one use.</description>
     </rule>
     <rule id="e8b8-5d93-3172-f367" name="Trinket: Protective charm" publicationId="91df-c558-75f9-73ea" page="139" hidden="false">
-      <description>Force re-roll of single wound roll dice vs this model, one use.</description>
+      <description>Force re-roll of single wound roll dice vs this model, this re-roll receives no bonuses to Defence. One use.</description>
     </rule>
     <rule id="4764-c359-9b70-2a9a" name="Trinket: Faction symbol" publicationId="91df-c558-75f9-73ea" page="139" hidden="false">
       <description>This model receives no wounds for proximity to enemy models in the endphase, one use.</description>
@@ -9954,7 +9998,7 @@ This does not include traits such as Ablative Armour.</description>
       <description>Weapon has range +1”. Upgrade any close combat weapon.</description>
     </rule>
     <rule id="d011-ca35-8478-bc6d" name="Great" publicationId="91df-c558-75f9-73ea" page="139" hidden="false">
-      <description>Weapon has an additional wound(+1). Upgrade any close combat weapon.</description>
+      <description>Weapon has an additional wound(+1). Upgrade any hands(1) close combat weapon.</description>
     </rule>
     <rule id="3fd1-fb3f-7127-8bb0" name="Masterwork" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Re-roll results of ‘1’ to hit for this model. Upgrade any close combat or ranged weapon.</description>

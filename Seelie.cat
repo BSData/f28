@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="11" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="7e1d-9ccd-f0d8-4e68" name="The Seelie Court" revision="12" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -2813,8 +2813,9 @@ FP: Faction Points</readme>
                 <infoLink id="d5c7-d0f4-c11c-65cd" name="Bestow Blocker" hidden="false" targetId="4556-f182-1eec-64c1" type="rule"/>
                 <infoLink id="0581-43cb-91d3-a5ff" name="Bestow Masterwork (6”, seelie constructs)" hidden="false" targetId="27df-9015-c766-0259" type="rule"/>
                 <infoLink id="6adf-ce39-2106-1012" name="Cargo(0)" hidden="false" targetId="dbaf-fda1-3ef1-6ac7" type="rule"/>
-                <infoLink id="7c77-deb1-33e1-e595" name="Fateweawing Mystic(2)" hidden="false" targetId="70bb-33bf-4130-7bca" type="rule"/>
+                <infoLink id="7c77-deb1-33e1-e595" name="Mystic(Fate 2)" hidden="false" targetId="70bb-33bf-4130-7bca" type="rule"/>
                 <infoLink id="7281-9d2a-50a2-db10" name="Attach(seelie constructs)" hidden="false" targetId="a368-0d16-aaeb-d2d3" type="rule"/>
+                <infoLink id="5270-b650-2743-47e8" name="Inherit(Tough)" hidden="false" targetId="9102-2ff3-633c-b9a5" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="4b95-3f3e-8484-32a8" name="Disc Pistol" hidden="false" collective="false" import="true" targetId="d9a5-6c11-8e32-8aaf" type="selectionEntry">

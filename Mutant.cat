@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="8" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1614,7 +1614,7 @@ FP: Faction Points</readme>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2427-7bea-5e4f-03bd" type="max"/>
                       </constraints>
                     </entryLink>
-                    <entryLink id="e900-4ad6-039f-7d43" name="Scrapcannon" hidden="false" collective="false" import="true" targetId="2f43-e52b-1fb3-6724" type="selectionEntry">
+                    <entryLink id="e900-4ad6-039f-7d43" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="1430-bdcd-e4e5-1e21" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c86-7b7b-9a21-af72" type="max"/>
                       </constraints>
@@ -1700,7 +1700,7 @@ FP: Faction Points</readme>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41ed-6475-d6df-80af" type="max"/>
                   </constraints>
                 </entryLink>
-                <entryLink id="6edf-8fd2-b632-44f4" name="Scrapcannon" hidden="false" collective="false" import="true" targetId="2f43-e52b-1fb3-6724" type="selectionEntry">
+                <entryLink id="6edf-8fd2-b632-44f4" name="Grenade Launcher" hidden="false" collective="false" import="true" targetId="1430-bdcd-e4e5-1e21" type="selectionEntry">
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee02-7b60-f6b6-b947" type="max"/>
                   </constraints>
@@ -2435,7 +2435,7 @@ FP: Faction Points</readme>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b5c-b3bc-4482-76a8" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ae2f-d165-3b12-d367" name="Tractor beamer" hidden="false" collective="false" import="true" targetId="e6ad-3778-67f8-1a57" type="selectionEntry">
+                    <entryLink id="ae2f-d165-3b12-d367" name="Zapper cannon (Blaster jet)" hidden="false" collective="false" import="true" targetId="00b6-3360-6344-d77e" type="selectionEntry">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f09a-8687-fc1e-c2f3" type="max"/>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="94cc-ca11-09c9-c3f3" type="min"/>
@@ -4640,6 +4640,18 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="00b6-3360-6344-d77e" name="Zapper cannon (Blaster jet)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="993f-8746-30ad-ba78" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="fc3f-7e39-d5a2-b582" name="Zapper cannon (Blaster jet)" hidden="false" targetId="ca38-37cb-9654-828e" type="profile"/>
+        <infoLink id="17aa-be17-60f6-8066" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9690-de4f-8970-c264" name="Upgrade any model" hidden="false" collective="false" import="true">
@@ -5182,6 +5194,15 @@ Spend one (1) Faction Point:
         <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
         <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
         <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="ca38-37cb-9654-828e" name="Zapper cannon (Blaster jet)" publicationId="91df-c558-75f9-73ea" page="106" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll vs vehicles</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+D6+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, damage(2) vs vehicles</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

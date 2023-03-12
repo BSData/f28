@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="10" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="11" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -453,16 +453,6 @@ FP: Faction Points</readme>
         <entryLink id="8cbb-4391-3f45-8def" name="Upgrade Any Non-Aircraft Vehicle" hidden="false" collective="false" import="true" targetId="466b-1d85-dd37-e89d" type="selectionEntryGroup"/>
         <entryLink id="eac5-975c-3dbe-fd90" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3b44-a2a2-be69-2541" type="selectionEntryGroup"/>
       </entryLinks>
-      <costs>
-        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
-        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
-        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="7325-9cc8-6c95-3b34" name="Firing Ports(6, non-support weapons only)" hidden="false" collective="false" import="true" type="upgrade">
-      <infoLinks>
-        <infoLink id="1403-c4a0-9da8-f80c" name="Firing Ports(number)" hidden="false" targetId="7f37-c2e8-c359-55bd" type="rule"/>
-      </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -1478,7 +1468,6 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="096e-a82d-3cc6-bb3a" name="Re. Storm Trooper" hidden="false" targetId="d1b7-383d-5ac0-4484" type="profile"/>
                 <infoLink id="f67a-cf61-a030-7acb" name="Accurate(6&quot;)" hidden="false" targetId="430f-ca21-b68b-3269" type="rule"/>
-                <infoLink id="357d-f3f5-6ac6-507f" name="Pistol 6&quot;" hidden="false" targetId="9bbc-9187-6ea3-2d55" type="rule"/>
               </infoLinks>
               <entryLinks>
                 <entryLink id="f4e9-933e-c3ef-e5cc" name="AT-grenades" hidden="false" collective="false" import="true" targetId="b848-6102-d0e9-bee3" type="selectionEntry">
@@ -2546,10 +2535,11 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="535a-53dc-4a6f-9d03" name="Autocarbine with Loathing" hidden="false" collective="true" import="true" type="upgrade">
+    <selectionEntry id="535a-53dc-4a6f-9d03" name="Autocarbine with Loathing and Pistol(6&quot;)" hidden="false" collective="true" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="24d1-69a6-f7dc-0e26" name="Autocarbine" hidden="false" targetId="6e56-6913-6705-4472" type="profile"/>
         <infoLink id="f4fe-cd79-be3c-204e" name="Loathing" hidden="false" targetId="74a7-9700-3946-640b" type="rule"/>
+        <infoLink id="654d-eb8f-462e-b091" name="Pistol(6&quot;)" hidden="false" targetId="9bbc-9187-6ea3-2d55" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>

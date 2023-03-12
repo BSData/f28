@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1dfa-bb8a-c611-753e" name="The Enclaves" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="32" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -1613,11 +1613,10 @@ FP: Faction Points</readme>
               <infoLinks>
                 <infoLink id="d021-d5ed-ba23-854f" name="Weapon Beast" hidden="false" targetId="9225-7b0b-3d1d-10f3" type="profile"/>
                 <infoLink id="ee98-72bd-1972-7409" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
-                <infoLink id="19e8-6e34-613c-eea3" name="Insertion" hidden="false" targetId="46bd-5443-c838-e6dc" type="rule"/>
                 <infoLink id="fc65-c9ba-38a7-88dd" name="Attack(one weapon only)" hidden="false" targetId="f339-d7fa-b8e8-13f4" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="55.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="50.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
@@ -1718,6 +1717,25 @@ FP: Faction Points</readme>
               </costs>
             </selectionEntry>
           </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="b2bb-03d1-48a5-9772" name="Upgrade options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a66-4865-368c-ea09" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="3d2e-607e-253d-0800" name="Insertion" hidden="false" collective="false" import="true" targetId="2407-b27f-2342-2046" type="selectionEntry">
+              <modifiers>
+                <modifier type="increment" field="95b5-c653-a5e7-8869" value="5.0">
+                  <repeats>
+                    <repeat field="selections" scope="b635-4913-42cf-fed1" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8ea2-cc2b-70f0-bc45" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03d8-754d-1e8d-72b1" type="max"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="32" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="33" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -53,7 +53,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <publication id="1aef-f298-9eff-af8e" name="Newsletter #02" shortName="F28 Newsletter Issue #2" publicationDate="2020-07-12"/>
     <publication id="dcee-d17a-12db-0d00" name="Newsletter #03" shortName="F28 Newsletter Issue #3" publicationDate="2020-09-02"/>
     <publication id="648e-37d5-45ed-cf25" name="Newsletter #04" shortName="F28 Newsletter Issue #4" publicationDate="2020-10-16"/>
-    <publication id="91df-c558-75f9-73ea" name="F28 1RE1P" shortName="F28 1RE1P" publicationDate="2021-06-01"/>
+    <publication id="91df-c558-75f9-73ea" name="F28 1RE1P" shortName="F28 1RE1P" publicationDate="2021-11-25"/>
     <publication id="5a43-5d64-26bb-b191" name="Newsletter #05" shortName="F28 Newsletter Issue #5" publicationDate="2020-12-04"/>
     <publication id="b280-bccb-e925-e5ca" name="Newsletter #06" shortName="F28 Newsletter Issue #6" publicationDate="2021-02-02"/>
     <publication id="3d2e-80ca-8fd6-f31a" name="Newsletter #07" shortName="F28 Newsletter Issue #7" publicationDate="2021-04-01"/>
@@ -8584,8 +8584,8 @@ replaces hit(potshots) with indirect and hit(auto).
 
 Discard all lock tokens when target moves. Laser markers do not benefit from lock tokens. You may execute Laser marker attacks before other friendly weapons in the same attack.</description>
     </rule>
-    <rule id="b50b-7db8-ff30-68b8" name="Spotter" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
-      <description>Instead of attacking (regular) or when attacking (vehicle, massive) target an enemy unit in los. Until end of turn or the target moves, the next attack versus the target loses any indirect penalty OR Aircraft lose inaccurate vs ground targets.</description>
+    <rule id="b50b-7db8-ff30-68b8" name="Spotter" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Use max 1/turn when an attack versus an enemy unit within los suffers an indirect penalty OR inaccurate vs ground targets (see Aircraft). The attack loses these penalties.</description>
     </rule>
     <rule id="2331-e831-8a08-0bfc" name="Expert-Crafted" publicationId="aae0-5552-35a8-74d6" page="119" hidden="false">
       <description>Re-roll results of ‘1’ to hit for this model.</description>
@@ -9050,7 +9050,7 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
     </rule>
     <rule id="6949-049f-3068-1e8d" name="Gate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <comment>w</comment>
-      <description>One (1) regular unit per turn may enter from or exit to staging through this model, as if it was connected to staging.</description>
+      <description>One (1) regular unit per turn may enter from or exit to staging through this model, as if it was connected to staging. You may not exit a Gate where Insertion is prohibited.</description>
     </rule>
     <rule id="b609-2af7-0d0f-1b33" name="Mystic(Singularity 1)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>When attacking, you may roll level number of dice and pick one (1) power from the Singularity list of power level equal or less than the highest dice rolled.
@@ -9755,7 +9755,8 @@ In addition, apply any result of one or more ‘1’.</description>
       <description>Force must take one extra doctrine. See Faction Traits.</description>
     </rule>
     <rule id="5cc0-ce53-6311-c818" name="Swarm" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
-      <description>Defence(min 6) or Defence(max 3) vs blast or spray, Cover(no), Tough(6), Scoring(no). Models within 2” of this model may be targeted without the Intermingled penalty. Regular enemy models treat this model as dangerous terrain instead of blocking.</description>
+      <description>Defence(min 6) or Defence(max 3) vs blast or spray, Cover(no), Tough(6), Scoring(no). Models engaged with swarms do not suffer the close quarters penalty. Attacks vs models engaged with swarms do not suffer the intermingled penalty.
+Regular enemy models treat this model as dangerous terrain instead of blocking.</description>
     </rule>
     <rule id="9067-6a12-fb58-c680" name="Inflict Defence(-1) (2”, regular, no stacking)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Models of enemy regular units within 2&quot; has Defence(-1), this effeckt does not stack.</description>
