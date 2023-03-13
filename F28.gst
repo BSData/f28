@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="33" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="34" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -7993,7 +7993,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="d706-7f5f-9b42-f356" name="Heat Rifle" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="3a85-3b86-58a2-7dd5" name="Heat cannon" hidden="false" targetId="4639-cf60-56a9-1faf" type="profile"/>
+        <infoLink id="3a85-3b86-58a2-7dd5" name="Heat Rifle" hidden="false" targetId="92ad-e4c0-9779-e192" type="profile"/>
         <infoLink id="60b1-79c7-7934-0c71" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="2401-ca15-c6df-291f" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
         <infoLink id="524c-2482-b84d-417a" name="AT(+D6)" hidden="false" targetId="7ae7-a942-7988-b836" type="rule"/>
