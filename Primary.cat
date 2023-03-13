@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="5" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="29" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -2640,9 +2640,9 @@ FP: Faction Points</readme>
             </entryLink>
             <entryLink id="f96a-a24d-f21b-0ada" name="Outflank(18&quot;)" hidden="false" collective="false" import="true" targetId="7bb7-021d-523f-4592" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="95b5-c653-a5e7-8869" value="2.0">
+                <modifier type="increment" field="95b5-c653-a5e7-8869" value="2.0">
                   <repeats>
-                    <repeat field="selections" scope="95d0-bfee-6459-7c03" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="95d0-bfee-6459-7c03" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -2652,9 +2652,9 @@ FP: Faction Points</readme>
             </entryLink>
             <entryLink id="06b7-1d3e-3a6f-d367" name="Insertion" hidden="false" collective="false" import="true" targetId="2407-b27f-2342-2046" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="95b5-c653-a5e7-8869" value="4.0">
+                <modifier type="increment" field="95b5-c653-a5e7-8869" value="4.0">
                   <repeats>
-                    <repeat field="selections" scope="95d0-bfee-6459-7c03" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="95d0-bfee-6459-7c03" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
@@ -2840,7 +2840,7 @@ FP: Faction Points</readme>
             </entryLink>
             <entryLink id="a17f-d3b0-7725-e252" name="Accurate" hidden="false" collective="false" import="true" targetId="94b4-e118-c1f5-7e6f" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="95b5-c653-a5e7-8869" value="2.0">
+                <modifier type="increment" field="95b5-c653-a5e7-8869" value="2.0">
                   <repeats>
                     <repeat field="selections" scope="4b87-a2a6-bafd-2478" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
@@ -2852,7 +2852,7 @@ FP: Faction Points</readme>
             </entryLink>
             <entryLink id="9702-c305-0baf-c082" name="Infiltrate" hidden="false" collective="false" import="true" targetId="d153-e2c5-7ae1-8075" type="selectionEntry">
               <modifiers>
-                <modifier type="set" field="95b5-c653-a5e7-8869" value="4.0">
+                <modifier type="increment" field="95b5-c653-a5e7-8869" value="4.0">
                   <repeats>
                     <repeat field="selections" scope="4b87-a2a6-bafd-2478" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
                   </repeats>
