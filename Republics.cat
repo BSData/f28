@@ -34,7 +34,7 @@ FP: Faction Points</readme>
     <entryLink id="d54e-dadb-1bfe-239f" name="Assault Engineer Squad" hidden="false" collective="false" import="true" targetId="f7c5-9c74-2da6-3b11" type="selectionEntry"/>
     <entryLink id="58cc-5486-2a1d-f1bb" name="Republic Company HQ" hidden="false" collective="false" import="true" targetId="8060-d811-3a08-7d55" type="selectionEntry"/>
     <entryLink id="741f-930a-d584-22d4" name="Senior Political Officer" hidden="false" collective="false" import="true" targetId="089b-82a9-4ab3-e3df" type="selectionEntry"/>
-    <entryLink id="f082-6d35-0665-0347" name="Republic Assault Tank" hidden="false" collective="false" import="true" targetId="467e-b445-ea27-2b57" type="selectionEntry"/>
+    <entryLink id="f082-6d35-0665-0347" name="Assault Tank Platoon" hidden="false" collective="false" import="true" targetId="467e-b445-ea27-2b57" type="selectionEntry"/>
     <entryLink id="ea54-d755-702a-2591" name="Battle Tank Platoon" hidden="false" collective="false" import="true" targetId="aac5-de68-e849-be12" type="selectionEntry"/>
     <entryLink id="f7ec-6580-d745-8bae" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e5a5-bd20-300e-6f93" type="selectionEntry"/>
     <entryLink id="4870-aa5a-b5d6-7d7c" name="Republic Flame Tank" hidden="false" collective="false" import="true" targetId="a1e6-fe8b-2de8-0a30" type="selectionEntry"/>
@@ -89,7 +89,7 @@ FP: Faction Points</readme>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="797b-acb3-1a3f-951f" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="9797-5c6f-8d18-a74c" name="Republic Light Artillery Vehicle" hidden="false" collective="false" import="true" targetId="1485-5853-505b-628d" type="selectionEntry"/>
+    <entryLink id="7135-5ae2-a866-bcf5" name="Republic Light Artillery Vehicle" hidden="false" collective="false" import="true" targetId="1485-5853-505b-628d" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="2442-a4d0-a5eb-f52e" name="Autorifle" hidden="false" collective="true" import="true" type="upgrade">
