@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="34" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="35" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -65,6 +65,8 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <publication id="84b9-3380-0ec9-d6db" name="Newsletter #13" shortName="F28 Newsletter Issue #13" publicationDate="2022-06-09"/>
     <publication id="588d-0535-e56b-3640" name="Newsletter #14" shortName="F28 Newsletter Issue #14" publicationDate="2022-08-080"/>
     <publication id="7891-f4a0-99f7-6e53" name="Newsletter #15 " shortName="F28 Newsletter Issue #15" publicationDate="2022-10-17"/>
+    <publication id="a29d-7948-7b5f-6d63" name="Newsletter #16" shortName="F28 Newsletter Issue #16" publicationDate="2022-12-20"/>
+    <publication id="3b2a-64bb-f06e-df98" name="Newsletter #17" shortName="F28 Newsletter Issue #17" publicationDate="2023-02-27"/>
   </publications>
   <costTypes>
     <costType id="95b5-c653-a5e7-8869" name="p" defaultCostLimit="-1.0" hidden="false"/>
