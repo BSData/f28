@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="35" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="36" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
 
 If you are looking for the BattleScribe files for the first edtion, you can download it here: http://greyport.net/f28/f28_bs_1ed3p.zip
 
-Battle - War Always Changes: The faction lists are created for Battle with the force generation rules on page 74 in the rulebook. Force generation rules is in the readme for each faction.
+Battle: The faction lists are created for Battle with the force generation rules on page 74 in the rulebook. Force generation rules is in the readme for each faction.
 
-Battle - Combat Patrol: Is under development and might not work very well.
+Platoon vs Platoon: Is under development and might not work very well.
 
 Skirmishes - War Always Changes: Is updated with thye first revised edition. Force creation rules is in the readme for Skirmishes.
 
@@ -67,6 +67,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <publication id="7891-f4a0-99f7-6e53" name="Newsletter #15 " shortName="F28 Newsletter Issue #15" publicationDate="2022-10-17"/>
     <publication id="a29d-7948-7b5f-6d63" name="Newsletter #16" shortName="F28 Newsletter Issue #16" publicationDate="2022-12-20"/>
     <publication id="3b2a-64bb-f06e-df98" name="Newsletter #17" shortName="F28 Newsletter Issue #17" publicationDate="2023-02-27"/>
+    <publication id="4d21-d403-2f77-bbaf" name="PG 1RE1P" shortName="PG 1RE1P" publicationDate="2023-05-18"/>
   </publications>
   <costTypes>
     <costType id="95b5-c653-a5e7-8869" name="p" defaultCostLimit="-1.0" hidden="false"/>
@@ -127,7 +128,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <categoryEntry id="2e5e-ebb8-8803-9af0" name="Themed (Optional)" hidden="false"/>
   </categoryEntries>
   <forceEntries>
-    <forceEntry id="04f2-1f68-17f9-043b" name="Battle - War Always Changes" publicationId="81dd-fe5f-c233-17c5" page="26, 65" hidden="false">
+    <forceEntry id="04f2-1f68-17f9-043b" name="Battle" publicationId="91df-c558-75f9-73ea" page="28, 74" hidden="false">
       <categoryLinks>
         <categoryLink id="9d67-6a76-536d-3cb2" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
@@ -215,13 +216,13 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="4509-5e75-6112-bbea" name="Skirmishes - War Always Changes" publicationId="81dd-fe5f-c233-17c5" page="32" hidden="false">
+    <forceEntry id="4509-5e75-6112-bbea" name="Skirmish" publicationId="91df-c558-75f9-73ea" page="36" hidden="false">
       <categoryLinks>
         <categoryLink id="0823-c5de-f268-f516" name="Models" hidden="false" targetId="d822-4a8e-8f61-5cf5" primary="false"/>
         <categoryLink id="32ec-05d3-e56e-8686" name="Themed (Optional)" hidden="false" targetId="2e5e-ebb8-8803-9af0" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="8994-b9d0-5c19-8301" name="Battle - Combat Patrol" page="" hidden="true">
+    <forceEntry id="8994-b9d0-5c19-8301" name="Platoon vs Platoon" publicationId="4d21-d403-2f77-bbaf" page="18" hidden="true">
       <categoryLinks>
         <categoryLink id="bf8f-4c81-1c34-2704" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
@@ -8370,6 +8371,51 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8cbb-0241-8e2a-f101" name="Players Guide" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4019-52d3-567e-e3d3" name="Players Guide" hidden="false" targetId="70f8-260b-ca23-4eaa" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d63e-8505-0ab8-c7ea" name="Surplus Appendage" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f821-d8b1-7dc8-e15e" name="Seeker missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b918-8564-a542-232c" name="Seeker missile" hidden="false" targetId="c5c7-d087-d048-1f3f" type="profile"/>
+        <infoLink id="8883-93f6-8ce1-54fb" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="23cf-1ab1-a838-ad88" name="Seeker missile rack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4baa-1f7d-a150-3036" name="Seeker missile rack" hidden="false" targetId="779e-ed66-8ce8-bbc1" type="profile"/>
+        <infoLink id="f2e1-e283-05ac-ef3f" name="Antiair" hidden="false" targetId="194c-2932-f83a-e1c6" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="554f-5176-bd8c-85b9" name="OBA" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4a70-6333-3867-0b0f" name="OBA" hidden="false" targetId="29a5-ff8a-e51b-5dcd" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -9849,6 +9895,7 @@ exposed.</description>
       <description>Re-roll CC results of ‘1’ to wound for this model.</description>
     </rule>
     <rule id="6b99-d433-bbde-e4c3" name="Bestow Defence(min 4)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <comment></comment>
       <description>All models in this model’s unit have Defence(min 4). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="af07-d38a-b6a4-b17f" name="Mystic(Weird 1 per 6 wounds in the unit)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
@@ -10019,6 +10066,15 @@ In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="7ae7-a942-7988-b836" name="AT(+D6)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>Wound(+D6) versus vehicles.</description>
+    </rule>
+    <rule id="70f8-260b-ca23-4eaa" name="Players Guide" publicationId="4d21-d403-2f77-bbaf" hidden="false">
+      <description>Show units avalible in the Players Guide.</description>
+    </rule>
+    <rule id="29a5-ff8a-e51b-5dcd" name="OBA" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>This unit may deploy in the OBA (see PG page 9)</description>
+    </rule>
+    <rule id="10ab-07a2-0a8d-765a" name="Bestow Defence(min 5)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
+      <description>All models in this model’s unit have Defence(min 5). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -14096,6 +14152,24 @@ pistol</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vital strike</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c5c7-d087-d048-1f3f" name="Seeker missile" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72 (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair, one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="779e-ed66-8ce8-bbc1" name="Seeker missile rack" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72 (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
