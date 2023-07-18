@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="13" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="14" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="41" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -17,42 +17,145 @@ p: Points
 U: Upgrades
 FP: Faction Points</readme>
   <entryLinks>
-    <entryLink id="1ad1-2da3-cbba-e1f2" name="Conscript Squad" hidden="false" collective="false" import="true" targetId="f13f-a991-a4a1-76e0" type="selectionEntry"/>
-    <entryLink id="4883-0d71-22b0-fa64" name="Universal Carrier" hidden="false" collective="false" import="true" targetId="1c62-5940-31f1-d7bd" type="selectionEntry"/>
+    <entryLink id="1ad1-2da3-cbba-e1f2" name="Republic Conscript Squad" hidden="false" collective="false" import="true" targetId="f13f-a991-a4a1-76e0" type="selectionEntry"/>
+    <entryLink id="4883-0d71-22b0-fa64" name="Republic Universal Carrier" hidden="false" collective="false" import="true" targetId="1c62-5940-31f1-d7bd" type="selectionEntry"/>
     <entryLink id="4540-f915-48ec-2963" name="Republic Armoured Car" hidden="false" collective="false" import="true" targetId="776f-b8fa-b8b6-c70e" type="selectionEntry"/>
     <entryLink id="9e9c-42b5-d6b9-dd0a" name="Republic IFV" hidden="false" collective="false" import="true" targetId="d5f7-d960-22e2-7ed3" type="selectionEntry"/>
     <entryLink id="cbad-8b62-3f00-88fc" name="Republic VTOL Transport" hidden="false" collective="false" import="true" targetId="d79d-b6f0-1364-cae6" type="selectionEntry"/>
     <entryLink id="d56b-ed6f-90d7-f342" name="Infantry Squad" hidden="false" collective="false" import="true" targetId="b27b-43ad-3b37-c8f9" type="selectionEntry"/>
     <entryLink id="17f4-0256-a442-7d79" name="Fire Support Squad" hidden="false" collective="false" import="true" targetId="f70d-04ad-4509-5ea6" type="selectionEntry"/>
     <entryLink id="1a8e-c6bc-fb71-e204" name="Republic Infantry Platoon" hidden="false" collective="false" import="true" targetId="28b4-fd9d-fe79-3a1a" type="selectionEntry"/>
-    <entryLink id="bae8-d116-820b-e965" name="Veteran Squad" hidden="false" collective="false" import="true" targetId="70c1-314e-6d14-3691" type="selectionEntry"/>
-    <entryLink id="59bf-ef0e-03d2-9674" name="Storm Trooper Squad" hidden="false" collective="false" import="true" targetId="051e-5d35-22df-ce3a" type="selectionEntry"/>
+    <entryLink id="bae8-d116-820b-e965" name="Republic Veteran Squad" hidden="false" collective="false" import="true" targetId="70c1-314e-6d14-3691" type="selectionEntry"/>
+    <entryLink id="59bf-ef0e-03d2-9674" name="Republic Storm Trooper Squad" hidden="false" collective="false" import="true" targetId="051e-5d35-22df-ce3a" type="selectionEntry"/>
     <entryLink id="e90d-adc9-3b30-56c6" name="Recon Platoon" hidden="false" collective="false" import="true" targetId="cfef-0960-b4f1-b28a" type="selectionEntry"/>
-    <entryLink id="977e-3470-fddf-2db1" name="Stuntie Sharpshooter Squad" hidden="false" collective="false" import="true" targetId="b4ec-3aa0-99d8-6f3e" type="selectionEntry"/>
+    <entryLink id="977e-3470-fddf-2db1" name="Republic Stuntie Sharpshooter Squad" hidden="false" collective="false" import="true" targetId="b4ec-3aa0-99d8-6f3e" type="selectionEntry"/>
     <entryLink id="9228-b454-4284-de09" name="Republic Walker Platoon" hidden="false" collective="false" import="true" targetId="c4a3-5968-be37-79fc" type="selectionEntry"/>
     <entryLink id="b271-46a7-cd5d-1b0d" name="Primary Telepath" hidden="false" collective="false" import="true" targetId="f1a9-3604-e6c4-b6b9" type="selectionEntry"/>
     <entryLink id="d54e-dadb-1bfe-239f" name="Assault Engineer Squad" hidden="false" collective="false" import="true" targetId="f7c5-9c74-2da6-3b11" type="selectionEntry"/>
-    <entryLink id="58cc-5486-2a1d-f1bb" name="Republic Company HQ" hidden="false" collective="false" import="true" targetId="8060-d811-3a08-7d55" type="selectionEntry"/>
-    <entryLink id="741f-930a-d584-22d4" name="Senior Political Officer" hidden="false" collective="false" import="true" targetId="089b-82a9-4ab3-e3df" type="selectionEntry"/>
-    <entryLink id="f082-6d35-0665-0347" name="Assault Tank Platoon" hidden="false" collective="false" import="true" targetId="467e-b445-ea27-2b57" type="selectionEntry"/>
-    <entryLink id="ea54-d755-702a-2591" name="Battle Tank Platoon" hidden="false" collective="false" import="true" targetId="aac5-de68-e849-be12" type="selectionEntry"/>
-    <entryLink id="f7ec-6580-d745-8bae" name="Tank Commander" hidden="false" collective="false" import="true" targetId="e5a5-bd20-300e-6f93" type="selectionEntry"/>
-    <entryLink id="4870-aa5a-b5d6-7d7c" name="Republic Flame Tank" hidden="false" collective="false" import="true" targetId="a1e6-fe8b-2de8-0a30" type="selectionEntry"/>
+    <entryLink id="58cc-5486-2a1d-f1bb" name="Republic Company HQ" hidden="false" collective="false" import="true" targetId="8060-d811-3a08-7d55" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="741f-930a-d584-22d4" name="Republic Senior Political Officer" hidden="false" collective="false" import="true" targetId="089b-82a9-4ab3-e3df" type="selectionEntry"/>
+    <entryLink id="f082-6d35-0665-0347" name="Republic Assault Tank" hidden="false" collective="false" import="true" targetId="467e-b445-ea27-2b57" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="ea54-d755-702a-2591" name="Republic Battle Tank" hidden="false" collective="false" import="true" targetId="aac5-de68-e849-be12" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="f7ec-6580-d745-8bae" name="Republic Tank Ace" hidden="false" collective="false" import="true" targetId="e5a5-bd20-300e-6f93" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="4870-aa5a-b5d6-7d7c" name="Republic Flame Tank" hidden="false" collective="false" import="true" targetId="a1e6-fe8b-2de8-0a30" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink id="c11d-ee5e-95eb-28a9" name="Artillery Battery" hidden="false" collective="false" import="true" targetId="3ff2-8792-48af-92d9" type="selectionEntry"/>
     <entryLink id="6b06-a1fd-cd8f-53bc" name="Ogre Squad" hidden="false" collective="false" import="true" targetId="a570-ade6-9aba-3a26" type="selectionEntry"/>
     <entryLink id="9295-ccd9-6302-68ee" name="Republic Off-Road Buggy" hidden="false" collective="false" import="true" targetId="7234-3b58-8ad6-0a79" type="selectionEntry"/>
-    <entryLink id="01d1-b38d-ee28-0141" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" targetId="4483-5353-063a-dd72" type="selectionEntry"/>
-    <entryLink id="94a4-6fe8-4133-cf95" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" targetId="3b84-f71b-7c59-c723" type="selectionEntry"/>
-    <entryLink id="9c07-102c-ac93-1f0b" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" targetId="5b9c-c85d-f6e5-0f71" type="selectionEntry"/>
-    <entryLink id="55d2-b223-862d-08c6" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" targetId="e453-b7a7-524d-23d1" type="selectionEntry"/>
-    <entryLink id="e692-011f-9412-8b0b" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" targetId="a1d4-a68a-3141-f218" type="selectionEntry"/>
+    <entryLink id="01d1-b38d-ee28-0141" name="Republic Air Superiority Fighter" hidden="false" collective="false" import="true" targetId="4483-5353-063a-dd72" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="94a4-6fe8-4133-cf95" name="Republic Heavy Fighter" hidden="false" collective="false" import="true" targetId="3b84-f71b-7c59-c723" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="9c07-102c-ac93-1f0b" name="Republic VTOL Transport (Alternative)" hidden="false" collective="false" import="true" targetId="5b9c-c85d-f6e5-0f71" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="55d2-b223-862d-08c6" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" targetId="e453-b7a7-524d-23d1" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="e692-011f-9412-8b0b" name="Republic Retribution Ground Attack Fighter" hidden="false" collective="false" import="true" targetId="a1d4-a68a-3141-f218" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink id="080b-de88-9fc6-0a7b" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <constraints>
         <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1002-9fa5-c9f3-4340" type="max"/>
       </constraints>
     </entryLink>
-    <entryLink id="7efd-12d4-5cde-153d" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" targetId="2c0a-5903-01a8-f690" type="selectionEntry"/>
-    <entryLink id="1b25-6677-9454-db9d" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" targetId="8a79-f927-4673-9df9" type="selectionEntry"/>
+    <entryLink id="7efd-12d4-5cde-153d" name="Republic Supremacy Tank" hidden="false" collective="false" import="true" targetId="2c0a-5903-01a8-f690" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
+    <entryLink id="1b25-6677-9454-db9d" name="Republic Supremacy Ground Attack Craft" hidden="false" collective="false" import="true" targetId="8a79-f927-4673-9df9" type="selectionEntry">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="8994-b9d0-5c19-8301" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="any" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+    </entryLink>
     <entryLink id="7bdd-eb71-9bfa-170b" name="Line" hidden="false" collective="false" import="true" targetId="074f-1ff0-1530-ddd8" type="selectionEntry">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d1-817d-5558-67f9" type="max"/>
@@ -2055,6 +2158,13 @@ FP: Faction Points</readme>
                   </constraints>
                 </entryLink>
                 <entryLink id="7bc9-9c91-57f0-85b6" name="Heavy flamer" hidden="false" collective="false" import="true" targetId="4def-12af-6f0d-326b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="a3b9-50ba-536a-d7e6" value="1.0">
+                      <repeats>
+                        <repeat field="selections" scope="f7c5-9c74-2da6-3b11" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c588-5f1a-65a2-768b" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3b9-50ba-536a-d7e6" type="max"/>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b33b-112e-6567-6434" type="min"/>
@@ -2064,10 +2174,20 @@ FP: Faction Points</readme>
                   </costs>
                 </entryLink>
                 <entryLink id="c588-5f1a-65a2-768b" name="Heatgun" hidden="false" collective="false" import="true" targetId="ff94-46d1-3391-b0b2" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="decrement" field="4861-bae2-245d-5eb1" value="2.0">
+                      <repeats>
+                        <repeat field="selections" scope="f7c5-9c74-2da6-3b11" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7bc9-9c91-57f0-85b6" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4861-bae2-245d-5eb1" type="max"/>
                     <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="084d-c05f-adac-92ce" type="min"/>
                   </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -2696,11 +2816,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1446-9ece-5477-4b51" type="min"/>
               </constraints>
               <entryLinks>
-                <entryLink id="f35a-da5f-1956-ac29" name="Siege Cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry">
-                  <costs>
-                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
-                  </costs>
-                </entryLink>
+                <entryLink id="f35a-da5f-1956-ac29" name="Siege cannon" hidden="false" collective="false" import="true" targetId="0ef2-9b46-a119-eb8e" type="selectionEntry"/>
                 <entryLink id="194e-8b68-f78b-d34e" name="Gatling Cannon" hidden="false" collective="false" import="true" targetId="bac3-4ea7-f873-d8d6" type="selectionEntry"/>
               </entryLinks>
             </selectionEntryGroup>
