@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="6" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="2ecf-957c-e29b-11d4" name="The Primary Chambers" revision="7" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="34" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -45,6 +45,11 @@ FP: Faction Points</readme>
     <entryLink id="4f98-664f-0643-b1c1" name="Primary Heat Specialists" hidden="false" collective="false" import="true" targetId="d7b8-84d4-e621-bdc2" type="selectionEntry"/>
     <entryLink id="30b0-ecc6-1daf-1f38" name="Primary Breachers" hidden="false" collective="false" import="true" targetId="5079-f2fa-bc4f-aee9" type="selectionEntry"/>
     <entryLink id="3b6a-87de-4444-bf22" name="Primary Drop Pistoleers" hidden="false" collective="false" import="true" targetId="26c6-dd66-8d44-e983" type="selectionEntry"/>
+    <entryLink id="d023-8dce-f549-184d" name="Greyport Armoury " hidden="false" collective="false" import="true" targetId="3a20-bb2c-1d53-9ce1" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07df-5d6b-1079-fd47" type="max"/>
+      </constraints>
+    </entryLink>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="56aa-a497-3a77-badc" name="Doctrine" hidden="false" collective="false" import="true" type="upgrade">
@@ -3072,18 +3077,109 @@ FP: Faction Points</readme>
               <entryLinks>
                 <entryLink id="24f8-be6b-e16a-07c2" name="Rocket pod" hidden="false" collective="false" import="true" targetId="4af5-7655-5d50-0327" type="selectionEntry">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c90-3c02-b1de-1dcf" type="max"/>
+                    <constraint field="selections" scope="24f8-be6b-e16a-07c2" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c90-3c02-b1de-1dcf" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="5a39-74cb-617d-5372" name="LMG" hidden="false" collective="false" import="true" targetId="b8a6-f0ef-5687-f918" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="d594-cc91-e53c-00d4" value="0.0">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24f8-be6b-e16a-07c2" type="atLeast"/>
+                            <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d326-3900-83f9-67eb" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d594-cc91-e53c-00d4" type="max"/>
                   </constraints>
                 </entryLink>
                 <entryLink id="d326-3900-83f9-67eb" name="Storm slugger" hidden="false" collective="false" import="true" targetId="c602-2ecf-acdc-9e5e" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="3438-8564-d9de-a53f" value="0.0">
+                      <conditionGroups>
+                        <conditionGroup type="or">
+                          <conditions>
+                            <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="24f8-be6b-e16a-07c2" type="atLeast"/>
+                            <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a39-74cb-617d-5372" type="atLeast"/>
+                          </conditions>
+                        </conditionGroup>
+                      </conditionGroups>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3438-8564-d9de-a53f" type="max"/>
                   </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="abd4-b527-a15f-2efb" name="Weapon Options" hidden="true" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="3bd9-80b0-5271-87da" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3a20-bb2c-1d53-9ce1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a20-bb2c-1d53-9ce1" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bd9-80b0-5271-87da" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="2bf2-2c82-b5b8-6533" name="Rocket pod" hidden="false" collective="false" import="true" targetId="4af5-7655-5d50-0327" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="2bf2-2c82-b5b8-6533" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1898-cbb0-245f-ba4f" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="5917-183d-cfe8-8f27" name="Flamer" hidden="true" collective="false" import="true" targetId="4fa1-44d4-ffaf-e416" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a20-bb2c-1d53-9ce1" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="7b72-9697-eba3-e1ab" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa9f-2b8d-d50b-d7d2" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b72-9697-eba3-e1ab" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                  </costs>
+                </entryLink>
+                <entryLink id="aa9f-2b8d-d50b-d7d2" name="Gatling gun" hidden="true" collective="false" import="true" targetId="f3a1-03ed-cf5a-645a" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3a20-bb2c-1d53-9ce1" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="1bb0-3523-585c-dc07" value="0.0">
+                      <conditions>
+                        <condition field="selections" scope="8f41-c8ba-98e6-7f07" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5917-183d-cfe8-8f27" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bb0-3523-585c-dc07" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+                  </costs>
                 </entryLink>
               </entryLinks>
             </selectionEntryGroup>
@@ -4166,6 +4262,20 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="3a20-bb2c-1d53-9ce1" name="Greyport Armoury " hidden="false" collective="false" import="true" type="upgrade">
+      <comment>Surplus</comment>
+      <infoLinks>
+        <infoLink id="4eef-68af-43de-1d52" name="Greyport Armoury " hidden="false" targetId="f5d5-8a8a-4f67-763a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="feda-843b-3335-4168" name="New CategoryLink" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="true"/>
+      </categoryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="2fea-274c-747b-2b82" name="Upgrade any model" hidden="false" collective="false" import="true">
@@ -4793,6 +4903,10 @@ Spend one (1) Faction point:
     </rule>
     <rule id="ab7e-7bf0-adf0-3645" name="AA director " publicationId="91df-c558-75f9-73ea" page="89" hidden="false">
       <description>Light Autocannon, HMG, Hicap Primary Autocannon OR Primary Gatling cannon has antiair.</description>
+    </rule>
+    <rule id="f5d5-8a8a-4f67-763a" name="Greyport Armoury " hidden="false">
+      <description>Unoffical Units and Weapon Options
+- Mech additonal weapon options</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
