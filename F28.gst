@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="36" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="37" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -134,12 +134,12 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
           <modifiers>
             <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
               </conditions>
             </modifier>
             <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -157,19 +157,19 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
           <modifiers>
             <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1.0">
               <repeats>
-                <repeat field="selections" scope="3c56-72a8-f435-00f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e6b-b8cc-4735-9bf9" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e6b-b8cc-4735-9bf9" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a2f-360f-950e-abca" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
             <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1.0">
               <conditions>
-                <condition field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="atLeast"/>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="atLeast"/>
               </conditions>
             </modifier>
             <modifier type="decrement" field="4fbf-e6f4-8e55-523e" value="1.0">
               <repeats>
-                <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e7e-75ac-b802-4d14" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e7e-75ac-b802-4d14" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b9e-936e-92d8-ac9c" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
@@ -181,7 +181,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         </categoryLink>
         <categoryLink id="c3c2-f871-76b7-3344" name="Faction Powers" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="6571-c419-ef24-7f57" primary="false">
           <constraints>
-            <constraint field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-cad5-00bd-e4ff" type="min"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a042-cad5-00bd-e4ff" type="min"/>
           </constraints>
         </categoryLink>
         <categoryLink id="edf9-a772-8e9d-c6a5" name="Upgrade Force" hidden="false" targetId="a4de-12bc-8cf2-7d2f" primary="false"/>
@@ -9895,7 +9895,6 @@ exposed.</description>
       <description>Re-roll CC results of ‘1’ to wound for this model.</description>
     </rule>
     <rule id="6b99-d433-bbde-e4c3" name="Bestow Defence(min 4)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <comment></comment>
       <description>All models in this model’s unit have Defence(min 4). If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="af07-d38a-b6a4-b17f" name="Mystic(Weird 1 per 6 wounds in the unit)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
