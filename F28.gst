@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="39" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="40" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -60,11 +60,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <publication id="6cd8-490b-a4ff-30d6" name="Newsletter #08" shortName="F28 Newsletter Issue #8" publicationDate="2021-06-02"/>
     <publication id="32de-c459-8a56-7450" name="Newsletter #09" shortName="F28 Newsletter Issue #9" publicationDate="2021-09-19"/>
     <publication id="5970-2ec8-10d3-2eeb" name="Newsletter #10" shortName="F28 Newsletter Issue #10" publicationDate="2021-11-30"/>
-    <publication id="c3b8-a225-2f1d-fc78" name="Newsletter #11 " shortName="F28 Newsletter Issue #11" publicationDate="2022-02-10"/>
+    <publication id="c3b8-a225-2f1d-fc78" name="Newsletter #11" shortName="F28 Newsletter Issue #11" publicationDate="2022-02-10"/>
     <publication id="ee46-b8c8-95bb-1929" name="Newsletter #12" shortName="F28 Newsletter Issue #12" publicationDate="2022-04-10"/>
     <publication id="84b9-3380-0ec9-d6db" name="Newsletter #13" shortName="F28 Newsletter Issue #13" publicationDate="2022-06-09"/>
     <publication id="588d-0535-e56b-3640" name="Newsletter #14" shortName="F28 Newsletter Issue #14" publicationDate="2022-08-080"/>
-    <publication id="7891-f4a0-99f7-6e53" name="Newsletter #15 " shortName="F28 Newsletter Issue #15" publicationDate="2022-10-17"/>
+    <publication id="7891-f4a0-99f7-6e53" name="Newsletter #15" shortName="F28 Newsletter Issue #15" publicationDate="2022-10-17"/>
     <publication id="a29d-7948-7b5f-6d63" name="Newsletter #16" shortName="F28 Newsletter Issue #16" publicationDate="2022-12-20"/>
     <publication id="3b2a-64bb-f06e-df98" name="Newsletter #17" shortName="F28 Newsletter Issue #17" publicationDate="2023-02-27"/>
     <publication id="4d21-d403-2f77-bbaf" name="PG 1RE1P" shortName="PG 1RE1P" publicationDate="2023-05-18"/>
@@ -132,12 +132,12 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <categoryLinks>
         <categoryLink id="9d67-6a76-536d-3cb2" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
-            <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
+            <modifier type="increment" field="ded3-c919-72cf-629d" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3602-7848-97fd-f38a" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="ded3-c919-72cf-629d" value="1.0">
+            <modifier type="increment" field="ded3-c919-72cf-629d" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="04af-5df8-532d-f038" type="equalTo"/>
               </conditions>
@@ -155,19 +155,19 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         </categoryLink>
         <categoryLink id="539c-0cde-666c-ec01" name="Special" hidden="false" targetId="8882-253b-967f-1dba" primary="false">
           <modifiers>
-            <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1.0">
+            <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1">
               <repeats>
                 <repeat field="selections" scope="3c56-72a8-f435-00f6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3e6b-b8cc-4735-9bf9" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8a2f-360f-950e-abca" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1.0">
+            <modifier type="increment" field="4fbf-e6f4-8e55-523e" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="decrement" field="4fbf-e6f4-8e55-523e" value="1.0">
+            <modifier type="decrement" field="4fbf-e6f4-8e55-523e" value="1">
               <repeats>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e7e-75ac-b802-4d14" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b9e-936e-92d8-ac9c" repeats="1" roundUp="false"/>
@@ -188,22 +188,22 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <categoryLink id="fbff-7365-1597-9d4f" name="Surplus Appendage (optional)" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="false"/>
         <categoryLink id="99e6-63bd-5f63-447c" name="Faction Doctrines" hidden="false" targetId="bd43-6299-26b3-f2cf" primary="false">
           <modifiers>
-            <modifier type="increment" field="4aeb-feca-5800-c66e" value="1.0">
+            <modifier type="increment" field="4aeb-feca-5800-c66e" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="c74e-088b-c46a-235c" value="1.0">
+            <modifier type="increment" field="c74e-088b-c46a-235c" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="equalTo"/>
               </conditions>
             </modifier>
-            <modifier type="increment" field="c74e-088b-c46a-235c" value="1.0">
+            <modifier type="increment" field="c74e-088b-c46a-235c" value="1">
               <repeats>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c89-5a25-dc70-0e3e" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
-            <modifier type="increment" field="4aeb-feca-5800-c66e" value="1.0">
+            <modifier type="increment" field="4aeb-feca-5800-c66e" value="1">
               <conditions>
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2c89-5a25-dc70-0e3e" type="equalTo"/>
               </conditions>
@@ -226,7 +226,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <categoryLinks>
         <categoryLink id="bf8f-4c81-1c34-2704" name="Command" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="false">
           <modifiers>
-            <modifier type="set" field="7ae0-42ca-763e-c69a" value="2.0">
+            <modifier type="set" field="7ae0-42ca-763e-c69a" value="2">
               <conditionGroups>
                 <conditionGroup type="or">
                   <conditions>
@@ -249,7 +249,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         </categoryLink>
         <categoryLink id="85d6-10d6-44a9-5caa" name="Special" hidden="false" targetId="8882-253b-967f-1dba" primary="false">
           <modifiers>
-            <modifier type="increment" field="d065-dab3-b66a-8893" value="1.0">
+            <modifier type="increment" field="d065-dab3-b66a-8893" value="1">
               <repeats>
                 <repeat field="selections" scope="3c56-72a8-f435-00f6" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="unit" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="3e6b-b8cc-4735-9bf9" repeats="1" roundUp="false"/>
@@ -286,12 +286,12 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <entryLink id="32d2-6950-06e0-6437" name="Special Entry" hidden="false" collective="false" import="true" targetId="3e6b-b8cc-4735-9bf9" type="selectionEntry"/>
     <entryLink id="f59a-5cba-8219-9e94" name="Upgrades" hidden="false" collective="false" import="true" targetId="9c41-c9a2-5e03-009a" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="2.0">
+        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="2">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="46ba-4be1-1f48-01b2" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="1.0">
+        <modifier type="increment" field="bfaa-2ffd-f0fb-ca31" value="1">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="214b-6888-0c6c-b708" repeats="1" roundUp="false"/>
           </repeats>
@@ -303,7 +303,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </entryLink>
     <entryLink id="35cb-976c-4a25-b5ba" name="Faction Power" hidden="false" collective="false" import="true" targetId="b424-e987-ac82-a8c8" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="07e4-c03c-bb89-b27b" value="1.0">
+        <modifier type="increment" field="07e4-c03c-bb89-b27b" value="1">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f6d2-abb8-3bfa-891f" repeats="1" roundUp="false"/>
           </repeats>
@@ -315,17 +315,17 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </entryLink>
     <entryLink id="3442-ae17-4155-6684" name="Allied Core Entry" hidden="true" collective="false" import="true" targetId="6356-79e6-70fb-8add" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="9e26-70e8-386e-d732" value="1.0">
+        <modifier type="increment" field="9e26-70e8-386e-d732" value="1">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="214b-6888-0c6c-b708" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="9e26-70e8-386e-d732" value="2.0">
+        <modifier type="increment" field="9e26-70e8-386e-d732" value="2">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="aa24-c222-814d-cf74" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
-        <modifier type="increment" field="9e26-70e8-386e-d732" value="1.0">
+        <modifier type="increment" field="9e26-70e8-386e-d732" value="1">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7d11-5563-2ee8-5cb5" repeats="1" roundUp="false"/>
           </repeats>
@@ -342,7 +342,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </entryLink>
     <entryLink id="88dd-2ef6-e71b-2839" name="Allied Special Entry" hidden="true" collective="false" import="true" targetId="9e7e-75ac-b802-4d14" type="selectionEntry">
       <modifiers>
-        <modifier type="increment" field="03f2-7e96-8598-7270" value="1.0">
+        <modifier type="increment" field="03f2-7e96-8598-7270" value="1">
           <repeats>
             <repeat field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c614-56d3-c8fd-fab4" repeats="1" roundUp="false"/>
           </repeats>
@@ -858,7 +858,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="9c41-c9a2-5e03-009a" name="Upgrades" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="decrement" field="2744-00fe-78fa-f968" value="2.0"/>
+        <modifier type="decrement" field="2744-00fe-78fa-f968" value="2"/>
       </modifiers>
       <infoLinks>
         <infoLink id="d8bb-6aa9-3df3-847d" name="Faction Points" hidden="false" targetId="611e-a210-b99b-6358" type="rule"/>
@@ -2616,7 +2616,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="9708-ec88-ac02-230d" name="Long tank gun" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="95c4-a19d-f6cb-e37d" name="Long Tank Gun" page="" hidden="false" targetId="4e4f-7121-b144-57ce" type="profile"/>
+        <infoLink id="95c4-a19d-f6cb-e37d" name="Long Tank Gun" hidden="false" targetId="4e4f-7121-b144-57ce" type="profile"/>
         <infoLink id="cc35-6990-e481-62e6" name="Priority(hit(re-roll))" hidden="false" targetId="1a9a-bed0-299e-301b" type="rule"/>
         <infoLink id="3ff7-6e69-71a8-062f" name="Platebreaker" hidden="false" targetId="a1ed-6517-ae1a-b5bd" type="rule"/>
         <infoLink id="7dc3-52f8-0889-6352" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
@@ -3038,7 +3038,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="3c70-12aa-7acd-0be4" name="Frenzied Assault" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="332a-1f1d-5df6-f3f2" name="Frenzied Assault" page="" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
+        <infoLink id="332a-1f1d-5df6-f3f2" name="Frenzied Assault" hidden="false" targetId="18a3-0966-7b7c-ae17" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -6910,7 +6910,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     <selectionEntry id="9b38-0c26-8c55-e151" name="Cycle proton lacerator" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="ed00-5c44-1fc6-f9c0" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
-        <infoLink id="8721-a1f7-43c4-cff6" name="Cycle proton lacerator " hidden="false" targetId="5fe5-99c6-7af1-bb1e" type="profile"/>
+        <infoLink id="8721-a1f7-43c4-cff6" name="Cycle proton lacerator" hidden="false" targetId="5fe5-99c6-7af1-bb1e" type="profile"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8539,7 +8539,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="f715-7f8f-4ee4-380d" name="Vicious" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>Hit rolls of ‘6’ cause an additional hit. The extra hit is not affected by e.g. Vital Strike.</description>
     </rule>
-    <rule id="1770-005b-7ed9-6a21" name="Assault Shield*" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+    <rule id="1770-005b-7ed9-6a21" name="Assault Shield" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>As long as at least half of the models in the unit is equipped with Assault Shields, you may force re-roll of all successful hit rolls vs this unit.</description>
     </rule>
     <rule id="2066-da1e-58bd-2da6" name="Suppression(modifier)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
@@ -8639,7 +8639,7 @@ Discard all lock tokens when target moves. Laser markers do not benefit from loc
       <description>Re-roll results of ‘1’ to hit for this model.</description>
     </rule>
     <rule id="b4bb-8878-b38a-a000" name="Bestow ability *(range)*" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
-      <description>All models in attached unit gains ability. If a range is specified, all models in units within range gains ability. </description>
+      <description>All models in attached unit gains ability. If a range is specified, all models in units within range gains ability.</description>
     </rule>
     <rule id="12e4-34b1-36c8-e2f4" name="Leader(level)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Remove a total of level extra action markers from non-vehicle units within 12” in endphase.</description>
@@ -8754,7 +8754,7 @@ least this level of Morale.</description>
       <description>Model has Robust(1) until it moves for the first time.</description>
     </rule>
     <rule id="9780-81df-ef93-3245" name="Ambush" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
-      <description>May activate in staging as a full reaction, deploy onto the board and attack the active unit with priority. If it does, this unit has Scoring(no). It has to deploy in cover or beyond 18” of enemy units. </description>
+      <description>May activate in staging as a full reaction, deploy onto the board and attack the active unit with priority. If it does, this unit has Scoring(no). It has to deploy in cover or beyond 18” of enemy units.</description>
     </rule>
     <rule id="18a3-0966-7b7c-ae17" name="Frenzied Assault" publicationId="81dd-fe5f-c233-17c5" page="85" hidden="false">
       <comment>Remove after PG update.</comment>
@@ -8900,7 +8900,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
     <rule id="55f4-63e5-dda1-037d" name="Bestow Charge(3&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Charge(3&quot;): This model’s CC attacks have +3&quot; range.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="151b-ba7a-3c09-ef1a" name="Move(6&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Model moves up to 6&quot; with each move.</description>
@@ -9154,7 +9154,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="b241-766a-3ee5-fcb1" name="Bestow Tough(+1) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
       <description>All models in units within 12&quot; has Tough(+1).</description>
     </rule>
-    <rule id="eb74-1d94-2774-395d" name="Immune to Suppression" page="" hidden="false">
+    <rule id="eb74-1d94-2774-395d" name="Immune to Suppression" hidden="false">
       <comment>Remove after PG update.</comment>
       <description>Unit does not receive action markers from suppression.</description>
     </rule>
@@ -9171,7 +9171,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="fe84-895e-03a3-5fac" name="Bestow Concealment" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="89c2-ba74-de41-fc45" name="Feeder" publicationId="81dd-fe5f-c233-17c5" page="115" hidden="false">
       <comment>Remove after PG update.</comment>
@@ -9227,7 +9227,7 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="d565-5d8f-6891-2424" name="Bestow Charge(1&quot;) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 12&quot; has Charge(1&quot;): This model’s CC attacks have +1&quot; range.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="28ac-e645-c09d-5ad2" name="Bestow Wound(re-roll)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>All models in this model’s unit have Wound(re-roll): you may re-roll any to-hit dice.</description>
@@ -9271,7 +9271,7 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="09f5-9e2a-75f7-11f6" name="Bestow Concealment(12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 12&quot; has Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="9414-a88d-3bba-206c" name="Bestow Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>All models in this model’s unit have Infiltrate: Unit may deploy anywhere on table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
@@ -9494,7 +9494,7 @@ Model no longer counts as regular. Additional rules in the Vehicles section of t
     <rule id="880c-5722-b6a2-6225" name="Cover(1)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>Model has Defence(+1) versus ranged attacks.</description>
     </rule>
-    <rule id="c949-f787-c19e-4f14" name="Gate(after first turn) " publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+    <rule id="c949-f787-c19e-4f14" name="Gate(after first turn)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>One (1) regular unit per turn may enter from or exit to staging through this model, as if it was connected to staging, after first turn.</description>
     </rule>
     <rule id="057f-45e2-107b-b157" name="Infiltrate(inferior, own table half)" publicationId="e42d-4466-8267-ac1b" page="88" hidden="false">
@@ -9540,7 +9540,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
     </rule>
     <rule id="a055-d22e-99e6-2619" name="Bestow Antiair" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
       <description>All models in this model’s unit have Antiair: May attack Aircraft and VTOL despite lack of attack dice or range. Aircraft have Target(6) and VTOL have Target(5) vs antiair attacks. Accurate vs Aircraft and VTOL.
-If a unit already has Antiair at a better level, it takes precedence. </description>
+If a unit already has Antiair at a better level, it takes precedence.</description>
     </rule>
     <rule id="8c70-c89d-045f-5150" name="Bestow Medical Support (18&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
       <description>Units within 18&quot; has Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
@@ -9619,7 +9619,7 @@ Mechanical Support: Regeneration(1)</description>
     <rule id="c70d-3213-7388-3dc4" name="Bestow Charge(2&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Charge(2&quot;): This model’s CC attacks have +2&quot; range.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="931d-3ba5-8061-1036" name="Bestow Charge(relentless)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Charge(relentless): When charging, apply any suppression suffered by this unit after it has made the attack.</description>
@@ -9630,7 +9630,7 @@ If a unit already has trait at a better level, it takes precedence. </descriptio
     <rule id="933b-d81e-904c-bbd6" name="Bestow Command Uplink (9”, closest)" publicationId="91df-c558-75f9-73ea" page="89" hidden="false">
       <description>All models in closest units within 9&quot; has Command Uplink: This model’s unit counts as attached to a selected command unit for Bestow purposes.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="55d3-a69d-01be-806e" name="Command Uplink" publicationId="91df-c558-75f9-73ea" page="89" hidden="false">
       <description>This model’s unit counts as attached to a selected command unit for Bestow purposes.</description>
@@ -9644,7 +9644,7 @@ If they can’t be attacked, passengers are also unaffected by/does not affect o
 bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
     </rule>
     <rule id="43f3-251b-b7d2-6a7f" name="Cargo(no)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
-      <description> This model may not embark transports unless otherwise stated.</description>
+      <description>This model may not embark transports unless otherwise stated.</description>
     </rule>
     <rule id="b4d9-bd94-8aab-1f6b" name="Insertion(superior)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>When in staging, this unit may deploy anywhere on the board beyond 2” of enemy units, as a full action. On the turn it does, it has Scoring(no). The unit receives 1 less action marker.</description>
@@ -9747,7 +9747,7 @@ least this level of Morale.</description>
     <rule id="79e8-b9d8-6269-6cfd" name="Bestow Concealment(6&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in units within 6&quot; have Concealment: Target(+1) vs ranged attacks. Multiple sources of Concealment does not stack. range: model has Concealment from attacks beyond range only.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="6284-54c7-4ca1-5bfe" name="Flak" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Target(+1) vs Aircraft and VTOL attacks. Multiple sources of Flak does not stack.</description>
@@ -9968,7 +9968,7 @@ example: an Attack(x3) model has “slugger with combined Flamer”. it can eith
     <rule id="6051-ff82-7b47-934f" name="Bestow Charge(1&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All models in this model’s unit have Charge(1&quot;): This model’s CC attacks have +1&quot; range.
 
-If a unit already has trait at a better level, it takes precedence. </description>
+If a unit already has trait at a better level, it takes precedence.</description>
     </rule>
     <rule id="b692-04fd-f825-fcb0" name="Bestow Masterwork(CC)" publicationId="91df-c558-75f9-73ea" page="151" hidden="false">
       <description>All models in this model’s unit have Masterwork(CC): Re-roll CC results of ‘1’ to hit for this model.</description>
@@ -10074,6 +10074,12 @@ In addition, apply any result of one or more ‘1’.</description>
     </rule>
     <rule id="10ab-07a2-0a8d-765a" name="Bestow Defence(min 5)" publicationId="91df-c558-75f9-73ea" page="144" hidden="false">
       <description>All models in this model’s unit have Defence(min 5). If a unit already has trait at a better level, it takes precedence.</description>
+    </rule>
+    <rule id="2a9-f01e-4d9c-8f41" name="Attack(scaling)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>Attack(xY), where Y is equal to the model’s remaining original wounds. min/max xY: but never less/greater than xY</description>
+    </rule>
+    <rule id="b6ec-6f67-8783-e2fb" name="Attack(scaling, min x2)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>Attack(xY), where Y is equal to the model’s remaining original wounds, but never less than x2</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -10594,7 +10600,7 @@ vs vehicles only</characteristic>
     <profile id="44cc-c5ec-387a-4541" name="Indie rifle" publicationId="91df-c558-75f9-73ea" page="114" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2), 24&quot; (1) </characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2), 24&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
@@ -10814,8 +10820,7 @@ priority(hit(re-roll))</characteristic>
     <profile id="caab-db3a-6f47-03db" name="Gem cannon" publicationId="91df-c558-75f9-73ea" page="120" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60” (1)
-</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">spray</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(hit-re-roll)), thight spread, focus fire, linked fire.</characteristic>
@@ -10860,7 +10865,7 @@ Throw: 12” (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
-    <profile id="76fe-3b83-fd34-d028" name="CC (2)" publicationId="91df-c558-75f9-73ea" page="" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="76fe-3b83-fd34-d028" name="CC (2)" publicationId="91df-c558-75f9-73ea" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
@@ -11131,7 +11136,7 @@ priority(hit(re-roll))</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="b1d7-db90-d2e5-5a07" name="Unarmed: Regular" publicationId="91df-c558-75f9-73ea" page="" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="b1d7-db90-d2e5-5a07" name="Unarmed: Regular" publicationId="91df-c558-75f9-73ea" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (1)</characteristic>
@@ -11329,7 +11334,7 @@ indirect(-2), one use</characteristic>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">spray(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol	</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">pistol</characteristic>
       </characteristics>
     </profile>
     <profile id="15be-b750-745b-42d9" name="Hicap Pistol" publicationId="e42d-4466-8267-ac1b" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -11638,7 +11643,7 @@ heavy</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3
 +6</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy
-heavy </characteristic>
+heavy</characteristic>
       </characteristics>
     </profile>
     <profile id="6a59-9f50-94db-7e14" name="Vehicle CC Weapon" publicationId="91df-c558-75f9-73ea" page="105" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -12466,7 +12471,7 @@ Swing: CC (1)</characteristic>
     <profile id="db5b-37a9-32b2-7498" name="Heavy acid cannon" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2) </characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive, heavy</characteristic>
@@ -12658,7 +12663,7 @@ heavy, cleave</characteristic>
     <profile id="e11a-becc-6820-e4f1" name="Heavy acid cannon (Dual)" publicationId="91df-c558-75f9-73ea" page="128" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2) </characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36” (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4, re-roll</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">corrosive, heavy</characteristic>
@@ -12678,8 +12683,7 @@ heavy, cleave</characteristic>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll
-</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
@@ -13578,7 +13582,7 @@ without Aircraft, VTOL, hover or jump)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="b1d9-3086-5e8d-a0b1" name="CC (3)" publicationId="91df-c558-75f9-73ea" page="" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="b1d9-3086-5e8d-a0b1" name="CC (3)" publicationId="91df-c558-75f9-73ea" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (3)</characteristic>
@@ -13596,7 +13600,7 @@ without Aircraft, VTOL, hover or jump)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
-    <profile id="ed58-1443-058d-9071" name="CC (4)" publicationId="91df-c558-75f9-73ea" page="" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="ed58-1443-058d-9071" name="CC (4)" publicationId="91df-c558-75f9-73ea" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (4)</characteristic>
