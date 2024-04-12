@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="40" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="41" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -167,10 +167,11 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
                 <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="44db-08bd-7c1e-8086" type="atLeast"/>
               </conditions>
             </modifier>
-            <modifier type="decrement" field="4fbf-e6f4-8e55-523e" value="1">
+            <modifier type="decrement" field="4fbf-e6f4-8e55-523e" value="1.0">
               <repeats>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9e7e-75ac-b802-4d14" repeats="1" roundUp="false"/>
                 <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7b9e-936e-92d8-ac9c" repeats="1" roundUp="false"/>
+                <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8c08-9db1-56ad-4841" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -1005,11 +1006,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
     </selectionEntry>
     <selectionEntry id="0ef2-9b46-a119-eb8e" name="Siege cannon" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="c419-9322-2c61-5806" name="Seige Cannon" hidden="false" targetId="f891-b393-7615-0fa6" type="profile"/>
+        <infoLink id="c419-9322-2c61-5806" name="Seige cannon" hidden="false" targetId="f891-b393-7615-0fa6" type="profile"/>
+        <infoLink id="d773-b2f5-4aa2-996a" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
       </infoLinks>
-      <entryLinks>
-        <entryLink id="df07-dbf6-8c1b-4832" name="Priority(only)" hidden="false" collective="false" import="true" targetId="95c6-eacd-d9a6-f1b8" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -4123,7 +4122,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="6503-2dc4-c489-9cef" name="Bomb Cluster" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="6503-2dc4-c489-9cef" name="Bomb cluster" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="8c8e-d5e6-ddd5-9428" name="Bomb Cluster" hidden="false" targetId="2417-1f74-01fd-b5ef" type="profile"/>
       </infoLinks>
@@ -6029,10 +6028,9 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="e01b-1016-edaf-13d1" name="Thermal Borehead" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="e01b-1016-edaf-13d1" name="Massive borehead" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
-        <infoLink id="7aa9-ec68-85b1-efe4" name="Thermal Borehead" hidden="false" targetId="699f-c00a-4830-8125" type="profile"/>
-        <infoLink id="232a-27a8-c456-0c53" name="Driving Hunger" hidden="false" targetId="b2a4-8707-21fc-82aa" type="rule"/>
+        <infoLink id="7aa9-ec68-85b1-efe4" name="Massive borehead" hidden="false" targetId="ccdd-ea85-fbc1-1482" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -8416,6 +8414,133 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="8c08-9db1-56ad-4841" name="Special(2)" hidden="false" collective="false" import="true" type="upgrade">
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="451d-7715-5642-07f4" name="Tremble cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="dcf3-5dc7-8ec1-8677" name="Tremble cannon" hidden="false" targetId="fd7d-aea9-00e1-66ae" type="profile"/>
+        <infoLink id="29ae-516a-55a6-b2ae" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="01d6-0ec9-c91d-45f8" name="Hephaestus mega-slugger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="15fe-7f8b-ff73-6c74" name="Hephaestus mega-slugger" hidden="false" targetId="9c88-dd01-f43a-b16e" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9ea9-e282-a9fd-7247" name="Earthquake cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c60b-8d4c-150b-2187" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="b729-1fc1-f988-dd73" name="Earthquake cannon" hidden="false" targetId="5a42-b009-bb86-7394" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="edbe-d155-3cdc-e2f7" name="Etna cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="a2bc-d3fd-6438-d10b" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="882e-808b-2d9e-a5f9" name="Etna cannon" hidden="false" targetId="40d1-ce3e-e502-6b93" type="profile"/>
+        <infoLink id="850b-2b76-4029-f284" name="Wreck(+2)" hidden="false" targetId="b26f-3f1c-d820-eb4d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c34-aa66-e322-d661" name="Heavy siege cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d462-f3e3-8f52-a804" name="Heavy siege cannon" hidden="false" targetId="f43c-2119-0ed5-be1c" type="profile"/>
+        <infoLink id="41a5-59a2-c2a0-237e" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f6da-d011-3ff7-7ebd" name="Antitank missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2c7a-8ad1-2d79-5039" name="Antitank missile" hidden="false" targetId="0c11-c721-9fad-4d0d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="687d-d2be-9d99-69e4" name="Antitank missile rack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b011-9455-dba2-ee6b" name="Antitank missile rack" hidden="false" targetId="feba-227c-99b7-29f2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3250-d07a-d20d-d4c6" name="Blast missile" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="19e7-7df0-6400-f4c1" name="Blast missile" hidden="false" targetId="0a4a-b46c-54c9-73e2" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="401d-844e-fcca-f64b" name="Blast missile rack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="19f3-1de8-dcc9-b52e" name="Blast missile rack" hidden="false" targetId="b96f-1a7e-3bdd-70b5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="1826-8a5d-a4e5-bbf3" name="Rocket pod rack" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="354c-4f87-24b3-a9ef" name="Rocket pod rack" hidden="false" targetId="2a1a-2165-a77a-bdbc" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9b6f-f16b-48bc-bd2f" name="Rotary Light autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="72bb-9c23-711b-c699" name="Rotary Light autocannon" hidden="false" targetId="166f-4319-2c46-1963" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="bb7a-03d2-5423-f0a6" name="Thermal charger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fcfc-c465-ead7-5283" name="Thermal charger" hidden="false" targetId="699f-c00a-4830-8125" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -8803,8 +8928,9 @@ least this level of Morale.</description>
     <rule id="7c72-61e3-2388-db9f" name="Ignore Concealment" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Targets of attacks from this model does not benefit from Concealment.</description>
     </rule>
-    <rule id="6c58-2bc7-fde8-3325" name="Supremacy Assets" publicationId="e42d-4466-8267-ac1b" page="44" hidden="false">
-      <description>Supremacy Assets are best used in larger battles (1500+ points), as their presence might unbalance smaller games. If used, players may take a single Supremacy Asset from the list below belonging to the same faction as the rest of their force; counting as a special choice. They may not receive upgrades.</description>
+    <rule id="6c58-2bc7-fde8-3325" name="Supremacy Assets" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false">
+      <description>Supremacy Assets are best used in larger battles (1500+ points), as their presence might
+unbalance smaller games. If used, players may take a single Supremacy Asset from their faction, counting as Special(2) unless otherwise mentioned. They may not receive upgrades.</description>
     </rule>
     <rule id="81b7-00c4-6dea-18b7" name="Superior" publicationId="e42d-4466-8267-ac1b" page="89" hidden="false">
       <description>Unit is Massive (If not a vehicle).
@@ -10081,6 +10207,57 @@ In addition, apply any result of one or more ‘1’.</description>
     <rule id="b6ec-6f67-8783-e2fb" name="Attack(scaling, min x2)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
       <description>Attack(xY), where Y is equal to the model’s remaining original wounds, but never less than x2</description>
     </rule>
+    <rule id="0f6b-9d06-54b8-e765" name="Capacity(25)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 25 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="d8bd-da33-75d1-8b81" name="Capacity(40)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 40 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="779c-55ce-20d3-f5ed" name="Capacity(10 ports)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>10 passengers may attack with max 5p ranged weapons.</description>
+    </rule>
+    <rule id="e079-bdac-c07b-411c" name="Capacity(20 cover)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>20 passengers may attack and be attacked. When embarked, passengers have Cover(2).</description>
+    </rule>
+    <rule id="a24a-4f30-dc8e-ff78" name="Wreck(+1)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>Weapon has +1 on the vehicle damage table.</description>
+    </rule>
+    <rule id="b26f-3f1c-d820-eb4d" name="Wreck(+2)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>Weapon has +2 on the vehicle damage table.</description>
+    </rule>
+    <rule id="7fe4-d79f-9504-e1d3" name="Wreck(re-roll)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>Roll two dice on the vehicle damage table and pick the better result.</description>
+    </rule>
+    <rule id="94b4-613f-698e-e370" name="Bestow Fanatic(optional) (12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
+      <description>All models in units within 12&quot; has Fanatic: For every action marker you would allocate from suppression to a unit with one or more models with this trait, the unit instead suffers one (1) wound. This wound has to be allocated to a model with this trait. Use of the trait is optional.</description>
+    </rule>
+    <rule id="63cb-8fa3-f0f1-d10b" name="Repeal(dangerous)" publicationId="4d21-d403-2f77-bbaf" page="142" hidden="false">
+      <description>Units charging this unit take a dangerous terrain test.</description>
+    </rule>
+    <rule id="35d6-2107-f82d-d304" name="Counterattack" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>When a model with this weapon is attacked, it may attack the attacker with this weapon
+as a free action with the same priority.</description>
+    </rule>
+    <rule id="473f-5f51-ce9b-d920" name="Counterattack(only)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>When a model with this weapon is attacked, it may attack the attacker with this weapon
+as a free action with the same priority. The weapon may only attack in this manner.</description>
+    </rule>
+    <rule id="e160-231b-950f-7052" name="Counterattack(only aircraft)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>When a model with this weapon is attacked by aircraft, it may attack the attacker with this weapon as a free action with the same priority. The weapon may only attack in this manner.</description>
+    </rule>
+    <rule id="c129-9b15-b813-c512" name="Move(ignore terrain)" publicationId="4d21-d403-2f77-bbaf" hidden="false">
+      <description>Ignore terrain when moving.</description>
+    </rule>
+    <rule id="ccdd-ea85-fbc1-1482" name="Massive borehead" publicationId="4d21-d403-2f77-bbaf" page="103" hidden="false">
+      <description>Terrain(hostile, 2” from the borehead) - see illustration p123.</description>
+    </rule>
+    <rule id="0f59-2ef1-4072-d777" name="Rally Point" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>Other units may make withdrawal moves towards this model (instead of a friendly board edge).</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="de65-91da-25ce-abf1" name="Slugger" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -10920,6 +11097,7 @@ Throw: 12” (1)</characteristic>
       </characteristics>
     </profile>
     <profile id="b73c-654e-d2f8-6ea8" name="Rocket pod" publicationId="91df-c558-75f9-73ea" page="86" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <comment>w</comment>
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
@@ -11770,11 +11948,11 @@ ignore cover(1), heavy</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="2417-1f74-01fd-b5ef" name="Bomb Cluster" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="2417-1f74-01fd-b5ef" name="Bomb cluster" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6&quot; (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
@@ -12856,13 +13034,13 @@ CC (4)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">platebreaker(6”)</characteristic>
       </characteristics>
     </profile>
-    <profile id="699f-c00a-4830-8125" name="Thermal Borehead" publicationId="e42d-4466-8267-ac1b" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="699f-c00a-4830-8125" name="Thermal charger" publicationId="4d21-d403-2f77-bbaf" page="103" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (D6)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">20&quot; (2)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">driving hunger</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">cleave</characteristic>
       </characteristics>
     </profile>
     <profile id="829b-c699-1fd6-ed4a" name="Hammer" publicationId="e42d-4466-8267-ac1b" page="62" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -14173,6 +14351,105 @@ pistol</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">antiair</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="fd7d-aea9-00e1-66ae" name="Tremble cannon" publicationId="4d21-d403-2f77-bbaf" page="74" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">60&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll, blast(x3)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9c88-dd01-f43a-b16e" name="Hephaestus mega-slugger" publicationId="4d21-d403-2f77-bbaf" page="74" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30&quot; (10)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="40d1-ce3e-e502-6b93" name="Etna cannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">120&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+9, x3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">priority(only), wreck(+2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5a42-b009-bb86-7394" name="Earthquake cannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">140&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll, blast(x2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+4</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">prioroty(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f43c-2119-0ed5-be1c" name="Heavy siege cannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll, blast(x2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover, priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0c11-c721-9fad-4d0d" name="Antitank missile" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="feba-227c-99b7-29f2" name="Antitank missile rack" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="0a4a-b46c-54c9-73e2" name="Blast missile" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b96f-1a7e-3bdd-70b5" name="Blast missile rack" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="2a1a-2165-a77a-bdbc" name="Rocket pod rack" publicationId="4d21-d403-2f77-bbaf" page="84" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast, re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="166f-4319-2c46-1963" name="Rotary Light autocannon" publicationId="4d21-d403-2f77-bbaf" page="83" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30&quot; (12)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
     </profile>
   </sharedProfiles>
