@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="41" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="42" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -8369,7 +8369,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="8cbb-0241-8e2a-f101" name="Players Guide" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="8cbb-0241-8e2a-f101" name="Players Guide Units" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4019-52d3-567e-e3d3" name="Players Guide" hidden="false" targetId="70f8-260b-ca23-4eaa" type="rule"/>
       </infoLinks>
@@ -8404,10 +8404,13 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="554f-5176-bd8c-85b9" name="OBA" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="554f-5176-bd8c-85b9" name="OBA units" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="4a70-6333-3867-0b0f" name="OBA" hidden="false" targetId="29a5-ff8a-e51b-5dcd" type="rule"/>
       </infoLinks>
+      <categoryLinks>
+        <categoryLink id="3ccc-80ea-a519-620e" name="New CategoryLink" hidden="false" targetId="69c5-eb45-5f67-b18e" primary="true"/>
+      </categoryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
         <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
@@ -8540,6 +8543,136 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
       <infoLinks>
         <infoLink id="fcfc-c465-ead7-5283" name="Thermal charger" hidden="false" targetId="699f-c00a-4830-8125" type="profile"/>
       </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="3e20-7057-723b-ac1e" name="Improved LMG" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4680-b48c-b0ae-8e08" name="Improved LMG" hidden="false" targetId="3cc4-a142-ad9f-7764" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ccd1-3d4d-06d2-5704" name="Stoss launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="fd54-11e8-69cd-bc52" name="Ignore cover(1)" hidden="false" targetId="59ac-b884-dc2d-6c29" type="rule"/>
+        <infoLink id="dfe1-5267-661d-b0fa" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
+        <infoLink id="3dbf-f6f0-abe4-2838" name="Stoss launcher" hidden="false" targetId="eba4-13e0-4c50-6f21" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24e5-c372-ab28-069e" name="Dual Stoss launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="e20e-17ef-3098-a31d" name="Ignore cover(1)" hidden="false" targetId="59ac-b884-dc2d-6c29" type="rule"/>
+        <infoLink id="70a1-045c-0740-6c18" name="Move and Fire" hidden="false" targetId="968a-927f-eff7-659b" type="rule"/>
+        <infoLink id="0dc2-523b-5e0f-8564" name="Stoss launcher" hidden="false" targetId="eba4-13e0-4c50-6f21" type="profile">
+          <modifiers>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="blast, re-roll"/>
+            <modifier type="append" field="name" value="(Dual)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="b0cf-da31-8164-fd2e" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="dd4c-f81f-a29e-561a" name="Artillery gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f7d9-3b17-71d5-cab4" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="b5f0-e78e-926c-3f75" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+        <infoLink id="b8df-cbd6-4d00-89ce" name="Artillery gun" hidden="false" targetId="6ebd-aada-315b-5942" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a181-706c-2d2d-e293" name="Missile artillery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="83de-d355-7754-9243" name="Antiair(only)" hidden="false" targetId="b26a-00e8-8aee-a77a" type="rule"/>
+        <infoLink id="0ac2-a0ea-5b82-8c71" name="Missile artillery" hidden="false" targetId="f3a1-8bfa-58ec-7619" type="profile"/>
+        <infoLink id="fc30-66c0-61e0-543f" name="Wreck(+1)" hidden="false" targetId="a24a-4f30-dc8e-ff78" type="rule"/>
+        <infoLink id="61d6-8c04-f19a-fa40" name="SSM" hidden="false" targetId="a875-d079-2e50-b104" type="rule"/>
+        <infoLink id="e495-699a-2e01-01bc" name="Advanced search radar" hidden="false" targetId="506b-0642-6f74-aa14" type="rule"/>
+        <infoLink id="fd95-2e21-3b1c-c3dc" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6cf2-628e-aec2-2cf7" name="Plasma bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="f15f-3a51-138b-bb5b" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="e170-d258-ea1a-b5ef" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+        <infoLink id="189a-7e56-48a2-59df" name="Plasma bombard" hidden="false" targetId="5af8-d07f-8aca-6ddf" type="profile"/>
+        <infoLink id="589e-37dd-59c0-bbf5" name="Reload(2, on 5+)" hidden="false" targetId="31a5-6b9e-e6b0-9114" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67b7-0f65-afa4-911f" name="Rocket artillery" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0202-f6d9-ed16-4be8" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="9c57-60db-5e15-add4" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+        <infoLink id="5f7f-0fc2-7ee4-a3ae" name="Rocket artillery" hidden="false" targetId="a58e-51de-4722-eb04" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e42e-57c8-8937-a8fe" name="Siege bombard" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d935-c1c2-01af-9683" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="8c3f-ffb5-8aef-947a" name="Indirect(-2)" hidden="false" targetId="a6b7-cc14-34f9-186d" type="rule"/>
+        <infoLink id="91c8-00f4-2746-bfc8" name="Siege bombard" hidden="false" targetId="c691-7076-289c-3527" type="profile"/>
+        <infoLink id="1bec-ea15-8dec-af8e" name="Reserves(2)" hidden="false" targetId="7134-8b6b-3289-efae" type="rule"/>
+        <infoLink id="f78a-68c8-2df3-fbf9" name="Reload(2)" hidden="false" targetId="2742-3248-5f9b-0c62" type="rule"/>
+        <infoLink id="8e28-89a5-7c6c-cf37" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+        <infoLink id="ff5b-afb8-d43f-b904" name="Ignore cover(1)" hidden="false" targetId="59ac-b884-dc2d-6c29" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f9f5-ea8d-4045-c616" name="Dual Tank gatling cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="846b-2b28-e91c-e5d0" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="df71-9a91-16af-f471" name="Tank gatling cannon" hidden="false" targetId="35a7-9759-e85d-ca37" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="append" field="64c1-d271-0713-c5fb" value=", re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="2b5e-9473-a3fb-6b9a" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
@@ -9596,6 +9729,7 @@ Example: Player A rolls ‘1’,’1’,’5’ and may select a 5+ or worse pow
       <description>All models in this model’s unit have Tough(+1).</description>
     </rule>
     <rule id="f19f-83d7-50bc-c85b" name="Bestow Medical Support (6&quot;)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <comment>w</comment>
       <description>Units within 6&quot; has Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
     </rule>
     <rule id="8038-a671-52c6-7ca6" name="Structure(simple)" publicationId="91df-c558-75f9-73ea" page="148" hidden="false">
@@ -10124,6 +10258,7 @@ If a unit already has trait at a better level, it takes precedence.</description
       <description>When this model’s unit is removed as a casualty, +1 FP.</description>
     </rule>
     <rule id="2c9a-8480-912e-be0a" name="Martyr(+1 FP)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <comment>w</comment>
       <description>When this model is removed as a casualty, +1 FP.</description>
     </rule>
     <rule id="225f-e461-0d0f-d8c1" name="Infiltrate(own half)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -10235,7 +10370,7 @@ bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description
     <rule id="94b4-613f-698e-e370" name="Bestow Fanatic(optional) (12&quot;)" publicationId="81dd-fe5f-c233-17c5" page="113" hidden="false">
       <description>All models in units within 12&quot; has Fanatic: For every action marker you would allocate from suppression to a unit with one or more models with this trait, the unit instead suffers one (1) wound. This wound has to be allocated to a model with this trait. Use of the trait is optional.</description>
     </rule>
-    <rule id="63cb-8fa3-f0f1-d10b" name="Repeal(dangerous)" publicationId="4d21-d403-2f77-bbaf" page="142" hidden="false">
+    <rule id="63cb-8fa3-f0f1-d10b" name="Repel(dangerous)" publicationId="4d21-d403-2f77-bbaf" page="142" hidden="false">
       <description>Units charging this unit take a dangerous terrain test.</description>
     </rule>
     <rule id="35d6-2107-f82d-d304" name="Counterattack" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
@@ -10257,6 +10392,60 @@ as a free action with the same priority. The weapon may only attack in this mann
     </rule>
     <rule id="0f59-2ef1-4072-d777" name="Rally Point" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
       <description>Other units may make withdrawal moves towards this model (instead of a friendly board edge).</description>
+    </rule>
+    <rule id="abd9-23b8-4166-dc7e" name="CC(no)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>Model has no unarmed CC attack.</description>
+    </rule>
+    <rule id="7134-8b6b-3289-efae" name="Reserves(2)" publicationId="4d21-d403-2f77-bbaf" hidden="false">
+      <description>Start the game with 2 action markers.</description>
+    </rule>
+    <rule id="397b-2a42-d86e-90d2" name="Reserves(4)" publicationId="4d21-d403-2f77-bbaf" hidden="false">
+      <description>Start the game with 4 action markers.</description>
+    </rule>
+    <rule id="dab2-f5d9-6a5a-f110" name="Flexible(Aircraft/Structure, one use)" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>As part of a move this model may switch between Aircraft/Structure, one use.</description>
+    </rule>
+    <rule id="56c7-1726-f832-66ac" name="Rally point(when structure)" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>Other units may make withdrawal moves towards this structure (instead of a friendly board edge).</description>
+    </rule>
+    <rule id="c245-8855-b9f2-e42e" name="Capacity(28)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 28 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="4e74-ee7a-f76f-d79d" name="Capacity(embark/disembark only when structure)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>Passengers can either embark or disembark on their own as part of a move when structure.</description>
+    </rule>
+    <rule id="decf-6679-9883-c11b" name="Bestow Medical Support (9&quot;, regular)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Regular units within 9&quot; has Medical Support: Ignore the first wound suffered by this unit from attacks each turn.</description>
+    </rule>
+    <rule id="506b-0642-6f74-aa14" name="Advanced search radar" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false">
+      <description>Opponent must reveal any aircraft or VTOL in staging.
+This model may attack enemy aircraft and VTOL in staging without hit(+1).</description>
+    </rule>
+    <rule id="2742-3248-5f9b-0c62" name="Reload(2)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>After attacking with this weapon, user’s unit gets 2 extra action markers that may not be removed this endphase.</description>
+    </rule>
+    <rule id="31a5-6b9e-e6b0-9114" name="Reload(2, on 5+)" publicationId="4d21-d403-2f77-bbaf" page="140" hidden="false">
+      <description>After attacking with this weapon, user’s unit gets 2 extra action markers on 5+ that may not be removed this endphase.</description>
+    </rule>
+    <rule id="a875-d079-2e50-b104" name="SSM" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false">
+      <description>On hit, opponent selects one (1) unit in staging; it takes a dangerous terrain test and receives one (1) action marker if any wounds are suffered.</description>
+    </rule>
+    <rule id="b26a-00e8-8aee-a77a" name="Antiair(only)" publicationId="91df-c558-75f9-73ea" page="150" hidden="false">
+      <description>May only attack Aircraft and VTOL despite lack of attack dice or range. Aircraft have Target(6) and VTOL have Target(5) vs antiair attacks. Accurate vs Aircraft and VTOL.</description>
+    </rule>
+    <rule id="4a7b-44de-16a9-c03c" name="Ignore Hidden" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Targets of attacks from this model does not benefit from Hidden.</description>
+    </rule>
+    <rule id="b918-7530-0af8-d060" name="Ignore Camouflage" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Targets of attacks from this model does not benefit from Camouflage.</description>
+    </rule>
+    <rule id="18af-e88d-f941-a357" name="Martyr(units within 2” take a dangerous terrain test)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>When this model is removed as a casualty, units within 2” take a dangerous terrain test).</description>
+    </rule>
+    <rule id="7ec3-78c1-7c17-ab51" name="Cause Unstable (12”, mystics)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>All mystics of units (friendly and enemy) within 12&quot; takes a dangerous terrain test in the withdrawal step of every endphase. Stacks with further instances of Unstable.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -12802,13 +12991,13 @@ heavy, cleave</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2)</characteristic>
       </characteristics>
     </profile>
-    <profile id="b4be-1d43-91d2-c537" name="Barrel Bombs" publicationId="e42d-4466-8267-ac1b" page="42" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="b4be-1d43-91d2-c537" name="Barrel Bombs" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">6” (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D6), -3</characteristic>
-        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
-        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast, -2</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">attack(only when transported)</characteristic>
       </characteristics>
     </profile>
     <profile id="879f-be67-9c21-4303" name="Demolition charge" publicationId="91df-c558-75f9-73ea" page="110" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
@@ -12896,11 +13085,11 @@ heavy
 antiair(only), heavy</characteristic>
       </characteristics>
     </profile>
-    <profile id="a2de-a28f-bf44-8b60" name="Chamber AGL" publicationId="e42d-4466-8267-ac1b" page="59" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="a2de-a28f-bf44-8b60" name="Chamber AGL" publicationId="4d21-d403-2f77-bbaf" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
         <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (3)</characteristic>
-        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
       </characteristics>
@@ -14450,6 +14639,72 @@ pistol</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="3cc4-a142-ad9f-7764" name="Improved LMG" publicationId="4d21-d403-2f77-bbaf" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">36(4)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="eba4-13e0-4c50-6f21" name="Stoss launcher" publicationId="4d21-d403-2f77-bbaf" page="76" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">ignore cover(1), move and fire</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="6ebd-aada-315b-5942" name="Artillery gun" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72-240” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-2), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5af8-d07f-8aca-6ddf" name="Plasma bombard" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72”-180” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-2), priority(only), reload(2, on 5+)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="a58e-51de-4722-eb04" name="Rocket artillery" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72-180” (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast, re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-2), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c691-7076-289c-3527" name="Siege bombard" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1">72”-120” (2), blast(x2), wound(+3), </characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72”-120” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(x2)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2), ignore cover(1), indirect(-2), priority(only), reload(2), reserves(2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f3a1-8bfa-58ec-7619" name="Missile artillery" publicationId="4d21-d403-2f77-bbaf" page="67" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">SAM: 72-300” (1)
+SSM: 72-300” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1, re-roll
+re-roll</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">advanced search radar, antiair(only), priority(only), wreck(+1)
+priority(only), SSM</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
