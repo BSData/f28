@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="42" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="43" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -14,6 +14,10 @@ Skirmishes - War Always Changes: Is updated with thye first revised edition. For
 
 Narrative: Is under development.
 
+Factions lists, revised edition (F28 1RE1P and PG 1RE1P):
+The Army of Republic(s)
+The Primary Chambers
+
 Faction lists, revised edition (F28 1RE1P):
 The Army of the Republic(s)
 The Chambers
@@ -21,7 +25,6 @@ The Convents of the Faithful
 The Enclaves
 The Mutant Menace
 The Nanite Resurrection
-The Primary Chambers
 The Scandinavian Commonwealth
 The Seelie Court
 The Tide
@@ -8674,6 +8677,132 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="9b69-90e9-5226-804e" name="Dual Hicap SR LAT-cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="71f1-1eea-1e52-bdaf" name="Hicap SR LAT-cannon" hidden="false" targetId="c540-7609-05ae-d2df" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8ff5-8514-7094-7c8e" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="9950-b7c4-f0d7-7fea" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e677-21f5-c376-a93f" name="Primary Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6cdc-ec25-2768-8ab4" name="Primary Autocannon" hidden="false" targetId="681a-fd30-d220-1c3a" type="profile"/>
+        <infoLink id="7997-16da-b842-6d5a" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d84e-60a1-537b-b186" name="Dual Primary Autocannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="630c-16b0-d3c0-b09d" name="Primary Autocannon" hidden="false" targetId="681a-fd30-d220-1c3a" type="profile">
+          <modifiers>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+            <modifier type="append" field="name" value="(Dual)"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="8866-93bd-3911-aa9f" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="3246-0295-7550-72c0" name="Dual Weapon" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="13b0-e53a-2026-473b" name="Hicap Plasma cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="7678-08ba-f6d6-44ab" name="Hicap Plasma cannon" hidden="false" targetId="8e4f-1a0a-85c7-2e43" type="profile"/>
+        <infoLink id="673c-6391-a550-5db7" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="e6d3-9090-daca-e485" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a0da-65e8-ef2b-5396" name="Hicap LATcannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="0fd8-ac0f-99d6-2b81" name="Hicap LATcannon" hidden="false" targetId="1562-a769-4d39-d777" type="profile"/>
+        <infoLink id="051f-2621-246f-e604" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="502c-6636-2d4f-a387" name="Deflector(6)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="584c-80e8-1e5a-d8d1" name="Deflector(6)" hidden="false" targetId="64f0-8ef2-cee6-2385" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d657-3b99-121a-adca" name="Deflector(7)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="c30e-e4df-e733-a6ea" name="Deflector(7)" hidden="false" targetId="6358-c71d-7947-fb8f" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="02e3-b5ee-d030-3682" name="Deflector(8)" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9499-3794-d629-2058" name="Deflector(8)" hidden="false" targetId="252a-9889-254c-97ae" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="310f-00b7-3e1d-fa72" name="Acceleration cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="d81f-0070-b62a-3524" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="1319-a27e-874c-60cf" name="Acceleration cannon" hidden="false" targetId="0310-dee8-283e-8cea" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="67a2-b469-213c-f36a" name="Dual Acceleration cannon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="4e1e-0eb1-627b-6f28" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="951f-1ee7-46b1-146b" name="Acceleration cannon" hidden="false" targetId="0310-dee8-283e-8cea" type="profile">
+          <modifiers>
+            <modifier type="append" field="name" value="(Dual)"/>
+            <modifier type="set" field="64c1-d271-0713-c5fb" value="re-roll"/>
+          </modifiers>
+        </infoLink>
+        <infoLink id="d6ab-a2d3-c1bf-68f9" name="Dual Weapon" publicationId="aae0-5552-35a8-74d6" hidden="false" targetId="aa11-80ae-9177-3f47" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -10446,6 +10575,45 @@ This model may attack enemy aircraft and VTOL in staging without hit(+1).</descr
     </rule>
     <rule id="7ec3-78c1-7c17-ab51" name="Cause Unstable (12”, mystics)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
       <description>All mystics of units (friendly and enemy) within 12&quot; takes a dangerous terrain test in the withdrawal step of every endphase. Stacks with further instances of Unstable.</description>
+    </rule>
+    <rule id="c44e-f79a-b982-0ab9" name="Infiltrate(own third)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
+      <description>Unit may deploy anywhere on own third of the table during the first initiative phase of the game, beyond 12” of enemy units and board edge(s), in reverse initiative order. If it does, the unit has scoring(no) turns 1-2.</description>
+    </rule>
+    <rule id="64f0-8ef2-cee6-2385" name="Deflector(6)" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>Model has extra Defence(6) wounds.
+» These do not count as original wounds, and may only be lost from ranged attacks.
+» If a model loses its last non-deflector wound any remaining Deflectors are ignored.
+» Deflectors are immune to the Damage(x) and Wound(xY) traits.
+» As long as a model has any remaining Deflectors it counts as having Wounds(1) for
+blast purposes.
+» A model can restore 1 Deflector in the endphase if it has less than 2 action markers
+by taking 1 action marker after any removals.
+» Attacks which ignore Defence(min) also ignore Deflectors.</description>
+    </rule>
+    <rule id="6358-c71d-7947-fb8f" name="Deflector(7)" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>Model has extra Defence(7) wounds.
+» These do not count as original wounds, and may only be lost from ranged attacks.
+» If a model loses its last non-deflector wound any remaining Deflectors are ignored.
+» Deflectors are immune to the Damage(x) and Wound(xY) traits.
+» As long as a model has any remaining Deflectors it counts as having Wounds(1) for
+blast purposes.
+» A model can restore 1 Deflector in the endphase if it has less than 2 action markers
+by taking 1 action marker after any removals.
+» Attacks which ignore Defence(min) also ignore Deflectors.</description>
+    </rule>
+    <rule id="252a-9889-254c-97ae" name="Deflector(8)" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>Model has extra Defence(8) wounds.
+» These do not count as original wounds, and may only be lost from ranged attacks.
+» If a model loses its last non-deflector wound any remaining Deflectors are ignored.
+» Deflectors are immune to the Damage(x) and Wound(xY) traits.
+» As long as a model has any remaining Deflectors it counts as having Wounds(1) for
+blast purposes.
+» A model can restore 1 Deflector in the endphase if it has less than 2 action markers
+by taking 1 action marker after any removals.
+» Attacks which ignore Defence(min) also ignore Deflectors.</description>
+    </rule>
+    <rule id="2a1d-ed16-af86-c3c3" name="Bestow Move(nimble)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>All models in this model’s unit have Move(nimble): No movement penalty for difficult terrain.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -14705,6 +14873,42 @@ re-roll</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">advanced search radar, antiair(only), priority(only), wreck(+1)
 priority(only), SSM</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="681a-fd30-d220-1c3a" name="Primary Autocannon" publicationId="4d21-d403-2f77-bbaf" page="77" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48 (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="1562-a769-4d39-d777" name="Hicap LATcannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">48 (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8e4f-1a0a-85c7-2e43" name="Hicap Plasma cannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30&quot; (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(half)</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+3</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, heavy</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0310-dee8-283e-8cea" name="Acceleration cannon" publicationId="4d21-d403-2f77-bbaf" page="70" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72” (6)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+5</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
