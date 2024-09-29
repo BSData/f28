@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="43" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="44" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -2485,7 +2485,7 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="1430-bdcd-e4e5-1e21" name="Grenade Launcher" hidden="false" collective="false" import="true" type="upgrade">
+    <selectionEntry id="1430-bdcd-e4e5-1e21" name="Grenade launcher" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
         <infoLink id="28fb-8f4a-ebd1-4196" name="Grenade Launcher" hidden="false" targetId="79e2-9423-cb45-7d9c" type="profile"/>
       </infoLinks>
@@ -11463,11 +11463,11 @@ Throw: 12” (1)</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use</characteristic>
       </characteristics>
     </profile>
-    <profile id="79e2-9423-cb45-7d9c" name="Grenade Launcher" publicationId="91df-c558-75f9-73ea" page="80" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+    <profile id="79e2-9423-cb45-7d9c" name="Grenade launcher" publicationId="91df-c558-75f9-73ea" page="80" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
       <characteristics>
         <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
-        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">24” (1)
-24” (1)</characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18” (1)
+18” (1)</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast(D3)
 .</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">.
