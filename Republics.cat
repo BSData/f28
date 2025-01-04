@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="15" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="77e7-6d32-14cb-b803" name="The Army of the Republic(s)" revision="16" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -2290,7 +2290,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ea06-d666-e632-a426" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="c257-9b80-027c-49c4" name="Company Commander" hidden="false" targetId="cd41-1212-f08e-ef8a" type="profile"/>
+                <infoLink id="c257-9b80-027c-49c4" name="Re. Company Commander" hidden="false" targetId="cd41-1212-f08e-ef8a" type="profile"/>
                 <infoLink id="5301-09ec-f953-a348" name="Leader(1)" hidden="false" targetId="afb2-247b-92b8-da01" type="rule"/>
                 <infoLink id="0f91-a071-ae54-ca8e" name="Company Commander" hidden="false" targetId="ac94-35fb-f76c-b4c1" type="rule"/>
               </infoLinks>
@@ -2311,6 +2311,42 @@ FP: Faction Points</readme>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c29-1306-ec90-0cb8" type="max"/>
                       </constraints>
                     </entryLink>
+                    <entryLink id="f581-7851-40ac-793a" name="Slugger and Energy Fist" hidden="true" collective="false" import="true" targetId="85a4-3799-5c8a-cb16" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e35f-1383-e2e5-6c2f" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="00ba-70fc-3be3-220d" name="Plasma Pistol and Energy maul" hidden="true" collective="false" import="true" targetId="4876-0d36-cef2-a530" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0611-0ce3-9aeb-78f8" type="max"/>
+                      </constraints>
+                    </entryLink>
+                    <entryLink id="2265-5827-0a53-8814" name="Slug pistol and Energy maul" hidden="true" collective="false" import="true" targetId="6697-fb7b-5277-2b4b" type="selectionEntry">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="false">
+                          <conditions>
+                            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1583-3710-8724-bd56" type="max"/>
+                      </constraints>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2327,7 +2363,15 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="9f66-da55-eb85-df7e" name="Medical Support" hidden="false" targetId="f563-7229-9e79-1673" type="rule"/>
-                <infoLink id="aa25-fcf8-d9ac-151d" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile"/>
+                <infoLink id="aa25-fcf8-d9ac-151d" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="c47d-a447-3e55-6b4b" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -2377,7 +2421,15 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="346b-3c61-e35e-47b1" name="Communications" hidden="false" targetId="e7bc-d0a3-516c-7f9d" type="rule"/>
-                <infoLink id="5326-fe87-c770-5cb9" name="Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile"/>
+                <infoLink id="5326-fe87-c770-5cb9" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="4055-799d-fb80-c6c4" name="Autorifle" hidden="false" collective="false" import="true" targetId="07d9-891b-1d9d-f105" type="selectionEntry">
@@ -2400,7 +2452,15 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="2b3c-2253-ddb8-29da" name="Interdiction(1, unlimited, one use)" hidden="false" targetId="ece4-c709-18ee-21e0" type="rule"/>
-                <infoLink id="7a89-857a-0747-d547" name="Re. Fleet Officer" hidden="false" targetId="12d2-f3f1-9263-4486" type="profile"/>
+                <infoLink id="7a89-857a-0747-d547" name="Re. Officer" hidden="false" targetId="12d2-f3f1-9263-4486" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="daba-167d-a161-28b7" name="Plasma Pistol" hidden="false" collective="false" import="true" targetId="62ed-8218-0d0f-7272" type="selectionEntry">
@@ -2422,7 +2482,15 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf0-4e5c-636b-4ed7" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="342f-9a23-f956-2a6d" name="Re. Officer" hidden="false" targetId="12d2-f3f1-9263-4486" type="profile"/>
+                <infoLink id="342f-9a23-f956-2a6d" name="Re. Officer" hidden="false" targetId="12d2-f3f1-9263-4486" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="1a0e-2d61-96fb-5add" name="Spotter" hidden="false" targetId="b50b-7db8-ff30-68b8" type="rule"/>
               </infoLinks>
               <entryLinks>
@@ -2451,7 +2519,15 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7f-ae8b-755a-bee3" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="6b6a-cc9b-aa41-c54b" name="Re. Astral-Telepath" hidden="false" targetId="03ae-5172-f7c6-fb0a" type="profile"/>
+                <infoLink id="6b6a-cc9b-aa41-c54b" name="Re. Astral-Telepath" hidden="false" targetId="03ae-5172-f7c6-fb0a" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
                 <infoLink id="f45f-b616-4d63-0686" name="Mystic (Telepathy 1, group)" hidden="false" targetId="1f5a-b83c-fd6f-6fea" type="rule"/>
               </infoLinks>
               <entryLinks>
@@ -2475,7 +2551,15 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="8069-7130-939c-d27a" name="Bestow Tough(+1) (12&quot;)" hidden="false" targetId="b241-766a-3ee5-fcb1" type="rule"/>
-                <infoLink id="b287-b81a-2d00-c598" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile"/>
+                <infoLink id="b287-b81a-2d00-c598" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <selectionEntryGroups>
                 <selectionEntryGroup id="238f-a90a-1e15-f770" name="Weapon Options" hidden="false" collective="false" import="true">
@@ -2526,7 +2610,15 @@ FP: Faction Points</readme>
               </constraints>
               <infoLinks>
                 <infoLink id="d5c2-d0f4-7d3c-9e7d" name="Inaccurate" hidden="false" targetId="e417-ad3a-3c0b-2794" type="rule"/>
-                <infoLink id="8d5c-9710-b0a2-5c63" name="Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile"/>
+                <infoLink id="8d5c-9710-b0a2-5c63" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <entryLinks>
                 <entryLink id="208a-c370-45b9-344a" name="Autorifle" hidden="false" collective="false" import="true" targetId="2442-a4d0-a5eb-f52e" type="selectionEntry">
@@ -2584,7 +2676,15 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce47-9492-1d39-c271" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="5f94-fa0d-e5f6-e37b" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile"/>
+                <infoLink id="5f94-fa0d-e5f6-e37b" name="Re. Soldier" hidden="false" targetId="01f4-e398-7244-b88c" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="bc5e-e8d4-df78-f81b" value="5">
+                      <conditions>
+                        <condition field="selections" scope="8060-d811-3a08-7d55" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="581c-119d-ad31-d9d4" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2669,6 +2769,34 @@ FP: Faction Points</readme>
               </costs>
             </entryLink>
           </entryLinks>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="9d5d-82a8-bfc7-1f57" name="Upgrade Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b207-3624-dbe9-5512" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c480-56ad-9305-7784" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="581c-119d-ad31-d9d4" name="Combat armour" hidden="true" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="false">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0406-018e-8539-2d80" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7242-b583-1595-1540" name="Combat armour" hidden="false" targetId="781a-af9a-1495-6366" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
@@ -2763,6 +2891,42 @@ FP: Faction Points</readme>
                   </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af34-93c0-c07b-bf26" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="3df7-5636-e0af-8217" name="Plasma Pistol and Energy maul" hidden="true" collective="false" import="true" targetId="4876-0d36-cef2-a530" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2049-4a5b-598b-25ca" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="05ea-ad14-35c1-5049" name="Slug pistol and Energy maul" hidden="true" collective="false" import="true" targetId="6697-fb7b-5277-2b4b" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a96-4108-88f1-a783" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="0865-6336-712c-843a" name="Slug pistol and Energy cutter" hidden="true" collective="false" import="true" targetId="d4f6-2873-aefb-a0cf" type="selectionEntry">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="false">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c4e-5cd7-cb14-8845" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebdc-7e3a-5816-8a99" type="max"/>
                   </constraints>
                 </entryLink>
               </entryLinks>
@@ -3497,7 +3661,7 @@ FP: Faction Points</readme>
         <categoryLink id="2d45-7093-39df-d3e7" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="bdb2-bee9-24d4-7733" name="Republic Off-road buggy" hidden="false" collective="false" import="true" defaultSelectionEntryId="404d-5f54-7d02-7ba0">
+        <selectionEntryGroup id="bdb2-bee9-24d4-7733" name="Republic Off-road buggy (1-3)" hidden="false" collective="false" import="true" defaultSelectionEntryId="404d-5f54-7d02-7ba0">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f9d8-3136-0140-2d98" type="min"/>
           </constraints>
@@ -6524,6 +6688,45 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="4876-0d36-cef2-a530" name="Plasma Pistol and Energy maul" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>w</comment>
+      <infoLinks>
+        <infoLink id="79cf-edc9-2589-09c2" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="548c-cbee-99a5-6755" name="Plasma pistol" hidden="false" targetId="06c6-c329-39be-374d" type="profile"/>
+        <infoLink id="df9d-09e3-a4e6-1372" name="Energy maul" hidden="false" targetId="8129-43dd-c2d0-480d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6697-fb7b-5277-2b4b" name="Slug pistol and Energy maul" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>w</comment>
+      <infoLinks>
+        <infoLink id="30d3-350b-8463-4871" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="8b8a-cb48-85d2-5fff" name="Slug pistol" hidden="false" targetId="95ea-a0c1-fac8-9020" type="profile"/>
+        <infoLink id="4050-aa16-1523-834b" name="Energy maul" hidden="false" targetId="8129-43dd-c2d0-480d" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d4f6-2873-aefb-a0cf" name="Slug pistol and Energy cutter" hidden="false" collective="false" import="true" type="upgrade">
+      <comment>w</comment>
+      <infoLinks>
+        <infoLink id="bb8b-e84e-da3f-05e9" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+        <infoLink id="61d9-0c64-4f15-9a20" name="Slug pistol" hidden="false" targetId="95ea-a0c1-fac8-9020" type="profile"/>
+        <infoLink id="6d2d-f057-2366-77bf" name="Massive Energy cutter" hidden="false" targetId="9a49-dc1a-5219-aa48" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="4cc2-8d73-cebf-62b4" name="Specalist Weapons" hidden="false" collective="false" import="true">
@@ -6907,6 +7110,9 @@ Spend one (1) Faction Point:
     </rule>
     <rule id="c1ba-cd14-9218-46ad" name="Supply" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false">
       <description>Replace with Supply Drop (see Republic light doctrine units) after debarkation.</description>
+    </rule>
+    <rule id="781a-af9a-1495-6366" name="Combat armour" publicationId="91df-c558-75f9-73ea" page="138" hidden="false">
+      <description>Defence(5)</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
