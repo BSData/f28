@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="22" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="03ba-1559-2f9f-066f" name="The Chambers" revision="23" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -8743,6 +8743,21 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="dbac-4c4f-d282-b3bb" name="HMG with combined Heavy flamer" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="9e2f-38b8-d33b-5937" name="HMG" hidden="false" targetId="5d21-faaf-a9ea-cdbb" type="profile"/>
+        <infoLink id="adc0-1326-0c19-1d19" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+        <infoLink id="8936-5e67-2adf-486e" name="Spray" hidden="false" targetId="7667-75fb-9190-76d2" type="rule"/>
+        <infoLink id="62a6-ca5d-92ef-3111" name="Ignore cover" hidden="false" targetId="37ed-608e-9144-4826" type="rule"/>
+        <infoLink id="ccb8-0054-ce07-8b20" name="Heavy flamer" hidden="false" targetId="2f2e-939f-9995-3765" type="profile"/>
+        <infoLink id="fc75-0ccb-71a0-485c" name="Combined weapon" hidden="false" targetId="fe13-5ad3-c184-fabb" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="294e-b18f-79e2-6733" name="Specalist Weapons" hidden="false" collective="false" import="true">
@@ -8786,7 +8801,7 @@ FP: Faction Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
           </costs>
         </entryLink>
-        <entryLink id="867d-cb71-7692-e246" name="Heat Cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry">
+        <entryLink id="867d-cb71-7692-e246" name="Heat cannon" hidden="false" collective="false" import="true" targetId="79e6-9195-7f18-6b28" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
           </costs>
@@ -8809,6 +8824,30 @@ FP: Faction Points</readme>
         <entryLink id="0625-2b09-b49e-e5c4" name="Missile Launcher with AA" hidden="false" collective="false" import="true" targetId="b63b-1561-73fd-5daa" type="selectionEntry">
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="20.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="6e29-da43-bfe1-ab7c" name="Chamber AGL" hidden="true" collective="false" import="true" targetId="0a70-8e36-d157-68cd" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4d3-fe13-d104-2d93" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f53b-62e8-0614-998f" name="HMG with combined Heavy flamer" hidden="true" collective="false" import="true" targetId="dbac-4c4f-d282-b3bb" type="selectionEntry">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d4d3-fe13-d104-2d93" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="15.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -8919,7 +8958,7 @@ FP: Faction Points</readme>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
-        <entryLink id="5878-5bd0-11be-0eca" name="Chamber Duelist" hidden="false" collective="false" import="true" targetId="9061-73ee-a4df-8912" type="selectionEntry">
+        <entryLink id="5878-5bd0-11be-0eca" name="Chamber Duellist" hidden="false" collective="false" import="true" targetId="9061-73ee-a4df-8912" type="selectionEntry">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4e8a-c75b-c790-5ad9" type="max"/>
           </constraints>
