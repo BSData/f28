@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="373d-ca04-214b-ef40" name="Republics_Lib" revision="1" battleScribeVersion="2.03" library="true" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="51" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="373d-ca04-214b-ef40" name="Republics_Lib" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="cbcd-601f-215f-3c56" name="Master Assassin" hidden="false" collective="false" import="true" targetId="a7db-5515-cfd8-d244" type="selectionEntry"/>
     <entryLink id="283e-5fee-c50d-e89d" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" targetId="5ccf-876a-77a3-2832" type="selectionEntry"/>
@@ -20,7 +20,7 @@
         <categoryLink id="0014-ae5c-02b0-f773" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="a635-be57-e4d7-0ae4" name="Master Assassin" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="a635-be57-e4d7-0ae4" name="Master Assassin (1-2)" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f60-3459-2755-85f9" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c02e-055e-65ea-6df5" type="min"/>
@@ -376,6 +376,34 @@
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
+            <selectionEntryGroup id="bb58-cb98-dc36-5920" name="Force option" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c55-8d99-ab9c-934c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f1f4-3291-acea-9b1b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3422-61fd-c55f-9cd8" name="Orders of the Republic" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a571-efd3-5d70-b31a" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="36a8-0f0b-2007-0f6c" name="Army of the Republic" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44f6-a8f4-ae51-c29b" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
           </selectionEntryGroups>
           <entryLinks>
             <entryLink id="05b8-4cf0-7a12-8e31" name="HMG" hidden="false" collective="false" import="true" targetId="5400-40bd-bd89-83aa" type="selectionEntry">
@@ -411,8 +439,34 @@
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="c7af-deb3-ae17-e377" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="d667-968b-002c-38bb" type="selectionEntryGroup"/>
-        <entryLink id="92d1-c25c-9a27-fdc4" name="Upgrade any Ground vehicle" hidden="false" collective="false" import="true" targetId="bdc3-f432-4581-f73f" type="selectionEntryGroup"/>
+        <entryLink id="c7af-deb3-ae17-e377" name="Upgrade any model (Re)" hidden="true" collective="false" import="true" targetId="d667-968b-002c-38bb" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="5ccf-876a-77a3-2832" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36a8-0f0b-2007-0f6c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="92d1-c25c-9a27-fdc4" name="Upgrade any Ground vehicle (Re)" hidden="true" collective="false" import="true" targetId="bdc3-f432-4581-f73f" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="5ccf-876a-77a3-2832" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="36a8-0f0b-2007-0f6c" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
+        <entryLink id="5792-e055-cf23-3727" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="6233-cf03-b908-6b25" type="selectionEntryGroup"/>
+        <entryLink id="b311-1384-d46b-86f7" name="Upgrade any model (Or)" hidden="true" collective="false" import="true" targetId="ff44-dd2e-b8df-fb6b" type="selectionEntryGroup">
+          <modifiers>
+            <modifier type="set" field="hidden" value="false">
+              <conditions>
+                <condition field="selections" scope="5ccf-876a-77a3-2832" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3422-61fd-c55f-9cd8" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+        </entryLink>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -455,7 +509,7 @@
         <entryLink id="337a-fe6e-6134-61cb" name="Rocket pod" hidden="false" collective="false" import="true" targetId="4af5-7655-5d50-0327" type="selectionEntry"/>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="d667-968b-002c-38bb" name="Upgrade any model" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="d667-968b-002c-38bb" name="Upgrade any model (Re)" hidden="false" collective="false" import="true">
       <comment>Rebublic</comment>
       <entryLinks>
         <entryLink id="3d5f-ceed-996c-01a2" name="Scanner" hidden="false" collective="false" import="true" targetId="647c-b65e-f6c3-3ed3" type="selectionEntry">
@@ -469,7 +523,7 @@
         </entryLink>
       </entryLinks>
     </selectionEntryGroup>
-    <selectionEntryGroup id="bdc3-f432-4581-f73f" name="Upgrade any Ground vehicle" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="bdc3-f432-4581-f73f" name="Upgrade any Ground vehicle (Re)" hidden="false" collective="false" import="true">
       <comment>Republic</comment>
       <entryLinks>
         <entryLink id="82a3-a559-fafd-7f4e" name="Armour Skirts" hidden="false" collective="false" import="true" targetId="07b1-eb19-fc7b-2c61" type="selectionEntry">
@@ -496,6 +550,32 @@
           </constraints>
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="ff44-dd2e-b8df-fb6b" name="Upgrade any model (Or)" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="0469-efc0-4a34-4792" name="Insertion Beacon" hidden="false" collective="false" import="true" targetId="01c1-d023-6c70-ee3e" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="566a-325c-9e56-9912" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="6233-cf03-b908-6b25" name="Upgrade any ground unit" hidden="false" collective="false" import="true">
+      <entryLinks>
+        <entryLink id="5d5f-0cb0-eb73-c8e2" name="Smoke grenades" hidden="false" collective="false" import="true" targetId="1268-8496-4a3f-8a0b" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d5f-370a-24bd-790c" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
           </costs>
         </entryLink>
       </entryLinks>
