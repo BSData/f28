@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="373d-ca04-214b-ef40" name="Republics_Lib" revision="2" battleScribeVersion="2.03" library="true" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="373d-ca04-214b-ef40" name="Republics_Lib" revision="3" battleScribeVersion="2.03" library="true" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <entryLinks>
     <entryLink id="cbcd-601f-215f-3c56" name="Master Assassin" hidden="false" collective="false" import="true" targetId="a7db-5515-cfd8-d244" type="selectionEntry"/>
     <entryLink id="283e-5fee-c50d-e89d" name="Republic VTOL Gunship" hidden="false" collective="false" import="true" targetId="5ccf-876a-77a3-2832" type="selectionEntry"/>
@@ -496,6 +496,49 @@
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="5a84-b032-2d80-7bf0" name="Bones of the paragon" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ddc1-0a86-73bc-b333" name="Bones of the paragon" hidden="false" targetId="835d-4116-5aa1-ca6b" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="fbb8-989c-ee22-02d1" name="Brazier of holy incense" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="883b-cd8c-f053-0e57" name="Brazier of holy incense" hidden="false" targetId="99dd-4e4e-3f6d-3515" type="rule"/>
+        <infoLink id="f7a2-796e-9184-5e30" name="Snatch the Initiative" hidden="false" targetId="a8bf-1f50-f661-ec0c" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="f7fa-a0f3-86aa-fa11" name="Icon of noted saint" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2857-2536-6ec8-3031" name="Icon of noted saint" hidden="false" targetId="ec8b-07fe-b345-fb6d" type="rule"/>
+        <infoLink id="ca3d-0e0b-8270-448d" name="Martyr(+1 FP)" hidden="false" targetId="2c9a-8480-912e-be0a" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="7ccc-a534-7db3-1e51" name="Martyred comrade" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="5525-5681-3b42-c6f0" name="Martyred comrade" hidden="false" targetId="43bc-ff69-f0b4-3294" type="rule"/>
+        <infoLink id="7794-dfd3-4714-884a" name="Bestow Morale(1)" hidden="false" targetId="fd36-84c7-7a08-d0f8" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="d0f2-6b32-b4e4-dcc5" name="Hardpoint weapons" hidden="false" collective="false" import="true">
@@ -565,6 +608,7 @@
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
           </costs>
         </entryLink>
+        <entryLink id="911f-cd44-1b52-e9be" name="Relic of the Republic" hidden="false" collective="false" import="true" targetId="b190-5ea1-4886-da16" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="6233-cf03-b908-6b25" name="Upgrade any ground unit" hidden="false" collective="false" import="true">
@@ -576,6 +620,49 @@
           <costs>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
             <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+          </costs>
+        </entryLink>
+      </entryLinks>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="b190-5ea1-4886-da16" name="Relic of the Republic" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41fa-473b-860c-dc77" type="max"/>
+      </constraints>
+      <entryLinks>
+        <entryLink id="c364-0eef-911b-6ae6" name="Bones of the paragon" hidden="false" collective="false" import="true" targetId="5a84-b032-2d80-7bf0" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17b2-054f-e6b0-893a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="d5a2-6d10-a978-0941" name="Brazier of holy incense" hidden="false" collective="false" import="true" targetId="fbb8-989c-ee22-02d1" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6390-b9a3-9cc0-5bdd" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="f7cd-ff1b-e524-f1b7" name="Icon of noted saint" hidden="false" collective="false" import="true" targetId="f7fa-a0f3-86aa-fa11" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1f6-252d-6385-d6e3" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
+          </costs>
+        </entryLink>
+        <entryLink id="aa7a-87ce-7aa8-1f8d" name="Martyred comrade" hidden="false" collective="false" import="true" targetId="7ccc-a534-7db3-1e51" type="selectionEntry">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="41eb-0ec0-d60d-aac7" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="1.0"/>
+            <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
           </costs>
         </entryLink>
       </entryLinks>
@@ -594,6 +681,18 @@ select option each attack: attack(x2) OR platebreaker OR ignore Defence(min)</de
     </rule>
     <rule id="381f-a566-e34c-45ee" name="Flak MG" publicationId="91df-c558-75f9-73ea" page="79" hidden="false">
       <description>Model has Flak.</description>
+    </rule>
+    <rule id="835d-4116-5aa1-ca6b" name="Bones of the paragon" publicationId="4d21-d403-2f77-bbaf" page="89" hidden="false">
+      <description>This model counts as five (5) extra wounds for scoring purposes. Note that this also affects when the unit counts as “50% destroyed”.</description>
+    </rule>
+    <rule id="99dd-4e4e-3f6d-3515" name="Brazier of holy incense" publicationId="4d21-d403-2f77-bbaf" page="89" hidden="false">
+      <description>This model’s unit may snatch the initiative for free.</description>
+    </rule>
+    <rule id="ec8b-07fe-b345-fb6d" name="Icon of noted saint" publicationId="4d21-d403-2f77-bbaf" page="89" hidden="false">
+      <description>This model has Martyr(+1 FP) if it is the last model in the unit.</description>
+    </rule>
+    <rule id="43bc-ff69-f0b4-3294" name="Martyred comrade" publicationId="4d21-d403-2f77-bbaf" page="89" hidden="false">
+      <description>This model has Bestow Morale(1)</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

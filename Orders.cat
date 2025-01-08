@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d04f-836d-18f5-a97b" name="The Orders of the Rebublic" revision="1" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="61" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d04f-836d-18f5-a97b" name="The Orders of the Rebublic" revision="2" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="45" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -234,10 +234,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="2599-9f87-44db-8d9b" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="2599-9f87-44db-8d9b" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="0144-22b4-457f-b7b2" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="ac3e-bc68-7000-2a64" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="b734-e994-0b75-07be" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -330,10 +329,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6a9d-c86b-741f-4b44" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="6a9d-c86b-741f-4b44" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="ed50-46e8-df64-1535" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="ca30-dad5-abcb-59c5" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="3155-c66b-08fb-f164" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -500,10 +498,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6915-b406-995a-2f23" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="6915-b406-995a-2f23" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="e29e-8c73-d1d5-8a08" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="c9ad-4c13-2463-aa69" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="2d2d-591d-fddd-c169" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -647,9 +644,8 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="5352-beca-b104-7f7d" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="5352-beca-b104-7f7d" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="697b-cefb-4a7f-a32e" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="1c9e-d4c0-a141-28f4" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -740,10 +736,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8108-f197-c936-894e" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="8108-f197-c936-894e" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="6ce1-8e7f-5049-d37e" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="e2d8-2318-ded7-c0c9" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="c9e6-4655-2c4c-0f20" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1110,10 +1105,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ab59-989a-c323-9cc6" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="ab59-989a-c323-9cc6" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="8037-20c9-ead2-4a98" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="f47f-e8cd-30b4-4bc2" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="4b62-b595-fdec-d03c" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1186,10 +1180,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="9f12-45ab-d35a-7c3a" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="9f12-45ab-d35a-7c3a" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="8fd8-8ab0-56fd-fbe0" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="7d09-9190-55f3-9d98" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="33ec-32f4-b120-0599" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1275,10 +1268,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="8d56-1030-09a4-b43b" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="8d56-1030-09a4-b43b" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="4378-66fd-1d0f-4740" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="0d50-456b-6b0e-505c" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="fe3c-c416-7863-b3d9" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1592,10 +1584,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6dd6-e08f-c8e0-edbe" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="6dd6-e08f-c8e0-edbe" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="bcb0-3663-fb5d-46e1" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="2d2b-5413-ad84-ff50" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="86b9-5b48-c4ec-91e3" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1820,10 +1811,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="6cf3-64c0-15cd-48bf" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="6cf3-64c0-15cd-48bf" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="850e-7272-4cfb-396c" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="d945-a82e-2290-b8c5" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="1959-2704-2819-7944" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -1991,10 +1981,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="4466-b010-9a2c-8d3d" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="4466-b010-9a2c-8d3d" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="9c32-27fd-1162-4ff9" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="f633-0553-ad20-6114" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="5779-19fe-4050-4aa8" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2076,7 +2065,6 @@ FP: Faction Points</readme>
         <entryLink id="6ca9-9275-0957-822c" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="2938-4918-68a7-f665" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="d7ac-f61f-33c8-cc12" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="9192-374d-4813-77d4" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2370,10 +2358,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="7134-ab8c-cc43-b89a" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="7134-ab8c-cc43-b89a" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="daad-a5a1-6739-fb32" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="73f4-ece9-537e-0d0f" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="c01d-69a3-c629-527d" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -2736,10 +2723,9 @@ FP: Faction Points</readme>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <entryLinks>
-        <entryLink id="ad56-c790-0acd-14f1" name="Upgrade any Ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
+        <entryLink id="ad56-c790-0acd-14f1" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="3062-7760-9a9b-32ab" type="selectionEntryGroup"/>
         <entryLink id="f332-676c-ac1a-5a17" name="Upgrade any regular unit" hidden="false" collective="false" import="true" targetId="7eef-233a-4675-445b" type="selectionEntryGroup"/>
         <entryLink id="df15-8e25-9513-68b6" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="41fb-31d4-b7d9-2b1f" type="selectionEntryGroup"/>
-        <entryLink id="8794-e6f4-48c2-7b92" name="Upgrade any non vehicle model" hidden="false" collective="false" import="true" targetId="064e-82c3-caaa-5054" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3737,6 +3723,7 @@ FP: Faction Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
           </costs>
         </entryLink>
+        <entryLink id="2157-688d-23de-039b" name="Relic of the Republic" hidden="false" collective="false" import="true" targetId="96a7-4cf2-783a-b635" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
     <selectionEntryGroup id="ce47-684d-9ddc-cce4" name="Attached liaisons" hidden="false" collective="false" import="true">
@@ -4032,11 +4019,6 @@ FP: Faction Points</readme>
             <cost name="p" typeId="95b5-c653-a5e7-8869" value="10.0"/>
           </costs>
         </entryLink>
-      </entryLinks>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="064e-82c3-caaa-5054" name="Upgrade any non vehicle/structure model" hidden="false" collective="false" import="true">
-      <entryLinks>
-        <entryLink id="bec4-f1c8-807b-2c43" name="Relic of the Republic" hidden="false" collective="false" import="true" targetId="96a7-4cf2-783a-b635" type="selectionEntryGroup"/>
       </entryLinks>
     </selectionEntryGroup>
   </sharedSelectionEntryGroups>
