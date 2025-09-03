@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="9" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="42" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3a43-0782-3228-008b" name="The Mutant Menace" revision="10" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" library="false" gameSystemId="7558-af3d-5eb8-db9c" gameSystemRevision="49" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <readme>Force generation
 
 The lists are divided into three unit categories; Command, Core and Special. When generating forces players must include:
@@ -31,12 +31,12 @@ FP: Faction Points</readme>
     <entryLink id="dab1-c0da-f6de-74b9" name="Mutant Small Walker" hidden="false" collective="false" import="true" targetId="d822-3f66-5fee-fe02" type="selectionEntry"/>
     <entryLink id="bf07-d11e-54b7-c831" name="Mutant Big Walker" hidden="false" collective="false" import="true" targetId="b3da-be9e-9da1-0dec" type="selectionEntry"/>
     <entryLink id="cd11-9745-c1e5-782d" name="Big Guns" hidden="false" collective="false" import="true" targetId="89f9-a296-a3e8-47b2" type="selectionEntry"/>
-    <entryLink id="8493-e5ef-fa98-8f6e" name="Mounted Big Gun" hidden="false" collective="false" import="true" targetId="a0fa-031e-f460-a623" type="selectionEntry"/>
+    <entryLink id="8493-e5ef-fa98-8f6e" name="Big Guns Mounted" hidden="false" collective="false" import="true" targetId="a0fa-031e-f460-a623" type="selectionEntry"/>
     <entryLink id="12d1-28e5-febe-3dce" name="Mutant Boss" hidden="false" collective="false" import="true" targetId="734f-cfe9-1606-fdf9" type="selectionEntry"/>
     <entryLink id="7cb3-b57c-7db3-90f7" name="Mutant Senior Mechanic" hidden="false" collective="false" import="true" targetId="d63d-35e1-fae0-e2fd" type="selectionEntry"/>
     <entryLink id="e703-b524-3c5a-bf6c" name="Mutant Aircraft" hidden="false" collective="false" import="true" targetId="6f44-aeae-c73a-b830" type="selectionEntry"/>
     <entryLink id="fdb4-81d1-79e2-dfab" name="Mutant Large Battle-Vehicle" hidden="false" collective="false" import="true" targetId="d9d3-7e74-a295-85b0" type="selectionEntry"/>
-    <entryLink id="afec-a0dd-ce1d-a574" name="Big Mutant Gang" hidden="false" collective="false" import="true" targetId="bf91-25fc-9a66-5e07" type="selectionEntry"/>
+    <entryLink id="afec-a0dd-ce1d-a574" name="Big Mutant Gang Blowhards" hidden="false" collective="false" import="true" targetId="bf91-25fc-9a66-5e07" type="selectionEntry"/>
     <entryLink id="9aeb-c928-8203-5f51" name="Mutant Walking Tank" hidden="false" collective="false" import="true" targetId="feb6-b522-9fa7-3baf" type="selectionEntry"/>
     <entryLink id="af37-b4c8-f881-ea05" name="Supremacy Assets" hidden="false" collective="false" import="true" targetId="e78a-3027-0b9e-369b" type="selectionEntry">
       <constraints>
@@ -80,6 +80,23 @@ FP: Faction Points</readme>
     <entryLink id="cb41-1156-b4c4-1949" name="Looting Culture free special choice: Specalists" hidden="false" collective="false" import="true" targetId="de0a-13fc-3ccc-d501" type="selectionEntry"/>
     <entryLink id="ad49-9154-ddeb-e66c" name="Vehicle Culture free special choice: Bikers or Quadbike" hidden="false" collective="false" import="true" targetId="641b-1595-23ec-fdbb" type="selectionEntry"/>
     <entryLink id="6005-cee3-390c-28f1" name="Rich Culture free special choice: Bikers or Quadbike" hidden="false" collective="false" import="true" targetId="4163-61e1-5a5b-3344" type="selectionEntry"/>
+    <entryLink id="c348-84ec-fa77-3c4c" name="Players Guide Units" hidden="false" collective="false" import="true" targetId="8cbb-0241-8e2a-f101" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ace-e6c6-2d4c-31ba" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="a0fb-b014-5043-e4a5" name="Mutant Big truck" hidden="false" collective="false" import="true" targetId="1953-242d-956c-51f2" type="selectionEntry"/>
+    <entryLink id="0bce-f271-da02-85ca" name="Weirdling Tower" hidden="false" collective="false" import="true" targetId="9c67-8e93-0834-8ee2" type="selectionEntry"/>
+    <entryLink id="68f8-3995-e841-12eb" name="Mutant Legendary Overboss" hidden="false" collective="false" import="true" targetId="001c-d030-2f84-883c" type="selectionEntry"/>
+    <entryLink id="c346-2694-fe70-83ec" name="OBA units" hidden="false" collective="false" import="true" targetId="554f-5176-bd8c-85b9" type="selectionEntry">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc26-76e5-af1b-6dd5" type="max"/>
+      </constraints>
+    </entryLink>
+    <entryLink id="b483-ad3a-f128-db58" name="Mutant Super cannon" hidden="false" collective="false" import="true" targetId="248b-f5d1-aed7-1563" type="selectionEntry"/>
+    <entryLink id="9820-7a36-8886-d25a" name="Mutant Launch buggies" hidden="false" collective="false" import="true" targetId="e66a-4a73-d9df-711a" type="selectionEntry"/>
+    <entryLink id="1a09-f6c2-dde5-1ce7" name="Mutant Spotting balloon" hidden="false" collective="false" import="true" targetId="537e-6873-21b3-7e4a" type="selectionEntry"/>
+    <entryLink id="f952-85ee-c8f5-c3fd" name="Mutant Rockers" hidden="false" collective="false" import="true" targetId="e4e7-cca1-4b9a-4705" type="selectionEntry"/>
   </entryLinks>
   <sharedSelectionEntries>
     <selectionEntry id="5e88-a714-f836-2360" name="Small Mutant Gang" hidden="false" collective="false" import="true" type="unit">
@@ -1722,7 +1739,7 @@ FP: Faction Points</readme>
       </selectionEntryGroups>
       <entryLinks>
         <entryLink id="1819-d2f1-05b9-01a4" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
-        <entryLink id="5614-53ff-4dd9-2640" name="Upgrade Any Unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="5614-53ff-4dd9-2640" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
       </entryLinks>
       <costs>
         <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
@@ -3111,11 +3128,16 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ca68-49d7-f903-eea0" name="Mutant Trample Walker" hidden="true" collective="false" import="true" type="unit">
+    <selectionEntry id="ca68-49d7-f903-eea0" name="Mutant Colossal Trample walker" hidden="true" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="false">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="afdf-1990-d97c-d988" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="001c-d030-2f84-883c" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3126,29 +3148,83 @@ FP: Faction Points</readme>
         <categoryLink id="d86d-8084-d9ab-3194" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
       </categoryLinks>
       <selectionEntryGroups>
-        <selectionEntryGroup id="0c58-50d8-4198-020a" name="Mutant Trample Walker" hidden="false" collective="false" import="true" defaultSelectionEntryId="1513-93c9-7908-bb04">
+        <selectionEntryGroup id="0c58-50d8-4198-020a" name="Mutant Colossal Trample walker" hidden="false" collective="false" import="true" defaultSelectionEntryId="1513-93c9-7908-bb04">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5dca-99fe-4c3e-d1ac" type="min"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="1513-93c9-7908-bb04" name="Mutant Trample Walker" hidden="false" collective="false" import="true" type="model">
+            <selectionEntry id="1513-93c9-7908-bb04" name="Mutant Colossal Trample walker" hidden="false" collective="false" import="true" type="model">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b32d-2d10-6148-4741" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3394-58d4-2c3c-9eba" type="min"/>
               </constraints>
               <infoLinks>
-                <infoLink id="2ad4-b939-8067-146b" name="Vehicle(walker)" hidden="false" targetId="57dd-f324-dd55-8fce" type="rule"/>
-                <infoLink id="1ce4-88f9-5090-2119" name="Superior" hidden="false" targetId="81b7-00c4-6dea-18b7" type="rule"/>
+                <infoLink id="2ad4-b939-8067-146b" name="Move(walker)" hidden="false" targetId="dd48-9d33-4bb1-2555" type="rule"/>
                 <infoLink id="5d92-f350-c600-b116" name="Bestow Tough(+1) (6&quot;)" hidden="false" targetId="dc70-9183-64b8-d98e" type="rule"/>
-                <infoLink id="3876-2d97-fb3d-df34" name="Shell Out" hidden="false" targetId="e1ca-d8e8-b447-fcf3" type="rule"/>
+                <infoLink id="6b48-e2fc-71ae-c0c7" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="fa5f-b3ce-6bee-4698" name="Mu. Colossal Trample walker" hidden="false" targetId="48f2-4441-13b4-a720" type="profile">
+                  <modifiers>
+                    <modifier type="set" field="2760-e837-ae05-5d45" value="20">
+                      <conditions>
+                        <condition field="selections" scope="ca68-49d7-f903-eea0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cfef-da64-4c1a-f6af" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="2760-e837-ae05-5d45" value="-">
+                      <conditions>
+                        <condition field="selections" scope="ca68-49d7-f903-eea0" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4ca-9dd3-f1da-6d88" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
               </infoLinks>
               <costs>
-                <cost name="p" typeId="95b5-c653-a5e7-8869" value="750.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="480.0"/>
                 <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
                 <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="83c4-6ffc-07c0-b961" name="Option" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="884d-2616-bb48-95f8" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bac-d473-458a-f4a8" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="cfef-da64-4c1a-f6af" name="Transport" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b132-900a-44ea-0ffe" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="78da-bdb6-8f40-fcec" name="Capacity(20)" hidden="false" targetId="cd90-c74e-f86e-b21a" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="b4ca-9dd3-f1da-6d88" name="Gun" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6686-2ce3-91b7-e3b2" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="1c1e-0a18-00f5-7b51" name="Infantry gun" hidden="false" collective="false" import="true" targetId="a22f-e888-5e93-0917" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a0-b8af-09ed-8515" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b506-cc28-c571-4624" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <entryLinks>
             <entryLink id="2415-0785-6dcf-29d2" name="Heavy Flamer" hidden="false" collective="false" import="true" targetId="4def-12af-6f0d-326b" type="selectionEntry">
               <constraints>
@@ -3162,7 +3238,7 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86d8-ef24-4802-1ed9" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="e969-14a2-4c66-0560" name="Heavy Tank Gun" hidden="false" collective="false" import="true" targetId="7ca8-45ee-1a18-47c8" type="selectionEntry">
+            <entryLink id="e969-14a2-4c66-0560" name="Tank gun" hidden="false" collective="false" import="true" targetId="dfec-6dc1-cdcd-56f0" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b58-ec78-e65b-8f3a" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc07-de56-5817-390c" type="min"/>
@@ -3174,16 +3250,22 @@ FP: Faction Points</readme>
                 <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="edcb-e90f-65ae-64b2" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="2457-43f6-bdd5-f9e7" name="Rotary Autocannon" hidden="false" collective="false" import="true" targetId="5aa1-4f62-128f-ff9f" type="selectionEntry">
+            <entryLink id="2457-43f6-bdd5-f9e7" name="Rotary Light autocannon" hidden="false" collective="false" import="true" targetId="9b6f-f16b-48bc-bd2f" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d06-5ccb-dfa5-2902" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1654-2c1f-1a49-a97a" type="min"/>
               </constraints>
             </entryLink>
-            <entryLink id="8c49-a5b1-71a8-8f8d" name="Trample Sledge" hidden="false" collective="false" import="true" targetId="aa15-4b41-ef0c-40a2" type="selectionEntry">
+            <entryLink id="8c49-a5b1-71a8-8f8d" name="Colossal Sledge" hidden="false" collective="false" import="true" targetId="d6d5-3f6b-2162-2c4d" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0bd0-ffca-305e-610c" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50dc-3eac-432c-8580" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="f35c-bda4-0923-393c" name="Special(2)" hidden="false" collective="false" import="true" targetId="8c08-9db1-56ad-4841" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="20cc-46d9-dbcb-38eb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="895a-024a-97c7-0cc2" type="min"/>
               </constraints>
             </entryLink>
           </entryLinks>
@@ -4652,6 +4734,775 @@ FP: Faction Points</readme>
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1953-242d-956c-51f2" name="Mutant Big truck" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cbb-0241-8e2a-f101" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f69c-4b5f-3324-49b9" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c0fb-9d25-34ab-bc50" name="Mutant Big truck" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="18bd-2659-e93a-7a44" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b0f8-af00-da48-b016" name="Mutant Big truck" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b274-c336-810b-7fd0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a793-49fd-a166-1175" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="3807-1f36-b02a-92f5" name="Mu. Big truck" hidden="false" targetId="f013-7170-a4c6-c2f5" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="3b4e-2e12-cbb9-1dc8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="1953-242d-956c-51f2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3c8-3c38-0eb2-46cd" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="2760-e837-ae05-5d45" value="16">
+                      <conditions>
+                        <condition field="selections" scope="1953-242d-956c-51f2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c97-fff2-19ae-c40e" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="2760-e837-ae05-5d45" value="10">
+                      <conditions>
+                        <condition field="selections" scope="1953-242d-956c-51f2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="bfe6-a1f0-1d69-c5dd" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="b2d3-4deb-c196-30cd" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="75.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="0df4-1d86-35c5-28e4" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d93-09af-705b-7544" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1091-09b5-9e12-ae87" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="1254-8e45-911b-ec24" name="LMG" hidden="false" collective="false" import="true" targetId="b8a6-f0ef-5687-f918" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="89a8-8912-818d-c415" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3750-97d6-8bee-39ee" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+            <selectionEntryGroup id="8a1e-9cdf-2f09-b3dc" name="Options" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b869-2c06-15c9-e660" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c221-417f-af5e-709d" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="6c97-fff2-19ae-c40e" name="Transport" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59d2-175b-5eda-4167" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="a092-af80-46ce-a5ed" name="Capacity(16)" hidden="false" targetId="2376-99fd-b51b-c232" type="rule"/>
+                    <infoLink id="456c-1fcf-cf92-1937" name="Capacity(cover)" hidden="false" targetId="9974-3f33-75ff-5e45" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="bfe6-a1f0-1d69-c5dd" name="Gun transport" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f22a-48dd-3b47-85fb" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="602a-7f1c-deee-de1f" name="Capacity(10)" hidden="false" targetId="54f7-e32f-8a28-2a0b" type="rule"/>
+                    <infoLink id="159b-989b-38bf-fcae" name="Capacity(cover)" hidden="false" targetId="9974-3f33-75ff-5e45" type="rule"/>
+                  </infoLinks>
+                  <entryLinks>
+                    <entryLink id="5eee-be19-c201-5c65" name="Field gun" hidden="false" collective="false" import="true" targetId="2e08-364c-e0b6-ce31" type="selectionEntry">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="208e-61de-1209-438f" type="max"/>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="88f1-0742-7d21-1b6f" type="min"/>
+                      </constraints>
+                    </entryLink>
+                  </entryLinks>
+                  <costs>
+                    <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
+                    <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                    <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="36c0-87a1-0c0b-fcc8" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+        <entryLink id="c167-2086-a8b8-59b7" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="1f20-b6fa-4993-a133" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="3b1e-71eb-97f5-5f9a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="9c67-8e93-0834-8ee2" name="Weirdling Tower" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="8cbb-0241-8e2a-f101" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="f231-7c2e-aee6-da08" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="73d7-9bc0-69a1-7016" name="Weirdling Tower" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29c4-287c-eaff-b77e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cdee-81cd-98d2-f5b0" name="Weirdling Tower" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="351d-4794-c543-a5df" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1031-9812-259e-6ca4" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8d4a-508b-5ffb-65a5" name="Mu. Weirdling Tower" hidden="false" targetId="8160-ff05-0db6-5ea1" type="profile">
+                  <modifiers>
+                    <modifier type="increment" field="3b4e-2e12-cbb9-1dc8" value="1">
+                      <conditions>
+                        <condition field="selections" scope="9c67-8e93-0834-8ee2" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e3c8-3c38-0eb2-46cd" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="7b2f-e74e-bd62-1bc5" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="aa3c-c9e0-9f01-6442" name="Elevated" hidden="false" targetId="3c0a-58ac-b350-8286" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="100.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="e42e-3822-fe44-e7ad" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60ed-c6db-558b-a169" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bc9-5e04-695d-08fc" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="ca73-0c29-4a1c-5d09" name="Mystic channel" hidden="false" collective="false" import="true" targetId="8a57-6a06-4726-c80d" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c1c4-d165-de77-aee6" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="87d1-7a7a-b8e8-5df0" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="74c2-ec22-ae8d-fa2d" name="Upgrade Any Model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+        <entryLink id="0814-6571-defd-2caa" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="2f21-4f29-7ba7-286b" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="3b1e-71eb-97f5-5f9a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="8a57-6a06-4726-c80d" name="Mystic channel" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="834c-ec58-a595-88a9" name="Mystic channel" hidden="false" targetId="5b41-e749-51dc-6a10" type="profile"/>
+        <infoLink id="608b-3d9f-336c-b139" name="Hazardous" hidden="false" targetId="18bd-ea47-5c88-c607" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="001c-d030-2f84-883c" name="Mutant Legendary Overboss" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e78a-3027-0b9e-369b" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="decrement" field="6edf-3f2e-91bb-f23b" value="1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ca68-49d7-f903-eea0" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6edf-3f2e-91bb-f23b" type="max"/>
+      </constraints>
+      <categoryLinks>
+        <categoryLink id="8f4f-c1a9-7062-e736" name="New CategoryLink" hidden="false" targetId="62e0-d796-6cf6-57b0" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="3408-839e-9b95-925a" name="Mutant Legendary Overboss" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="241f-12ce-c59f-10e7" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="012a-49ee-d43c-5442" name="Mutant Legendary Overboss" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ae6f-d8fb-5698-4330" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dca6-d9b8-708c-a0a3" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="feeb-7d88-dab7-ab83" name="Mu. Legendary Overboss" hidden="false" targetId="f8bb-a607-0811-e10a" type="profile"/>
+                <infoLink id="30c0-e1ea-d449-1271" name="Bestow Tough(+1) (12&quot;)" hidden="false" targetId="b241-766a-3ee5-fcb1" type="rule"/>
+                <infoLink id="ae06-2c63-eab4-74cc" name="Loathing(CC)" hidden="false" targetId="5272-99ce-7e03-af8e" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13f9-d522-5b45-5f93" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="f656-9a56-8232-e5a7" name="Attack(scaling)" hidden="false" targetId="2a9-f01e-4d9c-8f41" type="rule"/>
+                <infoLink id="9774-84a7-bc2e-dce2" name="Charge(D3&quot;) (12&quot;)" hidden="false" targetId="1da5-98be-256f-6f4c" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="200.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <entryLinks>
+            <entryLink id="7f60-83fc-d4ab-634e" name="Energy cutter" hidden="false" collective="false" import="true" targetId="5b3e-20b7-c4b9-7382" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2c3-3c92-3ed1-ffbb" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="422e-aab8-6bb9-a9ae" type="min"/>
+              </constraints>
+            </entryLink>
+            <entryLink id="7d49-2cc6-6c45-d782" name="Quad Slugger" hidden="false" collective="false" import="true" targetId="b59e-f70d-bace-70e6" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2e83-423c-9bce-6365" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f565-452c-fa68-5e60" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b59e-f70d-bace-70e6" name="Quad Slugger" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="222c-99cd-00e1-8d45" name="Quad Slugger" hidden="false" targetId="50d6-b7b4-a197-6bd1" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="d6d5-3f6b-2162-2c4d" name="Colossal Sledge" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6d9e-fd28-0045-9fea" name="Colossal Sledge" hidden="false" targetId="f936-69a8-2666-20da" type="profile"/>
+        <infoLink id="90f0-1b8c-9e17-8a50" name="Damage(2)" hidden="false" targetId="55aa-c704-5890-ef5d" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="537e-6873-21b3-7e4a" name="Mutant Spotting balloon" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="554f-5176-bd8c-85b9" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="ab45-37ff-4fcc-1dd3" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ebfc-01de-e515-5c1c" name="Mutant Spotting balloon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f051-aeaf-ee82-7d83" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8fcc-1401-1b31-9d5b" name="Mutant Spotting balloon" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25a6-55d1-104f-1794" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0433-1c8f-8340-890f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="fb5b-43f0-8f47-0999" name="Mu. Spotting balloon" hidden="false" targetId="b959-89a5-b1f1-6fbc" type="profile"/>
+                <infoLink id="57cd-a6a9-4dec-6400" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+                <infoLink id="2147-4424-a849-6b4e" name="Spotter" hidden="false" targetId="b50b-7db8-ff30-68b8" type="rule"/>
+                <infoLink id="e03c-9b68-0af0-11ae" name="Move(elevated)" hidden="false" targetId="9205-2a62-ed8e-425d" type="rule"/>
+                <infoLink id="b2cf-0c4e-a7e6-ec01" name="Standoff(12&quot;) " hidden="false" targetId="cc66-3704-0309-50d3" type="rule"/>
+                <infoLink id="711f-3370-7b16-cad3" name="Elevated" hidden="false" targetId="3c0a-58ac-b350-8286" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="60.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="87d0-c04b-7491-7450" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6d5-7c8a-b35e-c8d9" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f0b-61e2-78b7-38ed" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="0d35-47c5-cb16-1892" name="Hopper autocannon" hidden="false" collective="false" import="true" targetId="9d18-0327-a604-304a" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9780-64ce-ac72-bfcc" type="max"/>
+                    <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5648-2c3e-d9f5-4635" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="5ee7-19eb-1573-6bef" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="248b-f5d1-aed7-1563" name="Mutant Super cannon" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="554f-5176-bd8c-85b9" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="dce6-27a6-3220-6741" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="7045-e1f0-cadc-4c70" name="Mutant Super cannon" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00bb-87ef-3701-c924" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="304e-6635-818f-1b2f" name="Mutant Super cannon" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="316d-66e0-fc28-201d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="17e6-3092-05e3-8fc0" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="acac-05c3-eda0-0ce0" name="Mu. Super cannon" hidden="false" targetId="572e-4ac5-a9a4-6b9f" type="profile"/>
+                <infoLink id="d114-c593-a8a8-9ff4" name="Massive" hidden="false" targetId="90b1-4b58-7f51-0e8d" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="a9bc-37e9-e49c-9c7f" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b4dd-423a-56a0-2142" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6b8-ab65-29e7-d507" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="3aa3-3d8a-7e7a-cbd7" name="Artillery gun" hidden="false" collective="false" import="true" targetId="99b5-428c-15b2-d6cf" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a26-7e38-2294-e72a" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3480-1f50-379b-b0e3" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="26fe-9142-be93-7037" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="99b5-428c-15b2-d6cf" name="Artillery gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="b924-e1b9-2ce7-df81" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="2f9b-b7b2-3269-2a0f" name="Indirect" hidden="false" targetId="89ee-5db1-15e4-1761" type="rule"/>
+        <infoLink id="a915-a90e-25e1-0818" name="Artillery gun" hidden="false" targetId="4c1f-7d7b-4be3-0ec5" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="e66a-4a73-d9df-711a" name="Mutant Launch buggies" hidden="true" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="false">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="554f-5176-bd8c-85b9" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <categoryLinks>
+        <categoryLink id="a18f-158b-232a-7af6" name="New CategoryLink" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="ffef-35b8-9942-e28e" name="Mutant Launch buggies" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bfb1-17f2-6390-ef19" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c05a-384d-536f-7d0c" name="Mutant Launch buggies" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8f64-3914-4749-bbe5" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7357-7b6e-cb31-8690" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2b66-b899-8237-970d" name="Mu. Launch buggies" hidden="false" targetId="24c5-8ebc-f53b-5ba1" type="profile"/>
+                <infoLink id="51a2-99b6-c9e7-ceaf" name="Shoot while Scoot" hidden="false" targetId="f45e-c808-df66-bfdb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="90.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="3bbf-9e1c-7dbc-bf59" name="Weapons" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fc4-0072-1698-f0ba" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71d1-c069-7d7b-2c1e" type="min"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="017b-4f78-b9de-c2bd" name="Small mutant bomb launcher" hidden="false" collective="false" import="true" targetId="b1aa-37d3-fa49-12c0" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="11dc-0d9c-0562-9384" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b248-3de6-38c1-ce9f" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="ba14-b7e5-ec5c-0c67" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+        <entryLink id="9788-c92f-51c7-1d9b" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="e11b-e167-a84d-73c1" name="Upgrade any Regular unit" hidden="false" collective="false" import="true" targetId="0b74-98e4-ef55-8354" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b1aa-37d3-fa49-12c0" name="Small mutant bomb launcher" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="465f-3265-3196-0a9a" name="Small mutant bomb launcher" hidden="false" targetId="c791-f5be-d14f-2dbb" type="profile"/>
+        <infoLink id="7499-11fd-fffd-986d" name="Indirect" hidden="false" targetId="89ee-5db1-15e4-1761" type="rule"/>
+        <infoLink id="234b-d6f8-042f-19b5" name="Priority(only)" hidden="false" targetId="102e-95ec-4ca3-eb95" type="rule"/>
+        <infoLink id="ac6d-97f4-09eb-7dde" name="Inaccurate" hidden="false" targetId="e417-ad3a-3c0b-2794" type="rule"/>
+        <infoLink id="18a0-5d40-21b1-6526" name="Flak" hidden="false" targetId="6284-54c7-4ca1-5bfe" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="e4e7-cca1-4b9a-4705" name="Mutant Rockers" hidden="false" collective="false" import="true" type="unit">
+      <categoryLinks>
+        <categoryLink id="9d80-7424-b18f-6d6d" name="Special" hidden="false" targetId="8882-253b-967f-1dba" primary="true"/>
+      </categoryLinks>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="1e66-5bc8-f144-58a4" name="Mutants (10-15)" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76b2-efb7-f91c-58d7" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="c371-1afc-a4cc-400b" name="Band security" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7771-9c9d-0b6b-31fe" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e0d5-1aec-b67a-e538" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1124-4e91-918d-c167" name="Mu. Band security" hidden="false" targetId="219f-4e06-5a12-4479" type="profile"/>
+                <infoLink id="01e0-a3c3-a0f8-e289" name="Loathing(CC)" hidden="false" targetId="5272-99ce-7e03-af8e" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13f9-d522-5b45-5f93" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="0eea-375a-0d98-8536" name="Repel(2&quot;)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="11f1-12d9-020d-2f70" name="CC (2)" hidden="false" collective="false" import="true" targetId="b236-b7e4-5e18-5154" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49cc-456a-11ab-df9f" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50e0-7b0d-79ca-8e4e" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="6425-154c-0ff6-72be" name="Band Members" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="271f-a3b3-28d2-a779" type="max"/>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2632-f332-c6cc-e155" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="80bd-9bd5-8733-7c27" name="Mu. Band members" hidden="false" targetId="dfd3-2cf7-47bf-2db7" type="profile"/>
+                <infoLink id="1713-e887-d279-60c1" name="Bestow Tough(+1) (12&quot;)" hidden="false" targetId="b241-766a-3ee5-fcb1" type="rule"/>
+                <infoLink id="b75a-1afa-0c04-cfa1" name="Loathing(CC)" hidden="false" targetId="5272-99ce-7e03-af8e" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13f9-d522-5b45-5f93" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="95f4-57d7-6105-36ae" name="Repel(2&quot;)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="5581-45db-2e88-ccd7" name="Stratocaster greataxe" hidden="false" collective="false" import="true" targetId="b904-5934-fb36-add8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9995-6d52-3fbe-7c59" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4ad-4a55-8085-5fcc" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="35bd-acc8-35dd-8dc9" name="Moshpit headbangers" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d953-427f-c8af-f116" type="max"/>
+                <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a550-dd90-b086-0d2b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9032-e54b-256c-2f71" name="Mu. Moshpit headbangers" hidden="false" targetId="542b-60fd-979c-f49a" type="profile"/>
+                <infoLink id="0078-6d4e-191f-9c6a" name="Loathing(CC)" hidden="false" targetId="5272-99ce-7e03-af8e" type="rule">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="13f9-d522-5b45-5f93" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                </infoLink>
+                <infoLink id="d261-741f-2f02-62d8" name="Repel(2&quot;)" hidden="false" targetId="c25d-d3df-de7e-4b2d" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="5133-8cb2-462b-2ad1" name="Headbang" hidden="false" collective="false" import="true" targetId="5d96-6a37-bf5b-823e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="16a6-bb95-5485-6e70" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2634-bcf0-5c0d-440a" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="5.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="d362-0cee-4885-5717" name="Transport option" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a67-52ef-fa94-aa47" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a1e7-08fb-8b79-23ca" name="Mutant Big truck" hidden="false" collective="false" import="true" targetId="59f8-1050-d580-05d9" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a6f-acef-77e3-0bef" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="75.0"/>
+              </costs>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="d7fe-2a23-9032-8c0f" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+        <entryLink id="3983-c0dd-3151-8171" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="968e-f913-db8a-8132" name="Upgrade any Regular unit" hidden="false" collective="false" import="true" targetId="0b74-98e4-ef55-8354" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="75.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="b904-5934-fb36-add8" name="Stratocaster greataxe" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="30f9-570c-3bae-57fc" name="Stratocaster greataxe" hidden="false" targetId="9551-c4ba-7414-d818" type="profile"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="b236-b7e4-5e18-5154" name="CC (2)" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="ed22-60f9-2bd4-14e7" name="CC (2)" hidden="false" targetId="76fe-3b83-fd34-d028" type="profile"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5d96-6a37-bf5b-823e" name="Headbang" hidden="false" collective="true" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="2acd-dbda-247b-153f" name="Headbang" hidden="false" targetId="b812-ffa2-5cbd-f54e" type="profile"/>
+        <infoLink id="1db5-6244-925b-d729" name="Vital Strike" hidden="false" targetId="a363-87ce-254e-2793" type="rule"/>
+      </infoLinks>
+    </selectionEntry>
+    <selectionEntry id="59f8-1050-d580-05d9" name="Mutant Big truck" hidden="false" collective="false" import="true" type="unit">
+      <comment>Transport, No Cost, No Category</comment>
+      <selectionEntries>
+        <selectionEntry id="85c3-a3cb-1b06-8d43" name="Mutant Big truck" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb97-5fb5-e78b-7290" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="91e2-eeaf-3222-948e" type="min"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="0d41-bc3c-e718-e19a" name="Mu. Big truck" hidden="false" targetId="f013-7170-a4c6-c2f5" type="profile">
+              <modifiers>
+                <modifier type="increment" field="3b4e-2e12-cbb9-1dc8" value="1">
+                  <conditions>
+                    <condition field="selections" scope="59f8-1050-d580-05d9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d92f-f4b9-3e85-ea4b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2760-e837-ae05-5d45" value="16">
+                  <conditions>
+                    <condition field="selections" scope="59f8-1050-d580-05d9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d02e-2933-c863-a6ae" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="2760-e837-ae05-5d45" value="10">
+                  <conditions>
+                    <condition field="selections" scope="59f8-1050-d580-05d9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e02c-ebde-b278-3fe8" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+            </infoLink>
+            <infoLink id="155e-2440-26bf-4c15" name="Vehicle" hidden="false" targetId="ca51-037a-f7e2-4764" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+            <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="c966-951f-19b1-3e8a" name="Options" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d016-b955-9ecd-10aa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8799-646b-b0bb-d246" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d02e-2933-c863-a6ae" name="Transport" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3469-1fa0-2be4-8797" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f720-af4e-0cb4-c4c3" name="Capacity(16)" hidden="false" targetId="2376-99fd-b51b-c232" type="rule"/>
+                <infoLink id="2179-9b42-bdcd-71db" name="Capacity(cover)" hidden="false" targetId="9974-3f33-75ff-5e45" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e02c-ebde-b278-3fe8" name="Gun transport" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d55-3fbd-915d-e065" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="08df-0b0c-8ce2-fede" name="Capacity(10)" hidden="false" targetId="54f7-e32f-8a28-2a0b" type="rule"/>
+                <infoLink id="fcd0-1a09-9af8-6805" name="Capacity(cover)" hidden="false" targetId="9974-3f33-75ff-5e45" type="rule"/>
+              </infoLinks>
+              <entryLinks>
+                <entryLink id="c0a7-75ce-b248-fbe6" name="Field gun" hidden="false" collective="false" import="true" targetId="2e08-364c-e0b6-ce31" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e7f7-75af-22e9-4176" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="50a6-2ab8-9c16-a535" type="min"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+              <costs>
+                <cost name="p" typeId="95b5-c653-a5e7-8869" value="25.0"/>
+                <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+                <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="acfb-791c-c0a6-b8a3" name="Weapons" hidden="false" collective="false" import="true">
+          <constraints>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="012b-9c3e-ffc4-ddbc" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3390-b078-10da-2e04" type="min"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="1e94-594e-26d1-b91c" name="LMG" hidden="false" collective="false" import="true" targetId="b8a6-f0ef-5687-f918" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aba2-0e54-0a45-5890" type="max"/>
+                <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e37a-d42c-8a0a-cede" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <entryLinks>
+        <entryLink id="3351-da70-f7be-580a" name="Upgrade any model" hidden="false" collective="false" import="true" targetId="9690-de4f-8970-c264" type="selectionEntryGroup"/>
+        <entryLink id="d754-35bd-3969-6b06" name="Upgrade any ground unit" hidden="false" collective="false" import="true" targetId="4360-42aa-7646-7941" type="selectionEntryGroup"/>
+        <entryLink id="7fd8-5f81-831d-742b" name="Upgrade Any Vehicle" hidden="false" collective="false" import="true" targetId="3b1e-71eb-97f5-5f9a" type="selectionEntryGroup"/>
+      </entryLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="9690-de4f-8970-c264" name="Upgrade any model" hidden="false" collective="false" import="true">
@@ -4870,6 +5721,9 @@ Spend one (1) Faction Point:
 ● Waste not, want not: you may field 1x vehicle from another force list. It gets Robust(-1). If simple, it gets Defence(-1) instead.
 ● “Ours now”: use during force generation. Replace up to 3x LMG from your force with weapons from the Republic specialist weapons list.
 ● Talismans and superstitions: use in the endphase. Remove 1 extra action marker from two (2) friendly non-vehicle units.</description>
+    </rule>
+    <rule id="f45e-c808-df66-bfdb" name="Shoot while Scoot" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false">
+      <description>Each endphase 1 friendly Mutant bike unit has Restore(1)</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -5142,13 +5996,13 @@ Spend one (1) Faction Point:
         <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
       </characteristics>
     </profile>
-    <profile id="48f2-4441-13b4-a720" name="Mu. Trample Walker" publicationId="e42d-4466-8267-ac1b" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+    <profile id="48f2-4441-13b4-a720" name="Mu. Colossal Trample walker" publicationId="4d21-d403-2f77-bbaf" page="71" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
       <characteristics>
-        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle(walker)</characteristic>
-        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">10</characteristic>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">8</characteristic>
         <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
         <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9</characteristic>
-        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">20</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45"/>
         <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">6</characteristic>
       </characteristics>
     </profile>
@@ -5203,6 +6057,166 @@ Spend one (1) Faction Point:
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll vs vehicles</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+D6+2</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, damage(2) vs vehicles</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f013-7170-a4c6-c2f5" name="Mu. Big truck" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">8/7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45"/>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="8160-ff05-0db6-5ea1" name="Mu. Weirdling Tower" publicationId="4d21-d403-2f77-bbaf" page="78" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">9, min 5</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">9</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="5b41-e749-51dc-6a10" name="Mystic channel" publicationId="4d21-d403-2f77-bbaf" page="78" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (5)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad"/>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">hazardous, attack(+5) for each regular Mutant unit within 6” (max 4)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="f8bb-a607-0811-e10a" name="Mu. Legendary Overboss" publicationId="4d21-d403-2f77-bbaf" page="71" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">6</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">7, min 5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">4</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="50d6-b7b4-a197-6bd1" name="Quad Slugger" publicationId="4d21-d403-2f77-bbaf" page="71" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">18&quot; (3)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb"/>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+1</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="f936-69a8-2666-20da" name="Colossal Sledge" publicationId="4d21-d403-2f77-bbaf" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (8), 3” (8)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+6</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">damage(2) </characteristic>
+      </characteristics>
+    </profile>
+    <profile id="b959-89a5-b1f1-6fbc" name="Mu. Spotting balloon" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false" typeId="d94e-cbef-94c3-d963" typeName="Vehicles">
+      <characteristics>
+        <characteristic name="Type" typeId="38c7-4971-d159-0612">Vehicle</characteristic>
+        <characteristic name="Wounds" typeId="0856-73ac-860b-c2f3">1</characteristic>
+        <characteristic name="Target" typeId="a61d-9a4d-ee19-f432">4</characteristic>
+        <characteristic name="Defence" typeId="61ff-d3d0-d23d-332c">7</characteristic>
+        <characteristic name="Capacity" typeId="2760-e837-ae05-5d45">-</characteristic>
+        <characteristic name="Move" typeId="3b4e-2e12-cbb9-1dc8">no</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="572e-4ac5-a9a4-6b9f" name="Mu. Super cannon" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <comment></comment>
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Massive</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">5</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">2</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="4c1f-7d7b-4be3-0ec5" name="Artillery gun" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72-240” (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast x2</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-3), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="24c5-8ebc-f53b-5ba1" name="Mu. Launch buggies" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">4</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4 (5 vs indirect)</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">12</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c791-f5be-d14f-2dbb" name="Small mutant bomb launcher" publicationId="4d21-d403-2f77-bbaf" page="65" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">72-200” (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">re-roll, inaccurate vs Flak, blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">indirect(-1), priority(only)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="dfd3-2cf7-47bf-2db7" name="Mu. Band members" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="219f-4e06-5a12-4479" name="Mu. Band security" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">5</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="542b-60fd-979c-f49a" name="Mu. Moshpit headbangers" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="3f2b-c9d0-9cb3-bd13" typeName="Models">
+      <characteristics>
+        <characteristic name="Type" typeId="6851-3ebd-09f4-676d">Regular</characteristic>
+        <characteristic name="Wounds" typeId="a4e3-afe7-fa56-6899">1</characteristic>
+        <characteristic name="Target" typeId="591c-163f-c1e8-dfa3">4</characteristic>
+        <characteristic name="Defence" typeId="bc5e-e8d4-df78-f81b">4</characteristic>
+        <characteristic name="Tough" typeId="c48e-fefe-28bf-76e3">1</characteristic>
+        <characteristic name="Morale" typeId="dcd1-8457-ab88-a19a">0</characteristic>
+        <characteristic name="Move" typeId="6423-148f-5061-e61e">6</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="9551-c4ba-7414-d818" name="Stratocaster greataxe" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"></characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (2)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">+1 vs unarmed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c"/>
+      </characteristics>
+    </profile>
+    <profile id="b812-ffa2-5cbd-f54e" name="Headbang" publicationId="4d21-d403-2f77-bbaf" page="79" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"></characteristic>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">CC (1)</characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">-1 vs armed</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">vital strike</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

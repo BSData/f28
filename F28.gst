@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="45" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="7558-af3d-5eb8-db9c" name="F28" revision="46" battleScribeVersion="2.03" authorName="Jonny Hjorter" authorContact="f28.bsdev@greyport.net" authorUrl="https://github.com/BSData/f28/wiki" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <readme>For more info: https://boardgamegeek.com/boardgame/249299/f28
 
 Game system files is based of the first revised edition, first print of F28 (F28 F28 1RE1P) and the first edition, first print of the Players Guide (PG 1ED1P).
@@ -17,13 +17,16 @@ Narrative: Is under development.
 Factions lists, revised edition (F28 1RE1P and PG 1RE1P):
 The Army of Republic(s)
 The Primary Chambers
+The Mutant Menace
+
+Factions lists, players guide (PG 1RE1P):
+Orders of the Republic 
 
 Faction lists, revised edition (F28 1RE1P):
 The Army of the Republic(s)
 The Chambers
 The Convents of the Faithful
 The Enclaves
-The Mutant Menace
 The Nanite Resurrection
 The Scandinavian Commonwealth
 The Seelie Court
@@ -32,10 +35,6 @@ The Tide Cult
 The Unseelie Court
 
 Factions lists, players guide (PG 1ED1P):
-Orders of the Republic 
-Order of External Affairs 
-Order of Eldritch Affairs
-Order of Internal Affairs (replaced by The Convents of the Faithful)
 Dvergi Freeholds
 Smiths of A.R.E.S.
 
@@ -9030,6 +9029,17 @@ Found a bug? Please report it at: https://github.com/BSData/f28/issues or send a
         <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a22f-e888-5e93-0917" name="Infantry gun" hidden="false" collective="false" import="true" type="upgrade">
+      <infoLinks>
+        <infoLink id="6eef-d5a8-6274-eb30" name="Infantry gun" hidden="false" targetId="eb48-28cf-f45b-0afb" type="profile"/>
+        <infoLink id="7201-f72e-6ab0-2b82" name="Heavy" hidden="false" targetId="3682-4263-ec97-3fe5" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="U" typeId="2744-00fe-78fa-f968" value="0.0"/>
+        <cost name="p" typeId="95b5-c653-a5e7-8869" value="0.0"/>
+        <cost name="FP" typeId="9edd-fdb1-a197-a401" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedRules>
     <rule id="213d-24ea-7704-b13f" name="Infiltrate" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -9493,6 +9503,7 @@ Unless the source has Superior at the same or greater scale (1 is default):
       <description>This model’s CC attacks have +2&quot; range.</description>
     </rule>
     <rule id="7c92-fa16-ee47-4ebc" name="Charge(3&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <comment>w</comment>
       <description>This model’s CC attacks have +3&quot; range.</description>
     </rule>
     <rule id="544b-ec82-fc89-543c" name="Bestow Fanatic" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
@@ -10386,6 +10397,7 @@ If a unit already has trait at a better level, it takes precedence.</description
       <description>Target(potshots) vs attacks from beyond 18&quot; and always from aircraft.</description>
     </rule>
     <rule id="dd48-9d33-4bb1-2555" name="Move(walker)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <comment></comment>
       <description>No movement penalty for difficult terrain. Counts as regular when evaluating dangerous terrain.</description>
     </rule>
     <rule id="dbaf-fda1-3ef1-6ac7" name="Cargo(0)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
@@ -10908,6 +10920,26 @@ The re-roll does not benefit from Cover and may not be taken against reactions w
     </rule>
     <rule id="e059-e2b5-d1cf-cfef" name="Inflict Disruption(6&quot;)" publicationId="91df-c558-75f9-73ea" page="146" hidden="false">
       <description>Models of enemy units within 6&quot; has Distruption: Units may not remove extra action markers in endphase.</description>
+    </rule>
+    <rule id="2376-99fd-b51b-c232" name="Capacity(16)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>May transport 16 regular models (see also the transport rules).
+If they can’t be attacked, passengers are also unaffected by/does not affect others with
+bestow/inflict/cause/cancel/mystic traits from outside the vehicle.</description>
+    </rule>
+    <rule id="3c0a-58ac-b350-8286" name="Elevated" publicationId="4d21-d403-2f77-bbaf" page="141" hidden="false">
+      <description>This model can see over intervening (non-elevated) terrain, excluding the 3” just beyond the intervening feature. Blast/spray hits may not be allocated to both elevated and non-elevated targets. Elevated models are not considered engaged with non-elevated models. Note the difference between Elevated and Move(elevated) – both are elevated, but the former is still connected to the ground (like a tower), and cannot move over things.</description>
+    </rule>
+    <rule id="1da5-98be-256f-6f4c" name="Charge(D3&quot;) (12&quot;)" publicationId="91df-c558-75f9-73ea" page="145" hidden="false">
+      <description>All models in units within 12&quot; has: CC attacks have +D3&quot; range.</description>
+    </rule>
+    <rule id="cc66-3704-0309-50d3" name="Standoff(12&quot;) " publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Attacks vs this model have their range reduced by 12&quot;.</description>
+    </rule>
+    <rule id="7b74-5e2a-f916-c621" name="Standoff(distance) " publicationId="91df-c558-75f9-73ea" page="149" hidden="false">
+      <description>Attacks vs this model have their range reduced by distance.</description>
+    </rule>
+    <rule id="9205-2a62-ed8e-425d" name="Move(elevated)" publicationId="91df-c558-75f9-73ea" page="147" hidden="false">
+      <description>Model counts as Elevated.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
@@ -15293,6 +15325,15 @@ priority(only), SSM</characteristic>
         <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
         <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">no</characteristic>
         <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">one use, suppression(x2)</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="eb48-28cf-f45b-0afb" name="Infantry gun" publicationId="4d21-d403-2f77-bbaf" page="82" hidden="false" typeId="54e1-0f72-802c-b80d" typeName="Weapons">
+      <characteristics>
+        <characteristic name="." typeId="5cc5-b871-6eff-d6c1"/>
+        <characteristic name="Range" typeId="fea5-12e0-2cf5-710d">30” (1), </characteristic>
+        <characteristic name="Hit" typeId="64c1-d271-0713-c5fb">blast</characteristic>
+        <characteristic name="Wound" typeId="b32a-d8ea-49af-57ad">+2</characteristic>
+        <characteristic name="Traits" typeId="62b8-d616-a7fc-060c">heavy</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>
